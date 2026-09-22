@@ -1,0 +1,120 @@
+import Image from "next/image";
+import { PublicationCard } from "@/components/PublicationCard";
+import { publications } from "@/data/publications";
+
+export default function Home() {
+  return (
+    <>
+      <section
+        aria-labelledby="intro-title"
+        className="site-container grid items-center gap-10 py-12 sm:py-16 lg:grid-cols-2 lg:gap-16 lg:py-20"
+      >
+        <div>
+          <p className="mb-5 text-xs font-semibold tracking-[0.16em] text-accent uppercase">
+            Un espacio para aprender
+          </p>
+          <h1
+            id="intro-title"
+            className="max-w-xl font-display text-4xl leading-[1.12] text-balance sm:text-5xl lg:text-6xl"
+          >
+            Una mirada curiosa{" "}
+            <span className="text-accent">sobre lo que comemos.</span>
+          </h1>
+          <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted">
+            Bienvenidos a Conciencia Alimentaria. 
+          </p>
+           <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted">
+            Un lugar para explorar los
+            alimentos, la nutrición, las recetas y la fermentación a través de
+            videos y textos.
+           </p>
+          <a href="#publicaciones" className="primary-link mt-8">
+            Explorar publicaciones <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+        <div className="overflow-hidden rounded-3xl bg-transparent">
+          <Image
+            src="/images/perfil.png"
+            alt=""
+            width={800}
+            height={620}
+            sizes="(min-width: 1184px) 544px, (min-width: 1024px) calc((100vw - 96px) / 2), calc(100vw - 32px)"
+            className="h-auto w-full"
+            preload
+          />
+        </div>
+      </section>
+
+      <section
+        id="publicaciones"
+        aria-labelledby="publications-title"
+        className="site-container border-t border-line py-12 sm:py-16"
+      >
+        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-8">
+          <div>
+            <h2
+              id="publications-title"
+              className="font-display text-3xl sm:text-4xl"
+            >
+              Publicaciones
+            </h2>
+          </div>
+        
+        </div>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {publications.map((publication) => (
+            <PublicationCard key={publication.slug} publication={publication} />
+          ))}
+        </div>
+      </section>
+
+      <section
+        id="proyecto"
+        aria-labelledby="project-title"
+        className="site-container mb-12 grid gap-7 rounded-3xl bg-sand p-6 sm:mb-16 sm:p-10 lg:grid-cols-1 lg:gap-16 lg:p-12"
+      >
+        
+        <div className="space-y-4 text-base leading-relaxed text-muted">
+          <h2
+            id="project-title"
+            className="max-w-sm font-display text-3xl leading-tight sm:text-4xl sm:max-w-4xl"
+          >
+            Más espacio para cada tema
+          </h2>
+          <p>
+            Conciencia Alimentaria es un proyecto para acercar información, para 
+            invitar a un camino propio de hábitos desde lo compartido, investigando,
+            cuestionando o descubriendo desde la validación, toda información que
+            desde Conciencia Alimentaria se publica.
+            Enonctrarás un espacio dedicado a los alimentos, la nutrición, las recetas y la fermentación.
+          </p>
+          <p>
+            Este sitio acompaña al canal de YouTube y ofrece un espacio propio
+            para organizar los contenidos, ampliar las explicaciones y reunir las
+            fuentes de cada publicación cuando estén disponibles.
+          </p>
+          <p>
+            Esta web será el lugar exclusivo para algunos de los textos y contenidos que se compartan, que no encontrarás en el canal de youtube.
+          </p>
+          <div className="flex justify-center w-full items rounded-2xl border border-none  bg-transparent px-5 py-4 text-center ">
+          <div className="flex flex-col w-[32%] items rounded-2xl border border-[#D8D0BE]  bg-[#EEF0DC]/60 px-5 py-4 text-center shadow-sm">
+            <p className="text-sm font-medium text-[#6F745E]">
+              Podés encontrar contenido desde
+            </p>
+
+            <a
+              href="https://www.youtube.com/@PropuestaConcienciaAlimentaria"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex items-center gap-2 rounded-full bg-[#49633B] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#354B2B]"
+            >
+              <span>▶</span>
+              YouTube · Conciencia Alimentaria
+            </a>
+          </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
