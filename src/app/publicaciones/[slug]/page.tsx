@@ -21,14 +21,12 @@ export async function generateMetadata({
 
   if (!publication) notFound();
 
-  const title = publication.isPlaceholder
-    ? `${publication.title} (ejemplo)`
-    : publication.title;
+  const title = publication.title;
 
   return {
     title,
     description: publication.summary,
-    robots: publication.isPlaceholder ? { index: false, follow: true } : undefined,
+    robots:  undefined,
     openGraph: {
       title,
       description: publication.summary,
@@ -61,9 +59,7 @@ export default async function PublicationPage({ params }: PublicationPageProps) 
         </Link>
         <article>
           <header>
-            <p className="mb-4 text-xs font-semibold tracking-[0.16em] text-accent uppercase">
-              {publication.category}
-            </p>
+           
             <h1 className="font-display text-4xl leading-tight text-balance sm:text-5xl">
               {publication.title}
             </h1>
@@ -72,18 +68,7 @@ export default async function PublicationPage({ params }: PublicationPageProps) 
             </p>
           </header>
 
-          {publication.isPlaceholder && (
-            <aside
-              aria-label="Estado del contenido"
-              className="mt-7 rounded-xl border border-line bg-accent-soft p-5 text-sm leading-relaxed"
-            >
-              <p className="font-semibold text-accent">Contenido de ejemplo</p>
-              <p className="mt-1">
-                Esta página muestra cómo se verán las publicaciones. El contenido
-                definitivo todavía está en preparación.
-              </p>
-            </aside>
-          )}
+        
 
           {publication.image && (
             <Image
