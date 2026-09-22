@@ -1,8 +1,29 @@
 import Image from "next/image";
 import { PublicationCard } from "@/components/PublicationCard";
 import { publications } from "@/data/publications";
+import Link from "next/link";
+import fs from "fs";
+import path from "path";
 
 export default function Home() {
+
+   const noticiaPath = path.join(
+    process.cwd(),
+    "public/images/publicaciones/noticiadeldia/noticiadeldia.png"
+  );
+
+  const existeNoticia = fs.existsSync(noticiaPath);
+  const existeLink = true;
+  
+
+  const imageSrc = existeNoticia
+    ? "/images/publicaciones/noticiadeldia/noticiadeldia.png"
+    : "/images/publicaciones/noticiadeldia/iconnoticia.png";
+
+     const LinkSrc = existeNoticia
+    ? "https://lavaca.org/ciencia-y-ambiente/virginia-aparicio-cientifica-del-inta-perseguida-censurada-y-silenciada-por-investigar-efectos-de-los-pesticidas-en-humanos-y-el-ambiente"
+    : "/images/publicaciones/noticiadeldia/empty.png";
+
   return (
     <>
       <section
@@ -44,7 +65,40 @@ export default function Home() {
           />
         </div>
       </section>
-
+      <section    aria-labelledby="noticia-del-dia"
+       className="site-container grid items-center gap-10 py-12 sm:py-16 lg:grid-cols-1 lg:gap-16 lg:py-20"
+      >
+        <div  className="flex flex-col justify-self-center text-center">
+          <p className=" mb-5 text-xs font-semibold tracking-[0.16em] text-accent uppercase">
+            Una noticia actual relacionada a la alimentación
+          </p>
+           <div className=" overflow-hidden rounded-3xl bg-transparent">
+          <Image
+            src={imageSrc}
+            alt=""
+            width={800}
+            height={620}
+            className= { existeNoticia 
+              ? "relative  h-auto mx-auto h-auto w-[40%] max-w-none"
+              : "mx-auto h-auto w-[180px]"
+            }   
+            preload
+          />
+        </div>
+        <div className="text-center">
+          <Link
+            href={LinkSrc}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-link  inline-flex w-fit items-center rounded-sm text-sm font-semibold"
+          >        
+             { existeLink ? "Leer noticia completa" : "Ver" }
+            <span className="sr-only">: Noticia del día</span>
+            <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+        </div>
+      </section>
       <section
         id="publicaciones"
         aria-labelledby="publications-title"
