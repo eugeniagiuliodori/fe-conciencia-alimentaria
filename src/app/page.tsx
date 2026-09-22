@@ -78,9 +78,9 @@ export default function Home() {
             alt=""
             width={800}
             height={620}
-            className= { existeNoticia 
-              ? "relative  h-auto mx-auto h-auto w-[40%] max-w-none"
-              : "mx-auto h-auto w-[180px]"
+            className= {  existeNoticia
+            ? "mx-auto h-auto w-[clamp(280px,70vw,520px)] max-w-full"
+            : "mx-auto h-auto w-[180px]"
             }   
             preload
           />
