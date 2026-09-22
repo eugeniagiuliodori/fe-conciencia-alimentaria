@@ -77,7 +77,7 @@ export default function Home() {
         <div className="space-y-4 text-base leading-relaxed text-muted">
           <h2
             id="project-title"
-            className="max-w-sm font-display text-3xl leading-tight sm:text-4xl sm:max-w-4xl"
+            className="max-w-sm font-display text-2xl leading-tight sm:text-4xl sm:max-w-4xl"
           >
             Más espacio para cada tema
           </h2>
@@ -96,22 +96,22 @@ export default function Home() {
           <p>
             Esta web será el lugar exclusivo para algunos de los textos y contenidos que se compartan, que no encontrarás en el canal de youtube.
           </p>
-          <div className="flex justify-center w-full items rounded-2xl border border-none  bg-transparent px-5 py-4 text-center ">
-          <div className="flex flex-col w-[32%] items rounded-2xl border border-[#D8D0BE]  bg-[#EEF0DC]/60 px-5 py-4 text-center shadow-sm">
-            <p className="text-sm font-medium text-[#6F745E]">
-              Podés encontrar contenido desde
-            </p>
+          <div className="flex w-full justify-center px-4">
+            <div className="flex w-full max-w-md flex-col items-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-5 py-4 text-center shadow-sm">
+              <p className="text-sm font-medium text-[#6F745E]">
+                Podés encontrar contenido desde
+              </p>
 
-            <a
-              href="https://www.youtube.com/@PropuestaConcienciaAlimentaria"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 inline-flex items-center gap-2 rounded-full bg-[#49633B] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#354B2B]"
-            >
-              <span>▶</span>
-              YouTube · Conciencia Alimentaria
-            </a>
-          </div>
+              <a
+                href="https://www.youtube.com/@PropuestaConcienciaAlimentaria"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#49633B] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#354B2B] sm:w-auto"
+              >
+                <span>▶</span>
+                <span>YouTube · Conciencia Alimentaria</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
