@@ -21,7 +21,7 @@ export default function Home() {
     : "/images/publicaciones/noticiadeldia/iconnoticia.png";
 
      const LinkSrc = existeNoticia
-    ? "https://lavaca.org/ciencia-y-ambiente/virginia-aparicio-cientifica-del-inta-perseguida-censurada-y-silenciada-por-investigar-efectos-de-los-pesticidas-en-humanos-y-el-ambiente"
+    ? "https://link.springer.com/article/10.1186/s12916-026-05132-z?utm_source=chatgpt.com"
     : "/images/publicaciones/noticiadeldia/empty.png";
 
   return (
