@@ -21,7 +21,7 @@ export default function Home() {
     : "/images/publicaciones/noticiadeldia/iconnoticia.png";
 
      const LinkSrc = existeNoticia
-    ? "https://link.springer.com/article/10.1186/s12916-026-05132-z?utm_source=chatgpt.com"
+    ? "https://openknowledge.fao.org/handle/20.500.14283/cd8306en?utm_source=chatgpt.com"
     : "/images/publicaciones/noticiadeldia/empty.png";
 
   return (
