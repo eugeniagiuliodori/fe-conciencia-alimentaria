@@ -1,4 +1,4 @@
-import Link from "next/link";
+import OwnerAccess from "@/components/OwnerAccess";
 
 export function SiteFooter() {
   return (
@@ -20,6 +20,7 @@ export function SiteFooter() {
       </div>
     </div>
   </div>
+  <OwnerAccess />
 </footer>
   );
 }
