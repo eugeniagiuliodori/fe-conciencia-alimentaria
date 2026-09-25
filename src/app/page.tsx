@@ -21,7 +21,7 @@ export default function Home() {
     : "/images/publicaciones/noticiadeldia/iconnoticia.png";
 
      const LinkSrc = existeNoticia
-    ? "https://openknowledge.fao.org/handle/20.500.14283/cd8306en?utm_source=chatgpt.com"
+    ? "https://academic.oup.com/eurheartj/advance-article/doi/10.1093/eurheartj/ehag519/8787855?utm_source=chatgpt.com"
     : "/images/publicaciones/noticiadeldia/empty.png";
 
   return (
