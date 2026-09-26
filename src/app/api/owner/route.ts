@@ -1,9 +1,11 @@
-import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
+
+import { createOwnerToken } from "@/lib/owner-token";
 
 export async function POST(request: Request) {
   const ownerSecret = process.env.OWNER_SECRET;
 
+  // Si no está configurado, el mecanismo owner queda deshabilitado.
   if (!ownerSecret) {
     return NextResponse.json(
       { error: "Owner mode is disabled" },
@@ -11,19 +13,26 @@ export async function POST(request: Request) {
     );
   }
 
-  const body = await request.json();
-  const secret = body.secret;
+  const body: unknown = await request.json();
 
-  if (typeof secret !== "string" || secret !== ownerSecret) {
+  if (
+    typeof body !== "object" ||
+    body === null ||
+    !("secret" in body) ||
+    typeof body.secret !== "string" ||
+    body.secret !== ownerSecret
+  ) {
     return NextResponse.json(
       { error: "Invalid credentials" },
       { status: 401 },
     );
   }
 
-  const cookieStore = await cookies();
+  const ownerToken = createOwnerToken();
 
-  cookieStore.set("owner", "true", {
+  const response = NextResponse.json({ success: true });
+
+  response.cookies.set("owner", ownerToken, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
     sameSite: "strict",
@@ -31,5 +40,5 @@ export async function POST(request: Request) {
     maxAge: 60 * 60 * 24 * 365,
   });
 
-  return NextResponse.json({ success: true });
+  return response;
 }

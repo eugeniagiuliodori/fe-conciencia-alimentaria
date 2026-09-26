@@ -22,7 +22,7 @@ export default function Home() {
     : "/images/publicaciones/noticiadeldia/iconnoticia.png";
 
      const LinkSrc = existeNoticia
-    ? "https://academic.oup.com/eurheartj/advance-article/doi/10.1093/eurheartj/ehag519/8787855?utm_source=chatgpt.com"
+    ? "https://nutrition.bmj.com/content/early/2026/09/03/bmjnph-2026-001522?utm_source=chatgpt.com"
     : "/images/publicaciones/noticiadeldia/empty.png";
 
   return (

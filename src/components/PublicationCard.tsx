@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Publication } from "@/data/publications";
 
+
 export function PublicationCard({ publication }: { publication: Publication }) {
   return (
     <article className="flex min-w-0 flex-col overflow-hidden rounded-2xl border border-line bg-surface justify-center">

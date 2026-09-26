@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { VisitTracker } from "@/components/VisitTracker";
 import "./globals.css";
 
 const title = "Conciencia Alimentaria";
@@ -43,6 +44,7 @@ export default function RootLayout({
         </a>
         <SiteHeader />
         <main id="contenido" tabIndex={-1} className="flex-1 focus:outline-none">
+          <VisitTracker />
           {children}
         </main>
         <SiteFooter />
