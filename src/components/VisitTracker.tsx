@@ -1,11 +1,15 @@
 "use client";
 
 import { useEffect } from "react";
+import { registerVisit } from "@/features/visit-tracking/register-visit";
 import {
   readTabVisitState,
   updateLastActive,
 } from "@/features/visit-tracking/state/ storage";
-import { determineVisitSession } from "@/features/visit-tracking/ visit-session";
+import {
+  determineVisitSession,
+  type VisitSession,
+} from "@/features/visit-tracking/ visit-session";
 
 const VISIT_TIMEOUT_MS =
   2 * 60 * 60 * 1000;
@@ -27,6 +31,55 @@ export function VisitTracker() {
     let activityPromise:
       Promise<void> | null = null;
 
+    /*
+     * Evita enviar más de una vez al endpoint
+     * el mismo UUID desde esta instancia del tracker.
+     *
+     * Redis sigue siendo la garantía real de idempotencia;
+     * esto solamente evita requests innecesarios.
+     */
+    const registrationStarted =
+      new Set<string>();
+
+    function registerNewVisit(
+      session: VisitSession,
+    ): void {
+      
+      if (!session.isNewVisit) {
+         
+        return;
+      }
+
+      if (
+        registrationStarted.has(
+          session.uuid,
+        )
+      ) {
+        
+        return;
+      }
+
+      registrationStarted.add(
+        session.uuid,
+      );
+
+      /*
+       * El registro en servidor no bloquea
+       * el tracking local de actividad.
+       *
+       * registerVisit tampoco realiza retries
+       * ante errores HTTP o ausencia de respuesta.
+       */
+      void registerVisit(session.uuid).catch(
+        (error) => {
+          console.error(
+            "Visit registration failed:",
+            error,
+          );
+        },
+      );
+    }
+
     async function initialize(): Promise<void> {
       try {
         /*
@@ -36,9 +89,12 @@ export function VisitTracker() {
          * El estado existente tiene que ser evaluado
          * tal como estaba antes de esta nueva actividad.
          */
+        const session =
         await determineVisitSession();
-
+         
         if (disposed) return;
+
+        registerNewVisit(session);
 
         const now = Date.now();
 
@@ -81,8 +137,10 @@ export function VisitTracker() {
       ) {
         activityPromise =
           determineVisitSession()
-            .then(() => {
+            .then((session) => {
               if (disposed) return;
+
+              registerNewVisit(session);
 
               const activityTime =
                 Date.now();
