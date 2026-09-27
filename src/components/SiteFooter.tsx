@@ -1,6 +1,11 @@
 import OwnerAccess from "@/components/OwnerAccess";
 
 export function SiteFooter() {
+
+  function envBoolean(value: string | undefined): boolean {
+  return value === "true";
+}
+
   return (
    <footer className="border-t border-[#D8D0BE] bg-[#F7F1E6]">
   <div className="site-container flex flex-col items-center gap-5 py-8 text-center">
@@ -20,7 +25,7 @@ export function SiteFooter() {
       </div>
     </div>
   </div>
-  <OwnerAccess />
+  { envBoolean(process.env.SHOW_OWNER_BUTTON) &&  <OwnerAccess /> }
 </footer>
   );
 }
