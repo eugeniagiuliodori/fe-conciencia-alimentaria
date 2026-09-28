@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { PublicationCard } from "@/components/PublicationCard";
-import { publications } from "@/data/publications";
+
 import Link from "next/link";
 import fs from "fs";
 import path from "path";
-
+import { PublicationsSection } from "@/components/PublicationsSection";
+import { publications } from "@/data/publications";
 
 export default function Home() {
 
@@ -165,29 +165,7 @@ export default function Home() {
             </div>
           </div>
       </section>
-      <section
-        id="publicaciones"
-        aria-labelledby="publications-title"
-        className="site-container border-t border-line py-12 sm:py-16"
-      >
-        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-8">
-          <div>
-            <h2
-              id="publications-title"
-              className="font-display text-3xl sm:text-4xl"
-            >
-              Publicaciones
-            </h2>
-          </div>
-        
-        </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {publications.map((publication) => (
-            <PublicationCard key={publication.slug} publication={publication} />
-          ))}
-        </div>
-      </section>
-
+      <PublicationsSection publications={publications}/>
       <section
         id="proyecto"
         aria-labelledby="project-title"
