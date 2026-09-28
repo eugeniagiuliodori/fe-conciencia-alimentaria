@@ -1,7 +1,8 @@
 type PaginationItem =
   | number
   | "ellipsis-left"
-  | "ellipsis-right";
+  | "ellipsis-right"
+  | "empty";
 
 export function getPaginationItems(
   totalPages: number,
@@ -62,21 +63,24 @@ export function getPaginationItems(
     (_, index) => start + index,
   );
 
-  {middlePages.length > 0 && [
-    1,
-    "ellipsis-left",
-    ...middlePages,
-    "ellipsis-right",
-    totalPages,
-  ];
+  if (middlePages.length > 0) { 
+     return [
+        1,
+        "ellipsis-left",
+        ...middlePages,
+        "ellipsis-right",
+        totalPages,
+    ];
   }
 
-  {middlePages.length === 0 && [
-    1,
-    "",
-    ...middlePages,
-    "ellipsis-right",
-    totalPages,
-  ];
+   else { 
+    return [
+        1,
+        "empty",
+        ...middlePages,
+        "ellipsis-right",
+        totalPages,
+    ];
   }
+
 }

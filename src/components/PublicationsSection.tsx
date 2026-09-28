@@ -155,15 +155,19 @@ export function PublicationsSection({
             >
             {paginationItems.map((item) => {
                 if (typeof item !== "number") {
-                return (
-                    <span
-                    key={item}
-                    aria-hidden="true"
-                    className="flex h-11 min-w-11 items-center justify-center text-sm text-[#6F745E]"
-                    >
-                    …
-                    </span>
-                );
+                    if(item !== "empty"){
+                        return (
+                            <span
+                            key={item}
+                            aria-hidden="true"
+                            className="flex h-11 min-w-11 items-center justify-center text-sm text-[#6F745E]"
+                            >
+                            …
+                            </span>
+                        );
+                    }
+                    else{return}
+                    
                 }
 
                 return (
