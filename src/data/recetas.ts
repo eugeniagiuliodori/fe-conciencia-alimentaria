@@ -32,18 +32,13 @@ export const recetas: readonly Receta[] = [
     videoUrl:"/images/recetas/receta1.mp4",
     content: [],
   },
- /*{
+ {
     ratiox:10,
     ratioy:15,
     slug: "receta2",
     title: "",
     summary:"",
-    image: {
-      src: "/images/recetas/receta2.png",
-      alt: "",
-      width: 800,
-      height: 800,
-    },
+    videoUrl:"/images/recetas/receta2.mp4",
     content: [],
   },
  {
@@ -52,12 +47,7 @@ export const recetas: readonly Receta[] = [
     slug: "receta3",
     title: "",
     summary:"",
-    image: {
-      src: "/images/recetas/receta3.png",
-      alt: "",
-      width: 800,
-      height: 800,
-    },
+    videoUrl: "/images/recetas/receta3.mp4",
     content: [],
   },
    {
@@ -66,15 +56,10 @@ export const recetas: readonly Receta[] = [
     slug: "receta4",
     title: "",
     summary:"",
-    image: {
-      src: "/images/recetas/receta4.png",
-      alt: "",
-      width: 800,
-      height: 800,
-    },
+    videoUrl: "/images/recetas/receta4.mp4",
     content: [],
   },
- {
+ /*{
     ratiox:8,
     ratioy:6,
     slug: "receta5",
