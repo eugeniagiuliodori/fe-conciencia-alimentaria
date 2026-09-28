@@ -15,24 +15,24 @@ export function PublicationsSection({
   const [currentPage, setCurrentPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(1);
   const [columnsPerRow, setColumnsPerRow] = useState(1);
-  const [maxPageItems, setMaxPageItems] = useState(5);
+  const [maxPageItems, setMaxPageItems] = useState(2);
 
   useEffect(() => {
     const updateColumns = () => {
       if (window.matchMedia("(min-width: 1024px)").matches) {
         setColumnsPerRow(3);
-         setMaxPageItems(9);
+         setMaxPageItems(7);
         return;
       }
 
       if (window.matchMedia("(min-width: 640px)").matches) {
         setColumnsPerRow(2);
-        setMaxPageItems(7);
+        setMaxPageItems(5);
         return;
       }
 
       setColumnsPerRow(1);
-      setMaxPageItems(5);
+      setMaxPageItems(2);
     };
 
     updateColumns();
