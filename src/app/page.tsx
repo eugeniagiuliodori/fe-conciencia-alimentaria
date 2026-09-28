@@ -14,16 +14,33 @@ export default function Home() {
   );
 
   const existeNoticia = fs.existsSync(noticiaPath);
-  const existeLink = true;
+  const existeNoticiaLink = true;
   
 
-  const imageSrc = existeNoticia
+  const noticiaImageSrc = existeNoticia
     ? "/images/publicaciones/noticiadeldia/noticiadeldia.png"
     : "/images/publicaciones/noticiadeldia/iconnoticia.png";
 
-     const LinkSrc = existeNoticia
+     const NoticiaLinkSrc = existeNoticia
     ? "https://www.nature.com/articles/s41467-026-77790-9"
     : "/images/publicaciones/noticiadeldia/empty.png";
+
+    const menuSugeridoPath = path.join(
+    process.cwd(),
+    "public/images/publicaciones/menudeldia/menudeldia.png"
+  );
+
+  const existeMenuSugerido = fs.existsSync(menuSugeridoPath);
+  const existeMenuSugeridoLink = true;
+  
+
+  const menuSugeridoImageSrc = existeMenuSugerido
+    ? "/images/publicaciones/menudeldia/menudeldia.png"
+    : "/images/publicaciones/menudeldia/iconmenu.png";
+
+     const MenuSugeridoLinkSrc = existeMenuSugerido
+    ? "/images/publicaciones/menudeldia/menudeldia.png"
+    : "/images/publicaciones/menudeldia/empty.png";
 
   return (
     <>
@@ -67,7 +84,7 @@ export default function Home() {
         </div>
       </section>
       <section    aria-labelledby="noticia-del-dia"
-       className="site-container grid items-center gap-10 py-12 sm:py-16 lg:grid-cols-1 lg:gap-16 lg:py-20"
+       className="site-container grid items-center gap-10 py-12 sm:py-16 lg:grid-cols-2 lg:gap-16 lg:py-20"
       >
         <div  className="flex flex-col justify-self-center text-center">
           <p className=" mb-5 text-xs font-semibold tracking-[0.16em] text-accent uppercase">
@@ -75,7 +92,7 @@ export default function Home() {
           </p>
            <div className=" overflow-hidden rounded-3xl bg-transparent">
           <Image
-            src={imageSrc}
+            src={noticiaImageSrc}
             alt=""
             width={800}
             height={620}
@@ -88,13 +105,43 @@ export default function Home() {
         </div>
         <div className="text-center">
           <Link
-            href={LinkSrc}
+            href={NoticiaLinkSrc}
             target="_blank"
             rel="noopener noreferrer"
             className="text-link  inline-flex w-fit items-center rounded-sm text-sm font-semibold"
           >        
-             { existeLink ? "Leer noticia completa" : "Ver" }
+             { existeNoticiaLink ? "Leer noticia completa" : "Ver" }
             <span className="sr-only">: Noticia del día</span>
+            <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+        </div>
+                <div  className="flex flex-col justify-self-center text-center">
+          <p className=" mb-5 text-xs font-semibold tracking-[0.16em] text-accent uppercase">
+            Menú sugerido diario
+          </p>
+           <div className=" overflow-hidden rounded-3xl bg-transparent">
+          <Image
+            src={menuSugeridoImageSrc}
+            alt=""
+            width={800}
+            height={620}
+            className= {  existeMenuSugerido
+            ? "mx-auto h-auto w-[clamp(280px,70vw,520px)] max-w-full"
+            : "mx-auto h-auto w-[180px]"
+            }   
+            preload
+          />
+        </div>
+        <div className="text-center">
+          <Link
+            href={MenuSugeridoLinkSrc}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-link  inline-flex w-fit items-center rounded-sm text-sm font-semibold"
+          >        
+             { existeMenuSugeridoLink ? "Ampliar menú" : "Ver" }
+            <span className="sr-only">: Menu sugerido</span>
             <span aria-hidden="true">→</span>
           </Link>
         </div>
