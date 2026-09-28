@@ -62,11 +62,21 @@ export function getPaginationItems(
     (_, index) => start + index,
   );
 
-  return [
+  {middlePages.length > 0 && [
     1,
     "ellipsis-left",
     ...middlePages,
     "ellipsis-right",
     totalPages,
   ];
+  }
+
+  {middlePages.length === 0 && [
+    1,
+    "",
+    ...middlePages,
+    "ellipsis-right",
+    totalPages,
+  ];
+  }
 }
