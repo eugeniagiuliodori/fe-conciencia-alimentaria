@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { Publication } from "@/data/publications";
 import { PublicationCard } from "@/components/PublicationCard";
+import {getPaginationItems} from "@/components/utils/utilsTool";
 
 type PublicationsSectionProps = {
   publications: readonly  Publication[];
@@ -14,20 +15,24 @@ export function PublicationsSection({
   const [currentPage, setCurrentPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(1);
   const [columnsPerRow, setColumnsPerRow] = useState(1);
+  const [maxPageItems, setMaxPageItems] = useState(5);
 
   useEffect(() => {
     const updateColumns = () => {
       if (window.matchMedia("(min-width: 1024px)").matches) {
         setColumnsPerRow(3);
+         setMaxPageItems(9);
         return;
       }
 
       if (window.matchMedia("(min-width: 640px)").matches) {
         setColumnsPerRow(2);
+        setMaxPageItems(7);
         return;
       }
 
       setColumnsPerRow(1);
+      setMaxPageItems(5);
     };
 
     updateColumns();
@@ -63,6 +68,16 @@ export function PublicationsSection({
     setRowsPerPage(Number(event.target.value));
     setCurrentPage(1);
   }
+
+  const paginationItems = useMemo(
+  () =>
+    getPaginationItems(
+      totalPages,
+      currentPage,
+      maxPageItems,
+    ),
+  [totalPages, currentPage, maxPageItems],
+);
 
   return (
     <section
@@ -130,28 +145,46 @@ export function PublicationsSection({
             ← Anterior
           </button>
 
-          <div className="flex items-center gap-1">
-            {Array.from(
-              { length: totalPages },
-              (_, index) => index + 1,
-            ).map((page) => (
-              <button
-                key={page}
-                type="button"
-                onClick={() => setCurrentPage(page)}
-                aria-current={
-                  currentPage === page ? "page" : undefined
+         <div
+            className="
+                flex items-center justify-center gap-1
+                max-w-[236px]
+                sm:max-w-[332px]
+                lg:max-w-[428px]
+            "
+            >
+            {paginationItems.map((item) => {
+                if (typeof item !== "number") {
+                return (
+                    <span
+                    key={item}
+                    aria-hidden="true"
+                    className="flex h-11 min-w-11 items-center justify-center text-sm text-[#6F745E]"
+                    >
+                    …
+                    </span>
+                );
                 }
-                className={
-                  currentPage === page
-                    ? "flex h-11 min-w-11 items-center justify-center rounded-full bg-[#49633B] px-3 text-sm font-semibold text-white"
-                    : "flex h-11 min-w-11 items-center justify-center rounded-full border border-[#D8D0BE] px-3 text-sm font-semibold text-[#6F745E] transition hover:bg-[#EEF0DC]/60"
-                }
-              >
-                {page}
-              </button>
-            ))}
-          </div>
+
+                return (
+                <button
+                    key={item}
+                    type="button"
+                    onClick={() => setCurrentPage(item)}
+                    aria-current={
+                    currentPage === item ? "page" : undefined
+                    }
+                    className={
+                    currentPage === item
+                        ? "flex h-11 min-w-11 items-center justify-center rounded-full bg-[#49633B] px-3 text-sm font-semibold text-white"
+                        : "flex h-11 min-w-11 items-center justify-center rounded-full border border-[#D8D0BE] px-3 text-sm font-semibold text-[#6F745E] transition hover:bg-[#EEF0DC]/60"
+                    }
+                >
+                    {item}
+                </button>
+                );
+            })}
+            </div>
 
           <button
             type="button"
