@@ -22,7 +22,7 @@ export default function Home() {
     : "/images/publicaciones/noticiadeldia/iconnoticia.png";
 
      const LinkSrc = existeNoticia
-    ? "https://www.nature.com/articles/s43856-026-01758-5"
+    ? "https://www.nature.com/articles/s41467-026-77790-9"
     : "/images/publicaciones/noticiadeldia/empty.png";
 
   return (
@@ -99,6 +99,24 @@ export default function Home() {
           </Link>
         </div>
         </div>
+      </section>
+      <section
+        id="recetas"
+        aria-labelledby="recetas-title"
+        className="site-container border-t border-line py-12 sm:py-16"
+      >
+         <div className="flex w-full  justify-center">
+            <div className="flex  w-4xs flex-col items-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-5 py-4 text-center shadow-sm">
+              <a
+                href="/recetas"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#49633B] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#354B2B] sm:w-auto"
+              >
+                <span>Recetas</span>
+              </a>
+            </div>
+          </div>
       </section>
       <section
         id="publicaciones"
