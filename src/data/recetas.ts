@@ -6,6 +6,7 @@ export type Receta = {
   summary: string;
   image?: {
     src: string;
+    previewsrc?:string;
     alt: string;
     width: number;
     height: number;
@@ -67,6 +68,21 @@ export const recetas: readonly Receta[] = [
     summary:"",
      image: {
       src: "/images/recetas/receta5.png",
+      alt: "",
+      width: 800,
+      height: 800,
+    },
+    content: [],
+  },
+   {
+    ratiox:15.5,
+    ratioy:27.5,
+    slug: "receta6",
+    title: "",
+    summary:"",
+     image: {
+      src: "/images/recetas/receta6.png",
+      previewsrc: "/images/recetas/previews/receta6.png",
       alt: "",
       width: 800,
       height: 800,

@@ -33,7 +33,7 @@ export function RecetaCard({ receta }: { receta: Receta }) {
             className="relative block h-auto w-full rounded-xl"
         >
           <Image
-            src={receta.image.src}
+            src={receta.image.previewsrc??receta.image.src}
             alt={receta.image.alt}
             fill
             className="object-cover"
