@@ -14,22 +14,7 @@ export function RecetaCard({ receta }: { receta: Receta }) {
   "
 >
     <article className="flex min-w-0 flex-col overflow-hidden rounded-2xl border border-line bg-surface">
-      {receta.image && (
-        <div
-          style={{
-            aspectRatio: `${receta.ratiox} / ${receta.ratioy}`,
-          }}
-          className="relative bg-sand"
-        >
-          <Image
-            src={receta.image.src}
-            alt={receta.image.alt}
-            fill
-            className="object-cover"
-          />
-        </div>
-      )}
-
+     
       <div className="w-full p-6">
         <Link
           href={`/recetas/${receta.slug}`}
@@ -40,6 +25,22 @@ export function RecetaCard({ receta }: { receta: Receta }) {
             <span className="sr-only">: {receta.title}</span>
             <span aria-hidden="true"> →</span>
           </div>
+      {receta.image && (
+        <div
+          style={{
+            aspectRatio: `${receta.ratiox} / ${receta.ratioy}`,
+          }}
+            className="relative block h-auto w-full rounded-xl"
+        >
+          <Image
+            src={receta.image.src}
+            alt={receta.image.alt}
+            fill
+            className="object-cover"
+          />
+        </div>
+      )}
+
           {receta.videoUrl && (
             <video
               src={receta.videoUrl}

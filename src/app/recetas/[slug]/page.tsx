@@ -86,8 +86,7 @@ export default async function RecetaPage({ params }: RecetaPageProps) {
               alt={receta.image.alt}
               width={receta.image.width}
               height={receta.image.height}
-              sizes="(min-width: 800px) 768px, calc(100vw - 32px)"
-              className="mt-8 h-auto w-full rounded-2xl"
+              className="mt-8 h-full w-full rounded-2xl"
             />
           )}
 

@@ -59,6 +59,20 @@ export const recetas: readonly Receta[] = [
     videoUrl: "/images/recetas/receta4.mp4",
     content: [],
   },
+   {
+    ratiox:15.5,
+    ratioy:27.5,
+    slug: "receta5",
+    title: "",
+    summary:"",
+     image: {
+      src: "/images/recetas/receta5.png",
+      alt: "",
+      width: 800,
+      height: 800,
+    },
+    content: [],
+  }
  /*{
     ratiox:8,
     ratioy:6,
