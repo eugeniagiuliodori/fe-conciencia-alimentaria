@@ -22,7 +22,7 @@ export default function Home() {
     : "/images/publicaciones/noticiadeldia/iconnoticia.png";
 
      const NoticiaLinkSrc = existeNoticia
-    ? "https://www.sciencedirect.com/science/article/pii/S000291652600239X"
+    ? "https://www.nature.com/articles/s43856-026-01793-2"
     : "/images/publicaciones/noticiadeldia/empty.png";
 
     const menuSugeridoPath = path.join(
