@@ -25,7 +25,7 @@ export function SiteFooter() {
       </div>
     </div>
   </div>
-  { envBoolean(process.env.SHOW_OWNER_BUTTON) &&  <OwnerAccess /> }
+  { <OwnerAccess /> }
 </footer>
   );
 }
