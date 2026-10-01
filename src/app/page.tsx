@@ -156,7 +156,7 @@ export default function Home() {
       >
          <div className="flex w-full  justify-center ">
             <div className="flex w-full max-w-md md:max-w-[30rem] lg:max-w:lg justify-between ">
-            <div className="flex  w-4xs flex-col items-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-5 py-4 text-center shadow-sm">
+            <div className="flex  w-4xs flex-col items-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-2 py-4 text-center shadow-sm">
               <a
                 href="/recetas"
                 target="_blank"
@@ -166,7 +166,7 @@ export default function Home() {
                 <span>Recetas</span>
               </a>
             </div>
-            <div className="flex  w-4xs flex-col items-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-5 py-4 text-center shadow-sm">
+            <div className="flex  w-4xs flex-col items-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-2 py-4 text-center shadow-sm">
               <a
                 href="/historial_noticias"
                 target="_blank"
