@@ -155,7 +155,7 @@ export default function Home() {
         className="site-container border-t border-line py-12 sm:py-16 "
       >
          <div className="flex w-full  justify-center ">
-            <div className="flex w-full max-w-sm md:max-w-md lg:max-w:lg justify-between ">
+            <div className="flex w-full max-w-md md:max-w-[30rem] lg:max-w:lg justify-between ">
             <div className="flex  w-4xs flex-col items-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-5 py-4 text-center shadow-sm">
               <a
                 href="/recetas"

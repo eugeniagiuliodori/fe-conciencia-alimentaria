@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test:fichas": "node --test scripts/fichas/*.test.mjs",
     "report:visits": "node --env-file=.env.local scripts/generate-visit-report.mjs"
   },
   "dependencies": {
@@ -21,6 +22,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cheerio": "1.2.0",
     "eslint": "^9",
     "eslint-config-next": "16.3.5",
     "tailwindcss": "^4",
