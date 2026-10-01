@@ -1,5 +1,6 @@
 import { recetas } from "@/data/recetas";
 import { RecetaCard } from "@/components/RecetaCard";
+import Link from "next/link";
 
 export default async function RecetasPage() {
   
@@ -7,7 +8,15 @@ export default async function RecetasPage() {
     <div className="site-container py-8 sm:py-12 w-[80%]">
       <div className="mx-auto max-w-full">
 
-         <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-8">
+         <div className="mb-8 block-flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-8">
+                    <div className="block">
+                    <Link
+                      href="/#"
+                    className="text-link inline-flex min-h-11 items-center gap-3 rounded-sm text-sm"
+                    >
+                      <span aria-hidden="true">←</span> Volver a la página principal
+                    </Link>
+                    </div>
                    <div className="w-full text-center">
                      <h2
                        id="publications-title"
@@ -18,7 +27,7 @@ export default async function RecetasPage() {
                    </div>
                  
                  </div>
-                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
                    {recetas.map((receta) => (
                      <RecetaCard key={receta.slug} receta={receta} />
                    ))}

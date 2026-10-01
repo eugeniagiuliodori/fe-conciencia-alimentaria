@@ -30,12 +30,14 @@ export function RecetaCard({ receta }: { receta: Receta }) {
           style={{
             aspectRatio: `${receta.ratiox} / ${receta.ratioy}`,
           }}
-            className="relative block h-auto w-full rounded-xl"
+            className="relative block h-auto w-md rounded-xl"
         >
           <Image
             src={receta.image.previewsrc??receta.image.src}
             alt={receta.image.alt}
             fill
+            loading="lazy"
+            sizes="auto, (max-width: 28rem) 100vw, 28rem"
             className="object-cover"
           />
         </div>
