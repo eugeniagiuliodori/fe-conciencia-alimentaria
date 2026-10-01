@@ -37,7 +37,7 @@ export function RecetaCard({ receta }: { receta: Receta }) {
             alt={receta.image.alt}
             fill
             loading="lazy"
-            sizes="auto, (max-width: 28rem) 100vw, 28rem"
+            sizes="auto, (max-width: 24rem) 100vw, 24rem"
             className="object-cover"
           />
         </div>
