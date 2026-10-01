@@ -7,7 +7,7 @@ export function RecetaCard({ receta }: { receta: Receta }) {
     
    <div
   className="
-    w-full max-w-md
+     w-full min-w-0 max-w-md
     sm:only:col-span-2
     lg:only:col-span-3
     only:justify-self-center
