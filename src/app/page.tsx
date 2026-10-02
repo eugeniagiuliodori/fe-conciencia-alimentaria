@@ -185,7 +185,7 @@ export default function Home() {
                 <span>Resúmen mensual ● noticias</span>
               </a>
             </div>
-            <div className="text-xl py-6">🌿</div>
+            <div className="text-xl py-6 w-full md:w-fit text-center">🌿</div>
             </div>
           </div>
       </section>
