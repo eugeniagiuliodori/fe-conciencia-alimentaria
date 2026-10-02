@@ -1,0 +1,199 @@
+/* 1. PALETA DEL PANEL. Podés conectar estos valores con los tokens de tu sitio. */
+.ca-editor {
+  --ca-paper: #fffdf7;
+  --ca-surface: #f7f5eb;
+  --ca-soft: #eef0dc;
+  --ca-primary: #49633b;
+  --ca-primary-hover: #354b2b;
+  --ca-text: #303d2d;
+  --ca-muted: #59634f;
+  --ca-line: #d8d0be;
+
+  width: 100%;
+  min-width: 0;
+  color: var(--ca-text);
+  font-family: inherit;
+  background: var(--ca-paper);
+  border: 1px solid var(--ca-line);
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 28px rgb(53 75 43 / 6%);
+}
+
+.ca-editor, .ca-editor * { box-sizing: border-box; }
+
+.ca-editor__header { padding: 1.75rem 1.75rem 1.25rem; }
+.ca-editor__header h2 {
+  margin: 0 0 0.6rem;
+  color: var(--ca-primary);
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 650;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+.ca-editor__header > p:last-child {
+  margin: 0;
+  color: var(--ca-muted);
+  line-height: 1.6;
+}
+.ca-editor__eyebrow {
+  margin: 0 0 0.65rem;
+  color: var(--ca-muted);
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ca-editor__name {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0 1.75rem 1.25rem;
+}
+.ca-editor__name label { font-size: 0.875rem; font-weight: 600; }
+.ca-editor__name input {
+  width: 100%;
+  min-width: 0;
+  min-height: 2.75rem;
+  padding: 0.65rem 0.85rem;
+  color: var(--ca-text);
+  font: inherit;
+  font-size: 1rem;
+  background: white;
+  border: 1px solid var(--ca-line);
+  border-radius: 0.6rem;
+}
+.ca-editor__mount { min-width: 0; }
+.ca-editor__loading { padding: 0 1.75rem; color: var(--ca-muted); }
+
+/* 2. TEMA DE SUNEDITOR 3. También alcanza sus menús y cuadros de diálogo. */
+.sun-editor.se-theme-conciencia,
+.sun-editor-editable.se-theme-conciencia {
+  --se-caret-color: var(--ca-primary, #49633b);
+  --se-placeholder-color: #697160;
+  --se-main-font-family: inherit;
+  --se-content-font-family: inherit;
+  --se-edit-font-size: 16px;
+  --se-edit-line-height: 1.7;
+  --se-edit-inner-padding: 1.75rem;
+  --se-border-radius: 6px;
+  --se-main-color: var(--ca-primary, #49633b);
+  --se-main-font-color: var(--ca-text, #303d2d);
+  --se-main-color-lighter: var(--ca-muted, #59634f);
+  --se-main-background-color: var(--ca-soft, #eef0dc);
+  --se-main-out-color: var(--ca-paper, #fffdf7);
+  --se-main-border-color: var(--ca-line, #d8d0be);
+  --se-main-divider-color: var(--ca-line, #d8d0be);
+  --se-main-outline-color: var(--ca-primary, #49633b);
+  --se-edit-font-color: var(--ca-text, #303d2d);
+  --se-edit-background-color: var(--ca-paper, #fffdf7);
+  --se-edit-border-table: #b5bcab;
+  --se-edit-anchor: var(--ca-primary, #49633b);
+  --se-edit-active: var(--ca-primary, #49633b);
+  --se-edit-hover: var(--ca-primary-hover, #354b2b);
+  --se-edit-outline: var(--ca-primary, #49633b);
+  --se-hover-color: #dde5cf;
+  --se-hover-dark-color: #49633b;
+  --se-hover-dark2-color: #354b2b;
+  --se-hover-dark3-color: #283c20;
+  --se-hover-light-color: #c4d3b2;
+  --se-hover-light2-color: #d9e3ce;
+  --se-hover-light3-color: #e8eedf;
+  --se-active-color: #49633b;
+  --se-active-hover-color: #354b2b;
+  --se-active-dark-color: #354b2b;
+  --se-active-dark2-color: #283c20;
+  --se-active-dark3-color: #354b2b;
+  --se-active-dark4-color: #283c20;
+  --se-active-dark5-color: #1e3018;
+  --se-active-light-color: #dce6d1;
+  --se-active-light2-color: #cfdcc0;
+  --se-active-light3-color: #bfd0ad;
+  --se-active-light4-color: #adbf98;
+  --se-active-light5-color: #91a57a;
+  --se-active-light6-color: #798f63;
+  --se-modal-background-color: var(--ca-paper, #fffdf7);
+  --se-modal-color: var(--ca-text, #303d2d);
+  --se-modal-border-color: var(--ca-line, #d8d0be);
+  --se-modal-anchor-color: var(--ca-primary, #49633b);
+  --se-dropdown-font-color: var(--ca-text, #303d2d);
+  --se-controller-background-color: var(--ca-paper, #fffdf7);
+  --se-controller-border-color: var(--ca-line, #d8d0be);
+  --se-controller-color: var(--ca-primary, #49633b);
+  --se-input-btn-border-color: var(--ca-line, #d8d0be);
+  --se-table-picker-highlight-color: #dce6d1;
+  --se-table-picker-highlight-border-color: #49633b;
+  --se-loading-color: var(--ca-primary, #49633b);
+}
+
+/* 3. AJUSTES DE ESTRUCTURA: limitados a este componente. */
+.ca-editor .sun-editor { border-inline: 0; border-color: var(--ca-line); }
+.ca-editor .sun-editor .se-toolbar { padding: 0.4rem; }
+.ca-editor .sun-editor .se-btn { min-height: 2.5rem; }
+.ca-editor .sun-editor .sun-editor-editable { overflow-wrap: anywhere; }
+.ca-editor .sun-editor .sun-editor-editable h2,
+.ca-editor .sun-editor .sun-editor-editable h3 { color: var(--ca-primary); }
+.ca-editor .sun-editor .se-statusbar { background: var(--ca-surface); }
+
+/* 4. ACCIONES Y MENSAJES. */
+.ca-editor__footer { padding: 1.25rem 1.75rem; }
+.ca-editor__actions { display: flex; flex-wrap: wrap; gap: 0.65rem; }
+.ca-editor__button {
+  min-height: 2.75rem;
+  padding: 0.65rem 1rem;
+  color: var(--ca-primary);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  background: var(--ca-paper);
+  border: 1px solid var(--ca-line);
+  border-radius: 0.65rem;
+  transition: background-color 140ms ease, border-color 140ms ease;
+}
+.ca-editor__button:hover:not(:disabled) {
+  background: var(--ca-soft);
+  border-color: var(--ca-primary);
+}
+.ca-editor__button--primary { background: var(--ca-primary); color: white; border-color: var(--ca-primary); }
+.ca-editor__button--primary:hover:not(:disabled) { background: var(--ca-primary-hover); }
+.ca-editor__button:disabled, .ca-editor__name input:disabled { opacity: 0.55; cursor: not-allowed; }
+.ca-editor__button:focus-visible,
+.ca-editor__name input:focus-visible,
+.ca-editor .sun-editor button:focus-visible,
+.ca-editor .sun-editor-editable:focus-visible {
+  outline: 2px solid var(--ca-primary);
+  outline-offset: 3px;
+}
+.ca-editor__help {
+  max-width: 68ch;
+  margin: 1rem 0 0;
+  color: var(--ca-muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+.ca-editor__status { min-height: 1.5em; margin: 0.65rem 0 0; font-size: 0.85rem; line-height: 1.5; }
+.ca-editor__status[data-kind="success"] { color: #365029; }
+.ca-editor__status[data-kind="error"] { color: #963e2e; }
+
+/* 5. PANTALLAS PEQUEÑAS. La barra de SunEditor distribuye sus grupos en filas. */
+@media (max-width: 560px) {
+  .ca-editor__header { padding: 1.25rem 1rem 1rem; }
+  .ca-editor__name { padding: 0 1rem 1rem; }
+  .ca-editor__footer { padding: 1rem; }
+  .ca-editor__actions { display: grid; grid-template-columns: 1fr; }
+  .ca-editor .sun-editor,
+  .ca-editor .sun-editor-editable { --se-edit-inner-padding: 1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ca-editor__button { transition: none; }
+}
+
+/* El editor imprime el contenido en un documento separado. */
+.ca-print-heading {
+  padding-bottom: 0.8rem;
+  margin-bottom: 1.5rem;
+  font: 600 12px/1.5 system-ui, sans-serif;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid #aaa;
+}

@@ -5,7 +5,6 @@ import fs from "fs";
 import path from "path";
 import { PublicationsSection } from "@/components/PublicationsSection";
 import { publications } from "@/data/publications";
-import {HistorialNoticiasSection} from "@/components/HistorialNoticiasSection";
 
 export default function Home() {
 
@@ -23,7 +22,7 @@ export default function Home() {
     : "/images/publicaciones/noticiadeldia/iconnoticia.png";
 
      const NoticiaLinkSrc = existeNoticia
-    ? "https://jn.nutrition.org/article/S0022-3166%2826%2900471-2/fulltext"
+    ? "https://www.nature.com/articles/s44528-026-00033-2"
     : "/images/publicaciones/noticiadeldia/empty.png";
 
     const menuSugeridoPath = path.join(
@@ -154,28 +153,39 @@ export default function Home() {
         aria-labelledby="recetas-title"
         className="site-container border-t border-line py-12 sm:py-16 "
       >
-         <div className="flex w-full  justify-center ">
-            <div className="flex w-full max-w-md md:max-w-[30rem] lg:max-w:lg justify-between ">
-            <div className="flex  w-4xs flex-col items-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-2 py-4 text-center shadow-sm">
+         <div className="flex w-full h-[4rem] justify-center ">
+            <div className="flex w-full max-w:lg justify-between ">
+            <div className="text-xl py-6">🌿</div>
+            <div className="flex  w-4xs flex-col items-center justify-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-2 py-2 text-center shadow-sm">
               <a
                 href="/recetas"
-                target="_blank"
                 rel="noopener noreferrer"
-                className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#49633B] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#354B2B] sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#49633B] px-2 py-2 text-sm font-semibold text-white transition hover:bg-[#354B2B] sm:w-auto"
               >
                 <span>Recetas</span>
               </a>
             </div>
-            <div className="flex  w-4xs flex-col items-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-2 py-4 text-center shadow-sm">
+            <div className="text-xl py-6">🌿</div>
+            <div className="flex  w-4xs flex-col items-center justify-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-2 py-2 text-center shadow-sm">
               <a
-                href="/historial_noticias"
-                target="_blank"
+                href="/pizarra"
                 rel="noopener noreferrer"
-                className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#49633B] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#354B2B] sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#49633B] px-2 py-2 text-sm font-semibold text-white transition hover:bg-[#354B2B] sm:w-auto"
               >
-                <span>Resúmen mensual - noticias -</span>
+                <span> Pizarra </span>
               </a>
             </div>
+            <div className="text-xl py-6">🌿</div>
+            <div className="flex  w-4xs flex-col items-center justify-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-2 py-2 text-center shadow-sm">
+              <a
+                href="/historial_noticias"
+                rel="noopener noreferrer"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#49633B] px-2 py-2 text-sm font-semibold text-white transition hover:bg-[#354B2B] sm:w-auto"
+              >
+                <span>Resúmen mensual ● noticias</span>
+              </a>
+            </div>
+            <div className="text-xl py-6">🌿</div>
             </div>
           </div>
       </section>
