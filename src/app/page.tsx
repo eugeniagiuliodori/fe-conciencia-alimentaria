@@ -154,8 +154,8 @@ export default function Home() {
         className="site-container border-t border-line py-12 sm:py-16 "
       >
          <div className="flex w-full h-[4rem] justify-center ">
-            <div className="flex flex-col md:flex-row w-full max-w:lg justify-between ">
-            <div className="text-xl py-6">🌿</div>
+            <div className="flex flex-col md:flex-row w-full md:max-w:lg justify-between ">
+            <div className="text-xl py-6 w-full md:w-fit text-center">🌿</div>
             <div className="flex  w-4xs flex-col items-center justify-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-2 py-2 text-center shadow-sm">
               <a
                 href="/recetas"
@@ -165,7 +165,7 @@ export default function Home() {
                 <span>Recetas</span>
               </a>
             </div>
-            <div className="text-xl py-6">🌿</div>
+            <div className="text-xl py-6 w-full md:w-fit text-center">🌿</div>
             <div className="flex  w-4xs flex-col items-center justify-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-2 py-2 text-center shadow-sm">
               <a
                 href="/pizarra"
@@ -175,7 +175,7 @@ export default function Home() {
                 <span> Pizarra </span>
               </a>
             </div>
-            <div className="text-xl py-6">🌿</div>
+            <div className="text-xl py-6 w-full md:w-fit text-center">🌿</div>
             <div className="flex  w-4xs flex-col items-center justify-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-2 py-2 text-center shadow-sm">
               <a
                 href="/historial_noticias"
