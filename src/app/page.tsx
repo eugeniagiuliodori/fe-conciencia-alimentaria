@@ -176,7 +176,7 @@ export default function Home() {
               </a>
             </div>
             <div className="text-xl py-6 w-full md:w-fit text-center">🌿</div>
-            <div className="flex w-50 md:w-70 flex-col items-center justify-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-2 py-2 text-center shadow-sm">
+            <div className="flex w-60 md:w-70 flex-col items-center justify-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-2 py-2 text-center shadow-sm">
               <a
                 href="/historial_noticias"
                 rel="noopener noreferrer"
