@@ -128,6 +128,53 @@ El presupuesto de contexto usa bytes UTF-8 como límite conservador frente al l�
 
 Una generación correcta queda **siempre `CREADO`**. `estructura_json_ok`, `identidad_ok` y `texto_completo_ok` registran las comprobaciones efectivas. La identidad se verifica contra los argumentos recibidos; no se afirma contrastación con TSV. `trazabilidad_de_hallazgos_ok`, `coherencia_editorial_ok` y `apta_para_sintesis` permanecen en `false`, con `validada_en: null`: comprobar que existe una sección no prueba que sustente una afirmación. Tampoco se certifican automáticamente cifras, asociación/causalidad ni ausencia de contradicciones. Las observaciones explicitan la revisión pendiente.
 
+## Procesador previo a validación editorial
+
+`scripts/fichas/procesar-ficha.mjs` encapsula al generador existente. Es otro ejecutable **local, manual y optativo**, anterior a la revisión editorial. Recibe fecha y URL directamente; no lee `public/fuentes.tsv`. Utiliza la misma configuración y ruta privada `data/fichas/YYYY-MM/ficha_YYYY-MM-DD_<sha256>.json` (o `FICHAS_DIR`), sin introducir dependencias.
+
+Sin una clave conocida, omitir `--key`:
+
+```bash
+node --env-file=.env.local scripts/fichas/procesar-ficha.mjs \
+  --fecha 2026-10-02 \
+  --url 'https://ejemplo.org/articulo'
+```
+
+Si el invocante ya conoce la clave:
+
+```bash
+node --env-file=.env.local scripts/fichas/procesar-ficha.mjs \
+  --key '<SHA256_HEX_64>' \
+  --fecha 2026-10-02 \
+  --url 'https://ejemplo.org/articulo'
+```
+
+La URL y el marcador de clave son ilustrativos: reemplazarlos por los valores correspondientes. La clave suministrada debe contener exactamente 64 hexadecimales; admite mayúsculas y minúsculas, comparadas con la identidad canónica calculada por `createIdentity`. No se normaliza la URL más allá de `trim()`. La omisión representa `idempotencyKey: null`; la cadena literal `"null"` es inválida. Fecha, URL y coincidencia de clave se verifican **antes de crear directorios, leer fichas o invocar al generador**. La ruta siempre se deriva de esa identidad y de la configuración, nunca de una ruta suministrada como clave.
+
+`GEMINI_API_KEY` y `GEMINI_MODEL` solo son necesarias si corresponde generar. Para reutilizar una ficha consistente no se necesitan credenciales ni `--env-file`; se puede ejecutar `node scripts/fichas/procesar-ficha.mjs` con los mismos argumentos de fecha/URL. Node no carga `.env.local` por sí mismo. Desde otro directorio, usar rutas absolutas al ejecutable y, cuando corresponda, al archivo de entorno.
+
+| Archivo vigente | Comportamiento |
+| --- | --- |
+| Ausente | Invoca `generateFicha({ date, url, force: false })` una vez y comprueba el archivo persistido. Éxito: `CREADO`, `error_actual: null`. |
+| `ERROR` válido | Reutiliza la misma API sin borrar el registro previo. El generador administra reintento, intentos, revisiones e historial; éxito en `CREADO`, nuevo fallo en `ERROR`. |
+| `CREADO` válido | Reutiliza sin invocar al generador, incluso con revisión editorial pendiente; conserva exactamente `CREADO` y sus validaciones. |
+| `PENDIENTE` o `INCLUIDO` válidos | Reutiliza sin generación ni cambios en estado, validaciones, auditoría o inclusión mensual. |
+| JSON corrupto, identidad/estado inconsistente o fallo de lectura | Informa el problema, sin invocar al generador, reemplazar la ficha ni escribir un diagnóstico adicional. |
+
+La comprobación usa `readExisting` y `validateFicha`: verifica estructura, identidad e invariantes registrados, **no realiza ni certifica la validación editorial**. Tampoco vuelve a leer el documento científico, contrasta el TSV activo ni consulta un resumen mensual para acreditar una inclusión ya registrada. `PENDIENTE` e `INCLUIDO` conservan su significado relativo a la síntesis mensual. Este procesador no cambia `estado`, no escribe `validacion`, no genera resúmenes ni admite `--force`.
+
+Después de invocar al generador, vuelve a leer y validar su archivo efectivo; no alcanza con que la llamada retorne. Rechaza resultados ausentes, estados discordantes o éxitos sin persistencia. Si el generador no puede guardar el diagnóstico, se informa ese fallo sin afirmar que quedó un `ERROR` persistido. Un archivo que se corrompa entre la comprobación inicial y la lectura del generador conserva las garantías de este último: ficha original intacta y diagnóstico separado en `historial/`, cuya persistencia también se verifica.
+
+El procesador no crea ni retira locks. La comprobación definitiva previa a generar sigue dentro del `.lock` del generador. Si otra ejecución termina entre la lectura inicial y la invocación, se admite el resultado `skipped` validado. Un bloqueo existente impide iniciar otra generación y se informa como fallo; no hay espera, reintento automático del lock ni eliminación de bloqueos activos. La reutilización es una lectura del registro vigente, sin adquirir un bloqueo adicional.
+
+La CLI informa ficha nueva, ERROR reintentado, ficha reutilizada o generación/reintento fallido. Devuelve `0` en éxito, reutilización o ayuda; `2` por argumentos inválidos; `1` por otros fallos. Ayuda sin efectos:
+
+```bash
+node scripts/fichas/procesar-ficha.mjs --help
+```
+
+El módulo también se importa sin efectos y exporta `processFicha({ date, url, idempotencyKey = null })`; `date` corresponde a `--fecha`. Devuelve `status` (`created`, `skipped` o `error`), `path`, `record` leído del disco y `retried`; ante un fallo persistido incluye además `error` y `preservedPath`. Estos son datos de retorno de la función, **no campos añadidos al JSON normativo**. Los fallos de entrada, lectura, bloqueo o comprobación posterior lanzan un error que la CLI traduce al código de salida correspondiente. El segundo argumento permite inyectar `env`, `runGenerator` y `read` para pruebas; la ejecución manual usa las implementaciones existentes.
+
 ## Pruebas e integración futura
 
 ```bash
@@ -137,6 +184,8 @@ npm run lint -- scripts/fichas
 
 Las pruebas usan `node:test`, documentos inequívocamente artificiales y dobles controlados de red, IA y extracción PDF. No solicitan servicios externos ni leen credenciales reales. Cubren el vector SHA-256 calculado independientemente con Python, calendario/URL, contrato completo, estados, omisiones, reintentos, revisiones, `--force`, `INCLUIDO`, recuperación HTML/XML/PDF, abstracts/bloqueos/truncamientos, fragmentación e integración, errores de disco, secretos y rutas fuera del directorio de trabajo.
 
-Los mocks demuestran comportamiento del software; **no demuestran calidad científica real, acceso universal a editores ni una generación integral real con Gemini**. El script no tiene efectos al importarse. Un futuro lector local podrá importar `generateFicha({ date, url, force })` desde `scripts/fichas/generar-ficha.mjs`, o ejecutar su CLI, sin duplicar la lógica científica. Las dependencias inyectables se usan para pruebas; la ejecución manual usa el recuperador y cliente Gemini reales.
+Las pruebas del procesador se incorporan mediante el patrón existente `scripts/fichas/*.test.mjs`, sin ejecutar su CLI como tarea automática de generación. Usan el generador real con recuperación e IA artificiales, almacenamiento temporal y fallos controlados. Cubren claves omitidas/suministradas, rechazo de entradas antes de efectos, todos los estados normativos, conservación byte a byte de fichas reutilizadas, trazabilidad de reintentos, verificación posterior de persistencia, carreras y locks activos, secretos, importación sin efectos y CLI desde otro directorio. No crean una síntesis mensual real ni atribuyen revisión editorial a los fixtures.
+
+Los mocks demuestran comportamiento del software; **no demuestran calidad científica real, acceso universal a editores ni una generación integral real con Gemini**. Ambos ejecutables se importan sin efectos. El procesador importa `generateFicha({ date, url, force })` desde `scripts/fichas/generar-ficha.mjs`, sin duplicar la lógica científica. Las dependencias inyectables se usan para pruebas; la ejecución manual que necesite generar usa el recuperador y cliente Gemini reales.
 
 Esta iteración no añade lector TSV, sincronizador, resumen mensual, cron, endpoint, interfaz React, almacenamiento remoto ni despliegue.

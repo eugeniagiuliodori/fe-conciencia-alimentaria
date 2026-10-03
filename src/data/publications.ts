@@ -107,6 +107,20 @@ export const publications: readonly Publication[] = [
     },
     content: [],
   },
+ {
+    ratiox:10,
+    ratioy:15,
+    slug: "pub7",
+    title: "",
+    summary:"",
+    image: {
+      src: "/images/publicaciones/pubhome7.png",
+      alt: "",
+      width: 800,
+      height: 800,
+    },
+    content: [],
+  }
 ];
 
 export function getPublicationBySlug(slug: string) {
