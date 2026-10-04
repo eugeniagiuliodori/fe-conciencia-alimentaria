@@ -1,5 +1,6 @@
 import { randomUUID } from "node:crypto";
 import {
+  link,
   lstat,
   mkdir,
   open,
@@ -114,6 +115,14 @@ export async function atomicWrite(
   { secret, renameFile = rename } = {},
 ) {
   assertNoSecret(value, secret);
+  await atomicWriteText(path, `${JSON.stringify(value, null, 2)}\n`, {
+    secret,
+    renameFile,
+  });
+}
+
+async function atomicWriteText(path, text, { secret, renameFile = rename }) {
+  assertNoSecret(text, secret);
   assertNoSecret(path, secret);
   await privateDirectory(dirname(path));
   const temporary = join(
@@ -123,7 +132,7 @@ export async function atomicWrite(
   let handle;
   try {
     handle = await open(temporary, "wx", 0o600);
-    await handle.writeFile(`${JSON.stringify(value, null, 2)}\n`, "utf8");
+    await handle.writeFile(text, "utf8");
     await handle.sync();
     await handle.close();
     handle = null;
@@ -132,6 +141,38 @@ export async function atomicWrite(
     await handle?.close();
     await rm(temporary, { force: true });
   }
+}
+
+export async function writeCoverageText(
+  fichaPath,
+  text,
+  { timestamp = new Date().toISOString(), secret, linkFile = link } = {},
+) {
+  let milliseconds = new Date(timestamp).getTime();
+  const nextPath = () => join(
+    dirname(fichaPath),
+    `${new Date(milliseconds).toISOString().replace(/Z$/, "").replace(/[T:.]/g, "-")}.txt`,
+  );
+  let path = nextPath();
+  await atomicWriteText(path, text, {
+    secret,
+    renameFile: async (temporary) => {
+      // Publish the complete file exclusively: concurrent attempts cannot overwrite it.
+      // Increment milliseconds on collision, preserving the timestamp-only name.
+      while (true) {
+        assertNoSecret(path, secret);
+        try {
+          await linkFile(temporary, path);
+          return;
+        } catch (error) {
+          if (error.code !== "EEXIST") throw error;
+          milliseconds += 1;
+          path = nextPath();
+        }
+      }
+    },
+  });
+  return path;
 }
 
 export function historyPath(path, record, kind = "revision") {

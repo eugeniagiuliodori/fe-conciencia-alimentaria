@@ -9,6 +9,7 @@ import {
   VERSION,
 } from "./core.mjs";
 import { generateFicha } from "./generar-ficha.mjs";
+import { LAYOUT_WARNING_PREFIX } from "./retrieval.mjs";
 import { validateFicha } from "./schema.mjs";
 import { outputPath, readExisting } from "./storage.mjs";
 
@@ -31,12 +32,19 @@ FICHAS_DIR es opcional: data/fichas por defecto, relativa a la raíz o absoluta,
 siempre fuera de public/. Node no carga .env.local automáticamente: usar
 --env-file con su ruta explícita o variables exportadas en la terminal.
 Desde otro directorio, usar rutas absolutas al módulo y al archivo de entorno.
+Si el editor pide verificación, el generador abre Chrome temporal: completala
+y presioná Enter en esta terminal. Requiere escritorio y Chrome instalado;
+FICHAS_BROWSER_PATH admite la ruta absoluta a Chrome/Chromium.
+Escribir cancelar o Ctrl+C interrumpe ese paso y conserva un ERROR reintentable.
 
 Ausente o ERROR: invoca generar-ficha sin force; éxito en CREADO.
 CREADO, PENDIENTE o INCLUIDO consistentes: reutiliza sin cambios ni IA.
 No realiza validación editorial, promociones ni síntesis mensual.
+Muestra los avisos de interpretación ambigua del diseño guardados por el generador.
 No lee fuentes.tsv ni se ejecuta desde Next.js. No admite --force.
 Salida: data/fichas/YYYY-MM/ficha_YYYY-MM-DD_<sha256>.json.
+Cada intento del generador guarda junto al JSON el TXT del cuerpo evaluado,
+YYYY-MM-DD-HH-mm-ss-SSS.txt (UTC), también si falla; sin texto evaluable queda vacío.
 Códigos: 0 éxito/reutilización/ayuda, 2 entrada inválida, 1 otros fallos.
 Detalles: docs/GENERADOR_FICHAS.md
 `;
@@ -195,6 +203,7 @@ export async function processFicha(
     path: result.path,
     record,
     retried: previous?.estado === "ERROR" && result.status !== "skipped",
+    ...(result.coverageTextPath ? { coverageTextPath: result.coverageTextPath } : {}),
     ...(result.status === "error"
       ? { error: safeError(result.error), preservedPath: result.preservedPath }
       : {}),
@@ -227,7 +236,11 @@ export async function main(
           : `${result.retried ? "ERROR reintentado" : "Ficha nueva"}: CREADO; pendiente de revisión editorial`;
       message = `${action}: ${result.path}`;
     }
+    if (result.coverageTextPath)
+      message += `\nTXT del cuerpo evaluado: ${result.coverageTextPath}`;
     assertNoSecret(message, env.GEMINI_API_KEY);
+    for (const observation of result.record.validacion.observaciones)
+      if (observation.startsWith(LAYOUT_WARNING_PREFIX)) stderr(observation);
     if (result.status === "error") {
       stderr(message);
       return 1;

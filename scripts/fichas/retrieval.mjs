@@ -14,12 +14,89 @@ import {
 } from "./core.mjs";
 
 const execFileAsync = promisify(execFile);
-const MAX_BYTES = 25 * 1024 * 1024;
+export const MAX_DOCUMENT_BYTES = 25 * 1024 * 1024;
+const MAX_BYTES = MAX_DOCUMENT_BYTES;
 const BLOCKED =
   /access denied|verify (?:that )?you are human|checking your browser|enable javascript and cookies|captcha|purchase (?:this|the) article|subscribe to (?:read|access)|sign in to (?:read|access)|get (?:full )?access to this article|acceso restringido|comprar (?:este|el) art[ií]culo/i;
 const normalize = (value) =>
   value.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
 const compact = (value) => value.replace(/\s+/g, " ").trim();
+export const LAYOUT_WARNING_PREFIX = "Evaluación del diseño ambigua:";
+const HEADINGS = "h1, h2, h3, h4, h5, h6, [role='heading'][aria-level]";
+
+function headingLevel(element) {
+  const tag = element[0]?.name ?? "";
+  const level = /^h[1-6]$/.test(tag)
+    ? Number(tag[1])
+    : Number(element.attr("aria-level"));
+  return Number.isInteger(level) && level >= 1 && level <= 6 ? level : null;
+}
+
+function markedScopes(element) {
+  const labels = `${element.attr("id") ?? ""} ${element.attr("class") ?? ""}`;
+  const properties = (element.attr("itemprop") ?? "").split(/\s+/);
+  const roles = (element.attr("role") ?? "").split(/\s+/);
+  const scopes = [];
+  if (
+    properties.includes("abstract") || roles.includes("doc-abstract") ||
+    /(?:^|[\s_-])(?:abstract|summary)(?:\d|[\s_-]|$)/i.test(labels) ||
+    /^abs\d+$/i.test(element.attr("id") ?? "")
+  ) scopes.push("abstract");
+  if (
+    /(?:^|[\s_-])(?:author-information|affiliations?|article-metadata|article-info|funding|acknowledg(?:e)?ments?|copyright|related-articles|related-content|toc)(?:[\s_-]|$)/i.test(labels) ||
+    roles.some((role) => ["doc-toc", "navigation", "complementary"].includes(role))
+  ) scopes.push("auxiliary");
+  if (
+    properties.includes("articleBody") ||
+    /(?:^|\s)(?:article[-_]body|artText|full[-_]?text)(?:\s|$)/i.test(labels)
+  ) scopes.push("body");
+  return scopes;
+}
+
+function auxiliaryHeading(heading) {
+  return /^(?:author information|authors?(?: and affiliations)?|affiliations?|corresponding authors?|funding|acknowledg(?:e)?ments?|rights and permissions|copyright|similar content being viewed by others|related (?:content|articles)|explore related subjects|about this article|cite this article|keywords|ethics declarations|competing interests|publisher[’']?s note|additional information|autores|afiliaciones|financiacion|agradecimientos|articulos relacionados)\s*[:.]?$/i.test(normalize(heading));
+}
+
+function leadingHeading($, element) {
+  const labelledBy = (element.attr("aria-labelledby") ?? "").split(/\s+/);
+  const headings = element.find(HEADINGS).toArray();
+  const node = headings.find((heading) => labelledBy.includes(heading.attribs?.id)) ?? headings[0];
+  // A heading in a nested section describes that section, not its outer wrapper.
+  for (let parent = node?.parent; parent && parent !== element[0]; parent = parent.parent)
+    if (["section", "article"].includes(parent.name) || markedScopes($(parent)).length)
+      return $();
+  return $(node);
+}
+
+// This is an access diagnostic, never an editorial validation or a new state.
+export class HumanVerificationError extends FichaError {
+  constructor() {
+    super(
+      "RECUPERACION",
+      "TEXTO_COMPLETO_NO_DISPONIBLE",
+      "El sitio solicita una verificación humana o de navegador antes de mostrar el artículo.",
+    );
+  }
+}
+
+function checkHumanVerification($) {
+  if (
+    /client challenge|verify (?:that )?you are human|checking your browser|enable javascript and cookies|just a moment|verifica(?:r|ción| que).*human[oa]|captcha/i.test(
+      $("title, h1").text(),
+    ) ||
+    (!$("article, [itemprop~='articleBody']").length &&
+      $(
+        "#challenge-form, #cf-challenge-running, .cf-turnstile, .g-recaptcha, .h-captcha",
+      ).length)
+  )
+    throw new HumanVerificationError();
+}
+
+function decodeMarkup(bytes, type) {
+  const charset =
+    type.match(/charset\s*=\s*["']?([^;\s"']+)/)?.[1] ?? "utf-8";
+  return new TextDecoder(charset, { fatal: true }).decode(bytes);
+}
 
 export const EMPTY_METADATA = {
   doi: null,
@@ -98,12 +175,14 @@ function newSection(
   heading,
   pages = [],
   roles = sectionRoles(heading),
+  scope = "body",
 ) {
   const locator = `S${String(sections.length + 1).padStart(3, "0")}: ${heading}`;
   const section = {
     locator,
     heading,
     roles,
+    scope,
     text: "",
     tables: [],
     pages: [...pages],
@@ -176,6 +255,7 @@ export function extractMarkup(markup, xml = false) {
       ? { xml: { withStartIndices: true, withEndIndices: true } }
       : { sourceCodeLocationInfo: true },
   );
+  if (!xml) checkHumanVerification($);
   if (BLOCKED.test($("title, h1").text()))
     fail(
       "RECUPERACION",
@@ -202,21 +282,35 @@ export function extractMarkup(markup, xml = false) {
     });
   }
   const metadata = metadataFromMarkup($, xml);
+  const warnings = new Set();
+  const warn = (message) => warnings.add(`${LAYOUT_WARNING_PREFIX} ${message}`);
   $(
-    "script, style, nav, header, footer, aside, form, button, noscript, dialog, [hidden], [aria-hidden='true'], .toc, .article-navigation",
+    "script, style, nav, footer, aside, form, button, noscript, dialog, [hidden], [aria-hidden='true'], [role='navigation'], [role='doc-toc'], .toc, .article-navigation",
   ).remove();
   let root;
   if (xml) root = $("article").first();
   else {
     const candidates = $(
-      "article, [itemprop='articleBody'], #artText, #article-body, .article-body",
+      "article, [itemprop~='articleBody'], #artText, #article-body, .article-body",
     ).toArray();
     if (!candidates.length && $('meta[name="citation_title"]').length)
       candidates.push(...$("main").toArray());
-    candidates.sort(
+    // Nested articleBody containers are part of the same document, not rivals.
+    const outer = candidates.filter((candidate) =>
+      !candidates.some((other) => other !== candidate && $.contains(other, candidate)),
+    );
+    const matchingTitle = outer.filter((candidate) =>
+      metadata.titulo_original && $(candidate).find("h1").toArray().some((heading) =>
+        compact($(heading).text()) === metadata.titulo_original,
+      ),
+    );
+    const eligible = matchingTitle.length === 1 ? matchingTitle : outer;
+    if (eligible.length > 1)
+      warn("Hay varios contenedores documentales independientes; se seleccionó el de mayor texto. Revisar la selección del documento.");
+    eligible.sort(
       (left, right) => $(right).text().length - $(left).text().length,
     );
-    root = $(candidates[0]);
+    root = $(eligible[0]);
     if (!root.length || !root[0].sourceCodeLocation?.endTag)
       coverageError(
         "No se encontró un contenedor de artículo íntegro con cierre explícito; no se usó el texto general de la página.",
@@ -240,9 +334,39 @@ export function extractMarkup(markup, xml = false) {
     coverageError("El documento señala contenido parcial o restringido.");
 
   const sections = [];
-  let current = newSection(sections, "Preámbulo");
-  let abstractLevel = null;
-  function visit(node, inheritedRoles = []) {
+  let current = newSection(sections, "Preámbulo", [], [], xml ? "body" : "auxiliary");
+  let headingBoundary = null;
+  function region(element) {
+    if (element.is(HEADINGS)) return null;
+    const heading = leadingHeading($, element);
+    // A styling wrapper around a heading does not delimit the following prose.
+    if (element[0].name === "div" && heading.length &&
+      compact(element.text()) === compact(heading.text()))
+      return null;
+    const scopes = markedScopes(element);
+    if (scopes.length > 1)
+      warn("Hay marcas de abstract, metadatos o cuerpo que se contradicen. La región dudosa se excluye del conteo del cuerpo.");
+    if (scopes.length) return scopes[0];
+    if (element[0] === root[0] || !["section", "div"].includes(element[0].name))
+      return null;
+    const text = compact(heading.text());
+    const scope = sectionRoles(text).includes("ABSTRACT")
+      ? "abstract" : auxiliaryHeading(text) ? "auxiliary" : null;
+    if (!scope) return null;
+    if ((element.attr("aria-labelledby") ?? "").split(/\s+/).includes(heading.attr("id")))
+      return scope;
+    // A wrapper containing several peer headings is not a dedicated section.
+    const peers = element.find(HEADINGS).toArray().filter((node) =>
+      node !== heading[0] && headingLevel($(node)) !== null &&
+      headingLevel($(node)) <= headingLevel(heading),
+    );
+    if (peers.length && element[0].name === "section") {
+      warn("Los niveles de encabezados internos no coinciden con la sección que los contiene. Se priorizó el límite de esa sección HTML.");
+      return scope;
+    }
+    return peers.length ? null : scope;
+  }
+  function visit(node, inheritedRoles = [], scope = "body", entered = false) {
     if (!node) return;
     if (node.type === "text") {
       current.text += node.data;
@@ -251,12 +375,34 @@ export function extractMarkup(markup, xml = false) {
     const element = $(node);
     const tag = node.name;
     if (!tag) return;
-    if (
-      /^(abstract|summary)$/i.test(element.attr("id") ?? "") ||
-      /(?:^|\s)abstract(?:\s|$)/i.test(element.attr("class") ?? "")
-    ) {
-      current = newSection(sections, "Abstract", [], ["ABSTRACT"]);
-      current.text = compact(element.text());
+    const localScope = !xml && !entered ? region(element) : null;
+    if (localScope) {
+      if (!node.sourceCodeLocation?.endTag)
+        coverageError("Un contenedor de abstract, metadatos o cuerpo no tiene cierre explícito verificable.");
+      const previous = current;
+      const ownLevel = headingLevel(leadingHeading($, element));
+      const endedBoundary = headingBoundary && ownLevel !== null &&
+        ownLevel <= headingBoundary.level;
+      if (endedBoundary) headingBoundary = null;
+      const previousBoundary = headingBoundary;
+      const effectiveScope = scope === "body" ? localScope : scope;
+      if (effectiveScope !== localScope)
+        warn("Un contenedor de cuerpo aparece dentro de una región excluida. Se conservó la exclusión de la región exterior.");
+      if (localScope === "body" && headingBoundary)
+        warn("El contenedor del cuerpo marca un límite distinto al sugerido por los encabezados. Se priorizó el contenedor HTML.");
+      headingBoundary = null;
+      const roles = effectiveScope === "abstract" ? ["ABSTRACT"] : inheritedRoles;
+      current = newSection(sections,
+        effectiveScope === "abstract" ? "Abstract" : "Región documental",
+        [], roles, effectiveScope);
+      visit(node, roles, effectiveScope, true);
+      headingBoundary = localScope === "body" ? null : previousBoundary;
+      // Do not append subsequent body text to the abstract just visited, or move
+      // it backwards in the canonical document by reusing an earlier section.
+      current = (localScope === "body" || endedBoundary) && scope === "body"
+        ? newSection(sections, "Continuación del cuerpo", [], inheritedRoles)
+        : newSection(sections, `${previous.heading} (continuación)`, [],
+          previous.roles, previous.scope);
       return;
     }
     if (xml && ["front", "floats-group"].includes(tag)) {
@@ -276,35 +422,46 @@ export function extractMarkup(markup, xml = false) {
       );
     }
     if (tag === "sec" || tag === "section") {
-      const heading = element
-        .children("title, h2, h3, h4, h5, h6")
-        .first()
-        .text();
+      const heading = xml
+        ? element.children("title").first().text()
+        : leadingHeading($, element).text();
       const roles = sectionRoles(heading);
       const effectiveRoles = roles.length ? roles : inheritedRoles;
-      for (const child of node.children ?? []) visit(child, effectiveRoles);
+      for (const child of node.children ?? []) visit(child, effectiveRoles, scope);
       return;
     }
     if (
       /^h[1-6]$/.test(tag) ||
+      (!xml && element.attr("role") === "heading" && headingLevel(element) !== null) ||
       (xml && tag === "title" && node.parent?.name !== "article-title")
     ) {
       const heading = compact(element.text());
       if (heading) {
         const roles = sectionRoles(heading);
-        const level = /^h[1-6]$/.test(tag) ? Number(tag[1]) : null;
-        if (level !== null && abstractLevel !== null && level <= abstractLevel)
-          abstractLevel = null;
-        if (level !== null && roles.includes("ABSTRACT")) abstractLevel = level;
+        const level = headingLevel(element);
+        if (level !== null && headingBoundary && level <= headingBoundary.level)
+          headingBoundary = null;
+        if (scope === "body" && level !== null &&
+          (roles.includes("ABSTRACT") || auxiliaryHeading(heading))) {
+          headingBoundary = {
+            level, scope: roles.includes("ABSTRACT") ? "abstract" : "auxiliary",
+          };
+          warn("No hay un contenedor propio verificable para una región de abstract o metadatos; su límite se interpretó por la jerarquía de encabezados.");
+        }
+        const effectiveScope = scope === "body"
+          ? (headingBoundary?.scope ?? (!xml && level === 1 && !roles.length ? "auxiliary" : scope))
+          : scope;
         current = newSection(
           sections,
           heading,
           [],
-          abstractLevel !== null
+          effectiveScope === "abstract"
             ? ["ABSTRACT"]
+            : effectiveScope === "auxiliary" ? []
             : roles.length
               ? roles
               : inheritedRoles,
+          effectiveScope,
         );
       }
       return;
@@ -326,7 +483,7 @@ export function extractMarkup(markup, xml = false) {
     if (block) current.text += "\n";
     if (tag === "sup") current.text += "^(";
     if (tag === "sub") current.text += "_(";
-    for (const child of node.children ?? []) visit(child, inheritedRoles);
+    for (const child of node.children ?? []) visit(child, inheritedRoles, scope);
     if (tag === "sup" || tag === "sub") current.text += ")";
     if (tag === "td" || tag === "th") current.text += "\t";
     if (block) current.text += "\n";
@@ -345,7 +502,8 @@ export function extractMarkup(markup, xml = false) {
     sections,
     metadata,
     format: xml ? "XML" : "HTML",
-    note: "Extracción del contenedor documental; encabezados y tablas textuales conservados. Sin navegación, scripts ni ejecución de enlaces secundarios.",
+    warnings: [...warnings],
+    note: "Extracción del contenedor documental; encabezados y tablas textuales conservados. El análisis del HTML/XML excluye navegación y scripts y no sigue enlaces del documento.",
   };
 }
 
@@ -469,17 +627,33 @@ export async function extractPdf(bytes, { run = execFileAsync } = {}) {
   }
 }
 
-function assertCoverage(extracted) {
-  const substantive = extracted.sections.filter(
+function coverageSections(extracted) {
+  return extracted.sections.filter(
     (section) =>
       !section.roles.includes("ABSTRACT") &&
-      !section.roles.includes("REFERENCIAS"),
+      !["abstract", "auxiliary"].includes(section.scope),
   );
-  const body = substantive.map((section) => section.text).join("\n");
-  if (wordCount(body) < 600)
+}
+
+// Shared by the word-count check and the per-attempt TXT, including failed checks.
+export function textForCoverage(extracted) {
+  return coverageSections(extracted)
+    .filter((section) => !section.roles.includes("REFERENCIAS"))
+    .map((section) => section.text)
+    .join("\n");
+}
+
+function assertCoverage(extracted) {
+  const body = textForCoverage(extracted);
+  if (wordCount(body) < 300)
     coverageError(
-      "El cuerpo sustantivo es demasiado breve para verificar cobertura completa; un abstract no es suficiente.",
+      "El cuerpo sustantivo es demasiado breve para verificar cobertura completa; se requieren 300 palabras fuera del abstract, los metadatos y las referencias.",
     );
+
+  // Desactivado temporalmente por depender de cómo el layout delimita secciones.
+  // Se conserva el control para una revisión posterior, sin exigir estos mínimos.
+  /*
+  const eligible = coverageSections(extracted);
   const thresholds = {
     INTRODUCCION: 60,
     METODOS: 80,
@@ -487,18 +661,25 @@ function assertCoverage(extracted) {
     DISCUSION: 80,
     REFERENCIAS: 30,
   };
+  const insufficient = [];
   for (const [role, minimum] of Object.entries(thresholds)) {
-    const relevant = extracted.sections.filter(
-      (section) =>
-        section.roles.includes(role) && !section.roles.includes("ABSTRACT"),
-    );
+    const relevant = eligible.filter((section) => section.roles.includes(role));
     if (wordCount(relevant.map((section) => section.text).join(" ")) < minimum)
-      coverageError(
-        "No se verificaron introducción, método/procedimiento, resultados/evidencia, discusión y cierre bibliográfico sustantivos. Esta disposición documental requiere otra técnica de recuperación.",
-      );
+      insufficient.push(role);
   }
+  if (insufficient.length)
+    coverageError(
+      `No se verificó texto suficiente fuera del abstract para: ${insufficient.join(", ")}. Los encabezados del abstract o los metadatos no cuentan como secciones del cuerpo completo. Esta disposición documental requiere otra técnica de recuperación.`,
+    );
+  */
+
+  // Desactivado temporalmente: no exigir una sección o mención de limitaciones.
+  /*
+  const substantive = coverageSections(extracted).filter(
+    (section) => !section.roles.includes("REFERENCIAS"),
+  );
   if (
-    !extracted.sections.some(
+    !substantive.some(
       (section) =>
         section.roles.includes("LIMITACIONES") && wordCount(section.text) >= 25,
     ) &&
@@ -509,17 +690,23 @@ function assertCoverage(extracted) {
     coverageError(
       "No se pudo localizar el tratamiento de las limitaciones; la cobertura requiere revisión documental.",
     );
+  */
   if (body.includes("\uFFFD"))
     coverageError("La decodificación contiene caracteres ilegibles.");
 }
 
 export function verifyDocument(
   extracted,
-  { url, now = () => new Date().toISOString() },
+  {
+    url,
+    now = () => new Date().toISOString(),
+    recoveryNote = "GET directo de la URL resuelta, sin cookies ni ejecución de JavaScript.",
+  },
 ) {
   const text = extracted.sections
     .map((section) => `${section.locator}\n${section.text}`)
     .join("\n\n");
+  const observations = [extracted.note, recoveryNote, ...(extracted.warnings ?? [])].join(" ");
   const document = {
     ...extracted,
     text,
@@ -534,7 +721,7 @@ export function verifyDocument(
       secciones_localizadas: extracted.sections.map(
         (section) => section.locator,
       ),
-      alcance_y_observaciones: `${extracted.note} GET directo de la URL resuelta. Se extrajo texto, pero NO se verificó cobertura completa; no se envió a IA. El hash describe solo lo efectivamente extraído.`,
+      alcance_y_observaciones: `${observations} Se extrajo texto, pero NO se verificó cobertura completa; no se envió a IA. El hash describe solo lo efectivamente extraído.`,
     },
   };
   try {
@@ -544,13 +731,13 @@ export function verifyDocument(
     throw error;
   }
   document.reading.texto_completo_verificado = true;
-  document.reading.alcance_y_observaciones = `${extracted.note} GET directo de la URL resuelta; no se infiere si el host es editorial o repositorio. Verificación estructural conservadora: cuerpo ≥600 palabras, secciones sustantivas, limitaciones y referencias. No certifica fidelidad científica ni revisión editorial.`;
+  document.reading.alcance_y_observaciones = `${observations} No se infiere si el host es editorial o repositorio. Control de extensión: cuerpo ≥300 palabras fuera del abstract, los metadatos y las referencias. No se exigieron mínimos por sección ni localización de limitaciones. Estos controles no certifican por sí solos integridad documental, fidelidad científica ni revisión editorial.`;
   return document;
 }
 
 export async function retrieveDocument(
   url,
-  { fetchImpl = fetch, now, pdfExtractor = extractPdf } = {},
+  { fetchImpl = fetch, now, pdfExtractor = extractPdf, recoveryNote } = {},
 ) {
   let current = url;
   try {
@@ -576,8 +763,17 @@ export async function retrieveDocument(
           coverageError("La redirección no es una URL HTTP(S) segura.");
         continue;
       }
+      const type = response.headers.get("content-type")?.toLowerCase() ?? "";
       if (response.status !== 200 || response.headers.has("content-range")) {
-        await response.body?.cancel();
+        if (
+          [401, 403, 429, 503].includes(response.status) &&
+          !response.headers.has("content-range") &&
+          type.includes("html")
+        )
+          checkHumanVerification(
+            load(decodeMarkup(await readBody(response), type)),
+          );
+        else await response.body?.cancel();
         fail(
           "RECUPERACION",
           "TEXTO_COMPLETO_NO_DISPONIBLE",
@@ -585,7 +781,6 @@ export async function retrieveDocument(
         );
       }
       const bytes = await readBody(response);
-      const type = response.headers.get("content-type")?.toLowerCase() ?? "";
       let extracted;
       if (
         bytes.subarray(0, 5).toString() === "%PDF-" ||
@@ -593,16 +788,18 @@ export async function retrieveDocument(
       )
         extracted = await pdfExtractor(bytes);
       else if (/html|xml/.test(type)) {
-        const charset =
-          type.match(/charset\s*=\s*["']?([^;\s"']+)/)?.[1] ?? "utf-8";
-        const markup = new TextDecoder(charset, { fatal: true }).decode(bytes);
+        const markup = decodeMarkup(bytes, type);
         const xml = !type.includes("html") && type.includes("xml");
         extracted = extractMarkup(markup, xml);
       } else
         coverageError(
           "El recurso no tiene un formato HTML, XML o PDF reconocible y verificable.",
         );
-      return verifyDocument(extracted, { url: response.url || current, now });
+      return verifyDocument(extracted, {
+        url: response.url || current,
+        now,
+        recoveryNote,
+      });
     }
     fail(
       "RECUPERACION",

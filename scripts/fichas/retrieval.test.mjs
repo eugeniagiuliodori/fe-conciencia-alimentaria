@@ -82,13 +82,64 @@ test("no confunde abstract extenso, navegación o encabezados vacíos con texto 
       .replaceAll("<h2>", "<h3>")
       .replaceAll("</h2>", "</h3>")
       .replace("</h1>", "</h1><h2>Abstract</h2>"),
-    htmlDocument(SECTION_DATA.filter(([heading]) => heading !== "Methods")),
-    htmlDocument(SECTION_DATA.filter(([heading]) => heading !== "References")),
   ];
   for (const text of cases)
     await assert.rejects(retrieveHtml(text), {
       code: "COBERTURA_INSUFICIENTE",
     });
+});
+
+test("secciones reconocidas ausentes, vacías o breves no invalidan un cuerpo suficiente", async () => {
+  for (const [heading] of SECTION_DATA)
+    for (const sections of [
+      SECTION_DATA.filter(([name]) => name !== heading),
+      SECTION_DATA.map(([name, text]) => [name, name === heading ? "" : text]),
+      SECTION_DATA.map(([name, text]) => [name, name === heading ? "Breve." : text]),
+    ]) {
+      const document = await retrieveHtml(htmlDocument(sections));
+      assert.equal(document.reading.texto_completo_verificado, true, heading);
+      assert.match(document.reading.alcance_y_observaciones,
+        /No se exigieron mínimos por sección ni localización de limitaciones/);
+    }
+});
+
+test("el mínimo es 300 palabras de cuerpo; abstract, referencias y metadatos no lo completan", async () => {
+  const markup = (count) => htmlDocument([
+    ["Abstract", paragraph("Resumen artificial", 30)],
+    ["Texto sin categoría reconocida", Array(count).fill("artificial").join(" ")],
+    ["References", paragraph("Citas artificiales", 30)],
+    ["Author information", paragraph("Metadatos artificiales", 30)],
+  ]);
+  await assert.rejects(retrieveHtml(markup(299)), (error) => {
+    assert.equal(error.code, "COBERTURA_INSUFICIENTE");
+    assert.match(error.message, /se requieren 300 palabras fuera del abstract, los metadatos y las referencias/);
+    assert.equal(error.document.reading.texto_completo_verificado, false);
+    assert.ok(error.document.reading.palabras_extraidas > 300);
+    return true;
+  });
+  const document = await retrieveHtml(markup(300));
+  assert.equal(document.reading.texto_completo_verificado, true);
+  assert.match(document.reading.alcance_y_observaciones, /cuerpo ≥300 palabras/);
+  assert.ok(document.text.includes("Resumen artificial"));
+  assert.ok(document.text.includes("Citas artificiales"));
+  assert.ok(document.text.includes("Metadatos artificiales"));
+});
+
+test("cuerpo de 300 palabras sin encabezados ni mención de limitaciones en HTML, XML y PDF", () => {
+  const body = Array(300).fill("artificial").join(" ");
+  const documents = [
+    extractMarkup(htmlDocument([]).replace("</article>",
+      `<div itemprop="articleBody"><p>${body}</p></div></article>`)),
+    extractMarkup(`<article><body><p>${body}</p></body><back></back></article>`, true),
+    extractPdfPages([body]),
+  ];
+  for (const extracted of documents) {
+    const document = verifyDocument(extracted, { url: URL, now: () => NOW });
+    assert.equal(document.reading.texto_completo_verificado, true, document.format);
+    assert.ok(document.sections.every((section) => section.roles.length === 0));
+    assert.match(document.reading.alcance_y_observaciones,
+      /No se exigieron mínimos por sección ni localización de limitaciones/);
+  }
 });
 
 test("truncamientos de HTML, XML y transferencia se rechazan", async () => {

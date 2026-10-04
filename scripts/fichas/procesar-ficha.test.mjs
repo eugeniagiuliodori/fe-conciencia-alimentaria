@@ -245,7 +245,10 @@ for (const [label, key] of [
     assert.deepEqual(second.record, stored);
     assert.deepEqual(counters, { generator: 1, retrieval: 1, generation: 1 });
     assert.deepEqual(await snapshot(directory), before);
-    assert.equal(before.length, 1);
+    assert.deepEqual(
+      before.map((file) => file.path).sort(),
+      [first.path, first.coverageTextPath].sort(),
+    );
   });
 
 test("key discordante no altera una ficha existente ni su historial", async (t) => {
@@ -607,7 +610,10 @@ test(
     assert.equal((await first).record.estado, "CREADO");
     assert.equal((await processFicha(input, dependencies)).status, "skipped");
     assert.deepEqual(counters, { generator: 2, retrieval: 1, generation: 1 });
-    assert.equal((await snapshot(directory)).length, 1);
+    assert.deepEqual(
+      (await snapshot(directory)).map((file) => file.path).sort(),
+      [(await first).path, (await first).coverageTextPath].sort(),
+    );
   },
 );
 
@@ -676,7 +682,11 @@ test("fallo de persistencia no se informa como éxito ni diagnóstico guardado",
   );
   assert.match(logs[0], /ERROR_NO_PERSISTIDO/);
   assert.ok(!logs[0].includes("Diagnóstico ERROR verificado"));
-  assert.deepEqual(await snapshot(directory), []);
+  const files = await snapshot(directory);
+  assert.equal(files.length, 1);
+  assert.match(files[0].path, /\.txt$/);
+  assert.match(files[0].text, /Marca alfa/);
+  assert.ok(logs[0].includes(files[0].path));
 });
 
 test("credenciales artificiales no se filtran por errores, respuestas ni rutas", async (t) => {
