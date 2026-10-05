@@ -3,7 +3,7 @@ import Link from "next/link";
 export function SiteHeader() {
   return (
     <header className="border-b border-line">
-      <div className="px-[2%] text-sm md:text-base lg:text-lg flex gap-4 py-5 flex-row items-center justify-between gap-6">
+      <div className="px-[2%] text-sm md:text-base lg:text-lg flex gap-2 py-5 flex-row items-center justify-between">
           <span className="w-[42%] md:w-[15%] flex sm:justify-between sm:items-center justify-center font-display text-xl md:text-3xl py-[7%] md:p-[2%] leading-tight bg-accent-soft text-accent rounded-[50%]">
           <span >
             Conciencia
@@ -13,7 +13,7 @@ export function SiteHeader() {
           <span className="flex item-center justify-center text-xl md:text-5xl text-accent">❦</span>
           </span>
         <nav aria-label="Navegación principal ">
-          <ul className="flex flex-wrap gap-1 text-sm sm:gap-3 text-sm md:text-base lg:text-lg bg-[#FF0000]">
+          <ul className="flex flex-wrap gap-1 text-sm gap-2 text-sm md:text-base lg:text-lg">
             <li>
               <Link
                 href="/#publicaciones"
