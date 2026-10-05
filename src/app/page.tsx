@@ -44,7 +44,7 @@ export default function Home() {
 
 
   return (
-    <>
+    <div className="[&_section]:bg-transparent">
       <section
         aria-labelledby="intro-title"
         className="site-container grid items-center gap-10 py-12 sm:py-16 lg:grid-cols-2 lg:gap-16 lg:py-20"
@@ -237,6 +237,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

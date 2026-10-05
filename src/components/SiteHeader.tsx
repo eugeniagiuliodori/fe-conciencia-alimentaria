@@ -4,7 +4,7 @@ export function SiteHeader() {
   return (
     <header className="border-b border-line">
       <div className="px-[2%] text-sm md:text-base lg:text-lg flex flex-col gap-4 py-5 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
-          <span className="font-display text-xl leading-tight">
+          <span className="font-display text-xl md:text-3xl md: p-[1%] leading-tight bg-accent-soft text-accent rounded-[50%]">
             Conciencia
             <br />
             Alimentaria
@@ -14,7 +14,7 @@ export function SiteHeader() {
             <li>
               <Link
                 href="/#publicaciones"
-                className="inline-flex  min-h-11 items-center rounded-lg px-3 hover:bg-accent-soft hover:text-accent"
+                className="inline-flex  min-h-11 items-center rounded-lg px-3 bg-accent-soft text-accent"
               >
                 Publicaciones
               </Link>
@@ -22,7 +22,7 @@ export function SiteHeader() {
             <li>
               <Link
                 href="/#proyecto"
-                className="inline-flex min-h-11 items-center rounded-lg px-3 hover:bg-accent-soft hover:text-accent"
+                className="inline-flex min-h-11 items-center rounded-lg px-3 bg-accent-soft text-accent"
               >
                 El proyecto
               </Link>

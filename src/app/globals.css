@@ -24,11 +24,32 @@ body {
   font-family: var(--font-sans);
   overflow-wrap: anywhere;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  min-height: 100dvh;
+  flex-direction: column;
+
 }
 
 ::selection {
   background: var(--color-accent-soft);
   color: var(--color-foreground);
+}
+
+
+
+
+.fondo-conciencia {
+  background-image: none;
+}
+
+@media (min-width: 768px) {
+  .fondo-conciencia {
+  background-image: url("/images/fondo.png");
+    background-size: 100% 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 }
 
 @layer base {
