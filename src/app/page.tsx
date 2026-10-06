@@ -60,7 +60,7 @@ export default function Home() {
             Una mirada curiosa{" "}
             <span className="text-accent">sobre lo que comemos.</span>
           </h1>
-         <div className="mt-6 max-w-lg rounded-[1rem] bg-[#faf7f1] p-[1rem] text-lg leading-relaxed text-muted shadow-[0_10px_28px_rgba(0,81,0,1)]">
+         <div className="mt-6 max-w-lg rounded-[1rem] bg-[#faf7f1] p-[1rem] text-lg leading-relaxed text-muted shadow-[5px_15px_40px_7px_rgba(50,76,0,1)]">
             <p>
               Bienvenidos a Conciencia Alimentaria.
             </p>
