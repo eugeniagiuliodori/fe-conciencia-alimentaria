@@ -60,14 +60,16 @@ export default function Home() {
             Una mirada curiosa{" "}
             <span className="text-accent">sobre lo que comemos.</span>
           </h1>
-          <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted">
-            Bienvenidos a Conciencia Alimentaria. 
-          </p>
-           <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted">
-            Un lugar para explorar los
-            alimentos, la nutrición, las recetas y la fermentación a través de
-            videos y textos.
-           </p>
+         <div className="mt-6 max-w-lg rounded-[1rem] bg-[#faf7f1] p-[1rem] text-lg leading-relaxed text-muted shadow-[0_10px_28px_rgba(0,81,0,1)]">
+            <p>
+              Bienvenidos a Conciencia Alimentaria.
+            </p>
+
+            <p>
+              Un lugar para explorar los alimentos, la nutrición, las recetas y la
+              fermentación a través de videos y textos.
+            </p>
+          </div>
           <a href="#publicaciones" className="primary-link mt-8">
             Explorar publicaciones <span aria-hidden="true">↓</span>
           </a>
