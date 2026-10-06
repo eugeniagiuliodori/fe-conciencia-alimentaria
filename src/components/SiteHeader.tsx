@@ -4,7 +4,7 @@ export function SiteHeader() {
   return (
     <header className="border-b border-line">
       <div className="px-[2%] text-sm md:text-base lg:text-lg flex gap-2 py-5 flex-row items-center justify-between">
-          <span className="w-[42%] md:w-[15%] flex sm:justify-between sm:items-center justify-center font-display text-xl md:text-3xl py-[7%] md:p-[1%] leading-tight bg-accent-soft text-accent rounded-[30%]">
+          <span className="w-[42%] md:w-[17%] flex sm:justify-between sm:items-center justify-center font-display text-xl md:text-2xl py-[7%] md:p-[2%] leading-tight bg-accent-soft text-accent rounded-[50%]">
           <span >
             Conciencia
             <br />
