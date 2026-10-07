@@ -10,7 +10,7 @@ export function SiteHeader() {
   return (
     <header className="border-b border-line">
       <div className="px-[2%] text-sm md:text-base lg:text-lg flex gap-2 py-5 flex-row items-center justify-between">
-          <span className="w-[10rem] md:w-[17%] flex text-lg md:text-2xl p-[1rem]  rounded-[0.5em] justify-between items-center justify-center font-display    leading-tight bg-accent-soft text-accent rounded-[50%]">
+          <span className="w-[10rem] md:w-[15rem] flex text-lg md:text-2xl p-[1rem]  rounded-[0.5em] justify-between items-center justify-center font-display    leading-tight bg-accent-soft text-accent rounded-[50%]">
           <span >
             Conciencia
             <br />
@@ -23,8 +23,17 @@ export function SiteHeader() {
           <button
             type="button"
             aria-label="Abrir menú"
-            onClick={()=>{setAbrirMenu(!abrirmenu)}}
-            className="flex h-10 w-10 flex-col items-center  justify-center gap-1.5 "
+            onClick={() => setAbrirMenu(!abrirmenu)}
+            className="
+              flex h-10 w-10 flex-col items-center justify-center gap-1.5
+              rounded-lg
+              bg-accent-soft
+              text-[#93442f]
+              shadow-[0px_0px_10px_7px_rgba(147,68,47,1)]
+              transition-all duration-200
+              hover:shadow-[0px_0px_10px_7px_rgba(255,255,255,0.95)]
+              active:shadow-[0_2px_10px_rgba(255,255,255,1)]
+            "
           >
             <span className="block h-0.5 w-6 bg-current" />
             <span className="block h-0.5 w-6 bg-current" />
