@@ -35,12 +35,12 @@ export function SiteHeader() {
               active:shadow-[0_2px_10px_rgba(255,255,255,1)]
             "
           >
-            <span className="block h-0.5 w-6 bg-current" />
-            <span className="block h-0.5 w-6 bg-current" />
-            <span className="block h-0.5 w-6 bg-current" />
+            <span className="block h-0.5 p-0 w-6 bg-current" />
+            <span className="block h-0.5 p-0 w-6 bg-current" />
+            <span className="block h-0.5 p-0 w-6 bg-current" />
           </button>
           {abrirmenu &&
-           <ul className="absolute top-10 right-1 flex w-max flex-col items-end gap-2 text-sm md:text-base lg:text-lg">
+           <ul className="absolute top-12 right-1 flex w-max flex-col items-end gap-2 text-sm md:text-base lg:text-lg">
             <li>
               <Link
                 href="/#publicaciones"
