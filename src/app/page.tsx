@@ -115,7 +115,6 @@ export default function Home() {
           >        
              { existeNoticiaLink ? "Leer noticia completa" : "Ver" }
             <span className="sr-only">: Noticia del día</span>
-            <span aria-hidden="true">→</span>
           </Link>
         </div>
         </div>
@@ -145,7 +144,6 @@ export default function Home() {
           >        
              { existeMenuSugeridoLink ? "Ampliar menú" : "Ver" }
             <span className="sr-only">: Menu sugerido</span>
-            <span aria-hidden="true">→</span>
           </Link>
         </div>
         </div>
@@ -162,7 +160,7 @@ export default function Home() {
               <a
                 href="/recetas"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#49633B] px-2 py-2 text-sm font-semibold text-white transition hover:bg-[#354B2B] sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-subaccent px-2 py-2 text-sm font-semibold text-white transition hover:bg-[#354B2B] sm:w-auto"
               >
                 <span>Recetas</span>
               </a>
@@ -172,7 +170,7 @@ export default function Home() {
               <a
                 href="/pizarra"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#49633B] px-2 py-2 text-sm font-semibold text-white transition hover:bg-[#354B2B] sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-subaccent px-2 py-2 text-sm font-semibold text-white transition hover:bg-[#354B2B] sm:w-auto"
               >
                 <span> Pizarra </span>
               </a>
@@ -182,7 +180,7 @@ export default function Home() {
               <a
                 href="/historial_noticias"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#49633B] px-2 py-2 text-sm font-semibold text-white transition hover:bg-[#354B2B] sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-subaccent px-2 py-2 text-sm font-semibold text-white transition hover:bg-[#354B2B] sm:w-auto"
               >
                 <span>Resúmen mensual ● noticias</span>
               </a>
