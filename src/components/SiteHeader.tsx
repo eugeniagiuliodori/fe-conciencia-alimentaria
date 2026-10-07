@@ -8,17 +8,17 @@ export function SiteHeader() {
   const [abrirmenu, setAbrirMenu] = useState(false);
 
   return (
-    <header className="border-b border-line">
-      <div className="px-[2%] text-sm md:text-base lg:text-lg flex gap-2 py-5 flex-row items-center justify-between">
-          <span className="shadow-[0px_0px_10px_7px_rgba(147,68,47,1)] w-[10rem] md:w-[15rem] flex text-lg md:text-xl p-[1rem]  rounded-[0.5em] justify-between items-center justify-center font-display    leading-tight bg-accent-soft text-accent rounded-[50%]">
+    <header className="border-b border-line w-full">
+      <div className="relative w-full px-[2%] text-sm md:text-base lg:text-lg flex gap-2 py-5 flex-row items-center justify-between">
+          <span className=" shadow-[0px_0px_10px_7px_rgba(147,68,47,1)] w-[10rem] md:w-[15rem] flex text-lg md:text-xl p-[1rem]  rounded-[0.5em] justify-between items-center justify-center font-display    leading-tight bg-accent-soft text-accent rounded-[50%]">
           <span >
             Conciencia
             <br />
             Alimentaria
           </span>
-          <span className="flex item-center justify-center text-xl md:text-5xl text-accent">❦</span>
+          <span className="flex items-center justify-center text-xl md:text-5xl text-accent">❦</span>
           </span>
-          <span className="hidden  md:flex md:w-[100vw] md:justify-center text-center text-[#dd7700] md:text-lg lg:text-2xl  font-serif italic "><span className="shadow-[0px_5px_10px_1px_rgba(147,68,47,1)] p-[0.5rem] rounded-[1rem]">El conocimiento también nutre</span></span>
+          <span className="hidden md:block md:absolute left-1/2 -translate-x-1/2 text-[#dd7700] md:text-lg lg:text-2xl  font-serif italic "><span className="flex items-center justify-center shadow-[0px_5px_10px_1px_rgba(147,68,47,1)] p-[0.5rem] rounded-[1rem]">El conocimiento también nutre</span></span>
         <nav aria-label="Navegación principal" className="relative flex flex-col  items-center md:items-end ">
           
           <button
