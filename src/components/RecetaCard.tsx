@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Receta } from "@/data/recetas";
 
+
 export function RecetaCard({ receta }: { receta: Receta }) {
   return (
     
@@ -16,6 +17,7 @@ export function RecetaCard({ receta }: { receta: Receta }) {
     <article className="flex min-w-0 flex-col overflow-hidden rounded-2xl border border-line bg-surface">
      
       <div className="w-full p-6">
+
         <Link
           href={`/recetas/${receta.slug}`}
           className="text-link flex w-full flex-col items-start gap-3"
@@ -23,7 +25,6 @@ export function RecetaCard({ receta }: { receta: Receta }) {
           <div>
             Ver receta
             <span className="sr-only">: {receta.title}</span>
-            <span aria-hidden="true"> →</span>
           </div>
       {receta.image && (
         <div

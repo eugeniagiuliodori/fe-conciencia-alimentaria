@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { VideoEmbed } from "@/components/VideoEmbed";
 import { getRecetaBySlug, recetas } from "@/data/recetas";
+import { ModoCocina } from "@/components/ModoCocina";
 
 type RecetaPageProps = {
   params: Promise<{ slug: string }>;
@@ -51,21 +52,25 @@ export default async function RecetaPage({ params }: RecetaPageProps) {
   return (
     <div className="site-container py-8 sm:py-12">
       <div className="mx-auto max-w-3xl">
-      <div >
+      <div className="flex flex-col items-center justify-between gap-1  max-w-55">
+  
+        <ModoCocina/>
+  
         <Link
           href="/#"
-        className="text-link inline-flex min-h-11 items-center gap-3 rounded-sm text-sm"
+         className="text-sm rounded-lg border border-accent px-2 py-2 text-accent cursor-pointer hover:text-[#7a263a] no-underline hover:no-underline text-link inline-flex  items-center"
         >
-          <span aria-hidden="true">←</span> Volver a la página principal
+          
+            Volver a la página principal
+
         </Link>
-        </div>
-        <div >
           <Link
             href="/recetas"
-            className="text-link inline-flex min-h-11 items-center gap-3 rounded-sm text-sm"
+            className="text-sm rounded-lg border border-accent px-2 py-2 text-accent cursor-pointer hover:text-[#7a263a] no-underline hover:no-underline text-link inline-flex items-center"
           >
-            <span aria-hidden="true">←</span> Todas las recetas
+                Todas las recetas
           </Link>
+           
         </div>
         <article>
           <header>

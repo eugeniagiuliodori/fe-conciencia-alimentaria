@@ -88,6 +88,21 @@ export const recetas: readonly Receta[] = [
       height: 800,
     },
     content: [],
+  },
+   {
+    ratiox:15.5,
+    ratioy:27.5,
+    slug: "receta7",
+    title: "",
+    summary:"",
+     image: {
+      src: "/images/recetas/receta7.png",
+      previewsrc: "/images/recetas/previews/receta7.png",
+      alt: "",
+      width: 800,
+      height: 800,
+    },
+    content: [],
   }
  /*{
     ratiox:8,

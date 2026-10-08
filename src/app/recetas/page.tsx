@@ -10,12 +10,14 @@ export default async function RecetasPage() {
 
          <div className="mb-8 block-flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-8">
                     <div className="block">
-                    <Link
-                      href="/#"
-                    className="text-link inline-flex min-h-11 items-center gap-3 rounded-sm text-sm"
-                    >
-                      <span aria-hidden="true">←</span> Volver a la página principal
-                    </Link>
+                     <Link
+                        href="/#"
+                      className="text-sm rounded-lg border border-accent px-2 py-2 text-accent cursor-pointer hover:text-[#7a263a] no-underline hover:no-underline text-link inline-flex  items-center"
+                      >
+                        
+                          Volver a la página principal
+
+                      </Link>
                     </div>
                    <div className="w-full text-center">
                      <h2
