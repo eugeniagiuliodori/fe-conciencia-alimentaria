@@ -1,0 +1,185 @@
+{
+  "verano": {
+    "sandia": {
+      "nombre_informal": "Sandía",
+      "nombre_cientifico": "Citrullus lanatus",
+      "tipo": "fruta",
+      "zona_principal_produccion": ["NOA", "NEA"]
+    },
+    "melon": {
+      "nombre_informal": "Melón",
+      "nombre_cientifico": "Cucumis melo",
+      "tipo": "fruta",
+      "zona_principal_produccion": ["Cuyo", "NOA", "Patagonia"]
+    },
+    "uva": {
+      "nombre_informal": "Uva",
+      "nombre_cientifico": "Vitis vinifera",
+      "tipo": "fruta",
+      "zona_principal_produccion": ["Mendoza", "San Juan", "La Rioja"]
+    },
+    "durazno": {
+      "nombre_informal": "Durazno",
+      "nombre_cientifico": "Prunus persica",
+      "tipo": "fruta",
+      "zona_principal_produccion": ["Mendoza", "Río Negro", "Neuquén"]
+    },
+    "tomate": {
+      "nombre_informal": "Tomate",
+      "nombre_cientifico": "Solanum lycopersicum",
+      "tipo": "hortaliza de fruto",
+      "zona_principal_produccion": [
+        "Mendoza",
+        "San Juan",
+        "Salta",
+        "Jujuy",
+        "Corrientes",
+        "Buenos Aires"
+      ]
+    },
+    "berenjena": {
+      "nombre_informal": "Berenjena",
+      "nombre_cientifico": "Solanum melongena",
+      "tipo": "hortaliza de fruto",
+      "zona_principal_produccion": ["Región Centro", "NOA", "NEA"]
+    },
+    "morron": {
+      "nombre_informal": "Morrón",
+      "nombre_cientifico": "Capsicum annuum",
+      "tipo": "hortaliza de fruto",
+      "zona_principal_produccion": ["NOA", "NEA", "Región Centro"]
+    },
+    "choclo": {
+      "nombre_informal": "Choclo",
+      "nombre_cientifico": "Zea mays",
+      "tipo": "cereal consumido fresco",
+      "zona_principal_produccion": ["Región Centro"]
+    }
+  },
+  "otono": {
+    "manzana": {
+      "nombre_informal": "Manzana",
+      "nombre_cientifico": "Malus domestica",
+      "tipo": "fruta",
+      "zona_principal_produccion": ["Río Negro", "Neuquén"]
+    },
+    "pera": {
+      "nombre_informal": "Pera",
+      "nombre_cientifico": "Pyrus communis",
+      "tipo": "fruta",
+      "zona_principal_produccion": ["Río Negro", "Neuquén"]
+    },
+    "naranja": {
+      "nombre_informal": "Naranja",
+      "nombre_cientifico": "Citrus × sinensis",
+      "tipo": "fruta cítrica",
+      "zona_principal_produccion": ["Entre Ríos", "Corrientes", "NOA"]
+    },
+    "mandarina": {
+      "nombre_informal": "Mandarina",
+      "nombre_cientifico": "Citrus reticulata",
+      "tipo": "fruta cítrica",
+      "zona_principal_produccion": ["Entre Ríos", "Corrientes", "Misiones"]
+    },
+    "zapallo_anco": {
+      "nombre_informal": "Zapallo anco",
+      "nombre_cientifico": "Cucurbita moschata",
+      "tipo": "hortaliza de fruto",
+      "zona_principal_produccion": ["Cuyo", "NOA", "Región Centro"]
+    },
+    "zanahoria": {
+      "nombre_informal": "Zanahoria",
+      "nombre_cientifico": "Daucus carota",
+      "tipo": "hortaliza de raíz",
+      "zona_principal_produccion": ["Cuyo", "NOA", "Región Centro"]
+    },
+    "repollo": {
+      "nombre_informal": "Repollo",
+      "nombre_cientifico": "Brassica oleracea var. capitata",
+      "tipo": "hortaliza de hoja",
+      "zona_principal_produccion": ["Cuyo", "Región Centro"]
+    }
+  },
+  "invierno": {
+    "naranja": {
+      "nombre_informal": "Naranja",
+      "nombre_cientifico": "Citrus × sinensis",
+      "tipo": "fruta cítrica",
+      "zona_principal_produccion": ["Entre Ríos", "Corrientes", "NOA"]
+    },
+    "mandarina": {
+      "nombre_informal": "Mandarina",
+      "nombre_cientifico": "Citrus reticulata",
+      "tipo": "fruta cítrica",
+      "zona_principal_produccion": ["Entre Ríos", "Corrientes", "Misiones"]
+    },
+    "pomelo": {
+      "nombre_informal": "Pomelo",
+      "nombre_cientifico": "Citrus × paradisi",
+      "tipo": "fruta cítrica",
+      "zona_principal_produccion": ["NEA", "NOA"]
+    },
+    "kinoto": {
+      "nombre_informal": "Kinoto",
+      "nombre_cientifico": "Citrus japonica",
+      "tipo": "fruta cítrica",
+      "zona_principal_produccion": ["NEA", "Litoral"]
+    },
+    "brocoli": {
+      "nombre_informal": "Brócoli",
+      "nombre_cientifico": "Brassica oleracea var. italica",
+      "tipo": "hortaliza de inflorescencia",
+      "zona_principal_produccion": ["Región Centro", "cinturones hortícolas bonaerenses"]
+    },
+    "zapallo_anco": {
+      "nombre_informal": "Zapallo anco",
+      "nombre_cientifico": "Cucurbita moschata",
+      "tipo": "hortaliza de fruto",
+      "zona_principal_produccion": ["Cuyo", "NOA", "Región Centro"]
+    }
+  },
+  "primavera": {
+    "frutilla": {
+      "nombre_informal": "Frutilla",
+      "nombre_cientifico": "Fragaria × ananassa",
+      "tipo": "fruta",
+      "zona_principal_produccion": [
+        "Tucumán",
+        "Santa Fe",
+        "Buenos Aires",
+        "Jujuy",
+        "Corrientes"
+      ]
+    },
+    "alcaucil": {
+      "nombre_informal": "Alcaucil",
+      "nombre_cientifico": "Cynara cardunculus var. scolymus",
+      "tipo": "hortaliza de inflorescencia",
+      "zona_principal_produccion": ["Buenos Aires", "Cuyo"]
+    },
+    "esparrago": {
+      "nombre_informal": "Espárrago",
+      "nombre_cientifico": "Asparagus officinalis",
+      "tipo": "hortaliza de tallo",
+      "zona_principal_produccion": ["Cuyo"]
+    },
+    "chaucha": {
+      "nombre_informal": "Chaucha",
+      "nombre_cientifico": "Phaseolus vulgaris",
+      "tipo": "legumbre consumida fresca",
+      "zona_principal_produccion": ["Región Centro", "NOA"]
+    },
+    "lechuga": {
+      "nombre_informal": "Lechuga",
+      "nombre_cientifico": "Lactuca sativa",
+      "tipo": "hortaliza de hoja",
+      "zona_principal_produccion": ["Región Centro", "Cuyo"]
+    },
+    "espinaca": {
+      "nombre_informal": "Espinaca",
+      "nombre_cientifico": "Spinacia oleracea",
+      "tipo": "hortaliza de hoja",
+      "zona_principal_produccion": ["Región Centro"]
+    }
+  }
+}

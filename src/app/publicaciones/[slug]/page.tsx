@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { VideoEmbed } from "@/components/VideoEmbed";
 import { getPublicationBySlug, publications } from "@/data/publications";
+import { ModoCocina } from "@/components/ModoCocina";
 
 type PublicationPageProps = {
   params: Promise<{ slug: string }>;
@@ -50,13 +51,16 @@ export default async function PublicationPage({ params }: PublicationPageProps) 
 
   return (
     <div className="site-container py-8 sm:py-12">
-      <div className="mx-auto max-w-3xl">
+      <div className="flex flex-col mx-auto max-w-3xl">
+        <div className="flex-flex-col max-w-55">
+        <ModoCocina/>
         <Link
           href="/#publicaciones"
           className="text-link mb-8 inline-flex min-h-11 items-center gap-3 rounded-sm text-sm"
         >
-          <span aria-hidden="true">←</span> Volver a publicaciones
+          Volver a publicaciones
         </Link>
+        </div>
         <article>
           <header>
            

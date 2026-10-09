@@ -30,7 +30,6 @@ export function PublicationCard({ publication }: { publication: Publication }) {
          
              Leer publicación
           <span className="sr-only">: {publication.title}</span>
-          <span aria-hidden="true">→</span>
         </Link>
       </div>
     </article>

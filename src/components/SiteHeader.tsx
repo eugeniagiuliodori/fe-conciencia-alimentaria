@@ -58,6 +58,14 @@ export function SiteHeader() {
                 El proyecto
               </Link>
             </li>
+            <li className="rounded-xl shadow-[0px_0px_10px_7px_rgba(147,68,47,1)] hover:shadow-[0px_0px_10px_7px_rgba(255,255,255,0.95)]">
+              <Link
+                href={`/alimentos_estacion/`}
+                className="inline-flex min-h-11 items-center whitespace-nowrap rounded-lg px-3 bg-accent-soft text-accent"
+              >
+                Alimentos de estación
+              </Link>
+            </li>
           </ul>
           }
         </nav>
