@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "tokelau",
+    "nombre": "Tokelau",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "atafu",
+      "nombre": "Atafu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Atafu"
+      ]
+    },
+    {
+      "id": "fakaofo",
+      "nombre": "Fakaofo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fakaofo"
+      ]
+    },
+    {
+      "id": "nukunonu",
+      "nombre": "Nukunonu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nukunonu"
+      ]
+    }
+  ]
+}

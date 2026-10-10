@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "malaysia",
+    "nombre": "Malaysia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "johor",
+      "nombre": "Johor",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bandar Maharani",
+        "Bandar Penggaram",
+        "Bukit Bakri",
+        "Buloh Kasap",
+        "Chaah",
+        "Johor Bahru",
+        "Kelapa Sawit",
+        "Kluang",
+        "Kota Tinggi",
+        "Kulai",
+        "Labis",
+        "Ledang",
+        "Masai",
+        "Mersing",
+        "Parit Raja",
+        "Pasir Gudang",
+        "Pekan Nenas",
+        "Pontian Kecil",
+        "Segamat",
+        "Sekudai",
+        "Senai",
+        "Simpang Rengam",
+        "Tangkak",
+        "Ulu Tiram",
+        "Yong Peng"
+      ]
+    },
+    {
+      "id": "kedah",
+      "nombre": "Kedah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alor Setar",
+        "Bailing",
+        "Bedong",
+        "Gurun",
+        "Jitra",
+        "Kuah",
+        "Kuala Kedah",
+        "Kulim",
+        "Langgar",
+        "Sungai Petani"
+      ]
+    },
+    {
+      "id": "kelantan",
+      "nombre": "Kelantan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gua Musang",
+        "Kadok",
+        "Kota Bahru",
+        "Kuala Krai",
+        "Pangkal Kalong",
+        "Pasir Mas",
+        "Peringat",
+        "Tanah Merah",
+        "Tumpat",
+        "Wakaf Baru"
+      ]
+    },
+    {
+      "id": "kuala-lumpur",
+      "nombre": "Kuala Lumpur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "labuan",
+      "nombre": "Labuan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Labuan"
+      ]
+    },
+    {
+      "id": "melaka",
+      "nombre": "Melaka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alor Gajah",
+        "Ayer Keroh",
+        "Ayer Molek",
+        "Batu Berendam",
+        "Bemban",
+        "Bukit Baru",
+        "Bukit Rambai",
+        "Klebang",
+        "Kuala Sungai Baru",
+        "Malacca",
+        "Masjid Tanah",
+        "Melaka",
+        "Pulau Sebang",
+        "Sungai Udang"
+      ]
+    },
+    {
+      "id": "negeri-johor",
+      "nombre": "Negeri Johor",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "negeri-sembilan",
+      "nombre": "Negeri Sembilan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "pahang",
+      "nombre": "Pahang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bandar Jengka Pusat",
+        "Bentong",
+        "Bukit Tinggi",
+        "Jerantut",
+        "Karak",
+        "Kuala Lipis",
+        "Kuantan",
+        "Mentakab",
+        "Pekan",
+        "Pulau Pinang",
+        "Raub",
+        "Temerloh"
+      ]
+    },
+    {
+      "id": "penang",
+      "nombre": "Penang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bayan Lepas",
+        "Church Town",
+        "George Town"
+      ]
+    },
+    {
+      "id": "perak",
+      "nombre": "Perak",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayer Tawar",
+        "Bagan Serai",
+        "Batu Gajah",
+        "Bidor",
+        "Ipoh",
+        "Jelapang",
+        "Kampar",
+        "Kampong Koh",
+        "Kuala Kangsar",
+        "Lawan Kuda Baharu",
+        "Lumut",
+        "Pantai Remis",
+        "Parit Buntar",
+        "Perak",
+        "Pusing",
+        "Simpang Empat",
+        "Sungai Siput Utara",
+        "Taiping",
+        "Tanjong Malim",
+        "Tapah",
+        "Teluk Intan"
+      ]
+    },
+    {
+      "id": "perlis",
+      "nombre": "Perlis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kangar",
+        "Kuala Perlis"
+      ]
+    },
+    {
+      "id": "pulau-pinang",
+      "nombre": "Pulau Pinang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sabah",
+      "nombre": "Sabah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Beaufort",
+        "Donggongon",
+        "Keningau",
+        "Kinarut",
+        "Kota Belud",
+        "Kota Kinabalu",
+        "Kudat",
+        "Kunak",
+        "Lahad Datu",
+        "Papar",
+        "Putatan",
+        "Ranau",
+        "Sandakan",
+        "Semporna",
+        "Tawau"
+      ]
+    },
+    {
+      "id": "sarawak",
+      "nombre": "Sarawak",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Batu Delapan Bazaar",
+        "Bintulu",
+        "Kapit",
+        "Kota Samarahan",
+        "Kuching",
+        "Limbang",
+        "Miri",
+        "Sarawak",
+        "Sarikel",
+        "Sibu",
+        "Sri Aman"
+      ]
+    },
+    {
+      "id": "selangor",
+      "nombre": "Selangor",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ampang",
+        "Ampang Jaya",
+        "Balakong",
+        "Bandar Baru Bangi",
+        "Bandar Baru Salak Tinggi",
+        "Bander Baro Bangi",
+        "Banting",
+        "Batang Berjuntai",
+        "Batu Arang",
+        "Batu Sembilan Cheras",
+        "Beranang",
+        "Bukit Beruntung",
+        "Cyberjaya",
+        "Darul Ehsan",
+        "Dungun",
+        "Gombak Setia",
+        "Jenjarom",
+        "Kajang",
+        "Kajang-Sungai Chua",
+        "Klang",
+        "Kuala Kubu Baru",
+        "Kuala Selangor",
+        "Kuang",
+        "Pengkalan Kundang",
+        "Petaling Jaya",
+        "Port Klang",
+        "Puchong",
+        "Rawang",
+        "Sabak",
+        "Sekinchan",
+        "Selayang Baru",
+        "Semenyih",
+        "Serendah",
+        "Seri Kembangan",
+        "Shah Alam",
+        "Subang Jaya",
+        "Sungai Besar",
+        "Sungai Buloh",
+        "Sungai Pelek",
+        "Taman Greenwood",
+        "Tanjong Karang",
+        "Tanjong Sepat"
+      ]
+    },
+    {
+      "id": "sembilan",
+      "nombre": "Sembilan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bahaiyah",
+        "Langkap"
+      ]
+    },
+    {
+      "id": "terengganu",
+      "nombre": "Terengganu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cukai",
+        "Jertih",
+        "Kemaman",
+        "Kerteh",
+        "Kuala Terengganu",
+        "Marang",
+        "Paka",
+        "Serdang"
+      ]
+    }
+  ]
+}

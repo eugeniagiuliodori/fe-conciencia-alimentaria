@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "serbia",
+    "nombre": "Serbia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "central-serbia",
+      "nombre": "Central Serbia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kosovo-and-metohija",
+      "nombre": "Kosovo and Metohija",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "vojvodina",
+      "nombre": "Vojvodina",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

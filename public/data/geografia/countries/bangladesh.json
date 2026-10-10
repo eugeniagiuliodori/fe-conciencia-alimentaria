@@ -1,0 +1,659 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "bangladesh",
+    "nombre": "Bangladesh",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "bagerhat",
+      "nombre": "Bagerhat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "bandarban",
+      "nombre": "Bandarban",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bandarban"
+      ]
+    },
+    {
+      "id": "barguna",
+      "nombre": "Barguna",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Barguna"
+      ]
+    },
+    {
+      "id": "barishal",
+      "nombre": "Barishal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Barishal",
+        "Gaurnadi",
+        "Mehendiganj",
+        "Nalchiti"
+      ]
+    },
+    {
+      "id": "bhola",
+      "nombre": "Bhola",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bhola",
+        "Burhanuddin",
+        "Char Fasson",
+        "Lalmohan"
+      ]
+    },
+    {
+      "id": "bogura",
+      "nombre": "Bogura",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Adamighi",
+        "Bogura",
+        "Sherpur"
+      ]
+    },
+    {
+      "id": "brahmanbaria",
+      "nombre": "Brahmanbaria",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "chandpur",
+      "nombre": "Chandpur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chandpur",
+        "Hajiganj"
+      ]
+    },
+    {
+      "id": "chapainawabganj",
+      "nombre": "Chapainawabganj",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chapainawabganj",
+        "Gomastapur",
+        "Shibganj"
+      ]
+    },
+    {
+      "id": "chattogram",
+      "nombre": "Chattogram",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Boalkhali",
+        "Chattogram",
+        "Fatikchhari",
+        "Lohagara",
+        "Patiya",
+        "Rangunia",
+        "Raozan",
+        "Sandip",
+        "Satkaniya"
+      ]
+    },
+    {
+      "id": "chuadanga",
+      "nombre": "Chuadanga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alamdanga",
+        "Chuadanga",
+        "Damurhuda"
+      ]
+    },
+    {
+      "id": "cox-s-bazar",
+      "nombre": "Cox's Bazar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "cumilla",
+      "nombre": "Cumilla",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cumilla",
+        "Laksham"
+      ]
+    },
+    {
+      "id": "dhaka",
+      "nombre": "Dhaka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dhaka",
+        "Dhamrai",
+        "Dohar"
+      ]
+    },
+    {
+      "id": "dinajpur",
+      "nombre": "Dinajpur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bochanganj",
+        "Dinajpur",
+        "Fulbari",
+        "Parbatipur"
+      ]
+    },
+    {
+      "id": "faridpur",
+      "nombre": "Faridpur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bhanga",
+        "Char Bhadrasan",
+        "Faridpur"
+      ]
+    },
+    {
+      "id": "feni",
+      "nombre": "Feni",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chhagalnaiya",
+        "Feni"
+      ]
+    },
+    {
+      "id": "gaibandha",
+      "nombre": "Gaibandha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gaibandha"
+      ]
+    },
+    {
+      "id": "gazipur",
+      "nombre": "Gazipur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gazipur",
+        "Tungi"
+      ]
+    },
+    {
+      "id": "gopalganj",
+      "nombre": "Gopalganj",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gopalganj",
+        "Tungi Para"
+      ]
+    },
+    {
+      "id": "habiganj",
+      "nombre": "Habiganj",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baniachang",
+        "Habiganj"
+      ]
+    },
+    {
+      "id": "jamalpur",
+      "nombre": "Jamalpur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jamalpur",
+        "Sarishabari"
+      ]
+    },
+    {
+      "id": "jashore",
+      "nombre": "Jashore",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abhaynagar",
+        "Jashore",
+        "Jhikargachha",
+        "Keshabpur"
+      ]
+    },
+    {
+      "id": "jhalokati",
+      "nombre": "Jhalokati",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jhalokati"
+      ]
+    },
+    {
+      "id": "jhenaidah",
+      "nombre": "Jhenaidah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jhenaidah",
+        "Kaliganj",
+        "Kotchandpur",
+        "Shailkupa"
+      ]
+    },
+    {
+      "id": "joypurhat",
+      "nombre": "Joypurhat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "khagrachhari",
+      "nombre": "Khagrachhari",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Khagrachhari",
+        "Manikchhari",
+        "Ramgarh"
+      ]
+    },
+    {
+      "id": "khulna",
+      "nombre": "Khulna",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Khulna",
+        "Phultala"
+      ]
+    },
+    {
+      "id": "kishoreganj",
+      "nombre": "Kishoreganj",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bajitpur",
+        "Bhairab Bazar",
+        "Itna",
+        "Kishoreganj"
+      ]
+    },
+    {
+      "id": "kurigram",
+      "nombre": "Kurigram",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chilmari",
+        "Kurigram",
+        "Nageshwari",
+        "Ulipur"
+      ]
+    },
+    {
+      "id": "kushtia",
+      "nombre": "Kushtia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bheramara",
+        "Kushtia"
+      ]
+    },
+    {
+      "id": "lakshmipur",
+      "nombre": "Lakshmipur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lakshmipur",
+        "Ramganj",
+        "Ramgati",
+        "Raypur"
+      ]
+    },
+    {
+      "id": "lalmonirhat",
+      "nombre": "Lalmonirhat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "madaripur",
+      "nombre": "Madaripur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Madaripur"
+      ]
+    },
+    {
+      "id": "magura",
+      "nombre": "Magura",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Magura"
+      ]
+    },
+    {
+      "id": "manikganj",
+      "nombre": "Manikganj",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Manikganj"
+      ]
+    },
+    {
+      "id": "meherpur",
+      "nombre": "Meherpur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Meherpur"
+      ]
+    },
+    {
+      "id": "moulvibazar",
+      "nombre": "Moulvibazar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "munshiganj",
+      "nombre": "Munshiganj",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Munshiganj"
+      ]
+    },
+    {
+      "id": "mymensingh",
+      "nombre": "Mymensingh",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bhaluka",
+        "Fulbaria",
+        "Gafargaon",
+        "Ishwarganj",
+        "Muktagachha",
+        "Mymensingh",
+        "Trishal"
+      ]
+    },
+    {
+      "id": "naogaon",
+      "nombre": "Naogaon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Naogaon"
+      ]
+    },
+    {
+      "id": "narail",
+      "nombre": "Narail",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kalia",
+        "Narail"
+      ]
+    },
+    {
+      "id": "narayanganj",
+      "nombre": "Narayanganj",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Narayanganj",
+        "Rupganj"
+      ]
+    },
+    {
+      "id": "narsingdi",
+      "nombre": "Narsingdi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Narsingdi",
+        "Roypura"
+      ]
+    },
+    {
+      "id": "natore",
+      "nombre": "Natore",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gurudaspur",
+        "Natore"
+      ]
+    },
+    {
+      "id": "netrokona",
+      "nombre": "Netrokona",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Netrokona"
+      ]
+    },
+    {
+      "id": "nilphamari",
+      "nombre": "Nilphamari",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Domar",
+        "Nilphamari",
+        "Sa''idpur"
+      ]
+    },
+    {
+      "id": "noakhali",
+      "nombre": "Noakhali",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Begamganj",
+        "Noakhali",
+        "Senbagh"
+      ]
+    },
+    {
+      "id": "pabna",
+      "nombre": "Pabna",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bera",
+        "Bhangura",
+        "Ishurdi",
+        "Pabna"
+      ]
+    },
+    {
+      "id": "panchagarh",
+      "nombre": "Panchagarh",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Panchagarh"
+      ]
+    },
+    {
+      "id": "patuakhali",
+      "nombre": "Patuakhali",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Patuakhali"
+      ]
+    },
+    {
+      "id": "pirojpur",
+      "nombre": "Pirojpur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bhandaria",
+        "Mathbaria",
+        "Nesarabad",
+        "Pirojpur"
+      ]
+    },
+    {
+      "id": "rajbari",
+      "nombre": "Rajbari",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Pangsha",
+        "Rajbari"
+      ]
+    },
+    {
+      "id": "rajshahi",
+      "nombre": "Rajshahi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rajshahi"
+      ]
+    },
+    {
+      "id": "rangamati",
+      "nombre": "Rangamati",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kaptai",
+        "Rangamati"
+      ]
+    },
+    {
+      "id": "rangpur",
+      "nombre": "Rangpur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Badarganj",
+        "Kaunia",
+        "Rangpur"
+      ]
+    },
+    {
+      "id": "satkhira",
+      "nombre": "Satkhira",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Satkhira"
+      ]
+    },
+    {
+      "id": "shariatpur",
+      "nombre": "Shariatpur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Palang"
+      ]
+    },
+    {
+      "id": "sherpur",
+      "nombre": "Sherpur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nalitabari",
+        "Sherpur"
+      ]
+    },
+    {
+      "id": "sirajganj",
+      "nombre": "Sirajganj",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Shahjadpur",
+        "Sirajganj"
+      ]
+    },
+    {
+      "id": "sunamganj",
+      "nombre": "Sunamganj",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chhatak",
+        "Sunamganj"
+      ]
+    },
+    {
+      "id": "sylhet",
+      "nombre": "Sylhet",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sylhet"
+      ]
+    },
+    {
+      "id": "tangail",
+      "nombre": "Tangail",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gopalpur",
+        "Mirzapur",
+        "Sakhipur",
+        "Tangail"
+      ]
+    },
+    {
+      "id": "thakurgaon",
+      "nombre": "Thakurgaon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Pirganj",
+        "Thakurgaon"
+      ]
+    }
+  ]
+}

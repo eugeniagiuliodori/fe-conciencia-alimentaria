@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "sri-lanka",
+    "nombre": "Sri Lanka",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "amparai",
+      "nombre": "Amparai",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amparai",
+        "Galmune"
+      ]
+    },
+    {
+      "id": "anuradhapuraya",
+      "nombre": "Anuradhapuraya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Anuradhapuraya"
+      ]
+    },
+    {
+      "id": "badulla",
+      "nombre": "Badulla",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Badulla",
+        "Bandarawela",
+        "Haputale"
+      ]
+    },
+    {
+      "id": "boralesgamuwa",
+      "nombre": "Boralesgamuwa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Boralesgamuwa"
+      ]
+    },
+    {
+      "id": "colombo",
+      "nombre": "Colombo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Battaramulla",
+        "Colombo",
+        "Dehiwala-Mount Lavinia",
+        "Homagama",
+        "Jayawardanapura",
+        "Kolonnawa",
+        "Kotikawatta",
+        "Maharagama",
+        "Moratuwa",
+        "Mulleriyawa",
+        "Ratmalana",
+        "Seethawakapura",
+        "Sri Jayawardanapura"
+      ]
+    },
+    {
+      "id": "galla",
+      "nombre": "Galla",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ambalamgoda",
+        "Galla"
+      ]
+    },
+    {
+      "id": "gampaha",
+      "nombre": "Gampaha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Daluguma",
+        "Gampaha",
+        "Hendala",
+        "Jaela",
+        "Kandana",
+        "Katunayaka",
+        "Kelaniya",
+        "Migamuwa",
+        "Minuwangoda",
+        "Peliyagoda",
+        "Ragama",
+        "Wattala",
+        "Welesara"
+      ]
+    },
+    {
+      "id": "hambantota",
+      "nombre": "Hambantota",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hambantota",
+        "Tanggalla"
+      ]
+    },
+    {
+      "id": "kadawatha",
+      "nombre": "kadawatha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mahara"
+      ]
+    },
+    {
+      "id": "kalatura",
+      "nombre": "Kalatura",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Beruwala",
+        "Horana",
+        "Kalutara",
+        "Keselwatta",
+        "Panadraya"
+      ]
+    },
+    {
+      "id": "kegalla",
+      "nombre": "Kegalla",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kegalla"
+      ]
+    },
+    {
+      "id": "kilinochchi",
+      "nombre": "Kilinochchi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kilinochchi"
+      ]
+    },
+    {
+      "id": "kurunegala",
+      "nombre": "Kurunegala",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kuliyapitiya",
+        "Kurunegala",
+        "Polgahawela"
+      ]
+    },
+    {
+      "id": "madakalpuwa",
+      "nombre": "Madakalpuwa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Eravur",
+        "Katankudi",
+        "Madakalpuwa"
+      ]
+    },
+    {
+      "id": "maha-nuwara",
+      "nombre": "Maha Nuwara",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "malwana",
+      "nombre": "Malwana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Malwana"
+      ]
+    },
+    {
+      "id": "mannarama",
+      "nombre": "Mannarama",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mannarama"
+      ]
+    },
+    {
+      "id": "matale",
+      "nombre": "Matale",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dambulla",
+        "Matale",
+        "Sigiriya"
+      ]
+    },
+    {
+      "id": "matara",
+      "nombre": "Matara",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Matara",
+        "Weligama"
+      ]
+    },
+    {
+      "id": "monaragala",
+      "nombre": "Monaragala",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Monaragala",
+        "Wattegama"
+      ]
+    },
+    {
+      "id": "mullaitivu",
+      "nombre": "Mullaitivu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mullaitivu"
+      ]
+    },
+    {
+      "id": "north-eastern-province",
+      "nombre": "North Eastern Province",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "north-western-province",
+      "nombre": "North Western Province",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nuwara-eliya",
+      "nombre": "Nuwara Eliya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "polonnaruwa",
+      "nombre": "Polonnaruwa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Polonnaruwa"
+      ]
+    },
+    {
+      "id": "puttalama",
+      "nombre": "Puttalama",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Halawata",
+        "Puttalama"
+      ]
+    },
+    {
+      "id": "ratnapuraya",
+      "nombre": "Ratnapuraya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Balangoda",
+        "Ratnapuraya"
+      ]
+    },
+    {
+      "id": "southern-province",
+      "nombre": "Southern Province",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tirikunamalaya",
+      "nombre": "Tirikunamalaya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tirikunamalaya"
+      ]
+    },
+    {
+      "id": "tuscany",
+      "nombre": "Tuscany",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Querceta"
+      ]
+    },
+    {
+      "id": "vavuniyawa",
+      "nombre": "Vavuniyawa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Vavuniyawa"
+      ]
+    },
+    {
+      "id": "western-province",
+      "nombre": "Western Province",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "yapanaya",
+      "nombre": "Yapanaya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chavakachcheri",
+        "Peduru Tuduwa",
+        "Valvedditturai",
+        "Yapanaya"
+      ]
+    }
+  ]
+}

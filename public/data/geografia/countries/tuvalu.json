@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "tuvalu",
+    "nombre": "Tuvalu",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "funafuti",
+      "nombre": "Funafuti",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Vaiaku"
+      ]
+    },
+    {
+      "id": "nanumanga",
+      "nombre": "Nanumanga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tonga"
+      ]
+    },
+    {
+      "id": "nanumea",
+      "nombre": "Nanumea",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lolua"
+      ]
+    },
+    {
+      "id": "niutao",
+      "nombre": "Niutao",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kua"
+      ]
+    },
+    {
+      "id": "nui",
+      "nombre": "Nui",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tanrake"
+      ]
+    },
+    {
+      "id": "nukufetau",
+      "nombre": "Nukufetau",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Savave"
+      ]
+    },
+    {
+      "id": "nukulaelae",
+      "nombre": "Nukulaelae",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fangaua"
+      ]
+    },
+    {
+      "id": "vaitupu",
+      "nombre": "Vaitupu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Asau"
+      ]
+    }
+  ]
+}

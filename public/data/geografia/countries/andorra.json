@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "andorra",
+    "nombre": "Andorra",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "andorra-la-vella",
+      "nombre": "Andorra la Vella",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "canillo",
+      "nombre": "Canillo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Canillo"
+      ]
+    },
+    {
+      "id": "encamp",
+      "nombre": "Encamp",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Encamp"
+      ]
+    },
+    {
+      "id": "la-massana",
+      "nombre": "La Massana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "les-escaldes",
+      "nombre": "Les Escaldes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ordino",
+      "nombre": "Ordino",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ordino"
+      ]
+    },
+    {
+      "id": "sant-julia-de-loria",
+      "nombre": "Sant Julia de Loria",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

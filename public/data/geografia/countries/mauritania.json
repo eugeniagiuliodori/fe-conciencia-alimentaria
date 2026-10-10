@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "mauritania",
+    "nombre": "Mauritania",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "adrar",
+      "nombre": "Adrar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Atar",
+        "Shingati"
+      ]
+    },
+    {
+      "id": "assaba",
+      "nombre": "Assaba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kifah"
+      ]
+    },
+    {
+      "id": "brakna",
+      "nombre": "Brakna",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alaq",
+        "Buqah",
+        "Magta'' Lahjar"
+      ]
+    },
+    {
+      "id": "dhakhlat-nawadibu",
+      "nombre": "Dhakhlat Nawadibu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "hudh-al-gharbi",
+      "nombre": "Hudh-al-Gharbi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayun-al-''Atrus",
+        "Kubanni"
+      ]
+    },
+    {
+      "id": "hudh-ash-sharqi",
+      "nombre": "Hudh-ash-Sharqi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "an-Na''mah",
+        "Timbedra",
+        "Walatah"
+      ]
+    },
+    {
+      "id": "inshiri",
+      "nombre": "Inshiri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aqjawajat"
+      ]
+    },
+    {
+      "id": "nawakshut",
+      "nombre": "Nawakshut",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nawakshut"
+      ]
+    },
+    {
+      "id": "qidimagha",
+      "nombre": "Qidimagha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hsay Walad ''Ali Babi"
+      ]
+    },
+    {
+      "id": "qurqul",
+      "nombre": "Qurqul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kayhaydi"
+      ]
+    },
+    {
+      "id": "taqant",
+      "nombre": "Taqant",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tijiqjah"
+      ]
+    },
+    {
+      "id": "tiris-zammur",
+      "nombre": "Tiris Zammur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "trarza",
+      "nombre": "Trarza",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rusu"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "comoros",
+    "nombre": "Comoros",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "mwali",
+      "nombre": "Mwali",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fomboni"
+      ]
+    },
+    {
+      "id": "njazidja",
+      "nombre": "Njazidja",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mitsamiouli",
+        "Moroni"
+      ]
+    },
+    {
+      "id": "nzwani",
+      "nombre": "Nzwani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Domoni",
+        "Mutsamudu"
+      ]
+    }
+  ]
+}

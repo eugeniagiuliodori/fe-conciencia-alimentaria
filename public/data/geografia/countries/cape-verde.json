@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "cape-verde",
+    "nombre": "Cape Verde",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "boavista",
+      "nombre": "Boavista",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sal Rei"
+      ]
+    },
+    {
+      "id": "brava",
+      "nombre": "Brava",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nova Sintra"
+      ]
+    },
+    {
+      "id": "fogo",
+      "nombre": "Fogo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mosteiros",
+        "Sao Filipe"
+      ]
+    },
+    {
+      "id": "maio",
+      "nombre": "Maio",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Vila do Maio"
+      ]
+    },
+    {
+      "id": "sal",
+      "nombre": "Sal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Santa Maria"
+      ]
+    },
+    {
+      "id": "santo-antao",
+      "nombre": "Santo Antao",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sao-nicolau",
+      "nombre": "Sao Nicolau",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sao-tiago",
+      "nombre": "Sao Tiago",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sao-vicente",
+      "nombre": "Sao Vicente",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

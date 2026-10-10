@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "kyrgyzstan",
+    "nombre": "Kyrgyzstan",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "batken",
+      "nombre": "Batken",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Batken",
+        "Isfana",
+        "Khaidarkan",
+        "Kyzyl-Kiya",
+        "Ravat",
+        "Sulukta"
+      ]
+    },
+    {
+      "id": "bishkek",
+      "nombre": "Bishkek",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bishkek"
+      ]
+    },
+    {
+      "id": "chui",
+      "nombre": "Chui",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ak-Suu",
+        "Belovodskoye",
+        "Boroldoy",
+        "Chaldovar",
+        "Chatkyol",
+        "Chui",
+        "Don Arik",
+        "Ivanovka",
+        "Jangyjar",
+        "Jangypakhtar",
+        "Kalininskoye",
+        "Kalinovka",
+        "Kant",
+        "Kara-Suu",
+        "Karabalta",
+        "Kayingdi",
+        "Kegety",
+        "Kemin",
+        "Kosh Tegirmen",
+        "Krasnaya Rechka",
+        "Orlovka",
+        "Sokuluk",
+        "Sopokov",
+        "Sosnovka",
+        "Tokmok",
+        "Tunuk",
+        "Yuryevka"
+      ]
+    },
+    {
+      "id": "issyk-kul",
+      "nombre": "Issyk-Kul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ak-Bulok",
+        "Ak-Terek",
+        "Ananyevo",
+        "Balykchy",
+        "Barskoon",
+        "Cholpon-Ata",
+        "Darkhon",
+        "Enilchek",
+        "Grigoryevka",
+        "Jyrgolon",
+        "Kara-Say",
+        "Karako",
+        "Karakol",
+        "Kuturgu",
+        "Mikhaylovka",
+        "Novovoznesenovka",
+        "Ottuk",
+        "Semyonovka",
+        "Taldy-Suu",
+        "Teploklyuchenka",
+        "Tyup"
+      ]
+    },
+    {
+      "id": "jalal-abad",
+      "nombre": "Jalal-Abad",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ala Buka",
+        "Bazarkurgon",
+        "Jalal-Abad",
+        "Jangybazar",
+        "Karavan",
+        "Kochkor-Ata",
+        "Kok-Jangak",
+        "Mailuu-Suu",
+        "Tash-Kumyr"
+      ]
+    },
+    {
+      "id": "naryn",
+      "nombre": "Naryn",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "At-Bashi",
+        "Chaiek",
+        "Kara-Suu",
+        "Kayirma",
+        "Kek-Algyp",
+        "Kochkorka",
+        "Kulanak",
+        "Mingbulok",
+        "Mingkush",
+        "Naryn",
+        "Ugyut"
+      ]
+    },
+    {
+      "id": "osh",
+      "nombre": "Osh",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Daraut-Korgan",
+        "Gulcha",
+        "Kara-Suu",
+        "Leninskoye",
+        "Osh",
+        "Uzgen"
+      ]
+    },
+    {
+      "id": "talas",
+      "nombre": "Talas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chat-Bazar",
+        "Groznoye",
+        "Kara-Kul",
+        "Klyuchevka",
+        "Kyzyl-Adyr",
+        "Leninopol",
+        "Maimak",
+        "Talas",
+        "Toktogul"
+      ]
+    }
+  ]
+}

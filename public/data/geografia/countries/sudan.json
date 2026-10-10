@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "sudan",
+    "nombre": "Sudan",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "a-ali-an-nil",
+      "nombre": "A''ali-an-Nil",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ar-Rank",
+        "Kodok",
+        "Malakal",
+        "Nasir"
+      ]
+    },
+    {
+      "id": "al-bahr-al-ahmar",
+      "nombre": "al-Bahr-al-Ahmar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bur Sudan",
+        "Gabait",
+        "Sawakin",
+        "Sinkat",
+        "Tawkar"
+      ]
+    },
+    {
+      "id": "al-buhayrat",
+      "nombre": "al-Buhayrat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rumbik",
+        "Yirol"
+      ]
+    },
+    {
+      "id": "al-jazirah",
+      "nombre": "al-Jazirah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abu ''Usar",
+        "al-Hawsh",
+        "al-Hilaliyah",
+        "al-Huda",
+        "al-Husayhisah",
+        "al-Kamilin",
+        "al-Karaymat",
+        "al-Manaqil",
+        "al-Mu''sadiyah",
+        "al-Musallamiyah",
+        "Arba''atun wa ''Ishrun-al-Qurash",
+        "Maharaybah",
+        "Miallayab",
+        "Rufa''a",
+        "Sharafat",
+        "Tabat",
+        "Tambul",
+        "Wad Madani",
+        "Wad Rawah"
+      ]
+    },
+    {
+      "id": "al-khartum",
+      "nombre": "al-Khartum",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Khartum",
+        "al-Khartum Bahri",
+        "Umm Dawm",
+        "Umm Durman"
+      ]
+    },
+    {
+      "id": "al-qadarif",
+      "nombre": "al-Qadarif",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Faw",
+        "al-Hawatah",
+        "al-Qadarif",
+        "Doka",
+        "Qala''-an-Nahl",
+        "Shuwak"
+      ]
+    },
+    {
+      "id": "al-wahdah",
+      "nombre": "al-Wahdah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bentiu",
+        "Ler"
+      ]
+    },
+    {
+      "id": "an-nil-al-abyad",
+      "nombre": "an-Nil-al-Abyad",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ad-Duwaym",
+        "al-Jazirah",
+        "al-Kawah",
+        "al-Qutaynah",
+        "Asalaya",
+        "Bufi",
+        "Gulli",
+        "Kinanah",
+        "Kusti",
+        "Marabba",
+        "Rabak",
+        "Shabashah",
+        "Tandalti",
+        "Umm Jarr",
+        "Wad-az-Zaki"
+      ]
+    },
+    {
+      "id": "an-nil-al-azraq",
+      "nombre": "an-Nil-al-Azraq",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ad-Damazin",
+        "al-Kurumuk",
+        "al-Quwaysi",
+        "ar-Rusayris"
+      ]
+    },
+    {
+      "id": "ash-shamaliyah",
+      "nombre": "ash-Shamaliyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ad-Dabbah",
+        "Argu",
+        "Dalqu",
+        "Dunqulah",
+        "Kanisah",
+        "Karmah-an-Nuzul",
+        "Kuraymah",
+        "Kurti",
+        "Marawi",
+        "Tangasi-ar-Ru''ays",
+        "Wadi Halfa"
+      ]
+    },
+    {
+      "id": "bahr-al-jabal",
+      "nombre": "Bahr-al-Jabal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Juba",
+        "Yei"
+      ]
+    },
+    {
+      "id": "central-equatoria",
+      "nombre": "Central Equatoria",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "gharb-bahr-al-ghazal",
+      "nombre": "Gharb Bahr-al-Ghazal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "gharb-darfur",
+      "nombre": "Gharb Darfur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "gharb-kurdufan",
+      "nombre": "Gharb Kurdufan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "gharb-al-istiwa-iyah",
+      "nombre": "Gharb-al-Istiwa''iyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Maridi",
+        "Nzara",
+        "Tambura",
+        "Yambio"
+      ]
+    },
+    {
+      "id": "janub-darfur",
+      "nombre": "Janub Darfur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "janub-kurdufan",
+      "nombre": "Janub Kurdufan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "junqali",
+      "nombre": "Junqali",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bur"
+      ]
+    },
+    {
+      "id": "kassala",
+      "nombre": "Kassala",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Masnah",
+        "Aruma",
+        "Halfa al-Jadidah",
+        "Kassala",
+        "Khashm-al-Qirbah",
+        "Wagar"
+      ]
+    },
+    {
+      "id": "nahr-an-nil",
+      "nombre": "Nahr-an-Nil",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ad-Damir",
+        "al-Bawga",
+        "al-Matammah",
+        "Atbarah",
+        "Barbar",
+        "Kabushiyah",
+        "Shandi"
+      ]
+    },
+    {
+      "id": "shamal-bahr-al-ghazal",
+      "nombre": "Shamal Bahr-al-Ghazal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "shamal-darfur",
+      "nombre": "Shamal Darfur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "shamal-kurdufan",
+      "nombre": "Shamal Kurdufan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sharq-al-istiwa-iyah",
+      "nombre": "Sharq-al-Istiwa''iyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kapoeta",
+        "Torit"
+      ]
+    },
+    {
+      "id": "sinnar",
+      "nombre": "Sinnar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abu Hijar",
+        "ad-Dindar",
+        "as-Suki",
+        "Galgani",
+        "Hajj ''Abdallah",
+        "Karkawj",
+        "Mayurnu",
+        "Sinjah",
+        "Sinnar",
+        "Sinnar-at-Tagatu",
+        "Umm Shawkah"
+      ]
+    },
+    {
+      "id": "warab",
+      "nombre": "Warab",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mashra ar-Raqq",
+        "Tonj",
+        "Warab"
+      ]
+    },
+    {
+      "id": "wilayat-al-khartum",
+      "nombre": "Wilayat al Khartum",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

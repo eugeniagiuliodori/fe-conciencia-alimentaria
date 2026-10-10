@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "western-sahara",
+    "nombre": "Western Sahara",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "al-ayun",
+      "nombre": "al-''Ayun",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-''Ayun"
+      ]
+    },
+    {
+      "id": "as-samarah",
+      "nombre": "as-Samarah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "as-Samarah"
+      ]
+    },
+    {
+      "id": "bu-jaydur",
+      "nombre": "Bu Jaydur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "wad-adh-dhahab",
+      "nombre": "Wad-adh-Dhahab",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ad-Dakhlah"
+      ]
+    }
+  ]
+}

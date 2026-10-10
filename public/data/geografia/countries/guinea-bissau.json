@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "guinea-bissau",
+    "nombre": "Guinea-Bissau",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "bafata",
+      "nombre": "Bafata",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bafata"
+      ]
+    },
+    {
+      "id": "bissau",
+      "nombre": "Bissau",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bissau"
+      ]
+    },
+    {
+      "id": "bolama",
+      "nombre": "Bolama",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bolama",
+        "Bubaque"
+      ]
+    },
+    {
+      "id": "cacheu",
+      "nombre": "Cacheu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cacheu",
+        "Canchungo"
+      ]
+    },
+    {
+      "id": "gabu",
+      "nombre": "Gabu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gabu"
+      ]
+    },
+    {
+      "id": "oio",
+      "nombre": "Oio",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bissora",
+        "Farim",
+        "Mansoa"
+      ]
+    },
+    {
+      "id": "quinara",
+      "nombre": "Quinara",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Buba",
+        "Fulacunda",
+        "Quebo"
+      ]
+    },
+    {
+      "id": "tombali",
+      "nombre": "Tombali",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Catio"
+      ]
+    }
+  ]
+}

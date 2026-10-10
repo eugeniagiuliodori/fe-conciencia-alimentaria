@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "tanzania",
+    "nombre": "Tanzania",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "arusha",
+      "nombre": "Arusha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arusha"
+      ]
+    },
+    {
+      "id": "dar-es-salaam",
+      "nombre": "Dar es Salaam",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "dodoma",
+      "nombre": "Dodoma",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dodoma",
+        "Kondoa",
+        "Mpwapwa"
+      ]
+    },
+    {
+      "id": "iringa",
+      "nombre": "Iringa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Iringa",
+        "Njombe"
+      ]
+    },
+    {
+      "id": "kagera",
+      "nombre": "Kagera",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bukoba",
+        "Bwanga",
+        "Ngara"
+      ]
+    },
+    {
+      "id": "kigoma",
+      "nombre": "Kigoma",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kasulu",
+        "Kigoma",
+        "Uvinza"
+      ]
+    },
+    {
+      "id": "kilimanjaro",
+      "nombre": "Kilimanjaro",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Moshi",
+        "Same"
+      ]
+    },
+    {
+      "id": "lindi",
+      "nombre": "Lindi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kilwa Kivinje",
+        "Lindi",
+        "Nachingwea"
+      ]
+    },
+    {
+      "id": "mara",
+      "nombre": "Mara",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Musoma",
+        "Tarime"
+      ]
+    },
+    {
+      "id": "mbeya",
+      "nombre": "Mbeya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mbeya",
+        "Mwaya",
+        "Tukuyu"
+      ]
+    },
+    {
+      "id": "morogoro",
+      "nombre": "Morogoro",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kilosa",
+        "Mahenge",
+        "Morogoro"
+      ]
+    },
+    {
+      "id": "mtwara",
+      "nombre": "Mtwara",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Masasi",
+        "Mikindani",
+        "Mtwara",
+        "Newala"
+      ]
+    },
+    {
+      "id": "mwanza",
+      "nombre": "Mwanza",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Magu",
+        "Mwanza",
+        "Nansio",
+        "Sengerama"
+      ]
+    },
+    {
+      "id": "pwani",
+      "nombre": "Pwani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bagamoyo",
+        "Kibaha",
+        "Rufiji",
+        "Utete"
+      ]
+    },
+    {
+      "id": "rukwa",
+      "nombre": "Rukwa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mpanda",
+        "Sumbawanga"
+      ]
+    },
+    {
+      "id": "ruvuma",
+      "nombre": "Ruvuma",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Songea",
+        "Tunduru"
+      ]
+    },
+    {
+      "id": "shinyanga",
+      "nombre": "Shinyanga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kahama",
+        "Maswa",
+        "Mwadui",
+        "Old Shinyanga",
+        "Shinyanga"
+      ]
+    },
+    {
+      "id": "singida",
+      "nombre": "Singida",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Manyoni",
+        "Singida"
+      ]
+    },
+    {
+      "id": "tabora",
+      "nombre": "Tabora",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bukene",
+        "Nzega",
+        "Tabora",
+        "Urambo"
+      ]
+    },
+    {
+      "id": "tanga",
+      "nombre": "Tanga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Korogwe",
+        "Muheza",
+        "Pangani",
+        "Tanga"
+      ]
+    },
+    {
+      "id": "zanzibar-and-pemba",
+      "nombre": "Zanzibar and Pemba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

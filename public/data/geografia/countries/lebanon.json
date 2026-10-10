@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "lebanon",
+    "nombre": "Lebanon",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "al-biqa",
+      "nombre": "al-Biqa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Hirmil",
+        "Ba''labakk",
+        "Jubb Jannin",
+        "Rashayya",
+        "Riyak",
+        "Zahlah"
+      ]
+    },
+    {
+      "id": "al-janub",
+      "nombre": "al-Janub",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jazzin",
+        "Juwayya",
+        "Sayda",
+        "Sur"
+      ]
+    },
+    {
+      "id": "an-nabatiyah",
+      "nombre": "an-Nabatiyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "an-Nabatiyat-at-Tahta",
+        "Marj ''Uyun",
+        "Nabatieh"
+      ]
+    },
+    {
+      "id": "ash-shamal",
+      "nombre": "ash-Shamal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Batrun",
+        "Tarabulus ash-Sham"
+      ]
+    },
+    {
+      "id": "beirut",
+      "nombre": "Beirut",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Beirut",
+        "Jdeidet el Metn",
+        "Jnaah"
+      ]
+    },
+    {
+      "id": "jabal-lubnan",
+      "nombre": "Jabal Lubnan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "mohafazat-liban-nord",
+      "nombre": "Mohafazat Liban-Nord",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "mohafazat-mont-liban",
+      "nombre": "Mohafazat Mont-Liban",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sidon",
+      "nombre": "Sidon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sidon"
+      ]
+    }
+  ]
+}

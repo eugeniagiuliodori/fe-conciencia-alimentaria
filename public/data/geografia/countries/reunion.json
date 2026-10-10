@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "reunion",
+    "nombre": "Réunion",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "saint-benoit",
+      "nombre": "Saint-Benoit",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bras-Panon",
+        "Saint-Andre",
+        "Saint-Benoit",
+        "Sainte-Rose",
+        "Salazie"
+      ]
+    },
+    {
+      "id": "saint-denis",
+      "nombre": "Saint-Denis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "La Possession",
+        "Le Port",
+        "Saint-Denis",
+        "Sainte-Marie",
+        "Sainte-Suzanne"
+      ]
+    },
+    {
+      "id": "saint-paul",
+      "nombre": "Saint-Paul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "L''Etang-Sale",
+        "Les Aviron",
+        "Les Trois-Bassins",
+        "Saint-Leu",
+        "Saint-Paul"
+      ]
+    },
+    {
+      "id": "saint-pierre",
+      "nombre": "Saint-Pierre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cilaos",
+        "Entre-Deux",
+        "Le Tampon",
+        "Petite-Ile",
+        "Saint-Joseph",
+        "Saint-Louis",
+        "Saint-Philippe",
+        "Saint-Pierre"
+      ]
+    }
+  ]
+}

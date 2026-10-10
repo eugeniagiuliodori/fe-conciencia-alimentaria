@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "taiwan",
+    "nombre": "Taiwan",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "changhwa",
+      "nombre": "Changhwa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Changhua City",
+        "Changhwa",
+        "Chihu",
+        "Erhlin",
+        "Hemei",
+        "Homei",
+        "Hua Tan Hsiang",
+        "Huatan Township",
+        "Lukang",
+        "Peitou",
+        "Puyen Hsiang",
+        "Tienchung",
+        "Yuanlin"
+      ]
+    },
+    {
+      "id": "chiayi-hsien",
+      "nombre": "Chiayi Hsien",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "chiayi-shih",
+      "nombre": "Chiayi Shih",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "eastern-taipei",
+      "nombre": "Eastern Taipei",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "hsinchu-hsien",
+      "nombre": "Hsinchu Hsien",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "hsinchu-shih",
+      "nombre": "Hsinchu Shih",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "hualien",
+      "nombre": "Hualien",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fenglin",
+        "Hualian",
+        "Yuli"
+      ]
+    },
+    {
+      "id": "ilan",
+      "nombre": "Ilan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ilan",
+        "Lotung",
+        "Suao",
+        "Toucheng"
+      ]
+    },
+    {
+      "id": "kaohsiung-hsien",
+      "nombre": "Kaohsiung Hsien",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kaohsiung-shih",
+      "nombre": "Kaohsiung Shih",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "keelung-shih",
+      "nombre": "Keelung Shih",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kinmen",
+      "nombre": "Kinmen",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kincheng",
+        "Kinhsia",
+        "Kinhu"
+      ]
+    },
+    {
+      "id": "miaoli",
+      "nombre": "Miaoli",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cholan",
+        "Chunan",
+        "Houlung",
+        "Miaoli",
+        "Toufen",
+        "Tunghsiao",
+        "Yuanli",
+        "Zaociao"
+      ]
+    },
+    {
+      "id": "nantou",
+      "nombre": "Nantou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chichi",
+        "Chushan",
+        "Nantou",
+        "Puli",
+        "Tsaotun"
+      ]
+    },
+    {
+      "id": "northern-taiwan",
+      "nombre": "Northern Taiwan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "penghu",
+      "nombre": "Penghu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Makung"
+      ]
+    },
+    {
+      "id": "pingtung",
+      "nombre": "Pingtung",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chaochou",
+        "Hengchun",
+        "Pingtung",
+        "Tungkang"
+      ]
+    },
+    {
+      "id": "taichung",
+      "nombre": "Taichung",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dali",
+        "South District",
+        "Ta-Ya Shang"
+      ]
+    },
+    {
+      "id": "taichung-hsien",
+      "nombre": "Taichung Hsien",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dali",
+        "South District",
+        "Ta-Ya Shang"
+      ]
+    },
+    {
+      "id": "taichung-shih",
+      "nombre": "Taichung Shih",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dali",
+        "South District",
+        "Ta-Ya Shang"
+      ]
+    },
+    {
+      "id": "tainan-hsien",
+      "nombre": "Tainan Hsien",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tainan-shih",
+      "nombre": "Tainan Shih",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "taipei-hsien",
+      "nombre": "Taipei Hsien",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "taipei-shih-taipei-hsien",
+      "nombre": "Taipei Shih / Taipei Hsien",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "taitung",
+      "nombre": "Taitung",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kuanshan",
+        "Taitung"
+      ]
+    },
+    {
+      "id": "taoyuan",
+      "nombre": "Taoyuan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chengkung",
+        "Chungli",
+        "Kuan Yin",
+        "Pate",
+        "Pingchen",
+        "Ta Yuan",
+        "Tachi",
+        "Taoyuan",
+        "Tungshih",
+        "Yangmei"
+      ]
+    },
+    {
+      "id": "yilan",
+      "nombre": "Yilan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Wujie"
+      ]
+    },
+    {
+      "id": "yun-lin-hsien",
+      "nombre": "Yun-Lin Hsien",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "yunlin",
+      "nombre": "Yunlin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hsilo",
+        "Huwei",
+        "Peikang",
+        "Touliu",
+        "Tounan",
+        "Tuku"
+      ]
+    }
+  ]
+}

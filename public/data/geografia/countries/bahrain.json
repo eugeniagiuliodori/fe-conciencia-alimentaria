@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "bahrain",
+    "nombre": "Bahrain",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "al-manamah",
+      "nombre": "al-Manamah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Manamah"
+      ]
+    },
+    {
+      "id": "al-muharraq",
+      "nombre": "al-Muharraq",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Muharraq"
+      ]
+    },
+    {
+      "id": "ar-rifa-a",
+      "nombre": "ar-Rifa''a",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ar-Rifa''a"
+      ]
+    },
+    {
+      "id": "badiyah",
+      "nombre": "Badiyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Badiyah"
+      ]
+    },
+    {
+      "id": "hidd",
+      "nombre": "Hidd",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hidd"
+      ]
+    },
+    {
+      "id": "isa",
+      "nombre": "Isa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Isa"
+      ]
+    },
+    {
+      "id": "jidd-hafs",
+      "nombre": "Jidd Hafs",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "mahama",
+      "nombre": "Mahama",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mahama"
+      ]
+    },
+    {
+      "id": "manama",
+      "nombre": "Manama",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Manama"
+      ]
+    },
+    {
+      "id": "sitrah",
+      "nombre": "Sitrah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sitrah"
+      ]
+    }
+  ]
+}

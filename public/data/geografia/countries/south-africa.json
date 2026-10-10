@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "south-africa",
+    "nombre": "South Africa",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "eastern-cape",
+      "nombre": "Eastern Cape",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "free-state",
+      "nombre": "Free State",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "gauteng",
+      "nombre": "Gauteng",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alberton",
+        "Alrode",
+        "Benmore",
+        "Benoni",
+        "Boksburg",
+        "Booysens",
+        "Brakpan",
+        "Bronkhorstspruit",
+        "Bryanston",
+        "Carltonville",
+        "Centurion",
+        "Cullinan",
+        "Dainfern",
+        "Edenvale",
+        "Ferndale",
+        "Fourways",
+        "Gardenview",
+        "Gauteng",
+        "Grant Park",
+        "Heidelberg",
+        "Isando",
+        "Johannesburg",
+        "Kelvin",
+        "Krugersdorp",
+        "Linmeyer",
+        "Maraisburg",
+        "Midrand",
+        "Nigel",
+        "Northmead",
+        "Petervale",
+        "Pinegowrie",
+        "Pretoria",
+        "Primrose",
+        "Randburg",
+        "Randfontein",
+        "Randvaal",
+        "Rivonia",
+        "Robertville",
+        "Soweto",
+        "Springs",
+        "Temba",
+        "Tembisa",
+        "Troyeville",
+        "Vanderbijlpark",
+        "Vereeniging",
+        "Verwoerdburg",
+        "Vorna Valley",
+        "Wadeville",
+        "Westonaria"
+      ]
+    },
+    {
+      "id": "kempton-park",
+      "nombre": "Kempton Park",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kramerville",
+      "nombre": "Kramerville",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sandton"
+      ]
+    },
+    {
+      "id": "kwazulu-natal",
+      "nombre": "KwaZulu Natal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "limpopo",
+      "nombre": "Limpopo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bela-Bela",
+        "Dendron",
+        "Duiwelskloof",
+        "Ellisras",
+        "Giyani",
+        "Lebowakgomo",
+        "Louis Trichardt",
+        "Lulekani",
+        "Mankweng",
+        "Messina",
+        "Mogalakwena",
+        "Mutale",
+        "Nkowakowa",
+        "Nylstroom",
+        "Phalaborwa",
+        "Pietersburg",
+        "Polokwane",
+        "Soekmekaar",
+        "Southdale",
+        "Thohoyandou",
+        "Thulamahashe",
+        "Tzaneen"
+      ]
+    },
+    {
+      "id": "mpumalanga",
+      "nombre": "Mpumalanga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Botleng",
+        "Ekangala",
+        "eLukwatini",
+        "Embalenhle",
+        "Emjindini",
+        "Empuluzi",
+        "Emzinoni",
+        "Ermelo",
+        "Ethandakukhanja",
+        "Groblersdal",
+        "Komatipoort",
+        "Kriel",
+        "Kwazamokuhle",
+        "KwaZanele",
+        "Lebohang",
+        "Marblehall",
+        "Mashishing",
+        "Mhluzi",
+        "Nelspruit",
+        "Phola",
+        "Sakhile",
+        "Secunda",
+        "Siyabuswa",
+        "Siyathemba",
+        "Siyathuthuka",
+        "Vukuzakhe",
+        "Witbank",
+        "Witrivier"
+      ]
+    },
+    {
+      "id": "north-west",
+      "nombre": "North West",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "northern-cape",
+      "nombre": "Northern Cape",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "parow",
+      "nombre": "Parow",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Parow"
+      ]
+    },
+    {
+      "id": "table-view",
+      "nombre": "Table View",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "umtentweni",
+      "nombre": "Umtentweni",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Umtentweni"
+      ]
+    },
+    {
+      "id": "western-cape",
+      "nombre": "Western Cape",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

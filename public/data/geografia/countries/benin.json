@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "benin",
+    "nombre": "Benin",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "alibori",
+      "nombre": "Alibori",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kandi",
+        "Malanville"
+      ]
+    },
+    {
+      "id": "atacora",
+      "nombre": "Atacora",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Batia",
+        "Boukombe",
+        "Kouande",
+        "Natitingou"
+      ]
+    },
+    {
+      "id": "atlantique",
+      "nombre": "Atlantique",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Allada",
+        "Cotonou",
+        "Ouidah",
+        "Tanguiete"
+      ]
+    },
+    {
+      "id": "borgou",
+      "nombre": "Borgou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bembereke",
+        "Nikki",
+        "Parakou",
+        "Tchaourou"
+      ]
+    },
+    {
+      "id": "collines",
+      "nombre": "Collines",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dassa",
+        "Savalou",
+        "Save"
+      ]
+    },
+    {
+      "id": "couffo",
+      "nombre": "Couffo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aplahoue",
+        "Dogbo"
+      ]
+    },
+    {
+      "id": "donga",
+      "nombre": "Donga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Djougou"
+      ]
+    },
+    {
+      "id": "littoral",
+      "nombre": "Littoral",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cotonou"
+      ]
+    },
+    {
+      "id": "mono",
+      "nombre": "Mono",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Athieme",
+        "Come",
+        "Grand Popo",
+        "Lokossa"
+      ]
+    },
+    {
+      "id": "oueme",
+      "nombre": "Oueme",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Adjohoun",
+        "Porto Novo"
+      ]
+    },
+    {
+      "id": "plateau",
+      "nombre": "Plateau",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ketou",
+        "Pobe",
+        "Sakete"
+      ]
+    },
+    {
+      "id": "zou",
+      "nombre": "Zou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abomey",
+        "Bohicon",
+        "Cove",
+        "Zagnanado"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "democratic-republic-of-the-congo",
+    "nombre": "Democratic Republic of the Congo",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "bandundu",
+      "nombre": "Bandundu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bandundu",
+        "Bolobo",
+        "Bulungu",
+        "Gungu",
+        "Idiofa",
+        "Inongo",
+        "Kahemba",
+        "Kasongo-Lunda",
+        "Kenge",
+        "Kikwit",
+        "Kiri",
+        "Kutu",
+        "Lusanga",
+        "Mangai",
+        "Mushie",
+        "Nioki"
+      ]
+    },
+    {
+      "id": "bas-congo",
+      "nombre": "Bas-Congo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Boma",
+        "Kasangulu",
+        "Kimpese",
+        "Madimba",
+        "Matadi",
+        "Mbanza-Ngungu",
+        "Muanda",
+        "Tshela"
+      ]
+    },
+    {
+      "id": "equateur",
+      "nombre": "Equateur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Basankusu",
+        "Binga",
+        "Bodalangi",
+        "Boende",
+        "Bongandanga",
+        "Bosobolo",
+        "Bumba",
+        "Businga",
+        "Gbadolite",
+        "Gemena",
+        "Ikela",
+        "Libenge",
+        "Lisala",
+        "Makanza",
+        "Mbandaka",
+        "Mobayi-Mbongo",
+        "Yakoma",
+        "Yandongi",
+        "Yumbi",
+        "Zongo"
+      ]
+    },
+    {
+      "id": "haut-congo",
+      "nombre": "Haut-Congo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aba",
+        "Aketi",
+        "Bafwasende",
+        "Banalia",
+        "Basoko",
+        "Bondo",
+        "Bunia",
+        "Buta",
+        "Djugu",
+        "Faradje",
+        "Gwane",
+        "Isiro",
+        "Itoko",
+        "Kisangani",
+        "Mambasa",
+        "Mongbwalu",
+        "Niangara",
+        "Poko",
+        "Simba",
+        "Titule",
+        "Ubundu",
+        "Wamba",
+        "Watsa",
+        "Yangambi"
+      ]
+    },
+    {
+      "id": "kasai-occidental",
+      "nombre": "Kasai-Occidental",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Demba",
+        "Dibaya",
+        "Ilebo",
+        "Kananga",
+        "Kazumba",
+        "Luebo",
+        "Mweka",
+        "Tshikapa"
+      ]
+    },
+    {
+      "id": "kasai-oriental",
+      "nombre": "Kasai-Oriental",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gandajika",
+        "Kabinda",
+        "Katako-Kombe",
+        "Kole",
+        "Lodja",
+        "Lubao",
+        "Lubefu",
+        "Lusambo",
+        "Mbuji-Mayi",
+        "Mwene-Ditu",
+        "Tshilenge",
+        "Tshofa"
+      ]
+    },
+    {
+      "id": "katanga",
+      "nombre": "Katanga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bukama",
+        "Dilolo",
+        "Kabalo",
+        "Kalemie",
+        "Kambove",
+        "Kamina",
+        "Kaniama",
+        "Kikondjo",
+        "Kipushi",
+        "Kolwezi",
+        "Kongolo",
+        "Le Marinel",
+        "Likasi",
+        "Lubudi",
+        "Lubumbashi",
+        "Malemba-Nkulu",
+        "Manono",
+        "Moba",
+        "Mulongo",
+        "Mwanza",
+        "Nyunzu",
+        "Sakania",
+        "Shinkolobwe"
+      ]
+    },
+    {
+      "id": "kinshasa",
+      "nombre": "Kinshasa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kinshasa"
+      ]
+    },
+    {
+      "id": "maniema",
+      "nombre": "Maniema",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kalima",
+        "Kasongo",
+        "Kindu"
+      ]
+    },
+    {
+      "id": "nord-kivu",
+      "nombre": "Nord-Kivu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Beni",
+        "Butembo",
+        "Goma"
+      ]
+    },
+    {
+      "id": "sud-kivu",
+      "nombre": "Sud-Kivu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bukavu",
+        "Kabare",
+        "Kama",
+        "Kampene",
+        "Kibombo",
+        "Uvira"
+      ]
+    }
+  ]
+}

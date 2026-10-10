@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "somalia",
+    "nombre": "Somalia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "awdal",
+      "nombre": "Awdal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baki",
+        "Borama",
+        "Gebilay",
+        "Sayla"
+      ]
+    },
+    {
+      "id": "bakol",
+      "nombre": "Bakol",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tayeglo",
+        "Xuddur",
+        "Yet"
+      ]
+    },
+    {
+      "id": "banadir",
+      "nombre": "Banadir",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Muqdisho"
+      ]
+    },
+    {
+      "id": "bari",
+      "nombre": "Bari",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alula",
+        "Bandarbeyla",
+        "Bandarmu''ayo",
+        "Bargal",
+        "Bereda",
+        "Bosaso",
+        "Iskushuban",
+        "Qandala",
+        "Qardho",
+        "Xafun"
+      ]
+    },
+    {
+      "id": "bay",
+      "nombre": "Bay",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baydhabo",
+        "Bur Hakkaba",
+        "Dinsor"
+      ]
+    },
+    {
+      "id": "galgudug",
+      "nombre": "Galgudug",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dhusa Marreb",
+        "Elbur",
+        "Eldhere"
+      ]
+    },
+    {
+      "id": "gedo",
+      "nombre": "Gedo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bardhere",
+        "Dolaw",
+        "Dujuma",
+        "Garbaharey",
+        "Luq",
+        "Sa''o",
+        "Wajid"
+      ]
+    },
+    {
+      "id": "hiran",
+      "nombre": "Hiran",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bal''ad",
+        "Beled Weyne",
+        "Bulobarde",
+        "Jalalassi"
+      ]
+    },
+    {
+      "id": "jubbada-hose",
+      "nombre": "Jubbada Hose",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "jubbadha-dexe",
+      "nombre": "Jubbadha Dexe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "mudug",
+      "nombre": "Mudug",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Galka''yo",
+        "Hobyo",
+        "Xarardhere"
+      ]
+    },
+    {
+      "id": "nugal",
+      "nombre": "Nugal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Eyl",
+        "Garowe",
+        "Las''anod"
+      ]
+    },
+    {
+      "id": "sanag",
+      "nombre": "Sanag",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Erigabo",
+        "Lasqoray"
+      ]
+    },
+    {
+      "id": "shabellaha-dhexe",
+      "nombre": "Shabellaha Dhexe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "shabellaha-hose",
+      "nombre": "Shabellaha Hose",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "togdher",
+      "nombre": "Togdher",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bur''o",
+        "Ek",
+        "Odweyne"
+      ]
+    },
+    {
+      "id": "woqoyi-galbed",
+      "nombre": "Woqoyi Galbed",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

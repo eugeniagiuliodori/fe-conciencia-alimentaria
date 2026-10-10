@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "papua-new-guinea",
+    "nombre": "Papua New Guinea",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "east-new-britain",
+      "nombre": "East New Britain",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "east-sepik",
+      "nombre": "East Sepik",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "eastern-highlands",
+      "nombre": "Eastern Highlands",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "enga",
+      "nombre": "Enga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Laiagam",
+        "Porgera",
+        "Wabag"
+      ]
+    },
+    {
+      "id": "fly-river",
+      "nombre": "Fly River",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "gulf",
+      "nombre": "Gulf",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kerema"
+      ]
+    },
+    {
+      "id": "madang",
+      "nombre": "Madang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Finschhafen",
+        "Madang"
+      ]
+    },
+    {
+      "id": "manus",
+      "nombre": "Manus",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lorengau"
+      ]
+    },
+    {
+      "id": "milne-bay",
+      "nombre": "Milne Bay",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "morobe",
+      "nombre": "Morobe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bulolo",
+        "Lae",
+        "Wau"
+      ]
+    },
+    {
+      "id": "national-capital-district",
+      "nombre": "National Capital District",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "new-ireland",
+      "nombre": "New Ireland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "north-solomons",
+      "nombre": "North Solomons",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "oro",
+      "nombre": "Oro",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kokoda",
+        "Popondetta"
+      ]
+    },
+    {
+      "id": "sandaun",
+      "nombre": "Sandaun",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Vanimo"
+      ]
+    },
+    {
+      "id": "simbu",
+      "nombre": "Simbu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kundiawa"
+      ]
+    },
+    {
+      "id": "southern-highlands",
+      "nombre": "Southern Highlands",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "west-new-britain",
+      "nombre": "West New Britain",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "western-highlands",
+      "nombre": "Western Highlands",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

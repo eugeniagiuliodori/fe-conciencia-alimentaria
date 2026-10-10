@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "namibia",
+    "nombre": "Namibia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "caprivi",
+      "nombre": "Caprivi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Katima Mulilo"
+      ]
+    },
+    {
+      "id": "erongo",
+      "nombre": "Erongo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Henties Bay",
+        "Karibib",
+        "Kuisebmond",
+        "Omaruru",
+        "Otjimbingwe",
+        "Swakopmund",
+        "Usakos",
+        "Walvis Bay"
+      ]
+    },
+    {
+      "id": "hardap",
+      "nombre": "Hardap",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aranos",
+        "Maltahohe",
+        "Mariental",
+        "Rehoboth"
+      ]
+    },
+    {
+      "id": "karas",
+      "nombre": "Karas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bethanien",
+        "Karasburg",
+        "Keetmanshoop",
+        "Luderitz",
+        "Oranjemund",
+        "Warmbad"
+      ]
+    },
+    {
+      "id": "kavango",
+      "nombre": "Kavango",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rundu"
+      ]
+    },
+    {
+      "id": "khomas",
+      "nombre": "Khomas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Windhoek"
+      ]
+    },
+    {
+      "id": "kunene",
+      "nombre": "Kunene",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arandis",
+        "Khorixas",
+        "Opuwo",
+        "Outjo"
+      ]
+    },
+    {
+      "id": "ohangwena",
+      "nombre": "Ohangwena",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Oshikango"
+      ]
+    },
+    {
+      "id": "omaheke",
+      "nombre": "Omaheke",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gobabis",
+        "Leonardville"
+      ]
+    },
+    {
+      "id": "omusati",
+      "nombre": "Omusati",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ongandjera"
+      ]
+    },
+    {
+      "id": "oshana",
+      "nombre": "Oshana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ongwediva",
+        "Oshakati"
+      ]
+    },
+    {
+      "id": "oshikoto",
+      "nombre": "Oshikoto",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ondangwa",
+        "Otavi",
+        "Tsumeb"
+      ]
+    },
+    {
+      "id": "otjozondjupa",
+      "nombre": "Otjozondjupa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Grootfontein",
+        "Okahandja",
+        "Okakarara",
+        "Otjiwarongo"
+      ]
+    }
+  ]
+}

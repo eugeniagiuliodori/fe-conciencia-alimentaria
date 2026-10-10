@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "tajikistan",
+    "nombre": "Tajikistan",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "dushanbe",
+      "nombre": "Dushanbe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dushanbe"
+      ]
+    },
+    {
+      "id": "gorno-badakhshan",
+      "nombre": "Gorno-Badakhshan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Khorug",
+        "Murgob"
+      ]
+    },
+    {
+      "id": "karotegin",
+      "nombre": "Karotegin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Garm",
+        "Hisor",
+        "Kofarnihon",
+        "Leninskiy",
+        "Rogun",
+        "Shakhrinau",
+        "Tursunzoda"
+      ]
+    },
+    {
+      "id": "khatlon",
+      "nombre": "Khatlon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dangara",
+        "Farkhor",
+        "Jilikul",
+        "Khojamaston",
+        "Kolhozobod",
+        "Kulob",
+        "Kumsangir",
+        "Moskva",
+        "Mu''minobod",
+        "Nurak",
+        "Pyanj",
+        "Qurgonteppa",
+        "Sarband",
+        "Shaartuz",
+        "Sovetskiy",
+        "Vakhsh",
+        "Vose",
+        "Yovon"
+      ]
+    },
+    {
+      "id": "sughd",
+      "nombre": "Sughd",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Adrasmon",
+        "Asht",
+        "Ayni",
+        "Buston",
+        "Chkalov",
+        "Chorku",
+        "Gafurov",
+        "Ganchi",
+        "Isfara",
+        "Khujand",
+        "Konibodom",
+        "Matcha",
+        "Nau",
+        "Panjakent",
+        "Proletarsk",
+        "Qayroqqum",
+        "Shurob",
+        "Taboshar",
+        "Uroteppa",
+        "Zafarobod"
+      ]
+    }
+  ]
+}

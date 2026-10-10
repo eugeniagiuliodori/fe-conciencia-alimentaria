@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "equatorial-guinea",
+    "nombre": "Equatorial Guinea",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "annobon",
+      "nombre": "Annobon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Pale"
+      ]
+    },
+    {
+      "id": "bioko-norte",
+      "nombre": "Bioko Norte",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "bioko-sur",
+      "nombre": "Bioko Sur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "centro-sur",
+      "nombre": "Centro Sur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kie-ntem",
+      "nombre": "Kie-Ntem",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ebebiyin",
+        "Mikomeseng"
+      ]
+    },
+    {
+      "id": "litoral",
+      "nombre": "Litoral",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bata",
+        "Mbini"
+      ]
+    },
+    {
+      "id": "wele-nzas",
+      "nombre": "Wele-Nzas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aconibe",
+        "Anisoc",
+        "Mongomo",
+        "Nsok"
+      ]
+    }
+  ]
+}

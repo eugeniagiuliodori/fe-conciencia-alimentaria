@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "new-caledonia",
+    "nombre": "New Caledonia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "iles",
+      "nombre": "Iles",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Belep",
+        "Fayaoue",
+        "Tadine",
+        "Vao",
+        "We"
+      ]
+    },
+    {
+      "id": "nord",
+      "nombre": "Nord",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Canala",
+        "Hienghene",
+        "Houailu",
+        "Kaala Gomen",
+        "Kone",
+        "Koumac",
+        "Ouegoa",
+        "Poindimie",
+        "Ponerihouen",
+        "Pouebo",
+        "Pouembout",
+        "Poum",
+        "Poya",
+        "Touho",
+        "Voh"
+      ]
+    },
+    {
+      "id": "sud",
+      "nombre": "Sud",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bouloupari",
+        "Bourail",
+        "Dumbea",
+        "Farino",
+        "La Foa",
+        "Moindou",
+        "Mont-Dore",
+        "Noumea",
+        "Paita",
+        "Sarramea",
+        "Thio",
+        "Yate"
+      ]
+    }
+  ]
+}

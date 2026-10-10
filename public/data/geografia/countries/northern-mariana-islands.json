@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "northern-mariana-islands",
+    "nombre": "Northern Mariana Islands",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "northern-islands",
+      "nombre": "Northern Islands",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "rota",
+      "nombre": "Rota",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Songsong"
+      ]
+    },
+    {
+      "id": "saipan",
+      "nombre": "Saipan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Capital Hill",
+        "Chalan Kanoa",
+        "Dandan",
+        "Garapan",
+        "Gualo Rai",
+        "Kagman",
+        "Koblerville",
+        "San Antonio",
+        "San Jose",
+        "San Roque",
+        "San Vicente",
+        "Susupe",
+        "Tanapag"
+      ]
+    },
+    {
+      "id": "tinian",
+      "nombre": "Tinian",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "San Jose"
+      ]
+    }
+  ]
+}

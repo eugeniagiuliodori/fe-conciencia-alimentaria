@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "cameroon",
+    "nombre": "Cameroon",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "adamaoua",
+      "nombre": "Adamaoua",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Banyo",
+        "Meiganga",
+        "Ngaoundere",
+        "Tibati",
+        "Tignere"
+      ]
+    },
+    {
+      "id": "centre",
+      "nombre": "Centre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akonolinga",
+        "Bafia",
+        "Eseka",
+        "Mbalmayo",
+        "Mfou",
+        "Monatele",
+        "Nanga Eboko",
+        "Obala",
+        "Ombesa",
+        "Saa",
+        "Yaounde"
+      ]
+    },
+    {
+      "id": "est",
+      "nombre": "Est",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abong Mbang",
+        "Batouri",
+        "Bertoua",
+        "Betare Oya",
+        "Djoum",
+        "Doume",
+        "Lomie",
+        "Yokadouma"
+      ]
+    },
+    {
+      "id": "littoral",
+      "nombre": "Littoral",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bonaberi",
+        "Dibombari",
+        "Douala",
+        "Edea",
+        "Loum",
+        "Manjo",
+        "Mbanga",
+        "Nkongsamba",
+        "Yabassi"
+      ]
+    },
+    {
+      "id": "nord",
+      "nombre": "Nord",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Figuif",
+        "Garoua",
+        "Guider",
+        "Lagdo",
+        "Poli",
+        "Rey Bouba",
+        "Tchollire"
+      ]
+    },
+    {
+      "id": "nord-extreme",
+      "nombre": "Nord Extreme",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Figuif",
+        "Garoua",
+        "Guider",
+        "Lagdo",
+        "Poli",
+        "Rey Bouba",
+        "Tchollire"
+      ]
+    },
+    {
+      "id": "nordouest",
+      "nombre": "Nordouest",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bamenda",
+        "Kumbo",
+        "Mbengwi",
+        "Mme",
+        "Njinikom",
+        "Nkambe",
+        "Wum"
+      ]
+    },
+    {
+      "id": "ouest",
+      "nombre": "Ouest",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bafang",
+        "Bafoussam",
+        "Bafut",
+        "Bali",
+        "Bana",
+        "Bangangte",
+        "Djang",
+        "Fontem",
+        "Foumban",
+        "Foumbot",
+        "Mbouda"
+      ]
+    },
+    {
+      "id": "sud",
+      "nombre": "Sud",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akom",
+        "Ambam",
+        "Ebolowa",
+        "Kribi",
+        "Lolodorf",
+        "Moloundou",
+        "Mvangue",
+        "Sangmelima"
+      ]
+    },
+    {
+      "id": "sudouest",
+      "nombre": "Sudouest",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Buea",
+        "Idenao",
+        "Kumba",
+        "Limbe",
+        "Mamfe",
+        "Muyuka",
+        "Tiko"
+      ]
+    }
+  ]
+}

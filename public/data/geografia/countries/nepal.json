@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "nepal",
+    "nombre": "Nepal",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "bagmati",
+      "nombre": "Bagmati",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Banepa",
+        "Bhaktapur",
+        "Bidur",
+        "Bishalter",
+        "Dhulikhel",
+        "Kathmandu",
+        "Kirtipur",
+        "Lalitpur",
+        "Madhyapur Thimi",
+        "Panauti",
+        "Tribuvannagar"
+      ]
+    },
+    {
+      "id": "bheri",
+      "nombre": "Bheri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Birendranagar",
+        "Gulariya",
+        "Narayan",
+        "Nepalganj",
+        "Surkhet"
+      ]
+    },
+    {
+      "id": "dhawalagiri",
+      "nombre": "Dhawalagiri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baglung",
+        "Weni"
+      ]
+    },
+    {
+      "id": "gandaki",
+      "nombre": "Gandaki",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Byas",
+        "Leknath",
+        "Pokhara",
+        "Prithivinarayan",
+        "Putalibazar",
+        "Waling"
+      ]
+    },
+    {
+      "id": "janakpur",
+      "nombre": "Janakpur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bhimeshwar",
+        "Jaleshwar",
+        "Janakpur",
+        "Kamalamai",
+        "Malangwa",
+        "Sinduli Marhi"
+      ]
+    },
+    {
+      "id": "karnali",
+      "nombre": "Karnali",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jumla"
+      ]
+    },
+    {
+      "id": "koshi",
+      "nombre": "Koshi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Biratnagar",
+        "Dhankuta",
+        "Dharan",
+        "Inaruwa",
+        "Itahari",
+        "Khandbari"
+      ]
+    },
+    {
+      "id": "lumbini",
+      "nombre": "Lumbini",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Butwal",
+        "Kapilwastu",
+        "Ramgram",
+        "Sidharthanagar",
+        "Tansen",
+        "Wahadurganj"
+      ]
+    },
+    {
+      "id": "mahakali",
+      "nombre": "Mahakali",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amargadhi",
+        "Dashrathchand",
+        "Mahendranagar"
+      ]
+    },
+    {
+      "id": "mechi",
+      "nombre": "Mechi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bhadrapur",
+        "Damak",
+        "Ilam",
+        "Mechinagar"
+      ]
+    },
+    {
+      "id": "narayani",
+      "nombre": "Narayani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bharatpur",
+        "Birganj",
+        "Chitwan",
+        "Gaur",
+        "Hetauda",
+        "Kalaiya",
+        "Ratnanagar"
+      ]
+    },
+    {
+      "id": "rapti",
+      "nombre": "Rapti",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Salyan",
+        "Tulsipur"
+      ]
+    },
+    {
+      "id": "sagarmatha",
+      "nombre": "Sagarmatha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lahan",
+        "Rajbiraj",
+        "Siraha",
+        "Triyuga"
+      ]
+    },
+    {
+      "id": "seti",
+      "nombre": "Seti",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dhangadi",
+        "Dipayal",
+        "Tikapur"
+      ]
+    }
+  ]
+}

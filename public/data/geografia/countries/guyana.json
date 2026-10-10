@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "guyana",
+    "nombre": "Guyana",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "barima-waini",
+      "nombre": "Barima-Waini",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mabaruma",
+        "Morawhanna"
+      ]
+    },
+    {
+      "id": "cuyuni-mazaruni",
+      "nombre": "Cuyuni-Mazaruni",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bartica",
+        "Issano",
+        "Kamarang"
+      ]
+    },
+    {
+      "id": "demerara-mahaica",
+      "nombre": "Demerara-Mahaica",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Georgetown",
+        "Mahaica",
+        "Paradise",
+        "Queenstown"
+      ]
+    },
+    {
+      "id": "east-berbice-corentyne",
+      "nombre": "East Berbice-Corentyne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "essequibo-islands-west-demerar",
+      "nombre": "Essequibo Islands-West Demerar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "mahaica-berbice",
+      "nombre": "Mahaica-Berbice",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fort Wellington",
+        "Mahaicony",
+        "Rosignol"
+      ]
+    },
+    {
+      "id": "pomeroon-supenaam",
+      "nombre": "Pomeroon-Supenaam",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Anna Regina",
+        "Charity",
+        "Suddie"
+      ]
+    },
+    {
+      "id": "potaro-siparuni",
+      "nombre": "Potaro-Siparuni",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mahdia",
+        "Tumatumari"
+      ]
+    },
+    {
+      "id": "upper-demerara-berbice",
+      "nombre": "Upper Demerara-Berbice",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "upper-takutu-upper-essequibo",
+      "nombre": "Upper Takutu-Upper Essequibo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

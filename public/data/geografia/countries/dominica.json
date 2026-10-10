@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "dominica",
+    "nombre": "Dominica",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "saint-andrew",
+      "nombre": "Saint Andrew",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-david",
+      "nombre": "Saint David",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-george",
+      "nombre": "Saint George",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-john",
+      "nombre": "Saint John",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-joseph",
+      "nombre": "Saint Joseph",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-luke",
+      "nombre": "Saint Luke",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-mark",
+      "nombre": "Saint Mark",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-patrick",
+      "nombre": "Saint Patrick",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-paul",
+      "nombre": "Saint Paul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-peter",
+      "nombre": "Saint Peter",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "tunisia",
+    "nombre": "Tunisia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "al-kaf",
+      "nombre": "al-Kaf",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ad-Dahmani",
+        "al-Jarissah",
+        "al-Kaf",
+        "al-Qal''at-al-Khasba",
+        "al-Qusur",
+        "as-Sars",
+        "at-Tawiraf",
+        "Manzil Salim",
+        "Nibbar",
+        "Qal''at-as-Sanan",
+        "Saqiyat Sidi Yussuf",
+        "Tajarwin"
+      ]
+    },
+    {
+      "id": "al-mahdiyah",
+      "nombre": "al-Mahdiyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Baradi''ah",
+        "al-Jamm",
+        "al-Mahdiyah",
+        "as-Sawasi",
+        "ash-Shabbah",
+        "Awlad ash-Shamakh",
+        "Bumirdas",
+        "Habirah",
+        "Karkar",
+        "Mallulash",
+        "Qusur-as-Saf",
+        "Rajish",
+        "Shurban",
+        "Sidi ''Ulwan"
+      ]
+    },
+    {
+      "id": "al-munastir",
+      "nombre": "al-Munastir",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Baqalitah",
+        "al-Masdur",
+        "al-Muknin",
+        "al-Munastir",
+        "al-Wardanin",
+        "Amirat-al-Fahul",
+        "Amirat-al-Hajjaj",
+        "Amirat-at-Tawazarah",
+        "ash-Sharahil",
+        "Banan Budar",
+        "Banblat wal-Manarah",
+        "Bani Hassan",
+        "Bu Hajjar",
+        "Ghanadah",
+        "Jammal",
+        "Khunays",
+        "Lamtah",
+        "Manzil Farsi",
+        "Manzil Hayah",
+        "Manzil Kamil",
+        "Manzil Nur",
+        "Qasr Hallal",
+        "Qusaybat-al-Madyuni",
+        "Sahilin Ma''atmar",
+        "Sayyadah",
+        "Sidi ''Amara",
+        "Sidi Bin Nur",
+        "Tabulbah",
+        "Tuzah",
+        "Zaramidin",
+        "Zawiyat Quntash"
+      ]
+    },
+    {
+      "id": "al-qasrayn",
+      "nombre": "al-Qasrayn",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Qasrayn",
+        "Firyanah",
+        "Fussanah",
+        "Haydrah",
+        "Jadliyan",
+        "Majal Bal ''Abbas",
+        "Sabibah",
+        "Subaytilah",
+        "Talabat",
+        "Talah"
+      ]
+    },
+    {
+      "id": "al-qayrawan",
+      "nombre": "al-Qayrawan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-''Ala",
+        "al-Qayrawan",
+        "al-Waslatiyah",
+        "as-Subaykhah",
+        "ash-Shabikah",
+        "ash-Sharardah",
+        "Ayn Jalulah",
+        "Buhajlah",
+        "Haffuz",
+        "Hajib-al-''Ayun",
+        "Manzil Mahidi",
+        "Nasr Allah"
+      ]
+    },
+    {
+      "id": "aryanah",
+      "nombre": "Aryanah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ad-Dandan",
+        "al-Battan",
+        "al-Jadidah",
+        "al-Murnaqiyah",
+        "Aryanah",
+        "at-Tadaman Dawwar Hishar",
+        "Bordj Aalouine",
+        "Burj-al-''Amri",
+        "La Soukra",
+        "Qal''at-al-Andalus",
+        "Sidi Thabit",
+        "Taburbah",
+        "Wadi al-Layl"
+      ]
+    },
+    {
+      "id": "bajah",
+      "nombre": "Bajah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Ma''qulah",
+        "Bajah",
+        "Majaz-al-Bab",
+        "Nafzah",
+        "Quballat",
+        "Tabursuq",
+        "Zahrat Madina"
+      ]
+    },
+    {
+      "id": "bin-arus",
+      "nombre": "Bin ''Arus",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "binzart",
+      "nombre": "Binzart",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-''Aliyah",
+        "al-Matlin",
+        "Awsajah",
+        "Binzart",
+        "Ghar-al-Milh",
+        "Manzil ''Abd-ar-Rahman",
+        "Manzil Bu Ruqaybah",
+        "Manzil Jamil",
+        "Matir",
+        "Rafraf",
+        "Ras-al-Jabal",
+        "Sajanan",
+        "Tinjah"
+      ]
+    },
+    {
+      "id": "gouvernorat-de-ariana",
+      "nombre": "Gouvernorat de Ariana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "gouvernorat-de-nabeul",
+      "nombre": "Gouvernorat de Nabeul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "gouvernorat-de-sousse",
+      "nombre": "Gouvernorat de Sousse",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "hammamet-yasmine",
+      "nombre": "Hammamet Yasmine",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "jundubah",
+      "nombre": "Jundubah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayn Darahim",
+        "Bani Matir",
+        "Bu Salim",
+        "Firnanah",
+        "Ghar-ad-Dima",
+        "Jundubah",
+        "Tabarqah",
+        "Wadi Maliz"
+      ]
+    },
+    {
+      "id": "madaniyin",
+      "nombre": "Madaniyin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bani Khaddash",
+        "Bin Qirdan",
+        "Jarbah Ajim",
+        "Jarbah Hawmat-as-Suq",
+        "Jarbah Midun",
+        "Jarjis",
+        "Madaniyin"
+      ]
+    },
+    {
+      "id": "manubah",
+      "nombre": "Manubah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Manubah"
+      ]
+    },
+    {
+      "id": "monastir",
+      "nombre": "Monastir",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Monastir"
+      ]
+    },
+    {
+      "id": "nabul",
+      "nombre": "Nabul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Hammamat",
+        "al-Huwariyah",
+        "al-Ma''murah",
+        "al-Middah",
+        "as-Sama''ah",
+        "Azimur",
+        "Bani Hiyar",
+        "Bani Khallad",
+        "Bu ''Urqub",
+        "Dar ''Alush",
+        "Dar Sha''ban",
+        "Hammam-al-Aghzaz",
+        "Manzil Bu Zalafah",
+        "Manzil Hurr",
+        "Manzil Tamim",
+        "Nabul",
+        "Qalibiyah",
+        "Qurbah",
+        "Qurbus",
+        "Qurunbaliyah",
+        "Sulayman",
+        "Taklisah",
+        "Tazirkah",
+        "Zawiyat-al-Jadidi"
+      ]
+    },
+    {
+      "id": "qabis",
+      "nombre": "Qabis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Hammah",
+        "al-Matwiyah",
+        "az-Zarat",
+        "Ghannush",
+        "Marath",
+        "Matmatat-al-Jadidah",
+        "Matmatat-al-Qadimah",
+        "Qabis",
+        "Sanini an-Nahal",
+        "Wadhraf"
+      ]
+    },
+    {
+      "id": "qafsah",
+      "nombre": "Qafsah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Madilah",
+        "al-Mitlawi",
+        "al-Qasr",
+        "al-Qatar",
+        "ar-Rudayyif",
+        "as-Sanad",
+        "Qafsah",
+        "Umm-al-''Arais"
+      ]
+    },
+    {
+      "id": "qibili",
+      "nombre": "Qibili",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Qal''ah",
+        "Duz",
+        "Jamnah",
+        "Qibili",
+        "Suq-al-Ahad"
+      ]
+    },
+    {
+      "id": "safaqis",
+      "nombre": "Safaqis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-''Ayn",
+        "al-Hanashah",
+        "al-Mahras",
+        "Aqarib",
+        "as-Sukhayrah",
+        "ash-Shayhiyah",
+        "Bi''r Ali Bin Khalifah",
+        "Jabinyanah",
+        "Manzil Shakir",
+        "Qarmadah",
+        "Qarqannah",
+        "Safaqis",
+        "Saqiyat-ad-Dair",
+        "Saqiyat-az-Zayt",
+        "Sfax",
+        "Tinah"
+      ]
+    },
+    {
+      "id": "sfax",
+      "nombre": "Sfax",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sfax"
+      ]
+    },
+    {
+      "id": "sidi-bu-zayd",
+      "nombre": "Sidi Bu Zayd",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "silyanah",
+      "nombre": "Silyanah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-''Arusah",
+        "al-Karib",
+        "ar-Rawhiyah",
+        "Barqu",
+        "Bu ''Aradah",
+        "Bu Ruwis",
+        "Kasra",
+        "Makthar",
+        "Qa''afur",
+        "Silyanah"
+      ]
+    },
+    {
+      "id": "susah",
+      "nombre": "Susah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akkudah",
+        "al-Masa''din",
+        "al-Qal''at-al-Kabirah",
+        "al-Qal''at-as-Saghirah",
+        "an-Nafidah",
+        "az-Zuhur",
+        "Bu Fishah",
+        "Hammam Susah",
+        "Harqalah",
+        "Masakin",
+        "Qusaybat-ath-Thurayat",
+        "Sidi al-Hani",
+        "Sidi Bu ''Ali",
+        "Susah",
+        "Zawiyat Susah"
+      ]
+    },
+    {
+      "id": "tatawin",
+      "nombre": "Tatawin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bi''r-al-Ahmar",
+        "Dhahibah",
+        "Ghumrassin",
+        "Rimadah",
+        "Tatawin"
+      ]
+    },
+    {
+      "id": "tawzar",
+      "nombre": "Tawzar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Daqash",
+        "Hammat-al-Jarid",
+        "Naftah",
+        "Tamaghzah",
+        "Tawzar"
+      ]
+    },
+    {
+      "id": "tunis",
+      "nombre": "Tunis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Marsa",
+        "Bardaw",
+        "Ben Arous",
+        "Carthage",
+        "Halq-al-Wadi",
+        "Megrine",
+        "Qartaj",
+        "Sidi Bu Sa''id",
+        "Tunis"
+      ]
+    },
+    {
+      "id": "zaghwan",
+      "nombre": "Zaghwan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Fahs",
+        "an-Nazur",
+        "az-Zaribah",
+        "Bi''r Mashariqah",
+        "Jabal-al-Wust",
+        "Zaghwan"
+      ]
+    }
+  ]
+}

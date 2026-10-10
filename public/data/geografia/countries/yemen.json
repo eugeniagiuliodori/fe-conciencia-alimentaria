@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "yemen",
+    "nombre": "Yemen",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "abyan",
+      "nombre": "Abyan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ahwar",
+        "Ja''ar",
+        "Zinjibar"
+      ]
+    },
+    {
+      "id": "adan",
+      "nombre": "Adan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Adan",
+        "Aden"
+      ]
+    },
+    {
+      "id": "al-bayda",
+      "nombre": "al-Bayda",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Bayda",
+        "Raydah"
+      ]
+    },
+    {
+      "id": "al-hudaydah",
+      "nombre": "al-Hudaydah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Hudaydah",
+        "al-Marawi''ah",
+        "az-Zaydiyah",
+        "Bajil",
+        "Bayt-al-Faqih",
+        "Zabid"
+      ]
+    },
+    {
+      "id": "al-jawf",
+      "nombre": "al-Jawf",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Hazm"
+      ]
+    },
+    {
+      "id": "al-mahrah",
+      "nombre": "al-Mahrah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Ghaydah"
+      ]
+    },
+    {
+      "id": "al-mahwit",
+      "nombre": "al-Mahwit",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mahwit"
+      ]
+    },
+    {
+      "id": "dhamar",
+      "nombre": "Dhamar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dhamar"
+      ]
+    },
+    {
+      "id": "hadramaut",
+      "nombre": "Hadramaut",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Mukalla",
+        "ash-Shahir",
+        "Shaqra"
+      ]
+    },
+    {
+      "id": "hajjah",
+      "nombre": "Hajjah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hajjah"
+      ]
+    },
+    {
+      "id": "hudaydah",
+      "nombre": "Hudaydah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hodaidah"
+      ]
+    },
+    {
+      "id": "ibb",
+      "nombre": "Ibb",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dhi Sufal",
+        "Ibb",
+        "Jiblah",
+        "Qa''tabah",
+        "Yarim"
+      ]
+    },
+    {
+      "id": "lahij",
+      "nombre": "Lahij",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tuban"
+      ]
+    },
+    {
+      "id": "ma-rib",
+      "nombre": "Ma''rib",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ma''rib"
+      ]
+    },
+    {
+      "id": "madinat-san-a",
+      "nombre": "Madinat San''a",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sa-dah",
+      "nombre": "Sa''dah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sa''dah"
+      ]
+    },
+    {
+      "id": "sana",
+      "nombre": "Sana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amran",
+        "Sahar",
+        "Sanaa",
+        "Sayyan"
+      ]
+    },
+    {
+      "id": "shabwah",
+      "nombre": "Shabwah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ataq",
+        "Habban",
+        "Taiz"
+      ]
+    },
+    {
+      "id": "ta-izz",
+      "nombre": "Ta''izz",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Mukha",
+        "Ta''izz"
+      ]
+    }
+  ]
+}

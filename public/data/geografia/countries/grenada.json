@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "grenada",
+    "nombre": "Grenada",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "carriacou-petite-martinique",
+      "nombre": "Carriacou-Petite Martinique",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-andrew",
+      "nombre": "Saint Andrew",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-davids",
+      "nombre": "Saint Davids",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-george-s",
+      "nombre": "Saint George''s",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-john",
+      "nombre": "Saint John",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-mark",
+      "nombre": "Saint Mark",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-patrick",
+      "nombre": "Saint Patrick",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

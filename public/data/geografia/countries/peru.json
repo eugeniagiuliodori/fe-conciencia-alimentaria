@@ -1,0 +1,433 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "peru",
+    "nombre": "Peru",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "amazonas",
+      "nombre": "Amazonas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bagua Grande",
+        "Cajaruro",
+        "Chachapoyas",
+        "Jazan",
+        "La Peca"
+      ]
+    },
+    {
+      "id": "ancash",
+      "nombre": "Ancash",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ancash",
+        "Caraz",
+        "Carhuaz",
+        "Casma",
+        "Chimbote",
+        "Choishco",
+        "Huallanca",
+        "Huaraz",
+        "Huari",
+        "Huarmey",
+        "Pomabamba",
+        "Santa",
+        "Yungay"
+      ]
+    },
+    {
+      "id": "apurimac",
+      "nombre": "Apurimac",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abancay",
+        "Andahuaylas",
+        "San Jeronimo",
+        "Talavera"
+      ]
+    },
+    {
+      "id": "arequipa",
+      "nombre": "Arequipa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Acari",
+        "Arequipa",
+        "Camana",
+        "Chivay",
+        "Cocachacra",
+        "Dean Valdivia",
+        "Lluta",
+        "Mollendo",
+        "Nicolas de Pierola",
+        "Orcopampa",
+        "Punta de Bombon",
+        "Rio Grande",
+        "Yura"
+      ]
+    },
+    {
+      "id": "ayacucho",
+      "nombre": "Ayacucho",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayacucho",
+        "Ayna",
+        "Coracora",
+        "Huanta",
+        "Puquio",
+        "San Miguel",
+        "Santa Rosa",
+        "Silvia",
+        "Tambo"
+      ]
+    },
+    {
+      "id": "cajamarca",
+      "nombre": "Cajamarca",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bambamarca",
+        "Bellavista",
+        "Cajabamba",
+        "Cajamarca",
+        "Celendin",
+        "Chota",
+        "Cutervo",
+        "Jaen",
+        "Pedro Galvez",
+        "Pucara",
+        "San Ignacio",
+        "Santa Cruz",
+        "Yonan"
+      ]
+    },
+    {
+      "id": "cusco",
+      "nombre": "Cusco",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Anta",
+        "Calca",
+        "Cusco",
+        "Espinar",
+        "Oropesa",
+        "Quillabamba",
+        "Santa Ana",
+        "Santo Tomas",
+        "Sicuani",
+        "Urcos",
+        "Urubamba"
+      ]
+    },
+    {
+      "id": "huancavelica",
+      "nombre": "Huancavelica",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Huancavelica",
+        "Lircay",
+        "Pampas"
+      ]
+    },
+    {
+      "id": "huanuco",
+      "nombre": "Huanuco",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ambos",
+        "Huanuco",
+        "Jose Crespo y Castillo",
+        "La Union",
+        "Llata",
+        "Rupa-Rupa",
+        "San Miguel de Cauri",
+        "Tingo Maria"
+      ]
+    },
+    {
+      "id": "ica",
+      "nombre": "Ica",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chincha Alta",
+        "Ica",
+        "Los Aquijes",
+        "Marcona",
+        "Nazca",
+        "Pachacutec",
+        "Palpa",
+        "Pisco",
+        "Salas",
+        "San Andres",
+        "San Clemente",
+        "San Juan Bautista",
+        "Santiago",
+        "Subtanjalla",
+        "Tupac Amaru Inca",
+        "Vista Alegre"
+      ]
+    },
+    {
+      "id": "junin",
+      "nombre": "Junin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Acobamba",
+        "Acolla",
+        "Carhuamayo",
+        "Chanchamayo",
+        "Chupaca",
+        "Concepcion",
+        "Huancayo",
+        "Huasahuasi",
+        "Huayucachi",
+        "Jauja",
+        "Junin",
+        "La Oroya",
+        "Mazamari",
+        "Morococha",
+        "Orcotuna",
+        "Pangoa",
+        "Perene",
+        "Pichanaqui",
+        "Pilcomayo",
+        "San Agustin",
+        "San Jeronimo de Tunan",
+        "San Pedro de Cajas",
+        "San Ramon",
+        "Santa Rosa de Saco",
+        "Satipo",
+        "Sicaya",
+        "Tarma",
+        "Yauli",
+        "Yauya"
+      ]
+    },
+    {
+      "id": "la-libertad",
+      "nombre": "La Libertad",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "lambayeque",
+      "nombre": "Lambayeque",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chiclayo",
+        "Chongoyape",
+        "Eten",
+        "Ferrenafe",
+        "Illimo",
+        "Jayanca",
+        "Lagunas",
+        "Lambayeque",
+        "Manuel Mesones Muro",
+        "Mochumi",
+        "Monsefu",
+        "Morrope",
+        "Motupe",
+        "Olmos",
+        "Oyotun",
+        "Picsi",
+        "Pimentel",
+        "Pueblo Nuevo",
+        "Reque",
+        "San Jose",
+        "Sana",
+        "Santa Rosa",
+        "Tucume"
+      ]
+    },
+    {
+      "id": "lima-y-callao",
+      "nombre": "Lima y Callao",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "loreto",
+      "nombre": "Loreto",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Barranca",
+        "Contamana",
+        "Fernando Lores",
+        "Iquitos",
+        "Lagunas",
+        "Nauta",
+        "Paucarpata",
+        "Ramon Castilla",
+        "Requena",
+        "Saquena",
+        "Vargas Guerra",
+        "Yurimaguas"
+      ]
+    },
+    {
+      "id": "madre-de-dios",
+      "nombre": "Madre de Dios",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "moquegua",
+      "nombre": "Moquegua",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ilo",
+        "Moquegua",
+        "Pacocha",
+        "Torata"
+      ]
+    },
+    {
+      "id": "pasco",
+      "nombre": "Pasco",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cerro de Pasco",
+        "Chaupimarca",
+        "Oxapampa",
+        "Paucartambo",
+        "Simon Bolivar",
+        "Tinyahuarco",
+        "Villa Rica",
+        "Yanacancha",
+        "Yanahuanca"
+      ]
+    },
+    {
+      "id": "piura",
+      "nombre": "Piura",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayabaca",
+        "Bernal",
+        "Buenos Aires",
+        "Catacaos",
+        "Chulucanas",
+        "Colan",
+        "Cura Mori",
+        "El Alto",
+        "Huancabamba",
+        "Ignacio Escudero",
+        "La Arena",
+        "La Brea",
+        "La Huaca",
+        "La Matanza",
+        "La Union",
+        "Las Lomas",
+        "Los Organos",
+        "Mancora",
+        "Marcavelica",
+        "Morropon",
+        "Paita",
+        "Piura",
+        "Querecotillo",
+        "Salitral",
+        "San Juan de Bigote",
+        "Sechura",
+        "Sullana",
+        "Talara",
+        "Tamarindo",
+        "Tambo Grande",
+        "Vice",
+        "Vichayal"
+      ]
+    },
+    {
+      "id": "puno",
+      "nombre": "Puno",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayaviri",
+        "Azangaro",
+        "Desaguadero",
+        "Huancane",
+        "Ilave",
+        "Juli",
+        "Juliaca",
+        "Lampa",
+        "Macusani",
+        "Nunoa",
+        "Puno",
+        "Putina",
+        "Santa Lucia",
+        "Yanahuara",
+        "Yunguyo"
+      ]
+    },
+    {
+      "id": "san-martin",
+      "nombre": "San Martin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tacna",
+      "nombre": "Tacna",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ilabaya",
+        "Tacna",
+        "Tarata"
+      ]
+    },
+    {
+      "id": "tumbes",
+      "nombre": "Tumbes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aguas Verdes",
+        "Corrales",
+        "La Cruz",
+        "Papayal",
+        "San Jacinto",
+        "Tumbes",
+        "Zarumilla",
+        "Zorritos"
+      ]
+    },
+    {
+      "id": "ucayali",
+      "nombre": "Ucayali",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Campoverde",
+        "Padre Abad",
+        "Pucallpa",
+        "Raymondi"
+      ]
+    }
+  ]
+}

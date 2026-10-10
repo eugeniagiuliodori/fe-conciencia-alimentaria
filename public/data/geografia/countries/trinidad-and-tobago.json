@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "trinidad-and-tobago",
+    "nombre": "Trinidad and Tobago",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "arima-tunapuna-piarco",
+      "nombre": "Arima-Tunapuna-Piarco",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arima",
+        "Arouca",
+        "Tacarigua",
+        "Tunapuna"
+      ]
+    },
+    {
+      "id": "caroni",
+      "nombre": "Caroni",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Carapichaima",
+        "Claxton Bay"
+      ]
+    },
+    {
+      "id": "chaguanas",
+      "nombre": "Chaguanas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chaguanas"
+      ]
+    },
+    {
+      "id": "couva-tabaquite-talparo",
+      "nombre": "Couva-Tabaquite-Talparo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Couva",
+        "Tabaquite"
+      ]
+    },
+    {
+      "id": "diego-martin",
+      "nombre": "Diego Martin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "glencoe",
+      "nombre": "Glencoe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Glencoe"
+      ]
+    },
+    {
+      "id": "penal-debe",
+      "nombre": "Penal Debe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "point-fortin",
+      "nombre": "Point Fortin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "port-of-spain",
+      "nombre": "Port of Spain",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "princes-town",
+      "nombre": "Princes Town",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-george",
+      "nombre": "Saint George",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "san-fernando",
+      "nombre": "San Fernando",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "san-juan",
+      "nombre": "San Juan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sangre-grande",
+      "nombre": "Sangre Grande",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "siparia",
+      "nombre": "Siparia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Siparia"
+      ]
+    },
+    {
+      "id": "tobago",
+      "nombre": "Tobago",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Scarborough"
+      ]
+    }
+  ]
+}

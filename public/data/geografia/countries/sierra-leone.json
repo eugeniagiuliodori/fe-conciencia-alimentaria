@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "sierra-leone",
+    "nombre": "Sierra Leone",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "eastern",
+      "nombre": "Eastern",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Biama",
+        "Daru",
+        "Kailahun",
+        "Kenema",
+        "Koidu",
+        "Koindu",
+        "Pendembu",
+        "Sefadu",
+        "Segbwema",
+        "Yengema"
+      ]
+    },
+    {
+      "id": "northern",
+      "nombre": "Northern",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kabala",
+        "Kambia",
+        "Lungi",
+        "Lunsar",
+        "Magburaka",
+        "Makeni",
+        "Mambolo",
+        "Moyamba",
+        "Pepel",
+        "Port Loko",
+        "Yele"
+      ]
+    },
+    {
+      "id": "southern",
+      "nombre": "Southern",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Binkolo",
+        "Bo",
+        "Bonthe",
+        "Bumpe",
+        "Matru",
+        "Pujehun",
+        "Taiama"
+      ]
+    },
+    {
+      "id": "western",
+      "nombre": "Western",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Freetown",
+        "York"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "marshall-islands",
+    "nombre": "Marshall Islands",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "ailinlaplap",
+      "nombre": "Ailinlaplap",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aerok",
+        "Beran",
+        "Bikeer",
+        "Buoj",
+        "Enewe",
+        "Jabwan",
+        "Jah",
+        "Jeh",
+        "Kattiej",
+        "Mejajok",
+        "Mejil",
+        "Tobomaro",
+        "Woja",
+        "Wolar"
+      ]
+    },
+    {
+      "id": "ailuk",
+      "nombre": "Ailuk",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ailuk",
+        "Ajelep",
+        "Aliej",
+        "Biken",
+        "Enejabrok",
+        "Enejelar",
+        "Kapen"
+      ]
+    },
+    {
+      "id": "arno",
+      "nombre": "Arno",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arno Arno",
+        "Bikarej",
+        "Bikonele",
+        "Boken",
+        "Eneaidrik",
+        "Enirik",
+        "Ijoen",
+        "Ine",
+        "Japo",
+        "Jilane",
+        "Kejbwe",
+        "Kilange",
+        "Kilemman",
+        "Kinajon",
+        "Langor",
+        "Lukoj",
+        "Malel",
+        "Manrar",
+        "Matolen",
+        "Meetdik",
+        "Mian",
+        "Najaj",
+        "Namwi",
+        "Neenkotkot",
+        "Taklep",
+        "Tinak",
+        "Tutu",
+        "Ulien"
+      ]
+    },
+    {
+      "id": "aur",
+      "nombre": "Aur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aur",
+        "Tabal"
+      ]
+    },
+    {
+      "id": "bikini",
+      "nombre": "Bikini",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Eneu"
+      ]
+    },
+    {
+      "id": "ebon",
+      "nombre": "Ebon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Emej",
+        "Enearmij",
+        "Enekoion",
+        "Enilok",
+        "Jittaken",
+        "Jittoen",
+        "Rerok",
+        "Toka"
+      ]
+    },
+    {
+      "id": "enewetak",
+      "nombre": "Enewetak",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Enewetak",
+        "Japtan",
+        "Medren"
+      ]
+    },
+    {
+      "id": "jabat",
+      "nombre": "Jabat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jabat"
+      ]
+    },
+    {
+      "id": "jaluit",
+      "nombre": "Jaluit",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ae",
+        "Ajejen",
+        "Anilep",
+        "Arreen",
+        "Bokanake",
+        "Bokkan",
+        "Bukantorak",
+        "Dede",
+        "Ewo",
+        "Imiej",
+        "Imroj",
+        "Jabnoren",
+        "Jabwor",
+        "Jaluit",
+        "Lonone",
+        "Mejatto",
+        "Mejrirok",
+        "Menge",
+        "Nabbe",
+        "Narmej",
+        "Urbaj"
+      ]
+    },
+    {
+      "id": "kili",
+      "nombre": "Kili",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kili"
+      ]
+    },
+    {
+      "id": "kwajalein",
+      "nombre": "Kwajalein",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arbwa",
+        "Ebadon",
+        "Ebeye",
+        "Ebjadik",
+        "Ebwaj",
+        "Ennilabegan",
+        "Enubirr",
+        "Enubuj",
+        "Gugeegue",
+        "Mejatto",
+        "Ningi",
+        "North Loi",
+        "Orpap",
+        "South Loi"
+      ]
+    },
+    {
+      "id": "lae",
+      "nombre": "Lae",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Enerein",
+        "Lae",
+        "Lejab"
+      ]
+    },
+    {
+      "id": "lib",
+      "nombre": "Lib",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lib"
+      ]
+    },
+    {
+      "id": "likiep",
+      "nombre": "Likiep",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jebal",
+        "Likiep",
+        "Liklal",
+        "Melang"
+      ]
+    },
+    {
+      "id": "majuro",
+      "nombre": "Majuro",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ajeltake",
+        "Aneenwudej",
+        "Aneko",
+        "Arrak",
+        "Biken",
+        "Bokaetoktok",
+        "Denmeo",
+        "Didej",
+        "Ejit",
+        "Enemanet",
+        "Jelter",
+        "Kalalen",
+        "Kemman",
+        "Laura",
+        "Pikiriin",
+        "Rita",
+        "Rongrong",
+        "Woja"
+      ]
+    },
+    {
+      "id": "maloelap",
+      "nombre": "Maloelap",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Airok",
+        "Jang",
+        "Kaben",
+        "Tarawa",
+        "Wolot"
+      ]
+    },
+    {
+      "id": "mejit",
+      "nombre": "Mejit",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mejit"
+      ]
+    },
+    {
+      "id": "mili",
+      "nombre": "Mili",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aeloneo",
+        "Anel",
+        "Arbar",
+        "Bar",
+        "Bikonel",
+        "Enajet",
+        "Eoo",
+        "Jabonwod",
+        "Loen",
+        "Lukoj",
+        "Lukonwor",
+        "Mae",
+        "Majkin",
+        "Mili",
+        "Nad",
+        "Nallu",
+        "Tokewa",
+        "Wau"
+      ]
+    },
+    {
+      "id": "namorik",
+      "nombre": "Namorik",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Namorik"
+      ]
+    },
+    {
+      "id": "namu",
+      "nombre": "Namu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Namu"
+      ]
+    },
+    {
+      "id": "rongelap",
+      "nombre": "Rongelap",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rongelap"
+      ]
+    },
+    {
+      "id": "ujae",
+      "nombre": "Ujae",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ujae"
+      ]
+    },
+    {
+      "id": "utrik",
+      "nombre": "Utrik",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Utirik"
+      ]
+    },
+    {
+      "id": "wotho",
+      "nombre": "Wotho",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Wotho"
+      ]
+    },
+    {
+      "id": "wotje",
+      "nombre": "Wotje",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Didi",
+        "Nibun",
+        "Wormej",
+        "Wotje"
+      ]
+    }
+  ]
+}

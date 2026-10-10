@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "french-southern-territories",
+    "nombre": "French Southern Territories",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "amsterdam",
+      "nombre": "Amsterdam",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Martin-de-Vivies"
+      ]
+    },
+    {
+      "id": "crozet-islands",
+      "nombre": "Crozet Islands",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kerguelen",
+      "nombre": "Kerguelen",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Port-aux-Francais"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "monaco",
+    "nombre": "Monaco",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "fontvieille",
+      "nombre": "Fontvieille",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fontvieille"
+      ]
+    },
+    {
+      "id": "la-condamine",
+      "nombre": "La Condamine",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "monaco-ville",
+      "nombre": "Monaco-Ville",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Monaco-Ville"
+      ]
+    },
+    {
+      "id": "monte-carlo",
+      "nombre": "Monte Carlo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

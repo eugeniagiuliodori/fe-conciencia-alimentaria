@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "norway",
+    "nombre": "Norway",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "a-a-stfold",
+      "nombre": "ÃƒÂ˜stfold",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "akershus",
+      "nombre": "Akershus",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Asker",
+        "Billingstad",
+        "Haslum",
+        "Hosle",
+        "Kjeller",
+        "LÃƒÂ¸renskog",
+        "Lillestrom",
+        "Lorenskog",
+        "Lysaker",
+        "Rud",
+        "Sandvika",
+        "Strommen"
+      ]
+    },
+    {
+      "id": "aust-agder",
+      "nombre": "Aust Agder",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "bergen",
+      "nombre": "Bergen",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kokstad"
+      ]
+    },
+    {
+      "id": "buskerud",
+      "nombre": "Buskerud",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Drammen",
+        "Hokksund",
+        "Honefoss",
+        "Kongsberg",
+        "Lyngdal",
+        "NÃƒÂ¦rsnes",
+        "Vestby"
+      ]
+    },
+    {
+      "id": "finnmark",
+      "nombre": "Finnmark",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baatsfjord",
+        "Hammerfest"
+      ]
+    },
+    {
+      "id": "hedmark",
+      "nombre": "Hedmark",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Brumunddal",
+        "Elverum",
+        "Hamar",
+        "Ilseng",
+        "Rena",
+        "Trysil"
+      ]
+    },
+    {
+      "id": "hordaland",
+      "nombre": "Hordaland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bergen",
+        "HÃƒÂ¸ylandsbygd",
+        "Lonevag",
+        "Straume",
+        "Tysnes",
+        "Voss"
+      ]
+    },
+    {
+      "id": "moere-og-romsdal",
+      "nombre": "Moere og Romsdal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nord-trondelag",
+      "nombre": "Nord Trondelag",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nordland",
+      "nombre": "Nordland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bodo",
+        "Mosjoen",
+        "Narvik",
+        "Nesna",
+        "Saltdal",
+        "Sortland",
+        "Steigen"
+      ]
+    },
+    {
+      "id": "oestfold",
+      "nombre": "Oestfold",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Askim",
+        "Fredrikstad",
+        "Halden",
+        "Hovik",
+        "Moss",
+        "Mysen",
+        "Sarpsborg",
+        "Tistedal"
+      ]
+    },
+    {
+      "id": "oppland",
+      "nombre": "Oppland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lena",
+        "Lillehammer"
+      ]
+    },
+    {
+      "id": "oslo",
+      "nombre": "Oslo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Oslo",
+        "Skedsmo",
+        "Skjetten"
+      ]
+    },
+    {
+      "id": "rogaland",
+      "nombre": "Rogaland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Egersund",
+        "Haugesund",
+        "Kleppe",
+        "Sandnes",
+        "Sola",
+        "Stavanger"
+      ]
+    },
+    {
+      "id": "soer-troendelag",
+      "nombre": "Soer Troendelag",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sogn-og-fjordane",
+      "nombre": "Sogn og Fjordane",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "stavern",
+      "nombre": "Stavern",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Stavern"
+      ]
+    },
+    {
+      "id": "sykkylven",
+      "nombre": "Sykkylven",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sykkylven"
+      ]
+    },
+    {
+      "id": "telemark",
+      "nombre": "Telemark",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Notodden",
+        "Skien"
+      ]
+    },
+    {
+      "id": "troms",
+      "nombre": "Troms",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Harstad",
+        "Troms",
+        "TromsÃƒÂ¸"
+      ]
+    },
+    {
+      "id": "vest-agder",
+      "nombre": "Vest Agder",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "vestfold",
+      "nombre": "Vestfold",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Horten",
+        "HusÃƒÂ¸ysund",
+        "Larvik",
+        "Rygge",
+        "Sandefjord",
+        "TÃƒÂ¸nsberg"
+      ]
+    }
+  ]
+}

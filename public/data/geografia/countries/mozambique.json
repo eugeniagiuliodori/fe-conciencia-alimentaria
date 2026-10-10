@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "mozambique",
+    "nombre": "Mozambique",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "cabo-delgado",
+      "nombre": "Cabo Delgado",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "gaza",
+      "nombre": "Gaza",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chibuto",
+        "Chidenguele",
+        "Chokwe",
+        "Chongoene",
+        "Guija",
+        "Macia",
+        "Manjacaze",
+        "Xai-Xai"
+      ]
+    },
+    {
+      "id": "inhambane",
+      "nombre": "Inhambane",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Homoine",
+        "Inhambane",
+        "Inharrime",
+        "Jangamo",
+        "Maxixe",
+        "Panda",
+        "Quissico"
+      ]
+    },
+    {
+      "id": "manica",
+      "nombre": "Manica",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chimoio",
+        "Manica"
+      ]
+    },
+    {
+      "id": "maputo",
+      "nombre": "Maputo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Maputo"
+      ]
+    },
+    {
+      "id": "maputo-provincia",
+      "nombre": "Maputo Provincia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Maputo"
+      ]
+    },
+    {
+      "id": "nampula",
+      "nombre": "Nampula",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Angoche",
+        "Lumbo",
+        "Mocambique",
+        "Nacala",
+        "Nampula"
+      ]
+    },
+    {
+      "id": "niassa",
+      "nombre": "Niassa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cuamba",
+        "Lichinga",
+        "Mandimba",
+        "Maniamba",
+        "Marrupa"
+      ]
+    },
+    {
+      "id": "sofala",
+      "nombre": "Sofala",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Beira",
+        "Dondo"
+      ]
+    },
+    {
+      "id": "tete",
+      "nombre": "Tete",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tete",
+        "Zumbo"
+      ]
+    },
+    {
+      "id": "zambezia",
+      "nombre": "Zambezia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Garue",
+        "Mocuba",
+        "Quelimane"
+      ]
+    }
+  ]
+}

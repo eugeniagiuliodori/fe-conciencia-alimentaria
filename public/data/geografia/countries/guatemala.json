@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "guatemala",
+    "nombre": "Guatemala",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "alta-verapaz",
+      "nombre": "Alta Verapaz",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "baja-verapaz",
+      "nombre": "Baja Verapaz",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "chimaltenango",
+      "nombre": "Chimaltenango",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chimaltenango",
+        "Comalapa",
+        "Itzapa",
+        "Patzun"
+      ]
+    },
+    {
+      "id": "chiquimula",
+      "nombre": "Chiquimula",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chiquimula",
+        "Esquipulas"
+      ]
+    },
+    {
+      "id": "el-progreso",
+      "nombre": "El Progreso",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "escuintla",
+      "nombre": "Escuintla",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cotzumalguapa",
+        "Escuintla",
+        "Palin",
+        "San Jose",
+        "Tiquisate"
+      ]
+    },
+    {
+      "id": "guatemala",
+      "nombre": "Guatemala",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amatitlan",
+        "Chinautla",
+        "Guatemala",
+        "Mixco",
+        "Petapa",
+        "Villa Nueva"
+      ]
+    },
+    {
+      "id": "huehuetenango",
+      "nombre": "Huehuetenango",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Huehuetenango"
+      ]
+    },
+    {
+      "id": "izabal",
+      "nombre": "Izabal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Puerto Barrios"
+      ]
+    },
+    {
+      "id": "jalapa",
+      "nombre": "Jalapa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jalapa"
+      ]
+    },
+    {
+      "id": "jutiapa",
+      "nombre": "Jutiapa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Asuncion Mita",
+        "Jutiapa"
+      ]
+    },
+    {
+      "id": "peten",
+      "nombre": "Peten",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Flores",
+        "San Benito"
+      ]
+    },
+    {
+      "id": "quezaltenango",
+      "nombre": "Quezaltenango",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Quezaltenango"
+      ]
+    },
+    {
+      "id": "quiche",
+      "nombre": "Quiche",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Quiche"
+      ]
+    },
+    {
+      "id": "retalhuleu",
+      "nombre": "Retalhuleu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Retalhuleu"
+      ]
+    },
+    {
+      "id": "sacatepequez",
+      "nombre": "Sacatepequez",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Antigua",
+        "Ciudad Vieja",
+        "Jocotenango",
+        "Santa Maria de Jesus",
+        "Sumpango"
+      ]
+    },
+    {
+      "id": "san-marcos",
+      "nombre": "San Marcos",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "santa-rosa",
+      "nombre": "Santa Rosa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "solola",
+      "nombre": "Solola",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Atitlan",
+        "Solola"
+      ]
+    },
+    {
+      "id": "suchitepequez",
+      "nombre": "Suchitepequez",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mazatenango"
+      ]
+    },
+    {
+      "id": "totonicapan",
+      "nombre": "Totonicapan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Totonicapan"
+      ]
+    },
+    {
+      "id": "zacapa",
+      "nombre": "Zacapa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Zacapa"
+      ]
+    }
+  ]
+}

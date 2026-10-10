@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "paraguay",
+    "nombre": "Paraguay",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "alto-paraguay",
+      "nombre": "Alto Paraguay",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "alto-parana",
+      "nombre": "Alto Parana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "amambay",
+      "nombre": "Amambay",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bella Vista",
+        "Capitan Bado",
+        "Pedro Juan Caballero"
+      ]
+    },
+    {
+      "id": "asuncion",
+      "nombre": "Asuncion",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Asuncion"
+      ]
+    },
+    {
+      "id": "boqueron",
+      "nombre": "Boqueron",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Doctor Pedro P. Pena",
+        "Filadelfia",
+        "Marechal Estigarribia",
+        "Menno",
+        "Neuland"
+      ]
+    },
+    {
+      "id": "caaguazu",
+      "nombre": "Caaguazu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Caaguazu",
+        "Carayao",
+        "Coronel Oviedo",
+        "Doctor Cecilio Baez",
+        "Doctor Eulogio Estigarribia",
+        "Doctor Juan Manuel Frutos",
+        "Jose Ocampos",
+        "La Pastoria",
+        "Marechal Francisco Solano Lope",
+        "Mbutuy",
+        "Nueva Londres",
+        "Raul Arsenio Oviedo",
+        "Repatriacion",
+        "San Joaquin",
+        "San Jose de los Arroyos",
+        "Simon Bolivar",
+        "Tres Corrales",
+        "Tres de Febrero",
+        "Vaqueria",
+        "Yhu"
+      ]
+    },
+    {
+      "id": "caazapa",
+      "nombre": "Caazapa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abai",
+        "Buena Vista",
+        "Caazapa",
+        "Doctor Moises Bertoni",
+        "General Higinio Morinigo",
+        "Maciel",
+        "San Juan Nepomuceno",
+        "Tavai",
+        "Yegros",
+        "Yuty"
+      ]
+    },
+    {
+      "id": "canendiyu",
+      "nombre": "Canendiyu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Corpus Christi",
+        "Curuguaty",
+        "General Francisco Alvarez",
+        "Itanara",
+        "Katuete",
+        "La Paloma",
+        "Nueva Esperanza",
+        "Salto del Guaira",
+        "Ygatimi",
+        "Ypehu"
+      ]
+    },
+    {
+      "id": "central",
+      "nombre": "Central",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aregua",
+        "Capiata",
+        "Fernando de la Mora",
+        "Guarambare",
+        "Ita",
+        "Itaugua",
+        "Juan Augusto Saldivar",
+        "Lambare",
+        "Limpio",
+        "Luque",
+        "Nemby",
+        "Nueva Italia",
+        "San Antonio",
+        "San Lorenzo",
+        "Villa Elisa",
+        "Villeta",
+        "Ypacarai",
+        "Ypane"
+      ]
+    },
+    {
+      "id": "concepcion",
+      "nombre": "Concepcion",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Belen",
+        "Concepcion",
+        "Horqueta",
+        "Loreto",
+        "San Carlos",
+        "San Lazaro"
+      ]
+    },
+    {
+      "id": "cordillera",
+      "nombre": "Cordillera",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Altos",
+        "Arroyos y Esteros",
+        "Atyra",
+        "Caacupe",
+        "Caraguatay",
+        "Emboscada",
+        "Eusebio Ayala",
+        "Isla Pucu",
+        "Itacurubi de la Cordillera",
+        "Juan de Mena",
+        "Loma Grande",
+        "Mbocayty del Yhaguy",
+        "Nueva Colombia",
+        "Piribebuy",
+        "Primero de Marzo",
+        "San Bernardino",
+        "San Jose Obrero",
+        "Santa Elena",
+        "Tobati",
+        "Valenzuela"
+      ]
+    },
+    {
+      "id": "guaira",
+      "nombre": "Guaira",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Borja",
+        "Capitan Mauricio Jose Troche",
+        "Coronel Martinez",
+        "Doctor Botrell",
+        "Felix Perez Cardozo",
+        "General Eugenio Alejandrino Ga",
+        "Independencia",
+        "Itape",
+        "Iturbe",
+        "Jose Fasardi",
+        "Mbocayaty",
+        "Natalicio Talavera",
+        "Numi",
+        "Paso Yobai",
+        "San Salvador",
+        "Villarrica",
+        "Yataity"
+      ]
+    },
+    {
+      "id": "itapua",
+      "nombre": "Itapua",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alto Vera",
+        "Bella Vista",
+        "Cambyreta",
+        "Capitan Meza",
+        "Capitan Miranda",
+        "Carlos Antonio Lopez",
+        "Carmen del Parana",
+        "Coronel Bogado",
+        "Edelira",
+        "Encarnacion",
+        "Fram",
+        "General Artigas",
+        "General Delgado",
+        "Hohenau",
+        "Itapua Poty",
+        "Jesus",
+        "La Paz",
+        "Leandro Oviedo",
+        "Mayor Otano",
+        "Natalio",
+        "Nueva Alborada",
+        "Obligado",
+        "Pirapo",
+        "San Cosme y Damian",
+        "San Juan del Parana",
+        "San Pedro del Parana",
+        "San Rafael del Parana",
+        "Tomas Romero Pereira",
+        "Trinidad",
+        "Yatytay"
+      ]
+    },
+    {
+      "id": "misiones",
+      "nombre": "Misiones",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayolas",
+        "San Ignacio",
+        "San Juan Bautista",
+        "San Miguel",
+        "San Patricio",
+        "Santa Maria",
+        "Santa Rosa",
+        "Santiago",
+        "Villa Florida",
+        "Yabebyry"
+      ]
+    },
+    {
+      "id": "neembucu",
+      "nombre": "Neembucu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alberdi",
+        "Cerrito",
+        "Desmochados",
+        "General Jose Eduvigis Diaz",
+        "Guazu Cua",
+        "Humaita",
+        "Isla Umbu",
+        "Laureles",
+        "Mayor Jose Dejesus Martinez",
+        "Paso de Patria",
+        "Pilar",
+        "San Juan Bautista de Neembucu",
+        "Tacuaras",
+        "Villa Franca",
+        "Villa Oliva",
+        "Villalbin"
+      ]
+    },
+    {
+      "id": "paraguari",
+      "nombre": "Paraguari",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Acahay",
+        "Caapucu",
+        "Carapegua",
+        "Escobar",
+        "General Bernardino Caballero",
+        "La Colmena",
+        "Mbuyapey",
+        "Paraguari",
+        "Pirayu",
+        "Quiindy",
+        "Quyquyho",
+        "San Roque Gonzalez de Santa Cr",
+        "Sapucai",
+        "Tebicuarymi",
+        "Yaguaron",
+        "Ybycui",
+        "Ybytimi"
+      ]
+    },
+    {
+      "id": "presidente-hayes",
+      "nombre": "Presidente Hayes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "san-pedro",
+      "nombre": "San Pedro",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

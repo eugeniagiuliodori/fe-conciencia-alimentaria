@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "barbados",
+    "nombre": "Barbados",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "christ-church",
+      "nombre": "Christ Church",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-andrew",
+      "nombre": "Saint Andrew",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-george",
+      "nombre": "Saint George",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-james",
+      "nombre": "Saint James",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-john",
+      "nombre": "Saint John",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-joseph",
+      "nombre": "Saint Joseph",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-lucy",
+      "nombre": "Saint Lucy",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-michael",
+      "nombre": "Saint Michael",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-peter",
+      "nombre": "Saint Peter",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-philip",
+      "nombre": "Saint Philip",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-thomas",
+      "nombre": "Saint Thomas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

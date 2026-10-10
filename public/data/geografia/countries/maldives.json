@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "maldives",
+    "nombre": "Maldives",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "alif-alif",
+      "nombre": "Alif Alif",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "alif-dhaal",
+      "nombre": "Alif Dhaal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "baa",
+      "nombre": "Baa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dharavandhoo",
+        "Dhonfanu",
+        "Eydhafushi",
+        "Fehendhoo",
+        "Fulhadhoo",
+        "Goidhoo",
+        "Hithaadhoo",
+        "Kamadhoo",
+        "Kendhoo",
+        "Kihaadhoo",
+        "Kudarikilu",
+        "Maalhos",
+        "Thulhaadhoo"
+      ]
+    },
+    {
+      "id": "central-province",
+      "nombre": "Central Province",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dhaalu",
+        "Faafu",
+        "Kudahuvadhoo",
+        "Meemu"
+      ]
+    },
+    {
+      "id": "dhaal",
+      "nombre": "Dhaal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Badidhoo",
+        "Gemendhoo",
+        "Hulhudheli",
+        "Kudahuvadhoo",
+        "Maaeboodhoo",
+        "Meedhoo",
+        "Ribudhoo",
+        "Vaanee"
+      ]
+    },
+    {
+      "id": "faaf",
+      "nombre": "Faaf",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Biledhdhoo",
+        "Dharaboodhoo",
+        "Feeali",
+        "Magoodhoo",
+        "Nilandhoo"
+      ]
+    },
+    {
+      "id": "gaaf-alif",
+      "nombre": "Gaaf Alif",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "gaaf-dhaal",
+      "nombre": "Gaaf Dhaal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ghaviyani",
+      "nombre": "Ghaviyani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fuvammulah"
+      ]
+    },
+    {
+      "id": "haa-alif",
+      "nombre": "Haa Alif",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "haa-dhaalu",
+      "nombre": "Haa Dhaalu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kaaf",
+      "nombre": "Kaaf",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dhiffushi",
+        "Gaafaru",
+        "Gulhi",
+        "Guraidhoo",
+        "Himmafushi",
+        "Huraa",
+        "Kaashidhoo",
+        "Maafushi",
+        "Thulusdhoo"
+      ]
+    },
+    {
+      "id": "laam",
+      "nombre": "Laam",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dhabidhoo",
+        "Fonadhoo",
+        "Gaadhoo",
+        "Gamu",
+        "Hithadhoo",
+        "Isdhoo",
+        "Kalhaidhoo",
+        "Kunahandhoo",
+        "Maabaidhoo",
+        "Maamendhoo",
+        "Maavah",
+        "Mundhoo"
+      ]
+    },
+    {
+      "id": "lhaviyani",
+      "nombre": "Lhaviyani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hinnavaru",
+        "Kurendhoo",
+        "Maafilaafushi",
+        "Naifaru",
+        "Olhuvelifushi"
+      ]
+    },
+    {
+      "id": "male",
+      "nombre": "Male",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "miim",
+      "nombre": "Miim",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dhiggaru",
+        "Kolhufushi",
+        "Madifushi",
+        "Maduvvari",
+        "Mulah",
+        "Muli",
+        "Naalaafushi",
+        "Raimandhoo",
+        "Veyvah"
+      ]
+    },
+    {
+      "id": "north-central-province",
+      "nombre": "North Central Province",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alif Alif",
+        "Alif Dhaal",
+        "Kaafu",
+        "Male",
+        "Thulusdhoo",
+        "Vaavu"
+      ]
+    },
+    {
+      "id": "north-province",
+      "nombre": "North Province",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baa",
+        "Felivaru",
+        "Lhaviyani",
+        "Noonu",
+        "Raa"
+      ]
+    },
+    {
+      "id": "nuun",
+      "nombre": "Nuun",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fodhdhoo",
+        "Hebadhoo",
+        "Holhudhoo",
+        "Kedhikolhudhoo",
+        "Kudafari",
+        "Landhoo",
+        "Lhohi",
+        "Maafaru",
+        "Maalhendhoo",
+        "Magoodhoo",
+        "Manadhoo",
+        "Miladhoo",
+        "Velidhoo"
+      ]
+    },
+    {
+      "id": "raa",
+      "nombre": "Raa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Agolhitheemu",
+        "Alifushi",
+        "Fainu",
+        "Hulhudhuffaaru",
+        "Iguraidhoo",
+        "Innamaadhoo",
+        "Kadholhudhoo",
+        "Kinolhas",
+        "Maakurathu",
+        "Maduvvari",
+        "Meedhoo",
+        "Rasgetheemu",
+        "Rasmaadhoo",
+        "Ugoofaaru",
+        "Vaadhoo"
+      ]
+    },
+    {
+      "id": "shaviyani",
+      "nombre": "Shaviyani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bilehffahi",
+        "Feevah",
+        "Feydhoo",
+        "Firubaidhoo",
+        "Foakaidhoo",
+        "Funadhoo",
+        "Goidhoo",
+        "Kaditheemu",
+        "Komandoo",
+        "Lhaimagu",
+        "Maakandoodhoo",
+        "Maaugoodhoo",
+        "Maroshi",
+        "Narudhoo",
+        "Noomaraa"
+      ]
+    },
+    {
+      "id": "siin",
+      "nombre": "Siin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Feydhoo",
+        "Hithadhoo",
+        "Hulhudhoo",
+        "Maradhoo",
+        "Maradhoo-Feydhoo",
+        "Meedhoo"
+      ]
+    },
+    {
+      "id": "south-central-province",
+      "nombre": "South Central Province",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gan",
+        "Laamu",
+        "Thaa"
+      ]
+    },
+    {
+      "id": "south-province",
+      "nombre": "South Province",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Addu City",
+        "Gnaviyani",
+        "Hithadhoo"
+      ]
+    },
+    {
+      "id": "thaa",
+      "nombre": "Thaa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Buruni",
+        "Dhiyamigili",
+        "Gaadhiffushi",
+        "Guraidhoo",
+        "Hirilandhoo",
+        "Kadoodhoo",
+        "Kibidhoo",
+        "Madifushi",
+        "Omadhoo",
+        "Thimarafushi",
+        "Vandhoo",
+        "Veymandhoo",
+        "Vilufushi"
+      ]
+    },
+    {
+      "id": "upper-north-province",
+      "nombre": "Upper North Province",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Haa Alif",
+        "Haa Dhaalu",
+        "Kulhudhuffushi",
+        "Shaviyani"
+      ]
+    },
+    {
+      "id": "upper-south-province",
+      "nombre": "Upper South Province",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gaafu Alif",
+        "Gaafu Dhaalu",
+        "Thinadhoo"
+      ]
+    },
+    {
+      "id": "vaav",
+      "nombre": "Vaav",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Felidhoo",
+        "Fulidhoo",
+        "Keyodhoo",
+        "Rakeedhoo",
+        "Thinadhoo"
+      ]
+    }
+  ]
+}

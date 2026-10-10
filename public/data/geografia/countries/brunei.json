@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "brunei",
+    "nombre": "Brunei",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "belait",
+      "nombre": "Belait",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kuala Belait",
+        "Seria"
+      ]
+    },
+    {
+      "id": "brunei-muara",
+      "nombre": "Brunei-Muara",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bandar Seri Begawan"
+      ]
+    },
+    {
+      "id": "temburong",
+      "nombre": "Temburong",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bangar"
+      ]
+    },
+    {
+      "id": "tutong",
+      "nombre": "Tutong",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tutong"
+      ]
+    }
+  ]
+}

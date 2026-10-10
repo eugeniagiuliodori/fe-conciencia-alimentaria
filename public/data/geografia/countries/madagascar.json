@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "madagascar",
+    "nombre": "Madagascar",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "antananarivo",
+      "nombre": "Antananarivo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ambatolampy",
+        "Anjozorobe",
+        "Ankazobe",
+        "Antananarivo",
+        "Antanifotsy",
+        "Antsirabe",
+        "Arivonimamo",
+        "Betafo",
+        "Faratsiho",
+        "Fenoarivo",
+        "Manjakandriana",
+        "Soavinandriana",
+        "Tsiroanomandidy"
+      ]
+    },
+    {
+      "id": "antsiranana",
+      "nombre": "Antsiranana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ambanja",
+        "Ambilobe",
+        "Andapa",
+        "Antalaha",
+        "Antsirambazaha",
+        "Antsiranana",
+        "Sambava"
+      ]
+    },
+    {
+      "id": "fianarantsoa",
+      "nombre": "Fianarantsoa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ambalavao",
+        "Ambatofinandrahana",
+        "Ambositra",
+        "Fandriana",
+        "Farafangana",
+        "Fianarantsoa",
+        "Ifanadiana",
+        "Ihosy",
+        "Ikalamavony",
+        "Ikongo",
+        "Manakara",
+        "Manandriana",
+        "Mananjary",
+        "Nosy Varika",
+        "Vangaindrano",
+        "Vondrozo"
+      ]
+    },
+    {
+      "id": "mahajanga",
+      "nombre": "Mahajanga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ambato Boina",
+        "Antsohihy",
+        "Bealanana",
+        "Mahajanga",
+        "Marovoay",
+        "Tsaratanana"
+      ]
+    },
+    {
+      "id": "toamasina",
+      "nombre": "Toamasina",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ambatondrazaka",
+        "Ambodifototra",
+        "Amparafaravola",
+        "Andevoranto",
+        "Andilamena",
+        "Anosibe An''ala",
+        "Fenoarivo Atsinanana",
+        "Mahanoro",
+        "Mananara",
+        "Maroantsetra",
+        "Marolambo",
+        "Moramanga",
+        "Soanierana Ivongo",
+        "Toamasina",
+        "Vavatenina",
+        "Vohibinany"
+      ]
+    },
+    {
+      "id": "toliary",
+      "nombre": "Toliary",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amboasary",
+        "Ambovombe",
+        "Ampanihy",
+        "Ankazoabo",
+        "Beloha",
+        "Belon''i Tsiribihina",
+        "Beroroha",
+        "Betioky",
+        "Miandrivazo",
+        "Morondava",
+        "Sakaraha",
+        "Taolanaro",
+        "Toliary",
+        "Tsihombe"
+      ]
+    }
+  ]
+}

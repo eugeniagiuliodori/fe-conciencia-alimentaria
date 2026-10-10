@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "iraq",
+    "nombre": "Iraq",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "al-anbar",
+      "nombre": "al-Anbar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Fallujah",
+        "al-Habbaniyah",
+        "al-Hadithah",
+        "Anah",
+        "ar-Ramadi",
+        "ar-Rutbah",
+        "Hit",
+        "Rawah"
+      ]
+    },
+    {
+      "id": "al-basrah",
+      "nombre": "al-Basrah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abu al-Khasib",
+        "al-Basrah",
+        "al-Faw",
+        "al-Qurnah",
+        "az-Zubayr",
+        "Harithah",
+        "Shatt-al-''Arab"
+      ]
+    },
+    {
+      "id": "al-muthanna",
+      "nombre": "al-Muthanna",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ar-Rumaythah",
+        "as-Samawah"
+      ]
+    },
+    {
+      "id": "al-qadisiyah",
+      "nombre": "al-Qadisiyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ad-Diwaniyah",
+        "Afak",
+        "al-Ghammas",
+        "al-Hamzah",
+        "ash-Shamiyah",
+        "ash-Shinafiyah"
+      ]
+    },
+    {
+      "id": "an-najaf",
+      "nombre": "an-Najaf",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Kufah",
+        "al-Mishkhab",
+        "an-Najaf"
+      ]
+    },
+    {
+      "id": "as-sulaymaniyah",
+      "nombre": "as-Sulaymaniyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "as-Sulaymaniyah",
+        "Chamchamal",
+        "Halabjah",
+        "Kusanjaq",
+        "Panjwin",
+        "Qal''at Dizeh"
+      ]
+    },
+    {
+      "id": "at-ta-mim",
+      "nombre": "at-Ta''mim",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aqrah",
+        "Kirkuk"
+      ]
+    },
+    {
+      "id": "babil",
+      "nombre": "Babil",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Hillah",
+        "al-Madhatiyah",
+        "al-Musayyib",
+        "al-Qasim",
+        "Jurf-as-Sakhr",
+        "Saddat-al-Hindiyah"
+      ]
+    },
+    {
+      "id": "baghdad",
+      "nombre": "Baghdad",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baghdad"
+      ]
+    },
+    {
+      "id": "dahuk",
+      "nombre": "Dahuk",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dahuk",
+        "Zakhu"
+      ]
+    },
+    {
+      "id": "dhi-qar",
+      "nombre": "Dhi Qar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "diyala",
+      "nombre": "Diyala",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Fuhud",
+        "al-Khalis",
+        "al-Miqdadiyah",
+        "ash-Shatrah",
+        "Ba''qubah",
+        "Hanaqin",
+        "Jalula",
+        "Kifri",
+        "Mandali"
+      ]
+    },
+    {
+      "id": "erbil",
+      "nombre": "Erbil",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ankawa"
+      ]
+    },
+    {
+      "id": "irbil",
+      "nombre": "Irbil",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chaqalawa",
+        "Irbil",
+        "Rawanduz"
+      ]
+    },
+    {
+      "id": "karbala",
+      "nombre": "Karbala",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Hindiyah",
+        "Karbala"
+      ]
+    },
+    {
+      "id": "kurdistan",
+      "nombre": "Kurdistan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Erbil"
+      ]
+    },
+    {
+      "id": "maysan",
+      "nombre": "Maysan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-''Amarah",
+        "al-Majarr-al-Kabir",
+        "Ali al Gharbi"
+      ]
+    },
+    {
+      "id": "ninawa",
+      "nombre": "Ninawa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Mawsil",
+        "ash-Shaykhan",
+        "Qarah Qush",
+        "Sinjar",
+        "Tall ''Afar",
+        "Tall Kayf"
+      ]
+    },
+    {
+      "id": "salah-ad-din",
+      "nombre": "Salah-ad-Din",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ad-Dujayl",
+        "Balad",
+        "Bayji",
+        "Dhalu''iyah",
+        "Samarra",
+        "Tikrit",
+        "Tuz"
+      ]
+    },
+    {
+      "id": "wasit",
+      "nombre": "Wasit",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-''Aziziyah",
+        "al-Hayy",
+        "al-Kut",
+        "an-Nu''maniyah",
+        "as-Suwayrah"
+      ]
+    }
+  ]
+}

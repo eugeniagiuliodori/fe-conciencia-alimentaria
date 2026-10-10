@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "french-polynesia",
+    "nombre": "French Polynesia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "iles-du-vent",
+      "nombre": "Iles du Vent",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "iles-sous-le-vent",
+      "nombre": "Iles sous le Vent",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "marquesas",
+      "nombre": "Marquesas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Atuona",
+        "Fatu-Hiva",
+        "Hakahao",
+        "Hakamaii",
+        "Hatiheu",
+        "Tahuata",
+        "Taiohae",
+        "Taipivai",
+        "Ua-Huka"
+      ]
+    },
+    {
+      "id": "tuamotu",
+      "nombre": "Tuamotu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ahe",
+        "Amanu",
+        "Anaa",
+        "Apataki",
+        "Arutua",
+        "Faaite",
+        "Fakahima",
+        "Fakarava",
+        "Fangatau",
+        "Hao",
+        "Hereheretue",
+        "Hikueru",
+        "Katiu",
+        "Kauehi",
+        "Kaukura",
+        "Makatea",
+        "Makemo",
+        "Manihi",
+        "Marokau",
+        "Napuka",
+        "Niau",
+        "Nukutavake",
+        "Puamau",
+        "Pukapuka",
+        "Pukarua",
+        "Rangiroa",
+        "Raroia",
+        "Reao",
+        "Rikitea",
+        "Taenga",
+        "Takapoto",
+        "Takaroa",
+        "Tatakoto",
+        "Tepoto",
+        "Tikehau",
+        "Tureia",
+        "Vahitahi",
+        "Vairaatea"
+      ]
+    },
+    {
+      "id": "tubuai",
+      "nombre": "Tubuai",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amaru",
+        "Anapoto",
+        "Anatonu",
+        "Auti",
+        "Avera",
+        "Mahu",
+        "Mataura",
+        "Moerai",
+        "Mutuaura",
+        "Rairua",
+        "Rapa",
+        "Taahuaia",
+        "Vaiuru"
+      ]
+    }
+  ]
+}

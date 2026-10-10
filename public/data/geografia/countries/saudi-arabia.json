@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "saudi-arabia",
+    "nombre": "Saudi Arabia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "al-khobar",
+      "nombre": "Al Khobar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "al-bahah",
+      "nombre": "al-Bahah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Bahah"
+      ]
+    },
+    {
+      "id": "al-hudud-ash-shamaliyah",
+      "nombre": "al-Hudud-ash-Shamaliyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Qurayyat",
+        "Ara''ar",
+        "Rafha",
+        "Turayf"
+      ]
+    },
+    {
+      "id": "al-madinah",
+      "nombre": "al-Madinah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Madinah",
+        "Yanbu"
+      ]
+    },
+    {
+      "id": "ar-riyad",
+      "nombre": "ar-Riyad",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ad-Dawadimi",
+        "ad-Dilam",
+        "Afif",
+        "al-Kharj",
+        "al-Majma''ah",
+        "ar-Riyad",
+        "az-Zulfi"
+      ]
+    },
+    {
+      "id": "aseer",
+      "nombre": "Aseer",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mahayel"
+      ]
+    },
+    {
+      "id": "ash-sharqiyah",
+      "nombre": "Ash Sharqiyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "asir",
+      "nombre": "Asir",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abha",
+        "Abu ''Aris",
+        "Khamis Mushayt",
+        "Qal''at Bishah"
+      ]
+    },
+    {
+      "id": "central-province",
+      "nombre": "Central Province",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "eastern-province",
+      "nombre": "Eastern Province",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ha-il",
+      "nombre": "Ha''il",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ha''il"
+      ]
+    },
+    {
+      "id": "jawf",
+      "nombre": "Jawf",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jawf",
+        "Sakakah"
+      ]
+    },
+    {
+      "id": "jizan",
+      "nombre": "Jizan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jizan",
+        "Sabya"
+      ]
+    },
+    {
+      "id": "makkah",
+      "nombre": "Makkah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Hawiyah",
+        "at-Ta''if",
+        "Makkah",
+        "Rabig"
+      ]
+    },
+    {
+      "id": "najran",
+      "nombre": "Najran",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dar''iyah",
+        "Najran",
+        "Sharurah"
+      ]
+    },
+    {
+      "id": "qasim",
+      "nombre": "Qasim",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ar-Rass",
+        "Buraydah",
+        "Unayzah"
+      ]
+    },
+    {
+      "id": "tabuk",
+      "nombre": "Tabuk",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tabuk",
+        "Umm Lajj"
+      ]
+    },
+    {
+      "id": "western-province",
+      "nombre": "Western Province",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

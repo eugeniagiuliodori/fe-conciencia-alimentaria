@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "cook-islands",
+    "nombre": "Cook Islands",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "aitutaki",
+      "nombre": "Aitutaki",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amuri"
+      ]
+    },
+    {
+      "id": "atiu",
+      "nombre": "Atiu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Atiu"
+      ]
+    },
+    {
+      "id": "mangaia",
+      "nombre": "Mangaia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mangaia"
+      ]
+    },
+    {
+      "id": "manihiki",
+      "nombre": "Manihiki",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tauhunu"
+      ]
+    },
+    {
+      "id": "mauke",
+      "nombre": "Mauke",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mauke"
+      ]
+    },
+    {
+      "id": "mitiaro",
+      "nombre": "Mitiaro",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mitiaro"
+      ]
+    },
+    {
+      "id": "nassau",
+      "nombre": "Nassau",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nassau"
+      ]
+    },
+    {
+      "id": "pukapuka",
+      "nombre": "Pukapuka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Roto"
+      ]
+    },
+    {
+      "id": "rakahanga",
+      "nombre": "Rakahanga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rakahanga"
+      ]
+    },
+    {
+      "id": "rarotonga",
+      "nombre": "Rarotonga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Avarua"
+      ]
+    },
+    {
+      "id": "tongareva",
+      "nombre": "Tongareva",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Omoka"
+      ]
+    }
+  ]
+}

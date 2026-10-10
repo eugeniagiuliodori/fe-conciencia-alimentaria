@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "latvia",
+    "nombre": "Latvia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "aizkraukles",
+      "nombre": "Aizkraukles",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aizkraukle",
+        "Jaunjelgava",
+        "Plavinas"
+      ]
+    },
+    {
+      "id": "aluksnes",
+      "nombre": "Aluksnes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aluksne",
+        "Ape"
+      ]
+    },
+    {
+      "id": "balvu",
+      "nombre": "Balvu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Balvi",
+        "Vilaka"
+      ]
+    },
+    {
+      "id": "bauskas",
+      "nombre": "Bauskas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bauska"
+      ]
+    },
+    {
+      "id": "cesu",
+      "nombre": "Cesu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cesis",
+        "Ligatne"
+      ]
+    },
+    {
+      "id": "daugavpils",
+      "nombre": "Daugavpils",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ilukste",
+        "Subate"
+      ]
+    },
+    {
+      "id": "daugavpils-city",
+      "nombre": "Daugavpils City",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ilukste",
+        "Subate"
+      ]
+    },
+    {
+      "id": "dobeles",
+      "nombre": "Dobeles",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Auce",
+        "Dobele"
+      ]
+    },
+    {
+      "id": "gulbenes",
+      "nombre": "Gulbenes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gulbene"
+      ]
+    },
+    {
+      "id": "jekabspils",
+      "nombre": "Jekabspils",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akniste",
+        "Jekabspils",
+        "Viesite"
+      ]
+    },
+    {
+      "id": "jelgava",
+      "nombre": "Jelgava",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jelgava"
+      ]
+    },
+    {
+      "id": "jelgavas",
+      "nombre": "Jelgavas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kalnciems"
+      ]
+    },
+    {
+      "id": "jurmala-city",
+      "nombre": "Jurmala City",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kraslavas",
+      "nombre": "Kraslavas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dagda",
+        "Kraslava"
+      ]
+    },
+    {
+      "id": "kuldigas",
+      "nombre": "Kuldigas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kuldiga",
+        "Skrunda"
+      ]
+    },
+    {
+      "id": "liepaja",
+      "nombre": "Liepaja",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Liepaja"
+      ]
+    },
+    {
+      "id": "liepajas",
+      "nombre": "Liepajas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aizpute",
+        "Durbe",
+        "Grobina",
+        "Pavilosta",
+        "Priekule"
+      ]
+    },
+    {
+      "id": "limbazhu",
+      "nombre": "Limbazhu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ainazhi",
+        "Aloja",
+        "Limbazhi",
+        "Salacgriva",
+        "Staicele"
+      ]
+    },
+    {
+      "id": "ludzas",
+      "nombre": "Ludzas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Karsava",
+        "Ludza",
+        "Zilupe"
+      ]
+    },
+    {
+      "id": "madonas",
+      "nombre": "Madonas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cesvaine",
+        "Lubana",
+        "Madona",
+        "Varaklani"
+      ]
+    },
+    {
+      "id": "ogres",
+      "nombre": "Ogres",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ikskile",
+        "Kegums",
+        "Les Hautes-Rivieres",
+        "Lielvarde",
+        "Ogre"
+      ]
+    },
+    {
+      "id": "preilu",
+      "nombre": "Preilu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Livani",
+        "Preili"
+      ]
+    },
+    {
+      "id": "rezekne",
+      "nombre": "Rezekne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rezekne"
+      ]
+    },
+    {
+      "id": "rezeknes",
+      "nombre": "Rezeknes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Vilani"
+      ]
+    },
+    {
+      "id": "riga",
+      "nombre": "Riga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Riga"
+      ]
+    },
+    {
+      "id": "rigas",
+      "nombre": "Rigas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baldone",
+        "Balozhi",
+        "Olaine",
+        "Salaspils",
+        "Saulkrasti",
+        "Sigulda",
+        "Vangazhi"
+      ]
+    },
+    {
+      "id": "saldus",
+      "nombre": "Saldus",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Broceni",
+        "Saldus"
+      ]
+    },
+    {
+      "id": "talsu",
+      "nombre": "Talsu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sabile",
+        "Stende",
+        "Talsi",
+        "Valdemarpils"
+      ]
+    },
+    {
+      "id": "tukuma",
+      "nombre": "Tukuma",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kandava",
+        "Tukums"
+      ]
+    },
+    {
+      "id": "valkas",
+      "nombre": "Valkas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Seda",
+        "Smiltene",
+        "Strenchi",
+        "Valka"
+      ]
+    },
+    {
+      "id": "valmieras",
+      "nombre": "Valmieras",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mazsalaca",
+        "Rujiena",
+        "Valmiera"
+      ]
+    },
+    {
+      "id": "ventspils",
+      "nombre": "Ventspils",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Piltene"
+      ]
+    },
+    {
+      "id": "ventspils-city",
+      "nombre": "Ventspils City",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Piltene"
+      ]
+    }
+  ]
+}

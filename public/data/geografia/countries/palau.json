@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "palau",
+    "nombre": "Palau",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "aimeliik",
+      "nombre": "Aimeliik",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ulimang"
+      ]
+    },
+    {
+      "id": "airai",
+      "nombre": "Airai",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Airai"
+      ]
+    },
+    {
+      "id": "angaur",
+      "nombre": "Angaur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ngaramash"
+      ]
+    },
+    {
+      "id": "hatobohei",
+      "nombre": "Hatobohei",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hatohobei"
+      ]
+    },
+    {
+      "id": "kayangel",
+      "nombre": "Kayangel",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kayangel"
+      ]
+    },
+    {
+      "id": "koror",
+      "nombre": "Koror",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Koror",
+        "Meyungs"
+      ]
+    },
+    {
+      "id": "melekeok",
+      "nombre": "Melekeok",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Melekeok"
+      ]
+    },
+    {
+      "id": "ngaraard",
+      "nombre": "Ngaraard",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ngermechau"
+      ]
+    },
+    {
+      "id": "ngardmau",
+      "nombre": "Ngardmau",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chol"
+      ]
+    },
+    {
+      "id": "ngaremlengui",
+      "nombre": "Ngaremlengui",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ollei"
+      ]
+    },
+    {
+      "id": "ngatpang",
+      "nombre": "Ngatpang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Oikul"
+      ]
+    },
+    {
+      "id": "ngchesar",
+      "nombre": "Ngchesar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ngerkeai"
+      ]
+    },
+    {
+      "id": "ngerchelong",
+      "nombre": "Ngerchelong",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Imeong"
+      ]
+    },
+    {
+      "id": "ngiwal",
+      "nombre": "Ngiwal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ngetkip"
+      ]
+    },
+    {
+      "id": "peleliu",
+      "nombre": "Peleliu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kloulklubed"
+      ]
+    },
+    {
+      "id": "sonsorol",
+      "nombre": "Sonsorol",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dongosaru"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "british-virgin-islands",
+    "nombre": "British Virgin Islands",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "anegada",
+      "nombre": "Anegada",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Settlement"
+      ]
+    },
+    {
+      "id": "jost-van-dyke",
+      "nombre": "Jost van Dyke",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tortola",
+      "nombre": "Tortola",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "East End-Long Look",
+        "Road Town",
+        "West End"
+      ]
+    }
+  ]
+}

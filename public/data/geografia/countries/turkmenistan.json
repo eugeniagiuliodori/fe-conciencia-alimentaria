@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "turkmenistan",
+    "nombre": "Turkmenistan",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "ahal",
+      "nombre": "Ahal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ahchadepe",
+        "Annau",
+        "Babadayhan",
+        "Baherden",
+        "Birleshik Pervi",
+        "Buzmeyin",
+        "Dushak",
+        "Gokedepe",
+        "Kaka",
+        "Miana",
+        "Ovaz Jalatay",
+        "Saragt",
+        "Tecen"
+      ]
+    },
+    {
+      "id": "asgabat",
+      "nombre": "Asgabat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Asgabat"
+      ]
+    },
+    {
+      "id": "balkan",
+      "nombre": "Balkan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Adyndaky",
+        "Balkanabat",
+        "Bekdash",
+        "Gasanguli",
+        "Gazanjyk",
+        "Goturdepe",
+        "Gumdag",
+        "Jebel",
+        "Karakala",
+        "Khazar",
+        "Serdar",
+        "Sharlawuk",
+        "Turkmenbasi"
+      ]
+    },
+    {
+      "id": "dasoguz",
+      "nombre": "Dasoguz",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akdepe",
+        "Boldumsaz",
+        "Dasoguz",
+        "Gubadag",
+        "Kohne Urgenc",
+        "Moskva",
+        "Tagta",
+        "Yilanli"
+      ]
+    },
+    {
+      "id": "lebap",
+      "nombre": "Lebap",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Darganata",
+        "Esenmengli",
+        "Farap",
+        "Gazojak",
+        "Govurdak",
+        "Halac",
+        "Kerki",
+        "Komsomolsk",
+        "Mukri",
+        "Sayat",
+        "Seydi",
+        "Turkmenabat"
+      ]
+    },
+    {
+      "id": "mari",
+      "nombre": "Mari",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bayramali",
+        "Eloten",
+        "Mari",
+        "Murgab",
+        "Sakarchage",
+        "Tagtabazar",
+        "Turkmengala"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "georgia",
+    "nombre": "Georgia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "abhasia",
+      "nombre": "Abhasia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ahali Atoni",
+        "Bihvinta",
+        "Gagra",
+        "Gali",
+        "Gudauta",
+        "Gulripshi",
+        "Ochamchira",
+        "Suhumi",
+        "Tkvarcheli"
+      ]
+    },
+    {
+      "id": "ajaria",
+      "nombre": "Ajaria",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Batumi",
+        "Dioknisi",
+        "Kobuleti",
+        "Mahindzhauri"
+      ]
+    },
+    {
+      "id": "guria",
+      "nombre": "Guria",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lanchhuti",
+        "Ozurgeti"
+      ]
+    },
+    {
+      "id": "imereti",
+      "nombre": "Imereti",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bagdadi",
+        "Chaltubo",
+        "Chiatura",
+        "Honi",
+        "Kutaisi",
+        "Sachhere",
+        "Samtredia",
+        "Terzhola",
+        "Tkibuli",
+        "Vani",
+        "Zestaponi"
+      ]
+    },
+    {
+      "id": "kaheti",
+      "nombre": "Kaheti",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ahmeta",
+        "Cnori",
+        "Dedoplisckaro",
+        "Gurdzhaani",
+        "Kvareli",
+        "Lagodehi",
+        "Sagaredzho",
+        "Signahi",
+        "Telavi"
+      ]
+    },
+    {
+      "id": "kvemo-kartli",
+      "nombre": "Kvemo Kartli",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "mcheta-mtianeti",
+      "nombre": "Mcheta-Mtianeti",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dusheti",
+        "Mcheta"
+      ]
+    },
+    {
+      "id": "racha",
+      "nombre": "Racha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ambrolauri",
+        "Cageri",
+        "Oni"
+      ]
+    },
+    {
+      "id": "samagrelo-zemo-svaneti",
+      "nombre": "Samagrelo-Zemo Svaneti",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "samche-zhavaheti",
+      "nombre": "Samche-Zhavaheti",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ahalcihe",
+        "Ahalkalaki",
+        "Borzhomi",
+        "Ninocminda",
+        "Vale"
+      ]
+    },
+    {
+      "id": "shida-kartli",
+      "nombre": "Shida Kartli",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tbilisi",
+      "nombre": "Tbilisi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tbilisi"
+      ]
+    }
+  ]
+}

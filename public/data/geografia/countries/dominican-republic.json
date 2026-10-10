@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "dominican-republic",
+    "nombre": "Dominican Republic",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "azua",
+      "nombre": "Azua",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Azua",
+        "Sabana Yegua"
+      ]
+    },
+    {
+      "id": "bahoruco",
+      "nombre": "Bahoruco",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Neyba",
+        "Tamayo"
+      ]
+    },
+    {
+      "id": "barahona",
+      "nombre": "Barahona",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Barahona",
+        "Cabral",
+        "El Penon"
+      ]
+    },
+    {
+      "id": "dajabon",
+      "nombre": "Dajabon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dajabon"
+      ]
+    },
+    {
+      "id": "distrito-nacional",
+      "nombre": "Distrito Nacional",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "duarte",
+      "nombre": "Duarte",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Las Guaranas",
+        "Pimentel",
+        "San Francisco de Macoris"
+      ]
+    },
+    {
+      "id": "el-seybo",
+      "nombre": "El Seybo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "elias-pina",
+      "nombre": "Elias Pina",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "espaillat",
+      "nombre": "Espaillat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Moca"
+      ]
+    },
+    {
+      "id": "hato-mayor",
+      "nombre": "Hato Mayor",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "independencia",
+      "nombre": "Independencia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Duverge",
+        "Jimani"
+      ]
+    },
+    {
+      "id": "la-altagracia",
+      "nombre": "La Altagracia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "la-romana",
+      "nombre": "La Romana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "la-vega",
+      "nombre": "La Vega",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "maria-trinidad-sanchez",
+      "nombre": "Maria Trinidad Sanchez",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "monsenor-nouel",
+      "nombre": "Monsenor Nouel",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "monte-cristi",
+      "nombre": "Monte Cristi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "monte-plata",
+      "nombre": "Monte Plata",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "pedernales",
+      "nombre": "Pedernales",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Pedernales"
+      ]
+    },
+    {
+      "id": "peravia",
+      "nombre": "Peravia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bani",
+        "Ocoa"
+      ]
+    },
+    {
+      "id": "puerto-plata",
+      "nombre": "Puerto Plata",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "salcedo",
+      "nombre": "Salcedo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Salcedo"
+      ]
+    },
+    {
+      "id": "samana",
+      "nombre": "Samana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Samana",
+        "Sanchez"
+      ]
+    },
+    {
+      "id": "san-cristobal",
+      "nombre": "San Cristobal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "san-juan",
+      "nombre": "San Juan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "san-pedro-de-macoris",
+      "nombre": "San Pedro de Macoris",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sanchez-ramirez",
+      "nombre": "Sanchez Ramirez",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "santiago",
+      "nombre": "Santiago",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Santiago",
+        "Tamboril",
+        "Villa Bisono"
+      ]
+    },
+    {
+      "id": "santiago-rodriguez",
+      "nombre": "Santiago Rodriguez",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Santiago",
+        "Tamboril",
+        "Villa Bisono"
+      ]
+    },
+    {
+      "id": "valverde",
+      "nombre": "Valverde",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Esperanza",
+        "Mao"
+      ]
+    }
+  ]
+}

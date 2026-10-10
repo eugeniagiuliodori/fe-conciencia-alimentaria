@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "samoa",
+    "nombre": "Samoa",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "a-ana",
+      "nombre": "A''ana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Falelatai"
+      ]
+    },
+    {
+      "id": "aiga-i-le-tai",
+      "nombre": "Aiga-i-le-Tai",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mulifanua"
+      ]
+    },
+    {
+      "id": "atua",
+      "nombre": "Atua",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Solosolo"
+      ]
+    },
+    {
+      "id": "fa-asaleleaga",
+      "nombre": "Fa''asaleleaga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Safotulafai"
+      ]
+    },
+    {
+      "id": "gaga-emauga",
+      "nombre": "Gaga''emauga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Samalae''ulu"
+      ]
+    },
+    {
+      "id": "gagaifomauga",
+      "nombre": "Gagaifomauga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "A''opo"
+      ]
+    },
+    {
+      "id": "palauli",
+      "nombre": "Palauli",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Taga"
+      ]
+    },
+    {
+      "id": "satupa-itea",
+      "nombre": "Satupa''itea",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gautavai"
+      ]
+    },
+    {
+      "id": "tuamasaga",
+      "nombre": "Tuamasaga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Apia"
+      ]
+    },
+    {
+      "id": "va-a-o-fonoti",
+      "nombre": "Va''a-o-Fonoti",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Samamea"
+      ]
+    },
+    {
+      "id": "vaisigano",
+      "nombre": "Vaisigano",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Neiafu"
+      ]
+    }
+  ]
+}

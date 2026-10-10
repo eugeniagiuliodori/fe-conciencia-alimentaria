@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "kenya",
+    "nombre": "Kenya",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "central",
+      "nombre": "Central",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gilgil",
+        "Karatina",
+        "Kiambu",
+        "Kijabe",
+        "Kikuyu",
+        "Limuru",
+        "Maragua",
+        "Muranga",
+        "Nyeri",
+        "Ruiru",
+        "Sagana",
+        "Thika",
+        "Vanga"
+      ]
+    },
+    {
+      "id": "coast",
+      "nombre": "Coast",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Changamwe",
+        "Garsen",
+        "Gazi",
+        "Hola",
+        "Kaloleni",
+        "Kilifi",
+        "Kinango",
+        "Kipini",
+        "Kwale",
+        "Lamu",
+        "Malindi",
+        "Mambrui",
+        "Mombasa",
+        "Sawasawa",
+        "Shimoni",
+        "Takaungu",
+        "Taveta",
+        "Voi",
+        "Witu",
+        "Wundanyi"
+      ]
+    },
+    {
+      "id": "eastern",
+      "nombre": "Eastern",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Athi River",
+        "Chuka",
+        "Embu",
+        "Isiolo",
+        "Kangonde",
+        "Kitui",
+        "Machakos",
+        "Mado Gashi",
+        "Marsabit",
+        "Meru",
+        "Moyale",
+        "Mutomo"
+      ]
+    },
+    {
+      "id": "nairobi",
+      "nombre": "Nairobi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nairobi"
+      ]
+    },
+    {
+      "id": "north-eastern",
+      "nombre": "North Eastern",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nyanza",
+      "nombre": "Nyanza",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Homa Bay",
+        "Kisii",
+        "Kisumu",
+        "Migori"
+      ]
+    },
+    {
+      "id": "rift-valley",
+      "nombre": "Rift Valley",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "western",
+      "nombre": "Western",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bungoma",
+        "Busia",
+        "Kakamega",
+        "Mumias",
+        "Webuye"
+      ]
+    }
+  ]
+}

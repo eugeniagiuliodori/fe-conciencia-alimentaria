@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "ivory-coast",
+    "nombre": "Ivory Coast",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "abidjan",
+      "nombre": "Abidjan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Marcory"
+      ]
+    },
+    {
+      "id": "agneby",
+      "nombre": "Agneby",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Adzope",
+        "Affery",
+        "Agboville",
+        "Akoupe",
+        "Rubino"
+      ]
+    },
+    {
+      "id": "bafing",
+      "nombre": "Bafing",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Touba"
+      ]
+    },
+    {
+      "id": "denguele",
+      "nombre": "Denguele",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bako",
+        "Odienne"
+      ]
+    },
+    {
+      "id": "dix-huit-montagnes",
+      "nombre": "Dix-huit Montagnes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "fromager",
+      "nombre": "Fromager",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gagnoa",
+        "Guiberoua",
+        "Hire",
+        "Ndouci",
+        "Oume",
+        "Ouragahio"
+      ]
+    },
+    {
+      "id": "haut-sassandra",
+      "nombre": "Haut-Sassandra",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Daloa",
+        "Issia",
+        "Vavoua"
+      ]
+    },
+    {
+      "id": "lacs",
+      "nombre": "Lacs",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ndiekro",
+        "Tiebissou",
+        "Toumodi",
+        "Yamoussoukro"
+      ]
+    },
+    {
+      "id": "lagunes",
+      "nombre": "Lagunes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abidjan",
+        "Alepe",
+        "Anyama",
+        "Bingerville",
+        "Dabou",
+        "Grand-Lahou",
+        "Jacqueville",
+        "Tiassale"
+      ]
+    },
+    {
+      "id": "marahoue",
+      "nombre": "Marahoue",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bouafle",
+        "Sinfra",
+        "Zuenoula"
+      ]
+    },
+    {
+      "id": "moyen-cavally",
+      "nombre": "Moyen-Cavally",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Duekoue",
+        "Guiglo",
+        "Toulepleu"
+      ]
+    },
+    {
+      "id": "moyen-comoe",
+      "nombre": "Moyen-Comoe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abengourou",
+        "Agnibilekrou"
+      ]
+    },
+    {
+      "id": "n-zi-comoe",
+      "nombre": "N''zi-Comoe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arrah",
+        "Bocanda",
+        "Bongouanou",
+        "Daoukro",
+        "Dimbokro",
+        "M''bahiakro",
+        "Mbatto",
+        "N''zi-Comoe"
+      ]
+    },
+    {
+      "id": "sassandra",
+      "nombre": "Sassandra",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "San-Pedro",
+        "Sassandra",
+        "Soubre",
+        "Tabou"
+      ]
+    },
+    {
+      "id": "savanes",
+      "nombre": "Savanes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Boundiali",
+        "Dikodougou",
+        "Ferkessedougou",
+        "Korhogo",
+        "Tingrela"
+      ]
+    },
+    {
+      "id": "sud-bandama",
+      "nombre": "Sud-Bandama",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Divo",
+        "Fresco",
+        "Lakota"
+      ]
+    },
+    {
+      "id": "sud-comoe",
+      "nombre": "Sud-Comoe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aboisso",
+        "Adiake",
+        "Ayame",
+        "Bonoua",
+        "Grand Bassam"
+      ]
+    },
+    {
+      "id": "vallee-du-bandama",
+      "nombre": "Vallee du Bandama",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "worodougou",
+      "nombre": "Worodougou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kani",
+        "Mankono",
+        "Seguela"
+      ]
+    },
+    {
+      "id": "zanzan",
+      "nombre": "Zanzan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bondoukou",
+        "Bouna",
+        "Tanda"
+      ]
+    }
+  ]
+}

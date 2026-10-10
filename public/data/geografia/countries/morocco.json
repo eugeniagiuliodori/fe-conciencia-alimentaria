@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "morocco",
+    "nombre": "Morocco",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "agadir",
+      "nombre": "Agadir",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Agadir"
+      ]
+    },
+    {
+      "id": "casablanca",
+      "nombre": "Casablanca",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ad-Dar-al-Bayda",
+        "Mohammedia"
+      ]
+    },
+    {
+      "id": "chaouia-ouardigha",
+      "nombre": "Chaouia-Ouardigha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bin Sulayman",
+        "Bir Rashid",
+        "Bu-al-Jad",
+        "Buznika",
+        "Khuribghah",
+        "Sattat",
+        "Wad Zam"
+      ]
+    },
+    {
+      "id": "doukkala-abda",
+      "nombre": "Doukkala-Abda",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Jadidah",
+        "Asfi",
+        "Azimur",
+        "Sidi Binnur",
+        "Sidi Isma''il",
+        "Yussufiyah"
+      ]
+    },
+    {
+      "id": "fes-boulemane",
+      "nombre": "Fes-Boulemane",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fas",
+        "Fes",
+        "Safru"
+      ]
+    },
+    {
+      "id": "gharb-chrarda-beni-hssen",
+      "nombre": "Gharb-Chrarda-Beni Hssen",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "guelmim",
+      "nombre": "Guelmim",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ghulimim",
+        "Sidi Ifni",
+        "Tafraut",
+        "Tantan"
+      ]
+    },
+    {
+      "id": "kenitra",
+      "nombre": "Kenitra",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kenitra"
+      ]
+    },
+    {
+      "id": "marrakech-tensift-al-haouz",
+      "nombre": "Marrakech-Tensift-Al Haouz",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "meknes-tafilalet",
+      "nombre": "Meknes-Tafilalet",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Hajab",
+        "Amalu Ighriban",
+        "ar-Rasidiyah",
+        "Azru",
+        "Jama''at-al-Marirt",
+        "Khanifrah",
+        "Meknes",
+        "Midalt",
+        "Miknas",
+        "Mulay Idris"
+      ]
+    },
+    {
+      "id": "oriental",
+      "nombre": "Oriental",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ahfir",
+        "al-Arwi",
+        "al-Ayun Sidi Malluk",
+        "an-Nadur",
+        "Bin Ansar",
+        "Birkan",
+        "Fijij",
+        "Jaradah",
+        "Tawrirt",
+        "Ujdah",
+        "Zayu"
+      ]
+    },
+    {
+      "id": "oujda",
+      "nombre": "Oujda",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Oujda"
+      ]
+    },
+    {
+      "id": "province-de-tanger",
+      "nombre": "Province de Tanger",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "rabat-sale-zammour-zaer",
+      "nombre": "Rabat-Sale-Zammour-Zaer",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ar-Ribat",
+        "Khamissat",
+        "Sakhirat",
+        "Tiflat"
+      ]
+    },
+    {
+      "id": "sala-al-jadida",
+      "nombre": "Sala Al Jadida",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "settat",
+      "nombre": "Settat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Settat"
+      ]
+    },
+    {
+      "id": "souss-massa-draa",
+      "nombre": "Souss Massa-Draa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tadla-azilal",
+      "nombre": "Tadla-Azilal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Faqih Bin Salah",
+        "Bani Mallal",
+        "Beni Mellal",
+        "Qasbat Tadlah",
+        "Suq Sabt Awlat Nama"
+      ]
+    },
+    {
+      "id": "tangier-tetouan",
+      "nombre": "Tangier-Tetouan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-''Ara''ish",
+        "al-Qasr-al-Kabir",
+        "Asilah",
+        "Finidiq",
+        "Martil",
+        "Midiq",
+        "Shifshawn",
+        "Tangier",
+        "Tanjah",
+        "Tittawin",
+        "Titwan"
+      ]
+    },
+    {
+      "id": "taza-al-hoceima-taounate",
+      "nombre": "Taza-Al Hoceima-Taounate",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "wilaya-de-casablanca",
+      "nombre": "Wilaya de Casablanca",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "wilaya-de-rabat-sale",
+      "nombre": "Wilaya de Rabat-Sale",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "bhutan",
+    "nombre": "Bhutan",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "bumthang",
+      "nombre": "Bumthang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jakar"
+      ]
+    },
+    {
+      "id": "chhukha",
+      "nombre": "Chhukha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chhukha",
+        "Phuentsholing"
+      ]
+    },
+    {
+      "id": "chirang",
+      "nombre": "Chirang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Damphu"
+      ]
+    },
+    {
+      "id": "daga",
+      "nombre": "Daga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Taga Dzong"
+      ]
+    },
+    {
+      "id": "geylegphug",
+      "nombre": "Geylegphug",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Geylegphug"
+      ]
+    },
+    {
+      "id": "ha",
+      "nombre": "Ha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ha"
+      ]
+    },
+    {
+      "id": "lhuntshi",
+      "nombre": "Lhuntshi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lhuntshi"
+      ]
+    },
+    {
+      "id": "mongar",
+      "nombre": "Mongar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mongar"
+      ]
+    },
+    {
+      "id": "pemagatsel",
+      "nombre": "Pemagatsel",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Pemagatsel"
+      ]
+    },
+    {
+      "id": "punakha",
+      "nombre": "Punakha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gasa",
+        "Punakha"
+      ]
+    },
+    {
+      "id": "rinpung",
+      "nombre": "Rinpung",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Paro"
+      ]
+    },
+    {
+      "id": "samchi",
+      "nombre": "Samchi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Phuntsholing",
+        "Samchi"
+      ]
+    },
+    {
+      "id": "samdrup-jongkhar",
+      "nombre": "Samdrup Jongkhar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "shemgang",
+      "nombre": "Shemgang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Shemgang"
+      ]
+    },
+    {
+      "id": "tashigang",
+      "nombre": "Tashigang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tashigang"
+      ]
+    },
+    {
+      "id": "timphu",
+      "nombre": "Timphu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Thimphu",
+        "Timphu"
+      ]
+    },
+    {
+      "id": "tongsa",
+      "nombre": "Tongsa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tongsa"
+      ]
+    },
+    {
+      "id": "wangdiphodrang",
+      "nombre": "Wangdiphodrang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Wangdiphodrang"
+      ]
+    }
+  ]
+}

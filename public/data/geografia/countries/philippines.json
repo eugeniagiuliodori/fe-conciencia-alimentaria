@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "philippines",
+    "nombre": "Philippines",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "batangas",
+      "nombre": "Batangas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "San Juan"
+      ]
+    },
+    {
+      "id": "bicol",
+      "nombre": "Bicol",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Albay",
+        "Daet",
+        "Iriga",
+        "Legaspi",
+        "Naga",
+        "Sorsogon"
+      ]
+    },
+    {
+      "id": "bulacan",
+      "nombre": "Bulacan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bulacan",
+        "Marilao"
+      ]
+    },
+    {
+      "id": "cagayan",
+      "nombre": "Cagayan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cagayan de Oro",
+        "Santiago",
+        "Solano",
+        "Tuguegarao"
+      ]
+    },
+    {
+      "id": "caraga",
+      "nombre": "Caraga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bislig",
+        "Butuan",
+        "Surigao"
+      ]
+    },
+    {
+      "id": "central-luzon",
+      "nombre": "Central Luzon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "central-mindanao",
+      "nombre": "Central Mindanao",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "central-visayas",
+      "nombre": "Central Visayas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "cordillera",
+      "nombre": "Cordillera",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baguio",
+        "Bangued"
+      ]
+    },
+    {
+      "id": "davao",
+      "nombre": "Davao",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Davao"
+      ]
+    },
+    {
+      "id": "eastern-visayas",
+      "nombre": "Eastern Visayas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "greater-metropolitan-area",
+      "nombre": "Greater Metropolitan Area",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ilocos",
+      "nombre": "Ilocos",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Laoag",
+        "Manaoag",
+        "Mangaldan",
+        "San Fernando",
+        "Urdaneta",
+        "Vigan"
+      ]
+    },
+    {
+      "id": "laguna",
+      "nombre": "Laguna",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Binan",
+        "Laguna",
+        "Pangil",
+        "San Pedro"
+      ]
+    },
+    {
+      "id": "luzon",
+      "nombre": "Luzon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Manila",
+        "Marikina"
+      ]
+    },
+    {
+      "id": "mactan",
+      "nombre": "Mactan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mactan"
+      ]
+    },
+    {
+      "id": "metropolitan-manila-area",
+      "nombre": "Metropolitan Manila Area",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "muslim-mindanao",
+      "nombre": "Muslim Mindanao",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "northern-mindanao",
+      "nombre": "Northern Mindanao",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "southern-mindanao",
+      "nombre": "Southern Mindanao",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "southern-tagalog",
+      "nombre": "Southern Tagalog",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "western-mindanao",
+      "nombre": "Western Mindanao",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "western-visayas",
+      "nombre": "Western Visayas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

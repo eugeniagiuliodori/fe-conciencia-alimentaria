@@ -1,0 +1,477 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "egypt",
+    "nombre": "Egypt",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "ad-daqahliyah",
+      "nombre": "ad-Daqahliyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aja",
+        "al-Jamaliyah",
+        "al-Ma''sarah",
+        "al-Mansurah",
+        "al-Manzilah",
+        "al-Matariyah",
+        "as-Sinbillawayn",
+        "Bahut",
+        "Bilqas",
+        "Dikirnis",
+        "Minyat-an-Nasr",
+        "Mit Gamr",
+        "Shirbin",
+        "Talkha"
+      ]
+    },
+    {
+      "id": "al-bahr-al-ahmar",
+      "nombre": "al-Bahr-al-Ahmar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Ghardaqah",
+        "al-Qusayr",
+        "Ras Gharib",
+        "Safaja"
+      ]
+    },
+    {
+      "id": "al-buhayrah",
+      "nombre": "al-Buhayrah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abu al-Matamir",
+        "Abu Hummus",
+        "ad-Dilinjat",
+        "al-Kawm-al-Akhdar",
+        "al-Mahmudiyah",
+        "ar-Rahmaniyah",
+        "Buturis",
+        "Damanhur",
+        "Edfina",
+        "Hawsh ''Isa",
+        "Idku",
+        "Ityay-al-Barud",
+        "Kafr Salim",
+        "Kafr-ad-Dawwar",
+        "Kawm Hamada",
+        "Nubaria",
+        "Rashid",
+        "Shubra Khit",
+        "Zawiyat Sidi Gazi"
+      ]
+    },
+    {
+      "id": "al-fayyum",
+      "nombre": "al-Fayyum",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Fayyum",
+        "Fidimin",
+        "Ibshaway",
+        "Itsa",
+        "Qasr Qarun",
+        "Sanhur",
+        "Sinnuris",
+        "Tamiyah"
+      ]
+    },
+    {
+      "id": "al-gharbiyah",
+      "nombre": "al-Gharbiyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abyar",
+        "ad-Daljamun",
+        "al-Mahallah al-Kubra",
+        "as-Santah",
+        "Basyun",
+        "Kafr-az-Zayyat",
+        "Mahallat Marhum",
+        "Nisf Thani Bashbish",
+        "Qutur",
+        "Samannud",
+        "Tanta",
+        "Zifta"
+      ]
+    },
+    {
+      "id": "al-iskandariyah",
+      "nombre": "al-Iskandariyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Agamy",
+        "al-Iskandariyah",
+        "al-Maks"
+      ]
+    },
+    {
+      "id": "al-ismailiyah",
+      "nombre": "al-Ismailiyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Ismailiyah",
+        "Fa''id",
+        "Sarabiyum"
+      ]
+    },
+    {
+      "id": "al-jizah",
+      "nombre": "al-Jizah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-''Ayyat",
+        "al-Badrashayn",
+        "al-Hawamidiyah",
+        "al-Jizah",
+        "al-Mansuriyah",
+        "al-Wahat-al-Bahriyah",
+        "as-Saff",
+        "Atfih",
+        "Awsim",
+        "Giza",
+        "Madinat Sittah Uktubar",
+        "Nahya",
+        "Saqqarah"
+      ]
+    },
+    {
+      "id": "al-minufiyah",
+      "nombre": "al-Minufiyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Bajur",
+        "al-Batanun",
+        "ash-Shuhada",
+        "Ashmun",
+        "Birkat-as-Sab",
+        "Milij",
+        "Minuf",
+        "Quwaysina",
+        "Shibin-al-Kawm",
+        "Sirs-al-Layyanah",
+        "Tala"
+      ]
+    },
+    {
+      "id": "al-minya",
+      "nombre": "al-Minya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abu Qurqas",
+        "al-Anayim",
+        "al-Fikriyah",
+        "al-Minya",
+        "ar-Rawdah",
+        "Bani Mazar",
+        "Dayr Mawas",
+        "Magagah",
+        "Mallawi",
+        "Matay",
+        "Samalut",
+        "Tallah",
+        "Tandah"
+      ]
+    },
+    {
+      "id": "al-qahira",
+      "nombre": "al-Qahira",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Qahira",
+        "Badr City",
+        "Heliopolis"
+      ]
+    },
+    {
+      "id": "al-qalyubiyah",
+      "nombre": "al-Qalyubiyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abu Za''bal",
+        "al-Khankah",
+        "al-Qanatir-al-Khayriyah",
+        "Banha",
+        "Qalyub",
+        "Shubra al-Khaymah",
+        "Sibin-al-Qanatir",
+        "Tukh"
+      ]
+    },
+    {
+      "id": "al-uqsur",
+      "nombre": "al-Uqsur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Uqsur"
+      ]
+    },
+    {
+      "id": "al-wadi-al-jadid",
+      "nombre": "al-Wadi al-Jadid",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "as-suways",
+      "nombre": "as-Suways",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "as-Suways"
+      ]
+    },
+    {
+      "id": "ash-sharqiyah",
+      "nombre": "ash-Sharqiyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abu Hammad",
+        "Abu Kabir",
+        "al-Ashir mir-Ramadan",
+        "al-Husayniyah",
+        "al-Ibrahimiyah",
+        "al-Qanayat",
+        "al-Qassasin",
+        "al-Qurayn",
+        "as-Salihiyah",
+        "at-Tall-al-Kabir",
+        "az-Zaqaziq",
+        "Bilbays",
+        "Diyarb Najm",
+        "Faqus",
+        "Hihya",
+        "Kafr Saqr",
+        "Mashtul-as-Suq",
+        "Minyat-al-Qamh"
+      ]
+    },
+    {
+      "id": "aswan",
+      "nombre": "Aswan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "an-Nasir",
+        "Aswan",
+        "Daraw",
+        "Kawm Umbu"
+      ]
+    },
+    {
+      "id": "asyut",
+      "nombre": "Asyut",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abnub",
+        "Abu Tij",
+        "al-Badari",
+        "al-Qusiyah",
+        "an-Nukhaylah",
+        "Asyut",
+        "Bani Muhammadiyat",
+        "Dayrut",
+        "Dayrut-ash-Sharif",
+        "Manfalut",
+        "Musha",
+        "Sahil Salim",
+        "Sanabu",
+        "Umm-al-Qusur"
+      ]
+    },
+    {
+      "id": "bani-suwayf",
+      "nombre": "Bani Suwayf",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "bur-sa-id",
+      "nombre": "Bur Sa''id",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "cairo",
+      "nombre": "Cairo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "6th of October City",
+        "Ataba",
+        "Cairo",
+        "Nasr",
+        "Nasr City",
+        "Obour City"
+      ]
+    },
+    {
+      "id": "dumyat",
+      "nombre": "Dumyat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "az-Zarqa",
+        "Damietta",
+        "Dumyat",
+        "El-Zarka",
+        "Faraskur",
+        "Izbat-al-Burj",
+        "Kafr Sa''d",
+        "Kafr-al-Battikh"
+      ]
+    },
+    {
+      "id": "kafr-ash-shaykh",
+      "nombre": "Kafr-ash-Shaykh",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Burj",
+        "al-Burullus",
+        "al-Haddadi",
+        "al-Hamul",
+        "Biyala",
+        "Disuq",
+        "Fuwah",
+        "Kafr-al-Jara''idah",
+        "Kafr-ash-Shaykh",
+        "Mutubis",
+        "Qallin",
+        "Sidi Salim"
+      ]
+    },
+    {
+      "id": "matruh",
+      "nombre": "Matruh",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ad-Da''ba",
+        "Marsa Matruh",
+        "Nasr",
+        "Sidi Barrani",
+        "Zawiyat Shammas"
+      ]
+    },
+    {
+      "id": "muhafazat-ad-daqahliyah",
+      "nombre": "Muhafazat ad Daqahliyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "muhafazat-al-fayyum",
+      "nombre": "Muhafazat al Fayyum",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "muhafazat-al-gharbiyah",
+      "nombre": "Muhafazat al Gharbiyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "muhafazat-al-iskandariyah",
+      "nombre": "Muhafazat al Iskandariyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "muhafazat-al-qahirah",
+      "nombre": "Muhafazat al Qahirah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "qina",
+      "nombre": "Qina",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ad-Dabbiyah",
+        "ad-Dayr",
+        "al-Ballas",
+        "al-Karnak",
+        "al-Waqf",
+        "ar-Radisiyat-al-Bahriyah",
+        "Armant",
+        "Asfun-al-Mata''inah",
+        "Dandarah",
+        "Dishna",
+        "Farshut",
+        "Hijazah",
+        "Hiw",
+        "Idfu",
+        "Isna",
+        "Kiman-al-Mata''inah",
+        "Naj'' Hammadi",
+        "Naqadah",
+        "Qift",
+        "Qina",
+        "Qus"
+      ]
+    },
+    {
+      "id": "sawhaj",
+      "nombre": "Sawhaj",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akhmim",
+        "al-Balyana",
+        "al-Manshah",
+        "al-Maragah",
+        "Awlad Tawq Sharq",
+        "Dar-as-Salam",
+        "Jirja",
+        "Juhaynah",
+        "Sawhaj",
+        "Tahta",
+        "Tima"
+      ]
+    },
+    {
+      "id": "sina-al-janubiyah",
+      "nombre": "Sina al-Janubiyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sina-ash-shamaliyah",
+      "nombre": "Sina ash-Shamaliyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

@@ -1,0 +1,521 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "czech-republic",
+    "nombre": "Czech Republic",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "central-bohemian",
+      "nombre": "Central Bohemian",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "frycovice",
+      "nombre": "Frycovice",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Frycovice"
+      ]
+    },
+    {
+      "id": "jihocesky-kraj",
+      "nombre": "Jihocesky Kraj",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "jihochesky",
+      "nombre": "Jihochesky",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bechyne",
+        "Blatna",
+        "Cheske Budejovice",
+        "Chesky Krumlov",
+        "Dachice",
+        "Jindrichuv Hradec",
+        "Kaplice",
+        "Milevsko",
+        "Pisek",
+        "Prachatice",
+        "Protivin",
+        "Sezimovo Usti",
+        "Sobeslav",
+        "Strakonice",
+        "Tabor",
+        "Trebon",
+        "Tyn nad Vltavou",
+        "Veseli nad Luzhnici",
+        "Vimperk",
+        "Vodnany"
+      ]
+    },
+    {
+      "id": "jihomoravsky",
+      "nombre": "Jihomoravsky",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Adamov",
+        "Blansko",
+        "Boskovice",
+        "Breclav",
+        "Brno",
+        "Buchovice",
+        "Dubnany",
+        "Hodonin",
+        "Hrusky",
+        "Hustopeche",
+        "Ivanchice",
+        "Kurim",
+        "Kyjov",
+        "Letovice",
+        "Mikulov",
+        "Moravsky Krumlov",
+        "Namesht'' nad Oslavou",
+        "Rosice",
+        "Shlapanice",
+        "Slavkov u Brna",
+        "Tishnov",
+        "Vyshkov",
+        "Znojmo"
+      ]
+    },
+    {
+      "id": "karlovarsky",
+      "nombre": "Karlovarsky",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ash",
+        "Bozicany",
+        "Cheb",
+        "Chodov",
+        "Frantishkovy Lazne",
+        "Horni Slavkov",
+        "Karlovy Vary",
+        "Kraslice",
+        "Kynshperk nad Ohri",
+        "Marianske Lazne",
+        "Nejdek",
+        "Ostrov",
+        "Sokolov"
+      ]
+    },
+    {
+      "id": "klecany",
+      "nombre": "Klecany",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Klecany"
+      ]
+    },
+    {
+      "id": "kralovehradecky",
+      "nombre": "Kralovehradecky",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Broumov",
+        "Cherveny Kostelec",
+        "Cheska Skalice",
+        "Chlumec nad Cidlinou",
+        "Dobrushka",
+        "Dvur Kralove",
+        "Habartov",
+        "Holice",
+        "Horice",
+        "Hostinne",
+        "Hradec Kralove",
+        "Hronov",
+        "Jaromer",
+        "Jichin",
+        "Kostelec nad Orlici",
+        "Nachod",
+        "Nova Paka",
+        "Nove Mesto nad Metuji",
+        "Novy Bydzhov",
+        "Rychnov nad Knezhnou",
+        "Trebechovice pod Orebem",
+        "Trutnov",
+        "Tynishte nad Orlici",
+        "Upice",
+        "Vrchlabi"
+      ]
+    },
+    {
+      "id": "liberecky",
+      "nombre": "Liberecky",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ceska Lipa",
+        "Cheska Kamenice",
+        "Cheska Lipa",
+        "Chrastava",
+        "Doksy",
+        "Frydlant",
+        "Hradek",
+        "Jablonec",
+        "Jilemnice",
+        "Liberec",
+        "Lomnice nad Popelkou",
+        "Mimon",
+        "Novy Bor",
+        "Semily",
+        "Tanvald",
+        "Turnov",
+        "Zhelezny Brod"
+      ]
+    },
+    {
+      "id": "lipov",
+      "nombre": "Lipov",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lipov"
+      ]
+    },
+    {
+      "id": "moravskoslezsky",
+      "nombre": "Moravskoslezsky",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bilovec",
+        "Bohumin",
+        "Bruntal",
+        "Chesky Teshin",
+        "Frenshtat",
+        "Frydek-Mistek",
+        "Frydlant nad Ostravici",
+        "Fulnek",
+        "Havirov",
+        "Hluchin",
+        "Hradec nad Moravice",
+        "Jablunkov",
+        "Karvina",
+        "Koprivnice",
+        "Kravare",
+        "Krnov",
+        "Novy Jichin",
+        "Odry",
+        "Opava",
+        "Orlova",
+        "Ostrava",
+        "Petrvald",
+        "Pribor",
+        "Rychvald",
+        "Rymarov",
+        "Shenov",
+        "Studenka",
+        "Trinec",
+        "Vitkov",
+        "Vratimov",
+        "Vrbno pod Pradedem"
+      ]
+    },
+    {
+      "id": "olomoucky",
+      "nombre": "Olomoucky",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hranice",
+        "Jesenik",
+        "Kojetin",
+        "Lipnik nad Becvou",
+        "Litovel",
+        "Mohelnice",
+        "Olomouc",
+        "Prerov",
+        "Prostejov",
+        "Shternberk",
+        "Shumperk",
+        "Unichov",
+        "Zabreh"
+      ]
+    },
+    {
+      "id": "olomoucky-kraj",
+      "nombre": "Olomoucky Kraj",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hranice",
+        "Jesenik",
+        "Kojetin",
+        "Lipnik nad Becvou",
+        "Litovel",
+        "Mohelnice",
+        "Olomouc",
+        "Prerov",
+        "Prostejov",
+        "Shternberk",
+        "Shumperk",
+        "Unichov",
+        "Zabreh"
+      ]
+    },
+    {
+      "id": "pardubicky",
+      "nombre": "Pardubicky",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cheska Trebova",
+        "Chocen",
+        "Chrudim",
+        "Chvaletice",
+        "Hermanuv Mestec",
+        "Hlinsko",
+        "Lanshkroun",
+        "Letohrad",
+        "Litomyshl",
+        "Moravska Trebova",
+        "Pardubice",
+        "Polichka",
+        "Policka",
+        "Prelouch",
+        "Skutech",
+        "Svitavy",
+        "Usti nad Orlici",
+        "Vysoke Myto",
+        "Zhamberk"
+      ]
+    },
+    {
+      "id": "plzensky",
+      "nombre": "Plzensky",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dobrany",
+        "Domazhlice",
+        "Horazhd''ovice",
+        "Horshovky Tyn",
+        "Kdyne",
+        "Klatovy",
+        "Nyrany",
+        "Nyrsko",
+        "Plana",
+        "Plzen",
+        "Preshtice",
+        "Radnice",
+        "Rokycany",
+        "Stribro",
+        "Sushice",
+        "Tachov"
+      ]
+    },
+    {
+      "id": "praha",
+      "nombre": "Praha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Prague",
+        "Praha"
+      ]
+    },
+    {
+      "id": "rajhrad",
+      "nombre": "Rajhrad",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rajhrad"
+      ]
+    },
+    {
+      "id": "smirice",
+      "nombre": "Smirice",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Smirice"
+      ]
+    },
+    {
+      "id": "south-moravian",
+      "nombre": "South Moravian",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "straz-nad-nisou",
+      "nombre": "Straz nad Nisou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "stredochesky",
+      "nombre": "Stredochesky",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Benatky nad Jizerou",
+        "Beneshov",
+        "Beroun",
+        "Brandys nad Labem-Stara Bolesl",
+        "Chaslav",
+        "Chavaletice",
+        "Chelakovice",
+        "Chesky Brod",
+        "Dobrish",
+        "Horovice",
+        "Kladno",
+        "Kolin",
+        "Kralupy nad Vltavou",
+        "Kutna Hora",
+        "Lysa nad Labem",
+        "Melnik",
+        "Mlada Boleslav",
+        "Mnichovo Hradishte",
+        "Neratovice",
+        "Nove Strasheci",
+        "Nymburk",
+        "Podebrady",
+        "Pribram",
+        "Rakovnik",
+        "Richany",
+        "Rousinov",
+        "Roztoky",
+        "Sedlcany",
+        "Slany",
+        "Stochov",
+        "Vlashim",
+        "Zruch nad Sazavou"
+      ]
+    },
+    {
+      "id": "unicov",
+      "nombre": "Unicov",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Unicov"
+      ]
+    },
+    {
+      "id": "ustecky",
+      "nombre": "Ustecky",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bilina",
+        "Chomutov",
+        "Dechin",
+        "Dubi",
+        "Duchcov",
+        "Jilove",
+        "Kadan",
+        "Klasterec nad Ohri",
+        "Krupka",
+        "Litomerice",
+        "Litvinov",
+        "Louny",
+        "Lovosice",
+        "Mezibori",
+        "Most",
+        "Osek",
+        "Podborany",
+        "Roudnice",
+        "Rumburk",
+        "Shluknov",
+        "Shteti",
+        "Teplice",
+        "Usti",
+        "Varnsdorf",
+        "Zatec"
+      ]
+    },
+    {
+      "id": "valletta",
+      "nombre": "Valletta",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Valletta"
+      ]
+    },
+    {
+      "id": "velesin",
+      "nombre": "Velesin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Velesin"
+      ]
+    },
+    {
+      "id": "vysochina",
+      "nombre": "Vysochina",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bystrice nad Pernshtejnem",
+        "Chotebor",
+        "Havlichkuv Brod",
+        "Humpolec",
+        "Jihlava",
+        "Ledech",
+        "Moravske Budejovice",
+        "Nove Mesto na Morave",
+        "Okrisky",
+        "Pacov",
+        "Pelhrimov",
+        "Polna",
+        "Svetla nad Sazavou",
+        "Telch",
+        "Trebich",
+        "Tresht",
+        "Velke Mezirichi",
+        "Zhd''ar"
+      ]
+    },
+    {
+      "id": "zlinsky",
+      "nombre": "Zlinsky",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Brumov",
+        "Bystrice pod Hostynem",
+        "Chropyne",
+        "Holeshov",
+        "Hulin",
+        "Kromerizh",
+        "Kunovice",
+        "Napajedla",
+        "Otrokovice",
+        "Rozhnov",
+        "Roznov pod Radhostem",
+        "Slavicin",
+        "Slusovice",
+        "Stare Mesto",
+        "Strazhnice",
+        "Uherske Hradishte",
+        "Uhersky Brod",
+        "Valashske Klobouky",
+        "Valashske Mezirichi",
+        "Veseli nad Moravou",
+        "Vsetin",
+        "Zborovice",
+        "Zlin"
+      ]
+    }
+  ]
+}

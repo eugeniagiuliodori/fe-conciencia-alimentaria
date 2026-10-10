@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "jamaica",
+    "nombre": "Jamaica",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "buxoro-viloyati",
+      "nombre": "Buxoro Viloyati",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "clarendon",
+      "nombre": "Clarendon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "May Pen"
+      ]
+    },
+    {
+      "id": "hanover",
+      "nombre": "Hanover",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lucea"
+      ]
+    },
+    {
+      "id": "kingston",
+      "nombre": "Kingston",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kingston"
+      ]
+    },
+    {
+      "id": "manchester",
+      "nombre": "Manchester",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mandeville"
+      ]
+    },
+    {
+      "id": "portland",
+      "nombre": "Portland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Port Antonio"
+      ]
+    },
+    {
+      "id": "saint-andrews",
+      "nombre": "Saint Andrews",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-ann",
+      "nombre": "Saint Ann",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-catherine",
+      "nombre": "Saint Catherine",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-elizabeth",
+      "nombre": "Saint Elizabeth",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-james",
+      "nombre": "Saint James",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-mary",
+      "nombre": "Saint Mary",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-thomas",
+      "nombre": "Saint Thomas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "trelawney",
+      "nombre": "Trelawney",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Albert Town",
+        "Falmouth"
+      ]
+    },
+    {
+      "id": "westmoreland",
+      "nombre": "Westmoreland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Savanna la Mar"
+      ]
+    }
+  ]
+}

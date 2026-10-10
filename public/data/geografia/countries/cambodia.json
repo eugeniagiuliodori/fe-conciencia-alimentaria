@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "cambodia",
+    "nombre": "Cambodia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "banteay-mean-chey",
+      "nombre": "Banteay Mean Chey",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "bat-dambang",
+      "nombre": "Bat Dambang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kampong-cham",
+      "nombre": "Kampong Cham",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kampong-chhnang",
+      "nombre": "Kampong Chhnang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kampong-spoeu",
+      "nombre": "Kampong Spoeu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kampong-thum",
+      "nombre": "Kampong Thum",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kampot",
+      "nombre": "Kampot",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kampot"
+      ]
+    },
+    {
+      "id": "kandal",
+      "nombre": "Kandal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ta Khmau"
+      ]
+    },
+    {
+      "id": "kaoh-kong",
+      "nombre": "Kaoh Kong",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kracheh",
+      "nombre": "Kracheh",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kracheh"
+      ]
+    },
+    {
+      "id": "krong-kaeb",
+      "nombre": "Krong Kaeb",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "krong-pailin",
+      "nombre": "Krong Pailin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "krong-preah-sihanouk",
+      "nombre": "Krong Preah Sihanouk",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "mondol-kiri",
+      "nombre": "Mondol Kiri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "otdar-mean-chey",
+      "nombre": "Otdar Mean Chey",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "phnum-penh",
+      "nombre": "Phnum Penh",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "pousat",
+      "nombre": "Pousat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Pousat"
+      ]
+    },
+    {
+      "id": "preah-vihear",
+      "nombre": "Preah Vihear",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "prey-veaeng",
+      "nombre": "Prey Veaeng",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "rotanak-kiri",
+      "nombre": "Rotanak Kiri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "siem-reab",
+      "nombre": "Siem Reab",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "stueng-traeng",
+      "nombre": "Stueng Traeng",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "svay-rieng",
+      "nombre": "Svay Rieng",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "takaev",
+      "nombre": "Takaev",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Phumi Takaev"
+      ]
+    }
+  ]
+}

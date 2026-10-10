@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "macedonia",
+    "nombre": "Macedonia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "berovo",
+      "nombre": "Berovo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Berovo",
+        "Pehchevo"
+      ]
+    },
+    {
+      "id": "bitola",
+      "nombre": "Bitola",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bach",
+        "Bistrica",
+        "Bitola",
+        "Capari",
+        "Dobrushevo",
+        "Kukurechani",
+        "Mogila",
+        "Novaci",
+        "Staravina"
+      ]
+    },
+    {
+      "id": "brod",
+      "nombre": "Brod",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Brod",
+        "Plasnica",
+        "Samokov"
+      ]
+    },
+    {
+      "id": "debar",
+      "nombre": "Debar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Debar",
+        "Zhupa"
+      ]
+    },
+    {
+      "id": "delchevo",
+      "nombre": "Delchevo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Delchevo",
+        "Kamenica"
+      ]
+    },
+    {
+      "id": "demir-hisar",
+      "nombre": "Demir Hisar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "gevgelija",
+      "nombre": "Gevgelija",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bogdanci",
+        "Gevgelija",
+        "Miravci",
+        "Star Dojran"
+      ]
+    },
+    {
+      "id": "gostivar",
+      "nombre": "Gostivar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chegrane",
+        "Dolna Banjica",
+        "Gostivar",
+        "Mavrovi Anovi",
+        "Negotino-Poloshko",
+        "Rostusha",
+        "Srbinovo",
+        "Vrapchishte",
+        "Vrutok"
+      ]
+    },
+    {
+      "id": "kavadarci",
+      "nombre": "Kavadarci",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kavadarci",
+        "Konopishte",
+        "Rosoman"
+      ]
+    },
+    {
+      "id": "kichevo",
+      "nombre": "Kichevo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Drugovo",
+        "Kichevo",
+        "Oslomej",
+        "Vraneshtica",
+        "Zajas"
+      ]
+    },
+    {
+      "id": "kochani",
+      "nombre": "Kochani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cheshinovo",
+        "Kochani",
+        "Obleshevo",
+        "Zletovo"
+      ]
+    },
+    {
+      "id": "kratovo",
+      "nombre": "Kratovo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kratovo"
+      ]
+    },
+    {
+      "id": "kriva-palanka",
+      "nombre": "Kriva Palanka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "krushevo",
+      "nombre": "Krushevo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Krushevo",
+        "Zhitoshe"
+      ]
+    },
+    {
+      "id": "kumanovo",
+      "nombre": "Kumanovo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Izvor",
+        "Klechevce",
+        "Kumanovo",
+        "Lipkovo",
+        "Orashac",
+        "Staro Nagorichane"
+      ]
+    },
+    {
+      "id": "negotino",
+      "nombre": "Negotino",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Demir Kapija",
+        "Negotino"
+      ]
+    },
+    {
+      "id": "ohrid",
+      "nombre": "Ohrid",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Belchishta",
+        "Kosel",
+        "Mesheishta",
+        "Ohrid"
+      ]
+    },
+    {
+      "id": "prilep",
+      "nombre": "Prilep",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dolneni",
+        "Krivogashtani",
+        "Prilep",
+        "Topolchani",
+        "Vitolishte"
+      ]
+    },
+    {
+      "id": "probishtip",
+      "nombre": "Probishtip",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Probishtip"
+      ]
+    },
+    {
+      "id": "radovish",
+      "nombre": "Radovish",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Konche",
+        "Podaresh",
+        "Radovish"
+      ]
+    },
+    {
+      "id": "resen",
+      "nombre": "Resen",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Resen"
+      ]
+    },
+    {
+      "id": "shtip",
+      "nombre": "Shtip",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Karbinci",
+        "Shtip",
+        "Stip"
+      ]
+    },
+    {
+      "id": "skopje",
+      "nombre": "Skopje",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arachinovo",
+        "Chucher",
+        "Ilinden",
+        "Kondovo",
+        "Petrovec",
+        "Saraj",
+        "Skopje",
+        "Sopishte",
+        "Studenichani",
+        "Zelenikovo"
+      ]
+    },
+    {
+      "id": "struga",
+      "nombre": "Struga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Delogozhdi",
+        "Labunishta",
+        "Lukovo",
+        "Struga",
+        "Veleshta",
+        "Vevchani"
+      ]
+    },
+    {
+      "id": "strumica",
+      "nombre": "Strumica",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bosilovo",
+        "Kuklish",
+        "Murtino",
+        "Novo Selo",
+        "Strumica",
+        "Vasilevo"
+      ]
+    },
+    {
+      "id": "sveti-nikole",
+      "nombre": "Sveti Nikole",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tetovo",
+      "nombre": "Tetovo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bogovinje",
+        "Brvenica",
+        "Dzhepchishte",
+        "Jegunovce",
+        "Kamenjance",
+        "Shipkovica",
+        "Tearce",
+        "Tetovo",
+        "Vratnica",
+        "Zhelino"
+      ]
+    },
+    {
+      "id": "valandovo",
+      "nombre": "Valandovo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Valandovo"
+      ]
+    },
+    {
+      "id": "veles",
+      "nombre": "Veles",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bogomila",
+        "Chashka",
+        "Gradsko",
+        "Veles"
+      ]
+    },
+    {
+      "id": "vinica",
+      "nombre": "Vinica",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Blatec",
+        "Orizari",
+        "Vinica",
+        "Zrnovci"
+      ]
+    }
+  ]
+}

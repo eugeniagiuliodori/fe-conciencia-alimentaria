@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "saint-helena",
+    "nombre": "Saint Helena",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "ascension",
+      "nombre": "Ascension",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Georgetown"
+      ]
+    },
+    {
+      "id": "gough-island",
+      "nombre": "Gough Island",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-helena",
+      "nombre": "Saint Helena",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tristan-da-cunha",
+      "nombre": "Tristan da Cunha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

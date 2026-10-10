@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "vietnam",
+    "nombre": "Vietnam",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "bac-giang",
+      "nombre": "Bac Giang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "binh-dinh",
+      "nombre": "Binh Dinh",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "binh-duong",
+      "nombre": "Binh Duong",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "da-nang",
+      "nombre": "Da Nang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "dong-bang-song-cuu-long",
+      "nombre": "Dong Bang Song Cuu Long",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "dong-bang-song-hong",
+      "nombre": "Dong Bang Song Hong",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "dong-nai",
+      "nombre": "Dong Nai",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "dong-nam-bo",
+      "nombre": "Dong Nam Bo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "duyen-hai-mien-trung",
+      "nombre": "Duyen Hai Mien Trung",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "hanoi",
+      "nombre": "Hanoi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ha noi",
+        "Hoang Mai",
+        "Lang Ha"
+      ]
+    },
+    {
+      "id": "hung-yen",
+      "nombre": "Hung Yen",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "khu-bon-cu",
+      "nombre": "Khu Bon Cu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "long-an",
+      "nombre": "Long An",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "mien-nui-va-trung-du",
+      "nombre": "Mien Nui Va Trung Du",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "thai-nguyen",
+      "nombre": "Thai Nguyen",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "thanh-pho-ho-chi-minh",
+      "nombre": "Thanh Pho Ho Chi Minh",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "thu-do-ha-noi",
+      "nombre": "Thu Do Ha Noi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tinh-can-tho",
+      "nombre": "Tinh Can Tho",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tinh-da-nang",
+      "nombre": "Tinh Da Nang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tinh-gia-lai",
+      "nombre": "Tinh Gia Lai",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

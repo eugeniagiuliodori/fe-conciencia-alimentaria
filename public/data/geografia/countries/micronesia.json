@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "micronesia",
+    "nombre": "Micronesia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "chuuk",
+      "nombre": "Chuuk",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tol",
+        "Weno"
+      ]
+    },
+    {
+      "id": "kusaie",
+      "nombre": "Kusaie",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lelu"
+      ]
+    },
+    {
+      "id": "pohnpei",
+      "nombre": "Pohnpei",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kolonia",
+        "Palikir"
+      ]
+    },
+    {
+      "id": "yap",
+      "nombre": "Yap",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Colonia"
+      ]
+    }
+  ]
+}

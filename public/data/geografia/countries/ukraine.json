@@ -1,0 +1,367 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "ukraine",
+    "nombre": "Ukraine",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "cherkas-ka",
+      "nombre": "Cherkas''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cherkasy",
+        "Smila",
+        "Uman"
+      ]
+    },
+    {
+      "id": "chernihivs-ka",
+      "nombre": "Chernihivs''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chernihiv",
+        "Nizhyn",
+        "Pryluky"
+      ]
+    },
+    {
+      "id": "chernivets-ka",
+      "nombre": "Chernivets''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chernivtsi"
+      ]
+    },
+    {
+      "id": "crimea",
+      "nombre": "Crimea",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alushta",
+        "Sevastopol"
+      ]
+    },
+    {
+      "id": "dnipropetrovska",
+      "nombre": "Dnipropetrovska",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dneprodzerzhinsk",
+        "Dnipropetrovsk",
+        "Kryvyy Rih",
+        "Marhanets",
+        "Nikopol",
+        "Novomoskovs''k",
+        "Pavlohrad",
+        "Plekhanov",
+        "Zhovti Vody"
+      ]
+    },
+    {
+      "id": "donets-ka",
+      "nombre": "Donets''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Artemivs''k",
+        "Donets''k",
+        "Donetsk",
+        "Druzhkivka",
+        "Dymytrov",
+        "Dzerzhyns''k",
+        "Horlivka",
+        "Khartsyz''k",
+        "Kostyantynivka",
+        "Kramators''k",
+        "Krasnoarmiys''k",
+        "Makiyivka",
+        "Mariupol",
+        "Shakhtars''k",
+        "Slov''yans''k",
+        "Snizhne",
+        "Torez",
+        "Yenakiyeve"
+      ]
+    },
+    {
+      "id": "ivano-frankivs-ka",
+      "nombre": "Ivano-Frankivs''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ivano-Frankivs''k",
+        "Kalush",
+        "Kolomyya"
+      ]
+    },
+    {
+      "id": "kharkiv",
+      "nombre": "Kharkiv",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Izyum",
+        "Kharkiv",
+        "Lozova"
+      ]
+    },
+    {
+      "id": "kharkov",
+      "nombre": "Kharkov",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Volchansk"
+      ]
+    },
+    {
+      "id": "khersonska",
+      "nombre": "Khersonska",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kherson",
+        "Nova Kakhovka"
+      ]
+    },
+    {
+      "id": "khmel-nyts-ka",
+      "nombre": "Khmel''nyts''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Geologov",
+        "Kam''yanets''-Podil''s''kyy",
+        "Khmel''nyts''kyy",
+        "khmelnitskiy",
+        "Shepetivka"
+      ]
+    },
+    {
+      "id": "kirovohrad",
+      "nombre": "Kirovohrad",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kirovohrad",
+        "Oleksandriya",
+        "Svidlovodsk"
+      ]
+    },
+    {
+      "id": "krym",
+      "nombre": "Krym",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dzhankoy",
+        "Feodosiya",
+        "Kerch",
+        "Simferopol",
+        "Yalta",
+        "Yevpatoriya"
+      ]
+    },
+    {
+      "id": "kyyiv",
+      "nombre": "Kyyiv",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kiev",
+        "Kyyiv"
+      ]
+    },
+    {
+      "id": "kyyivs-ka",
+      "nombre": "Kyyivs''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bila Tserkva",
+        "Boryspil",
+        "Brovary",
+        "Fastiv"
+      ]
+    },
+    {
+      "id": "l-vivs-ka",
+      "nombre": "L''vivs''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chervonohrad",
+        "Drohobych",
+        "L''viv",
+        "Stryy",
+        "Yavoriv"
+      ]
+    },
+    {
+      "id": "luhans-ka",
+      "nombre": "Luhans''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alchevs''k",
+        "Antratsyt",
+        "Bryanka",
+        "Krasnodon",
+        "Krasnyy Luch",
+        "Luhans''k",
+        "Luhansk",
+        "Lysychans''k",
+        "Pervomays''k",
+        "Roven''ky",
+        "Rubizhne",
+        "Stakhanov",
+        "Sverdlovs''k",
+        "Syeverodonets''k"
+      ]
+    },
+    {
+      "id": "mykolayivs-ka",
+      "nombre": "Mykolayivs''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mykolayiv",
+        "Pervomays''k"
+      ]
+    },
+    {
+      "id": "odes-ka",
+      "nombre": "Odes''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bilhorod-Dnistrovs''kyy",
+        "Illichivs''k",
+        "Izmayil",
+        "Odesa"
+      ]
+    },
+    {
+      "id": "odessa",
+      "nombre": "Odessa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Odessa"
+      ]
+    },
+    {
+      "id": "poltavs-ka",
+      "nombre": "Poltavs''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Komsomol''s''k",
+        "Kremenchuh",
+        "Lubny",
+        "Poltava"
+      ]
+    },
+    {
+      "id": "rivnens-ka",
+      "nombre": "Rivnens''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rivne"
+      ]
+    },
+    {
+      "id": "sevastopol",
+      "nombre": "Sevastopol",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sums-ka",
+      "nombre": "Sums''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Konotop",
+        "Okhtyrka",
+        "Romny",
+        "Shostka",
+        "Sumy"
+      ]
+    },
+    {
+      "id": "ternopil-s-ka",
+      "nombre": "Ternopil''s''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ternopil"
+      ]
+    },
+    {
+      "id": "volyns-ka",
+      "nombre": "Volyns''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kovel",
+        "Luts''k",
+        "Novovolyns''k"
+      ]
+    },
+    {
+      "id": "vynnyts-ka",
+      "nombre": "Vynnyts''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Vinnitsa",
+        "Vinnytsya"
+      ]
+    },
+    {
+      "id": "zakarpats-ka",
+      "nombre": "Zakarpats''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mukacheve",
+        "Uzhhorod"
+      ]
+    },
+    {
+      "id": "zaporizhia",
+      "nombre": "Zaporizhia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Berdyans''k",
+        "Enerhodar",
+        "Melitpol",
+        "Zaporizhia"
+      ]
+    },
+    {
+      "id": "zhytomyrs-ka",
+      "nombre": "Zhytomyrs''ka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Berdychiv",
+        "Korosten",
+        "Novohrad-Volyns''kyy",
+        "Zhytomyr"
+      ]
+    }
+  ]
+}

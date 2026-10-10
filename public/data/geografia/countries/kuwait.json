@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "kuwait",
+    "nombre": "Kuwait",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "al-asimah",
+      "nombre": "Al Asimah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "al-ahmadi",
+      "nombre": "al-Ahmadi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "A''qaylah",
+        "Abu Hulayfah",
+        "al-Ahmadi",
+        "al-Fintas",
+        "al-Fuhayhil",
+        "al-Mahbulah",
+        "al-Manqaf",
+        "al-Wafrah",
+        "ar-Riqqah",
+        "as-Sabahiyah",
+        "az-Zawr",
+        "Dahar",
+        "Desert Area",
+        "Hadiyah",
+        "Jabbar-al-''Ali",
+        "Shu''aybah"
+      ]
+    },
+    {
+      "id": "al-farwaniyah",
+      "nombre": "al-Farwaniyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abraq Khitan",
+        "al-Andalus",
+        "al-Farwaniyah",
+        "ar-Rabbiyah",
+        "Ardiyah",
+        "Fardaws",
+        "Jalib ash-Shuyuh",
+        "Janub-as-Surrah",
+        "Khitan-al-Janubiyah",
+        "Qartaba",
+        "Ray",
+        "Riqay",
+        "Sabhan",
+        "Sarbah-an-Nasr",
+        "Umayriyah",
+        "Warmawk"
+      ]
+    },
+    {
+      "id": "al-jahra",
+      "nombre": "al-Jahra",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Jahra",
+        "al-Qusayr",
+        "Amgarah",
+        "as-Sulaybiyah",
+        "Desert Area",
+        "Nasim",
+        "Tayma",
+        "Uyawn",
+        "Waha"
+      ]
+    },
+    {
+      "id": "al-kuwayt",
+      "nombre": "al-Kuwayt",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abullah-as-Salam",
+        "ad-Da''iyah",
+        "ad-Dasma",
+        "ad-Dawhah",
+        "al-''Udayliyah",
+        "al-Fayha",
+        "al-Kuwayt",
+        "al-Qadisiyah",
+        "ar-Rawdah",
+        "Ardhiyah",
+        "as-Sulaybihat",
+        "ash-Shuwaykh Industrial",
+        "ash-Shuwaykh Reservoir",
+        "Banayd-al-Qar",
+        "Health District",
+        "Kayfan",
+        "Khalidiyah",
+        "Mansuriyah",
+        "Nuzha",
+        "Qarnadah",
+        "Shamiyah"
+      ]
+    },
+    {
+      "id": "hawalli",
+      "nombre": "Hawalli",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Funaytis",
+        "al-Funaytis-al-Garbiyah",
+        "al-Jabiriyah",
+        "al-Karim",
+        "ar-Rumaythiyah",
+        "as-Salimiyah",
+        "Bayan",
+        "Hawalli",
+        "Massilah",
+        "Mushrif",
+        "Salwa",
+        "Sha''''ab",
+        "Subbah-as-Salim"
+      ]
+    },
+    {
+      "id": "mishref",
+      "nombre": "Mishref",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mishref"
+      ]
+    },
+    {
+      "id": "qadesiya",
+      "nombre": "Qadesiya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Qadesiya"
+      ]
+    },
+    {
+      "id": "safat",
+      "nombre": "Safat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Safat"
+      ]
+    },
+    {
+      "id": "salmiya",
+      "nombre": "Salmiya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Salmiya"
+      ]
+    }
+  ]
+}

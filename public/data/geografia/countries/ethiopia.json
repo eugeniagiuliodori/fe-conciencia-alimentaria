@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "ethiopia",
+    "nombre": "Ethiopia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "addis-abeba",
+      "nombre": "Addis Abeba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "afar",
+      "nombre": "Afar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Asayita",
+        "Awash",
+        "Dubti",
+        "Gewane"
+      ]
+    },
+    {
+      "id": "amhara",
+      "nombre": "Amhara",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Addi Ark''ay",
+        "Addis ''Alem",
+        "Addis Zemen",
+        "Adet",
+        "Bahir Dar",
+        "Bati",
+        "Bichena",
+        "Bure",
+        "Chagni",
+        "Dabat",
+        "Dangla",
+        "Debark",
+        "Debre Birhan",
+        "Debre Mark''os",
+        "Debre Sina",
+        "Debre Tabor",
+        "Debre Werk",
+        "Dejen",
+        "Dese",
+        "Finote Selam",
+        "Gondar",
+        "K''obo",
+        "Kembolcha",
+        "Kemise",
+        "Lalibela",
+        "Mott''a",
+        "Nefas Mewcha",
+        "Sek''ot''a",
+        "Shewa Robit",
+        "Weldiya",
+        "Were Ilu",
+        "Werota"
+      ]
+    },
+    {
+      "id": "benishangul",
+      "nombre": "Benishangul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Asosa"
+      ]
+    },
+    {
+      "id": "diredawa",
+      "nombre": "Diredawa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dire Dawa"
+      ]
+    },
+    {
+      "id": "gambella",
+      "nombre": "Gambella",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gambela"
+      ]
+    },
+    {
+      "id": "harar",
+      "nombre": "Harar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Harer"
+      ]
+    },
+    {
+      "id": "jigjiga",
+      "nombre": "Jigjiga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jigjiga"
+      ]
+    },
+    {
+      "id": "mekele",
+      "nombre": "Mekele",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "oromia",
+      "nombre": "Oromia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abomsa",
+        "Agaro",
+        "Alem Maya",
+        "Asasa",
+        "Asbe Teferi",
+        "Assela",
+        "Bako",
+        "Bedele",
+        "Bedesa",
+        "Burayu",
+        "Debre Zeyit",
+        "Deder",
+        "Dembi Dolo",
+        "Dodola",
+        "Fiche",
+        "Gebre Guracha",
+        "Gedo",
+        "Gelemso",
+        "Gimbi",
+        "Ginch''i",
+        "Ginir",
+        "Giyon",
+        "Goba",
+        "Gore",
+        "Guder",
+        "Hagere Hiywet",
+        "Hagere Maryam",
+        "Hirna",
+        "Holeta Genet",
+        "Huruta",
+        "Jimma",
+        "Kibre Mengist",
+        "Kofele",
+        "Mega",
+        "Mek''i",
+        "Mendi",
+        "Metehara",
+        "Metu",
+        "Mojo",
+        "Moyale",
+        "Nazret",
+        "Nedjo",
+        "Negele",
+        "Nek''emte",
+        "Robe",
+        "Sebeta",
+        "Sendafa",
+        "Shakiso",
+        "Shambu",
+        "Shashemenne",
+        "Sheh Hussen",
+        "Sire",
+        "Tulu Bolo",
+        "Welench''iti",
+        "Welk''it''e",
+        "Wonji",
+        "Yabelo",
+        "Ziway"
+      ]
+    },
+    {
+      "id": "somali",
+      "nombre": "Somali",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bircot",
+        "Degeh Bur",
+        "Dollo Odo",
+        "Imi",
+        "Jijiga",
+        "Werder"
+      ]
+    },
+    {
+      "id": "southern",
+      "nombre": "Southern",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alaba Kulito",
+        "Arba Minch",
+        "Areka",
+        "Awassa",
+        "Bako",
+        "Boditi",
+        "Bonga",
+        "Butajira",
+        "Ch''ench''a",
+        "Dilla",
+        "Gidole",
+        "Hossa''ina",
+        "Jinka",
+        "Leku",
+        "Mizan Teferi",
+        "Sawla",
+        "Soddo",
+        "Teppi",
+        "Wendo",
+        "Yirga Alem",
+        "Yirga Ch''efe"
+      ]
+    },
+    {
+      "id": "tigray",
+      "nombre": "Tigray",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abiy Adi",
+        "Addigrat",
+        "Adwa",
+        "Aksum",
+        "Alamat''a",
+        "Endasilasie",
+        "Hagere Selam",
+        "Himora",
+        "Korem",
+        "Maych''ew",
+        "Mek''ele",
+        "Mekele",
+        "Wik''ro"
+      ]
+    }
+  ]
+}

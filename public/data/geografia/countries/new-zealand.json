@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "new-zealand",
+    "nombre": "New Zealand",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "area-outside-region",
+      "nombre": "Area Outside Region",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "auckland",
+      "nombre": "Auckland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Auckland",
+        "Helensville",
+        "Henderson",
+        "Hillsborough",
+        "Lynfield",
+        "Manukau",
+        "Manurewa",
+        "Mt. Roskill",
+        "North Shore",
+        "Onehunga",
+        "Orewa",
+        "Otahuhu",
+        "Panmure",
+        "Papakura",
+        "Papatoetoe",
+        "Ponsonby",
+        "Royal Oak",
+        "Sandringham",
+        "Snells Beach",
+        "Takanini",
+        "Waiheke",
+        "Waitakere"
+      ]
+    },
+    {
+      "id": "bay-of-plenty",
+      "nombre": "Bay of Plenty",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "canterbury",
+      "nombre": "Canterbury",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amberley",
+        "Ashburton",
+        "Christchurch",
+        "Fairlie",
+        "Geraldine",
+        "Kaikoura",
+        "Leeston",
+        "Lyttelton",
+        "Oamaru",
+        "Rangiora",
+        "Temuka",
+        "Timaru",
+        "Waimate"
+      ]
+    },
+    {
+      "id": "christchurch",
+      "nombre": "Christchurch",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "gisborne",
+      "nombre": "Gisborne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gisborne"
+      ]
+    },
+    {
+      "id": "hawke-s-bay",
+      "nombre": "Hawke''s Bay",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "manawatu-wanganui",
+      "nombre": "Manawatu-Wanganui",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dannevirke",
+        "Feilding",
+        "Foxton",
+        "Levin",
+        "Marton",
+        "Palmerston North",
+        "Picton",
+        "Taumarunui",
+        "Wanganui"
+      ]
+    },
+    {
+      "id": "marlborough",
+      "nombre": "Marlborough",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Blenheim",
+        "Havelock"
+      ]
+    },
+    {
+      "id": "nelson",
+      "nombre": "Nelson",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nelson"
+      ]
+    },
+    {
+      "id": "northland",
+      "nombre": "Northland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dargaville",
+        "Kaikohe",
+        "Kaitaia",
+        "Kerikeri",
+        "Maungatapere",
+        "Whangarei"
+      ]
+    },
+    {
+      "id": "otago",
+      "nombre": "Otago",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alexandra",
+        "Balclutha",
+        "Dunedin",
+        "Queenstown",
+        "Wanaka"
+      ]
+    },
+    {
+      "id": "rodney",
+      "nombre": "Rodney",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Warkworth"
+      ]
+    },
+    {
+      "id": "southland",
+      "nombre": "Southland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gore",
+        "Invercargill"
+      ]
+    },
+    {
+      "id": "taranaki",
+      "nombre": "Taranaki",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Eltham",
+        "Hawera",
+        "Inglewood",
+        "New Plymouth",
+        "Oakura",
+        "Stratford",
+        "Waitara"
+      ]
+    },
+    {
+      "id": "tasman",
+      "nombre": "Tasman",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Motueka",
+        "Richmond"
+      ]
+    },
+    {
+      "id": "waikato",
+      "nombre": "Waikato",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cambridge",
+        "Coromandel",
+        "Hamilton",
+        "Hillcrest",
+        "Huntly",
+        "Matamata",
+        "Morrinsville",
+        "Ngaruawahia",
+        "Otorohanga",
+        "Paeroa",
+        "Pukekohe",
+        "Putaruru",
+        "Taupo",
+        "Te Aroha",
+        "Te Awamutu",
+        "Te Kuiti",
+        "Thames",
+        "Tokoroa",
+        "Turangi",
+        "Waiuku",
+        "Whangamata",
+        "Whitianga"
+      ]
+    },
+    {
+      "id": "wellington",
+      "nombre": "Wellington",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Carterton",
+        "Kapiti",
+        "Lower Hutt",
+        "Martinborough",
+        "Masterton",
+        "Otaki",
+        "Paraparaumu",
+        "Porirua",
+        "Upper Hutt",
+        "Wairarapa",
+        "Wellington"
+      ]
+    },
+    {
+      "id": "west-coast",
+      "nombre": "West Coast",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

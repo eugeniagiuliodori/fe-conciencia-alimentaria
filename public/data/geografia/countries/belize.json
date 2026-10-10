@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "belize",
+    "nombre": "Belize",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "belize",
+      "nombre": "Belize",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Belize",
+        "San Pedro"
+      ]
+    },
+    {
+      "id": "cayo",
+      "nombre": "Cayo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Belmopan",
+        "Benque Viejo",
+        "San Ignacio"
+      ]
+    },
+    {
+      "id": "corozal",
+      "nombre": "Corozal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Corozal"
+      ]
+    },
+    {
+      "id": "orange-walk",
+      "nombre": "Orange Walk",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "stann-creek",
+      "nombre": "Stann Creek",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "toledo",
+      "nombre": "Toledo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Punta Gorda"
+      ]
+    }
+  ]
+}

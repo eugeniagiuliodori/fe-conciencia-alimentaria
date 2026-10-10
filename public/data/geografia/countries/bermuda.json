@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "bermuda",
+    "nombre": "Bermuda",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "hamilton",
+      "nombre": "Hamilton",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hamilton"
+      ]
+    },
+    {
+      "id": "saint-george",
+      "nombre": "Saint George",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

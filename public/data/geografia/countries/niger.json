@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "niger",
+    "nombre": "Niger",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "agadez",
+      "nombre": "Agadez",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Agadez",
+        "Arlit",
+        "Bilma",
+        "Fachi",
+        "Ingall",
+        "Tchirozerine"
+      ]
+    },
+    {
+      "id": "diffa",
+      "nombre": "Diffa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Diffa",
+        "Maine-Soroa",
+        "N''Guigmi"
+      ]
+    },
+    {
+      "id": "dosso",
+      "nombre": "Dosso",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Birni N''Gaoure",
+        "Boboye",
+        "Dogondoutchi",
+        "Dosso",
+        "Gaya",
+        "Loga"
+      ]
+    },
+    {
+      "id": "maradi",
+      "nombre": "Maradi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aguie",
+        "Dakoro",
+        "Gazaoua",
+        "Guidan Roumdji",
+        "Madarounfa",
+        "Maradi",
+        "Mayahi",
+        "Tessaoua",
+        "Tibiri"
+      ]
+    },
+    {
+      "id": "niamey",
+      "nombre": "Niamey",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Niamey"
+      ]
+    },
+    {
+      "id": "tahoua",
+      "nombre": "Tahoua",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Birni N''Konni",
+        "Bouza",
+        "Illela",
+        "Keita",
+        "Madaoua",
+        "Malbaza''uzine",
+        "Tahoua",
+        "Tchintabaraden"
+      ]
+    },
+    {
+      "id": "tillabery",
+      "nombre": "Tillabery",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayorou",
+        "Filingue",
+        "Kollo",
+        "Ouallam",
+        "Say",
+        "Tera",
+        "Tillabery"
+      ]
+    },
+    {
+      "id": "zinder",
+      "nombre": "Zinder",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Goure",
+        "Kantche",
+        "Magaria",
+        "Matameye",
+        "Mirriah",
+        "Tanout",
+        "Zinder"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "malta",
+    "nombre": "Malta",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "gozo-and-comino",
+      "nombre": "Gozo and Comino",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "inner-harbour",
+      "nombre": "Inner Harbour",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "northern",
+      "nombre": "Northern",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gharghur",
+        "Mellieha",
+        "Mgarr",
+        "Mosta",
+        "Naxxar",
+        "San Pawl il-Bahar"
+      ]
+    },
+    {
+      "id": "outer-harbour",
+      "nombre": "Outer Harbour",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "south-eastern",
+      "nombre": "South Eastern",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "valletta",
+      "nombre": "Valletta",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "L-Iklin"
+      ]
+    },
+    {
+      "id": "western",
+      "nombre": "Western",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Attard",
+        "Balzan",
+        "Dingli",
+        "Iklin",
+        "Lija",
+        "Mdina",
+        "Rabat",
+        "Sighghiewi",
+        "Zebbug"
+      ]
+    }
+  ]
+}

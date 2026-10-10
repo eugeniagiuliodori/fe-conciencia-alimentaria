@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "french-guiana",
+    "nombre": "French Guiana",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "cayenne",
+      "nombre": "Cayenne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Camopi",
+        "Cayenne",
+        "Iracoubo",
+        "Kourou",
+        "Macouria",
+        "Matoury",
+        "Remire-Montjoly",
+        "Roura",
+        "Saint-Georges",
+        "Sinnamary"
+      ]
+    },
+    {
+      "id": "saint-laurent-du-maroni",
+      "nombre": "Saint-Laurent-du-Maroni",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Apatou",
+        "Grand-Santi",
+        "Mana",
+        "Maripasoula",
+        "Saint-Laurent-du-Maroni"
+      ]
+    }
+  ]
+}

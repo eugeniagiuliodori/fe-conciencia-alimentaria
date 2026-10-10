@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "saint-lucia",
+    "nombre": "Saint Lucia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "anse-la-raye",
+      "nombre": "Anse-la-Raye",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Anse-la-Raye"
+      ]
+    },
+    {
+      "id": "canaries",
+      "nombre": "Canaries",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Canaries"
+      ]
+    },
+    {
+      "id": "castries",
+      "nombre": "Castries",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Castries",
+        "Choc"
+      ]
+    },
+    {
+      "id": "choiseul",
+      "nombre": "Choiseul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Choiseul"
+      ]
+    },
+    {
+      "id": "dennery",
+      "nombre": "Dennery",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dennery"
+      ]
+    },
+    {
+      "id": "gros-inlet",
+      "nombre": "Gros Inlet",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "laborie",
+      "nombre": "Laborie",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Laborie"
+      ]
+    },
+    {
+      "id": "micoud",
+      "nombre": "Micoud",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Micoud"
+      ]
+    },
+    {
+      "id": "soufriere",
+      "nombre": "Soufriere",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Soufriere"
+      ]
+    },
+    {
+      "id": "vieux-fort",
+      "nombre": "Vieux Fort",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "aruba",
+    "nombre": "Aruba",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "aruba",
+      "nombre": "Aruba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aruba"
+      ]
+    }
+  ]
+}

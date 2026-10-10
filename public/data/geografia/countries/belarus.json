@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "belarus",
+    "nombre": "Belarus",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "brest",
+      "nombre": "Brest",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baranavichy",
+        "Bjaroza",
+        "Bjeloozersk",
+        "Brest",
+        "David-Haradok",
+        "Drahichyn",
+        "Hancavichy",
+        "Ivacevichy",
+        "Ivanava",
+        "Kamjenec",
+        "Kobryn",
+        "Kosava",
+        "Ljahavichy",
+        "Luninjec",
+        "Malaryta",
+        "Mikashevichy",
+        "Pinsk",
+        "Pruzhany",
+        "Stolin",
+        "Vysokoje",
+        "Zhabinka"
+      ]
+    },
+    {
+      "id": "homjel",
+      "nombre": "Homjel",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Buda Kosheljovo",
+        "Chechersk",
+        "Dobrush",
+        "Hojniki",
+        "Homjel",
+        "Jel''sk",
+        "Kalinkavichy",
+        "Kascjukovka",
+        "Mazyr",
+        "Narovlja",
+        "Pjetrykav",
+        "Rahachow",
+        "Rechyca",
+        "Svetlahorsk",
+        "Vasilevichy",
+        "Vjetka",
+        "Zhlobin",
+        "Zhytkavichy"
+      ]
+    },
+    {
+      "id": "hrodna",
+      "nombre": "Hrodna",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ashmjany",
+        "Berjozovka",
+        "Hrodna",
+        "Lida",
+        "Masty",
+        "Navahrudak",
+        "Shchuchyn",
+        "Skidel",
+        "Slonim",
+        "Smarhon",
+        "Vawkavysk"
+      ]
+    },
+    {
+      "id": "mahiljow",
+      "nombre": "Mahiljow",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Asipovichy",
+        "Babrujsk",
+        "Byhau",
+        "Chausy",
+        "Cherikov",
+        "Horki",
+        "Kascjukovichy",
+        "Klimavichy",
+        "Krychaw",
+        "Mahiljow",
+        "Mstislav",
+        "Shklov",
+        "Slaeuharad"
+      ]
+    },
+    {
+      "id": "mahilyowskaya-voblasts",
+      "nombre": "Mahilyowskaya Voblasts",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "minsk",
+      "nombre": "Minsk",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Minsk"
+      ]
+    },
+    {
+      "id": "minskaja-voblasts",
+      "nombre": "Minskaja Voblasts",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "petrik",
+      "nombre": "Petrik",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Petrikov"
+      ]
+    },
+    {
+      "id": "vicebsk",
+      "nombre": "Vicebsk",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baran",
+        "Braslav",
+        "Chashniki",
+        "Disna",
+        "Dokshicy",
+        "Dubrovna",
+        "Haradok",
+        "Hlybokaje",
+        "Ljepjel",
+        "Mjory",
+        "Navapolack",
+        "Novalukoml",
+        "Orsha",
+        "Pastavy",
+        "Polack",
+        "Polotsk",
+        "Senno",
+        "Talachyn",
+        "Verhnjadzvimsk",
+        "Vicebsk"
+      ]
+    }
+  ]
+}

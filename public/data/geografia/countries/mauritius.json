@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "mauritius",
+    "nombre": "Mauritius",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "black-river",
+      "nombre": "Black River",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "eau-coulee",
+      "nombre": "Eau Coulee",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "flacq",
+      "nombre": "Flacq",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bel Air",
+        "Bon Accueil",
+        "Brisee Verdiere",
+        "Camp de Masque",
+        "Camp de Masque Pave",
+        "Camp Ithier",
+        "Central Flacq",
+        "Clemencia",
+        "Ecroignard",
+        "Grand River South East",
+        "Lalmatie",
+        "Laventure",
+        "Mare La Chaux",
+        "Medine-Camp de Masque",
+        "Olivia",
+        "Poste de Flacq",
+        "Quatre Cocos",
+        "Quatre Soeurs",
+        "Queen Victoria",
+        "Saint Julien",
+        "Saint Julien d''Hotman",
+        "Sebastopol",
+        "Trou d''Eau Douce"
+      ]
+    },
+    {
+      "id": "floreal",
+      "nombre": "Floreal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Floreal"
+      ]
+    },
+    {
+      "id": "grand-port",
+      "nombre": "Grand Port",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "moka",
+      "nombre": "Moka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Camp Thorel",
+        "Dagotiere",
+        "Dubreuil",
+        "Esperance",
+        "L''Avenir",
+        "La Laura-Malenga",
+        "Melrose",
+        "Moka",
+        "Montagne Blanche",
+        "Pailles",
+        "Providence",
+        "Quartier Militaire",
+        "Ripailles",
+        "Saint Pierre",
+        "Verdun"
+      ]
+    },
+    {
+      "id": "pamplempousses",
+      "nombre": "Pamplempousses",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arsenal",
+        "Baie du Tombeau",
+        "Calebasses",
+        "Congomah",
+        "Creve Coeur",
+        "D''Epinay",
+        "Fond du Sac",
+        "La Tour Koenig",
+        "Le Hochet",
+        "Long Mountain",
+        "Morcellement Saint Andre",
+        "Notre Dame",
+        "Pamplemousse",
+        "Plaines des Papayes",
+        "Pointe aux Piments",
+        "Terre Rouge",
+        "Triolet",
+        "Villebague"
+      ]
+    },
+    {
+      "id": "plaines-wilhelm",
+      "nombre": "Plaines Wilhelm",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "port-louis",
+      "nombre": "Port Louis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "riviere-du-rempart",
+      "nombre": "Riviere du Rempart",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "rodrigues",
+      "nombre": "Rodrigues",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baie Malgache",
+        "Coromandel-Graviers",
+        "Grand Baie-Montagne Goyaves",
+        "La Ferme",
+        "Lataniers-Mont Lubin",
+        "Mangues-Quatre Vents",
+        "Oyster Bay",
+        "Petit Gabriel",
+        "Piments-Baie Topaze",
+        "Plaine Corail-La Fouche Corail",
+        "Port Mathurin",
+        "Port Sud-Est",
+        "Riviere Cocos",
+        "Roche Bon Dieu-Trefles"
+      ]
+    },
+    {
+      "id": "rose-hill",
+      "nombre": "Rose Hill",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "savanne",
+      "nombre": "Savanne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baie du Cap",
+        "Bel Ombre",
+        "Benares",
+        "Bois Cheri",
+        "Britannia",
+        "Camp Diable",
+        "Chamouny",
+        "Chemin Grenier",
+        "Grand Bois",
+        "Riviere des Anguilles",
+        "Saint Aubin",
+        "Souillac",
+        "Surinam"
+      ]
+    }
+  ]
+}

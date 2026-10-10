@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "american-samoa",
+    "nombre": "American Samoa",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "eastern",
+      "nombre": "Eastern",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Afono",
+        "Alao",
+        "Alofau",
+        "Amouli",
+        "Aoa",
+        "Atu''u",
+        "Aua",
+        "Aunu''u",
+        "Faga''alu",
+        "Faga''itua",
+        "Fagasa",
+        "Fagatogo",
+        "Lauli''i",
+        "Leloaloa",
+        "Nu''uuli",
+        "Pago Pago",
+        "Tula",
+        "Utulei",
+        "Vatia"
+      ]
+    },
+    {
+      "id": "manu-a",
+      "nombre": "Manu''a",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ofu"
+      ]
+    },
+    {
+      "id": "swains-island",
+      "nombre": "Swains Island",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "western",
+      "nombre": "Western",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aoloau",
+        "Faleniu",
+        "Futiga",
+        "Ili''ili",
+        "Leone",
+        "Malaeimi",
+        "Malaeloa-Aitulagi",
+        "Malaeloa-Ituau",
+        "Mapusagafou",
+        "Mesepa",
+        "Pava''ia''i",
+        "Tafuna",
+        "Taputimu",
+        "Vailoatai",
+        "Vaitogi"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "el-salvador",
+    "nombre": "El Salvador",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "ahuachapan",
+      "nombre": "Ahuachapan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ahuachapan",
+        "Atiquizaya",
+        "Concepcion de Ataco",
+        "Guaymango",
+        "Jujutla",
+        "San Francisco Menendez",
+        "Tacuba"
+      ]
+    },
+    {
+      "id": "cabanas",
+      "nombre": "Cabanas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ilobasco",
+        "Sensuntepeque",
+        "Victoria"
+      ]
+    },
+    {
+      "id": "chalatenango",
+      "nombre": "Chalatenango",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chalatenango",
+        "La Palma",
+        "Nueva Concepcion",
+        "San Francisco Morazan"
+      ]
+    },
+    {
+      "id": "cuscatlan",
+      "nombre": "Cuscatlan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cojutepeque",
+        "San Pedro Perulapan",
+        "Suchitoto",
+        "Tecoluca",
+        "Tenancingo"
+      ]
+    },
+    {
+      "id": "la-libertad",
+      "nombre": "La Libertad",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "la-paz",
+      "nombre": "La Paz",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "la-union",
+      "nombre": "La Union",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "morazan",
+      "nombre": "Morazan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cacaopera",
+        "Corinto",
+        "Gotera",
+        "Guatajiagua",
+        "Jocoro",
+        "Sociedad"
+      ]
+    },
+    {
+      "id": "san-miguel",
+      "nombre": "San Miguel",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "san-salvador",
+      "nombre": "San Salvador",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "san-vicente",
+      "nombre": "San Vicente",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "santa-ana",
+      "nombre": "Santa Ana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sonsonate",
+      "nombre": "Sonsonate",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Acajutla",
+        "Armenia",
+        "Izalco",
+        "Juayua",
+        "Nahuizalco",
+        "San Antonio del Monte",
+        "San Julian",
+        "Sonsonate",
+        "Sonzacate"
+      ]
+    },
+    {
+      "id": "usulutan",
+      "nombre": "Usulutan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Berlin",
+        "Concepcion Batres",
+        "Estanzuelas",
+        "Jiquilisco",
+        "Jucuapa",
+        "Jucuaran",
+        "Ozatlan",
+        "Puerto El Triunfo",
+        "San Agustin",
+        "Santa Elena",
+        "Santiago de Maria",
+        "Usulutan"
+      ]
+    }
+  ]
+}

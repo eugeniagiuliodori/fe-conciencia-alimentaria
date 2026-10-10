@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "antigua-and-barbuda",
+    "nombre": "Antigua and Barbuda",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "barbuda",
+      "nombre": "Barbuda",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Codrington"
+      ]
+    },
+    {
+      "id": "saint-george",
+      "nombre": "Saint George",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-john",
+      "nombre": "Saint John",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-mary",
+      "nombre": "Saint Mary",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-paul",
+      "nombre": "Saint Paul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-peter",
+      "nombre": "Saint Peter",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-philip",
+      "nombre": "Saint Philip",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

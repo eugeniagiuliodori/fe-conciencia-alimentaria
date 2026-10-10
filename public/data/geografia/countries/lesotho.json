@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "lesotho",
+    "nombre": "Lesotho",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "berea",
+      "nombre": "Berea",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Teyateyaneng"
+      ]
+    },
+    {
+      "id": "butha-buthe",
+      "nombre": "Butha-Buthe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Butha Buthe"
+      ]
+    },
+    {
+      "id": "leribe",
+      "nombre": "Leribe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hlotse",
+        "Maputsoa"
+      ]
+    },
+    {
+      "id": "mafeteng",
+      "nombre": "Mafeteng",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mafeteng"
+      ]
+    },
+    {
+      "id": "maseru",
+      "nombre": "Maseru",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Maseru"
+      ]
+    },
+    {
+      "id": "mohale-s-hoek",
+      "nombre": "Mohale''s Hoek",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "mokhotlong",
+      "nombre": "Mokhotlong",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mokhotlong"
+      ]
+    },
+    {
+      "id": "qacha-s-nek",
+      "nombre": "Qacha''s Nek",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "quthing",
+      "nombre": "Quthing",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Quthing"
+      ]
+    },
+    {
+      "id": "thaba-tseka",
+      "nombre": "Thaba-Tseka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Thaba-Tseka"
+      ]
+    }
+  ]
+}

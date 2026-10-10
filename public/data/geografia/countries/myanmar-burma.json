@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "myanmar-burma",
+    "nombre": "Myanmar [Burma]",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "ayeyarwady",
+      "nombre": "Ayeyarwady",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bogale",
+        "Henzada",
+        "Kyaiklat",
+        "Labutta",
+        "Maubin",
+        "Moulmeingyun",
+        "Myanaung",
+        "Pathein",
+        "Pyapon",
+        "Wakema",
+        "Yandoon",
+        "Ye"
+      ]
+    },
+    {
+      "id": "bago",
+      "nombre": "Bago",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bago",
+        "Letpadan",
+        "Nyaunglebin",
+        "Paungde",
+        "Pyay",
+        "Pyu",
+        "Thanatpin",
+        "Tharrawaddy",
+        "Toungoo"
+      ]
+    },
+    {
+      "id": "chin",
+      "nombre": "Chin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Falam"
+      ]
+    },
+    {
+      "id": "kachin",
+      "nombre": "Kachin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Banmo",
+        "Myitkyina"
+      ]
+    },
+    {
+      "id": "kayah",
+      "nombre": "Kayah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Loikaw"
+      ]
+    },
+    {
+      "id": "kayin",
+      "nombre": "Kayin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hpa-an"
+      ]
+    },
+    {
+      "id": "magway",
+      "nombre": "Magway",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Allanmyo",
+        "Chauk",
+        "Magway",
+        "Minbu",
+        "Pakokku",
+        "Taungdwingyi",
+        "Thayetmyo",
+        "Yenangyaung"
+      ]
+    },
+    {
+      "id": "mandalay",
+      "nombre": "Mandalay",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kyaukse",
+        "Mandalay",
+        "Maymyo",
+        "Meiktila",
+        "Mogok",
+        "Myingyan",
+        "Pyinmana",
+        "Yamethin"
+      ]
+    },
+    {
+      "id": "mon",
+      "nombre": "Mon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kyaikkami",
+        "Kyaikto",
+        "Martaban",
+        "Mawlamyine",
+        "Mudon",
+        "Thaton"
+      ]
+    },
+    {
+      "id": "nay-pyi-taw",
+      "nombre": "Nay Pyi Taw",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "rakhine",
+      "nombre": "Rakhine",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akyab",
+        "Arakan"
+      ]
+    },
+    {
+      "id": "sagaing",
+      "nombre": "Sagaing",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kalay",
+        "Katha",
+        "Mawlaik",
+        "Monywa",
+        "Sagaing",
+        "Shwebo"
+      ]
+    },
+    {
+      "id": "shan",
+      "nombre": "Shan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Keng Tung",
+        "Lashio",
+        "Taunggyi"
+      ]
+    },
+    {
+      "id": "tanintharyi",
+      "nombre": "Tanintharyi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dawei",
+        "Mergui"
+      ]
+    },
+    {
+      "id": "yangon",
+      "nombre": "Yangon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kanbe",
+        "Kayan",
+        "Syriam",
+        "Thongwa",
+        "Twante",
+        "Yangon"
+      ]
+    }
+  ]
+}

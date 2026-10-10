@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "seychelles",
+    "nombre": "Seychelles",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "anse-boileau",
+      "nombre": "Anse Boileau",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "anse-royale",
+      "nombre": "Anse Royale",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "cascade",
+      "nombre": "Cascade",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cascade"
+      ]
+    },
+    {
+      "id": "takamaka",
+      "nombre": "Takamaka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Takamaka"
+      ]
+    },
+    {
+      "id": "victoria",
+      "nombre": "Victoria",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mahe"
+      ]
+    }
+  ]
+}

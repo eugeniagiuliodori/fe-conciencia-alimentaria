@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "mayotte",
+    "nombre": "Mayotte",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "mayotte",
+      "nombre": "Mayotte",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Acoua",
+        "Bandraboua",
+        "Bandrele",
+        "Boueni",
+        "Chiconi",
+        "Chirongui",
+        "Dembeni",
+        "Kanikeli",
+        "Koungou",
+        "Mamoudzou",
+        "Mtsamboro",
+        "Mtsangamouji",
+        "Ouangani",
+        "Sada",
+        "Tsingoni"
+      ]
+    },
+    {
+      "id": "pamanzi",
+      "nombre": "Pamanzi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dzaoudzi",
+        "Pamanzi"
+      ]
+    }
+  ]
+}

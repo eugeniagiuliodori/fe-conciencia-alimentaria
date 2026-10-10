@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "guinea",
+    "nombre": "Guinea",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "beyla",
+      "nombre": "Beyla",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Beyla"
+      ]
+    },
+    {
+      "id": "boffa",
+      "nombre": "Boffa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Boffa"
+      ]
+    },
+    {
+      "id": "boke",
+      "nombre": "Boke",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Boke"
+      ]
+    },
+    {
+      "id": "conakry",
+      "nombre": "Conakry",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Conakry"
+      ]
+    },
+    {
+      "id": "coyah",
+      "nombre": "Coyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Coyah"
+      ]
+    },
+    {
+      "id": "dabola",
+      "nombre": "Dabola",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dabola"
+      ]
+    },
+    {
+      "id": "dalaba",
+      "nombre": "Dalaba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dalaba"
+      ]
+    },
+    {
+      "id": "dinguiraye",
+      "nombre": "Dinguiraye",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dinguiraye"
+      ]
+    },
+    {
+      "id": "faranah",
+      "nombre": "Faranah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Faranah"
+      ]
+    },
+    {
+      "id": "forecariah",
+      "nombre": "Forecariah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Forecariah"
+      ]
+    },
+    {
+      "id": "fria",
+      "nombre": "Fria",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fria"
+      ]
+    },
+    {
+      "id": "gaoual",
+      "nombre": "Gaoual",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gaoual"
+      ]
+    },
+    {
+      "id": "gueckedou",
+      "nombre": "Gueckedou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Guekedou"
+      ]
+    },
+    {
+      "id": "kankan",
+      "nombre": "Kankan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kankan"
+      ]
+    },
+    {
+      "id": "kerouane",
+      "nombre": "Kerouane",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kerouane"
+      ]
+    },
+    {
+      "id": "kindia",
+      "nombre": "Kindia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kindia"
+      ]
+    },
+    {
+      "id": "kissidougou",
+      "nombre": "Kissidougou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kissidougou"
+      ]
+    },
+    {
+      "id": "koubia",
+      "nombre": "Koubia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Koubia"
+      ]
+    },
+    {
+      "id": "koundara",
+      "nombre": "Koundara",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Koundara"
+      ]
+    },
+    {
+      "id": "kouroussa",
+      "nombre": "Kouroussa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kouroussa"
+      ]
+    },
+    {
+      "id": "labe",
+      "nombre": "Labe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Labe"
+      ]
+    },
+    {
+      "id": "lola",
+      "nombre": "Lola",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lola"
+      ]
+    },
+    {
+      "id": "macenta",
+      "nombre": "Macenta",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Macenta"
+      ]
+    },
+    {
+      "id": "mali",
+      "nombre": "Mali",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mali"
+      ]
+    },
+    {
+      "id": "mamou",
+      "nombre": "Mamou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mamou"
+      ]
+    },
+    {
+      "id": "mandiana",
+      "nombre": "Mandiana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mandiana"
+      ]
+    },
+    {
+      "id": "nzerekore",
+      "nombre": "Nzerekore",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nzerekore"
+      ]
+    },
+    {
+      "id": "pita",
+      "nombre": "Pita",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Pita"
+      ]
+    },
+    {
+      "id": "siguiri",
+      "nombre": "Siguiri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Siguiri"
+      ]
+    },
+    {
+      "id": "telimele",
+      "nombre": "Telimele",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Telimele"
+      ]
+    },
+    {
+      "id": "tougue",
+      "nombre": "Tougue",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tougue"
+      ]
+    },
+    {
+      "id": "yomou",
+      "nombre": "Yomou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Yomou"
+      ]
+    }
+  ]
+}

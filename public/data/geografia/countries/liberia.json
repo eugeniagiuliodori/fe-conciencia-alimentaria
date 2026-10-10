@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "liberia",
+    "nombre": "Liberia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "bomi",
+      "nombre": "Bomi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tubmanburg"
+      ]
+    },
+    {
+      "id": "bong",
+      "nombre": "Bong",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gbarnga"
+      ]
+    },
+    {
+      "id": "grand-bassa",
+      "nombre": "Grand Bassa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "grand-cape-mount",
+      "nombre": "Grand Cape Mount",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "grand-gedeh",
+      "nombre": "Grand Gedeh",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "loffa",
+      "nombre": "Loffa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Voinjama"
+      ]
+    },
+    {
+      "id": "margibi",
+      "nombre": "Margibi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Harbel",
+        "Kakata"
+      ]
+    },
+    {
+      "id": "maryland-and-grand-kru",
+      "nombre": "Maryland and Grand Kru",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "montserrado",
+      "nombre": "Montserrado",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bensonville",
+        "Monrovia"
+      ]
+    },
+    {
+      "id": "nimba",
+      "nombre": "Nimba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ganta",
+        "Sanniquellie",
+        "Yekepa"
+      ]
+    },
+    {
+      "id": "rivercess",
+      "nombre": "Rivercess",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rivercess"
+      ]
+    },
+    {
+      "id": "sinoe",
+      "nombre": "Sinoe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Greenville"
+      ]
+    }
+  ]
+}

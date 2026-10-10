@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "iceland",
+    "nombre": "Iceland",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "austurland",
+      "nombre": "Austurland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bakkafjor ur",
+        "Borgarfjor ur",
+        "Brei dalsvik",
+        "Djupivogur",
+        "Egilssta ir",
+        "Eskifjor ur",
+        "Faskru sfjor ur",
+        "Fellabar",
+        "Hallormssta ur",
+        "Hofn",
+        "Nesjakauptun",
+        "Neskaupsta ur",
+        "Rey arfjor ur",
+        "Sey isfjor ur",
+        "Sto varfjor ur",
+        "Vopnafjor ur"
+      ]
+    },
+    {
+      "id": "gullbringusysla",
+      "nombre": "Gullbringusysla",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "hofu-borgarsva-i",
+      "nombre": "Hofu borgarsva i",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nor-urland-eystra",
+      "nombre": "Nor urland eystra",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nor-urland-vestra",
+      "nombre": "Nor urland vestra",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "su-urland",
+      "nombre": "Su urland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "su-urnes",
+      "nombre": "Su urnes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "vestfir-ir",
+      "nombre": "Vestfir ir",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "vesturland",
+      "nombre": "Vesturland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akranes",
+        "Borgarnes",
+        "Bu ardalur",
+        "Grundarfjor ur",
+        "Hellissandur",
+        "Hvanneyri",
+        "Olafsvik",
+        "Rif",
+        "Stykkisholmur"
+      ]
+    }
+  ]
+}

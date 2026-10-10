@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "swaziland",
+    "nombre": "Swaziland",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "hhohho",
+      "nombre": "Hhohho",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bulembu",
+        "Ezulwini",
+        "Mbabane",
+        "Ngwenya",
+        "Pigg''s Peak"
+      ]
+    },
+    {
+      "id": "lubombo",
+      "nombre": "Lubombo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Big Bend",
+        "Mhlume",
+        "Mpaka",
+        "Nsoko",
+        "Simunye",
+        "Siteki",
+        "Tshaneni"
+      ]
+    },
+    {
+      "id": "manzini",
+      "nombre": "Manzini",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bhunya",
+        "Kwaluseni",
+        "Lobamba",
+        "Malkerns",
+        "Mankayane",
+        "Manzini",
+        "Matsapha",
+        "Mhlambanyatsi",
+        "Sidvokodvo"
+      ]
+    },
+    {
+      "id": "shiselweni",
+      "nombre": "Shiselweni",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hlatikulu",
+        "Hluti",
+        "Kubuta",
+        "Lavumisa",
+        "Nhlangano"
+      ]
+    }
+  ]
+}

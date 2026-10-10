@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "united-arab-emirates",
+    "nombre": "United Arab Emirates",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "abu-zabi",
+      "nombre": "Abu Zabi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ajman",
+      "nombre": "Ajman",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ajman"
+      ]
+    },
+    {
+      "id": "al-fujayrah",
+      "nombre": "al-Fujayrah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Fujayrah",
+        "Khawr Fakkan"
+      ]
+    },
+    {
+      "id": "ash-shariqah",
+      "nombre": "ash-Shariqah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "dubai",
+      "nombre": "Dubai",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Al Qusais",
+        "Deira",
+        "Dubai",
+        "Jebel Ali"
+      ]
+    },
+    {
+      "id": "ras-al-khaymah",
+      "nombre": "Ras al-Khaymah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sharjah",
+      "nombre": "Sharjah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sharjah"
+      ]
+    },
+    {
+      "id": "sharjha",
+      "nombre": "Sharjha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "umm-al-qaywayn",
+      "nombre": "Umm al Qaywayn",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

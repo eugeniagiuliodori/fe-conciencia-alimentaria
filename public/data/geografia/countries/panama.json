@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "panama",
+    "nombre": "Panama",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "bocas-del-toro",
+      "nombre": "Bocas del Toro",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "chiriqui",
+      "nombre": "Chiriqui",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alanje",
+        "Bajo Boquete",
+        "Boqueron",
+        "Bugaba",
+        "David",
+        "Dolega",
+        "Gualaca",
+        "Horconcitos",
+        "Las Lajas",
+        "Puerto Armuelles",
+        "Remedios",
+        "Rio Sereno",
+        "Tole"
+      ]
+    },
+    {
+      "id": "cocle",
+      "nombre": "Cocle",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aguadulce",
+        "Anton",
+        "La Pintada",
+        "Nata",
+        "Ola",
+        "Penonome"
+      ]
+    },
+    {
+      "id": "colon",
+      "nombre": "Colon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Colon",
+        "Miguel de la Borda",
+        "Nuevo Chagres",
+        "Portobelo",
+        "Santa Isabel"
+      ]
+    },
+    {
+      "id": "darien",
+      "nombre": "Darien",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "El Real de Santa Maria",
+        "La Palma"
+      ]
+    },
+    {
+      "id": "embera",
+      "nombre": "Embera",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cirilo Guainora",
+        "Rio Sabalo"
+      ]
+    },
+    {
+      "id": "herrera",
+      "nombre": "Herrera",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chitre",
+        "Las Minas",
+        "Los Pozos",
+        "Ocu",
+        "Parita",
+        "Pese",
+        "Santa Maria"
+      ]
+    },
+    {
+      "id": "kuna-yala",
+      "nombre": "Kuna Yala",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "los-santos",
+      "nombre": "Los Santos",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ngobe-bugle",
+      "nombre": "Ngobe Bugle",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "panama",
+      "nombre": "Panama",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arraijan",
+        "Capira",
+        "Chame",
+        "Chepo",
+        "Chiman",
+        "La Chorrera",
+        "Panama",
+        "San Carlos",
+        "San Miguel",
+        "San Miguelito",
+        "Taboga"
+      ]
+    },
+    {
+      "id": "veraguas",
+      "nombre": "Veraguas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Atalaya",
+        "Calobre",
+        "Canazas",
+        "La Mesa",
+        "Las Palmas",
+        "Montijo",
+        "Rio de Jesus",
+        "San Francisco",
+        "Santa Fe",
+        "Santiago",
+        "Sona"
+      ]
+    }
+  ]
+}

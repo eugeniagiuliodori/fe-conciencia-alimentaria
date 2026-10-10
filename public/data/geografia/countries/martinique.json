@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "martinique",
+    "nombre": "Martinique",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "fort-de-france",
+      "nombre": "Fort-de-France",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fort-de-France",
+        "Le Lamentin",
+        "Saint-Joseph",
+        "Schoelcher"
+      ]
+    },
+    {
+      "id": "la-trinite",
+      "nombre": "La Trinite",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "le-marin",
+      "nombre": "Le Marin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-pierre",
+      "nombre": "Saint-Pierre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Le Morne-Rouge",
+        "Saint-Pierre"
+      ]
+    }
+  ]
+}

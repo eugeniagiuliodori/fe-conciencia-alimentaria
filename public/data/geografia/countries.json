@@ -1,0 +1,2006 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "paises": [
+    {
+      "id": "afghanistan",
+      "nombre": "Afghanistan",
+      "codigoIso2": null,
+      "archivo": "countries/afghanistan.json",
+      "cantidadDivisiones": 32,
+      "cantidadCiudades": 110
+    },
+    {
+      "id": "aland",
+      "nombre": "Åland",
+      "codigoIso2": null,
+      "archivo": "countries/aland.json",
+      "cantidadDivisiones": 0,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "albania",
+      "nombre": "Albania",
+      "codigoIso2": null,
+      "archivo": "countries/albania.json",
+      "cantidadDivisiones": 36,
+      "cantidadCiudades": 68
+    },
+    {
+      "id": "algeria",
+      "nombre": "Algeria",
+      "codigoIso2": null,
+      "archivo": "countries/algeria.json",
+      "cantidadDivisiones": 54,
+      "cantidadCiudades": 327
+    },
+    {
+      "id": "american-samoa",
+      "nombre": "American Samoa",
+      "codigoIso2": null,
+      "archivo": "countries/american-samoa.json",
+      "cantidadDivisiones": 4,
+      "cantidadCiudades": 35
+    },
+    {
+      "id": "andorra",
+      "nombre": "Andorra",
+      "codigoIso2": null,
+      "archivo": "countries/andorra.json",
+      "cantidadDivisiones": 7,
+      "cantidadCiudades": 3
+    },
+    {
+      "id": "angola",
+      "nombre": "Angola",
+      "codigoIso2": null,
+      "archivo": "countries/angola.json",
+      "cantidadDivisiones": 18,
+      "cantidadCiudades": 31
+    },
+    {
+      "id": "anguilla",
+      "nombre": "Anguilla",
+      "codigoIso2": null,
+      "archivo": "countries/anguilla.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "antarctica",
+      "nombre": "Antarctica",
+      "codigoIso2": null,
+      "archivo": "countries/antarctica.json",
+      "cantidadDivisiones": 7,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "antigua-and-barbuda",
+      "nombre": "Antigua and Barbuda",
+      "codigoIso2": null,
+      "archivo": "countries/antigua-and-barbuda.json",
+      "cantidadDivisiones": 7,
+      "cantidadCiudades": 1
+    },
+    {
+      "id": "argentina",
+      "nombre": "Argentina",
+      "codigoIso2": null,
+      "archivo": "countries/argentina.json",
+      "cantidadDivisiones": 24,
+      "cantidadCiudades": 38
+    },
+    {
+      "id": "armenia",
+      "nombre": "Armenia",
+      "codigoIso2": null,
+      "archivo": "countries/armenia.json",
+      "cantidadDivisiones": 12,
+      "cantidadCiudades": 32
+    },
+    {
+      "id": "aruba",
+      "nombre": "Aruba",
+      "codigoIso2": null,
+      "archivo": "countries/aruba.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 1
+    },
+    {
+      "id": "australia",
+      "nombre": "Australia",
+      "codigoIso2": null,
+      "archivo": "countries/australia.json",
+      "cantidadDivisiones": 8,
+      "cantidadCiudades": 273
+    },
+    {
+      "id": "austria",
+      "nombre": "Austria",
+      "codigoIso2": null,
+      "archivo": "countries/austria.json",
+      "cantidadDivisiones": 18,
+      "cantidadCiudades": 324
+    },
+    {
+      "id": "azerbaijan",
+      "nombre": "Azerbaijan",
+      "codigoIso2": null,
+      "archivo": "countries/azerbaijan.json",
+      "cantidadDivisiones": 15,
+      "cantidadCiudades": 89
+    },
+    {
+      "id": "bahamas",
+      "nombre": "Bahamas",
+      "codigoIso2": null,
+      "archivo": "countries/bahamas.json",
+      "cantidadDivisiones": 17,
+      "cantidadCiudades": 8
+    },
+    {
+      "id": "bahrain",
+      "nombre": "Bahrain",
+      "codigoIso2": null,
+      "archivo": "countries/bahrain.json",
+      "cantidadDivisiones": 10,
+      "cantidadCiudades": 9
+    },
+    {
+      "id": "bangladesh",
+      "nombre": "Bangladesh",
+      "codigoIso2": null,
+      "archivo": "countries/bangladesh.json",
+      "cantidadDivisiones": 64,
+      "cantidadCiudades": 142
+    },
+    {
+      "id": "barbados",
+      "nombre": "Barbados",
+      "codigoIso2": null,
+      "archivo": "countries/barbados.json",
+      "cantidadDivisiones": 11,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "belarus",
+      "nombre": "Belarus",
+      "codigoIso2": null,
+      "archivo": "countries/belarus.json",
+      "cantidadDivisiones": 9,
+      "cantidadCiudades": 85
+    },
+    {
+      "id": "belgium",
+      "nombre": "Belgium",
+      "codigoIso2": null,
+      "archivo": "countries/belgium.json",
+      "cantidadDivisiones": 17,
+      "cantidadCiudades": 585
+    },
+    {
+      "id": "belize",
+      "nombre": "Belize",
+      "codigoIso2": null,
+      "archivo": "countries/belize.json",
+      "cantidadDivisiones": 6,
+      "cantidadCiudades": 7
+    },
+    {
+      "id": "benin",
+      "nombre": "Benin",
+      "codigoIso2": null,
+      "archivo": "countries/benin.json",
+      "cantidadDivisiones": 12,
+      "cantidadCiudades": 34
+    },
+    {
+      "id": "bermuda",
+      "nombre": "Bermuda",
+      "codigoIso2": null,
+      "archivo": "countries/bermuda.json",
+      "cantidadDivisiones": 2,
+      "cantidadCiudades": 1
+    },
+    {
+      "id": "bhutan",
+      "nombre": "Bhutan",
+      "codigoIso2": null,
+      "archivo": "countries/bhutan.json",
+      "cantidadDivisiones": 18,
+      "cantidadCiudades": 21
+    },
+    {
+      "id": "bolivia",
+      "nombre": "Bolivia",
+      "codigoIso2": null,
+      "archivo": "countries/bolivia.json",
+      "cantidadDivisiones": 9,
+      "cantidadCiudades": 60
+    },
+    {
+      "id": "bonaire",
+      "nombre": "Bonaire",
+      "codigoIso2": null,
+      "archivo": "countries/bonaire.json",
+      "cantidadDivisiones": 0,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "bosnia-and-herzegovina",
+      "nombre": "Bosnia and Herzegovina",
+      "codigoIso2": null,
+      "archivo": "countries/bosnia-and-herzegovina.json",
+      "cantidadDivisiones": 2,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "botswana",
+      "nombre": "Botswana",
+      "codigoIso2": null,
+      "archivo": "countries/botswana.json",
+      "cantidadDivisiones": 23,
+      "cantidadCiudades": 310
+    },
+    {
+      "id": "bouvet-island",
+      "nombre": "Bouvet Island",
+      "codigoIso2": null,
+      "archivo": "countries/bouvet-island.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "brazil",
+      "nombre": "Brazil",
+      "codigoIso2": null,
+      "archivo": "countries/brazil.json",
+      "cantidadDivisiones": 28,
+      "cantidadCiudades": 1228
+    },
+    {
+      "id": "british-indian-ocean-territory",
+      "nombre": "British Indian Ocean Territory",
+      "codigoIso2": null,
+      "archivo": "countries/british-indian-ocean-territory.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "british-virgin-islands",
+      "nombre": "British Virgin Islands",
+      "codigoIso2": null,
+      "archivo": "countries/british-virgin-islands.json",
+      "cantidadDivisiones": 3,
+      "cantidadCiudades": 4
+    },
+    {
+      "id": "brunei",
+      "nombre": "Brunei",
+      "codigoIso2": null,
+      "archivo": "countries/brunei.json",
+      "cantidadDivisiones": 4,
+      "cantidadCiudades": 5
+    },
+    {
+      "id": "bulgaria",
+      "nombre": "Bulgaria",
+      "codigoIso2": null,
+      "archivo": "countries/bulgaria.json",
+      "cantidadDivisiones": 30,
+      "cantidadCiudades": 200
+    },
+    {
+      "id": "burkina-faso",
+      "nombre": "Burkina Faso",
+      "codigoIso2": null,
+      "archivo": "countries/burkina-faso.json",
+      "cantidadDivisiones": 39,
+      "cantidadCiudades": 50
+    },
+    {
+      "id": "burundi",
+      "nombre": "Burundi",
+      "codigoIso2": null,
+      "archivo": "countries/burundi.json",
+      "cantidadDivisiones": 15,
+      "cantidadCiudades": 15
+    },
+    {
+      "id": "cambodia",
+      "nombre": "Cambodia",
+      "codigoIso2": null,
+      "archivo": "countries/cambodia.json",
+      "cantidadDivisiones": 24,
+      "cantidadCiudades": 5
+    },
+    {
+      "id": "cameroon",
+      "nombre": "Cameroon",
+      "codigoIso2": null,
+      "archivo": "countries/cameroon.json",
+      "cantidadDivisiones": 10,
+      "cantidadCiudades": 80
+    },
+    {
+      "id": "canada",
+      "nombre": "Canada",
+      "codigoIso2": null,
+      "archivo": "countries/canada.json",
+      "cantidadDivisiones": 13,
+      "cantidadCiudades": 775
+    },
+    {
+      "id": "cape-verde",
+      "nombre": "Cape Verde",
+      "codigoIso2": null,
+      "archivo": "countries/cape-verde.json",
+      "cantidadDivisiones": 9,
+      "cantidadCiudades": 6
+    },
+    {
+      "id": "cayman-islands",
+      "nombre": "Cayman Islands",
+      "codigoIso2": null,
+      "archivo": "countries/cayman-islands.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "central-african-republic",
+      "nombre": "Central African Republic",
+      "codigoIso2": null,
+      "archivo": "countries/central-african-republic.json",
+      "cantidadDivisiones": 17,
+      "cantidadCiudades": 38
+    },
+    {
+      "id": "chad",
+      "nombre": "Chad",
+      "codigoIso2": null,
+      "archivo": "countries/chad.json",
+      "cantidadDivisiones": 14,
+      "cantidadCiudades": 43
+    },
+    {
+      "id": "chile",
+      "nombre": "Chile",
+      "codigoIso2": null,
+      "archivo": "countries/chile.json",
+      "cantidadDivisiones": 14,
+      "cantidadCiudades": 204
+    },
+    {
+      "id": "china",
+      "nombre": "China",
+      "codigoIso2": null,
+      "archivo": "countries/china.json",
+      "cantidadDivisiones": 42,
+      "cantidadCiudades": 1371
+    },
+    {
+      "id": "christmas-island",
+      "nombre": "Christmas Island",
+      "codigoIso2": null,
+      "archivo": "countries/christmas-island.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "cocos-keeling-islands",
+      "nombre": "Cocos [Keeling] Islands",
+      "codigoIso2": null,
+      "archivo": "countries/cocos-keeling-islands.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "colombia",
+      "nombre": "Colombia",
+      "codigoIso2": null,
+      "archivo": "countries/colombia.json",
+      "cantidadDivisiones": 33,
+      "cantidadCiudades": 1000
+    },
+    {
+      "id": "comoros",
+      "nombre": "Comoros",
+      "codigoIso2": null,
+      "archivo": "countries/comoros.json",
+      "cantidadDivisiones": 3,
+      "cantidadCiudades": 5
+    },
+    {
+      "id": "cook-islands",
+      "nombre": "Cook Islands",
+      "codigoIso2": null,
+      "archivo": "countries/cook-islands.json",
+      "cantidadDivisiones": 11,
+      "cantidadCiudades": 11
+    },
+    {
+      "id": "costa-rica",
+      "nombre": "Costa Rica",
+      "codigoIso2": null,
+      "archivo": "countries/costa-rica.json",
+      "cantidadDivisiones": 7,
+      "cantidadCiudades": 147
+    },
+    {
+      "id": "croatia",
+      "nombre": "Croatia",
+      "codigoIso2": null,
+      "archivo": "countries/croatia.json",
+      "cantidadDivisiones": 23,
+      "cantidadCiudades": 628
+    },
+    {
+      "id": "cuba",
+      "nombre": "Cuba",
+      "codigoIso2": null,
+      "archivo": "countries/cuba.json",
+      "cantidadDivisiones": 16,
+      "cantidadCiudades": 64
+    },
+    {
+      "id": "curacao",
+      "nombre": "Curacao",
+      "codigoIso2": null,
+      "archivo": "countries/curacao.json",
+      "cantidadDivisiones": 0,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "cyprus",
+      "nombre": "Cyprus",
+      "codigoIso2": null,
+      "archivo": "countries/cyprus.json",
+      "cantidadDivisiones": 5,
+      "cantidadCiudades": 2
+    },
+    {
+      "id": "czech-republic",
+      "nombre": "Czech Republic",
+      "codigoIso2": null,
+      "archivo": "countries/czech-republic.json",
+      "cantidadDivisiones": 27,
+      "cantidadCiudades": 298
+    },
+    {
+      "id": "democratic-republic-of-the-congo",
+      "nombre": "Democratic Republic of the Congo",
+      "codigoIso2": null,
+      "archivo": "countries/democratic-republic-of-the-congo.json",
+      "cantidadDivisiones": 11,
+      "cantidadCiudades": 124
+    },
+    {
+      "id": "denmark",
+      "nombre": "Denmark",
+      "codigoIso2": null,
+      "archivo": "countries/denmark.json",
+      "cantidadDivisiones": 23,
+      "cantidadCiudades": 346
+    },
+    {
+      "id": "djibouti",
+      "nombre": "Djibouti",
+      "codigoIso2": null,
+      "archivo": "countries/djibouti.json",
+      "cantidadDivisiones": 5,
+      "cantidadCiudades": 4
+    },
+    {
+      "id": "dominica",
+      "nombre": "Dominica",
+      "codigoIso2": null,
+      "archivo": "countries/dominica.json",
+      "cantidadDivisiones": 10,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "dominican-republic",
+      "nombre": "Dominican Republic",
+      "codigoIso2": null,
+      "archivo": "countries/dominican-republic.json",
+      "cantidadDivisiones": 30,
+      "cantidadCiudades": 28
+    },
+    {
+      "id": "east-timor",
+      "nombre": "East Timor",
+      "codigoIso2": null,
+      "archivo": "countries/east-timor.json",
+      "cantidadDivisiones": 0,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "ecuador",
+      "nombre": "Ecuador",
+      "codigoIso2": null,
+      "archivo": "countries/ecuador.json",
+      "cantidadDivisiones": 22,
+      "cantidadCiudades": 93
+    },
+    {
+      "id": "egypt",
+      "nombre": "Egypt",
+      "codigoIso2": null,
+      "archivo": "countries/egypt.json",
+      "cantidadDivisiones": 33,
+      "cantidadCiudades": 212
+    },
+    {
+      "id": "el-salvador",
+      "nombre": "El Salvador",
+      "codigoIso2": null,
+      "archivo": "countries/el-salvador.json",
+      "cantidadDivisiones": 14,
+      "cantidadCiudades": 46
+    },
+    {
+      "id": "equatorial-guinea",
+      "nombre": "Equatorial Guinea",
+      "codigoIso2": null,
+      "archivo": "countries/equatorial-guinea.json",
+      "cantidadDivisiones": 7,
+      "cantidadCiudades": 9
+    },
+    {
+      "id": "eritrea",
+      "nombre": "Eritrea",
+      "codigoIso2": null,
+      "archivo": "countries/eritrea.json",
+      "cantidadDivisiones": 6,
+      "cantidadCiudades": 18
+    },
+    {
+      "id": "estonia",
+      "nombre": "Estonia",
+      "codigoIso2": null,
+      "archivo": "countries/estonia.json",
+      "cantidadDivisiones": 15,
+      "cantidadCiudades": 1012
+    },
+    {
+      "id": "ethiopia",
+      "nombre": "Ethiopia",
+      "codigoIso2": null,
+      "archivo": "countries/ethiopia.json",
+      "cantidadDivisiones": 13,
+      "cantidadCiudades": 139
+    },
+    {
+      "id": "falkland-islands",
+      "nombre": "Falkland Islands",
+      "codigoIso2": null,
+      "archivo": "countries/falkland-islands.json",
+      "cantidadDivisiones": 2,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "faroe-islands",
+      "nombre": "Faroe Islands",
+      "codigoIso2": null,
+      "archivo": "countries/faroe-islands.json",
+      "cantidadDivisiones": 9,
+      "cantidadCiudades": 24
+    },
+    {
+      "id": "fiji",
+      "nombre": "Fiji",
+      "codigoIso2": null,
+      "archivo": "countries/fiji.json",
+      "cantidadDivisiones": 5,
+      "cantidadCiudades": 21
+    },
+    {
+      "id": "finland",
+      "nombre": "Finland",
+      "codigoIso2": null,
+      "archivo": "countries/finland.json",
+      "cantidadDivisiones": 30,
+      "cantidadCiudades": 110
+    },
+    {
+      "id": "france",
+      "nombre": "France",
+      "codigoIso2": null,
+      "archivo": "countries/france.json",
+      "cantidadDivisiones": 134,
+      "cantidadCiudades": 1146
+    },
+    {
+      "id": "french-guiana",
+      "nombre": "French Guiana",
+      "codigoIso2": null,
+      "archivo": "countries/french-guiana.json",
+      "cantidadDivisiones": 2,
+      "cantidadCiudades": 15
+    },
+    {
+      "id": "french-polynesia",
+      "nombre": "French Polynesia",
+      "codigoIso2": null,
+      "archivo": "countries/french-polynesia.json",
+      "cantidadDivisiones": 5,
+      "cantidadCiudades": 60
+    },
+    {
+      "id": "french-southern-territories",
+      "nombre": "French Southern Territories",
+      "codigoIso2": null,
+      "archivo": "countries/french-southern-territories.json",
+      "cantidadDivisiones": 3,
+      "cantidadCiudades": 2
+    },
+    {
+      "id": "gabon",
+      "nombre": "Gabon",
+      "codigoIso2": null,
+      "archivo": "countries/gabon.json",
+      "cantidadDivisiones": 9,
+      "cantidadCiudades": 35
+    },
+    {
+      "id": "gambia",
+      "nombre": "Gambia",
+      "codigoIso2": null,
+      "archivo": "countries/gambia.json",
+      "cantidadDivisiones": 8,
+      "cantidadCiudades": 20
+    },
+    {
+      "id": "georgia",
+      "nombre": "Georgia",
+      "codigoIso2": null,
+      "archivo": "countries/georgia.json",
+      "cantidadDivisiones": 12,
+      "cantidadCiudades": 46
+    },
+    {
+      "id": "germany",
+      "nombre": "Germany",
+      "codigoIso2": null,
+      "archivo": "countries/germany.json",
+      "cantidadDivisiones": 47,
+      "cantidadCiudades": 2050
+    },
+    {
+      "id": "ghana",
+      "nombre": "Ghana",
+      "codigoIso2": null,
+      "archivo": "countries/ghana.json",
+      "cantidadDivisiones": 10,
+      "cantidadCiudades": 81
+    },
+    {
+      "id": "gibraltar",
+      "nombre": "Gibraltar",
+      "codigoIso2": null,
+      "archivo": "countries/gibraltar.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 1
+    },
+    {
+      "id": "greece",
+      "nombre": "Greece",
+      "codigoIso2": null,
+      "archivo": "countries/greece.json",
+      "cantidadDivisiones": 62,
+      "cantidadCiudades": 137
+    },
+    {
+      "id": "greenland",
+      "nombre": "Greenland",
+      "codigoIso2": null,
+      "archivo": "countries/greenland.json",
+      "cantidadDivisiones": 19,
+      "cantidadCiudades": 115
+    },
+    {
+      "id": "grenada",
+      "nombre": "Grenada",
+      "codigoIso2": null,
+      "archivo": "countries/grenada.json",
+      "cantidadDivisiones": 7,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "guadeloupe",
+      "nombre": "Guadeloupe",
+      "codigoIso2": null,
+      "archivo": "countries/guadeloupe.json",
+      "cantidadDivisiones": 7,
+      "cantidadCiudades": 24
+    },
+    {
+      "id": "guam",
+      "nombre": "Guam",
+      "codigoIso2": null,
+      "archivo": "countries/guam.json",
+      "cantidadDivisiones": 16,
+      "cantidadCiudades": 21
+    },
+    {
+      "id": "guatemala",
+      "nombre": "Guatemala",
+      "codigoIso2": null,
+      "archivo": "countries/guatemala.json",
+      "cantidadDivisiones": 22,
+      "cantidadCiudades": 37
+    },
+    {
+      "id": "guernsey",
+      "nombre": "Guernsey",
+      "codigoIso2": null,
+      "archivo": "countries/guernsey.json",
+      "cantidadDivisiones": 0,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "guinea",
+      "nombre": "Guinea",
+      "codigoIso2": null,
+      "archivo": "countries/guinea.json",
+      "cantidadDivisiones": 32,
+      "cantidadCiudades": 32
+    },
+    {
+      "id": "guinea-bissau",
+      "nombre": "Guinea-Bissau",
+      "codigoIso2": null,
+      "archivo": "countries/guinea-bissau.json",
+      "cantidadDivisiones": 8,
+      "cantidadCiudades": 14
+    },
+    {
+      "id": "guyana",
+      "nombre": "Guyana",
+      "codigoIso2": null,
+      "archivo": "countries/guyana.json",
+      "cantidadDivisiones": 10,
+      "cantidadCiudades": 17
+    },
+    {
+      "id": "haiti",
+      "nombre": "Haiti",
+      "codigoIso2": null,
+      "archivo": "countries/haiti.json",
+      "cantidadDivisiones": 9,
+      "cantidadCiudades": 38
+    },
+    {
+      "id": "heard-island-and-mcdonald-islands",
+      "nombre": "Heard Island and McDonald Islands",
+      "codigoIso2": null,
+      "archivo": "countries/heard-island-and-mcdonald-islands.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "honduras",
+      "nombre": "Honduras",
+      "codigoIso2": null,
+      "archivo": "countries/honduras.json",
+      "cantidadDivisiones": 19,
+      "cantidadCiudades": 40
+    },
+    {
+      "id": "hong-kong",
+      "nombre": "Hong Kong",
+      "codigoIso2": null,
+      "archivo": "countries/hong-kong.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "hungary",
+      "nombre": "Hungary",
+      "codigoIso2": null,
+      "archivo": "countries/hungary.json",
+      "cantidadDivisiones": 20,
+      "cantidadCiudades": 520
+    },
+    {
+      "id": "iceland",
+      "nombre": "Iceland",
+      "codigoIso2": null,
+      "archivo": "countries/iceland.json",
+      "cantidadDivisiones": 9,
+      "cantidadCiudades": 25
+    },
+    {
+      "id": "india",
+      "nombre": "India",
+      "codigoIso2": null,
+      "archivo": "countries/india.json",
+      "cantidadDivisiones": 41,
+      "cantidadCiudades": 5739
+    },
+    {
+      "id": "indonesia",
+      "nombre": "Indonesia",
+      "codigoIso2": null,
+      "archivo": "countries/indonesia.json",
+      "cantidadDivisiones": 34,
+      "cantidadCiudades": 94
+    },
+    {
+      "id": "iran",
+      "nombre": "Iran",
+      "codigoIso2": null,
+      "archivo": "countries/iran.json",
+      "cantidadDivisiones": 29,
+      "cantidadCiudades": 233
+    },
+    {
+      "id": "iraq",
+      "nombre": "Iraq",
+      "codigoIso2": null,
+      "archivo": "countries/iraq.json",
+      "cantidadDivisiones": 20,
+      "cantidadCiudades": 80
+    },
+    {
+      "id": "ireland",
+      "nombre": "Ireland",
+      "codigoIso2": null,
+      "archivo": "countries/ireland.json",
+      "cantidadDivisiones": 31,
+      "cantidadCiudades": 154
+    },
+    {
+      "id": "isle-of-man",
+      "nombre": "Isle of Man",
+      "codigoIso2": null,
+      "archivo": "countries/isle-of-man.json",
+      "cantidadDivisiones": 0,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "israel",
+      "nombre": "Israel",
+      "codigoIso2": null,
+      "archivo": "countries/israel.json",
+      "cantidadDivisiones": 22,
+      "cantidadCiudades": 142
+    },
+    {
+      "id": "italy",
+      "nombre": "Italy",
+      "codigoIso2": null,
+      "archivo": "countries/italy.json",
+      "cantidadDivisiones": 101,
+      "cantidadCiudades": 1938
+    },
+    {
+      "id": "ivory-coast",
+      "nombre": "Ivory Coast",
+      "codigoIso2": null,
+      "archivo": "countries/ivory-coast.json",
+      "cantidadDivisiones": 20,
+      "cantidadCiudades": 69
+    },
+    {
+      "id": "jamaica",
+      "nombre": "Jamaica",
+      "codigoIso2": null,
+      "archivo": "countries/jamaica.json",
+      "cantidadDivisiones": 15,
+      "cantidadCiudades": 8
+    },
+    {
+      "id": "japan",
+      "nombre": "Japan",
+      "codigoIso2": null,
+      "archivo": "countries/japan.json",
+      "cantidadDivisiones": 48,
+      "cantidadCiudades": 1049
+    },
+    {
+      "id": "jersey",
+      "nombre": "Jersey",
+      "codigoIso2": null,
+      "archivo": "countries/jersey.json",
+      "cantidadDivisiones": 0,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "jordan",
+      "nombre": "Jordan",
+      "codigoIso2": null,
+      "archivo": "countries/jordan.json",
+      "cantidadDivisiones": 12,
+      "cantidadCiudades": 179
+    },
+    {
+      "id": "kazakhstan",
+      "nombre": "Kazakhstan",
+      "codigoIso2": null,
+      "archivo": "countries/kazakhstan.json",
+      "cantidadDivisiones": 15,
+      "cantidadCiudades": 119
+    },
+    {
+      "id": "kenya",
+      "nombre": "Kenya",
+      "codigoIso2": null,
+      "archivo": "countries/kenya.json",
+      "cantidadDivisiones": 8,
+      "cantidadCiudades": 55
+    },
+    {
+      "id": "kiribati",
+      "nombre": "Kiribati",
+      "codigoIso2": null,
+      "archivo": "countries/kiribati.json",
+      "cantidadDivisiones": 23,
+      "cantidadCiudades": 18
+    },
+    {
+      "id": "kosovo",
+      "nombre": "Kosovo",
+      "codigoIso2": null,
+      "archivo": "countries/kosovo.json",
+      "cantidadDivisiones": 0,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "kuwait",
+      "nombre": "Kuwait",
+      "codigoIso2": null,
+      "archivo": "countries/kuwait.json",
+      "cantidadDivisiones": 10,
+      "cantidadCiudades": 79
+    },
+    {
+      "id": "kyrgyzstan",
+      "nombre": "Kyrgyzstan",
+      "codigoIso2": null,
+      "archivo": "countries/kyrgyzstan.json",
+      "cantidadDivisiones": 8,
+      "cantidadCiudades": 90
+    },
+    {
+      "id": "laos",
+      "nombre": "Laos",
+      "codigoIso2": null,
+      "archivo": "countries/laos.json",
+      "cantidadDivisiones": 17,
+      "cantidadCiudades": 15
+    },
+    {
+      "id": "latvia",
+      "nombre": "Latvia",
+      "codigoIso2": null,
+      "archivo": "countries/latvia.json",
+      "cantidadDivisiones": 33,
+      "cantidadCiudades": 78
+    },
+    {
+      "id": "lebanon",
+      "nombre": "Lebanon",
+      "codigoIso2": null,
+      "archivo": "countries/lebanon.json",
+      "cantidadDivisiones": 9,
+      "cantidadCiudades": 19
+    },
+    {
+      "id": "lesotho",
+      "nombre": "Lesotho",
+      "codigoIso2": null,
+      "archivo": "countries/lesotho.json",
+      "cantidadDivisiones": 10,
+      "cantidadCiudades": 9
+    },
+    {
+      "id": "liberia",
+      "nombre": "Liberia",
+      "codigoIso2": null,
+      "archivo": "countries/liberia.json",
+      "cantidadDivisiones": 12,
+      "cantidadCiudades": 12
+    },
+    {
+      "id": "libya",
+      "nombre": "Libya",
+      "codigoIso2": null,
+      "archivo": "countries/libya.json",
+      "cantidadDivisiones": 26,
+      "cantidadCiudades": 36
+    },
+    {
+      "id": "liechtenstein",
+      "nombre": "Liechtenstein",
+      "codigoIso2": null,
+      "archivo": "countries/liechtenstein.json",
+      "cantidadDivisiones": 11,
+      "cantidadCiudades": 11
+    },
+    {
+      "id": "lithuania",
+      "nombre": "Lithuania",
+      "codigoIso2": null,
+      "archivo": "countries/lithuania.json",
+      "cantidadDivisiones": 13,
+      "cantidadCiudades": 117
+    },
+    {
+      "id": "luxembourg",
+      "nombre": "Luxembourg",
+      "codigoIso2": null,
+      "archivo": "countries/luxembourg.json",
+      "cantidadDivisiones": 12,
+      "cantidadCiudades": 473
+    },
+    {
+      "id": "macao",
+      "nombre": "Macao",
+      "codigoIso2": null,
+      "archivo": "countries/macao.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 1
+    },
+    {
+      "id": "macedonia",
+      "nombre": "Macedonia",
+      "codigoIso2": null,
+      "archivo": "countries/macedonia.json",
+      "cantidadDivisiones": 30,
+      "cantidadCiudades": 112
+    },
+    {
+      "id": "madagascar",
+      "nombre": "Madagascar",
+      "codigoIso2": null,
+      "archivo": "countries/madagascar.json",
+      "cantidadDivisiones": 6,
+      "cantidadCiudades": 72
+    },
+    {
+      "id": "malawi",
+      "nombre": "Malawi",
+      "codigoIso2": null,
+      "archivo": "countries/malawi.json",
+      "cantidadDivisiones": 27,
+      "cantidadCiudades": 29
+    },
+    {
+      "id": "malaysia",
+      "nombre": "Malaysia",
+      "codigoIso2": null,
+      "archivo": "countries/malaysia.json",
+      "cantidadDivisiones": 18,
+      "cantidadCiudades": 176
+    },
+    {
+      "id": "maldives",
+      "nombre": "Maldives",
+      "codigoIso2": null,
+      "archivo": "countries/maldives.json",
+      "cantidadDivisiones": 28,
+      "cantidadCiudades": 157
+    },
+    {
+      "id": "mali",
+      "nombre": "Mali",
+      "codigoIso2": null,
+      "archivo": "countries/mali.json",
+      "cantidadDivisiones": 9,
+      "cantidadCiudades": 38
+    },
+    {
+      "id": "malta",
+      "nombre": "Malta",
+      "codigoIso2": null,
+      "archivo": "countries/malta.json",
+      "cantidadDivisiones": 7,
+      "cantidadCiudades": 16
+    },
+    {
+      "id": "marshall-islands",
+      "nombre": "Marshall Islands",
+      "codigoIso2": null,
+      "archivo": "countries/marshall-islands.json",
+      "cantidadDivisiones": 25,
+      "cantidadCiudades": 160
+    },
+    {
+      "id": "martinique",
+      "nombre": "Martinique",
+      "codigoIso2": null,
+      "archivo": "countries/martinique.json",
+      "cantidadDivisiones": 4,
+      "cantidadCiudades": 6
+    },
+    {
+      "id": "mauritania",
+      "nombre": "Mauritania",
+      "codigoIso2": null,
+      "archivo": "countries/mauritania.json",
+      "cantidadDivisiones": 13,
+      "cantidadCiudades": 17
+    },
+    {
+      "id": "mauritius",
+      "nombre": "Mauritius",
+      "codigoIso2": null,
+      "archivo": "countries/mauritius.json",
+      "cantidadDivisiones": 13,
+      "cantidadCiudades": 84
+    },
+    {
+      "id": "mayotte",
+      "nombre": "Mayotte",
+      "codigoIso2": null,
+      "archivo": "countries/mayotte.json",
+      "cantidadDivisiones": 2,
+      "cantidadCiudades": 17
+    },
+    {
+      "id": "mexico",
+      "nombre": "Mexico",
+      "codigoIso2": null,
+      "archivo": "countries/mexico.json",
+      "cantidadDivisiones": 33,
+      "cantidadCiudades": 1938
+    },
+    {
+      "id": "micronesia",
+      "nombre": "Micronesia",
+      "codigoIso2": null,
+      "archivo": "countries/micronesia.json",
+      "cantidadDivisiones": 4,
+      "cantidadCiudades": 6
+    },
+    {
+      "id": "moldova",
+      "nombre": "Moldova",
+      "codigoIso2": null,
+      "archivo": "countries/moldova.json",
+      "cantidadDivisiones": 13,
+      "cantidadCiudades": 37
+    },
+    {
+      "id": "monaco",
+      "nombre": "Monaco",
+      "codigoIso2": null,
+      "archivo": "countries/monaco.json",
+      "cantidadDivisiones": 4,
+      "cantidadCiudades": 2
+    },
+    {
+      "id": "mongolia",
+      "nombre": "Mongolia",
+      "codigoIso2": null,
+      "archivo": "countries/mongolia.json",
+      "cantidadDivisiones": 22,
+      "cantidadCiudades": 25
+    },
+    {
+      "id": "montenegro",
+      "nombre": "Montenegro",
+      "codigoIso2": null,
+      "archivo": "countries/montenegro.json",
+      "cantidadDivisiones": 0,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "montserrat",
+      "nombre": "Montserrat",
+      "codigoIso2": null,
+      "archivo": "countries/montserrat.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 1
+    },
+    {
+      "id": "morocco",
+      "nombre": "Morocco",
+      "codigoIso2": null,
+      "archivo": "countries/morocco.json",
+      "cantidadDivisiones": 22,
+      "cantidadCiudades": 67
+    },
+    {
+      "id": "mozambique",
+      "nombre": "Mozambique",
+      "codigoIso2": null,
+      "archivo": "countries/mozambique.json",
+      "cantidadDivisiones": 11,
+      "cantidadCiudades": 36
+    },
+    {
+      "id": "myanmar-burma",
+      "nombre": "Myanmar [Burma]",
+      "codigoIso2": null,
+      "archivo": "countries/myanmar-burma.json",
+      "cantidadDivisiones": 15,
+      "cantidadCiudades": 67
+    },
+    {
+      "id": "namibia",
+      "nombre": "Namibia",
+      "codigoIso2": null,
+      "archivo": "countries/namibia.json",
+      "cantidadDivisiones": 13,
+      "cantidadCiudades": 38
+    },
+    {
+      "id": "nauru",
+      "nombre": "Nauru",
+      "codigoIso2": null,
+      "archivo": "countries/nauru.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 1
+    },
+    {
+      "id": "nepal",
+      "nombre": "Nepal",
+      "codigoIso2": null,
+      "archivo": "countries/nepal.json",
+      "cantidadDivisiones": 14,
+      "cantidadCiudades": 66
+    },
+    {
+      "id": "netherlands",
+      "nombre": "Netherlands",
+      "codigoIso2": null,
+      "archivo": "countries/netherlands.json",
+      "cantidadDivisiones": 15,
+      "cantidadCiudades": 596
+    },
+    {
+      "id": "new-caledonia",
+      "nombre": "New Caledonia",
+      "codigoIso2": null,
+      "archivo": "countries/new-caledonia.json",
+      "cantidadDivisiones": 3,
+      "cantidadCiudades": 32
+    },
+    {
+      "id": "new-zealand",
+      "nombre": "New Zealand",
+      "codigoIso2": null,
+      "archivo": "countries/new-zealand.json",
+      "cantidadDivisiones": 19,
+      "cantidadCiudades": 104
+    },
+    {
+      "id": "nicaragua",
+      "nombre": "Nicaragua",
+      "codigoIso2": null,
+      "archivo": "countries/nicaragua.json",
+      "cantidadDivisiones": 17,
+      "cantidadCiudades": 56
+    },
+    {
+      "id": "niger",
+      "nombre": "Niger",
+      "codigoIso2": null,
+      "archivo": "countries/niger.json",
+      "cantidadDivisiones": 8,
+      "cantidadCiudades": 47
+    },
+    {
+      "id": "nigeria",
+      "nombre": "Nigeria",
+      "codigoIso2": null,
+      "archivo": "countries/nigeria.json",
+      "cantidadDivisiones": 37,
+      "cantidadCiudades": 546
+    },
+    {
+      "id": "niue",
+      "nombre": "Niue",
+      "codigoIso2": null,
+      "archivo": "countries/niue.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 1
+    },
+    {
+      "id": "norfolk-island",
+      "nombre": "Norfolk Island",
+      "codigoIso2": null,
+      "archivo": "countries/norfolk-island.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "north-korea",
+      "nombre": "North Korea",
+      "codigoIso2": null,
+      "archivo": "countries/north-korea.json",
+      "cantidadDivisiones": 12,
+      "cantidadCiudades": 16
+    },
+    {
+      "id": "northern-mariana-islands",
+      "nombre": "Northern Mariana Islands",
+      "codigoIso2": null,
+      "archivo": "countries/northern-mariana-islands.json",
+      "cantidadDivisiones": 4,
+      "cantidadCiudades": 15
+    },
+    {
+      "id": "norway",
+      "nombre": "Norway",
+      "codigoIso2": null,
+      "archivo": "countries/norway.json",
+      "cantidadDivisiones": 23,
+      "cantidadCiudades": 73
+    },
+    {
+      "id": "oman",
+      "nombre": "Oman",
+      "codigoIso2": null,
+      "archivo": "countries/oman.json",
+      "cantidadDivisiones": 10,
+      "cantidadCiudades": 32
+    },
+    {
+      "id": "pakistan",
+      "nombre": "Pakistan",
+      "codigoIso2": null,
+      "archivo": "countries/pakistan.json",
+      "cantidadDivisiones": 7,
+      "cantidadCiudades": 584
+    },
+    {
+      "id": "palau",
+      "nombre": "Palau",
+      "codigoIso2": null,
+      "archivo": "countries/palau.json",
+      "cantidadDivisiones": 16,
+      "cantidadCiudades": 17
+    },
+    {
+      "id": "palestine",
+      "nombre": "Palestine",
+      "codigoIso2": null,
+      "archivo": "countries/palestine.json",
+      "cantidadDivisiones": 17,
+      "cantidadCiudades": 24
+    },
+    {
+      "id": "panama",
+      "nombre": "Panama",
+      "codigoIso2": null,
+      "archivo": "countries/panama.json",
+      "cantidadDivisiones": 12,
+      "cantidadCiudades": 57
+    },
+    {
+      "id": "papua-new-guinea",
+      "nombre": "Papua New Guinea",
+      "codigoIso2": null,
+      "archivo": "countries/papua-new-guinea.json",
+      "cantidadDivisiones": 19,
+      "cantidadCiudades": 14
+    },
+    {
+      "id": "paraguay",
+      "nombre": "Paraguay",
+      "codigoIso2": null,
+      "archivo": "countries/paraguay.json",
+      "cantidadDivisiones": 18,
+      "cantidadCiudades": 183
+    },
+    {
+      "id": "peru",
+      "nombre": "Peru",
+      "codigoIso2": null,
+      "archivo": "countries/peru.json",
+      "cantidadDivisiones": 24,
+      "cantidadCiudades": 234
+    },
+    {
+      "id": "philippines",
+      "nombre": "Philippines",
+      "codigoIso2": null,
+      "archivo": "countries/philippines.json",
+      "cantidadDivisiones": 23,
+      "cantidadCiudades": 32
+    },
+    {
+      "id": "pitcairn-islands",
+      "nombre": "Pitcairn Islands",
+      "codigoIso2": null,
+      "archivo": "countries/pitcairn-islands.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "poland",
+      "nombre": "Poland",
+      "codigoIso2": null,
+      "archivo": "countries/poland.json",
+      "cantidadDivisiones": 36,
+      "cantidadCiudades": 468
+    },
+    {
+      "id": "portugal",
+      "nombre": "Portugal",
+      "codigoIso2": null,
+      "archivo": "countries/portugal.json",
+      "cantidadDivisiones": 14,
+      "cantidadCiudades": 324
+    },
+    {
+      "id": "puerto-rico",
+      "nombre": "Puerto Rico",
+      "codigoIso2": null,
+      "archivo": "countries/puerto-rico.json",
+      "cantidadDivisiones": 10,
+      "cantidadCiudades": 48
+    },
+    {
+      "id": "qatar",
+      "nombre": "Qatar",
+      "codigoIso2": null,
+      "archivo": "countries/qatar.json",
+      "cantidadDivisiones": 10,
+      "cantidadCiudades": 13
+    },
+    {
+      "id": "republic-of-the-congo",
+      "nombre": "Republic of the Congo",
+      "codigoIso2": null,
+      "archivo": "countries/republic-of-the-congo.json",
+      "cantidadDivisiones": 10,
+      "cantidadCiudades": 30
+    },
+    {
+      "id": "reunion",
+      "nombre": "Réunion",
+      "codigoIso2": null,
+      "archivo": "countries/reunion.json",
+      "cantidadDivisiones": 4,
+      "cantidadCiudades": 23
+    },
+    {
+      "id": "romania",
+      "nombre": "Romania",
+      "codigoIso2": null,
+      "archivo": "countries/romania.json",
+      "cantidadDivisiones": 43,
+      "cantidadCiudades": 2890
+    },
+    {
+      "id": "russia",
+      "nombre": "Russia",
+      "codigoIso2": null,
+      "archivo": "countries/russia.json",
+      "cantidadDivisiones": 97,
+      "cantidadCiudades": 1336
+    },
+    {
+      "id": "rwanda",
+      "nombre": "Rwanda",
+      "codigoIso2": null,
+      "archivo": "countries/rwanda.json",
+      "cantidadDivisiones": 10,
+      "cantidadCiudades": 12
+    },
+    {
+      "id": "saint-barthelemy",
+      "nombre": "Saint Barthélemy",
+      "codigoIso2": null,
+      "archivo": "countries/saint-barthelemy.json",
+      "cantidadDivisiones": 0,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "saint-helena",
+      "nombre": "Saint Helena",
+      "codigoIso2": null,
+      "archivo": "countries/saint-helena.json",
+      "cantidadDivisiones": 4,
+      "cantidadCiudades": 1
+    },
+    {
+      "id": "saint-kitts-and-nevis",
+      "nombre": "Saint Kitts and Nevis",
+      "codigoIso2": null,
+      "archivo": "countries/saint-kitts-and-nevis.json",
+      "cantidadDivisiones": 14,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "saint-lucia",
+      "nombre": "Saint Lucia",
+      "codigoIso2": null,
+      "archivo": "countries/saint-lucia.json",
+      "cantidadDivisiones": 10,
+      "cantidadCiudades": 9
+    },
+    {
+      "id": "saint-martin",
+      "nombre": "Saint Martin",
+      "codigoIso2": null,
+      "archivo": "countries/saint-martin.json",
+      "cantidadDivisiones": 0,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "saint-pierre-and-miquelon",
+      "nombre": "Saint Pierre and Miquelon",
+      "codigoIso2": null,
+      "archivo": "countries/saint-pierre-and-miquelon.json",
+      "cantidadDivisiones": 2,
+      "cantidadCiudades": 2
+    },
+    {
+      "id": "saint-vincent-and-the-grenadines",
+      "nombre": "Saint Vincent and the Grenadines",
+      "codigoIso2": null,
+      "archivo": "countries/saint-vincent-and-the-grenadines.json",
+      "cantidadDivisiones": 6,
+      "cantidadCiudades": 6
+    },
+    {
+      "id": "samoa",
+      "nombre": "Samoa",
+      "codigoIso2": null,
+      "archivo": "countries/samoa.json",
+      "cantidadDivisiones": 11,
+      "cantidadCiudades": 11
+    },
+    {
+      "id": "san-marino",
+      "nombre": "San Marino",
+      "codigoIso2": null,
+      "archivo": "countries/san-marino.json",
+      "cantidadDivisiones": 9,
+      "cantidadCiudades": 7
+    },
+    {
+      "id": "sao-tome-and-principe",
+      "nombre": "São Tomé and Príncipe",
+      "codigoIso2": null,
+      "archivo": "countries/sao-tome-and-principe.json",
+      "cantidadDivisiones": 6,
+      "cantidadCiudades": 5
+    },
+    {
+      "id": "saudi-arabia",
+      "nombre": "Saudi Arabia",
+      "codigoIso2": null,
+      "archivo": "countries/saudi-arabia.json",
+      "cantidadDivisiones": 18,
+      "cantidadCiudades": 36
+    },
+    {
+      "id": "senegal",
+      "nombre": "Senegal",
+      "codigoIso2": null,
+      "archivo": "countries/senegal.json",
+      "cantidadDivisiones": 10,
+      "cantidadCiudades": 62
+    },
+    {
+      "id": "serbia",
+      "nombre": "Serbia",
+      "codigoIso2": null,
+      "archivo": "countries/serbia.json",
+      "cantidadDivisiones": 3,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "seychelles",
+      "nombre": "Seychelles",
+      "codigoIso2": null,
+      "archivo": "countries/seychelles.json",
+      "cantidadDivisiones": 5,
+      "cantidadCiudades": 3
+    },
+    {
+      "id": "sierra-leone",
+      "nombre": "Sierra Leone",
+      "codigoIso2": null,
+      "archivo": "countries/sierra-leone.json",
+      "cantidadDivisiones": 4,
+      "cantidadCiudades": 30
+    },
+    {
+      "id": "singapore",
+      "nombre": "Singapore",
+      "codigoIso2": null,
+      "archivo": "countries/singapore.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 1
+    },
+    {
+      "id": "sint-maarten",
+      "nombre": "Sint Maarten",
+      "codigoIso2": null,
+      "archivo": "countries/sint-maarten.json",
+      "cantidadDivisiones": 0,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "slovakia",
+      "nombre": "Slovakia",
+      "codigoIso2": null,
+      "archivo": "countries/slovakia.json",
+      "cantidadDivisiones": 8,
+      "cantidadCiudades": 173
+    },
+    {
+      "id": "slovenia",
+      "nombre": "Slovenia",
+      "codigoIso2": null,
+      "archivo": "countries/slovenia.json",
+      "cantidadDivisiones": 16,
+      "cantidadCiudades": 259
+    },
+    {
+      "id": "solomon-islands",
+      "nombre": "Solomon Islands",
+      "codigoIso2": null,
+      "archivo": "countries/solomon-islands.json",
+      "cantidadDivisiones": 9,
+      "cantidadCiudades": 7
+    },
+    {
+      "id": "somalia",
+      "nombre": "Somalia",
+      "codigoIso2": null,
+      "archivo": "countries/somalia.json",
+      "cantidadDivisiones": 17,
+      "cantidadCiudades": 46
+    },
+    {
+      "id": "south-africa",
+      "nombre": "South Africa",
+      "codigoIso2": null,
+      "archivo": "countries/south-africa.json",
+      "cantidadDivisiones": 14,
+      "cantidadCiudades": 102
+    },
+    {
+      "id": "south-georgia-and-the-south-sandwich-islands",
+      "nombre": "South Georgia and the South Sandwich Islands",
+      "codigoIso2": null,
+      "archivo": "countries/south-georgia-and-the-south-sandwich-islands.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "south-korea",
+      "nombre": "South Korea",
+      "codigoIso2": null,
+      "archivo": "countries/south-korea.json",
+      "cantidadDivisiones": 35,
+      "cantidadCiudades": 212
+    },
+    {
+      "id": "south-sudan",
+      "nombre": "South Sudan",
+      "codigoIso2": null,
+      "archivo": "countries/south-sudan.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "spain",
+      "nombre": "Spain",
+      "codigoIso2": null,
+      "archivo": "countries/spain.json",
+      "cantidadDivisiones": 66,
+      "cantidadCiudades": 724
+    },
+    {
+      "id": "sri-lanka",
+      "nombre": "Sri Lanka",
+      "codigoIso2": null,
+      "archivo": "countries/sri-lanka.json",
+      "cantidadDivisiones": 33,
+      "cantidadCiudades": 73
+    },
+    {
+      "id": "sudan",
+      "nombre": "Sudan",
+      "codigoIso2": null,
+      "archivo": "countries/sudan.json",
+      "cantidadDivisiones": 28,
+      "cantidadCiudades": 108
+    },
+    {
+      "id": "suriname",
+      "nombre": "Suriname",
+      "codigoIso2": null,
+      "archivo": "countries/suriname.json",
+      "cantidadDivisiones": 9,
+      "cantidadCiudades": 14
+    },
+    {
+      "id": "svalbard-and-jan-mayen",
+      "nombre": "Svalbard and Jan Mayen",
+      "codigoIso2": null,
+      "archivo": "countries/svalbard-and-jan-mayen.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 5
+    },
+    {
+      "id": "swaziland",
+      "nombre": "Swaziland",
+      "codigoIso2": null,
+      "archivo": "countries/swaziland.json",
+      "cantidadDivisiones": 4,
+      "cantidadCiudades": 26
+    },
+    {
+      "id": "sweden",
+      "nombre": "Sweden",
+      "codigoIso2": null,
+      "archivo": "countries/sweden.json",
+      "cantidadDivisiones": 29,
+      "cantidadCiudades": 140
+    },
+    {
+      "id": "switzerland",
+      "nombre": "Switzerland",
+      "codigoIso2": null,
+      "archivo": "countries/switzerland.json",
+      "cantidadDivisiones": 32,
+      "cantidadCiudades": 376
+    },
+    {
+      "id": "syria",
+      "nombre": "Syria",
+      "codigoIso2": null,
+      "archivo": "countries/syria.json",
+      "cantidadDivisiones": 15,
+      "cantidadCiudades": 54
+    },
+    {
+      "id": "taiwan",
+      "nombre": "Taiwan",
+      "codigoIso2": null,
+      "archivo": "countries/taiwan.json",
+      "cantidadDivisiones": 29,
+      "cantidadCiudades": 69
+    },
+    {
+      "id": "tajikistan",
+      "nombre": "Tajikistan",
+      "codigoIso2": null,
+      "archivo": "countries/tajikistan.json",
+      "cantidadDivisiones": 5,
+      "cantidadCiudades": 48
+    },
+    {
+      "id": "tanzania",
+      "nombre": "Tanzania",
+      "codigoIso2": null,
+      "archivo": "countries/tanzania.json",
+      "cantidadDivisiones": 21,
+      "cantidadCiudades": 56
+    },
+    {
+      "id": "thailand",
+      "nombre": "Thailand",
+      "codigoIso2": null,
+      "archivo": "countries/thailand.json",
+      "cantidadDivisiones": 78,
+      "cantidadCiudades": 133
+    },
+    {
+      "id": "togo",
+      "nombre": "Togo",
+      "codigoIso2": null,
+      "archivo": "countries/togo.json",
+      "cantidadDivisiones": 5,
+      "cantidadCiudades": 28
+    },
+    {
+      "id": "tokelau",
+      "nombre": "Tokelau",
+      "codigoIso2": null,
+      "archivo": "countries/tokelau.json",
+      "cantidadDivisiones": 3,
+      "cantidadCiudades": 3
+    },
+    {
+      "id": "tonga",
+      "nombre": "Tonga",
+      "codigoIso2": null,
+      "archivo": "countries/tonga.json",
+      "cantidadDivisiones": 5,
+      "cantidadCiudades": 9
+    },
+    {
+      "id": "trinidad-and-tobago",
+      "nombre": "Trinidad and Tobago",
+      "codigoIso2": null,
+      "archivo": "countries/trinidad-and-tobago.json",
+      "cantidadDivisiones": 16,
+      "cantidadCiudades": 12
+    },
+    {
+      "id": "tunisia",
+      "nombre": "Tunisia",
+      "codigoIso2": null,
+      "archivo": "countries/tunisia.json",
+      "cantidadDivisiones": 30,
+      "cantidadCiudades": 243
+    },
+    {
+      "id": "turkey",
+      "nombre": "Turkey",
+      "codigoIso2": null,
+      "archivo": "countries/turkey.json",
+      "cantidadDivisiones": 83,
+      "cantidadCiudades": 866
+    },
+    {
+      "id": "turkmenistan",
+      "nombre": "Turkmenistan",
+      "codigoIso2": null,
+      "archivo": "countries/turkmenistan.json",
+      "cantidadDivisiones": 6,
+      "cantidadCiudades": 54
+    },
+    {
+      "id": "turks-and-caicos-islands",
+      "nombre": "Turks and Caicos Islands",
+      "codigoIso2": null,
+      "archivo": "countries/turks-and-caicos-islands.json",
+      "cantidadDivisiones": 2,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "tuvalu",
+      "nombre": "Tuvalu",
+      "codigoIso2": null,
+      "archivo": "countries/tuvalu.json",
+      "cantidadDivisiones": 8,
+      "cantidadCiudades": 8
+    },
+    {
+      "id": "u-s-minor-outlying-islands",
+      "nombre": "U.S. Minor Outlying Islands",
+      "codigoIso2": null,
+      "archivo": "countries/u-s-minor-outlying-islands.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "u-s-virgin-islands",
+      "nombre": "U.S. Virgin Islands",
+      "codigoIso2": null,
+      "archivo": "countries/u-s-virgin-islands.json",
+      "cantidadDivisiones": 3,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "uganda",
+      "nombre": "Uganda",
+      "codigoIso2": null,
+      "archivo": "countries/uganda.json",
+      "cantidadDivisiones": 4,
+      "cantidadCiudades": 90
+    },
+    {
+      "id": "ukraine",
+      "nombre": "Ukraine",
+      "codigoIso2": null,
+      "archivo": "countries/ukraine.json",
+      "cantidadDivisiones": 30,
+      "cantidadCiudades": 117
+    },
+    {
+      "id": "united-arab-emirates",
+      "nombre": "United Arab Emirates",
+      "codigoIso2": null,
+      "archivo": "countries/united-arab-emirates.json",
+      "cantidadDivisiones": 9,
+      "cantidadCiudades": 8
+    },
+    {
+      "id": "united-kingdom",
+      "nombre": "United Kingdom",
+      "codigoIso2": null,
+      "archivo": "countries/united-kingdom.json",
+      "cantidadDivisiones": 114,
+      "cantidadCiudades": 1197
+    },
+    {
+      "id": "united-states",
+      "nombre": "United States",
+      "codigoIso2": null,
+      "archivo": "countries/united-states.json",
+      "cantidadDivisiones": 54,
+      "cantidadCiudades": 5171
+    },
+    {
+      "id": "uruguay",
+      "nombre": "Uruguay",
+      "codigoIso2": null,
+      "archivo": "countries/uruguay.json",
+      "cantidadDivisiones": 19,
+      "cantidadCiudades": 32
+    },
+    {
+      "id": "uzbekistan",
+      "nombre": "Uzbekistan",
+      "codigoIso2": null,
+      "archivo": "countries/uzbekistan.json",
+      "cantidadDivisiones": 14,
+      "cantidadCiudades": 187
+    },
+    {
+      "id": "vanuatu",
+      "nombre": "Vanuatu",
+      "codigoIso2": null,
+      "archivo": "countries/vanuatu.json",
+      "cantidadDivisiones": 6,
+      "cantidadCiudades": 8
+    },
+    {
+      "id": "vatican-city",
+      "nombre": "Vatican City",
+      "codigoIso2": null,
+      "archivo": "countries/vatican-city.json",
+      "cantidadDivisiones": 1,
+      "cantidadCiudades": 0
+    },
+    {
+      "id": "venezuela",
+      "nombre": "Venezuela",
+      "codigoIso2": null,
+      "archivo": "countries/venezuela.json",
+      "cantidadDivisiones": 24,
+      "cantidadCiudades": 101
+    },
+    {
+      "id": "vietnam",
+      "nombre": "Vietnam",
+      "codigoIso2": null,
+      "archivo": "countries/vietnam.json",
+      "cantidadDivisiones": 20,
+      "cantidadCiudades": 3
+    },
+    {
+      "id": "wallis-and-futuna",
+      "nombre": "Wallis and Futuna",
+      "codigoIso2": null,
+      "archivo": "countries/wallis-and-futuna.json",
+      "cantidadDivisiones": 3,
+      "cantidadCiudades": 34
+    },
+    {
+      "id": "western-sahara",
+      "nombre": "Western Sahara",
+      "codigoIso2": null,
+      "archivo": "countries/western-sahara.json",
+      "cantidadDivisiones": 4,
+      "cantidadCiudades": 3
+    },
+    {
+      "id": "yemen",
+      "nombre": "Yemen",
+      "codigoIso2": null,
+      "archivo": "countries/yemen.json",
+      "cantidadDivisiones": 19,
+      "cantidadCiudades": 39
+    },
+    {
+      "id": "zambia",
+      "nombre": "Zambia",
+      "codigoIso2": null,
+      "archivo": "countries/zambia.json",
+      "cantidadDivisiones": 9,
+      "cantidadCiudades": 50
+    },
+    {
+      "id": "zimbabwe",
+      "nombre": "Zimbabwe",
+      "codigoIso2": null,
+      "archivo": "countries/zimbabwe.json",
+      "cantidadDivisiones": 10,
+      "cantidadCiudades": 18
+    }
+  ]
+}

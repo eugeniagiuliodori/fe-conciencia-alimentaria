@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "saint-pierre-and-miquelon",
+    "nombre": "Saint Pierre and Miquelon",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "miquelon-langlade",
+      "nombre": "Miquelon-Langlade",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Miquelon"
+      ]
+    },
+    {
+      "id": "saint-pierre",
+      "nombre": "Saint-Pierre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Saint-Pierre"
+      ]
+    }
+  ]
+}

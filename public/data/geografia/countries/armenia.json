@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "armenia",
+    "nombre": "Armenia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "aragatsotn",
+      "nombre": "Aragatsotn",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ashtarak",
+        "Talin"
+      ]
+    },
+    {
+      "id": "ararat",
+      "nombre": "Ararat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ararat",
+        "Artashat"
+      ]
+    },
+    {
+      "id": "armavir",
+      "nombre": "Armavir",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Armavir",
+        "Vagharshapat"
+      ]
+    },
+    {
+      "id": "gegharkunik",
+      "nombre": "Gegharkunik",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gavar",
+        "Martuni",
+        "Sevan",
+        "Vardenis"
+      ]
+    },
+    {
+      "id": "kotaik",
+      "nombre": "Kotaik",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abovyan",
+        "Arzni",
+        "Charentsavan",
+        "Hrazdan"
+      ]
+    },
+    {
+      "id": "lori",
+      "nombre": "Lori",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akhtala",
+        "Alaverdi",
+        "Spitak",
+        "Stepanavan",
+        "Tashir",
+        "Vanadzor"
+      ]
+    },
+    {
+      "id": "shirak",
+      "nombre": "Shirak",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Artik",
+        "Gyumri"
+      ]
+    },
+    {
+      "id": "stepanakert",
+      "nombre": "Stepanakert",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Stepanakert"
+      ]
+    },
+    {
+      "id": "syunik",
+      "nombre": "Syunik",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Angeghakot",
+        "Goris",
+        "Kajaran",
+        "Kapan",
+        "Meghri",
+        "Sisian"
+      ]
+    },
+    {
+      "id": "tavush",
+      "nombre": "Tavush",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dilijan",
+        "Ijevan"
+      ]
+    },
+    {
+      "id": "vayots-dzor",
+      "nombre": "Vayots Dzor",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "yerevan",
+      "nombre": "Yerevan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Yerevan"
+      ]
+    }
+  ]
+}

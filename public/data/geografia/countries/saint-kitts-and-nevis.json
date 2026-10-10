@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "saint-kitts-and-nevis",
+    "nombre": "Saint Kitts and Nevis",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "christ-church-nichola-town",
+      "nombre": "Christ Church Nichola Town",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-anne-sandy-point",
+      "nombre": "Saint Anne Sandy Point",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-george-basseterre",
+      "nombre": "Saint George Basseterre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-george-gingerland",
+      "nombre": "Saint George Gingerland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-james-windward",
+      "nombre": "Saint James Windward",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-john-capesterre",
+      "nombre": "Saint John Capesterre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-john-figtree",
+      "nombre": "Saint John Figtree",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-mary-cayon",
+      "nombre": "Saint Mary Cayon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-paul-capesterre",
+      "nombre": "Saint Paul Capesterre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-paul-charlestown",
+      "nombre": "Saint Paul Charlestown",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-peter-basseterre",
+      "nombre": "Saint Peter Basseterre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-thomas-lowland",
+      "nombre": "Saint Thomas Lowland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-thomas-middle-island",
+      "nombre": "Saint Thomas Middle Island",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "trinity-palmetto-point",
+      "nombre": "Trinity Palmetto Point",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

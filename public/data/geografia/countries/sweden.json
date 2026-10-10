@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "sweden",
+    "nombre": "Sweden",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "alvsborgs-lan",
+      "nombre": "Alvsborgs Lan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "angermanland",
+      "nombre": "Angermanland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "blekinge",
+      "nombre": "Blekinge",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Karlshamn",
+        "Karlskrona",
+        "Ronneby"
+      ]
+    },
+    {
+      "id": "bohuslan",
+      "nombre": "Bohuslan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Stenungsund"
+      ]
+    },
+    {
+      "id": "dalarna",
+      "nombre": "Dalarna",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Avesta",
+        "Borlange",
+        "Falun",
+        "Hedemora",
+        "Ludvika",
+        "Malung"
+      ]
+    },
+    {
+      "id": "gavleborg",
+      "nombre": "Gavleborg",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bollnas",
+        "Bro",
+        "Gavle",
+        "Hudiksvall",
+        "Sandviken",
+        "Soderhamn"
+      ]
+    },
+    {
+      "id": "gaza",
+      "nombre": "Gaza",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "gotland",
+      "nombre": "Gotland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Skara",
+        "Visby"
+      ]
+    },
+    {
+      "id": "halland",
+      "nombre": "Halland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Anderstorp",
+        "Falkenberg",
+        "Halmstad",
+        "Ullared",
+        "Varberg"
+      ]
+    },
+    {
+      "id": "jamtland",
+      "nombre": "Jamtland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Farjestaden",
+        "Ostersund"
+      ]
+    },
+    {
+      "id": "jonkoping",
+      "nombre": "Jonkoping",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gislaved",
+        "Jonkoping",
+        "Nassjo",
+        "Tranas",
+        "Varnamo",
+        "Vetlanda"
+      ]
+    },
+    {
+      "id": "kalmar",
+      "nombre": "Kalmar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Blomstermala",
+        "Kalmar",
+        "Nybro",
+        "Oskarshamn",
+        "Solna",
+        "Torsas",
+        "Vastervik"
+      ]
+    },
+    {
+      "id": "kristianstads",
+      "nombre": "Kristianstads",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Habo",
+        "Limhamn",
+        "Segeltorp",
+        "Svedala"
+      ]
+    },
+    {
+      "id": "kronoberg",
+      "nombre": "Kronoberg",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ljungby",
+        "Vaxjo"
+      ]
+    },
+    {
+      "id": "norrbotten",
+      "nombre": "Norrbotten",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Boden",
+        "Kiruna",
+        "Lulea",
+        "Pitea"
+      ]
+    },
+    {
+      "id": "orebro",
+      "nombre": "Orebro",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Askersund",
+        "Karlskoga",
+        "Kumla",
+        "Orebro"
+      ]
+    },
+    {
+      "id": "ostergotland",
+      "nombre": "Ostergotland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Finspang",
+        "Follinge",
+        "Kisa",
+        "Linkoping",
+        "Mjolby",
+        "Motala",
+        "Norrkoping",
+        "Vadstena"
+      ]
+    },
+    {
+      "id": "saltsjo-boo",
+      "nombre": "Saltsjo-Boo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Skarpovagen"
+      ]
+    },
+    {
+      "id": "skane",
+      "nombre": "Skane",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Angelholm",
+        "Arlov",
+        "Bastad",
+        "Eslov",
+        "Hassleholm",
+        "Helsingborg",
+        "Hjarup",
+        "Hoganas",
+        "Horby",
+        "Jonstorp",
+        "Klagstorp",
+        "Kristianstad",
+        "Landskrona",
+        "Lund",
+        "Malmo",
+        "Skanor",
+        "Staffanstorp",
+        "Trelleborg",
+        "Ystad"
+      ]
+    },
+    {
+      "id": "smaland",
+      "nombre": "Smaland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hillerstorp",
+        "Markaryd",
+        "Smalandsstenar"
+      ]
+    },
+    {
+      "id": "sodermanland",
+      "nombre": "Sodermanland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Eskilstuna",
+        "Gnesta",
+        "Katrineholm",
+        "Nacka Strand",
+        "Nykoping",
+        "Strangnas",
+        "Vingaker"
+      ]
+    },
+    {
+      "id": "stockholm",
+      "nombre": "Stockholm",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akersberga",
+        "Boo",
+        "Bromma",
+        "Djursholm",
+        "Hallstavik",
+        "Jarfalla",
+        "Johannesfred",
+        "Lidingo",
+        "Marsta",
+        "Norrtalje",
+        "Norsborg",
+        "Nynashamn",
+        "Rosersberg",
+        "Sodertalje",
+        "Sollentuna",
+        "Stockholm",
+        "Sundbyberg",
+        "Taby",
+        "Tumba",
+        "Upplands-Vasby",
+        "Vallentuna",
+        "Vasterhaninge"
+      ]
+    },
+    {
+      "id": "uppsala",
+      "nombre": "Uppsala",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Balsta",
+        "Enkoping",
+        "Knivsta",
+        "Skyttorp",
+        "Storvreta",
+        "Uppsala"
+      ]
+    },
+    {
+      "id": "varmland",
+      "nombre": "Varmland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arvika",
+        "Hammaro",
+        "Karlstad",
+        "Kristinehamn",
+        "Skoghall"
+      ]
+    },
+    {
+      "id": "vasterbotten",
+      "nombre": "Vasterbotten",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Guglingen",
+        "Robertsfors",
+        "Skelleftea",
+        "Umea"
+      ]
+    },
+    {
+      "id": "vastergotland",
+      "nombre": "Vastergotland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gothenburg",
+        "Kallered",
+        "Kvanum",
+        "Timmersdala"
+      ]
+    },
+    {
+      "id": "vasternorrland",
+      "nombre": "Vasternorrland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Harnosand",
+        "Ornskoldsvik",
+        "Sundsvall"
+      ]
+    },
+    {
+      "id": "vastmanland",
+      "nombre": "Vastmanland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arboga",
+        "Fagersta",
+        "Hallstahammar",
+        "Koping",
+        "Sala",
+        "Vasteras"
+      ]
+    },
+    {
+      "id": "vastra-gotaland",
+      "nombre": "Vastra Gotaland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

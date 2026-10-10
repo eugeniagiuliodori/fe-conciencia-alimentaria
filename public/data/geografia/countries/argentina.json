@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "argentina",
+    "nombre": "Argentina",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "buenos-aires",
+      "nombre": "Buenos Aires",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "catamarca",
+      "nombre": "Catamarca",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Catamarca"
+      ]
+    },
+    {
+      "id": "chaco",
+      "nombre": "Chaco",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Presidencia Roque Saenz Pena",
+        "Resistencia"
+      ]
+    },
+    {
+      "id": "chubut",
+      "nombre": "Chubut",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Comodoro Rivadavia",
+        "Puerto Madryn",
+        "Rawson",
+        "Trelew"
+      ]
+    },
+    {
+      "id": "cordoba",
+      "nombre": "Cordoba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alta Gracia",
+        "Bell Ville",
+        "Cordoba",
+        "Rio Cuarto",
+        "Rio Tercero",
+        "San Francisco",
+        "Villa Carlos Paz",
+        "Villa Maria"
+      ]
+    },
+    {
+      "id": "corrientes",
+      "nombre": "Corrientes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Corrientes",
+        "Goya",
+        "Mercedes",
+        "San Lorenzo"
+      ]
+    },
+    {
+      "id": "distrito-federal",
+      "nombre": "Distrito Federal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "entre-rios",
+      "nombre": "Entre Rios",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "formosa",
+      "nombre": "Formosa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Formosa"
+      ]
+    },
+    {
+      "id": "jujuy",
+      "nombre": "Jujuy",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jujuy",
+        "Libertador General San Martin",
+        "San Pedro"
+      ]
+    },
+    {
+      "id": "la-pampa",
+      "nombre": "La Pampa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "la-rioja",
+      "nombre": "La Rioja",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "mendoza",
+      "nombre": "Mendoza",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Godoy Cruz",
+        "Lujan",
+        "Mendoza",
+        "Rivadavia",
+        "San Martin",
+        "San Rafael"
+      ]
+    },
+    {
+      "id": "misiones",
+      "nombre": "Misiones",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Eldorado",
+        "Obera",
+        "Posadas"
+      ]
+    },
+    {
+      "id": "neuquen",
+      "nombre": "Neuquen",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cutral Co",
+        "Neuquen"
+      ]
+    },
+    {
+      "id": "rio-negro",
+      "nombre": "Rio Negro",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "salta",
+      "nombre": "Salta",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Salta",
+        "San Ramon de la Nueva Oran",
+        "Tartagal"
+      ]
+    },
+    {
+      "id": "san-juan",
+      "nombre": "San Juan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "san-luis",
+      "nombre": "San Luis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "santa-cruz",
+      "nombre": "Santa Cruz",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "santa-fe",
+      "nombre": "Santa Fe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "santiago-del-estero",
+      "nombre": "Santiago del Estero",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tierra-del-fuego",
+      "nombre": "Tierra del Fuego",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tucuman",
+      "nombre": "Tucuman",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tucuman"
+      ]
+    }
+  ]
+}

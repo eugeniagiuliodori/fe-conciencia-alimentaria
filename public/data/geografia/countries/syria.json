@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "syria",
+    "nombre": "Syria",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "al-hasakah",
+      "nombre": "al-Hasakah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Hasakah",
+        "al-Malikiyah",
+        "al-Qamishli",
+        "Ra''s-al-''Ayn"
+      ]
+    },
+    {
+      "id": "al-ladhiqiyah",
+      "nombre": "al-Ladhiqiyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Ladhiqiyah",
+        "Jablah",
+        "Lattakia"
+      ]
+    },
+    {
+      "id": "al-qunaytirah",
+      "nombre": "al-Qunaytirah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Qunaytirah"
+      ]
+    },
+    {
+      "id": "aleppo",
+      "nombre": "Aleppo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aleppo"
+      ]
+    },
+    {
+      "id": "ar-raqqah",
+      "nombre": "ar-Raqqah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ar-Raqqah",
+        "ath-Thawrah"
+      ]
+    },
+    {
+      "id": "as-suwayda",
+      "nombre": "as-Suwayda",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "as-Suwayda"
+      ]
+    },
+    {
+      "id": "dar-a",
+      "nombre": "Dar''a",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dar''a",
+        "Nawa"
+      ]
+    },
+    {
+      "id": "dayr-az-zawr",
+      "nombre": "Dayr-az-Zawr",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abu Kamal",
+        "al-Mayadin",
+        "Dayr az-Zawr"
+      ]
+    },
+    {
+      "id": "dimashq",
+      "nombre": "Dimashq",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Qutayfah",
+        "an-Nabk",
+        "at-Tall",
+        "az-Zabadani",
+        "Damascus",
+        "Darayya",
+        "Duma",
+        "Hajar Aswad",
+        "Harasta al-Bas",
+        "Jaramanah",
+        "Kabir-as-Sit",
+        "Kesweh",
+        "Qatana",
+        "Yabrud"
+      ]
+    },
+    {
+      "id": "halab",
+      "nombre": "Halab",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "A''zaz",
+        "Afrin",
+        "al-Bab",
+        "as-Safirah",
+        "Ayn-al-''Arab",
+        "Halab",
+        "Manbij"
+      ]
+    },
+    {
+      "id": "hamah",
+      "nombre": "Hamah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hamah",
+        "Masyaf",
+        "Muhradah",
+        "Salamiyah"
+      ]
+    },
+    {
+      "id": "hims",
+      "nombre": "Hims",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Qusayr",
+        "ar-Rastan",
+        "Hims",
+        "Homs",
+        "Tudmur"
+      ]
+    },
+    {
+      "id": "idlib",
+      "nombre": "Idlib",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ariha",
+        "Idlib",
+        "Jisr-ash-Shughur",
+        "Ma''arrat-an-Nu''man"
+      ]
+    },
+    {
+      "id": "madinat-dimashq",
+      "nombre": "Madinat Dimashq",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tartus",
+      "nombre": "Tartus",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baniyas",
+        "Safita",
+        "Tartus"
+      ]
+    }
+  ]
+}

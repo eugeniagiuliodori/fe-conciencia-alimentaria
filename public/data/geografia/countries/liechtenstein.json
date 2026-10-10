@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "liechtenstein",
+    "nombre": "Liechtenstein",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "balzers",
+      "nombre": "Balzers",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Balzers"
+      ]
+    },
+    {
+      "id": "eschen",
+      "nombre": "Eschen",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Eschen"
+      ]
+    },
+    {
+      "id": "gamprin",
+      "nombre": "Gamprin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gamprin"
+      ]
+    },
+    {
+      "id": "mauren",
+      "nombre": "Mauren",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mauren"
+      ]
+    },
+    {
+      "id": "planken",
+      "nombre": "Planken",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Planken"
+      ]
+    },
+    {
+      "id": "ruggell",
+      "nombre": "Ruggell",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ruggell"
+      ]
+    },
+    {
+      "id": "schaan",
+      "nombre": "Schaan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Schaan"
+      ]
+    },
+    {
+      "id": "schellenberg",
+      "nombre": "Schellenberg",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Schellenberg"
+      ]
+    },
+    {
+      "id": "triesen",
+      "nombre": "Triesen",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Triesen"
+      ]
+    },
+    {
+      "id": "triesenberg",
+      "nombre": "Triesenberg",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Triesenberg"
+      ]
+    },
+    {
+      "id": "vaduz",
+      "nombre": "Vaduz",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Vaduz"
+      ]
+    }
+  ]
+}

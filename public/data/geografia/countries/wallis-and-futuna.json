@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "wallis-and-futuna",
+    "nombre": "Wallis and Futuna",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "alo",
+      "nombre": "Alo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kolia",
+        "Mala''e",
+        "Ono",
+        "Poi",
+        "Tamana",
+        "Taoa",
+        "Tuatafa",
+        "Vele"
+      ]
+    },
+    {
+      "id": "singave",
+      "nombre": "Singave",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fiua",
+        "Leava",
+        "Nuku",
+        "Tavai",
+        "Toloke",
+        "Vaisei"
+      ]
+    },
+    {
+      "id": "wallis",
+      "nombre": "Wallis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ahoa",
+        "Aka Aka",
+        "Alele",
+        "Falaleu",
+        "Gahi",
+        "Haafuasia",
+        "Haatofo",
+        "Halalo",
+        "Kolopopo",
+        "Lavegahau",
+        "Liku",
+        "Mala''e",
+        "Malaefoou",
+        "Mata''Utu",
+        "Teesi",
+        "Tepa",
+        "Utuofa",
+        "Vailala",
+        "Vaimalau",
+        "Vaitupu"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "kiribati",
+    "nombre": "Kiribati",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "abaiang",
+      "nombre": "Abaiang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Taburao"
+      ]
+    },
+    {
+      "id": "abemana",
+      "nombre": "Abemana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Binoinano"
+      ]
+    },
+    {
+      "id": "aranuka",
+      "nombre": "Aranuka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Takaeang"
+      ]
+    },
+    {
+      "id": "arorae",
+      "nombre": "Arorae",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Roreti"
+      ]
+    },
+    {
+      "id": "banaba",
+      "nombre": "Banaba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ooma"
+      ]
+    },
+    {
+      "id": "beru",
+      "nombre": "Beru",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tabukiniberu"
+      ]
+    },
+    {
+      "id": "butaritari",
+      "nombre": "Butaritari",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Butaritari"
+      ]
+    },
+    {
+      "id": "kiritimati",
+      "nombre": "Kiritimati",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "London"
+      ]
+    },
+    {
+      "id": "kuria",
+      "nombre": "Kuria",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tabontebike"
+      ]
+    },
+    {
+      "id": "maiana",
+      "nombre": "Maiana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tabiauea"
+      ]
+    },
+    {
+      "id": "makin",
+      "nombre": "Makin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Makin"
+      ]
+    },
+    {
+      "id": "marakei",
+      "nombre": "Marakei",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rawannawi"
+      ]
+    },
+    {
+      "id": "nikunau",
+      "nombre": "Nikunau",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rungata"
+      ]
+    },
+    {
+      "id": "nonouti",
+      "nombre": "Nonouti",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Temaraia"
+      ]
+    },
+    {
+      "id": "onotoa",
+      "nombre": "Onotoa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ijaki"
+      ]
+    },
+    {
+      "id": "phoenix-islands",
+      "nombre": "Phoenix Islands",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tabiteuea-north",
+      "nombre": "Tabiteuea North",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tabiteuea-south",
+      "nombre": "Tabiteuea South",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tabuaeran",
+      "nombre": "Tabuaeran",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nabari"
+      ]
+    },
+    {
+      "id": "tamana",
+      "nombre": "Tamana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abaokoro"
+      ]
+    },
+    {
+      "id": "tarawa-north",
+      "nombre": "Tarawa North",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tarawa-south",
+      "nombre": "Tarawa South",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "teraina",
+      "nombre": "Teraina",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Washington"
+      ]
+    }
+  ]
+}

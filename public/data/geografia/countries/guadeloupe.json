@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "guadeloupe",
+    "nombre": "Guadeloupe",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "basse-terre",
+      "nombre": "Basse-Terre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baie-Mahault",
+        "Baillif",
+        "Basse-Terre",
+        "Bouillante",
+        "Capesterre-Belle-Eau",
+        "Gourbeyre",
+        "Lamentin",
+        "Petit-Bourg",
+        "Pointe-Noire",
+        "Saint-Claude",
+        "Sainte-Rose",
+        "Trois-Rivieres",
+        "Vieux-Habitants"
+      ]
+    },
+    {
+      "id": "grande-terre",
+      "nombre": "Grande-Terre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Anse-Bertrand",
+        "Le Gosier",
+        "Le Moule",
+        "Les Abymes",
+        "Morne-a-l''Eau",
+        "Petit-Canal",
+        "Point-a-Pitre",
+        "Port-Louis",
+        "Saint-Francois",
+        "Sainte-Anne"
+      ]
+    },
+    {
+      "id": "iles-des-saintes",
+      "nombre": "Iles des Saintes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "la-desirade",
+      "nombre": "La Desirade",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "marie-galante",
+      "nombre": "Marie-Galante",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Grand-Bourg"
+      ]
+    },
+    {
+      "id": "saint-barthelemy",
+      "nombre": "Saint Barthelemy",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-martin",
+      "nombre": "Saint Martin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

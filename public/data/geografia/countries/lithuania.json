@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "lithuania",
+    "nombre": "Lithuania",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "alytaus",
+      "nombre": "Alytaus",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alytus",
+        "Daugai",
+        "Druskininkai",
+        "Lazdijai",
+        "Simnas",
+        "Varena",
+        "Veisiejai"
+      ]
+    },
+    {
+      "id": "anyksciai",
+      "nombre": "Anyksciai",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Anyksciai"
+      ]
+    },
+    {
+      "id": "kauno",
+      "nombre": "Kauno",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ariogala",
+        "Birshtonas",
+        "Dotnuva",
+        "Ezherelis",
+        "Garliava",
+        "Jieznas",
+        "Jonava",
+        "Kachergine",
+        "Kaishiadorys",
+        "Kaunas",
+        "Kedainiai",
+        "Kulautuva",
+        "Prienai",
+        "Raseiniai",
+        "Vilkija",
+        "Zhiezhmariai"
+      ]
+    },
+    {
+      "id": "klaipedos",
+      "nombre": "Klaipedos",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gargzhdai",
+        "Klaipeda",
+        "Kretinga",
+        "Neringa",
+        "Pagegiai",
+        "Palanga",
+        "Panemune",
+        "Priekule",
+        "Rusne",
+        "Salantai",
+        "Shilute",
+        "Skuodas",
+        "Zhemaichiu Naumiestis"
+      ]
+    },
+    {
+      "id": "marijampoles",
+      "nombre": "Marijampoles",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gelgaudishkis",
+        "Kalvarija",
+        "Kazlu Ruda",
+        "Kudirkos Naumiestis",
+        "Kybartai",
+        "Marijampole",
+        "Shakiai",
+        "Vilkavishkis",
+        "Virbalis"
+      ]
+    },
+    {
+      "id": "panevezhio",
+      "nombre": "Panevezhio",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Birzhai",
+        "Jonishkelis",
+        "Juodupe",
+        "Kupishkis",
+        "Obeliai",
+        "Pandelys",
+        "Panevezhys",
+        "Panevezio",
+        "Pasvalys",
+        "Ramygala",
+        "Rokishkis",
+        "Subachius",
+        "Vabalninkas"
+      ]
+    },
+    {
+      "id": "panevezys",
+      "nombre": "Panevezys",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Panevezys"
+      ]
+    },
+    {
+      "id": "shiauliu",
+      "nombre": "Shiauliu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akmene",
+        "Jonishkis",
+        "Kelme",
+        "Kurshenai",
+        "Linkuva",
+        "Naujoji Akmene",
+        "Pakruojis",
+        "Radvilishkis",
+        "Sheduva",
+        "Shiauliai",
+        "Siauliai",
+        "Tyruliai",
+        "Tytuvenai",
+        "Uzhventis",
+        "Venta",
+        "Viekshniai",
+        "Zhagare"
+      ]
+    },
+    {
+      "id": "taurages",
+      "nombre": "Taurages",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jurbarkas",
+        "Shilale",
+        "Skaudvile",
+        "Smalininkai",
+        "Taurage"
+      ]
+    },
+    {
+      "id": "telshiu",
+      "nombre": "Telshiu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Guglingen",
+        "Mazheikiai",
+        "Plunge",
+        "Rietavas",
+        "Seda",
+        "Telshiai",
+        "Varniai"
+      ]
+    },
+    {
+      "id": "telsiai",
+      "nombre": "Telsiai",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mazeikiai"
+      ]
+    },
+    {
+      "id": "utenos",
+      "nombre": "Utenos",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Anykshchiai",
+        "Dukshtas",
+        "Dusetos",
+        "Ignalina",
+        "Kavarskas",
+        "Moletai",
+        "Troshkunai",
+        "Turmantas",
+        "Utena",
+        "Visaginas",
+        "Zarasai"
+      ]
+    },
+    {
+      "id": "vilniaus",
+      "nombre": "Vilniaus",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baltoji Voke",
+        "Eishishkes",
+        "Elektrenai",
+        "Grigishkes",
+        "Lentvaris",
+        "Nemenchine",
+        "Pabrade",
+        "Rudishkes",
+        "Shalchininkai",
+        "Shirvintos",
+        "Shvenchioneliai",
+        "Shvenchionys",
+        "Trakai",
+        "Ukmerge",
+        "Vievis",
+        "Vilnius"
+      ]
+    }
+  ]
+}

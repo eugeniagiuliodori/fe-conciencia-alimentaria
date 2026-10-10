@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "suriname",
+    "nombre": "Suriname",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "brokopondo",
+      "nombre": "Brokopondo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Brokopondo",
+        "Brownsweg"
+      ]
+    },
+    {
+      "id": "commewijne",
+      "nombre": "Commewijne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Marienburg",
+        "Meerzorg",
+        "Nieuw Amsterdam"
+      ]
+    },
+    {
+      "id": "coronie",
+      "nombre": "Coronie",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Totness"
+      ]
+    },
+    {
+      "id": "marowijne",
+      "nombre": "Marowijne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Albina",
+        "Moengo"
+      ]
+    },
+    {
+      "id": "nickerie",
+      "nombre": "Nickerie",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nieuw Nickerie",
+        "Wageningen"
+      ]
+    },
+    {
+      "id": "para",
+      "nombre": "Para",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Onverwacht"
+      ]
+    },
+    {
+      "id": "paramaribo",
+      "nombre": "Paramaribo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Paramaribo"
+      ]
+    },
+    {
+      "id": "saramacca",
+      "nombre": "Saramacca",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Groningen"
+      ]
+    },
+    {
+      "id": "wanica",
+      "nombre": "Wanica",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lelydorp"
+      ]
+    }
+  ]
+}

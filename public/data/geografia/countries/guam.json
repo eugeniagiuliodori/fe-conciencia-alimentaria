@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "guam",
+    "nombre": "Guam",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "agana-heights",
+      "nombre": "Agana Heights",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "agat",
+      "nombre": "Agat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Agat"
+      ]
+    },
+    {
+      "id": "barrigada",
+      "nombre": "Barrigada",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Barrigada",
+        "Barrigada Heights"
+      ]
+    },
+    {
+      "id": "chalan-pago-ordot",
+      "nombre": "Chalan-Pago-Ordot",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chalan Pago",
+        "Ordot"
+      ]
+    },
+    {
+      "id": "dededo",
+      "nombre": "Dededo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Astumbo",
+        "Dededo",
+        "Finegayan Station"
+      ]
+    },
+    {
+      "id": "hagatna",
+      "nombre": "Hagatna",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Agana",
+        "Agana Station"
+      ]
+    },
+    {
+      "id": "inarajan",
+      "nombre": "Inarajan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Inarajan"
+      ]
+    },
+    {
+      "id": "mangilao",
+      "nombre": "Mangilao",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mangilao"
+      ]
+    },
+    {
+      "id": "merizo",
+      "nombre": "Merizo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Merizo"
+      ]
+    },
+    {
+      "id": "mongmong-toto-maite",
+      "nombre": "Mongmong-Toto-Maite",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mongmong",
+        "Toto"
+      ]
+    },
+    {
+      "id": "santa-rita",
+      "nombre": "Santa Rita",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sinajana",
+      "nombre": "Sinajana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sinajana"
+      ]
+    },
+    {
+      "id": "talofofo",
+      "nombre": "Talofofo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Talofofo"
+      ]
+    },
+    {
+      "id": "tamuning",
+      "nombre": "Tamuning",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tamuning"
+      ]
+    },
+    {
+      "id": "yigo",
+      "nombre": "Yigo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Anderson Air Force Base",
+        "Yigo"
+      ]
+    },
+    {
+      "id": "yona",
+      "nombre": "Yona",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Yona"
+      ]
+    }
+  ]
+}

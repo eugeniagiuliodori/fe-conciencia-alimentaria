@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "gabon",
+    "nombre": "Gabon",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "estuaire",
+      "nombre": "Estuaire",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cocobeach",
+        "Kango",
+        "Libreville",
+        "Nkan",
+        "Ntoum"
+      ]
+    },
+    {
+      "id": "haut-ogooue",
+      "nombre": "Haut-Ogooue",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lekoni",
+        "Masuku",
+        "Moanda",
+        "Mounana",
+        "Okandja"
+      ]
+    },
+    {
+      "id": "moyen-ogooue",
+      "nombre": "Moyen-Ogooue",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lambarene",
+        "Ndjole"
+      ]
+    },
+    {
+      "id": "ngounie",
+      "nombre": "Ngounie",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fougamou",
+        "Mbigou",
+        "Mimongo",
+        "Mouila",
+        "Ndende"
+      ]
+    },
+    {
+      "id": "nyanga",
+      "nombre": "Nyanga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mayumba",
+        "Tchibanga",
+        "Tsogni"
+      ]
+    },
+    {
+      "id": "ogooue-ivindo",
+      "nombre": "Ogooue-Ivindo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Booue",
+        "Makokou",
+        "Mekambo"
+      ]
+    },
+    {
+      "id": "ogooue-lolo",
+      "nombre": "Ogooue-Lolo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Koulamoutou",
+        "Lastoursville"
+      ]
+    },
+    {
+      "id": "ogooue-maritime",
+      "nombre": "Ogooue-Maritime",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gamba",
+        "Omboue",
+        "Port-Gentil",
+        "Sette Cama"
+      ]
+    },
+    {
+      "id": "woleu-ntem",
+      "nombre": "Woleu-Ntem",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bitam",
+        "Lalara",
+        "Medouneu",
+        "Minvoul",
+        "Mitzic",
+        "Oyem"
+      ]
+    }
+  ]
+}

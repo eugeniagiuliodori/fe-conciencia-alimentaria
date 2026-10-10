@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "mongolia",
+    "nombre": "Mongolia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "arhangaj",
+      "nombre": "Arhangaj",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cecerleg"
+      ]
+    },
+    {
+      "id": "bajan-olgij",
+      "nombre": "Bajan-Olgij",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Olgij"
+      ]
+    },
+    {
+      "id": "bajanhongor",
+      "nombre": "Bajanhongor",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bajanhongor"
+      ]
+    },
+    {
+      "id": "bulgan",
+      "nombre": "Bulgan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bulgan"
+      ]
+    },
+    {
+      "id": "darhan-uul",
+      "nombre": "Darhan-Uul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Darhan"
+      ]
+    },
+    {
+      "id": "dornod",
+      "nombre": "Dornod",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chojbalsan"
+      ]
+    },
+    {
+      "id": "dornogovi",
+      "nombre": "Dornogovi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sajnshand"
+      ]
+    },
+    {
+      "id": "dundgovi",
+      "nombre": "Dundgovi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mandalgovi"
+      ]
+    },
+    {
+      "id": "govi-altaj",
+      "nombre": "Govi-Altaj",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Altaj"
+      ]
+    },
+    {
+      "id": "govisumber",
+      "nombre": "Govisumber",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chojr"
+      ]
+    },
+    {
+      "id": "hentij",
+      "nombre": "Hentij",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ondorhaan"
+      ]
+    },
+    {
+      "id": "hovd",
+      "nombre": "Hovd",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hovd"
+      ]
+    },
+    {
+      "id": "hovsgol",
+      "nombre": "Hovsgol",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Moron"
+      ]
+    },
+    {
+      "id": "omnogovi",
+      "nombre": "Omnogovi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dalanzadgad"
+      ]
+    },
+    {
+      "id": "orhon",
+      "nombre": "Orhon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Erdenet"
+      ]
+    },
+    {
+      "id": "ovorhangaj",
+      "nombre": "Ovorhangaj",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arvajheer"
+      ]
+    },
+    {
+      "id": "selenge",
+      "nombre": "Selenge",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Suhbaatar",
+        "Zuunharaa"
+      ]
+    },
+    {
+      "id": "suhbaatar",
+      "nombre": "Suhbaatar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baruun-Urt"
+      ]
+    },
+    {
+      "id": "tov",
+      "nombre": "Tov",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nalajh",
+        "Zuunmod"
+      ]
+    },
+    {
+      "id": "ulaanbaatar",
+      "nombre": "Ulaanbaatar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ulaanbaatar"
+      ]
+    },
+    {
+      "id": "uvs",
+      "nombre": "Uvs",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ulaangom"
+      ]
+    },
+    {
+      "id": "zavhan",
+      "nombre": "Zavhan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tosoncengel",
+        "Uliastaj"
+      ]
+    }
+  ]
+}

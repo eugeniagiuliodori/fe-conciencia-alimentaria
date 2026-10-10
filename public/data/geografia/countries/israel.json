@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "israel",
+    "nombre": "Israel",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "beit-hanania",
+      "nombre": "Beit Hanania",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ben-gurion-airport",
+      "nombre": "Ben Gurion Airport",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "bethlehem",
+      "nombre": "Bethlehem",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bethlehem"
+      ]
+    },
+    {
+      "id": "caesarea",
+      "nombre": "Caesarea",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Caesarea"
+      ]
+    },
+    {
+      "id": "centre",
+      "nombre": "Centre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Petach Tikva",
+        "Ramallah"
+      ]
+    },
+    {
+      "id": "gaza",
+      "nombre": "Gaza",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gaza"
+      ]
+    },
+    {
+      "id": "hadaron",
+      "nombre": "Hadaron",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arad",
+        "Ashdod",
+        "Ashqelon",
+        "Be''er Sheva",
+        "Beersheba",
+        "Bene Ayish",
+        "Dimona",
+        "Elat",
+        "Gan Yavne",
+        "kiryat Malachi",
+        "Nahal `Oz",
+        "Netivot",
+        "Ofaqim",
+        "Omer",
+        "Qiryat Gat",
+        "Qiryat Mal''akhi",
+        "Sederot",
+        "Yeroham"
+      ]
+    },
+    {
+      "id": "haifa-district",
+      "nombre": "Haifa District",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "hamerkaz",
+      "nombre": "Hamerkaz",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Be''er Ya''aqov",
+        "Beit Shemesh",
+        "Bene Beraq",
+        "Bnei Brak",
+        "Even Yehuda",
+        "Fureidis",
+        "Gat Rimon",
+        "Gedera",
+        "Givat Shmuel",
+        "Hibat Zion",
+        "Hod HaSharon",
+        "Hogar",
+        "Jaljulye",
+        "Jatt",
+        "Kafar Qasem",
+        "Kefar Sava",
+        "Kefar Yona",
+        "Kfar Saba",
+        "Kiryag Bialik",
+        "Lod",
+        "Mazkeret Batya",
+        "Modi''in",
+        "Nes Ziyyona",
+        "Ness Ziona",
+        "Netanya",
+        "Nordiya",
+        "Pardesiyya",
+        "Petakh Tiqwa",
+        "Qadima",
+        "Qalansawe",
+        "Qiryat ''Eqron",
+        "Ra''anana",
+        "Ramla",
+        "Rehovot",
+        "Rekhovot",
+        "Rinnatya",
+        "Rishon LeZiyyon",
+        "Rosh HaAyin",
+        "Shoham",
+        "Tayibe",
+        "Tire",
+        "Tsur Igal",
+        "Udim",
+        "Yavne",
+        "Yehud"
+      ]
+    },
+    {
+      "id": "hazafon",
+      "nombre": "Hazafon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abu Sinan",
+        "Afula",
+        "Akko",
+        "Arrabe",
+        "Basmat Tab''un",
+        "Beit Jann",
+        "Bet She''an",
+        "Bi''ne",
+        "Bir-al-Maksur",
+        "Bu''eine-Nujeidat",
+        "Dabburye",
+        "Dayr Hannah",
+        "Dayr-al-Asad",
+        "Ein Mahel",
+        "Hazor HaGelilit",
+        "I''billin",
+        "Iksal",
+        "Ilut",
+        "Judeide-Maker",
+        "Kabul",
+        "Kafar Kanna",
+        "Kafar Manda",
+        "Kafar Yasif",
+        "Karmiel",
+        "Kisra-Sumei",
+        "Ma''alot Tarshikha",
+        "Majd-al-Kurum",
+        "Migdal Ha''Emeq",
+        "Mugar",
+        "Nahariyya",
+        "Nahef",
+        "Nazerat",
+        "Nazerat ''Illit",
+        "Qiryat Shemona",
+        "Qiryat Tiv''on",
+        "Rame",
+        "Reine",
+        "Sakhnin",
+        "Shefar''am",
+        "Tamra",
+        "Tiberias",
+        "Tur''an",
+        "Yirka",
+        "Yoqne''am Illit",
+        "Zefat",
+        "Zur Yigal"
+      ]
+    },
+    {
+      "id": "hebron",
+      "nombre": "Hebron",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hebron"
+      ]
+    },
+    {
+      "id": "jaffa",
+      "nombre": "Jaffa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sgula"
+      ]
+    },
+    {
+      "id": "jerusalem",
+      "nombre": "Jerusalem",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jerusalem"
+      ]
+    },
+    {
+      "id": "khefa",
+      "nombre": "Khefa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ar''ara",
+        "Baqa al-Gharbiyyah",
+        "Binyamina",
+        "Daliyat-al-Karmil",
+        "Isifya",
+        "Jizr-az-Zarqa",
+        "Khadera",
+        "Khefa",
+        "Nesher",
+        "Or ''Aqiva",
+        "Pardes Khanna-Karkur",
+        "Qiryat Atta",
+        "Qiryat Bialik",
+        "Qiryat Motzkin",
+        "Qiryat Yam",
+        "Rekhasim",
+        "Tirat Karmel",
+        "Umm-al-Fahm",
+        "Zikhron Ya''aqov"
+      ]
+    },
+    {
+      "id": "kiryat-yam",
+      "nombre": "Kiryat Yam",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "lower-galilee",
+      "nombre": "Lower Galilee",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "qalqilya",
+      "nombre": "Qalqilya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Qalqilya"
+      ]
+    },
+    {
+      "id": "talme-elazar",
+      "nombre": "Talme Elazar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tel-aviv",
+      "nombre": "Tel Aviv",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tsafon",
+      "nombre": "Tsafon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hadera",
+        "Kiryag Bialik"
+      ]
+    },
+    {
+      "id": "umm-el-fahem",
+      "nombre": "Umm El Fahem",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "yerushalayim",
+      "nombre": "Yerushalayim",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bet Shemesh",
+        "Mevasserat Ziyyon",
+        "Yerushalayim"
+      ]
+    }
+  ]
+}

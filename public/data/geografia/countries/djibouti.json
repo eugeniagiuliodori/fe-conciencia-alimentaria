@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "djibouti",
+    "nombre": "Djibouti",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "ali-sabih",
+      "nombre": "Ali Sabih",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "dikhil",
+      "nombre": "Dikhil",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dikhil"
+      ]
+    },
+    {
+      "id": "jibuti",
+      "nombre": "Jibuti",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jibuti"
+      ]
+    },
+    {
+      "id": "tajurah",
+      "nombre": "Tajurah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tajurah"
+      ]
+    },
+    {
+      "id": "ubuk",
+      "nombre": "Ubuk",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ubuk"
+      ]
+    }
+  ]
+}

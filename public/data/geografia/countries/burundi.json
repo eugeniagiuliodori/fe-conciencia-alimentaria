@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "burundi",
+    "nombre": "Burundi",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "bubanza",
+      "nombre": "Bubanza",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bubanza"
+      ]
+    },
+    {
+      "id": "bujumbura",
+      "nombre": "Bujumbura",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bujumbura"
+      ]
+    },
+    {
+      "id": "bururi",
+      "nombre": "Bururi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bururi"
+      ]
+    },
+    {
+      "id": "cankuzo",
+      "nombre": "Cankuzo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cankuzo"
+      ]
+    },
+    {
+      "id": "cibitoke",
+      "nombre": "Cibitoke",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cibitoke"
+      ]
+    },
+    {
+      "id": "gitega",
+      "nombre": "Gitega",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gitega"
+      ]
+    },
+    {
+      "id": "karuzi",
+      "nombre": "Karuzi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Karuzi"
+      ]
+    },
+    {
+      "id": "kayanza",
+      "nombre": "Kayanza",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kayanza"
+      ]
+    },
+    {
+      "id": "kirundo",
+      "nombre": "Kirundo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kirundo"
+      ]
+    },
+    {
+      "id": "makamba",
+      "nombre": "Makamba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Makamba"
+      ]
+    },
+    {
+      "id": "muramvya",
+      "nombre": "Muramvya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Muramvya"
+      ]
+    },
+    {
+      "id": "muyinga",
+      "nombre": "Muyinga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Muyinga"
+      ]
+    },
+    {
+      "id": "ngozi",
+      "nombre": "Ngozi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ngozi"
+      ]
+    },
+    {
+      "id": "rutana",
+      "nombre": "Rutana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rutana"
+      ]
+    },
+    {
+      "id": "ruyigi",
+      "nombre": "Ruyigi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ruyigi"
+      ]
+    }
+  ]
+}

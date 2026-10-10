@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "bahamas",
+    "nombre": "Bahamas",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "abaco",
+      "nombre": "Abaco",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Coopers Town",
+        "Marsh Harbour"
+      ]
+    },
+    {
+      "id": "acklins-island",
+      "nombre": "Acklins Island",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "andros",
+      "nombre": "Andros",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Andros Town",
+        "Nicholls Town"
+      ]
+    },
+    {
+      "id": "berry-islands",
+      "nombre": "Berry Islands",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "biminis",
+      "nombre": "Biminis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alice Town"
+      ]
+    },
+    {
+      "id": "cat-island",
+      "nombre": "Cat Island",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "crooked-island",
+      "nombre": "Crooked Island",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "eleuthera",
+      "nombre": "Eleuthera",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Freetown",
+        "Rock Sound"
+      ]
+    },
+    {
+      "id": "exuma-and-cays",
+      "nombre": "Exuma and Cays",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "grand-bahama",
+      "nombre": "Grand Bahama",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "inagua-islands",
+      "nombre": "Inagua Islands",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "long-island",
+      "nombre": "Long Island",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "mayaguana",
+      "nombre": "Mayaguana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Pirates Well"
+      ]
+    },
+    {
+      "id": "new-providence",
+      "nombre": "New Providence",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ragged-island",
+      "nombre": "Ragged Island",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "rum-cay",
+      "nombre": "Rum Cay",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "san-salvador",
+      "nombre": "San Salvador",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

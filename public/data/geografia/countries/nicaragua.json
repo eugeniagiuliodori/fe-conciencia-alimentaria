@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "nicaragua",
+    "nombre": "Nicaragua",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "atlantico-norte",
+      "nombre": "Atlantico Norte",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "atlantico-sur",
+      "nombre": "Atlantico Sur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "boaco",
+      "nombre": "Boaco",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Boaco",
+        "Camoapa",
+        "San Lorenzo"
+      ]
+    },
+    {
+      "id": "carazo",
+      "nombre": "Carazo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Diriamba",
+        "Dolores",
+        "Jinotepe",
+        "Masatepe",
+        "San Marcos",
+        "Santa Teresa"
+      ]
+    },
+    {
+      "id": "chinandega",
+      "nombre": "Chinandega",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chichigalpa",
+        "Chinandega",
+        "Corinto",
+        "El Viejo",
+        "Puerto Morazan",
+        "Somotillo"
+      ]
+    },
+    {
+      "id": "chontales",
+      "nombre": "Chontales",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Acoyapa",
+        "Juigalpa",
+        "Santo Domingo",
+        "Santo Tomas",
+        "Villa Sandino"
+      ]
+    },
+    {
+      "id": "esteli",
+      "nombre": "Esteli",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Condega",
+        "Esteli",
+        "La Trinidad"
+      ]
+    },
+    {
+      "id": "granada",
+      "nombre": "Granada",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Diriomo",
+        "Granada",
+        "Nandaime"
+      ]
+    },
+    {
+      "id": "jinotega",
+      "nombre": "Jinotega",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jinotega",
+        "Wiwili"
+      ]
+    },
+    {
+      "id": "leon",
+      "nombre": "Leon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "El Sauce",
+        "La Paz Centro",
+        "Larreynaga",
+        "Leon",
+        "Nagarote",
+        "Telica"
+      ]
+    },
+    {
+      "id": "madriz",
+      "nombre": "Madriz",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Somoto"
+      ]
+    },
+    {
+      "id": "managua",
+      "nombre": "Managua",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Managua",
+        "Mateare",
+        "San Rafael del Sur",
+        "Ticuantepe",
+        "Tipitapa"
+      ]
+    },
+    {
+      "id": "masaya",
+      "nombre": "Masaya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "La Concepcion",
+        "Masaya",
+        "Nandasmo",
+        "Nindiri",
+        "Niquinohomo"
+      ]
+    },
+    {
+      "id": "matagalpa",
+      "nombre": "Matagalpa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ciudad Dario",
+        "Esquipulas",
+        "Matagalpa",
+        "Matiguas",
+        "Rio Blanco",
+        "San Isidro",
+        "Sebaco"
+      ]
+    },
+    {
+      "id": "nueva-segovia",
+      "nombre": "Nueva Segovia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "rio-san-juan",
+      "nombre": "Rio San Juan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "rivas",
+      "nombre": "Rivas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Belen",
+        "Rivas",
+        "San Jorge",
+        "San Juan del Sur"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "angola",
+    "nombre": "Angola",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "bengo",
+      "nombre": "Bengo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Caxito"
+      ]
+    },
+    {
+      "id": "benguela",
+      "nombre": "Benguela",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Benguela",
+        "Lobito"
+      ]
+    },
+    {
+      "id": "bie",
+      "nombre": "Bie",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Camacupa",
+        "Catabola",
+        "Catumbela",
+        "Chissamba",
+        "Kuito"
+      ]
+    },
+    {
+      "id": "cabinda",
+      "nombre": "Cabinda",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cabinda"
+      ]
+    },
+    {
+      "id": "cunene",
+      "nombre": "Cunene",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ondjiva"
+      ]
+    },
+    {
+      "id": "huambo",
+      "nombre": "Huambo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Caala",
+        "Catchiungo",
+        "Huambo",
+        "Longonjo"
+      ]
+    },
+    {
+      "id": "huila",
+      "nombre": "Huila",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Caconda",
+        "Caluquembe",
+        "Lubango"
+      ]
+    },
+    {
+      "id": "kuando-kubango",
+      "nombre": "Kuando-Kubango",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Menongue"
+      ]
+    },
+    {
+      "id": "kwanza-norte",
+      "nombre": "Kwanza Norte",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kwanza-sul",
+      "nombre": "Kwanza Sul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "luanda",
+      "nombre": "Luanda",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Luanda"
+      ]
+    },
+    {
+      "id": "lunda-norte",
+      "nombre": "Lunda Norte",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "lunda-sul",
+      "nombre": "Lunda Sul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "malanje",
+      "nombre": "Malanje",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Malanje"
+      ]
+    },
+    {
+      "id": "moxico",
+      "nombre": "Moxico",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cazaje",
+        "Leua",
+        "Luau",
+        "Luena",
+        "Lumeje"
+      ]
+    },
+    {
+      "id": "namibe",
+      "nombre": "Namibe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Namibe"
+      ]
+    },
+    {
+      "id": "uige",
+      "nombre": "Uige",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Camabatela",
+        "Uige"
+      ]
+    },
+    {
+      "id": "zaire",
+      "nombre": "Zaire",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "M''banza-Kongo",
+        "N''zeto",
+        "Soyo"
+      ]
+    }
+  ]
+}

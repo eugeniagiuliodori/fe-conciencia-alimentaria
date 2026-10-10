@@ -1,0 +1,638 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "greece",
+    "nombre": "Greece",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "acharnes",
+      "nombre": "Acharnes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Elassonos"
+      ]
+    },
+    {
+      "id": "ahaia",
+      "nombre": "Ahaia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aiyion",
+        "Patra"
+      ]
+    },
+    {
+      "id": "aitolia-kai-akarnania",
+      "nombre": "Aitolia kai Akarnania",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "argolis",
+      "nombre": "Argolis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Argos",
+        "Navplion"
+      ]
+    },
+    {
+      "id": "arkadia",
+      "nombre": "Arkadia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tripoli"
+      ]
+    },
+    {
+      "id": "arta",
+      "nombre": "Arta",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arta"
+      ]
+    },
+    {
+      "id": "attica",
+      "nombre": "Attica",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Acharnes",
+        "Agios Ioannis Rentis",
+        "Drapetsona",
+        "Koropi",
+        "Lavrion",
+        "Mandra",
+        "Spata"
+      ]
+    },
+    {
+      "id": "attiki",
+      "nombre": "Attiki",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aharna",
+        "Aiyaleo",
+        "Alimos",
+        "Amarousion",
+        "Ano Liosia",
+        "Aryiroupoli",
+        "Aspropirgos",
+        "Athina",
+        "Athinai",
+        "Ayia Barbara",
+        "Ayia Paraskevi",
+        "Ayios Anaryiros",
+        "Ayios Dimitrios",
+        "Dafne",
+        "Elevsis",
+        "Ellenikon",
+        "Galatsion",
+        "Glifada",
+        "Haidarion",
+        "Halandrion",
+        "Holargos",
+        "Ilioupoli",
+        "Iraklion",
+        "Kaisariani",
+        "Kallithea",
+        "Kamateron",
+        "Keratea",
+        "Keratsinion",
+        "Kifisia",
+        "Koridallos",
+        "Kropion",
+        "Markopoulos Mesogaia",
+        "Maroussi",
+        "Megara",
+        "Melission",
+        "Metamorfosios",
+        "Moshatos",
+        "Nea Filedelfia",
+        "Nea Ionia",
+        "Nea Liosia",
+        "Nea Smirni",
+        "Nikaia",
+        "Palaion Faliron",
+        "Perama",
+        "Peristerion",
+        "Petroupoli",
+        "Pevka",
+        "Piraeus",
+        "Salamis",
+        "Tavros",
+        "Viron",
+        "Voula",
+        "Vrilission",
+        "Zografos"
+      ]
+    },
+    {
+      "id": "ayion-oros",
+      "nombre": "Ayion Oros",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "crete",
+      "nombre": "Crete",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Heraklion"
+      ]
+    },
+    {
+      "id": "dodekanisos",
+      "nombre": "Dodekanisos",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arhangelos",
+        "Ialysos",
+        "Kos",
+        "Rodos"
+      ]
+    },
+    {
+      "id": "drama",
+      "nombre": "Drama",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Drama"
+      ]
+    },
+    {
+      "id": "evia",
+      "nombre": "Evia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chalkis"
+      ]
+    },
+    {
+      "id": "evritania",
+      "nombre": "Evritania",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Karpenisi"
+      ]
+    },
+    {
+      "id": "evros",
+      "nombre": "Evros",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alexandroupoli",
+        "Orestias"
+      ]
+    },
+    {
+      "id": "evvoia",
+      "nombre": "Evvoia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Halkida"
+      ]
+    },
+    {
+      "id": "florina",
+      "nombre": "Florina",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Florina"
+      ]
+    },
+    {
+      "id": "fokis",
+      "nombre": "Fokis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amfissa"
+      ]
+    },
+    {
+      "id": "fthiotis",
+      "nombre": "Fthiotis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lamia"
+      ]
+    },
+    {
+      "id": "grevena",
+      "nombre": "Grevena",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Grevena"
+      ]
+    },
+    {
+      "id": "halandri",
+      "nombre": "Halandri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Halandri"
+      ]
+    },
+    {
+      "id": "halkidiki",
+      "nombre": "Halkidiki",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lakkoma",
+        "N. Kallikrateia",
+        "Poliyiros"
+      ]
+    },
+    {
+      "id": "hania",
+      "nombre": "Hania",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hania"
+      ]
+    },
+    {
+      "id": "heraklion",
+      "nombre": "Heraklion",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Crete"
+      ]
+    },
+    {
+      "id": "hios",
+      "nombre": "Hios",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hios"
+      ]
+    },
+    {
+      "id": "ilia",
+      "nombre": "Ilia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Pirgos"
+      ]
+    },
+    {
+      "id": "imathia",
+      "nombre": "Imathia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Veroia"
+      ]
+    },
+    {
+      "id": "ioannina",
+      "nombre": "Ioannina",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ioannina"
+      ]
+    },
+    {
+      "id": "iraklion",
+      "nombre": "Iraklion",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "karditsa",
+      "nombre": "Karditsa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Karditsa"
+      ]
+    },
+    {
+      "id": "kastoria",
+      "nombre": "Kastoria",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kastoria"
+      ]
+    },
+    {
+      "id": "kavala",
+      "nombre": "Kavala",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kavala"
+      ]
+    },
+    {
+      "id": "kefallinia",
+      "nombre": "Kefallinia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Agioi Theodoroi",
+        "Argostolion"
+      ]
+    },
+    {
+      "id": "kerkira",
+      "nombre": "Kerkira",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kerkira"
+      ]
+    },
+    {
+      "id": "kiklades",
+      "nombre": "Kiklades",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ermoupoli",
+        "Fira",
+        "Mikonos"
+      ]
+    },
+    {
+      "id": "kilkis",
+      "nombre": "Kilkis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kilkis"
+      ]
+    },
+    {
+      "id": "korinthia",
+      "nombre": "Korinthia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Korinthos"
+      ]
+    },
+    {
+      "id": "kozani",
+      "nombre": "Kozani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kozani",
+        "Ptolemais"
+      ]
+    },
+    {
+      "id": "lakonia",
+      "nombre": "Lakonia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sparti"
+      ]
+    },
+    {
+      "id": "larisa",
+      "nombre": "Larisa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Larisa",
+        "Larissa"
+      ]
+    },
+    {
+      "id": "lasithi",
+      "nombre": "Lasithi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayios Nikolaos",
+        "Ierapetra",
+        "Sitia"
+      ]
+    },
+    {
+      "id": "lesvos",
+      "nombre": "Lesvos",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mitilini"
+      ]
+    },
+    {
+      "id": "levkas",
+      "nombre": "Levkas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Levkas"
+      ]
+    },
+    {
+      "id": "magnisia",
+      "nombre": "Magnisia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Volos"
+      ]
+    },
+    {
+      "id": "messinia",
+      "nombre": "Messinia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kalamata"
+      ]
+    },
+    {
+      "id": "nomos-attikis",
+      "nombre": "Nomos Attikis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nomos-zakynthou",
+      "nombre": "Nomos Zakynthou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "pella",
+      "nombre": "Pella",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Edessa",
+        "Yiannitsa"
+      ]
+    },
+    {
+      "id": "pieria",
+      "nombre": "Pieria",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Katerini"
+      ]
+    },
+    {
+      "id": "piraios",
+      "nombre": "Piraios",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Acharne",
+        "Pallini"
+      ]
+    },
+    {
+      "id": "preveza",
+      "nombre": "Preveza",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Preveza"
+      ]
+    },
+    {
+      "id": "rethimni",
+      "nombre": "Rethimni",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rethimnon"
+      ]
+    },
+    {
+      "id": "rodopi",
+      "nombre": "Rodopi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Komotini"
+      ]
+    },
+    {
+      "id": "samos",
+      "nombre": "Samos",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Samos"
+      ]
+    },
+    {
+      "id": "serrai",
+      "nombre": "Serrai",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Serrai"
+      ]
+    },
+    {
+      "id": "thesprotia",
+      "nombre": "Thesprotia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Igoumenitsa"
+      ]
+    },
+    {
+      "id": "thessaloniki",
+      "nombre": "Thessaloniki",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ampelokipa",
+        "Kalamaria",
+        "Neapoli",
+        "Oristiada",
+        "Thessaloniki"
+      ]
+    },
+    {
+      "id": "trikala",
+      "nombre": "Trikala",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Trikala"
+      ]
+    },
+    {
+      "id": "voiotia",
+      "nombre": "Voiotia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Levadia",
+        "Thivai"
+      ]
+    },
+    {
+      "id": "west-greece",
+      "nombre": "West Greece",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "xanthi",
+      "nombre": "Xanthi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Xanthi"
+      ]
+    },
+    {
+      "id": "zakinthos",
+      "nombre": "Zakinthos",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Zakinthos"
+      ]
+    }
+  ]
+}

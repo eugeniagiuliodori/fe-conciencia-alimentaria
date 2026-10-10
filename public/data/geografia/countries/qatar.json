@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "qatar",
+    "nombre": "Qatar",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "ad-dawhah",
+      "nombre": "ad-Dawhah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ad-Dawhah"
+      ]
+    },
+    {
+      "id": "al-ghuwayriyah",
+      "nombre": "al-Ghuwayriyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Ghuwayriyah"
+      ]
+    },
+    {
+      "id": "al-jumayliyah",
+      "nombre": "al-Jumayliyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Jumayliyah",
+        "Dukhan"
+      ]
+    },
+    {
+      "id": "al-khawr",
+      "nombre": "al-Khawr",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Khawr"
+      ]
+    },
+    {
+      "id": "al-wakrah",
+      "nombre": "al-Wakrah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Wakrah",
+        "al-Wukayr",
+        "Musay''id"
+      ]
+    },
+    {
+      "id": "ar-rayyan",
+      "nombre": "ar-Rayyan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ar-Rayyan",
+        "ash-Shahaniyah"
+      ]
+    },
+    {
+      "id": "ash-shamal",
+      "nombre": "ash-Shamal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ar-Ruways"
+      ]
+    },
+    {
+      "id": "doha",
+      "nombre": "Doha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Doha"
+      ]
+    },
+    {
+      "id": "jarian-al-batnah",
+      "nombre": "Jarian-al-Batnah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Umm Bab"
+      ]
+    },
+    {
+      "id": "umm-salal",
+      "nombre": "Umm Salal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

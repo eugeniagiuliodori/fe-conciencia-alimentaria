@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "albania",
+    "nombre": "Albania",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "berat",
+      "nombre": "Berat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Berat",
+        "Polican",
+        "Ure Vajgurore"
+      ]
+    },
+    {
+      "id": "bulqize",
+      "nombre": "Bulqize",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bulqize"
+      ]
+    },
+    {
+      "id": "delvine",
+      "nombre": "Delvine",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Delvine"
+      ]
+    },
+    {
+      "id": "devoll",
+      "nombre": "Devoll",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bilisht"
+      ]
+    },
+    {
+      "id": "dibre",
+      "nombre": "Dibre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Maqellare",
+        "Peshkopi"
+      ]
+    },
+    {
+      "id": "durres",
+      "nombre": "Durres",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Durres",
+        "Shijak"
+      ]
+    },
+    {
+      "id": "elbasan",
+      "nombre": "Elbasan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cerrik",
+        "Elbasan",
+        "Kerrabe"
+      ]
+    },
+    {
+      "id": "fier",
+      "nombre": "Fier",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fier",
+        "Patos",
+        "Roskovec"
+      ]
+    },
+    {
+      "id": "gjirokaster",
+      "nombre": "Gjirokaster",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gjirokaster",
+        "Libohove"
+      ]
+    },
+    {
+      "id": "gramsh",
+      "nombre": "Gramsh",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gramsh"
+      ]
+    },
+    {
+      "id": "has",
+      "nombre": "Has",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Krume"
+      ]
+    },
+    {
+      "id": "kavaje",
+      "nombre": "Kavaje",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kavaje"
+      ]
+    },
+    {
+      "id": "kolonje",
+      "nombre": "Kolonje",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Erseke",
+        "Leskovik"
+      ]
+    },
+    {
+      "id": "korce",
+      "nombre": "Korce",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Korce",
+        "Maliq"
+      ]
+    },
+    {
+      "id": "kruje",
+      "nombre": "Kruje",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fushe-Kruje",
+        "Kruje",
+        "Mamurras",
+        "Milot"
+      ]
+    },
+    {
+      "id": "kucove",
+      "nombre": "Kucove",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kucove"
+      ]
+    },
+    {
+      "id": "kukes",
+      "nombre": "Kukes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kukes"
+      ]
+    },
+    {
+      "id": "kurbin",
+      "nombre": "Kurbin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lac"
+      ]
+    },
+    {
+      "id": "lezhe",
+      "nombre": "Lezhe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lezhe",
+        "Shengjin"
+      ]
+    },
+    {
+      "id": "librazhd",
+      "nombre": "Librazhd",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Librazhd",
+        "Perrenjas"
+      ]
+    },
+    {
+      "id": "lushnje",
+      "nombre": "Lushnje",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lushnje",
+        "Rrogozhine"
+      ]
+    },
+    {
+      "id": "mallakaster",
+      "nombre": "Mallakaster",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ballsh"
+      ]
+    },
+    {
+      "id": "malsi-e-madhe",
+      "nombre": "Malsi e Madhe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "mat",
+      "nombre": "Mat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Burrel",
+        "Klos",
+        "Kraste",
+        "Ulze"
+      ]
+    },
+    {
+      "id": "mirdite",
+      "nombre": "Mirdite",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kurbnesh",
+        "Rreshen",
+        "Rubik"
+      ]
+    },
+    {
+      "id": "peqin",
+      "nombre": "Peqin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Peqin"
+      ]
+    },
+    {
+      "id": "permet",
+      "nombre": "Permet",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kelcyre",
+        "Permet"
+      ]
+    },
+    {
+      "id": "pogradec",
+      "nombre": "Pogradec",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Pogradec"
+      ]
+    },
+    {
+      "id": "puke",
+      "nombre": "Puke",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fierze",
+        "Fushe-Arrez",
+        "Puke"
+      ]
+    },
+    {
+      "id": "sarande",
+      "nombre": "Sarande",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Konispol",
+        "Sarande"
+      ]
+    },
+    {
+      "id": "shkoder",
+      "nombre": "Shkoder",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Shkoder"
+      ]
+    },
+    {
+      "id": "skrapar",
+      "nombre": "Skrapar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Corovode"
+      ]
+    },
+    {
+      "id": "tepelene",
+      "nombre": "Tepelene",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Memaliaj",
+        "Tepelene"
+      ]
+    },
+    {
+      "id": "tirane",
+      "nombre": "Tirane",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kamze",
+        "Paskuqan",
+        "Tirane",
+        "Vore"
+      ]
+    },
+    {
+      "id": "tropoje",
+      "nombre": "Tropoje",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bajram Curri"
+      ]
+    },
+    {
+      "id": "vlore",
+      "nombre": "Vlore",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Himare",
+        "Orikum",
+        "Selenice",
+        "Vlore"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "honduras",
+    "nombre": "Honduras",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "atlantida",
+      "nombre": "Atlantida",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "La Ceiba",
+        "Olanchito",
+        "Tela"
+      ]
+    },
+    {
+      "id": "choluteca",
+      "nombre": "Choluteca",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Choluteca",
+        "El Triunfo",
+        "Pespire"
+      ]
+    },
+    {
+      "id": "colon",
+      "nombre": "Colon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sonaguera",
+        "Tocoa",
+        "Trujillo"
+      ]
+    },
+    {
+      "id": "comayagua",
+      "nombre": "Comayagua",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Comayagua",
+        "Siguatepeque"
+      ]
+    },
+    {
+      "id": "copan",
+      "nombre": "Copan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Copan",
+        "Corquin",
+        "Dulce Nombre",
+        "El Paraiso",
+        "San Antonio",
+        "San Nicolas",
+        "Santa Rosa de Copan"
+      ]
+    },
+    {
+      "id": "cortes",
+      "nombre": "Cortes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Choloma",
+        "La Lima",
+        "Omoa",
+        "Puerto Cortes",
+        "San Pedro Sula"
+      ]
+    },
+    {
+      "id": "distrito-central",
+      "nombre": "Distrito Central",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "el-paraiso",
+      "nombre": "El Paraiso",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "francisco-morazan",
+      "nombre": "Francisco Morazan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "gracias-a-dios",
+      "nombre": "Gracias a Dios",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "intibuca",
+      "nombre": "Intibuca",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Intibuca",
+        "La Esperanza",
+        "Utila"
+      ]
+    },
+    {
+      "id": "islas-de-la-bahia",
+      "nombre": "Islas de la Bahia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "la-paz",
+      "nombre": "La Paz",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "lempira",
+      "nombre": "Lempira",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gracias"
+      ]
+    },
+    {
+      "id": "ocotepeque",
+      "nombre": "Ocotepeque",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ocotepeque",
+        "San Marcos",
+        "Sinuapa"
+      ]
+    },
+    {
+      "id": "olancho",
+      "nombre": "Olancho",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Catacamas",
+        "Juticalpa"
+      ]
+    },
+    {
+      "id": "santa-barbara",
+      "nombre": "Santa Barbara",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "valle",
+      "nombre": "Valle",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amapala",
+        "Langue",
+        "Nacaome",
+        "San Lorenzo"
+      ]
+    },
+    {
+      "id": "yoro",
+      "nombre": "Yoro",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "El Progreso",
+        "Morazan",
+        "Santa Rita",
+        "Yoro"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "bosnia-and-herzegovina",
+    "nombre": "Bosnia and Herzegovina",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "federacija-bosna-i-hercegovina",
+      "nombre": "Federacija Bosna i Hercegovina",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "republika-srpska",
+      "nombre": "Republika Srpska",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

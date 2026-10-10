@@ -1,0 +1,470 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "iran",
+    "nombre": "Iran",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "ardabil",
+      "nombre": "Ardabil",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ardabil",
+        "Garmi",
+        "Khalkhal",
+        "Meshkinshahr",
+        "Parsabad"
+      ]
+    },
+    {
+      "id": "azarbayjan-e-bakhtari",
+      "nombre": "Azarbayjan-e Bakhtari",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "azarbayjan-e-khavari",
+      "nombre": "Azarbayjan-e Khavari",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "bushehr",
+      "nombre": "Bushehr",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bandar-e Gonaveh",
+        "Borazjan",
+        "Bushehr",
+        "Dashti",
+        "Dir",
+        "Khormuj",
+        "Kongan",
+        "Tangestan"
+      ]
+    },
+    {
+      "id": "chahar-mahal-e-bakhtiari",
+      "nombre": "Chahar Mahal-e Bakhtiari",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "esfahan",
+      "nombre": "Esfahan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ardistan",
+        "Dorchehpiyaz",
+        "Dowlatabad",
+        "Esfahan",
+        "Falavarjan",
+        "Faridan",
+        "Fereydunshahr",
+        "Fuladshahr",
+        "Golara",
+        "Golpayegan",
+        "Kashan",
+        "Kelishad",
+        "Khomeynishahr",
+        "Khonsar",
+        "Khuresgan",
+        "Mobarakeh",
+        "Na''in",
+        "Najafabad",
+        "Natnaz",
+        "Qahdarijan",
+        "Rehnan",
+        "Semirom",
+        "Shahinshahr",
+        "Shahreza",
+        "Zarinshahr"
+      ]
+    },
+    {
+      "id": "fars",
+      "nombre": "Fars",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abadeh",
+        "Akbarabad",
+        "Darab",
+        "Eqlid",
+        "Estehban",
+        "Fasa",
+        "Firuzabad",
+        "Gerash",
+        "Jahrom",
+        "Kazerun",
+        "Lar",
+        "Marv Dasht",
+        "Neyriz",
+        "Nurabad",
+        "Qa''emiyeh",
+        "Sepidan",
+        "Shiraz"
+      ]
+    },
+    {
+      "id": "gilan",
+      "nombre": "Gilan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Astaneh-ye Ashrafiyeh",
+        "Astara",
+        "Bandar-e Anzali",
+        "Faman",
+        "Hashtpar",
+        "Lahijan",
+        "Langarud",
+        "Rasht",
+        "Rudbar",
+        "Rudsar",
+        "Sawma''eh Sara"
+      ]
+    },
+    {
+      "id": "golestan",
+      "nombre": "Golestan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aq Qal''eh",
+        "Azad Shahr",
+        "Bandar-e Torkaman",
+        "Gonbad-e Qabus",
+        "Gorgan"
+      ]
+    },
+    {
+      "id": "hamadan",
+      "nombre": "Hamadan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Asadabad",
+        "Bahar",
+        "Hamadan",
+        "Malayer",
+        "Nahavand",
+        "Tuysarkan"
+      ]
+    },
+    {
+      "id": "hormozgan",
+      "nombre": "Hormozgan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bandar Abbas",
+        "Bandar-e ''Abbas",
+        "Bandar-e Lengeh",
+        "Gheshm",
+        "Jask",
+        "Kish",
+        "Kish Island",
+        "Minab"
+      ]
+    },
+    {
+      "id": "ilam",
+      "nombre": "Ilam",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abdanan",
+        "Darrehshahr",
+        "Dehloran",
+        "Ilam",
+        "Ivan",
+        "Mehran"
+      ]
+    },
+    {
+      "id": "kerman",
+      "nombre": "Kerman",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baft",
+        "Bam",
+        "Bardsir",
+        "Jiroft",
+        "Kahnuj",
+        "Kerman",
+        "Rafsanjan",
+        "Ravar",
+        "Shahr-e Babak",
+        "Sirjan",
+        "Zarand"
+      ]
+    },
+    {
+      "id": "kermanshah",
+      "nombre": "Kermanshah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Eslamabad",
+        "Gilan-e Garb",
+        "Harsin",
+        "Javanrud",
+        "Kangavar",
+        "Kermanshah",
+        "Paveh",
+        "Sahneh",
+        "Sar-e-Pol-e-Zohab",
+        "Sonqor"
+      ]
+    },
+    {
+      "id": "khorasan",
+      "nombre": "Khorasan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Birjand",
+        "Bojnurd",
+        "Chenaran",
+        "Darreh Gaz",
+        "Esfarayen",
+        "Fariman",
+        "Ferdus",
+        "Gha''nat",
+        "Gonabad",
+        "Kashmar",
+        "Mashad",
+        "Mashhad",
+        "Neyshabur",
+        "Qayen",
+        "Quchan",
+        "Sabzevar",
+        "Sarakhs",
+        "Shirvan",
+        "Tabas",
+        "Tayyebat",
+        "Torbat-e Heydariyeh",
+        "Torbat-e Jam"
+      ]
+    },
+    {
+      "id": "khuzestan",
+      "nombre": "Khuzestan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abadan",
+        "Agha Jari",
+        "Ahvaz",
+        "Ahwaz",
+        "Andimeshk",
+        "Bandar-e Emam Khomeyni",
+        "Bandar-e Mahshahr",
+        "Behbahan",
+        "Dezful",
+        "Ezeh",
+        "Hendijan",
+        "Khorramshahr",
+        "Masjed-e Soleyman",
+        "Omidiyeh",
+        "Ramhormoz",
+        "Ramshir",
+        "Shadegan",
+        "Shush",
+        "Shushtar",
+        "Susangerd"
+      ]
+    },
+    {
+      "id": "kohgiluyeh-e-boyerahmad",
+      "nombre": "Kohgiluyeh-e Boyerahmad",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kordestan",
+      "nombre": "Kordestan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baneh",
+        "Bijar",
+        "Kamyaran",
+        "Marivan",
+        "Qorveh",
+        "Sanandaj",
+        "Saqqez"
+      ]
+    },
+    {
+      "id": "lorestan",
+      "nombre": "Lorestan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alashtar",
+        "Aligudarz",
+        "Azna",
+        "Borujerd",
+        "Do Rud",
+        "Khorramabad",
+        "Kuhdasht",
+        "Nurabad"
+      ]
+    },
+    {
+      "id": "markazi",
+      "nombre": "Markazi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arak",
+        "Ashtian",
+        "Delijan",
+        "Khomeyn",
+        "Mahallat",
+        "Sarband",
+        "Saveh",
+        "Tafresh"
+      ]
+    },
+    {
+      "id": "mazandaran",
+      "nombre": "Mazandaran",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aliabad",
+        "Amir Kala",
+        "Amol",
+        "Babol",
+        "Babol Sar",
+        "Behshahr",
+        "Chalus",
+        "Fereydunkenar",
+        "Juybar",
+        "Kalaleh",
+        "Kordkuy",
+        "Mahmudabad",
+        "Minudasht",
+        "Neka",
+        "Nur",
+        "Nushahr",
+        "Qa''emshahr",
+        "Ramsar",
+        "Sari",
+        "Savadkuh",
+        "Tonekabon"
+      ]
+    },
+    {
+      "id": "ostan-e-esfahan",
+      "nombre": "Ostan-e Esfahan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "qazvin",
+      "nombre": "Qazvin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abhar",
+        "Abyek",
+        "Qazvin",
+        "Takestan"
+      ]
+    },
+    {
+      "id": "qom",
+      "nombre": "Qom",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Qom"
+      ]
+    },
+    {
+      "id": "semnan",
+      "nombre": "Semnan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Damghan",
+        "Garmsar",
+        "Semnan",
+        "Shahrud"
+      ]
+    },
+    {
+      "id": "sistan-e-baluchestan",
+      "nombre": "Sistan-e Baluchestan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tehran",
+      "nombre": "Tehran",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Damavand",
+        "Eqbaliyeh",
+        "Eslamshahr",
+        "Hashtgerd",
+        "Karaj",
+        "Mahdasht",
+        "Malard",
+        "Mohammadiyeh",
+        "Nazarabad",
+        "Pakdasht",
+        "Pishva",
+        "Qarchak",
+        "Qods",
+        "Robat Karim",
+        "Shahriyar",
+        "Tehran",
+        "Varamin"
+      ]
+    },
+    {
+      "id": "yazd",
+      "nombre": "Yazd",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ardakan",
+        "Bafq",
+        "Mehriz",
+        "Meybod",
+        "Taft",
+        "Yazd"
+      ]
+    },
+    {
+      "id": "zanjan",
+      "nombre": "Zanjan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alvand",
+        "Khorramdarreh",
+        "Zanjan"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "haiti",
+    "nombre": "Haiti",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "artibonite",
+      "nombre": "Artibonite",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Desdunes",
+        "Dessalines",
+        "Gonaives",
+        "Gros-Morne",
+        "L''Artibonite",
+        "Saint-Marc",
+        "Saint-Michel-de-l''Atalaye",
+        "Saint-Raphael",
+        "Verrettes"
+      ]
+    },
+    {
+      "id": "centre",
+      "nombre": "Centre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hinche",
+        "Mirebalais"
+      ]
+    },
+    {
+      "id": "grand-anse",
+      "nombre": "Grand''Anse",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Anse-d''Hainault",
+        "Dame Marie",
+        "Jeremie",
+        "Miragoane"
+      ]
+    },
+    {
+      "id": "nord",
+      "nombre": "Nord",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cap-Haitien",
+        "Croix-des-Bouquets",
+        "Grande Riviere du Nord",
+        "Limbe",
+        "Pignon"
+      ]
+    },
+    {
+      "id": "nord-est",
+      "nombre": "Nord-Est",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Derac",
+        "Fort-Liberte",
+        "Ouanaminthe",
+        "Trou-du-Nord"
+      ]
+    },
+    {
+      "id": "nord-ouest",
+      "nombre": "Nord-Ouest",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Port-de-Paix",
+        "Saint-Louis-du-Nord"
+      ]
+    },
+    {
+      "id": "ouest",
+      "nombre": "Ouest",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Anse-a-Galets",
+        "Carrefour",
+        "Delmas",
+        "Kenscoff",
+        "Lascahobas",
+        "Leogane",
+        "Petionville",
+        "Petit Goave",
+        "Port-au-Prince"
+      ]
+    },
+    {
+      "id": "sud",
+      "nombre": "Sud",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aquin",
+        "Les Cayes"
+      ]
+    },
+    {
+      "id": "sud-est",
+      "nombre": "Sud-Est",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jacmel"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "ireland",
+    "nombre": "Ireland",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "armagh",
+      "nombre": "Armagh",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Moira"
+      ]
+    },
+    {
+      "id": "carlow",
+      "nombre": "Carlow",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bagenalstown",
+        "Carlow",
+        "Tullow"
+      ]
+    },
+    {
+      "id": "cavan",
+      "nombre": "Cavan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bailieborough",
+        "Belturbet",
+        "Cavan",
+        "Coothill"
+      ]
+    },
+    {
+      "id": "clare",
+      "nombre": "Clare",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ennis",
+        "Kilkee",
+        "Kilrush",
+        "Newmarket-on-Fergus",
+        "Shannon"
+      ]
+    },
+    {
+      "id": "cork",
+      "nombre": "Cork",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bandon",
+        "Bantry",
+        "Blarney",
+        "Carrigaline",
+        "Charleville",
+        "Clonakilty",
+        "Cobh",
+        "Cork",
+        "Drishane",
+        "Dunmanway",
+        "Fermoy",
+        "Kanturk",
+        "Kinsale",
+        "Macroom",
+        "Mallow",
+        "Midleton",
+        "Millstreet",
+        "Mitchelstown",
+        "Passage West",
+        "Skibbereen",
+        "Youghal"
+      ]
+    },
+    {
+      "id": "donegal",
+      "nombre": "Donegal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ballybofey",
+        "Ballyshannon",
+        "Buncrana",
+        "Bundoran",
+        "Carndonagh",
+        "Donegal",
+        "Killybegs",
+        "Letterkenny",
+        "Lifford",
+        "Moville"
+      ]
+    },
+    {
+      "id": "dublin",
+      "nombre": "Dublin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Balbriggan",
+        "Ballsbridge",
+        "Dublin",
+        "Leixlip",
+        "Lucan",
+        "Malahide",
+        "Portrane",
+        "Rathcoole",
+        "Rush",
+        "Skerries",
+        "Swords"
+      ]
+    },
+    {
+      "id": "galway",
+      "nombre": "Galway",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Athenry",
+        "Ballinasloe",
+        "Clifden",
+        "Galway",
+        "Gort",
+        "Loughrea",
+        "Tuam"
+      ]
+    },
+    {
+      "id": "kerry",
+      "nombre": "Kerry",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ballybunion",
+        "Cahirciveen",
+        "Castleisland",
+        "Dingle",
+        "Kenmare",
+        "Killarney",
+        "Killorglin",
+        "Listowel",
+        "Tralee"
+      ]
+    },
+    {
+      "id": "kildare",
+      "nombre": "Kildare",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Athy",
+        "Celbridge",
+        "Clane",
+        "Kilcock",
+        "Kilcullen",
+        "Kildare",
+        "Maynooth",
+        "Monasterevan",
+        "Naas",
+        "Newbridge"
+      ]
+    },
+    {
+      "id": "kilkenny",
+      "nombre": "Kilkenny",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Callan",
+        "Castlecomer",
+        "Kilkenny",
+        "Thomastown"
+      ]
+    },
+    {
+      "id": "laois",
+      "nombre": "Laois",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abbeyleix",
+        "Mountmellick",
+        "Mountrath",
+        "Port Laoise",
+        "Portarlington"
+      ]
+    },
+    {
+      "id": "leinster",
+      "nombre": "Leinster",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Meath"
+      ]
+    },
+    {
+      "id": "leitrim",
+      "nombre": "Leitrim",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Carrick-on-Shannon"
+      ]
+    },
+    {
+      "id": "limerick",
+      "nombre": "Limerick",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abbeyfeale",
+        "Kilmallock",
+        "Limerick",
+        "Newcastle",
+        "Rathkeale"
+      ]
+    },
+    {
+      "id": "loch-garman",
+      "nombre": "Loch Garman",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "longford",
+      "nombre": "Longford",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Granard",
+        "Longford",
+        "Moate"
+      ]
+    },
+    {
+      "id": "louth",
+      "nombre": "Louth",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ardee",
+        "Drogheda",
+        "Drumcar",
+        "Dundalk"
+      ]
+    },
+    {
+      "id": "mayo",
+      "nombre": "Mayo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ballina",
+        "Ballinrobe",
+        "Ballyhaunis",
+        "Castlebar",
+        "Claremorris",
+        "Swinford",
+        "Westport"
+      ]
+    },
+    {
+      "id": "meath",
+      "nombre": "Meath",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ashbourne",
+        "Duleek",
+        "Dunboyne",
+        "Dunshaughlin",
+        "Kells",
+        "Laytown",
+        "Navan",
+        "Trim"
+      ]
+    },
+    {
+      "id": "monaghan",
+      "nombre": "Monaghan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Carrickmacross",
+        "Castleblayney",
+        "Clones",
+        "Monaghan"
+      ]
+    },
+    {
+      "id": "offaly",
+      "nombre": "Offaly",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Banagher",
+        "Birr",
+        "Clara",
+        "Edenderry",
+        "Kilcormac",
+        "Tullamore"
+      ]
+    },
+    {
+      "id": "roscommon",
+      "nombre": "Roscommon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ballaghaderreen",
+        "Boyle",
+        "Castlerea",
+        "Roscommon"
+      ]
+    },
+    {
+      "id": "sligo",
+      "nombre": "Sligo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sligo"
+      ]
+    },
+    {
+      "id": "tipperary-north-riding",
+      "nombre": "Tipperary North Riding",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tipperary-south-riding",
+      "nombre": "Tipperary South Riding",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ulster",
+      "nombre": "Ulster",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Co Tyrone",
+        "Downpatrick"
+      ]
+    },
+    {
+      "id": "waterford",
+      "nombre": "Waterford",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dungarvan",
+        "Tramore",
+        "Waterford"
+      ]
+    },
+    {
+      "id": "westmeath",
+      "nombre": "Westmeath",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Athlone",
+        "Mullingar"
+      ]
+    },
+    {
+      "id": "wexford",
+      "nombre": "Wexford",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Enniscorthy",
+        "Gorey",
+        "New Ross",
+        "Wexford"
+      ]
+    },
+    {
+      "id": "wicklow",
+      "nombre": "Wicklow",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arklow",
+        "Baltinglass",
+        "Blessington",
+        "Bray",
+        "Greystones",
+        "Kilcoole",
+        "Newtownmountkennedy",
+        "Rathdrum",
+        "Wicklow"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "azerbaijan",
+    "nombre": "Azerbaijan",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "abseron",
+      "nombre": "Abseron",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alat",
+        "Artyom",
+        "Baki",
+        "Bakixanov",
+        "Balaxani",
+        "Bilacari",
+        "Bilqax",
+        "Bina",
+        "Buzovna",
+        "Haci Zeynalabdin",
+        "Hovsan",
+        "Lokbatan",
+        "Mastaga",
+        "Puta",
+        "Qarasuxur",
+        "Qobustan",
+        "Rasulzada",
+        "Sabuncu",
+        "Sanqacal",
+        "Sumqayit",
+        "Suraxani",
+        "Xirdalan",
+        "Zirya"
+      ]
+    },
+    {
+      "id": "baki-sahari",
+      "nombre": "Baki Sahari",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ganca",
+      "nombre": "Ganca",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Daskasan",
+        "Ganca",
+        "Xanlar"
+      ]
+    },
+    {
+      "id": "ganja",
+      "nombre": "Ganja",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ganja"
+      ]
+    },
+    {
+      "id": "kalbacar",
+      "nombre": "Kalbacar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cabrayil",
+        "Kalbacar",
+        "Lacin"
+      ]
+    },
+    {
+      "id": "lankaran",
+      "nombre": "Lankaran",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Astara",
+        "Goytapa",
+        "Lankaran",
+        "Masalli",
+        "Neftcala"
+      ]
+    },
+    {
+      "id": "mil-qarabax",
+      "nombre": "Mil-Qarabax",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Agcabadi",
+        "Agdam",
+        "Barda",
+        "Mingacevir",
+        "Tartar",
+        "Yevlax"
+      ]
+    },
+    {
+      "id": "mugan-salyan",
+      "nombre": "Mugan-Salyan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ali Bayramli",
+        "Bilasuvar",
+        "Calilabad",
+        "Qarasu",
+        "Qazimammad",
+        "Saatli",
+        "Sabirabad",
+        "Salyan"
+      ]
+    },
+    {
+      "id": "nagorni-qarabax",
+      "nombre": "Nagorni-Qarabax",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Susa",
+        "Xankandi",
+        "Xocavand"
+      ]
+    },
+    {
+      "id": "naxcivan",
+      "nombre": "Naxcivan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Culfa",
+        "Naxcivan",
+        "Ordubad",
+        "Sadarak",
+        "Sarur"
+      ]
+    },
+    {
+      "id": "priaraks",
+      "nombre": "Priaraks",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Beylaqan",
+        "Fuzuli",
+        "Imisli"
+      ]
+    },
+    {
+      "id": "qazax",
+      "nombre": "Qazax",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Agstafa",
+        "Gadabay",
+        "Kovlar",
+        "Qaracamirli",
+        "Qazax",
+        "Samkir",
+        "Tovuz"
+      ]
+    },
+    {
+      "id": "saki",
+      "nombre": "Saki",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amircan",
+        "Balakan",
+        "Katex",
+        "Oguz",
+        "Qabala",
+        "Qax",
+        "Saki",
+        "Zaqatala"
+      ]
+    },
+    {
+      "id": "sirvan",
+      "nombre": "Sirvan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Agdas",
+        "Agsu",
+        "Goycay",
+        "Ismayilli",
+        "Kurdamir",
+        "Samaxi",
+        "Ucar",
+        "Zardab"
+      ]
+    },
+    {
+      "id": "xacmaz",
+      "nombre": "Xacmaz",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Davaci",
+        "Quba",
+        "Qusar",
+        "Siyazan",
+        "Xacmaz",
+        "Xudat"
+      ]
+    }
+  ]
+}

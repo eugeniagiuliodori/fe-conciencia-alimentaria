@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "uruguay",
+    "nombre": "Uruguay",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "artigas",
+      "nombre": "Artigas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Artigas",
+        "Bella Union"
+      ]
+    },
+    {
+      "id": "canelones",
+      "nombre": "Canelones",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Camino Maldonado",
+        "Canelones",
+        "Ciudad de la Costa",
+        "Juan Antonio Artigas",
+        "Las Piedras",
+        "Pando",
+        "Paso de Carrasco",
+        "Progreso",
+        "Santa Lucia"
+      ]
+    },
+    {
+      "id": "cerro-largo",
+      "nombre": "Cerro Largo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "colonia",
+      "nombre": "Colonia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Carmelo",
+        "Colonia",
+        "Juan Lacaze",
+        "Nueva Helvecia"
+      ]
+    },
+    {
+      "id": "durazno",
+      "nombre": "Durazno",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Durazno"
+      ]
+    },
+    {
+      "id": "flores",
+      "nombre": "Flores",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Trinidad"
+      ]
+    },
+    {
+      "id": "florida",
+      "nombre": "FLorida",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Florida"
+      ]
+    },
+    {
+      "id": "lavalleja",
+      "nombre": "Lavalleja",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Minas"
+      ]
+    },
+    {
+      "id": "maldonado",
+      "nombre": "Maldonado",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Maldonado",
+        "San Carlos"
+      ]
+    },
+    {
+      "id": "montevideo",
+      "nombre": "Montevideo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "La Paz",
+        "Montevideo"
+      ]
+    },
+    {
+      "id": "paysandu",
+      "nombre": "Paysandu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Paysandu"
+      ]
+    },
+    {
+      "id": "rio-negro",
+      "nombre": "Rio Negro",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "rivera",
+      "nombre": "Rivera",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rivera"
+      ]
+    },
+    {
+      "id": "rocha",
+      "nombre": "Rocha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chuy",
+        "Rocha"
+      ]
+    },
+    {
+      "id": "salto",
+      "nombre": "Salto",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Salto"
+      ]
+    },
+    {
+      "id": "san-jose",
+      "nombre": "San Jose",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "soriano",
+      "nombre": "Soriano",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dolores",
+        "Mercedes"
+      ]
+    },
+    {
+      "id": "tacuarembo",
+      "nombre": "Tacuarembo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Paso de los Toros",
+        "Tacuarembo"
+      ]
+    },
+    {
+      "id": "treinta-y-tres",
+      "nombre": "Treinta y Tres",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "togo",
+    "nombre": "Togo",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "centre",
+      "nombre": "Centre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Guerin Kouka",
+        "Sokode",
+        "Sotouboua",
+        "Tchamba"
+      ]
+    },
+    {
+      "id": "kara",
+      "nombre": "Kara",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bafilo",
+        "Bassar",
+        "Kande",
+        "Kara",
+        "Kpagouda",
+        "Niamtougou"
+      ]
+    },
+    {
+      "id": "maritime",
+      "nombre": "Maritime",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Agbelouve",
+        "Aneho",
+        "Lome",
+        "Tabligbo",
+        "Tsevie",
+        "Vogan"
+      ]
+    },
+    {
+      "id": "plateaux",
+      "nombre": "Plateaux",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amlame",
+        "Anie",
+        "Atakpame",
+        "Badou",
+        "Blitta",
+        "Kouve",
+        "Kpalime",
+        "Kpessi",
+        "Notse"
+      ]
+    },
+    {
+      "id": "savanes",
+      "nombre": "Savanes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dapaong",
+        "Mango",
+        "Tandjouare"
+      ]
+    }
+  ]
+}

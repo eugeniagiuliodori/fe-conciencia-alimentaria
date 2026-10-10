@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "eritrea",
+    "nombre": "Eritrea",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "anseba",
+      "nombre": "Anseba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Keren"
+      ]
+    },
+    {
+      "id": "debub",
+      "nombre": "Debub",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Addi Kwala",
+        "Addi Ugri"
+      ]
+    },
+    {
+      "id": "debub-keih-bahri",
+      "nombre": "Debub-Keih-Bahri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Asseb",
+        "Beylul",
+        "Edd",
+        "Mersa Fatma"
+      ]
+    },
+    {
+      "id": "gash-barka",
+      "nombre": "Gash-Barka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ak''ordat",
+        "Barentu",
+        "Teseney"
+      ]
+    },
+    {
+      "id": "maekel",
+      "nombre": "Maekel",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Asmara",
+        "Ginda",
+        "Himbirti",
+        "Nefasit"
+      ]
+    },
+    {
+      "id": "semien-keih-bahri",
+      "nombre": "Semien-Keih-Bahri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Addi K''eyih",
+        "Dek''emhare",
+        "Mitsiwa",
+        "Sen''afe"
+      ]
+    }
+  ]
+}

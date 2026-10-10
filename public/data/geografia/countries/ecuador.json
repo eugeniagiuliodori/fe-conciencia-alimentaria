@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "ecuador",
+    "nombre": "Ecuador",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "azuay",
+      "nombre": "Azuay",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cuenca",
+        "Gualaceo"
+      ]
+    },
+    {
+      "id": "bolivar",
+      "nombre": "Bolivar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Guaranda",
+        "San Miguel"
+      ]
+    },
+    {
+      "id": "canar",
+      "nombre": "Canar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Azogues",
+        "Canar",
+        "La Troncal"
+      ]
+    },
+    {
+      "id": "carchi",
+      "nombre": "Carchi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "El Angel",
+        "San Gabriel",
+        "Tulcan"
+      ]
+    },
+    {
+      "id": "chimborazo",
+      "nombre": "Chimborazo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alausi",
+        "Guano",
+        "Riobamba"
+      ]
+    },
+    {
+      "id": "cotopaxi",
+      "nombre": "Cotopaxi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "La Mana",
+        "Latacunga",
+        "Pujili",
+        "San Miguel",
+        "Saquisili"
+      ]
+    },
+    {
+      "id": "el-oro",
+      "nombre": "El Oro",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "esmeraldas",
+      "nombre": "Esmeraldas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Esmeraldas",
+        "Muisne",
+        "Rosa Zarate",
+        "San Lorenzo",
+        "Valdez"
+      ]
+    },
+    {
+      "id": "galapagos",
+      "nombre": "Galapagos",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Puerto Ayora",
+        "Puerto Baquerizo Moreno",
+        "San Cristobal"
+      ]
+    },
+    {
+      "id": "guayas",
+      "nombre": "Guayas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alfredo Baquerizo Moreno",
+        "Balao",
+        "Balzar",
+        "Colimes",
+        "Coronel Mariduena",
+        "Daule",
+        "El Salitre",
+        "El Triunfo",
+        "Eloy Alfaro",
+        "Guayaquil",
+        "La Libertad",
+        "Lomas de Sargentillo",
+        "Mapasingue",
+        "Milagro",
+        "Naranjal",
+        "Naranjito",
+        "Palestina",
+        "Pedro Carbo",
+        "Playas",
+        "Salinas",
+        "Samborondon",
+        "Santa Elena",
+        "Santa Lucia",
+        "Velasco Ibarra",
+        "Yaguachi"
+      ]
+    },
+    {
+      "id": "imbabura",
+      "nombre": "Imbabura",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Atuntaqui",
+        "Cotacachi",
+        "Ibarra",
+        "Otavalo",
+        "Pimampiro"
+      ]
+    },
+    {
+      "id": "loja",
+      "nombre": "Loja",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alamor",
+        "Cariamanga",
+        "Catacocha",
+        "Catamayo",
+        "Celica",
+        "Loja",
+        "Macara"
+      ]
+    },
+    {
+      "id": "los-rios",
+      "nombre": "Los Rios",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "manabi",
+      "nombre": "Manabi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bahia de Caraquez",
+        "Calceta",
+        "Chone",
+        "El Carmen",
+        "Jipijapa",
+        "Junin",
+        "Manta",
+        "Montecristi",
+        "Pajan",
+        "Pedernales",
+        "Portoviejo",
+        "Rocafuerte",
+        "Santa Ana",
+        "Sucre",
+        "Tosagua"
+      ]
+    },
+    {
+      "id": "morona-santiago",
+      "nombre": "Morona Santiago",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "napo",
+      "nombre": "Napo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Archidona",
+        "Tena"
+      ]
+    },
+    {
+      "id": "orellana",
+      "nombre": "Orellana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Orellana"
+      ]
+    },
+    {
+      "id": "pastaza",
+      "nombre": "Pastaza",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Puyo"
+      ]
+    },
+    {
+      "id": "pichincha",
+      "nombre": "Pichincha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cayambe",
+        "Machachi",
+        "Quito",
+        "Sangolqui",
+        "Santo Domingo"
+      ]
+    },
+    {
+      "id": "sucumbios",
+      "nombre": "Sucumbios",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nueva Loja",
+        "Shushufindi"
+      ]
+    },
+    {
+      "id": "tungurahua",
+      "nombre": "Tungurahua",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ambato",
+        "Banos",
+        "Pelileo",
+        "Pillaro"
+      ]
+    },
+    {
+      "id": "zamora-chinchipe",
+      "nombre": "Zamora Chinchipe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

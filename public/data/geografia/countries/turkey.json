@@ -1,0 +1,1541 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "turkey",
+    "nombre": "Turkey",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "adana",
+      "nombre": "Adana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Adana",
+        "Aladag",
+        "Ceyhan",
+        "Feke",
+        "Imamoglu",
+        "Karaisali",
+        "Karatas",
+        "Kozan",
+        "Pozanti",
+        "Saimbeyli",
+        "Tufanbeyli",
+        "Yumurtalik"
+      ]
+    },
+    {
+      "id": "adiyaman",
+      "nombre": "Adiyaman",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Adiyaman",
+        "Besni",
+        "Celikhan",
+        "Gerger",
+        "Golbasi",
+        "Kahta",
+        "Samsat",
+        "Sincik",
+        "Tut"
+      ]
+    },
+    {
+      "id": "afyon",
+      "nombre": "Afyon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Afyonkarahisar",
+        "Basmakci",
+        "Bayat",
+        "Bolvadin",
+        "Cay",
+        "Dazkiri",
+        "Dinar",
+        "Emirdag",
+        "Evciler",
+        "Hocalar",
+        "Ihsaniye",
+        "Iscehisar",
+        "Kiziloren",
+        "Sandikli",
+        "Sincanli",
+        "Suhut",
+        "Sultandagi"
+      ]
+    },
+    {
+      "id": "agri",
+      "nombre": "Agri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Diyadin",
+        "Dogubeyazit",
+        "Eleskirt",
+        "Hamur",
+        "Karakose",
+        "Patnos",
+        "Taslicay",
+        "Tutak"
+      ]
+    },
+    {
+      "id": "aksaray",
+      "nombre": "Aksaray",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Agacoren",
+        "Aksaray",
+        "Eskil",
+        "Gulagac",
+        "Guzelyurt",
+        "Ortakoy",
+        "Sariyahsi"
+      ]
+    },
+    {
+      "id": "amasya",
+      "nombre": "Amasya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amasya",
+        "Goynucek",
+        "Gumushacikoy",
+        "Hamamozu",
+        "Merzifon",
+        "Suluova",
+        "Tasova"
+      ]
+    },
+    {
+      "id": "ankara",
+      "nombre": "Ankara",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akyurt",
+        "Ankara",
+        "Ayas",
+        "Beypazari",
+        "Camlidere",
+        "Cubuk",
+        "Elmadag",
+        "Evren",
+        "Gudul",
+        "Haymana",
+        "Kalecik",
+        "Kazan",
+        "Kizilcahamam",
+        "Nallihan",
+        "Polatli",
+        "Sereflikochisar",
+        "Yenisehir"
+      ]
+    },
+    {
+      "id": "antalya",
+      "nombre": "Antalya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akseki",
+        "Alanya",
+        "Antalya",
+        "Elmali",
+        "Finike",
+        "Gazipasa",
+        "Gundogmus",
+        "Ibradi",
+        "Kale",
+        "Kas",
+        "Kemer",
+        "Konya",
+        "Korkuteli",
+        "Kumluca",
+        "Manavgat",
+        "Serik"
+      ]
+    },
+    {
+      "id": "ardahan",
+      "nombre": "Ardahan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ardahan",
+        "Damal",
+        "Gole",
+        "Hanak",
+        "Posof"
+      ]
+    },
+    {
+      "id": "artvin",
+      "nombre": "Artvin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ardanuc",
+        "Arhavi",
+        "Artvin",
+        "Borcka",
+        "Hopa",
+        "Murgul",
+        "Savsat",
+        "Yusufeli"
+      ]
+    },
+    {
+      "id": "aydin",
+      "nombre": "Aydin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aydin",
+        "Bozdogan",
+        "Buharkent",
+        "Cine",
+        "Didim",
+        "Germencik",
+        "Incirliova",
+        "Karacasu",
+        "Karpuzlu",
+        "Kocarli",
+        "Kosk",
+        "Kusadasi",
+        "Kuyucak",
+        "Nazilli",
+        "Soke",
+        "Sultanhisar",
+        "Yenipazar"
+      ]
+    },
+    {
+      "id": "balikesir",
+      "nombre": "Balikesir",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayvalik",
+        "Balikesir",
+        "Balya",
+        "Bandirma",
+        "Bigadic",
+        "Burhaniye",
+        "Dursunbey",
+        "Edremit",
+        "Erdek",
+        "Gomec",
+        "Gonen",
+        "Havran",
+        "Ivrindi",
+        "Kepsut",
+        "Manyas",
+        "Marmara",
+        "Sakarya",
+        "Savastepe",
+        "Sindirgi",
+        "Susurluk"
+      ]
+    },
+    {
+      "id": "bartin",
+      "nombre": "Bartin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amasra",
+        "Bartin",
+        "Kurucasile",
+        "Ulus"
+      ]
+    },
+    {
+      "id": "batman",
+      "nombre": "Batman",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Batman",
+        "Besiri",
+        "Gercus",
+        "Hasankeyf",
+        "Kozluk",
+        "Sason"
+      ]
+    },
+    {
+      "id": "bayburt",
+      "nombre": "Bayburt",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aydintepe",
+        "Bayburt",
+        "Demirozu"
+      ]
+    },
+    {
+      "id": "bilecik",
+      "nombre": "Bilecik",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bilecik",
+        "Bozuyuk",
+        "Golpazari",
+        "Inhisar",
+        "Osmaneli",
+        "Pazaryeri",
+        "Sogut",
+        "Yenipazar"
+      ]
+    },
+    {
+      "id": "bingol",
+      "nombre": "Bingol",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Adakli",
+        "Bingol",
+        "Genc",
+        "Karliova",
+        "Kigi",
+        "Solhan",
+        "Yayladere",
+        "Yedisu"
+      ]
+    },
+    {
+      "id": "bitlis",
+      "nombre": "Bitlis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Adilcevaz",
+        "Ahlat",
+        "Bitlis",
+        "Guroymak",
+        "Hizan",
+        "Mutki",
+        "Tatvan"
+      ]
+    },
+    {
+      "id": "bolu",
+      "nombre": "Bolu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akcakoca",
+        "Bolu",
+        "Dortdivan",
+        "Gerede",
+        "Goynuk",
+        "Kibriscik",
+        "Mengen",
+        "Mudurnu",
+        "Seben",
+        "Yenicaga"
+      ]
+    },
+    {
+      "id": "burdur",
+      "nombre": "Burdur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aglasun",
+        "Altinyayla",
+        "Bucak",
+        "Burdur",
+        "Golhisar",
+        "Karamanli",
+        "Kemer",
+        "Tefenni",
+        "Yesilova"
+      ]
+    },
+    {
+      "id": "bursa",
+      "nombre": "Bursa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bursa",
+        "Buyukorhan",
+        "Gemlik",
+        "Gursu",
+        "Harmancik",
+        "Inegol",
+        "Iznik",
+        "Karacabey",
+        "Keles",
+        "Kestel",
+        "Mudanya",
+        "Mustafakemalpasa",
+        "Orhaneli",
+        "Orhangazi",
+        "Yenisehir"
+      ]
+    },
+    {
+      "id": "canakkale",
+      "nombre": "Canakkale",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayvacik",
+        "Bayramic",
+        "Biga",
+        "Bozcaada",
+        "Can",
+        "Canakkale",
+        "Eceabat",
+        "Ezine",
+        "Gelibolu",
+        "Gokceada",
+        "Lapseki",
+        "Yenice"
+      ]
+    },
+    {
+      "id": "cankiri",
+      "nombre": "Cankiri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Atkaracalar",
+        "Bayramoren",
+        "Cankiri",
+        "Cerkes",
+        "Eldivan",
+        "Ilgaz",
+        "Kizilirmak",
+        "Korgun",
+        "Kursunlu",
+        "Orta",
+        "Sabanozu",
+        "Yaprakli"
+      ]
+    },
+    {
+      "id": "corum",
+      "nombre": "Corum",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alaca",
+        "Bayat",
+        "Corum",
+        "Dodurga",
+        "Iskilip",
+        "Kargi",
+        "Lacin",
+        "Mecitozu",
+        "Oguzlar",
+        "Ortakoy",
+        "Osmancik",
+        "Sungurlu",
+        "Ugurludag"
+      ]
+    },
+    {
+      "id": "denizli",
+      "nombre": "Denizli",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Acipayam",
+        "Akkoy",
+        "Babadag",
+        "Baklan",
+        "Bekilli",
+        "Bozkurt",
+        "Buldan",
+        "Cardak",
+        "Civril",
+        "Denizli",
+        "Guney",
+        "Honaz",
+        "Kale",
+        "Saraykoy",
+        "Serinhisar",
+        "Tavas"
+      ]
+    },
+    {
+      "id": "diyarbakir",
+      "nombre": "Diyarbakir",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bismil",
+        "Cermik",
+        "Cinar",
+        "Cungus",
+        "Dicle",
+        "Diyarbakir",
+        "Egil",
+        "Ergani",
+        "Hani",
+        "Hazro",
+        "Kocakoy",
+        "Kulp",
+        "Lice",
+        "Silvan"
+      ]
+    },
+    {
+      "id": "duzce",
+      "nombre": "Duzce",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cumayeri",
+        "Duzce",
+        "Golyaka",
+        "Gumusova",
+        "Kaynasli",
+        "Yigilca"
+      ]
+    },
+    {
+      "id": "edirne",
+      "nombre": "Edirne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Edirne",
+        "Enez",
+        "Havsa",
+        "Ipsala",
+        "Kesan",
+        "Lalapasa",
+        "Meric",
+        "Suleoglu",
+        "Uzunkopru"
+      ]
+    },
+    {
+      "id": "elazig",
+      "nombre": "Elazig",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Agin",
+        "Alacakaya",
+        "Aricak",
+        "Baskil",
+        "Elazig",
+        "Karakocan",
+        "Keban",
+        "Kovancilar",
+        "Maden",
+        "Palu",
+        "Sivrice"
+      ]
+    },
+    {
+      "id": "erzincan",
+      "nombre": "Erzincan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Erzincan",
+        "Ilic",
+        "Kemah",
+        "Kemaliye",
+        "Otlukbeli",
+        "Refahiye",
+        "Tercan",
+        "Uzumlu"
+      ]
+    },
+    {
+      "id": "erzurum",
+      "nombre": "Erzurum",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Askale",
+        "Erzurum",
+        "Hinis",
+        "Horasan",
+        "Ilica",
+        "Ispir",
+        "Karacoban",
+        "Karayazi",
+        "Koprukoy",
+        "Narman",
+        "Oltu",
+        "Olur",
+        "Pasinler",
+        "Pazaryolu",
+        "Senkaya",
+        "Tekman",
+        "Tortum",
+        "Uzundere"
+      ]
+    },
+    {
+      "id": "eskisehir",
+      "nombre": "Eskisehir",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alpu",
+        "Beylikova",
+        "Cifteler",
+        "Eskisehir",
+        "Gunyuzu",
+        "Han",
+        "Inonu",
+        "Mahmudiye",
+        "Mihalgazi",
+        "Mihaliccik",
+        "Saricakaya",
+        "Seyitgazi",
+        "Sivrihisar"
+      ]
+    },
+    {
+      "id": "gaziantep",
+      "nombre": "Gaziantep",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Araban",
+        "Gaziantep",
+        "Islahiye",
+        "Karkamis",
+        "Nizip",
+        "Nurdagi",
+        "Oguzeli",
+        "Sehitkamil",
+        "Yavuzeli"
+      ]
+    },
+    {
+      "id": "giresun",
+      "nombre": "Giresun",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aluca",
+        "Bulancak",
+        "Dereli",
+        "Dogankent",
+        "Espiye",
+        "Eynesil",
+        "Giresun",
+        "Gorele",
+        "Guce",
+        "Kesap",
+        "Piraziz",
+        "Sebinkarahisar",
+        "Tirebolu",
+        "Yaglidere"
+      ]
+    },
+    {
+      "id": "gumushane",
+      "nombre": "Gumushane",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gumushane",
+        "Kelkit",
+        "Kose",
+        "Kurtun",
+        "Siran",
+        "Torul"
+      ]
+    },
+    {
+      "id": "hakkari",
+      "nombre": "Hakkari",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cukurca",
+        "Hakkari",
+        "Semdinli",
+        "Yuksekova"
+      ]
+    },
+    {
+      "id": "hatay",
+      "nombre": "Hatay",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Altinozu",
+        "Antakya",
+        "Belen",
+        "Dortyol",
+        "Erzin",
+        "Hassa",
+        "Iskenderun",
+        "Kirikhan",
+        "Kumlu",
+        "Reyhanli",
+        "Samandag",
+        "Yayladagi"
+      ]
+    },
+    {
+      "id": "icel",
+      "nombre": "Icel",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Anamur",
+        "Aydincik",
+        "Bozyazi",
+        "Erdemli",
+        "Gulnar",
+        "Mersin",
+        "Mut",
+        "Silifke",
+        "Tarsus"
+      ]
+    },
+    {
+      "id": "igdir",
+      "nombre": "Igdir",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aralik",
+        "Igdir",
+        "Karakoyunlu",
+        "Tuzluca"
+      ]
+    },
+    {
+      "id": "isparta",
+      "nombre": "Isparta",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aksu",
+        "Atabey",
+        "Egirdir",
+        "Gelendost",
+        "Gonen",
+        "Isparta",
+        "Keciborlu",
+        "Sarkikaraagac",
+        "Senirkent",
+        "Sutculer",
+        "Uluborlu",
+        "Yalvac",
+        "Yenisarbademli"
+      ]
+    },
+    {
+      "id": "istanbul",
+      "nombre": "Istanbul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Buyukcekmece",
+        "Catalca",
+        "Eminonu",
+        "Esenler",
+        "Istanbul",
+        "KadÃ„Â±koy",
+        "Sile",
+        "Silivri",
+        "Sultanbeyli",
+        "TopkapÃ„Â±",
+        "Tuzla",
+        "Umraniye"
+      ]
+    },
+    {
+      "id": "izmir",
+      "nombre": "Izmir",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aliaga",
+        "Alsancak",
+        "Bayindir",
+        "Bergama",
+        "Beyagac",
+        "Bornova",
+        "Cesme",
+        "Digor",
+        "Dikili",
+        "Foca",
+        "Izmir",
+        "Karaburun",
+        "Kemalpasa",
+        "Kinik",
+        "Kiraz",
+        "Menderes",
+        "Menemen",
+        "Merkezi",
+        "Mersinli",
+        "Odemis",
+        "Seferihisar",
+        "Selcuk",
+        "Tire",
+        "Torbali",
+        "Urla"
+      ]
+    },
+    {
+      "id": "kahramanmaras",
+      "nombre": "Kahramanmaras",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Afsin",
+        "Andirin",
+        "Caglayancerit",
+        "Ekinozu",
+        "Elbistan",
+        "Goksun",
+        "Kahramanmaras",
+        "Nurhak",
+        "Pazarcik",
+        "Turkoglu"
+      ]
+    },
+    {
+      "id": "karabuk",
+      "nombre": "Karabuk",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Eflani",
+        "Eskipazar",
+        "Karabuk",
+        "Ovacik",
+        "Safranbolu",
+        "Yenice"
+      ]
+    },
+    {
+      "id": "karaman",
+      "nombre": "Karaman",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayranci",
+        "Basyayla",
+        "Ermenek",
+        "Karaman",
+        "Kazimkarabekir",
+        "Sariveliler"
+      ]
+    },
+    {
+      "id": "kars",
+      "nombre": "Kars",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akyaka",
+        "Arpacay",
+        "Kagizman",
+        "Kars",
+        "Sarikamis",
+        "Selim",
+        "Susuz"
+      ]
+    },
+    {
+      "id": "karsiyaka",
+      "nombre": "Karsiyaka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Karsiyaka"
+      ]
+    },
+    {
+      "id": "kastamonu",
+      "nombre": "Kastamonu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abana",
+        "Agli",
+        "Arac",
+        "Azdavay",
+        "Bozkurt",
+        "Daday",
+        "Devrekani",
+        "Doganyurt",
+        "Hanonu",
+        "Ihsangazi",
+        "Inebolu",
+        "Kastamonu",
+        "Kure",
+        "Pinarbasi",
+        "Senpazar",
+        "Seydiler",
+        "Taskopru",
+        "Tosya"
+      ]
+    },
+    {
+      "id": "kayseri",
+      "nombre": "Kayseri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akkisla",
+        "Bunyan",
+        "Develi",
+        "Felahiye",
+        "Hacilar",
+        "Incesu",
+        "Kayseri",
+        "Ozvatan",
+        "Pinarbasi",
+        "Sarioglan",
+        "Sariz",
+        "Talas",
+        "Tomarza",
+        "Yahyali",
+        "Yesilhisar"
+      ]
+    },
+    {
+      "id": "kilis",
+      "nombre": "Kilis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Elbeyli",
+        "Kilis",
+        "Musabeyli",
+        "Polateli"
+      ]
+    },
+    {
+      "id": "kirikkale",
+      "nombre": "Kirikkale",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bahsili",
+        "Baliseyh",
+        "Delice",
+        "Karakecili",
+        "Keskin",
+        "Kirikkale",
+        "Sulakyurt",
+        "Yahsihan"
+      ]
+    },
+    {
+      "id": "kirklareli",
+      "nombre": "Kirklareli",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Babaeski",
+        "Demirkoy",
+        "Kirklareli",
+        "Kofcaz",
+        "Kumkoy",
+        "Luleburgaz",
+        "Pehlivankoy",
+        "Pinarhisar",
+        "Vize"
+      ]
+    },
+    {
+      "id": "kirsehir",
+      "nombre": "Kirsehir",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akcakent",
+        "Akpinar",
+        "Boztepe",
+        "Kaman",
+        "Kirsehir",
+        "Mucur"
+      ]
+    },
+    {
+      "id": "kocaeli",
+      "nombre": "Kocaeli",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "CayÃ„Â±rova",
+        "Derince",
+        "DilovasÃ„Â±",
+        "Gebze",
+        "Golcuk",
+        "Izmit",
+        "Kandira",
+        "Karamursel",
+        "Kocaeli",
+        "Korfez"
+      ]
+    },
+    {
+      "id": "konya",
+      "nombre": "Konya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ahirli",
+        "Akoren",
+        "Aksehir",
+        "Altinekin",
+        "Beysehir",
+        "Bozkir",
+        "Cihanbeyli",
+        "Cumra",
+        "Derbent",
+        "Derebucak",
+        "Doganhisar",
+        "Emirgazi",
+        "Eregli",
+        "Guneysinir",
+        "Hadim",
+        "Halkapinar",
+        "Huyuk",
+        "Ilgin",
+        "Kadinhani",
+        "Karapinar",
+        "Konya",
+        "Kulu",
+        "Sarayonu",
+        "Seydisehir",
+        "Taskent",
+        "Tuzlukcu",
+        "Yalihuyuk",
+        "Yunak"
+      ]
+    },
+    {
+      "id": "kutahya",
+      "nombre": "Kutahya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Altinas",
+        "Aslanapa",
+        "Domanic",
+        "Dumlupinar",
+        "Emet",
+        "Gediz",
+        "Kutahya",
+        "Pazarlar",
+        "Saphane",
+        "Simav",
+        "Tavsanli"
+      ]
+    },
+    {
+      "id": "lefkosa",
+      "nombre": "Lefkosa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lefkosa"
+      ]
+    },
+    {
+      "id": "malatya",
+      "nombre": "Malatya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akcadag",
+        "Arapkir",
+        "Arguvan",
+        "Battalgazi",
+        "Darende",
+        "Dogansehir",
+        "Doganyol",
+        "Hekimhan",
+        "Kale",
+        "Kuluncak",
+        "Malatya",
+        "Poturge",
+        "Yazihan",
+        "Yesilyurt"
+      ]
+    },
+    {
+      "id": "manisa",
+      "nombre": "Manisa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ahmetli",
+        "Akhisar",
+        "Alasehir",
+        "Demirci",
+        "Golmarmara",
+        "Gordes",
+        "Kirkagac",
+        "Koprubasi",
+        "Kula",
+        "Manisa",
+        "Salihli",
+        "Sarigol",
+        "Saruhanli",
+        "Selendi",
+        "Soma",
+        "Turgutlu"
+      ]
+    },
+    {
+      "id": "mardin",
+      "nombre": "Mardin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dargecit",
+        "Derik",
+        "Kiziltepe",
+        "Mardin",
+        "Mazidagi",
+        "Midyat",
+        "Nusaybin",
+        "Omerli",
+        "Savur",
+        "Yesilli"
+      ]
+    },
+    {
+      "id": "mugla",
+      "nombre": "Mugla",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bodrum",
+        "Dalaman",
+        "Datca",
+        "Fethiye",
+        "Kavaklidere",
+        "Koycegiz",
+        "Marmaris",
+        "Milas",
+        "Mugla",
+        "Ortaca",
+        "Ula",
+        "Yatagan"
+      ]
+    },
+    {
+      "id": "mus",
+      "nombre": "Mus",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bulanik",
+        "Haskoy",
+        "Korkut",
+        "Malazgirt",
+        "Mus",
+        "Varto"
+      ]
+    },
+    {
+      "id": "nevsehir",
+      "nombre": "Nevsehir",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Acigol",
+        "Avanos",
+        "Derinkuyu",
+        "Gulsehir",
+        "Hacibektas",
+        "Kozakli",
+        "Nevsehir",
+        "Urgup"
+      ]
+    },
+    {
+      "id": "nigde",
+      "nombre": "Nigde",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Altunhisar",
+        "Bor",
+        "Nigde",
+        "Ulukisla"
+      ]
+    },
+    {
+      "id": "ordu",
+      "nombre": "Ordu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akkus",
+        "Aybasti",
+        "Camas",
+        "Fatsa",
+        "Golkoy",
+        "Gulyali",
+        "Gurgentepe",
+        "Ikizce",
+        "Kabaduz",
+        "Kabatas",
+        "Korgan",
+        "Kumru",
+        "Mesudiye",
+        "Ordu",
+        "Persembe",
+        "Ulubey",
+        "Unye"
+      ]
+    },
+    {
+      "id": "osmaniye",
+      "nombre": "Osmaniye",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bahce",
+        "Duzici",
+        "Hasanbeyli",
+        "Kadirli",
+        "Osmaniye",
+        "Sumbas",
+        "Toprakkale"
+      ]
+    },
+    {
+      "id": "rize",
+      "nombre": "Rize",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ardesen",
+        "Cayeli",
+        "Derepazan",
+        "Findikli",
+        "Guneysu",
+        "Hemsin",
+        "Ikizdere",
+        "Iyidere",
+        "Kalkandere",
+        "Pazar",
+        "Rize"
+      ]
+    },
+    {
+      "id": "sakarya",
+      "nombre": "Sakarya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Adapazari",
+        "Akyazi",
+        "Ferizli",
+        "Geyve",
+        "Hendek",
+        "Karapurcek",
+        "Karasu",
+        "Kaynarca",
+        "Kocaali",
+        "Pamukova",
+        "Sapanca",
+        "Sogutlu",
+        "Tarakli"
+      ]
+    },
+    {
+      "id": "samsun",
+      "nombre": "Samsun",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akcakale",
+        "Alacam",
+        "Asarcik",
+        "Ayvacik",
+        "Bafra",
+        "Carsamba",
+        "Havza",
+        "Kavak",
+        "Ladik",
+        "Mayis 19",
+        "Salipazan",
+        "Samsun",
+        "Tekkekoy",
+        "Terme",
+        "Vezirkopru",
+        "Yakakent"
+      ]
+    },
+    {
+      "id": "sanliurfa",
+      "nombre": "Sanliurfa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Birecik",
+        "Bozova",
+        "Ceylanpinar",
+        "Halfeti",
+        "Harran",
+        "Hilvan",
+        "Sanliurfa",
+        "Siverek",
+        "Suruc",
+        "Urfa",
+        "Viransehir"
+      ]
+    },
+    {
+      "id": "siirt",
+      "nombre": "Siirt",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aydinlar",
+        "Baykan",
+        "Eruh",
+        "Kurtalan",
+        "Pervari",
+        "Siirt",
+        "Sirvan"
+      ]
+    },
+    {
+      "id": "sinop",
+      "nombre": "Sinop",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayancik",
+        "Boyabat",
+        "Dikmen",
+        "Duragan",
+        "Erfelek",
+        "Gerze",
+        "Sarayduzu",
+        "Sinop",
+        "Turkeli"
+      ]
+    },
+    {
+      "id": "sirnak",
+      "nombre": "Sirnak",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Beytussebap",
+        "Cizre",
+        "Guclukonak",
+        "Idil",
+        "Silopi",
+        "Sirnak",
+        "Uludere"
+      ]
+    },
+    {
+      "id": "sivas",
+      "nombre": "Sivas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akincilar",
+        "Altinyayla",
+        "Divrigi",
+        "Dogansar",
+        "Gemerek",
+        "Golova",
+        "Gurun",
+        "Hafik",
+        "Imranli",
+        "Kangal",
+        "Koyulhisar",
+        "Sarkisla",
+        "Sivas",
+        "Susehri",
+        "Ulas",
+        "Yildizeli",
+        "Zara"
+      ]
+    },
+    {
+      "id": "tekirdag",
+      "nombre": "Tekirdag",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cerkezkoy",
+        "Corlu",
+        "Hayrabolu",
+        "Malkara",
+        "Marmaraereglisi",
+        "Muratli",
+        "Saray",
+        "Sarkoy",
+        "Tekirdag"
+      ]
+    },
+    {
+      "id": "tokat",
+      "nombre": "Tokat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Almus",
+        "Artova",
+        "Basciftlik",
+        "Erbaa",
+        "Niksar",
+        "Pazar",
+        "Resadiye",
+        "Sulusaray",
+        "Tokat",
+        "Turhal",
+        "Yesilyurt",
+        "Zile"
+      ]
+    },
+    {
+      "id": "trabzon",
+      "nombre": "Trabzon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akcaabat",
+        "Arakli",
+        "Arsin",
+        "Besikduzu",
+        "Caykara",
+        "Dernekpazari",
+        "Duzkoy",
+        "Hayrat",
+        "Koprubasi",
+        "Macka",
+        "Of",
+        "Salpazari",
+        "Surmene",
+        "Tonya",
+        "Trabzon",
+        "Vakfikebir",
+        "Yomra"
+      ]
+    },
+    {
+      "id": "tunceli",
+      "nombre": "Tunceli",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hozat",
+        "Mazgirt",
+        "Nazimiye",
+        "Ovacik",
+        "Pertek",
+        "Pulumur",
+        "Tunceli"
+      ]
+    },
+    {
+      "id": "usak",
+      "nombre": "Usak",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Banaz",
+        "Esme",
+        "Karahalli",
+        "Sivasli",
+        "Ulubey",
+        "Usak"
+      ]
+    },
+    {
+      "id": "van",
+      "nombre": "Van",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bahcesaray",
+        "Baskale",
+        "Caldiran",
+        "Edremit",
+        "Ercis",
+        "Gevas",
+        "Gurpinar",
+        "Muradiye",
+        "Ozalp",
+        "Saray",
+        "Van"
+      ]
+    },
+    {
+      "id": "yalova",
+      "nombre": "Yalova",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Altinova",
+        "Armutlu",
+        "Ciftlikkoy",
+        "Cinarcik",
+        "Termal",
+        "Yalova"
+      ]
+    },
+    {
+      "id": "yozgat",
+      "nombre": "Yozgat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akdagmadeni",
+        "Aydincik",
+        "Bogaziliyan",
+        "Candir",
+        "Cayiralan",
+        "Cekerek",
+        "Kadisehri",
+        "Saraykent",
+        "Sarikaya",
+        "Sefaatli",
+        "Sorgun",
+        "Yenifakili",
+        "Yerkoy",
+        "Yozgat"
+      ]
+    },
+    {
+      "id": "zonguldak",
+      "nombre": "Zonguldak",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alapli",
+        "Caycuma",
+        "Devrek",
+        "Eregli",
+        "Gokcebey",
+        "Zonguldak"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "north-korea",
+    "nombre": "North Korea",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "chagangdo",
+      "nombre": "Chagangdo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kanggye"
+      ]
+    },
+    {
+      "id": "hamgyeongbukto",
+      "nombre": "Hamgyeongbukto",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cheongjin",
+        "Kimchaek",
+        "Najin"
+      ]
+    },
+    {
+      "id": "hamgyeongnamdo",
+      "nombre": "Hamgyeongnamdo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hamheung"
+      ]
+    },
+    {
+      "id": "hwanghaebukto",
+      "nombre": "Hwanghaebukto",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sariweon",
+        "Seongnim"
+      ]
+    },
+    {
+      "id": "hwanghaenamdo",
+      "nombre": "Hwanghaenamdo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Haeju"
+      ]
+    },
+    {
+      "id": "kaeseong",
+      "nombre": "Kaeseong",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kaeseong"
+      ]
+    },
+    {
+      "id": "kangweon",
+      "nombre": "Kangweon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Weonsan"
+      ]
+    },
+    {
+      "id": "nampo",
+      "nombre": "Nampo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nampo"
+      ]
+    },
+    {
+      "id": "pyeonganbukto",
+      "nombre": "Pyeonganbukto",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sineuiju"
+      ]
+    },
+    {
+      "id": "pyeongannamdo",
+      "nombre": "Pyeongannamdo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Phyeongseong"
+      ]
+    },
+    {
+      "id": "pyeongyang",
+      "nombre": "Pyeongyang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Pyeongyang",
+        "Pyongyang"
+      ]
+    },
+    {
+      "id": "yanggang",
+      "nombre": "Yanggang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hyesan"
+      ]
+    }
+  ]
+}

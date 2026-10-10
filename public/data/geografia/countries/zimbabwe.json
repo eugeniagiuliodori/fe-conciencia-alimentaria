@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "zimbabwe",
+    "nombre": "Zimbabwe",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "bulawayo",
+      "nombre": "Bulawayo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bulawayo"
+      ]
+    },
+    {
+      "id": "harare",
+      "nombre": "Harare",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chitungwiza",
+        "Harare"
+      ]
+    },
+    {
+      "id": "manicaland",
+      "nombre": "Manicaland",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chimanimani",
+        "Chipinge",
+        "Mutare",
+        "Nyanga",
+        "Rusape",
+        "Sakubva"
+      ]
+    },
+    {
+      "id": "mashonaland-central",
+      "nombre": "Mashonaland Central",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "mashonaland-east",
+      "nombre": "Mashonaland East",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "mashonaland-west",
+      "nombre": "Mashonaland West",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "masvingo",
+      "nombre": "Masvingo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chiredzi",
+        "Gaths",
+        "Masvingo"
+      ]
+    },
+    {
+      "id": "matabeleland-north",
+      "nombre": "Matabeleland North",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "matabeleland-south",
+      "nombre": "Matabeleland South",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "midlands",
+      "nombre": "Midlands",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chivhu",
+        "Gweru",
+        "Kwekwe",
+        "Mvuma",
+        "Redcliffe",
+        "Shurugwi"
+      ]
+    }
+  ]
+}

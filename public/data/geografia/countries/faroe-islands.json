@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "faroe-islands",
+    "nombre": "Faroe Islands",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "klaksvik",
+      "nombre": "Klaksvik",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hvannasund",
+        "Klaksvik"
+      ]
+    },
+    {
+      "id": "nor-ara-eysturoy",
+      "nombre": "Nor ara Eysturoy",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nor-oy",
+      "nombre": "Nor oy",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sandoy",
+      "nombre": "Sandoy",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Husavik",
+        "Sands",
+        "Skalavik",
+        "Skopun",
+        "Skuvoy"
+      ]
+    },
+    {
+      "id": "streymoy",
+      "nombre": "Streymoy",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Haldarsvik",
+        "Hests",
+        "Hosvik",
+        "Hvalvik",
+        "Kirkjubo",
+        "Kollafjar",
+        "Kvivik",
+        "Nolsoy",
+        "Saksun",
+        "Torshavn",
+        "Vestmanna"
+      ]
+    },
+    {
+      "id": "su-uroy",
+      "nombre": "Su uroy",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sy-ra-eysturoy",
+      "nombre": "Sy ra Eysturoy",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "torshavn",
+      "nombre": "Torshavn",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Torshavn"
+      ]
+    },
+    {
+      "id": "vaga",
+      "nombre": "Vaga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Biggjar",
+        "Midvags",
+        "Mykines",
+        "Sandavags",
+        "Sorvags"
+      ]
+    }
+  ]
+}

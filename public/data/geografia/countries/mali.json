@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "mali",
+    "nombre": "Mali",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "bamako",
+      "nombre": "Bamako",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bamako"
+      ]
+    },
+    {
+      "id": "gao",
+      "nombre": "Gao",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gao"
+      ]
+    },
+    {
+      "id": "kayes",
+      "nombre": "Kayes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bafoulabe",
+        "Kayes",
+        "Kita",
+        "Nioro"
+      ]
+    },
+    {
+      "id": "kidal",
+      "nombre": "Kidal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kidal",
+        "Tessalit"
+      ]
+    },
+    {
+      "id": "koulikoro",
+      "nombre": "Koulikoro",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Banamba",
+        "Kangaba",
+        "Kati",
+        "Kolokani",
+        "Koulikoro",
+        "Nara"
+      ]
+    },
+    {
+      "id": "mopti",
+      "nombre": "Mopti",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bandiagara",
+        "Djenne",
+        "Douentza",
+        "Koro",
+        "Mopti",
+        "Tenenkou"
+      ]
+    },
+    {
+      "id": "segou",
+      "nombre": "Segou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ke-Massina",
+        "Kimparana",
+        "Markala",
+        "Niono",
+        "San",
+        "Segou",
+        "Sokolo"
+      ]
+    },
+    {
+      "id": "sikasso",
+      "nombre": "Sikasso",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bougouni",
+        "Kolondieba",
+        "Koutiala",
+        "Sikasso",
+        "Yorosso"
+      ]
+    },
+    {
+      "id": "tombouctou",
+      "nombre": "Tombouctou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Araouane",
+        "Dire",
+        "Goundam",
+        "Niafunke",
+        "Taoudenni",
+        "Tombouctou"
+      ]
+    }
+  ]
+}

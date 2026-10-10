@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "ghana",
+    "nombre": "Ghana",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "ashanti",
+      "nombre": "Ashanti",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Agogo",
+        "Bekwai",
+        "Konongo",
+        "Kumasi",
+        "Mampong",
+        "Mankranso",
+        "Obuasi",
+        "Ofinso",
+        "Tafo"
+      ]
+    },
+    {
+      "id": "brong-ahafo",
+      "nombre": "Brong-Ahafo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bechem",
+        "Berekum",
+        "Duayaw Nkwanta",
+        "Kintampo",
+        "Sunyani",
+        "Techiman",
+        "Wenchi"
+      ]
+    },
+    {
+      "id": "central",
+      "nombre": "Central",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Apam",
+        "Cape Coast",
+        "Dunkwa",
+        "Elmina",
+        "Foso",
+        "Komenda",
+        "Mauri",
+        "Mumford",
+        "Nyakrom",
+        "Okitsiu",
+        "Saltpond",
+        "Swedru",
+        "Winneba"
+      ]
+    },
+    {
+      "id": "eastern",
+      "nombre": "Eastern",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aburi",
+        "Ada",
+        "Akim Swedru",
+        "Akropong",
+        "Asamankese",
+        "Begoro",
+        "Kade",
+        "Kibi",
+        "Koforidua",
+        "Mpraeso",
+        "Nkawkaw",
+        "Nsawam",
+        "Oda",
+        "Somanya",
+        "Suhum"
+      ]
+    },
+    {
+      "id": "greater-accra",
+      "nombre": "Greater Accra",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abokobi",
+        "Accra",
+        "Ada Foah",
+        "Adenta",
+        "Amasaman",
+        "Ashaiman",
+        "Dodowa",
+        "Kapone",
+        "La",
+        "Madina",
+        "Nungua",
+        "Prampram",
+        "Sege",
+        "Sowutuom",
+        "Tema",
+        "Weija"
+      ]
+    },
+    {
+      "id": "northern",
+      "nombre": "Northern",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kpandae",
+        "Salaga",
+        "Savelugu",
+        "Tamale",
+        "Yendi"
+      ]
+    },
+    {
+      "id": "upper-east",
+      "nombre": "Upper East",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "upper-west",
+      "nombre": "Upper West",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "volta",
+      "nombre": "Volta",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aflao",
+        "Anloga",
+        "Ho",
+        "Hohoe",
+        "Keta",
+        "Kete-Krachi",
+        "Kpandu"
+      ]
+    },
+    {
+      "id": "western",
+      "nombre": "Western",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aboso",
+        "Anomabu",
+        "Axim",
+        "Bibiani",
+        "Prestea",
+        "Sekondi",
+        "Shama",
+        "Takoradi",
+        "Tarkwa"
+      ]
+    }
+  ]
+}

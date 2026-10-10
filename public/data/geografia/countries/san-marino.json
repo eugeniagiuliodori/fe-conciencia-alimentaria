@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "san-marino",
+    "nombre": "San Marino",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "acquaviva",
+      "nombre": "Acquaviva",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Acquaviva"
+      ]
+    },
+    {
+      "id": "borgo-maggiore",
+      "nombre": "Borgo Maggiore",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "chiesanuova",
+      "nombre": "Chiesanuova",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chiesanuova"
+      ]
+    },
+    {
+      "id": "domagnano",
+      "nombre": "Domagnano",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Domagnano"
+      ]
+    },
+    {
+      "id": "faetano",
+      "nombre": "Faetano",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Faetano"
+      ]
+    },
+    {
+      "id": "fiorentino",
+      "nombre": "Fiorentino",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fiorentino"
+      ]
+    },
+    {
+      "id": "montegiardino",
+      "nombre": "Montegiardino",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Montegiardino"
+      ]
+    },
+    {
+      "id": "san-marino",
+      "nombre": "San Marino",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "serravalle",
+      "nombre": "Serravalle",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Serravalle"
+      ]
+    }
+  ]
+}

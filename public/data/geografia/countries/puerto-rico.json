@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "puerto-rico",
+    "nombre": "Puerto Rico",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "arecibo",
+      "nombre": "Arecibo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arecibo",
+        "Barceloneta",
+        "Camuy",
+        "Dorado",
+        "Isabela",
+        "Manati",
+        "Vega Alta",
+        "Vega Baja"
+      ]
+    },
+    {
+      "id": "bayamon",
+      "nombre": "Bayamon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bayamon",
+        "Catano",
+        "Guaynabo",
+        "Levittown",
+        "Valencia"
+      ]
+    },
+    {
+      "id": "carolina",
+      "nombre": "Carolina",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Canovanas",
+        "Carolina",
+        "Trujillo Alto"
+      ]
+    },
+    {
+      "id": "florida",
+      "nombre": "Florida",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Florida"
+      ]
+    },
+    {
+      "id": "guayama",
+      "nombre": "Guayama",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aibonito",
+        "Arroyo",
+        "Barranquitas",
+        "Cayey",
+        "Coamo",
+        "Corozal",
+        "Guayama",
+        "Juana Diaz"
+      ]
+    },
+    {
+      "id": "humacao",
+      "nombre": "Humacao",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aguas Buenas",
+        "Caguas",
+        "Culebra",
+        "Fajardo",
+        "Gurabo",
+        "Humacao",
+        "Juncos",
+        "Rio Grande",
+        "Vieques"
+      ]
+    },
+    {
+      "id": "mayaguez-aguadilla",
+      "nombre": "Mayaguez-Aguadilla",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aguada",
+        "Aguadilla",
+        "Anasco",
+        "Cabo Rojo",
+        "Hormigueros",
+        "Mayaguez",
+        "San German",
+        "San Sebastian"
+      ]
+    },
+    {
+      "id": "ponce",
+      "nombre": "Ponce",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Adjuntas",
+        "Guanica",
+        "Ponce",
+        "Utuado",
+        "Yauco"
+      ]
+    },
+    {
+      "id": "salinas",
+      "nombre": "Salinas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Salinas"
+      ]
+    },
+    {
+      "id": "san-juan",
+      "nombre": "San Juan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "turks-and-caicos-islands",
+    "nombre": "Turks and Caicos Islands",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "grand-turk",
+      "nombre": "Grand Turk",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "south-caicos-and-east-caicos",
+      "nombre": "South Caicos and East Caicos",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

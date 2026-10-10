@@ -5,6 +5,7 @@ import fs from "fs";
 import path from "path";
 import { PublicationsSection } from "@/components/PublicationsSection";
 import { publications } from "@/data/publications";
+import {MensajeDelDia} from "@/components/ModalDelDia";
 
 export default function Home() {
 
@@ -22,7 +23,7 @@ export default function Home() {
     : "/images/publicaciones/noticiadeldia/iconnoticia.png";
 
      const NoticiaLinkSrc = existeNoticia
-    ? "https://doi.org/10.3389/fnut.2026.1912094"
+    ? "https://doi.org/10.1038/s41366-026-02234-9"
     : "/images/publicaciones/noticiadeldia/empty.png";
 
     const menuSugeridoPath = path.join(
@@ -49,16 +50,17 @@ export default function Home() {
         aria-labelledby="intro-title"
         className="site-container grid items-center gap-10 py-12 sm:py-16 lg:grid-cols-2 lg:gap-16 lg:py-20"
       >
-        <div>
+        <div className="flex flex-col">
           <p className="mb-5 text-xs font-semibold tracking-[0.16em] text-accent uppercase">
             Un espacio para aprender
           </p>
           <h1
             id="intro-title"
-            className="max-w-xl font-display text-4xl leading-[1.12] text-balance sm:text-5xl lg:text-6xl"
+            className="max-w-xl font-display text-2xl leading-[1.12] text-balance sm:text-3xl lg:text-4xl"
           >
             Una mirada curiosa{" "}
-            <span className="text-accent">sobre lo que comemos.</span>
+            <span className="text-accent">sobre nuestra alimentación.</span>
+            <div className="text-accent">y... ¿nos alimentamos únicamente con alimentos?</div>
           </h1>
          <div className="mt-6 max-w-lg rounded-[1rem] bg-[#faf7f1] p-[1rem] text-lg leading-relaxed text-muted shadow-[5px_15px_40px_7px_rgba(50,76,0,1)]">
             <p>
@@ -69,10 +71,16 @@ export default function Home() {
               Un lugar para explorar los alimentos, la nutrición, las recetas y la
               fermentación a través de videos y textos.
             </p>
+            <p>
+              Y también para explorar la alimentación de nuestros cuerpos, más allá de la nutrición.
+            </p>
           </div>
-          <a href="#publicaciones" className="primary-link mt-8">
+          <div className="flex flex-col md:flex-row md:max-w-md lg:max-w-lg justify-between">
+          <a href="#publicaciones" className="primary-link mt-8 w-full sm:w-auto">
             Explorar publicaciones <span aria-hidden="true">↓</span>
           </a>
+          <MensajeDelDia />
+          </div>
         </div>
         <div className="overflow-hidden rounded-3xl bg-transparent">
           <Image

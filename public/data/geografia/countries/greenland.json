@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "greenland",
+    "nombre": "Greenland",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "aasiaat",
+      "nombre": "Aasiaat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aasiaat",
+        "Akunnaaq",
+        "Kitsissuarsuit"
+      ]
+    },
+    {
+      "id": "ammassalik",
+      "nombre": "Ammassalik",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ikkatteq",
+        "Isortoq",
+        "Kulusuk",
+        "Kuumiut",
+        "Qernertuarssuit",
+        "Sermiligaaq",
+        "Tasiilaq",
+        "Tiniteqilaaq"
+      ]
+    },
+    {
+      "id": "illoqqortoormiut",
+      "nombre": "Illoqqortoormiut",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Illoqqortoormiut",
+        "Itterajivit",
+        "Uunarteq"
+      ]
+    },
+    {
+      "id": "ilulissat",
+      "nombre": "Ilulissat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ilimanaq",
+        "Ilulissat",
+        "Oqaatsut",
+        "Qeqertaq",
+        "Saqqaq"
+      ]
+    },
+    {
+      "id": "ivittuut",
+      "nombre": "Ivittuut",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ivittuut",
+        "Kangilinnguit"
+      ]
+    },
+    {
+      "id": "kangaatsiaq",
+      "nombre": "Kangaatsiaq",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Attu",
+        "Iginniarfik",
+        "Ikerasaarsuk",
+        "Kangaatsiaq",
+        "Niaqornaarsuk"
+      ]
+    },
+    {
+      "id": "maniitsoq",
+      "nombre": "Maniitsoq",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Atammik",
+        "Kangaamiut",
+        "Maniitsoq",
+        "Napasoq"
+      ]
+    },
+    {
+      "id": "nanortalik",
+      "nombre": "Nanortalik",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aappilattoq",
+        "Akuliaruseq",
+        "Alluitsoq",
+        "Alluitsup Paa",
+        "Ammassivik",
+        "Ikerasassuaq",
+        "Nanortalik",
+        "Narsarmijit",
+        "Nuugaarsuk",
+        "Qallimiut",
+        "Qortortorsuaq",
+        "Tasiusaq"
+      ]
+    },
+    {
+      "id": "narsaq",
+      "nombre": "Narsaq",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amannguit",
+        "Atarnaatsoq",
+        "Eqaluit Ilua",
+        "Igaliku",
+        "Igaliku Kujalleq",
+        "Inneruulalik",
+        "Issormiut",
+        "Iterlak",
+        "Kangerlua",
+        "Narsaq",
+        "Narsarsuaq",
+        "Nunataaq",
+        "Qassiarsuk",
+        "Qinngua",
+        "Qinngua Kangilleq",
+        "Qolortup Itinnera",
+        "Sillisit",
+        "Tasiusaq",
+        "Timerliit",
+        "Uummannartuuaraq"
+      ]
+    },
+    {
+      "id": "nuuk",
+      "nombre": "Nuuk",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kangerluarsoruseq",
+        "Kapisillit",
+        "Neriunaq",
+        "Nuuk",
+        "Qeqertarsuatsiaat",
+        "Qooqqut",
+        "Qoornoq"
+      ]
+    },
+    {
+      "id": "paamiut",
+      "nombre": "Paamiut",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arsuk",
+        "Paamiut"
+      ]
+    },
+    {
+      "id": "qaanaaq",
+      "nombre": "Qaanaaq",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Moriusaq",
+        "Qaanaaq",
+        "Qeqertarsuaq",
+        "Qeqertat",
+        "Savissivik",
+        "Siorapaluk"
+      ]
+    },
+    {
+      "id": "qaqortoq",
+      "nombre": "Qaqortoq",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Eqalugaarsuit",
+        "Illorsuit",
+        "Kangerluarsorujuk",
+        "Kangerluarsorujuup Qinngua",
+        "Qanisartuut",
+        "Qaqortokolook",
+        "Qaqortoq",
+        "Qassimiut",
+        "Saarloq",
+        "Saqqamiut",
+        "Tasiluk",
+        "Upernaviarsuk"
+      ]
+    },
+    {
+      "id": "qasigiannguit",
+      "nombre": "Qasigiannguit",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ikamiut",
+        "Qasigiannguit"
+      ]
+    },
+    {
+      "id": "qeqertarsuaq",
+      "nombre": "Qeqertarsuaq",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kangerluk",
+        "Qeqertarsuaq"
+      ]
+    },
+    {
+      "id": "sisimiut",
+      "nombre": "Sisimiut",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Itilleq",
+        "Kangerlussuaq",
+        "Sarfannguit",
+        "Sisimiut"
+      ]
+    },
+    {
+      "id": "udenfor-kommunal-inddeling",
+      "nombre": "Udenfor kommunal inddeling",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "upernavik",
+      "nombre": "Upernavik",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aappilattoq",
+        "Ikerakuuk",
+        "Innarsuit",
+        "Kangersuatsiaq",
+        "Kullorsuaq",
+        "Naajaat",
+        "Nutaarmiut",
+        "Nuusuaq",
+        "Tasiusaq",
+        "Upernavik"
+      ]
+    },
+    {
+      "id": "uummannaq",
+      "nombre": "Uummannaq",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ikerasak",
+        "Illorsuit",
+        "Niaqornat",
+        "Nuugaatsiaq",
+        "Qaarsut",
+        "Saattut",
+        "Ukkusissat",
+        "Uummannaq"
+      ]
+    }
+  ]
+}

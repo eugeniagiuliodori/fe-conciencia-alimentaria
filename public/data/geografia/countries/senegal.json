@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "senegal",
+    "nombre": "Senegal",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "dakar",
+      "nombre": "Dakar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dakar"
+      ]
+    },
+    {
+      "id": "diourbel",
+      "nombre": "Diourbel",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bambey",
+        "Diourbel",
+        "Mbacke",
+        "Touba"
+      ]
+    },
+    {
+      "id": "fatick",
+      "nombre": "Fatick",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Diofior",
+        "Fatick",
+        "Foundiougne",
+        "Gossas",
+        "Guinguineo",
+        "Kahone",
+        "Passy",
+        "Sokone"
+      ]
+    },
+    {
+      "id": "kaolack",
+      "nombre": "Kaolack",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gandiaye",
+        "Kaffrine",
+        "Kaolack",
+        "Koungheul",
+        "Medina",
+        "Ndoffane Lagheme",
+        "Nioro du Rip",
+        "Toubakouta"
+      ]
+    },
+    {
+      "id": "kolda",
+      "nombre": "Kolda",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dabo",
+        "Goudomp",
+        "Kolda",
+        "Marsassoum",
+        "Medina Gounas",
+        "Sedhiou",
+        "Velingara",
+        "Wassadou"
+      ]
+    },
+    {
+      "id": "louga",
+      "nombre": "Louga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dahra",
+        "Kebemer",
+        "Linguere",
+        "Louga"
+      ]
+    },
+    {
+      "id": "saint-louis",
+      "nombre": "Saint-Louis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dagana",
+        "Gollere",
+        "Kanel",
+        "Matam",
+        "Ndioum",
+        "Ourossogui",
+        "Podor",
+        "Richard Toll",
+        "Saint-Louis",
+        "Semme",
+        "Thilogne",
+        "Waounde"
+      ]
+    },
+    {
+      "id": "tambacounda",
+      "nombre": "Tambacounda",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bakel",
+        "Kedougou",
+        "Tambacounda"
+      ]
+    },
+    {
+      "id": "thies",
+      "nombre": "Thies",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Joal-Fadiouth",
+        "Kayar",
+        "Khombole",
+        "Mbour",
+        "Meckhe",
+        "Nguekhokh",
+        "Pout",
+        "Thiadiaye",
+        "Thies",
+        "Tivaouane"
+      ]
+    },
+    {
+      "id": "ziguinchor",
+      "nombre": "Ziguinchor",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bignona",
+        "Oussouye",
+        "Thionck-Essyl",
+        "Ziguinchor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "gambia",
+    "nombre": "Gambia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "banjul",
+      "nombre": "Banjul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Banjul"
+      ]
+    },
+    {
+      "id": "basse",
+      "nombre": "Basse",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Basse",
+        "Gambissara",
+        "Sabi",
+        "Salikeni"
+      ]
+    },
+    {
+      "id": "brikama",
+      "nombre": "Brikama",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Brikama",
+        "Brufut",
+        "Gunjur",
+        "Sukuta"
+      ]
+    },
+    {
+      "id": "janjanbureh",
+      "nombre": "Janjanbureh",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bansang",
+        "Janjanbureh"
+      ]
+    },
+    {
+      "id": "kanifing",
+      "nombre": "Kanifing",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bakau",
+        "Serekunda"
+      ]
+    },
+    {
+      "id": "kerewan",
+      "nombre": "Kerewan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Barra",
+        "Essau",
+        "Farafenni",
+        "Kerewan",
+        "Lamin"
+      ]
+    },
+    {
+      "id": "kuntaur",
+      "nombre": "Kuntaur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kuntaur"
+      ]
+    },
+    {
+      "id": "mansakonko",
+      "nombre": "Mansakonko",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mansakonko"
+      ]
+    }
+  ]
+}

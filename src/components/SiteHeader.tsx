@@ -44,6 +44,7 @@ export function SiteHeader() {
            <ul className="absolute top-12 right-1 flex w-max flex-col items-end gap-2 text-sm md:text-base lg:text-lg">
             <li className="rounded-lg shadow-[0px_0px_10px_7px_rgba(147,68,47,1)] hover:shadow-[0px_0px_10px_7px_rgba(255,255,255,0.95)]">
               <Link
+                onClick={()=>setAbrirMenu(false)}
                 href="/#publicaciones"
                 className="inline-flex  min-h-11 items-center whitespace-nowrap rounded-lg px-3 bg-accent-soft text-accent"
               >
@@ -52,6 +53,7 @@ export function SiteHeader() {
             </li>
             <li className="rounded-xl shadow-[0px_0px_10px_7px_rgba(147,68,47,1)] hover:shadow-[0px_0px_10px_7px_rgba(255,255,255,0.95)]">
               <Link
+                onClick={()=>setAbrirMenu(false)}
                 href="/#proyecto"
                 className="inline-flex min-h-11 items-center whitespace-nowrap rounded-lg px-3 bg-accent-soft text-accent"
               >
@@ -60,10 +62,20 @@ export function SiteHeader() {
             </li>
             <li className="rounded-xl shadow-[0px_0px_10px_7px_rgba(147,68,47,1)] hover:shadow-[0px_0px_10px_7px_rgba(255,255,255,0.95)]">
               <Link
+                onClick={()=>setAbrirMenu(false)}
                 href={`/alimentos_estacion/`}
                 className="inline-flex min-h-11 items-center whitespace-nowrap rounded-lg px-3 bg-accent-soft text-accent"
               >
                 Alimentos de estación
+              </Link>
+            </li>
+            <li className="rounded-xl shadow-[0px_0px_10px_7px_rgba(147,68,47,1)] hover:shadow-[0px_0px_10px_7px_rgba(255,255,255,0.95)]">
+              <Link
+                onClick={()=>setAbrirMenu(false)}
+                href={`/comercios_naturistas_arg/`}
+                className="inline-flex min-h-11 items-center whitespace-nowrap rounded-lg px-3 bg-accent-soft text-accent"
+              >
+                Comercios naturistas en Arg.
               </Link>
             </li>
           </ul>

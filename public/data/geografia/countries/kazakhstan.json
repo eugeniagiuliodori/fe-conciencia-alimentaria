@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "kazakhstan",
+    "nombre": "Kazakhstan",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "akmecet",
+      "nombre": "Akmecet",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akmecet",
+        "Aral",
+        "Baykonir",
+        "Canakazali",
+        "Canakorgan",
+        "Cosali",
+        "Kazali",
+        "Sieli",
+        "Tasboget"
+      ]
+    },
+    {
+      "id": "akmola",
+      "nombre": "Akmola",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aksu",
+        "Alekseevka",
+        "Astana",
+        "Atbasar",
+        "Bestobe",
+        "Caltir",
+        "Colimbet",
+        "Ereymentau",
+        "Koksetau",
+        "Makin",
+        "Stepnogorsk"
+      ]
+    },
+    {
+      "id": "aktobe",
+      "nombre": "Aktobe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aktobe",
+        "Alka",
+        "Batamsi",
+        "Embi",
+        "Hromtau",
+        "Kandagac",
+        "Salkar",
+        "Subarkudik",
+        "Subarsi",
+        "Temir"
+      ]
+    },
+    {
+      "id": "almati",
+      "nombre": "Almati",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Almati",
+        "Almaty",
+        "Boralday",
+        "Carkant",
+        "Energetyceskiy",
+        "Esik",
+        "Fabrichniy",
+        "Kapsagay",
+        "Karabulak",
+        "Kaskelen",
+        "Kirov",
+        "Sariozek",
+        "Sarkand",
+        "Selek",
+        "Taldikorgan",
+        "Talgar",
+        "Tekeli",
+        "Ustobe",
+        "Uzunagac"
+      ]
+    },
+    {
+      "id": "atirau",
+      "nombre": "Atirau",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Atirau",
+        "Atyrau",
+        "Dossor",
+        "Inderbor",
+        "Karaton",
+        "Kulsari",
+        "Makat",
+        "Oporni",
+        "Sumisker"
+      ]
+    },
+    {
+      "id": "batis-kazakstan",
+      "nombre": "Batis Kazakstan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "burlinsky-region",
+      "nombre": "Burlinsky Region",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "karagandi",
+      "nombre": "Karagandi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abay",
+        "Akadir",
+        "Aktas",
+        "Aktau",
+        "Atasu",
+        "Balkas",
+        "Cayrem",
+        "Cezkazgan",
+        "Gulsat",
+        "Karacal",
+        "Karaganda",
+        "Karkarali",
+        "Karsakbay",
+        "Konrat",
+        "Novodolinskiy",
+        "Osakarovka",
+        "Sahti",
+        "Saran",
+        "Sarisagan",
+        "Satpaev",
+        "Temirtau",
+        "Tokaryovka"
+      ]
+    },
+    {
+      "id": "kostanay",
+      "nombre": "Kostanay",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Arkalik",
+        "Borovskoy",
+        "Cetikara",
+        "Derjavinsk",
+        "Esil",
+        "Fodorov",
+        "Kacar",
+        "Komsomol",
+        "Kostanay",
+        "Kusmurin",
+        "Lisakovsk",
+        "Rudni",
+        "Tobol",
+        "Uritsk",
+        "Zatobolsk"
+      ]
+    },
+    {
+      "id": "mankistau",
+      "nombre": "Mankistau",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aktau",
+        "Beyneu",
+        "Canaozen",
+        "Cetibay",
+        "Fort-Sevcenko",
+        "Kurik",
+        "Mangyslak",
+        "Setpe"
+      ]
+    },
+    {
+      "id": "ontustik-kazakstan",
+      "nombre": "Ontustik Kazakstan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "pavlodar",
+      "nombre": "Pavlodar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ekibastuz",
+        "Ermak",
+        "Ertis",
+        "Kaciri",
+        "Maykain",
+        "Pavlodar",
+        "Sarbakti"
+      ]
+    },
+    {
+      "id": "sigis-kazakstan",
+      "nombre": "Sigis Kazakstan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "soltustik-kazakstan",
+      "nombre": "Soltustik Kazakstan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "taraz",
+      "nombre": "Taraz",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Canatas",
+        "Georgiyev",
+        "Karatau",
+        "Lugovoy",
+        "Merke",
+        "Mihaylov",
+        "Oytal",
+        "Su",
+        "Taraz"
+      ]
+    }
+  ]
+}

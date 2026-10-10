@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "rwanda",
+    "nombre": "Rwanda",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "butare",
+      "nombre": "Butare",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Butare",
+        "Nyanza"
+      ]
+    },
+    {
+      "id": "byumba",
+      "nombre": "Byumba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Byumba"
+      ]
+    },
+    {
+      "id": "cyangugu",
+      "nombre": "Cyangugu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cyangugu"
+      ]
+    },
+    {
+      "id": "gikongoro",
+      "nombre": "Gikongoro",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gikongoro"
+      ]
+    },
+    {
+      "id": "gisenyi",
+      "nombre": "Gisenyi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gisenyi"
+      ]
+    },
+    {
+      "id": "gitarama",
+      "nombre": "Gitarama",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gitarama"
+      ]
+    },
+    {
+      "id": "kibungo",
+      "nombre": "Kibungo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kibungo",
+        "Rwamagana"
+      ]
+    },
+    {
+      "id": "kibuye",
+      "nombre": "Kibuye",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kibuye"
+      ]
+    },
+    {
+      "id": "kigali-ngali",
+      "nombre": "Kigali-ngali",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kigali"
+      ]
+    },
+    {
+      "id": "ruhengeri",
+      "nombre": "Ruhengeri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ruhengeri"
+      ]
+    }
+  ]
+}

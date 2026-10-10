@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "bolivia",
+    "nombre": "Bolivia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "beni",
+      "nombre": "Beni",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Guayaramerin",
+        "Magdalena",
+        "Reyes",
+        "Riberalta",
+        "Rurrenabaque",
+        "San Borja",
+        "San Ignacio",
+        "San Ramon",
+        "Santa Ana",
+        "Santa Rosa",
+        "Trinidad"
+      ]
+    },
+    {
+      "id": "chuquisaca",
+      "nombre": "Chuquisaca",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Camargo",
+        "Monteagudo",
+        "Muyupampa",
+        "Padilla",
+        "Sucre",
+        "Tarabuco",
+        "Villa Serano"
+      ]
+    },
+    {
+      "id": "cochabamba",
+      "nombre": "Cochabamba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aiquile",
+        "Arani",
+        "Capinota",
+        "Chimore",
+        "Cliza",
+        "Cochabamba",
+        "Colomi",
+        "Entre Rios",
+        "Irpa Irpa",
+        "Ivirgarzama",
+        "Mizque",
+        "Punata",
+        "Shinahota",
+        "Sipe Sipe",
+        "Tarata",
+        "Ucurena"
+      ]
+    },
+    {
+      "id": "la-paz",
+      "nombre": "La Paz",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "oruro",
+      "nombre": "Oruro",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Caracollo",
+        "Challapata",
+        "Eucaliptus",
+        "Huanuni",
+        "Machacamarca",
+        "Oruro",
+        "Poopo",
+        "Santiago de Huari",
+        "Totoral"
+      ]
+    },
+    {
+      "id": "pando",
+      "nombre": "Pando",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cobija"
+      ]
+    },
+    {
+      "id": "potosi",
+      "nombre": "Potosi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Atocha",
+        "Betanzos",
+        "Colquechaca",
+        "Llallagua",
+        "Potosi",
+        "Santa Barbara",
+        "Tupiza",
+        "Uncia",
+        "Uyuni",
+        "Villazon"
+      ]
+    },
+    {
+      "id": "santa-cruz",
+      "nombre": "Santa Cruz",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tarija",
+      "nombre": "Tarija",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bermejo",
+        "Entre Rios",
+        "San Lorenzo",
+        "Tarija",
+        "Villamontes",
+        "Yacuiba"
+      ]
+    }
+  ]
+}

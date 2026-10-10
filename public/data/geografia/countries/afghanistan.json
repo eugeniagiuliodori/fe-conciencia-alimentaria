@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "afghanistan",
+    "nombre": "Afghanistan",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "badakhshan",
+      "nombre": "Badakhshan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Eshkashem",
+        "Fayzabad",
+        "Jurm",
+        "Khandud",
+        "Qal''eh-ye Panjeh"
+      ]
+    },
+    {
+      "id": "badgis",
+      "nombre": "Badgis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bala Morghab",
+        "Qal''eh-ye Naw"
+      ]
+    },
+    {
+      "id": "baglan",
+      "nombre": "Baglan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Andarab",
+        "Baghlan",
+        "Dahaneh-ye Ghawri",
+        "Nahrin",
+        "Pol-e Khumri"
+      ]
+    },
+    {
+      "id": "balkh",
+      "nombre": "Balkh",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Balkh",
+        "Dawlatabad",
+        "Mazar-e Sharif",
+        "Qarchi Gak",
+        "Shulgara",
+        "Tash Gozar"
+      ]
+    },
+    {
+      "id": "bamiyan",
+      "nombre": "Bamiyan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bamiyan",
+        "Panjab",
+        "Qil Qal''eh"
+      ]
+    },
+    {
+      "id": "farah",
+      "nombre": "Farah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Anar Darreh",
+        "Farah",
+        "Shindand"
+      ]
+    },
+    {
+      "id": "faryab",
+      "nombre": "Faryab",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Andkhvoy",
+        "Darzi Ab",
+        "Dawlatabad",
+        "Maymanah"
+      ]
+    },
+    {
+      "id": "gawr",
+      "nombre": "Gawr",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chaghcharan",
+        "Shahrak",
+        "Taywarah"
+      ]
+    },
+    {
+      "id": "gazni",
+      "nombre": "Gazni",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ghazni"
+      ]
+    },
+    {
+      "id": "herat",
+      "nombre": "Herat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Awbeh",
+        "Eslam Qal''eh",
+        "Ghurian",
+        "Herat",
+        "Karukh",
+        "Kuhestan",
+        "Kushk",
+        "Qarabagh",
+        "Tawraghudi",
+        "Tir Pol",
+        "Zendejan"
+      ]
+    },
+    {
+      "id": "hilmand",
+      "nombre": "Hilmand",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baghran",
+        "Darwishan",
+        "Deh Shu",
+        "Gereshk",
+        "Lashkar Gah",
+        "Sangin"
+      ]
+    },
+    {
+      "id": "jawzjan",
+      "nombre": "Jawzjan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aqchah",
+        "Qarqin",
+        "Sang-e Charak",
+        "Shibarghan"
+      ]
+    },
+    {
+      "id": "kabul",
+      "nombre": "Kabul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baghrami",
+        "Kabul",
+        "Mir Bachchekut",
+        "Paghman",
+        "Qarabagh",
+        "Sarawbi"
+      ]
+    },
+    {
+      "id": "kapisa",
+      "nombre": "Kapisa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mahmud-e Raqi",
+        "Taghab"
+      ]
+    },
+    {
+      "id": "khawst",
+      "nombre": "Khawst",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Khawst"
+      ]
+    },
+    {
+      "id": "kunar",
+      "nombre": "Kunar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Asadabad",
+        "Asmar"
+      ]
+    },
+    {
+      "id": "lagman",
+      "nombre": "Lagman",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mehtar Lam"
+      ]
+    },
+    {
+      "id": "lawghar",
+      "nombre": "Lawghar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Azraw",
+        "Baraki Barak",
+        "Pol-e Alam"
+      ]
+    },
+    {
+      "id": "nangarhar",
+      "nombre": "Nangarhar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Achin",
+        "Batsawul",
+        "Hugyani",
+        "Jalalabad",
+        "Nader Shah Kawt"
+      ]
+    },
+    {
+      "id": "nimruz",
+      "nombre": "Nimruz",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chahar Burjak",
+        "Chakhansur",
+        "Khash",
+        "Mirabad",
+        "Rudbar",
+        "Zaranj"
+      ]
+    },
+    {
+      "id": "nuristan",
+      "nombre": "Nuristan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nuristan"
+      ]
+    },
+    {
+      "id": "paktika",
+      "nombre": "Paktika",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Orgun",
+        "Zareh Sharan",
+        "Zarghun Shahr"
+      ]
+    },
+    {
+      "id": "paktiya",
+      "nombre": "Paktiya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ali Khayl",
+        "Ghardez"
+      ]
+    },
+    {
+      "id": "parwan",
+      "nombre": "Parwan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Charikar",
+        "Jabal-os-Saraj"
+      ]
+    },
+    {
+      "id": "qandahar",
+      "nombre": "Qandahar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Qandahar"
+      ]
+    },
+    {
+      "id": "qunduz",
+      "nombre": "Qunduz",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dasht-e Archa",
+        "Emam Saheb",
+        "Hazart Imam",
+        "Khanabad",
+        "Qal''eh-ye Zal",
+        "Qunduz"
+      ]
+    },
+    {
+      "id": "samangan",
+      "nombre": "Samangan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aybak",
+        "Kholm"
+      ]
+    },
+    {
+      "id": "sar-e-pul",
+      "nombre": "Sar-e Pul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "takhar",
+      "nombre": "Takhar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chah Ab",
+        "Eshkamesh",
+        "Farkhar",
+        "Khwajeh Ghar",
+        "Rostaq",
+        "Taloqan",
+        "Yangi Qal''eh"
+      ]
+    },
+    {
+      "id": "uruzgan",
+      "nombre": "Uruzgan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Deh Rawud",
+        "Gaz Ab",
+        "Tarin Kawt",
+        "Uruzgan"
+      ]
+    },
+    {
+      "id": "wardag",
+      "nombre": "Wardag",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gardan Diwal",
+        "Maydanshahr"
+      ]
+    },
+    {
+      "id": "zabul",
+      "nombre": "Zabul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Qalat-e Ghilzay"
+      ]
+    }
+  ]
+}

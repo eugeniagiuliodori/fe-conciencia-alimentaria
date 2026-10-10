@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "pitcairn-islands",
+    "nombre": "Pitcairn Islands",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "pitcairn-island",
+      "nombre": "Pitcairn Island",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

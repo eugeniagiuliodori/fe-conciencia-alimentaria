@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "burkina-faso",
+    "nombre": "Burkina Faso",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "bale",
+      "nombre": "Bale",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Boromo"
+      ]
+    },
+    {
+      "id": "bam",
+      "nombre": "Bam",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kongoussi"
+      ]
+    },
+    {
+      "id": "bazega",
+      "nombre": "Bazega",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kombissiri"
+      ]
+    },
+    {
+      "id": "bougouriba",
+      "nombre": "Bougouriba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Diebougou",
+        "Pa"
+      ]
+    },
+    {
+      "id": "boulgou",
+      "nombre": "Boulgou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Garango",
+        "Tenkodogo"
+      ]
+    },
+    {
+      "id": "boulkiemde",
+      "nombre": "Boulkiemde",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Koudougou"
+      ]
+    },
+    {
+      "id": "comoe",
+      "nombre": "Comoe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Banfora"
+      ]
+    },
+    {
+      "id": "ganzourgou",
+      "nombre": "Ganzourgou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Zorgo"
+      ]
+    },
+    {
+      "id": "gnagna",
+      "nombre": "Gnagna",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bogande"
+      ]
+    },
+    {
+      "id": "gourma",
+      "nombre": "Gourma",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Fada N''gourma"
+      ]
+    },
+    {
+      "id": "houet",
+      "nombre": "Houet",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bekuy",
+        "Bobo Dioulasso"
+      ]
+    },
+    {
+      "id": "ioba",
+      "nombre": "Ioba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dano"
+      ]
+    },
+    {
+      "id": "kadiogo",
+      "nombre": "Kadiogo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ouagadougou"
+      ]
+    },
+    {
+      "id": "kenedougou",
+      "nombre": "Kenedougou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Koalla",
+        "Koloko",
+        "Orodara"
+      ]
+    },
+    {
+      "id": "komandjari",
+      "nombre": "Komandjari",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gayeri"
+      ]
+    },
+    {
+      "id": "kompienga",
+      "nombre": "Kompienga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Pama"
+      ]
+    },
+    {
+      "id": "kossi",
+      "nombre": "Kossi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nouna"
+      ]
+    },
+    {
+      "id": "kouritenga",
+      "nombre": "Kouritenga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Koupela"
+      ]
+    },
+    {
+      "id": "kourweogo",
+      "nombre": "Kourweogo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bousse"
+      ]
+    },
+    {
+      "id": "leraba",
+      "nombre": "Leraba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sindou"
+      ]
+    },
+    {
+      "id": "mouhoun",
+      "nombre": "Mouhoun",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dedougou"
+      ]
+    },
+    {
+      "id": "nahouri",
+      "nombre": "Nahouri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Po"
+      ]
+    },
+    {
+      "id": "namentenga",
+      "nombre": "Namentenga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Boulsa"
+      ]
+    },
+    {
+      "id": "noumbiel",
+      "nombre": "Noumbiel",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Batie"
+      ]
+    },
+    {
+      "id": "oubritenga",
+      "nombre": "Oubritenga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ziniare"
+      ]
+    },
+    {
+      "id": "oudalan",
+      "nombre": "Oudalan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gorom-Gorom"
+      ]
+    },
+    {
+      "id": "passore",
+      "nombre": "Passore",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Yako"
+      ]
+    },
+    {
+      "id": "poni",
+      "nombre": "Poni",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gaoua",
+        "Kampti",
+        "Loropeni"
+      ]
+    },
+    {
+      "id": "sanguie",
+      "nombre": "Sanguie",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Reo"
+      ]
+    },
+    {
+      "id": "sanmatenga",
+      "nombre": "Sanmatenga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kaya"
+      ]
+    },
+    {
+      "id": "seno",
+      "nombre": "Seno",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dori"
+      ]
+    },
+    {
+      "id": "sissili",
+      "nombre": "Sissili",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gao",
+        "Leo"
+      ]
+    },
+    {
+      "id": "soum",
+      "nombre": "Soum",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aribinda",
+        "Djibo"
+      ]
+    },
+    {
+      "id": "sourou",
+      "nombre": "Sourou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Louta",
+        "Tougan"
+      ]
+    },
+    {
+      "id": "tapoa",
+      "nombre": "Tapoa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Diapaga",
+        "Kantchari"
+      ]
+    },
+    {
+      "id": "tuy",
+      "nombre": "Tuy",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hounde"
+      ]
+    },
+    {
+      "id": "yatenga",
+      "nombre": "Yatenga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ouahigouya"
+      ]
+    },
+    {
+      "id": "zondoma",
+      "nombre": "Zondoma",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gourcy"
+      ]
+    },
+    {
+      "id": "zoundweogo",
+      "nombre": "Zoundweogo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Manga"
+      ]
+    }
+  ]
+}

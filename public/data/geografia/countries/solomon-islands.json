@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "solomon-islands",
+    "nombre": "Solomon Islands",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "central",
+      "nombre": "Central",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tulagi"
+      ]
+    },
+    {
+      "id": "choiseul",
+      "nombre": "Choiseul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Taro Island"
+      ]
+    },
+    {
+      "id": "guadalcanal",
+      "nombre": "Guadalcanal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Honiara"
+      ]
+    },
+    {
+      "id": "isabel",
+      "nombre": "Isabel",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Buala"
+      ]
+    },
+    {
+      "id": "makira-and-ulawa",
+      "nombre": "Makira and Ulawa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "malaita",
+      "nombre": "Malaita",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Auki"
+      ]
+    },
+    {
+      "id": "rennell-and-bellona",
+      "nombre": "Rennell and Bellona",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "temotu",
+      "nombre": "Temotu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lata"
+      ]
+    },
+    {
+      "id": "western",
+      "nombre": "Western",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gizo"
+      ]
+    }
+  ]
+}

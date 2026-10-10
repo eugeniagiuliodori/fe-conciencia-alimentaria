@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "indonesia",
+    "nombre": "Indonesia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "aceh",
+      "nombre": "Aceh",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Banda Aceh",
+        "Bireun",
+        "Langsa",
+        "Lhokseumawe",
+        "Meulaboh"
+      ]
+    },
+    {
+      "id": "bali",
+      "nombre": "Bali",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Denpasar",
+        "Karangasem",
+        "Klungkung",
+        "Kuta",
+        "Negara",
+        "Singaraja",
+        "Tabanan",
+        "Ubud"
+      ]
+    },
+    {
+      "id": "bangka-belitung",
+      "nombre": "Bangka-Belitung",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Manggar",
+        "Mentok",
+        "Pangkal Pinang",
+        "Sungai Liat",
+        "Tanjung Pandan",
+        "Toboali-Rias"
+      ]
+    },
+    {
+      "id": "banten",
+      "nombre": "Banten",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cikupa",
+        "Cilegon",
+        "Ciputat",
+        "Curug",
+        "Kresek",
+        "Labuhan",
+        "Pandegelang",
+        "Pondok Aren",
+        "Rangkasbitung",
+        "Serang",
+        "Serpong",
+        "Tangerang",
+        "Teluknaga"
+      ]
+    },
+    {
+      "id": "bengkulu",
+      "nombre": "Bengkulu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bengkulu",
+        "Curup"
+      ]
+    },
+    {
+      "id": "gandaria",
+      "nombre": "Gandaria",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gandaria"
+      ]
+    },
+    {
+      "id": "gorontalo",
+      "nombre": "Gorontalo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gorontalo"
+      ]
+    },
+    {
+      "id": "jakarta",
+      "nombre": "Jakarta",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cengkareng",
+        "Jakarta"
+      ]
+    },
+    {
+      "id": "jambi",
+      "nombre": "Jambi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jambi",
+        "Kualatungka",
+        "Simpang",
+        "Sungaipenuh"
+      ]
+    },
+    {
+      "id": "jawa-barat",
+      "nombre": "Jawa Barat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "jawa-tengah",
+      "nombre": "Jawa Tengah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "jawa-timur",
+      "nombre": "Jawa Timur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kalimantan-barat",
+      "nombre": "Kalimantan Barat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kalimantan-selatan",
+      "nombre": "Kalimantan Selatan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kalimantan-tengah",
+      "nombre": "Kalimantan Tengah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kalimantan-timur",
+      "nombre": "Kalimantan Timur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kendal",
+      "nombre": "Kendal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kendal"
+      ]
+    },
+    {
+      "id": "lampung",
+      "nombre": "Lampung",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bandar Lampung",
+        "Kota Bumi",
+        "Metro",
+        "Pringsewu",
+        "Terbanggi Besar"
+      ]
+    },
+    {
+      "id": "maluku",
+      "nombre": "Maluku",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amahai",
+        "Ambon",
+        "Tual"
+      ]
+    },
+    {
+      "id": "maluku-utara",
+      "nombre": "Maluku Utara",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amahai",
+        "Ambon",
+        "Tual"
+      ]
+    },
+    {
+      "id": "nusa-tenggara-barat",
+      "nombre": "Nusa Tenggara Barat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nusa-tenggara-timur",
+      "nombre": "Nusa Tenggara Timur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "papua",
+      "nombre": "Papua",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aberpura",
+        "Biak",
+        "Jaya Pura",
+        "Manokwari",
+        "Merauke",
+        "Sorong"
+      ]
+    },
+    {
+      "id": "riau",
+      "nombre": "Riau",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Balaipungut",
+        "Bengkalis",
+        "Dumai",
+        "Duri",
+        "Pekan Baru",
+        "Selatpanjang",
+        "Tanjung Balai-Meral",
+        "Tembilahan"
+      ]
+    },
+    {
+      "id": "riau-kepulauan",
+      "nombre": "Riau Kepulauan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Balaipungut",
+        "Bengkalis",
+        "Dumai",
+        "Duri",
+        "Pekan Baru",
+        "Selatpanjang",
+        "Tanjung Balai-Meral",
+        "Tembilahan"
+      ]
+    },
+    {
+      "id": "solo",
+      "nombre": "Solo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Solo"
+      ]
+    },
+    {
+      "id": "sulawesi-selatan",
+      "nombre": "Sulawesi Selatan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sulawesi-tengah",
+      "nombre": "Sulawesi Tengah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sulawesi-tenggara",
+      "nombre": "Sulawesi Tenggara",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sulawesi-utara",
+      "nombre": "Sulawesi Utara",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sumatera-barat",
+      "nombre": "Sumatera Barat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sumatera-selatan",
+      "nombre": "Sumatera Selatan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sumatera-utara",
+      "nombre": "Sumatera Utara",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "yogyakarta",
+      "nombre": "Yogyakarta",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bambanglipuro",
+        "Banguntapan",
+        "Bantul",
+        "Depok",
+        "Gamping",
+        "Godean",
+        "Jetis",
+        "Kasihan",
+        "Ngaglik",
+        "Pandak",
+        "Pundong",
+        "Sewon",
+        "Seyegan",
+        "Sleman",
+        "Srandakan",
+        "Wonosari",
+        "Yogyakarta"
+      ]
+    }
+  ]
+}

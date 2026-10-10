@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "sao-tome-and-principe",
+    "nombre": "São Tomé and Príncipe",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "agua-grande",
+      "nombre": "Agua Grande",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "cantagalo",
+      "nombre": "Cantagalo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Santana"
+      ]
+    },
+    {
+      "id": "lemba",
+      "nombre": "Lemba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Neves"
+      ]
+    },
+    {
+      "id": "lobata",
+      "nombre": "Lobata",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Santo Amaro"
+      ]
+    },
+    {
+      "id": "me-zochi",
+      "nombre": "Me-Zochi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Trindade"
+      ]
+    },
+    {
+      "id": "pague",
+      "nombre": "Pague",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Santo Antonio"
+      ]
+    }
+  ]
+}

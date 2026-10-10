@@ -1,0 +1,761 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "algeria",
+    "nombre": "Algeria",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "adrar",
+      "nombre": "Adrar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Adrar",
+        "Awlaf",
+        "Rijan",
+        "Timimun"
+      ]
+    },
+    {
+      "id": "al-aghwat",
+      "nombre": "al-Aghwat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aflu",
+        "al-Aghwat",
+        "Hassi al-Raml"
+      ]
+    },
+    {
+      "id": "al-bayadh",
+      "nombre": "al-Bayadh",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Abyad Sidi Shaykh",
+        "al-Bayadh",
+        "Brizyanah"
+      ]
+    },
+    {
+      "id": "al-jaza-ir",
+      "nombre": "al-Jaza''ir",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Jaza''ir",
+        "Bab Azwar",
+        "Baraki",
+        "Bir Murad Rais",
+        "Birkhadam",
+        "Burj-al-Kiffan",
+        "Dar-al-Bayda"
+      ]
+    },
+    {
+      "id": "al-wad",
+      "nombre": "al-Wad",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Mighair",
+        "al-Wad",
+        "Bayadha",
+        "Dabilah",
+        "Hassan ''Abd-al-Karim",
+        "Hassi Halifa",
+        "Jama''a",
+        "Maqran",
+        "Qamar",
+        "Raqiba",
+        "Rubbah",
+        "Sidi Amran"
+      ]
+    },
+    {
+      "id": "algiers",
+      "nombre": "Algiers",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hydra",
+        "Kouba"
+      ]
+    },
+    {
+      "id": "annabah",
+      "nombre": "Annabah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Buni",
+        "al-Hajar",
+        "Annabah",
+        "Birrahhal",
+        "Saraydih",
+        "Sidi Amar"
+      ]
+    },
+    {
+      "id": "ash-shalif",
+      "nombre": "ash-Shalif",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abu al-Hassan",
+        "ash-Shalif",
+        "ash-Shattiyah",
+        "Ayn Maran",
+        "Bani Hawa",
+        "Bu Qadir",
+        "Sidi Ukaskah",
+        "Tanas",
+        "Wadi al-Fiddah",
+        "Wadi Sali"
+      ]
+    },
+    {
+      "id": "at-tarif",
+      "nombre": "at-Tarif",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Qal''ah",
+        "at-Tarif",
+        "Ban Mahdi",
+        "Bani Amar",
+        "Basbas",
+        "Dariyan",
+        "Saba''ita Muk"
+      ]
+    },
+    {
+      "id": "ayn-daflah",
+      "nombre": "Ayn Daflah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ayn-tamushanat",
+      "nombre": "Ayn Tamushanat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "bashshar",
+      "nombre": "Bashshar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abadlah",
+        "Bani Wanif",
+        "Bashshar",
+        "Qanadsan",
+        "Taghit"
+      ]
+    },
+    {
+      "id": "batnah",
+      "nombre": "Batnah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aris",
+        "Ayn Tutah",
+        "Barikah",
+        "Batnah",
+        "Marwanah",
+        "Naghaus",
+        "Ra''s-al-''Ayun",
+        "Tazult"
+      ]
+    },
+    {
+      "id": "bijayah",
+      "nombre": "Bijayah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akbu",
+        "al-Qasr",
+        "Amizur",
+        "Ayt Rizin",
+        "Barbasha",
+        "Bijayah",
+        "Farrawn",
+        "Ighram",
+        "Sadduk",
+        "Shamini",
+        "Sidi ''Aysh",
+        "Taskaryut",
+        "Tazmalt",
+        "Timazrit",
+        "Uz-al-Laqin"
+      ]
+    },
+    {
+      "id": "biskrah",
+      "nombre": "Biskrah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Awlad Jallal",
+        "Biskrah",
+        "Sidi Khalid",
+        "Sidi Ukbah",
+        "Tulja",
+        "Um''ash",
+        "Zaribat-al-Wad"
+      ]
+    },
+    {
+      "id": "blidah",
+      "nombre": "Blidah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-''Afrun",
+        "al-Arba''a",
+        "Awlad Salam",
+        "Awlad Yaysh",
+        "Bani Khalil",
+        "Bani Marad",
+        "Bani Tamu",
+        "Blidah",
+        "Bu Arfa",
+        "Bufarik",
+        "Buinan",
+        "Buqara",
+        "Maftah",
+        "Muzayah",
+        "Shabli",
+        "Shari''ah",
+        "Shiffa",
+        "Sidi Mussa",
+        "Suma",
+        "Wadi al-Allagh"
+      ]
+    },
+    {
+      "id": "buirah",
+      "nombre": "Buirah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aghbalu",
+        "Ayn Bissim",
+        "Bi''r Ghabalu",
+        "Buirah",
+        "Lakhdariyah",
+        "Shurfa",
+        "Sur-al-Ghuzlan"
+      ]
+    },
+    {
+      "id": "bumardas",
+      "nombre": "Bumardas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Arba''a Tash",
+        "ar-Ruwibah",
+        "Awlad Haddaj",
+        "Awlad Mussa",
+        "Ayn Tayah",
+        "Bani Amran",
+        "Budwawu",
+        "Budwawu al-Bahri",
+        "Bumardas",
+        "Burj Minayal",
+        "Dalis",
+        "Hammadi",
+        "Issar",
+        "Khamis-al-Khashnah",
+        "Nasiriyah",
+        "Raghayah",
+        "Sa''abat",
+        "Tinyah"
+      ]
+    },
+    {
+      "id": "burj-bu-arririj",
+      "nombre": "Burj Bu Arririj",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ghalizan",
+      "nombre": "Ghalizan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ammi Mussa",
+        "Ghalizan",
+        "Jidiwiyah",
+        "Mazunah",
+        "Sidi Muhammad Ban ''Ali",
+        "Wadi Rahiyu",
+        "Zammurah"
+      ]
+    },
+    {
+      "id": "ghardayah",
+      "nombre": "Ghardayah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Ghuli''ah",
+        "al-Qararah",
+        "Biryan",
+        "Bu Nura",
+        "Ghardaia",
+        "Ghardayah",
+        "Matlili"
+      ]
+    },
+    {
+      "id": "ilizi",
+      "nombre": "Ilizi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ilizi"
+      ]
+    },
+    {
+      "id": "jijili",
+      "nombre": "Jijili",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Miliyah",
+        "Amir ''Abd-al-Qadar",
+        "Jijili",
+        "Shifka",
+        "Tahar"
+      ]
+    },
+    {
+      "id": "jilfah",
+      "nombre": "Jilfah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Idrisiyah",
+        "Ayn Wissarah",
+        "Ayn-al-Ibil",
+        "Birin",
+        "Dar Shiyukh",
+        "Hassi Bahbah",
+        "Jilfah",
+        "Mis''ad",
+        "Sharif"
+      ]
+    },
+    {
+      "id": "khanshalah",
+      "nombre": "Khanshalah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Mahmal",
+        "Khanshalah",
+        "Sharshar",
+        "Tawziyanat"
+      ]
+    },
+    {
+      "id": "masilah",
+      "nombre": "Masilah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayn-al-Hajal",
+        "Ayn-al-Milh",
+        "Bu Sa''adah",
+        "Hammam Dhala''a",
+        "Ma''adid",
+        "Maghra",
+        "Masilah",
+        "Sidi ''Aysa",
+        "Wanugha"
+      ]
+    },
+    {
+      "id": "midyah",
+      "nombre": "Midyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayn Bu Sif",
+        "Birwaghiyah",
+        "Midyah",
+        "Qasr-al-Bukhari",
+        "Shillalah",
+        "Tablat"
+      ]
+    },
+    {
+      "id": "milah",
+      "nombre": "Milah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Farjiwah",
+        "Milah",
+        "Qararam Quqa",
+        "Ruwashad",
+        "Salghum-al-''Ayd",
+        "Sidi Maruf",
+        "Sidi Marwan",
+        "Tajananah",
+        "Talighmah",
+        "Wadi Athmaniyah"
+      ]
+    },
+    {
+      "id": "muaskar",
+      "nombre": "Muaskar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bu Khanifiyah",
+        "Muaskar",
+        "Muhammadiyah",
+        "Siq",
+        "Tighinnif",
+        "Wadi al-Abtal",
+        "Zahana"
+      ]
+    },
+    {
+      "id": "mustaghanam",
+      "nombre": "Mustaghanam",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayn Tadalas",
+        "Hassi Mamash",
+        "Mazaghran",
+        "Mustaghanam",
+        "Sidi Ali"
+      ]
+    },
+    {
+      "id": "naama",
+      "nombre": "Naama",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayn Safra",
+        "Mishriyah",
+        "Naama"
+      ]
+    },
+    {
+      "id": "oran",
+      "nombre": "Oran",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Oran"
+      ]
+    },
+    {
+      "id": "ouargla",
+      "nombre": "Ouargla",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ouargla"
+      ]
+    },
+    {
+      "id": "qalmah",
+      "nombre": "Qalmah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayn Bardah",
+        "Bumahra Ahmad",
+        "Hamman Awlad ''Ali",
+        "Qalmah",
+        "Wadi Zinati"
+      ]
+    },
+    {
+      "id": "qustantinah",
+      "nombre": "Qustantinah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Khurub",
+        "Ayn Abid",
+        "Ayn Samara",
+        "Didush Murad",
+        "Hamma Bu Ziyan",
+        "Qustantinah",
+        "Zighut Yusuf"
+      ]
+    },
+    {
+      "id": "sakikdah",
+      "nombre": "Sakikdah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Harush",
+        "al-Qull",
+        "Amjaz Adshish",
+        "Azzabah",
+        "Fil Fila",
+        "Karkira",
+        "Ramadan Jamal",
+        "Sakikdah",
+        "Shataybih",
+        "Tamalus"
+      ]
+    },
+    {
+      "id": "satif",
+      "nombre": "Satif",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-''Ulmah",
+        "Ayn ''Azl",
+        "Ayn Arnat",
+        "Ayn Taqrut",
+        "Ayn Wilman",
+        "Ayn-al-Khabira",
+        "Bouira",
+        "Buq''ah",
+        "Salah Bay",
+        "Satif",
+        "Setif",
+        "Ziyama Mansuriyah"
+      ]
+    },
+    {
+      "id": "sayda",
+      "nombre": "Sayda",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayn-al-Hajar",
+        "Sayda"
+      ]
+    },
+    {
+      "id": "sidi-ban-al-abbas",
+      "nombre": "Sidi ban-al-''Abbas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "suq-ahras",
+      "nombre": "Suq Ahras",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tamanghasat",
+      "nombre": "Tamanghasat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayn Qazzan",
+        "Ayn Salah",
+        "Tamanghasat"
+      ]
+    },
+    {
+      "id": "tibazah",
+      "nombre": "Tibazah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Qull''ah",
+        "Ayn Binyan",
+        "Bu Isma''il",
+        "Bu Midfar''ah",
+        "Damus",
+        "Duwirah",
+        "Hajut",
+        "Hammam Righa",
+        "Sawlah",
+        "Shiragha",
+        "Shirshall",
+        "Sidi Farj",
+        "Stawali",
+        "Tibazah",
+        "Ziralda"
+      ]
+    },
+    {
+      "id": "tibissah",
+      "nombre": "Tibissah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-''Awaynat",
+        "Bi''r-al-''Itir",
+        "Hammamat",
+        "Mursut",
+        "Shariyah",
+        "Tibissah",
+        "Winzah"
+      ]
+    },
+    {
+      "id": "tilimsan",
+      "nombre": "Tilimsan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Mansurah",
+        "Awlad Mimun",
+        "Bani Mastar",
+        "Bani Sikran",
+        "Ghazawat",
+        "Hannayah",
+        "Maghniyah",
+        "Nidruma",
+        "Ramsh",
+        "Sabra",
+        "Shatwan",
+        "Sibdu",
+        "Sidi ''Abdallah",
+        "Tilimsan"
+      ]
+    },
+    {
+      "id": "tinduf",
+      "nombre": "Tinduf",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tinduf"
+      ]
+    },
+    {
+      "id": "tisamsilt",
+      "nombre": "Tisamsilt",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Thaniyat-al-Had",
+        "Tisamsilt"
+      ]
+    },
+    {
+      "id": "tiyarat",
+      "nombre": "Tiyarat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayn Dhahab",
+        "Firindah",
+        "Mahdiyah",
+        "Mashra''a Asfa",
+        "Qasr Shillalah",
+        "Rahuyah",
+        "Sughar",
+        "Takhamarat",
+        "Tiyarat"
+      ]
+    },
+    {
+      "id": "tizi-wazu",
+      "nombre": "Tizi Wazu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "umm-al-bawaghi",
+      "nombre": "Umm-al-Bawaghi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ayn Bayda",
+        "Ayn Fakrun",
+        "Ayn Kirshah",
+        "Ayn Malilah",
+        "Bi''r Shuhada",
+        "Miskyanah",
+        "Shamurah",
+        "Umm-al-Bawaghi"
+      ]
+    },
+    {
+      "id": "wahran",
+      "nombre": "Wahran",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Ansur",
+        "Arzu",
+        "as-Saniyah",
+        "Ayn Biya",
+        "Ayn-at-Turk",
+        "Bi''r-al-Jir",
+        "Butlilis",
+        "Hassi Bu Nif",
+        "Mars-al-Kabir",
+        "Qadayal",
+        "Sidi ash-Shami",
+        "Wadi Thalatha",
+        "Wahran"
+      ]
+    },
+    {
+      "id": "warqla",
+      "nombre": "Warqla",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Hajirah",
+        "Hassi Mas''ud",
+        "Nazla",
+        "Ruwisiyat",
+        "Tabisbast",
+        "Tamalhat",
+        "Tamasin",
+        "Tayabat-al-Janubiyah",
+        "Tughghurt",
+        "Warqla"
+      ]
+    },
+    {
+      "id": "wilaya-d-alger",
+      "nombre": "Wilaya d Alger",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "wilaya-de-bejaia",
+      "nombre": "Wilaya de Bejaia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "wilaya-de-constantine",
+      "nombre": "Wilaya de Constantine",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

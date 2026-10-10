@@ -1,0 +1,502 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "south-korea",
+    "nombre": "South Korea",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "busan",
+      "nombre": "Busan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Busan"
+      ]
+    },
+    {
+      "id": "cheju",
+      "nombre": "Cheju",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aeweol",
+        "Cheju",
+        "Seogwipo"
+      ]
+    },
+    {
+      "id": "chollabuk",
+      "nombre": "Chollabuk",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cheonju",
+        "Chongup",
+        "Iksan",
+        "Kimje",
+        "Kochang",
+        "Kunsan",
+        "Namwon",
+        "Puan"
+      ]
+    },
+    {
+      "id": "chollanam",
+      "nombre": "Chollanam",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Haenam",
+        "Hwasun",
+        "Kwangyang",
+        "Kwangyang Up",
+        "Mokpo",
+        "Naju",
+        "Peolgyo",
+        "Suncheon",
+        "Yeocheon",
+        "Yeosu",
+        "Yonggwang"
+      ]
+    },
+    {
+      "id": "chungbuk",
+      "nombre": "Chungbuk",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cheongwon-gun",
+        "Eumsung-Kun",
+        "Jinchunkun",
+        "Okcheon-gun",
+        "Um Sung Gun"
+      ]
+    },
+    {
+      "id": "chungcheongbuk",
+      "nombre": "Chungcheongbuk",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chechon",
+        "Cheongju",
+        "Chincheon",
+        "Chungju",
+        "Jincheon-gun",
+        "Okchon",
+        "Yongdong"
+      ]
+    },
+    {
+      "id": "chungcheongnam",
+      "nombre": "Chungcheongnam",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Asan",
+        "Cheonan",
+        "Chochiwon",
+        "Geumsan-Gun",
+        "Hongseong",
+        "Kongju",
+        "Kumsan",
+        "Nonsan",
+        "Poryong",
+        "Puyeo",
+        "Seonghwan",
+        "Seosan",
+        "Taean",
+        "Taesan",
+        "Tangjin",
+        "Yesan",
+        "Yonmu"
+      ]
+    },
+    {
+      "id": "chungnam",
+      "nombre": "Chungnam",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chonan",
+        "Danjin-gun",
+        "Gongjusi"
+      ]
+    },
+    {
+      "id": "daegu",
+      "nombre": "Daegu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Daegu",
+        "Dalseo-gu"
+      ]
+    },
+    {
+      "id": "gangwon-do",
+      "nombre": "Gangwon-do",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chungcheong",
+        "Hoengseong",
+        "Mummakeup",
+        "Wonju"
+      ]
+    },
+    {
+      "id": "goyang-si",
+      "nombre": "Goyang-si",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gimhae",
+        "Goyang-si"
+      ]
+    },
+    {
+      "id": "gwangyoksi",
+      "nombre": "gwangyoksi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Inchon",
+        "Pusan",
+        "Taejon"
+      ]
+    },
+    {
+      "id": "gyeonggi-do",
+      "nombre": "Gyeonggi-do",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ansan",
+        "Anyang",
+        "Anyang-Si",
+        "Anyangsi",
+        "Buchon",
+        "Buchun-Si",
+        "Byeoryangdong",
+        "Dongan-gu",
+        "Gimpo City",
+        "Goyang",
+        "Gupo-si",
+        "Guri-Si",
+        "Gwacheon Si",
+        "Gwangju-Si",
+        "Hwaseong-si",
+        "Icheon-si",
+        "Iljuk-myeon",
+        "Kwangju",
+        "Pocheon-Si",
+        "Seongnam",
+        "Shihung-Si",
+        "Siheung",
+        "Sihung-si",
+        "Suwon",
+        "Uijeongbu-dong",
+        "Uiwang",
+        "Yangju",
+        "Yangpyeong-Gun",
+        "Yeokbuk-Dong-Si"
+      ]
+    },
+    {
+      "id": "gyeongsang",
+      "nombre": "Gyeongsang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "gyeongsangnam-do",
+      "nombre": "Gyeongsangnam-do",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Changwon",
+        "Gimhae-si"
+      ]
+    },
+    {
+      "id": "incheon",
+      "nombre": "Incheon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Incheon",
+        "Kanghwa",
+        "Namdongku"
+      ]
+    },
+    {
+      "id": "jeju-si",
+      "nombre": "Jeju-Si",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jeju",
+        "Yeongpyeong-Dong"
+      ]
+    },
+    {
+      "id": "jeonbuk",
+      "nombre": "Jeonbuk",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jeonju-Si"
+      ]
+    },
+    {
+      "id": "kangweon",
+      "nombre": "Kangweon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chuncheon",
+        "Hongcheon",
+        "Kangneung",
+        "Samchok",
+        "Seokcho",
+        "Taebaek",
+        "Tonghae",
+        "Weonju",
+        "Yeongweol"
+      ]
+    },
+    {
+      "id": "kwangju",
+      "nombre": "Kwangju",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kwangju"
+      ]
+    },
+    {
+      "id": "kyeonggi",
+      "nombre": "Kyeonggi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ansan",
+        "Anseong",
+        "Anyang",
+        "Chongok",
+        "Euijeongbu",
+        "Euiwang",
+        "Hanam",
+        "Hoechon",
+        "Hwado",
+        "Hwasung",
+        "Ichon",
+        "Kihung",
+        "Kimpo",
+        "Koyang",
+        "Kumchon",
+        "Kunpo",
+        "Kuri",
+        "Kwacheon",
+        "Kwangju",
+        "Kwangmyeong",
+        "Munsan",
+        "Namyangju",
+        "Osan",
+        "Paengseong",
+        "Pochon",
+        "Pubal",
+        "Pucheon",
+        "Pyeongtaek",
+        "Seongnam",
+        "Shiheung",
+        "Suweon",
+        "Taean",
+        "Tongducheon",
+        "Wabu",
+        "Yeoju",
+        "Yongin"
+      ]
+    },
+    {
+      "id": "kyeongsangbuk",
+      "nombre": "Kyeongsangbuk",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Andong",
+        "Angang",
+        "Hayang",
+        "Heunghae",
+        "Kimcheon",
+        "Kumi",
+        "Kyeongju",
+        "Kyeongsan",
+        "Mungyong",
+        "Ochon",
+        "Oedong",
+        "Pohang",
+        "Sangju",
+        "Seonsan",
+        "Waegwan",
+        "Yechon",
+        "Yeongcheon",
+        "Yeongju",
+        "Yeonil"
+      ]
+    },
+    {
+      "id": "kyeongsangnam",
+      "nombre": "Kyeongsangnam",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Changweon",
+        "Chinhae",
+        "Chinju",
+        "Chinyeong",
+        "Keoje",
+        "Kimhae",
+        "Kochang",
+        "Koseong",
+        "Masan",
+        "Miryang",
+        "Naeso",
+        "Sacheon",
+        "Sinhyeon",
+        "Tongyong",
+        "Ungsang",
+        "Yangju",
+        "Yangsan"
+      ]
+    },
+    {
+      "id": "kyonggi-do",
+      "nombre": "Kyonggi-do",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Anyang-Si",
+        "Bucheon",
+        "Paju",
+        "Sungnamshi",
+        "Suwon",
+        "Uijongbu",
+        "Yangju"
+      ]
+    },
+    {
+      "id": "kyungbuk-do",
+      "nombre": "Kyungbuk-Do",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gumi-Shi",
+        "Kyungsan",
+        "Youngcheon-Si"
+      ]
+    },
+    {
+      "id": "kyunggi-do-2",
+      "nombre": "Kyunggi-do",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Pochun",
+        "Yangju",
+        "Yonggi"
+      ]
+    },
+    {
+      "id": "kyunggi-do",
+      "nombre": "Kyunggi-Do",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bundang",
+        "Gunpo",
+        "Yangu"
+      ]
+    },
+    {
+      "id": "pusan",
+      "nombre": "Pusan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kijang",
+        "Pusan"
+      ]
+    },
+    {
+      "id": "seoul",
+      "nombre": "Seoul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Seoul"
+      ]
+    },
+    {
+      "id": "sudogwon",
+      "nombre": "Sudogwon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Paju"
+      ]
+    },
+    {
+      "id": "taegu",
+      "nombre": "Taegu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hwawon",
+        "Taegu"
+      ]
+    },
+    {
+      "id": "taejeon",
+      "nombre": "Taejeon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Taejeon"
+      ]
+    },
+    {
+      "id": "taejon-gwangyoksi",
+      "nombre": "Taejon-gwangyoksi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Daejeon"
+      ]
+    },
+    {
+      "id": "ulsan",
+      "nombre": "Ulsan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nongso",
+        "Ulsan"
+      ]
+    },
+    {
+      "id": "wonju",
+      "nombre": "Wonju",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Heungup-Myun"
+      ]
+    }
+  ]
+}

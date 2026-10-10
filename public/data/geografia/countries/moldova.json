@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "moldova",
+    "nombre": "Moldova",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "balti",
+      "nombre": "Balti",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Balti",
+        "Falesti",
+        "Glodeni",
+        "Rascani"
+      ]
+    },
+    {
+      "id": "cahul",
+      "nombre": "Cahul",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cahul"
+      ]
+    },
+    {
+      "id": "chisinau",
+      "nombre": "Chisinau",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Straseni"
+      ]
+    },
+    {
+      "id": "chisinau-oras",
+      "nombre": "Chisinau Oras",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Straseni"
+      ]
+    },
+    {
+      "id": "edinet",
+      "nombre": "Edinet",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Briceni",
+        "Donduseni",
+        "Edinet",
+        "Ocnita"
+      ]
+    },
+    {
+      "id": "gagauzia",
+      "nombre": "Gagauzia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ciadar Lunga",
+        "Comrat",
+        "Vulcanesti"
+      ]
+    },
+    {
+      "id": "lapusna",
+      "nombre": "Lapusna",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Basarabeasca",
+        "Cimislia",
+        "Hancesti",
+        "Leova"
+      ]
+    },
+    {
+      "id": "orhei",
+      "nombre": "Orhei",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Orhei",
+        "Rezina",
+        "Telenesti"
+      ]
+    },
+    {
+      "id": "soroca",
+      "nombre": "Soroca",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Drochia",
+        "Floresti",
+        "Soroca"
+      ]
+    },
+    {
+      "id": "taraclia",
+      "nombre": "Taraclia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Taraclia"
+      ]
+    },
+    {
+      "id": "tighina",
+      "nombre": "Tighina",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Causani"
+      ]
+    },
+    {
+      "id": "transnistria",
+      "nombre": "Transnistria",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Camenca",
+        "Dnestrovsc",
+        "Dubasari",
+        "Griguriopol",
+        "Rabnita",
+        "Slobozia",
+        "Tighina",
+        "Tiraspol"
+      ]
+    },
+    {
+      "id": "ungheni",
+      "nombre": "Ungheni",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Calarasi",
+        "Nisporeni",
+        "Ungheni"
+      ]
+    }
+  ]
+}

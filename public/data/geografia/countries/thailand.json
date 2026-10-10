@@ -1,0 +1,729 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "thailand",
+    "nombre": "Thailand",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "amnat-charoen",
+      "nombre": "Amnat Charoen",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ang-thong",
+      "nombre": "Ang Thong",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "bangkok",
+      "nombre": "Bangkok",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bangkhen",
+        "Bangkok",
+        "Phatumthanee"
+      ]
+    },
+    {
+      "id": "buri-ram",
+      "nombre": "Buri Ram",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "chachoengsao",
+      "nombre": "Chachoengsao",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bang Khla",
+        "Bang Pakong",
+        "Bangpakong",
+        "Chachoengsao",
+        "Phanom Sarakham",
+        "Plaeng Yao"
+      ]
+    },
+    {
+      "id": "chai-nat",
+      "nombre": "Chai Nat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "chaiyaphum",
+      "nombre": "Chaiyaphum",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bamnet Narong",
+        "Chaiyaphum",
+        "Kaeng Khlo",
+        "Kaset Sombun",
+        "Phu Khieo"
+      ]
+    },
+    {
+      "id": "changwat-chaiyaphum",
+      "nombre": "Changwat Chaiyaphum",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "chanthaburi",
+      "nombre": "Chanthaburi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chanthaburi",
+        "Khlung",
+        "Laem Sing",
+        "Soydow",
+        "Tha Mai"
+      ]
+    },
+    {
+      "id": "chiang-mai",
+      "nombre": "Chiang Mai",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "chiang-rai",
+      "nombre": "Chiang Rai",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "chon-buri",
+      "nombre": "Chon Buri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "chumphon",
+      "nombre": "Chumphon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chumphon",
+        "Lang Suan"
+      ]
+    },
+    {
+      "id": "kalasin",
+      "nombre": "Kalasin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Huai Mek",
+        "Kalasin",
+        "Kamalasai",
+        "Khao Wong",
+        "Kuchinarai",
+        "Nong Kung Si",
+        "Yang Talat"
+      ]
+    },
+    {
+      "id": "kamphaeng-phet",
+      "nombre": "Kamphaeng Phet",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "kanchanaburi",
+      "nombre": "Kanchanaburi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bo Phloi",
+        "Kanchanaburi",
+        "Phanom Thuan",
+        "Tha Maka",
+        "Tha Muang"
+      ]
+    },
+    {
+      "id": "khon-kaen",
+      "nombre": "Khon Kaen",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "krabi",
+      "nombre": "Krabi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ao Luk",
+        "Krabi"
+      ]
+    },
+    {
+      "id": "krung-thep",
+      "nombre": "Krung Thep",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "lampang",
+      "nombre": "Lampang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lampang",
+        "Thoen"
+      ]
+    },
+    {
+      "id": "lamphun",
+      "nombre": "Lamphun",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lamphun",
+        "Mae Tha",
+        "Pa Sang"
+      ]
+    },
+    {
+      "id": "loei",
+      "nombre": "Loei",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Loei",
+        "Phu Kra Dung",
+        "Wang Saphung"
+      ]
+    },
+    {
+      "id": "lop-buri",
+      "nombre": "Lop Buri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "mae-hong-son",
+      "nombre": "Mae Hong Son",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "maha-sarakham",
+      "nombre": "Maha Sarakham",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "mukdahan",
+      "nombre": "Mukdahan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mukdahan"
+      ]
+    },
+    {
+      "id": "nakhon-nayok",
+      "nombre": "Nakhon Nayok",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nakhon-pathom",
+      "nombre": "Nakhon Pathom",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nakhon-phanom",
+      "nombre": "Nakhon Phanom",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nakhon-ratchasima",
+      "nombre": "Nakhon Ratchasima",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nakhon-sawan",
+      "nombre": "Nakhon Sawan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nakhon-si-thammarat",
+      "nombre": "Nakhon Si Thammarat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nan",
+      "nombre": "Nan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chiang Klang",
+        "Nan"
+      ]
+    },
+    {
+      "id": "narathiwat",
+      "nombre": "Narathiwat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bacho",
+        "Narathiwat",
+        "Rangae",
+        "Sungai Kolok",
+        "Sungai Padi",
+        "Tak Bai"
+      ]
+    },
+    {
+      "id": "nong-bua-lam-phu",
+      "nombre": "Nong Bua Lam Phu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nong-khai",
+      "nombre": "Nong Khai",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nonthaburi",
+      "nombre": "Nonthaburi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bang Bo Thong",
+        "Bang Kruai",
+        "Bang Yai",
+        "Nonthaburi",
+        "Pak Kret",
+        "Sainoi"
+      ]
+    },
+    {
+      "id": "pathum-thani",
+      "nombre": "Pathum Thani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "pattani",
+      "nombre": "Pattani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nong Chik",
+        "Pattani",
+        "Sai Buri",
+        "Yaring"
+      ]
+    },
+    {
+      "id": "phangnga",
+      "nombre": "Phangnga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Phangnga"
+      ]
+    },
+    {
+      "id": "phatthalung",
+      "nombre": "Phatthalung",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Phatthalung"
+      ]
+    },
+    {
+      "id": "phayao",
+      "nombre": "Phayao",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chiang Kham",
+        "Dok Kham Tai",
+        "Phayao",
+        "Pong"
+      ]
+    },
+    {
+      "id": "phetchabun",
+      "nombre": "Phetchabun",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chon Daen",
+        "Lom Sak",
+        "Nong Phai",
+        "Phetchabun",
+        "Wichian Buri"
+      ]
+    },
+    {
+      "id": "phetchaburi",
+      "nombre": "Phetchaburi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ban Laem",
+        "Chaam",
+        "Khao Yoi",
+        "Phetchaburi",
+        "Tha Yang"
+      ]
+    },
+    {
+      "id": "phichit",
+      "nombre": "Phichit",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bang Mun Nak",
+        "Phichit",
+        "Taphan Hin",
+        "Thap Khlo"
+      ]
+    },
+    {
+      "id": "phitsanulok",
+      "nombre": "Phitsanulok",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bang Krathum",
+        "Bang Rakam",
+        "Nakhon Thai",
+        "Phitsanulok"
+      ]
+    },
+    {
+      "id": "phra-nakhon-si-ayutthaya",
+      "nombre": "Phra Nakhon Si Ayutthaya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "phrae",
+      "nombre": "Phrae",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Den Chai",
+        "Long",
+        "Phrae",
+        "Rong Kwang"
+      ]
+    },
+    {
+      "id": "phuket",
+      "nombre": "Phuket",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kathu",
+        "Phuket"
+      ]
+    },
+    {
+      "id": "prachin-buri",
+      "nombre": "Prachin Buri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "prachuap-khiri-khan",
+      "nombre": "Prachuap Khiri Khan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ranong",
+      "nombre": "Ranong",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ranong"
+      ]
+    },
+    {
+      "id": "ratchaburi",
+      "nombre": "Ratchaburi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ban Pong",
+        "Bang Phae",
+        "Chom Bung",
+        "Damnoen Saduak",
+        "Photharam",
+        "Ratchaburi"
+      ]
+    },
+    {
+      "id": "rayong",
+      "nombre": "Rayong",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ban Chang",
+        "Klaeng",
+        "Rayong"
+      ]
+    },
+    {
+      "id": "roi-et",
+      "nombre": "Roi Et",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sa-kaeo",
+      "nombre": "Sa Kaeo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sakon-nakhon",
+      "nombre": "Sakon Nakhon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "samut-prakan",
+      "nombre": "Samut Prakan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "samut-sakhon",
+      "nombre": "Samut Sakhon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "samut-songkhran",
+      "nombre": "Samut Songkhran",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saraburi",
+      "nombre": "Saraburi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ban Mo",
+        "Kaeng Khoi",
+        "Nong Khae",
+        "Phra Phutthabat",
+        "Saraburi"
+      ]
+    },
+    {
+      "id": "satun",
+      "nombre": "Satun",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Satun"
+      ]
+    },
+    {
+      "id": "si-sa-ket",
+      "nombre": "Si Sa Ket",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sing-buri",
+      "nombre": "Sing Buri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "songkhla",
+      "nombre": "Songkhla",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hat Yai",
+        "Ranot",
+        "Sadao",
+        "Singha Nakhon",
+        "Songkhla"
+      ]
+    },
+    {
+      "id": "sukhothai",
+      "nombre": "Sukhothai",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Khiri Mat",
+        "Sawankhalok",
+        "Si Satchanalai",
+        "Sukhothai"
+      ]
+    },
+    {
+      "id": "suphan-buri",
+      "nombre": "Suphan Buri",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "surat-thani",
+      "nombre": "Surat Thani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "surin",
+      "nombre": "Surin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Phasat",
+        "Surin"
+      ]
+    },
+    {
+      "id": "tak",
+      "nombre": "Tak",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ban Tak",
+        "Mae Ramat",
+        "Mae Sot",
+        "Tak"
+      ]
+    },
+    {
+      "id": "trang",
+      "nombre": "Trang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Huai Yot",
+        "Kantang",
+        "Trang"
+      ]
+    },
+    {
+      "id": "trat",
+      "nombre": "Trat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bo Rai",
+        "Trat"
+      ]
+    },
+    {
+      "id": "ubon-ratchathani",
+      "nombre": "Ubon Ratchathani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "udon-thani",
+      "nombre": "Udon Thani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "uthai-thani",
+      "nombre": "Uthai Thani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "uttaradit",
+      "nombre": "Uttaradit",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Laplae",
+        "Uttaradit"
+      ]
+    },
+    {
+      "id": "yala",
+      "nombre": "Yala",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Betong",
+        "Yala"
+      ]
+    },
+    {
+      "id": "yasothon",
+      "nombre": "Yasothon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Yasothon"
+      ]
+    }
+  ]
+}

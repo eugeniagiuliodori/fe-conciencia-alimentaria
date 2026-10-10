@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "venezuela",
+    "nombre": "Venezuela",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "amazonas",
+      "nombre": "Amazonas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Puerto Ayacucho"
+      ]
+    },
+    {
+      "id": "anzoategui",
+      "nombre": "Anzoategui",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Anaco",
+        "Barcelona",
+        "Cantaura",
+        "El Tigre",
+        "Puerto la Cruz",
+        "San Jose de Guanipa"
+      ]
+    },
+    {
+      "id": "apure",
+      "nombre": "Apure",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Guasdualito",
+        "San Fernando"
+      ]
+    },
+    {
+      "id": "aragua",
+      "nombre": "Aragua",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cagua",
+        "El Limon",
+        "La Victoria",
+        "Las Teyerias",
+        "Maracay",
+        "Palo Negro",
+        "San Mateo",
+        "Turmero",
+        "Villa de Cura"
+      ]
+    },
+    {
+      "id": "barinas",
+      "nombre": "Barinas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Barinas",
+        "Barinitas"
+      ]
+    },
+    {
+      "id": "bolivar",
+      "nombre": "Bolivar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ciudad Bolivar",
+        "Ciudad Guayana",
+        "Upata"
+      ]
+    },
+    {
+      "id": "carabobo",
+      "nombre": "Carabobo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Goaigoaza",
+        "Guacara",
+        "Guigue",
+        "Mariara",
+        "Moron",
+        "Puerto Cabello",
+        "San Joaquin",
+        "Tacarigua",
+        "Valencia"
+      ]
+    },
+    {
+      "id": "cojedes",
+      "nombre": "Cojedes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "San Carlos",
+        "Tinaquillo"
+      ]
+    },
+    {
+      "id": "delta-amacuro",
+      "nombre": "Delta Amacuro",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "distrito-federal",
+      "nombre": "Distrito Federal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "falcon",
+      "nombre": "Falcon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Coro",
+        "Punta Cardon",
+        "Punto Fijo"
+      ]
+    },
+    {
+      "id": "guarico",
+      "nombre": "Guarico",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Altagracia de Orituco",
+        "Calabozo",
+        "San Juan de los Morros",
+        "Valle de la Pascua",
+        "Zaraza"
+      ]
+    },
+    {
+      "id": "lara",
+      "nombre": "Lara",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Barquisimeto",
+        "Cabudare",
+        "Carora",
+        "El Tocuyo",
+        "Los Rastrojos",
+        "Quibor"
+      ]
+    },
+    {
+      "id": "merida",
+      "nombre": "Merida",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ejido",
+        "El Vigia",
+        "Merida"
+      ]
+    },
+    {
+      "id": "miranda",
+      "nombre": "Miranda",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baruta",
+        "Carrizal",
+        "Catia La Mar",
+        "Caucaguita",
+        "Chacao",
+        "Charallave",
+        "Cua",
+        "El Cafetal",
+        "El Hatillo",
+        "Filas de Mariche",
+        "Guarenas",
+        "Guatire",
+        "La Dolorita",
+        "Los Dos Caminos",
+        "Los Teques",
+        "Ocumare del Tuy",
+        "Petare",
+        "San Antonio de los Altos",
+        "Santa Teresa"
+      ]
+    },
+    {
+      "id": "monagas",
+      "nombre": "Monagas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Maturin"
+      ]
+    },
+    {
+      "id": "nueva-esparta",
+      "nombre": "Nueva Esparta",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "portuguesa",
+      "nombre": "Portuguesa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Acarigua",
+        "Araure",
+        "Guanare",
+        "Villa Bruzual"
+      ]
+    },
+    {
+      "id": "sucre",
+      "nombre": "Sucre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Carupano",
+        "Cumana"
+      ]
+    },
+    {
+      "id": "tachira",
+      "nombre": "Tachira",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "La Fria",
+        "Rubio",
+        "San Antonio del Tachira",
+        "San Cristobal",
+        "San Juan de Colon",
+        "Tariba"
+      ]
+    },
+    {
+      "id": "trujillo",
+      "nombre": "Trujillo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Trujillo",
+        "Valera"
+      ]
+    },
+    {
+      "id": "vargas",
+      "nombre": "Vargas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Caraballeda",
+        "La Guaira",
+        "Maiquetia"
+      ]
+    },
+    {
+      "id": "yaracuy",
+      "nombre": "Yaracuy",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chivacoa",
+        "Nirgua",
+        "San Felipe",
+        "Yaritagua"
+      ]
+    },
+    {
+      "id": "zulia",
+      "nombre": "Zulia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bachaquero",
+        "Cabimas",
+        "Ciudad Ojeda",
+        "Lagunillas",
+        "Machiques",
+        "Maracaibo",
+        "San Carlos del Zulia",
+        "Santa Rita",
+        "Villa del Rosario"
+      ]
+    }
+  ]
+}

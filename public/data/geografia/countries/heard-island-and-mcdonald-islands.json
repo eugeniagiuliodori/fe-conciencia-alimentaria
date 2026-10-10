@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "heard-island-and-mcdonald-islands",
+    "nombre": "Heard Island and McDonald Islands",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "heard-and-mcdonald-islands",
+      "nombre": "Heard and McDonald Islands",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "oman",
+    "nombre": "Oman",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "ad-dakhiliyah",
+      "nombre": "ad-Dakhiliyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bahla",
+        "Nizwa",
+        "Sumayl"
+      ]
+    },
+    {
+      "id": "adh-dhahirah",
+      "nombre": "adh-Dhahirah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Buraymi",
+        "Ibri"
+      ]
+    },
+    {
+      "id": "al-buraimi",
+      "nombre": "Al Buraimi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "al-batinah",
+      "nombre": "al-Batinah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Al khuwair",
+        "al-Khaburah",
+        "al-Masna''ah",
+        "ar-Rustaq",
+        "as-Suwayq",
+        "Barkah",
+        "Saham",
+        "Shinas",
+        "Suhar"
+      ]
+    },
+    {
+      "id": "ash-sharqiyah",
+      "nombre": "ash-Sharqiyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Mudaybi",
+        "Ibra",
+        "Sur"
+      ]
+    },
+    {
+      "id": "dhufar",
+      "nombre": "Dhufar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Salalah"
+      ]
+    },
+    {
+      "id": "masqat",
+      "nombre": "Masqat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "as-Sib",
+        "Azaiba",
+        "Bawshar",
+        "Madinat Qabus",
+        "Masqat",
+        "Matrah",
+        "Muscat",
+        "Muttrah",
+        "Qurayyat",
+        "Qurm",
+        "Ruwi",
+        "Wadi Al Kabir"
+      ]
+    },
+    {
+      "id": "musandam",
+      "nombre": "Musandam",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Khasab"
+      ]
+    },
+    {
+      "id": "rusayl",
+      "nombre": "Rusayl",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rusayl"
+      ]
+    },
+    {
+      "id": "wadi-kabir",
+      "nombre": "Wadi Kabir",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

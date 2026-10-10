@@ -1,0 +1,2218 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "france",
+    "nombre": "France",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "ain",
+      "nombre": "Ain",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amberieu-en-Bugey",
+        "Bellegarde-sur-Valserine",
+        "Bourg-en-Bresse",
+        "Oyonnax"
+      ]
+    },
+    {
+      "id": "aisne",
+      "nombre": "Aisne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chateau-Thierry",
+        "Chauny",
+        "Hirson",
+        "Laon",
+        "Saint-Quentin",
+        "Soissons",
+        "Strassbourg",
+        "Tergnier"
+      ]
+    },
+    {
+      "id": "albi-le-sequestre",
+      "nombre": "Albi Le Sequestre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "allier",
+      "nombre": "Allier",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cusset",
+        "Montlucon",
+        "Moulins",
+        "Vichy",
+        "Yzeure"
+      ]
+    },
+    {
+      "id": "alpes-cote-dazur",
+      "nombre": "Alpes-Cote dAzur",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "alpes-de-haute-provence",
+      "nombre": "Alpes-de-Haute-Provence",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Digne-les-Bains",
+        "Manosque"
+      ]
+    },
+    {
+      "id": "alpes-maritimes",
+      "nombre": "Alpes-Maritimes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Antibes",
+        "Beausoleil",
+        "Cagnes-sur-Mer",
+        "Cannes",
+        "Carros",
+        "Grasse",
+        "La Trinite",
+        "Le Cannet",
+        "Mandelieu-la-Napoule",
+        "Menton",
+        "Mougins",
+        "Nice",
+        "Roquebrune-Cap-Martin",
+        "Saint-Laurent-du-Var",
+        "Valbonne",
+        "Vallauris",
+        "Vence",
+        "Villeneuve-Loubet"
+      ]
+    },
+    {
+      "id": "alsace",
+      "nombre": "Alsace",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Adainville",
+        "Alby-sur-Cheran",
+        "Aubervilliers",
+        "Auterive",
+        "Baillet",
+        "Beaune",
+        "Beauzelle",
+        "Bonnet De Mure",
+        "Bormes-les-Mimosas",
+        "Brindas",
+        "Burlats",
+        "Buzancais",
+        "Candillargues",
+        "Carry-le-Rouet",
+        "Cassis",
+        "Cessenon-Sur-Orb",
+        "Chanac",
+        "Chevigny",
+        "Cogolin",
+        "Collioure",
+        "Cremieu",
+        "Drulingen",
+        "Ecouen",
+        "Eschau",
+        "Feignies",
+        "Ferus",
+        "Fourqueux",
+        "Franqueville",
+        "Gignac",
+        "Gravigny",
+        "Hangenbieten",
+        "Hunspach",
+        "Kilstett",
+        "La Chevroliere",
+        "La-Fare-Les-Oliviers",
+        "Lanvellec",
+        "Le Faget",
+        "Lesigny",
+        "Lesquin",
+        "Limonest",
+        "Messein",
+        "Morgat",
+        "Mundolsheim",
+        "Nantiat",
+        "Niederbronn-les-Bain",
+        "Nimes",
+        "Opoul",
+        "Pance",
+        "Peronne",
+        "Ploneour Lanvern",
+        "Realmont",
+        "Reichstett",
+        "Saint Aubin",
+        "Saint Christophe",
+        "Saint Martin dÃƒÂ¢Ã‚Â€Ã‚Â™Here",
+        "Saint-Berthevin",
+        "Saint-Cergues",
+        "Sancerre",
+        "Sarzeau",
+        "Seltz",
+        "Seyssins",
+        "Souffelweyersheim",
+        "Vireux-Molhain",
+        "Voves",
+        "Wambrechies",
+        "Wervocq Sud"
+      ]
+    },
+    {
+      "id": "aquitaine",
+      "nombre": "Aquitaine",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abzac",
+        "Bidart",
+        "Biganos",
+        "Buzet-sur-Baise",
+        "Coursac",
+        "Hasparren",
+        "Landiras",
+        "Le Haillan",
+        "Ledat",
+        "Martillac",
+        "Puyoo",
+        "Saint-Jean-dIllac",
+        "Seignosse",
+        "Tresses"
+      ]
+    },
+    {
+      "id": "ardeche",
+      "nombre": "Ardeche",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Annonay",
+        "Aubenas",
+        "Guilherand-Granges",
+        "Privas",
+        "Tournon-sur-Rhone"
+      ]
+    },
+    {
+      "id": "ardennes",
+      "nombre": "Ardennes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Charleville-Mezieres",
+        "Les Hautes-Rivieres",
+        "Revin",
+        "Sedan"
+      ]
+    },
+    {
+      "id": "ariege",
+      "nombre": "Ariege",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Foix",
+        "Pamier"
+      ]
+    },
+    {
+      "id": "aube",
+      "nombre": "Aube",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bar-sur-Seine",
+        "Romilly-sur-Seine",
+        "Saint-Andre-les-Vergers",
+        "Sainte-Savine",
+        "Troyes"
+      ]
+    },
+    {
+      "id": "aude",
+      "nombre": "Aude",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Carcassonne",
+        "Castelnaudary",
+        "Limoux",
+        "Narbonne"
+      ]
+    },
+    {
+      "id": "auvergne",
+      "nombre": "Auvergne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ambert",
+        "Creuzier-le-Vieux",
+        "Ferrieres",
+        "Peschadoires",
+        "Riotord",
+        "Saint-Pal-de-Chalencon",
+        "Saint-Romain-Lachalm",
+        "Saint-Vidal",
+        "Sainte-Sigolene"
+      ]
+    },
+    {
+      "id": "aveyron",
+      "nombre": "Aveyron",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Millau",
+        "Onet-le-Chataeu",
+        "Rodez",
+        "Villefranche-de-Rouergue"
+      ]
+    },
+    {
+      "id": "bas-rhin",
+      "nombre": "Bas-Rhin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bischheim",
+        "Bischwiller",
+        "Haguenau",
+        "Hoenheim",
+        "Illkirch-Graffenstaden",
+        "Lingolsheim",
+        "Obernai",
+        "Ostwald",
+        "Saverne",
+        "Schiltigheim",
+        "Selestat",
+        "Strasbourg"
+      ]
+    },
+    {
+      "id": "basse-normandie",
+      "nombre": "Basse-Normandie",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Deauville"
+      ]
+    },
+    {
+      "id": "bouches-du-rhone",
+      "nombre": "Bouches-du-Rhone",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aix-en-Provence",
+        "Allauch",
+        "Arles",
+        "Aubagne",
+        "Berre-l''Etang",
+        "Bouc-Bel-Air",
+        "Chateauneuf-les-Martigues",
+        "Chateaurenard",
+        "Fos-sur-Mer",
+        "Gardanne",
+        "Istres",
+        "La Ciotat",
+        "Les Pennes-Mirabeau",
+        "Maillane",
+        "Marignane",
+        "Marseille",
+        "Martigues",
+        "Miramas",
+        "Plan-de-Cuques",
+        "Port-de-Bouc",
+        "Rognac",
+        "Saint-Martin-de-Crau",
+        "Saint-Remy-de-Provence",
+        "Salon-de-Provence",
+        "Septemes-les-Vallons",
+        "Tarascon",
+        "Vitrolles"
+      ]
+    },
+    {
+      "id": "bourgogne",
+      "nombre": "Bourgogne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Migennes"
+      ]
+    },
+    {
+      "id": "bretagne",
+      "nombre": "Bretagne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Javene",
+        "Plouha"
+      ]
+    },
+    {
+      "id": "brittany",
+      "nombre": "Brittany",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Brehan",
+        "Broons",
+        "Guipry",
+        "Miniac-Morvan",
+        "Ploudaniel",
+        "Vern-sur-Seiche"
+      ]
+    },
+    {
+      "id": "burgundy",
+      "nombre": "Burgundy",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aillant-sur-Tholon"
+      ]
+    },
+    {
+      "id": "calvados",
+      "nombre": "Calvados",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bayeux",
+        "Caen",
+        "Herouville-Saint-Clair",
+        "Lisieux",
+        "Mondeville",
+        "Vire"
+      ]
+    },
+    {
+      "id": "cantal",
+      "nombre": "Cantal",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aurillac"
+      ]
+    },
+    {
+      "id": "cedex",
+      "nombre": "Cedex",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Brumath",
+        "cedex",
+        "Courtaboeuf",
+        "Iregny"
+      ]
+    },
+    {
+      "id": "centre",
+      "nombre": "Centre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Azay-le-Rideau",
+        "Chevillon-sur-Huillard",
+        "Cloyes-sur-le-Loir",
+        "Gellainville",
+        "La Chaussse-Saint-Victor",
+        "La Ville-aux-Clercs",
+        "Ladon",
+        "Le Chatelet"
+      ]
+    },
+    {
+      "id": "charente",
+      "nombre": "Charente",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Angouleme",
+        "Cognac",
+        "Lencloitre",
+        "Soyaux"
+      ]
+    },
+    {
+      "id": "charente-maritime",
+      "nombre": "Charente-Maritime",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "La Rochelle",
+        "Rochefort",
+        "Royan",
+        "Saintes"
+      ]
+    },
+    {
+      "id": "cher",
+      "nombre": "Cher",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bourges",
+        "Saint-Amand-Montrond",
+        "Saint-Doulchard",
+        "Vierzon"
+      ]
+    },
+    {
+      "id": "correze",
+      "nombre": "Correze",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Brive-la-Gaillarde",
+        "Tulle",
+        "Ussel"
+      ]
+    },
+    {
+      "id": "corse-du-sud",
+      "nombre": "Corse-du-Sud",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ajaccio",
+        "Porto-Vecchio"
+      ]
+    },
+    {
+      "id": "cote-d-or",
+      "nombre": "Cote-d''Or",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Beaune",
+        "Chenove",
+        "Dijon",
+        "Quetigny",
+        "Talant"
+      ]
+    },
+    {
+      "id": "cotes-d-armor",
+      "nombre": "Cotes-d''Armor",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dinan",
+        "Lamballe",
+        "Lannion",
+        "Loudeac",
+        "Plerin",
+        "Ploufragan",
+        "Saint-Brieuc"
+      ]
+    },
+    {
+      "id": "creuse",
+      "nombre": "Creuse",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gueret"
+      ]
+    },
+    {
+      "id": "crolles",
+      "nombre": "Crolles",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Crolles"
+      ]
+    },
+    {
+      "id": "deux-sevres",
+      "nombre": "Deux-Sevres",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bressuire",
+        "Niort",
+        "Parthenay",
+        "Thouars"
+      ]
+    },
+    {
+      "id": "dordogne",
+      "nombre": "Dordogne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bergerac",
+        "Perigueux",
+        "Sarlat-la-Caneda"
+      ]
+    },
+    {
+      "id": "doubs",
+      "nombre": "Doubs",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Audincourt",
+        "Besancon",
+        "Beure",
+        "Montbeliard",
+        "Pontarlier",
+        "Valentigney"
+      ]
+    },
+    {
+      "id": "drome",
+      "nombre": "Drome",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bourg-les-Valence",
+        "Montelimar",
+        "Pierrelatte",
+        "Romans-sur-Isere",
+        "Valence"
+      ]
+    },
+    {
+      "id": "essonne",
+      "nombre": "Essonne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Athis-Mons",
+        "Bretigny-sur-Orge",
+        "Brunoy",
+        "Bures-sur-Yvette",
+        "Chilly-Mazarin",
+        "Corbeil-Essonnes",
+        "Courcouronnes",
+        "Dourdan",
+        "Draveil",
+        "Epinay-sous-Senart",
+        "Epinay-sur-Orge",
+        "Etampes",
+        "Evry",
+        "Fleury-Merogis",
+        "Gif-sur-Yvette",
+        "Grigny",
+        "Igny",
+        "Juvisy-sur-Orge",
+        "Les Ulis",
+        "Longjumeau",
+        "Massy",
+        "Mennecy",
+        "Montgeron",
+        "Morangis",
+        "Morsang-sur-Orge",
+        "Orsay",
+        "Palaiseau",
+        "Ris-Orangis",
+        "Saint-Michel-sur-Orge",
+        "Sainte-Genevieve-des-Bois",
+        "Savigny-sur-Orge",
+        "Verrieres-le-Buisson",
+        "Vigneux-sur-Seine",
+        "Villebon-sur-Yvette",
+        "Viry-Chatillon",
+        "Yerres"
+      ]
+    },
+    {
+      "id": "eure",
+      "nombre": "Eure",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bernay",
+        "Evreux",
+        "Gisors",
+        "Louviers",
+        "Pont-Audemer",
+        "Val-de-Reuil",
+        "Vernon"
+      ]
+    },
+    {
+      "id": "eure-et-loir",
+      "nombre": "Eure-et-Loir",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chartres",
+        "Chateaudun",
+        "Dreux",
+        "Luce",
+        "Mainvillier",
+        "Nogent-le-Rotrou",
+        "Vernouillet"
+      ]
+    },
+    {
+      "id": "feucherolles",
+      "nombre": "Feucherolles",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Feucherolles"
+      ]
+    },
+    {
+      "id": "finistere",
+      "nombre": "Finistere",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Brest",
+        "Concarneau",
+        "Douarnenez",
+        "Guipavas",
+        "Landerneau",
+        "Le Relecq-Kerhoun",
+        "Morlaix",
+        "Plougastel-Daoulas",
+        "Plouzane",
+        "Quimper",
+        "Quimperle"
+      ]
+    },
+    {
+      "id": "franche-comte",
+      "nombre": "Franche-Comte",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Charquemont",
+        "Chemaudin",
+        "Pelousey",
+        "Perrigny",
+        "Pirey",
+        "Villers-le-Lac"
+      ]
+    },
+    {
+      "id": "gard",
+      "nombre": "Gard",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ales",
+        "Bagnols-sur-Ceze",
+        "Beaucaire",
+        "Nimes",
+        "Pont-Saint-Esprit",
+        "Saint-Gilles",
+        "Vauvert",
+        "Villeneuve-les-Avignon"
+      ]
+    },
+    {
+      "id": "gers",
+      "nombre": "Gers",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Auch",
+        "Beraut"
+      ]
+    },
+    {
+      "id": "gironde",
+      "nombre": "Gironde",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ambares-et-Lagrave",
+        "Arcachon",
+        "Begles",
+        "Blanquefort",
+        "Bordeaux",
+        "Bruges",
+        "Cenon",
+        "Cestas",
+        "Eysines",
+        "Floirac",
+        "Gradignan",
+        "Gujan-Mestras",
+        "La Teste-de-Buch",
+        "Le Bouscat",
+        "Libourne",
+        "Lormont",
+        "Merignac",
+        "Pessac",
+        "Saint-Medard-en-Jalles",
+        "Talence",
+        "Villenave-d''Ornon"
+      ]
+    },
+    {
+      "id": "haut-rhin",
+      "nombre": "Haut-Rhin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cernay",
+        "Colmar",
+        "Guebwiller",
+        "Illzach",
+        "Kingersheim",
+        "Mulhouse",
+        "Riediesheim",
+        "Rixheim",
+        "Saint-Louis",
+        "Wittelsheim",
+        "Wittenheim"
+      ]
+    },
+    {
+      "id": "haute-corse",
+      "nombre": "Haute-Corse",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bastia"
+      ]
+    },
+    {
+      "id": "haute-garonne",
+      "nombre": "Haute-Garonne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Balma",
+        "Blagnac",
+        "Colomiers",
+        "Cugnaux",
+        "L''Union",
+        "Muret",
+        "Plaisance-du-Touch",
+        "Ramonville-Saint-Agne",
+        "Saint-Gaudens",
+        "Saint-Orens-de-Gameville",
+        "Toulouse",
+        "Tournefeuille"
+      ]
+    },
+    {
+      "id": "haute-loire",
+      "nombre": "Haute-Loire",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Blanzac",
+        "Le Puy-en-Velay"
+      ]
+    },
+    {
+      "id": "haute-marne",
+      "nombre": "Haute-Marne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chaumont",
+        "Langres",
+        "Saint-Dizier"
+      ]
+    },
+    {
+      "id": "haute-saone",
+      "nombre": "Haute-Saone",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hericourt",
+        "Lure",
+        "Luxeuil-les-Bains",
+        "Vesoul"
+      ]
+    },
+    {
+      "id": "haute-savoie",
+      "nombre": "Haute-Savoie",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Annecy",
+        "Annecy-le-Vieux",
+        "Annemasse",
+        "Archamps",
+        "Bonneville",
+        "Chamonix-Mont-Blanc",
+        "Cluses",
+        "Contamine sur Arve",
+        "Cran-Gevrier",
+        "Passy",
+        "Rumilly",
+        "Sallanches",
+        "Seynod",
+        "Thonon-les-Bains"
+      ]
+    },
+    {
+      "id": "haute-vienne",
+      "nombre": "Haute-Vienne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Gaillard",
+        "Limoges",
+        "Saint-Junien"
+      ]
+    },
+    {
+      "id": "hautes-alpes",
+      "nombre": "Hautes-Alpes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Briancon",
+        "Gap"
+      ]
+    },
+    {
+      "id": "hautes-pyrenees",
+      "nombre": "Hautes-Pyrenees",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lourdes",
+        "Tarbes"
+      ]
+    },
+    {
+      "id": "hauts-de-seine",
+      "nombre": "Hauts-de-Seine",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Antony",
+        "Asnieres-sur-Seine",
+        "Bagneux",
+        "Bois-Colombes",
+        "Boulogne-Billancourt",
+        "Bourg-la-Reine",
+        "Chatenay-Malabry",
+        "Chatillon",
+        "Chaville",
+        "Clamart",
+        "Clichy",
+        "Colombes",
+        "Courbevoie",
+        "Fontenay-aux-Roses",
+        "Garches",
+        "Gennevillers",
+        "Issy-les-Moulineaux",
+        "La Garenne-Colombes",
+        "Le Plessis-Robinson",
+        "Levallois-Perret",
+        "Malakoff",
+        "Meudon",
+        "Montrouge",
+        "Nanterre",
+        "Neuilly-sur-Seine",
+        "Puteaux",
+        "Rueil-Malmaison",
+        "Saint-Cloud",
+        "Sceaux",
+        "Sevres",
+        "Suresnes",
+        "Vanves",
+        "Ville-d''Avray",
+        "Villeneuve-la-Garenne"
+      ]
+    },
+    {
+      "id": "herault",
+      "nombre": "Herault",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Agde",
+        "Beziers",
+        "Castelnau-le-Lez",
+        "Frontignan",
+        "Lattes",
+        "Lunel",
+        "Mauguio",
+        "Montpellier",
+        "Sete"
+      ]
+    },
+    {
+      "id": "ile-de-france",
+      "nombre": "Ile-de-France",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Champagne-sur-Oise",
+        "Croissy-Beaubourg",
+        "Gennevilliers",
+        "Le Mesnil-le-Roi",
+        "Le Plessis-Bouchard",
+        "Rebais",
+        "Saint-Thibault-des-Vignes"
+      ]
+    },
+    {
+      "id": "ille-et-vilaine",
+      "nombre": "Ille-et-Vilaine",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cesson-Sevigne",
+        "Dinard",
+        "Fougeres",
+        "Rennes",
+        "Saint-Malo",
+        "Vitre"
+      ]
+    },
+    {
+      "id": "indre",
+      "nombre": "Indre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chateauroux",
+        "Issoudun"
+      ]
+    },
+    {
+      "id": "indre-et-loire",
+      "nombre": "Indre-et-Loire",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amboise",
+        "Joue-les-Tours",
+        "Saint-Avertin",
+        "Saint-Cyr-sur-Loire",
+        "Saint-Pierre-des-Corps",
+        "Tours"
+      ]
+    },
+    {
+      "id": "isere",
+      "nombre": "Isere",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bourgoin-Jallieu",
+        "Crolles",
+        "Echirolles",
+        "Fontaine",
+        "Grenoble",
+        "Le Pont-de-Claix",
+        "Meylan",
+        "Saint-Egreve",
+        "Saint-Martin-d''Heres",
+        "Seyssinet-Pariset",
+        "Vienne",
+        "Villefontaine",
+        "Voiron"
+      ]
+    },
+    {
+      "id": "jura",
+      "nombre": "Jura",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Champagnole",
+        "Dole",
+        "Lons-le-Saunier",
+        "Saint-Claude"
+      ]
+    },
+    {
+      "id": "klagenfurt",
+      "nombre": "Klagenfurt",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sebastiangasse"
+      ]
+    },
+    {
+      "id": "landes",
+      "nombre": "Landes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Biscarrosse",
+        "Dax",
+        "Hagetmau",
+        "Landes",
+        "Mont-de-Marsan",
+        "Saint-Paul-les-Dax",
+        "Tarnos"
+      ]
+    },
+    {
+      "id": "languedoc-roussillon",
+      "nombre": "Languedoc-Roussillon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Codolet",
+        "Cuxac-d''Aude",
+        "Gigean",
+        "Grabels",
+        "Lamalou-les-Bains",
+        "Perols",
+        "Peyrens",
+        "Tuchan"
+      ]
+    },
+    {
+      "id": "larcay",
+      "nombre": "Larcay",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Larcay"
+      ]
+    },
+    {
+      "id": "le-castellet",
+      "nombre": "Le Castellet",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "le-creusot",
+      "nombre": "Le Creusot",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "limousin",
+      "nombre": "Limousin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Voutezac"
+      ]
+    },
+    {
+      "id": "loir-et-cher",
+      "nombre": "Loir-et-Cher",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Blois",
+        "Romorantin-Lanthenay",
+        "Vendome"
+      ]
+    },
+    {
+      "id": "loire",
+      "nombre": "Loire",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Andrezieux-Boutheon",
+        "Firminy",
+        "La Ricamarie",
+        "Le Chambon-Feugerolles",
+        "Montbrison",
+        "Riorges",
+        "Rive-de-Gier",
+        "Roanne",
+        "Roche-la-Moliere",
+        "Saint-Chamond",
+        "Saint-Etienne",
+        "Saint-Just-Saint-Rambert"
+      ]
+    },
+    {
+      "id": "loire-atlantique",
+      "nombre": "Loire-Atlantique",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bouguenais",
+        "Carquefou",
+        "Chateaubriant",
+        "Coueron",
+        "Guerande",
+        "La Baule-Escoublac",
+        "La Chapelle-sur-Erdre",
+        "Nantes",
+        "Orvault",
+        "Reze",
+        "Saint Etienne de Mer Morte",
+        "Saint-Herblain",
+        "Saint-Nazaire",
+        "Saint-Sebastien-sur-Loire",
+        "Sainte-Luce-sur-Loire",
+        "Vertou"
+      ]
+    },
+    {
+      "id": "loiret",
+      "nombre": "Loiret",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amilly",
+        "Chalette-sur-Loing",
+        "Fleury-les-Aubrais",
+        "Gien",
+        "Montargis",
+        "Olivet",
+        "Orleans",
+        "Pithiviers",
+        "Saint-Jean-de-Braye",
+        "Saint-Jean-de-la-Ruelle",
+        "Saran"
+      ]
+    },
+    {
+      "id": "lorraine",
+      "nombre": "Lorraine",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Montbronn"
+      ]
+    },
+    {
+      "id": "lot",
+      "nombre": "Lot",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cahors",
+        "Figeac"
+      ]
+    },
+    {
+      "id": "lot-et-garonne",
+      "nombre": "Lot-et-Garonne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Agen",
+        "Le Passage",
+        "Marmande",
+        "Tonneins",
+        "Villeneuve-sur-Lot"
+      ]
+    },
+    {
+      "id": "lower-normandy",
+      "nombre": "Lower Normandy",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "lozere",
+      "nombre": "Lozere",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mende"
+      ]
+    },
+    {
+      "id": "maine-et-loire",
+      "nombre": "Maine-et-Loire",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Angers",
+        "Avrille",
+        "Cholet",
+        "Les Ponts-de-Ce",
+        "Saint-Barthelemy-d''Anjou",
+        "Saumur",
+        "Torfou",
+        "Trelaze"
+      ]
+    },
+    {
+      "id": "manche",
+      "nombre": "Manche",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cherbourg",
+        "Coutances",
+        "Equeurdreville-Hainneville",
+        "Granville",
+        "Octeville",
+        "Saint-Lo",
+        "Tourlaville"
+      ]
+    },
+    {
+      "id": "marne",
+      "nombre": "Marne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chalons-en-Champagne",
+        "Epernay",
+        "Reims",
+        "Tinqueux",
+        "Vitry-le-Francois"
+      ]
+    },
+    {
+      "id": "mayenne",
+      "nombre": "Mayenne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chateau-Gontier",
+        "Laval",
+        "Mayenne",
+        "Montsurs"
+      ]
+    },
+    {
+      "id": "meurthe-et-moselle",
+      "nombre": "Meurthe-et-Moselle",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dombasle-sur-Meurthe",
+        "Jarville-la-Malgrange",
+        "Laxou",
+        "Longwy",
+        "Luneville",
+        "Nancy",
+        "Pont-a-Mousson",
+        "Saint-Max",
+        "Toul",
+        "Vandoeuvre-les-Nancy",
+        "Villers-les-Nancy",
+        "Villerupt"
+      ]
+    },
+    {
+      "id": "meuse",
+      "nombre": "Meuse",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bar-le-Duc",
+        "Verdun"
+      ]
+    },
+    {
+      "id": "midi-pyrenees",
+      "nombre": "Midi-Pyrenees",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Boissezon",
+        "Hauterive",
+        "Launaguet",
+        "Mauleon",
+        "Maurens-Scopont"
+      ]
+    },
+    {
+      "id": "morbihan",
+      "nombre": "Morbihan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Auray",
+        "Guidel",
+        "Hennebont",
+        "Lanester",
+        "Lorient",
+        "Ploemeur",
+        "Pontivy",
+        "Vannes"
+      ]
+    },
+    {
+      "id": "moselle",
+      "nombre": "Moselle",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Amneville",
+        "Behren-les-Forbach",
+        "Creutzwald",
+        "Fameck",
+        "Florange",
+        "Forbach",
+        "Freyming-Merlebach",
+        "Hagondange",
+        "Hayange",
+        "Hombourg-Haut",
+        "Maizieres-les-Metz",
+        "Marly",
+        "Metz",
+        "Montigny-les-Metz",
+        "Moyeuvre-Grande",
+        "Rombas",
+        "Saint-Avold",
+        "Sarrebourg",
+        "Sarreguemines",
+        "Stiring-Wendel",
+        "Thionville",
+        "Uckange",
+        "Woippy",
+        "Yutz"
+      ]
+    },
+    {
+      "id": "nievre",
+      "nombre": "Nievre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cosne-Cours-sur-Loire",
+        "Nevers",
+        "Varennes-Vauzelles"
+      ]
+    },
+    {
+      "id": "nord",
+      "nombre": "Nord",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aniche",
+        "Annoeullin",
+        "Anzin",
+        "Armentieres",
+        "Aulnoye-Aymeries",
+        "Bailleul",
+        "Bondues",
+        "Bruay-sur-l''Escaut",
+        "Cambrai",
+        "Cappelle-la-Grande",
+        "Caudry",
+        "Comines",
+        "Conde-sur-l''Escaut",
+        "Coudekerque-Branche",
+        "Croix",
+        "Denain",
+        "Douai",
+        "Douchy-les-Mines",
+        "Dunkerque",
+        "Escaudain",
+        "Fache-Thumesnil",
+        "Fourmies",
+        "Grande-Synthe",
+        "Graveline",
+        "Halluin",
+        "Haubourdin",
+        "Hautmont",
+        "Hazebrouck",
+        "Hem",
+        "Hulluch",
+        "Jeumont",
+        "La Madeleine",
+        "Lambersart",
+        "Leers",
+        "Lille",
+        "Lomme",
+        "Loos",
+        "Lys-lez-Lannoy",
+        "Marcq-en-Baroeul",
+        "Marennes",
+        "Marly",
+        "Marquette-lez-Lille",
+        "Maubeuge",
+        "Merville",
+        "Mons-en-Baroeul",
+        "Mouvaux",
+        "Neuville-en-Ferrain",
+        "Onnaing",
+        "Raismes",
+        "Ronchin",
+        "Roncq",
+        "Roubaix",
+        "Saint-Amand-les-Eaux",
+        "Saint-Andre-lez-Lille",
+        "Saint-Pol-sur-Mer",
+        "Saint-Saulve",
+        "Seclin",
+        "Sin-le-Noble",
+        "Somain",
+        "Tourcoing",
+        "Valenciennes",
+        "Vieux-Conde",
+        "Villeneuve-d''Ascq",
+        "Wasquehal",
+        "Wattignies",
+        "Wattrelos",
+        "Waziers"
+      ]
+    },
+    {
+      "id": "nord-pas-de-calais",
+      "nombre": "Nord-Pas-de-Calais",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Esquelbecq"
+      ]
+    },
+    {
+      "id": "oise",
+      "nombre": "Oise",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Beauvais",
+        "Chantilly",
+        "Clermont",
+        "Compiegne",
+        "Creil",
+        "Crepy-en-Valois",
+        "Gouvieux",
+        "Meru",
+        "Montataire",
+        "Nogent-sur-Oise",
+        "Noyon",
+        "Pont-Sainte-Maxence",
+        "Senlis"
+      ]
+    },
+    {
+      "id": "orne",
+      "nombre": "Orne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alencon",
+        "Argentan",
+        "Flers",
+        "L''Aigle"
+      ]
+    },
+    {
+      "id": "paris",
+      "nombre": "Paris",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Paris"
+      ]
+    },
+    {
+      "id": "pas-de-calais",
+      "nombre": "Pas-de-Calais",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aire-sur-la-Lys",
+        "Arras",
+        "Auchel",
+        "Avion",
+        "Berck",
+        "Bethune",
+        "Boulogne-sur-Mer",
+        "Bruay-la-Brussiere",
+        "Bully-les-Mines",
+        "Calais",
+        "Carvin",
+        "Courrieres",
+        "Etaples",
+        "Harnes",
+        "Henin-Beaumont",
+        "Le Portel",
+        "Lens",
+        "Libercourt",
+        "Lievin",
+        "Lillers",
+        "Longuenesse",
+        "Marck",
+        "Mericourt",
+        "Montigny-en-Gohelle",
+        "Noeux-les-Mines",
+        "Oignies",
+        "Outreau",
+        "Rouvroy",
+        "Saint-Martin-Boulogne",
+        "Saint-Omer",
+        "Sallaumines",
+        "Vendin-le-Vieil"
+      ]
+    },
+    {
+      "id": "pays-de-la-loire",
+      "nombre": "Pays de la Loire",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "pays-de-la-loire-2",
+      "nombre": "Pays-de-la-Loire",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Loiron",
+        "Marolles-les-Braults",
+        "Mortagne-sur-Sevre",
+        "Mouzillon",
+        "Noirmoutier-en-l''ÃƒÂŽle"
+      ]
+    },
+    {
+      "id": "picardy",
+      "nombre": "Picardy",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Friville",
+        "Liancourt",
+        "Maizy",
+        "Oust-Marest",
+        "Puiseux-le-Hauberger",
+        "Saint-Crepin-Ibouvillers"
+      ]
+    },
+    {
+      "id": "puy-de-dome",
+      "nombre": "Puy-de-Dome",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aubiere",
+        "Beaumont",
+        "Chamalieres",
+        "Clermont-Ferrand",
+        "Cournon-d''Auvergne",
+        "Gerzat",
+        "Issoire",
+        "Riom",
+        "Thiers"
+      ]
+    },
+    {
+      "id": "pyrenees-atlantiques",
+      "nombre": "Pyrenees-Atlantiques",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Anglet",
+        "Bayonne",
+        "Biarritz",
+        "Billere",
+        "Hendaye",
+        "Lons",
+        "Oloron-Sainte-Marie",
+        "Orthez",
+        "Pau",
+        "Saint-Jean-de-Luz"
+      ]
+    },
+    {
+      "id": "pyrenees-orientales",
+      "nombre": "Pyrenees-Orientales",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Perpignan",
+        "Saint-Esteve"
+      ]
+    },
+    {
+      "id": "quelmes",
+      "nombre": "Quelmes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Quelmes"
+      ]
+    },
+    {
+      "id": "rhone",
+      "nombre": "Rhone",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Brignais",
+        "Bron",
+        "Caluire-et-Cuire",
+        "Decines-Charpieu",
+        "Ecully",
+        "Francheville",
+        "Genas",
+        "Genay",
+        "Givors",
+        "Lyon",
+        "Meyzieu",
+        "Mions",
+        "Oullins",
+        "Pierre-Benite",
+        "Rillieux-la-Pape",
+        "Saint-Fons",
+        "Saint-Genis-Laval",
+        "Saint-Priest",
+        "Sainte-Foy-les-Lyon",
+        "Tarare",
+        "Tassin-la-Demi-Lune",
+        "Vaulx-en-Velin",
+        "Venissieux",
+        "Villefranche-sur-Saone",
+        "Villeurbanne"
+      ]
+    },
+    {
+      "id": "rhone-alpes",
+      "nombre": "Rhone-Alpes",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Beauvoir-en-Royans",
+        "Belley",
+        "Bons-en-Chablais",
+        "Chalain-d''Uzore",
+        "Chassieu",
+        "Chavanod",
+        "Chazay-d-Azergues",
+        "Chimilin",
+        "Civrieux-d Azergues",
+        "Corbas",
+        "Courzieu",
+        "Dardilly",
+        "Guereins",
+        "Izernore",
+        "La Talaudiere",
+        "La Tronche",
+        "La Verpilliere",
+        "Le Cheylard",
+        "Le Cheylas",
+        "Mery",
+        "Moirans",
+        "Montalieu-Vercieu",
+        "Montmiral",
+        "Peronnas",
+        "Poncin",
+        "Quincie-en-Beaujolais",
+        "Saint-Quentin-sur-Isere",
+        "Sainte Agathe la Bouteresse",
+        "Sainte-Consorce",
+        "Sisteron",
+        "Trevoux",
+        "Villard-Bonnot"
+      ]
+    },
+    {
+      "id": "saint-ouen",
+      "nombre": "Saint Ouen",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saint-viatre",
+      "nombre": "Saint Viatre",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "saone-et-loire",
+      "nombre": "Saone-et-Loire",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Autun",
+        "Chalon-sur-Saone",
+        "Digoin",
+        "Gueugnon",
+        "Le Creusot",
+        "Macon",
+        "Montceau-les-Mines",
+        "Paray-le-Monial",
+        "Saint-Vallier"
+      ]
+    },
+    {
+      "id": "sarthe",
+      "nombre": "Sarthe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Allonnes",
+        "La Ferte-Bernard",
+        "La Fleche",
+        "Le Mans",
+        "Sable-sur-Sarthe"
+      ]
+    },
+    {
+      "id": "savoie",
+      "nombre": "Savoie",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aix-les-Bains",
+        "Albertville",
+        "Chambery",
+        "La Motte-Servolex",
+        "Saint-Jean-de-Maurienne"
+      ]
+    },
+    {
+      "id": "seine-et-marne",
+      "nombre": "Seine-et-Marne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Avon",
+        "Brie-Comte-Robert",
+        "Champs-sur-Marne",
+        "Chelles",
+        "Claye-Souilly",
+        "Combs-la-Ville",
+        "Coulommiers",
+        "Dammarie-les-Lys",
+        "Fontainebleau",
+        "Lagny-sur-Marne",
+        "Le Mee-sur-Seine",
+        "Lognes",
+        "Meaux",
+        "Melun",
+        "Mitry-Mory",
+        "Moissy-Cramayel",
+        "Montereau-Fault-Yonne",
+        "Nemours",
+        "Noisiel",
+        "Ozoir-la-Ferriere",
+        "Pontault-Combault",
+        "Provins",
+        "Roissy-en-Brie",
+        "Saint-Fargeau-Ponthierry",
+        "Savigny-le-Temple",
+        "Torcy",
+        "Vaires-sur-Marne",
+        "Veneux",
+        "Villeparisis"
+      ]
+    },
+    {
+      "id": "seine-maritime",
+      "nombre": "Seine-Maritime",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Barentin",
+        "Bihorel",
+        "Bois-Guillaume",
+        "Bolbec",
+        "Canteleu",
+        "Caudebec-les-Elbeuf",
+        "Darnetal",
+        "Deville-les-Rouen",
+        "Dieppe",
+        "Elbeuf",
+        "Fecamp",
+        "Gonfreville-l''Orcher",
+        "Grand-Couronne",
+        "Harfleur",
+        "Le Grand-Quevilly",
+        "Le Havre",
+        "Le Petit-Quevilly",
+        "Lillebonne",
+        "Maromme",
+        "Mont-Saint-Aignan",
+        "Montivilliers",
+        "Notre-Dame-de-Gravenchon",
+        "Oissel",
+        "Rouen",
+        "Saint-Etienne-du-Rouvray",
+        "Sotteville-les-Rouen",
+        "Yvetot"
+      ]
+    },
+    {
+      "id": "seine-saint-denis",
+      "nombre": "Seine-Saint-Denis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aubervillers",
+        "Aulnay-sous-Bois",
+        "Bagnolet",
+        "Bobigny",
+        "Bondy",
+        "Clichy-sous-Bois",
+        "Drancy",
+        "Epinay-sur-Seine",
+        "Gagny",
+        "La Courneuve",
+        "Le Blanc-Mesnil",
+        "Le Bourget",
+        "Le Pre-Saint-Gervais",
+        "Le Raincy",
+        "Les Lilas",
+        "Les Pavillons-sous-Bois",
+        "Livry-Gargan",
+        "Montfermeil",
+        "Montreuil",
+        "Neuilly-Plaisance",
+        "Neuilly-sur-Marne",
+        "Noisy-le-Grand",
+        "Noisy-le-Sec",
+        "Pantin",
+        "Pierrefitte-sur-Seine",
+        "Romainville",
+        "Rosny-sous-Bois",
+        "Saint-Denis",
+        "Saint-Ouen",
+        "Sevran",
+        "Stains",
+        "Tremblay-en-France",
+        "Villemomble",
+        "Villepinte",
+        "Villetaneuse"
+      ]
+    },
+    {
+      "id": "somme",
+      "nombre": "Somme",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abbeville",
+        "Albert",
+        "Amiens"
+      ]
+    },
+    {
+      "id": "sophia-antipolis",
+      "nombre": "Sophia Antipolis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "souvans",
+      "nombre": "Souvans",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Souvans"
+      ]
+    },
+    {
+      "id": "tarn",
+      "nombre": "Tarn",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Albi",
+        "Carmaux",
+        "Castres",
+        "Gaillac",
+        "Graulhet",
+        "Mazamet"
+      ]
+    },
+    {
+      "id": "tarn-et-garonne",
+      "nombre": "Tarn-et-Garonne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Castelsarassin",
+        "Moissac",
+        "Montauban"
+      ]
+    },
+    {
+      "id": "territoire-de-belfort",
+      "nombre": "Territoire de Belfort",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "treignac",
+      "nombre": "Treignac",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chamberet"
+      ]
+    },
+    {
+      "id": "upper-normandy",
+      "nombre": "Upper Normandy",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "val-d-oise",
+      "nombre": "Val-d''Oise",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Argenteuil",
+        "Arnouville-les-Gonesse",
+        "Beauchamps",
+        "Bezons",
+        "Cergy",
+        "Cormeilles-en-Parisis",
+        "Deuil-la-Barre",
+        "Domont",
+        "Eaubonne",
+        "Enghien-les-Bains",
+        "Eragny",
+        "Ermont",
+        "Ezanville",
+        "Fosses",
+        "Franconville",
+        "Garges-les-Gonesse",
+        "Gonesse",
+        "Goussainville",
+        "Herblay",
+        "Jouy-le-Moutier",
+        "L''Isle-Adam",
+        "Montigny-les-Cormeilles",
+        "Montmagny",
+        "Montmorency",
+        "Osny",
+        "Persan",
+        "Pontoise",
+        "Saint-Brice-sous-Foret",
+        "Saint-Gratien",
+        "Saint-Leu-la-Foret",
+        "Saint-Ouen-l''Aumone",
+        "Sannois",
+        "Sarcelles",
+        "Soisy-sous-Montmorency",
+        "Taverny",
+        "Vaureal",
+        "Villiers-le-Bel"
+      ]
+    },
+    {
+      "id": "val-de-marne",
+      "nombre": "Val-de-Marne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alfortville",
+        "Arcueil",
+        "Boissy-Saint-Leger",
+        "Bonneuil",
+        "Bry-sur-Marne",
+        "Cachan",
+        "Champigny-sur-Marne",
+        "Charenton-le-Pont",
+        "Chennevieres-sur-Marne",
+        "Chevilly-Larue",
+        "Choisy-le-Roi",
+        "Creteil",
+        "Fontenay-sous-Bois",
+        "Fresnes",
+        "Gentilly",
+        "Ivry-sur-Seine",
+        "Joinville-le-Pont",
+        "L''Hay-les-Roses",
+        "La Queue-en-Brie",
+        "Le Kremlin-Bicetre",
+        "Le Perreux-sur-Marne",
+        "Le Plessis-Trevise",
+        "Limeil-Brevannes",
+        "Maisons-Alfort",
+        "Nogent-sur-Marne",
+        "Orly",
+        "Ormesson-sur-Marne",
+        "Saint-Mande",
+        "Saint-Maur-des-Fosses",
+        "Saint-Maurice",
+        "Sucy-en-Brie",
+        "Thiais",
+        "Valenton",
+        "Villejuif",
+        "Villeneuve-le-Roi",
+        "Villeneuve-Saint-Georges",
+        "Villiers-sur-Marne",
+        "Vincennes",
+        "Vitry-sur-Seine"
+      ]
+    },
+    {
+      "id": "var",
+      "nombre": "Var",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Brignoles",
+        "Draguignan",
+        "Frejus",
+        "Hyeres",
+        "La Crau",
+        "La Garde",
+        "La Seyne-sur-Mer",
+        "La Valette-du-Var",
+        "Le Pradet",
+        "Ollioules",
+        "Roquebrune-sur-Argens",
+        "Saint-Maximin-la-Sainte-Baume",
+        "Saint-Raphael",
+        "Sainte-Maxime",
+        "Sanary-sur-Mer",
+        "Six-Fours-les-Plages",
+        "Sollies-Pont",
+        "Toulon"
+      ]
+    },
+    {
+      "id": "vaucluse",
+      "nombre": "Vaucluse",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Apt",
+        "Avignon",
+        "Bollene",
+        "Carpentras",
+        "Cavaillon",
+        "L''Isle-sur-la-Sorgue",
+        "Le Pontet",
+        "Orange",
+        "Pertuis",
+        "Sorgues",
+        "Valreas"
+      ]
+    },
+    {
+      "id": "vellise",
+      "nombre": "Vellise",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Vellise"
+      ]
+    },
+    {
+      "id": "vendee",
+      "nombre": "Vendee",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Challans",
+        "Chateau-d''Olonne",
+        "Fontenay-le-Comte",
+        "La Chasnis",
+        "La Roche-sur-Yon",
+        "Les Herbiers",
+        "Les Sables-d''Olonne",
+        "Longeville-sur-Mer"
+      ]
+    },
+    {
+      "id": "vienne",
+      "nombre": "Vienne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chatellerault",
+        "Poitiers"
+      ]
+    },
+    {
+      "id": "vosges",
+      "nombre": "Vosges",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Epinal",
+        "Gerardmer",
+        "Remiremont",
+        "Saint-Die"
+      ]
+    },
+    {
+      "id": "yonne",
+      "nombre": "Yonne",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Auxerre",
+        "Avallon",
+        "Joigny",
+        "Sens"
+      ]
+    },
+    {
+      "id": "yvelines",
+      "nombre": "Yvelines",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Acheres",
+        "Andresy",
+        "Aubergenville",
+        "Bois-d''Arcy",
+        "Carrieres-sous-Poissy",
+        "Carrieres-sur-Seine",
+        "Chanteloup-les-Vignes",
+        "Chatou",
+        "Conflans-Sainte-Honorine",
+        "Croissy-sur-Seine",
+        "Elancourt",
+        "Fontenay-le-Fleury",
+        "Guyancourt",
+        "Houilles",
+        "La Celle-Saint-Cloud",
+        "Le Chesnay",
+        "Le Pecq",
+        "Le Vesinet",
+        "Les Clayes-sous-Bois",
+        "Les Mureaux",
+        "Limay",
+        "Maisons-Laffitte",
+        "Mantes-la-Jolie",
+        "Mantes-la-Ville",
+        "Marly-le-Roi",
+        "Maurepas",
+        "Montesson",
+        "Montigny-le-Bretonneux",
+        "Plaisir",
+        "Poissy",
+        "Rambouillet",
+        "Saint-Cyr-l''Ecole",
+        "Saint-Germain-en-Laye",
+        "Sartrouville",
+        "Trappes",
+        "Triel-sur-Seine",
+        "Velizy-Villacoublay",
+        "Verneuil-sur-Seine",
+        "Versailles",
+        "Viroflay",
+        "Voisins-le-Bretonneux"
+      ]
+    }
+  ]
+}

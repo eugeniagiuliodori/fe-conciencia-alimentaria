@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "uzbekistan",
+    "nombre": "Uzbekistan",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "andijon",
+      "nombre": "Andijon",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ahunabayev",
+        "Andijon",
+        "Asaka",
+        "Boz",
+        "Hakkulobod",
+        "Hocaobod",
+        "Honobod",
+        "Ilyichevsk",
+        "Karabagis",
+        "Kurgontepa",
+        "Marhomat",
+        "Pahtaobod",
+        "Paytug",
+        "Sahrihan"
+      ]
+    },
+    {
+      "id": "buhoro",
+      "nombre": "Buhoro",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Buhoro",
+        "Cangeldi",
+        "Galaosiye",
+        "Gazli",
+        "Gijduvon",
+        "Kizilravbe",
+        "Kogon",
+        "Korakul",
+        "Korovulbazar",
+        "Kukca",
+        "Olot",
+        "Oyokkuduk",
+        "Romitan",
+        "Safirkon",
+        "Vobkent"
+      ]
+    },
+    {
+      "id": "buxoro-viloyati",
+      "nombre": "Buxoro Viloyati",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "cizah",
+      "nombre": "Cizah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cizah",
+        "Dustlik",
+        "Gagarin",
+        "Gallaorol",
+        "Marcanbulok",
+        "Pahtakor",
+        "Ulyanovo",
+        "Zomin"
+      ]
+    },
+    {
+      "id": "fargona",
+      "nombre": "Fargona",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Altyarik",
+        "Avval",
+        "Besarik",
+        "Fargona",
+        "Hamza",
+        "Kirgili",
+        "Kukon",
+        "Kuva",
+        "Kuvasoy",
+        "Margilon",
+        "Rapkan",
+        "Riston",
+        "Toslok",
+        "Yaypan"
+      ]
+    },
+    {
+      "id": "horazm",
+      "nombre": "Horazm",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Drujba",
+        "Gurlan",
+        "Hazorasp",
+        "Heva",
+        "Honko",
+        "Kuskupir",
+        "Mesekli",
+        "Sovot",
+        "Turpokkala",
+        "Urgenc"
+      ]
+    },
+    {
+      "id": "kaskadar",
+      "nombre": "Kaskadar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Beskent",
+        "Ceynau",
+        "Cirakci",
+        "Dehkanobod",
+        "Dinau",
+        "Guzor",
+        "Kallig",
+        "Kamasi",
+        "Karabag",
+        "Karsi",
+        "Kasbi",
+        "Kitob",
+        "Koson",
+        "Madaniyat",
+        "Maydayap",
+        "Maymanak",
+        "Muborak",
+        "Oktyabrskiy",
+        "Sahrisabz",
+        "Talimarcon",
+        "Urtacim",
+        "Yakkabog",
+        "Yaninison"
+      ]
+    },
+    {
+      "id": "korakalpogiston",
+      "nombre": "Korakalpogiston",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Beruni",
+        "Buston",
+        "Cimboy",
+        "Halkobod",
+        "Hucayli",
+        "Karauzyak",
+        "Kegayli",
+        "Kizketken",
+        "Kozokdaryo",
+        "Kungirot",
+        "Mangit",
+        "Muynok",
+        "Nukus",
+        "Tahiatos",
+        "Tahtakupir",
+        "Turtkul"
+      ]
+    },
+    {
+      "id": "namangan",
+      "nombre": "Namangan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aytim",
+        "Besbulok",
+        "Cartak",
+        "Cingeldi",
+        "Cust",
+        "Gozgon",
+        "Iskavat",
+        "Kalkuduk",
+        "Konimeh",
+        "Kosonsoy",
+        "Minbulok",
+        "Namangan",
+        "Nurota",
+        "Pop",
+        "Tomdibulok",
+        "Tosbulok",
+        "Turakurgon",
+        "Uckurgon",
+        "Unhoyat",
+        "Uyci",
+        "Uzunkuduk",
+        "Yanikurgon"
+      ]
+    },
+    {
+      "id": "navoi",
+      "nombre": "Navoi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Karmana",
+        "Kiziltepa",
+        "Navoi",
+        "Uckuduk",
+        "Zarafson"
+      ]
+    },
+    {
+      "id": "samarkand",
+      "nombre": "Samarkand",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bulungur",
+        "Camboy",
+        "Carhin",
+        "Celak",
+        "Cuma",
+        "Dahbed",
+        "Istihon",
+        "Kattakurgon",
+        "Kusrobod",
+        "Nurobod",
+        "Oktos",
+        "Paysanba",
+        "Samarkand",
+        "Superfosfatniy",
+        "Urgut",
+        "Yanirobod",
+        "Ziadin"
+      ]
+    },
+    {
+      "id": "sirdare",
+      "nombre": "Sirdare",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baht",
+        "Guliston",
+        "Hovos",
+        "Sirdare",
+        "Sirin",
+        "Yaniyer"
+      ]
+    },
+    {
+      "id": "surhondar",
+      "nombre": "Surhondar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Akkurgon",
+        "Boysun",
+        "Carkurgon",
+        "Denau",
+        "Kumkurgon",
+        "Paskurd",
+        "Sargun",
+        "Sariasiya",
+        "Serobod",
+        "Surci",
+        "Termiz",
+        "Zan"
+      ]
+    },
+    {
+      "id": "toskent",
+      "nombre": "Toskent",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Almazar",
+        "Angren",
+        "Bekobod",
+        "Bektemir",
+        "Buka",
+        "Cinoz",
+        "Circik",
+        "Gazalkent",
+        "Iskandar",
+        "Keles",
+        "Kibray",
+        "Krasnogorskiy",
+        "Kuyluk",
+        "Ohangaron",
+        "Olmalik",
+        "Parkent",
+        "Pskent",
+        "Salar",
+        "Soldatski",
+        "Tashkent",
+        "Toskent",
+        "Tuytepa",
+        "Urtaaul",
+        "Yaniobod",
+        "Yaniyul"
+      ]
+    }
+  ]
+}

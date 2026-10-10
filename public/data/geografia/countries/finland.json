@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "finland",
+    "nombre": "Finland",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "ahvenanmaa",
+      "nombre": "Ahvenanmaa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Maarianhamina"
+      ]
+    },
+    {
+      "id": "etela-karjala",
+      "nombre": "Etela-Karjala",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Imatra",
+        "Joutseno",
+        "Lappeenranta"
+      ]
+    },
+    {
+      "id": "etela-pohjanmaa",
+      "nombre": "Etela-Pohjanmaa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hyllykallio",
+        "Ilmajoki",
+        "Kauhajoki",
+        "Kurikka",
+        "Lapua",
+        "Seinajoki"
+      ]
+    },
+    {
+      "id": "etela-savo",
+      "nombre": "Etela-Savo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mikkeli",
+        "Savonlinna"
+      ]
+    },
+    {
+      "id": "etela-suomen-laani",
+      "nombre": "Etela-Suomen Laani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ita-suomen-laani",
+      "nombre": "Ita-Suomen Laani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ita-uusimaa",
+      "nombre": "Ita-Uusimaa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Loviisa",
+        "Orimattila",
+        "Porvoo"
+      ]
+    },
+    {
+      "id": "kainuu",
+      "nombre": "Kainuu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kajaani"
+      ]
+    },
+    {
+      "id": "kanta-hame",
+      "nombre": "Kanta-Hame",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Forssa",
+        "Hameenlinna",
+        "Janakkala",
+        "Riihimaki"
+      ]
+    },
+    {
+      "id": "keski-pohjanmaa",
+      "nombre": "Keski-Pohjanmaa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kokkola"
+      ]
+    },
+    {
+      "id": "keski-suomi",
+      "nombre": "Keski-Suomi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aanekoski",
+        "Jamsa",
+        "Jyvaskyla",
+        "Keuruu",
+        "Laukaa",
+        "Lieto"
+      ]
+    },
+    {
+      "id": "kymenlaakso",
+      "nombre": "Kymenlaakso",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hamina",
+        "Kotka",
+        "Kouvola",
+        "Kuusankoski",
+        "Valkeala",
+        "Vehkalahti"
+      ]
+    },
+    {
+      "id": "lansi-suomen-laani",
+      "nombre": "Lansi-Suomen Laani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "lappi",
+      "nombre": "Lappi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kemi",
+        "Kemijarvi",
+        "Rovaniemi",
+        "Sonka",
+        "Tornio"
+      ]
+    },
+    {
+      "id": "northern-savonia",
+      "nombre": "Northern Savonia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ostrobothnia",
+      "nombre": "Ostrobothnia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Jakobstad",
+        "Oulunsalo"
+      ]
+    },
+    {
+      "id": "oulun-laani",
+      "nombre": "Oulun Laani",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "paijat-hame",
+      "nombre": "Paijat-Hame",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Heinola",
+        "Hollola",
+        "Lahti",
+        "Nastola"
+      ]
+    },
+    {
+      "id": "pirkanmaa",
+      "nombre": "Pirkanmaa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kangasala",
+        "Lempaala",
+        "Nokia",
+        "Pirkkala",
+        "Sastamala",
+        "Tampere",
+        "Valkeakoski",
+        "Ylojarvi"
+      ]
+    },
+    {
+      "id": "pohjanmaa",
+      "nombre": "Pohjanmaa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kristiinankaupunki",
+        "Mustasaari",
+        "Pietarsaari",
+        "Uusikarlepyy",
+        "Vaasa"
+      ]
+    },
+    {
+      "id": "pohjois-karjala",
+      "nombre": "Pohjois-Karjala",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Joensuu",
+        "Lieksa"
+      ]
+    },
+    {
+      "id": "pohjois-pohjanmaa",
+      "nombre": "Pohjois-Pohjanmaa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Haukipudas",
+        "Kempele",
+        "Kuusamo",
+        "Muhos",
+        "Nivala",
+        "Oulainen",
+        "Oulu",
+        "Raahe",
+        "Ylivieska"
+      ]
+    },
+    {
+      "id": "pohjois-savo",
+      "nombre": "Pohjois-Savo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Iisalmi",
+        "Kuopio",
+        "Sillinjarvi",
+        "Varkaus"
+      ]
+    },
+    {
+      "id": "saarijarvi",
+      "nombre": "Saarijarvi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Saarijarvi"
+      ]
+    },
+    {
+      "id": "satakunta",
+      "nombre": "Satakunta",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Eura",
+        "Eurajoki",
+        "Harjavalta",
+        "Huittinen",
+        "Kankaanpaa",
+        "Kokemaki",
+        "Lappi",
+        "Nakkila",
+        "Noormarkku",
+        "Pori",
+        "Rauma",
+        "Sakyla",
+        "Ulvila",
+        "Vammala"
+      ]
+    },
+    {
+      "id": "southern-savonia",
+      "nombre": "Southern Savonia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "tavastia-proper",
+      "nombre": "Tavastia Proper",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "uleaborgs-lan",
+      "nombre": "Uleaborgs Lan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "uusimaa",
+      "nombre": "Uusimaa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Espoo",
+        "Hanko",
+        "Helsinki",
+        "Hyvinkaa",
+        "Jarvenpaa",
+        "Kauniainen",
+        "Kerava",
+        "Kirkkonummi",
+        "Lohja",
+        "Mantsala",
+        "Nurmijarvi",
+        "Sipoo",
+        "Tammisaari",
+        "Tuusula",
+        "Vantaa",
+        "Vihti"
+      ]
+    },
+    {
+      "id": "varsinais-suomi",
+      "nombre": "Varsinais-Suomi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kaarina",
+        "Naantali",
+        "Parainen",
+        "Raisio",
+        "Salo",
+        "Turku",
+        "Uusikaupunki"
+      ]
+    }
+  ]
+}

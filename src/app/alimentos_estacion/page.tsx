@@ -2,7 +2,8 @@ import { AlimentosEstacion } from "@/components/AlimentosEstacion";
 import Link from "next/link";
 
 export default async function Alimentos_estacionPage() {
-  
+
+
   return (
     <div className="site-container py-8 sm:py-12 w-[90%]">
       <div className="mx-auto max-w-full">

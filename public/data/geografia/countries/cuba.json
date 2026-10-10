@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "cuba",
+    "nombre": "Cuba",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "camaguey",
+      "nombre": "Camaguey",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Camaguey",
+        "Caney",
+        "Carlos Manuel de Cespedes",
+        "Esmeralda",
+        "Florida",
+        "Guaimaro",
+        "Minas",
+        "Nuevitas",
+        "Santa Cruz del Sur",
+        "Sibanicu",
+        "Vertientes"
+      ]
+    },
+    {
+      "id": "ciego-de-avila",
+      "nombre": "Ciego de Avila",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "cienfuegos",
+      "nombre": "Cienfuegos",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Cienfuegos",
+        "Cruces",
+        "Cumanayagua",
+        "Palmira",
+        "Rodas"
+      ]
+    },
+    {
+      "id": "ciudad-de-la-habana",
+      "nombre": "Ciudad de la Habana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "granma",
+      "nombre": "Granma",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bayamo",
+        "Campechuela",
+        "Guisa",
+        "Jiguani",
+        "Manzanillo",
+        "Media Luna",
+        "Niquero",
+        "Pilon",
+        "Rio Cauto",
+        "Yara"
+      ]
+    },
+    {
+      "id": "guantanamo",
+      "nombre": "Guantanamo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Baracoa",
+        "Guantanamo",
+        "Yateras"
+      ]
+    },
+    {
+      "id": "habana",
+      "nombre": "Habana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Havana"
+      ]
+    },
+    {
+      "id": "holguin",
+      "nombre": "Holguin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Antilla",
+        "Baguanos",
+        "Banes",
+        "Cacocum",
+        "Cauto Cristo",
+        "Cueto",
+        "Gibara",
+        "Holguin",
+        "Jobabo",
+        "Moa",
+        "Sagua de Tanamo"
+      ]
+    },
+    {
+      "id": "isla-de-la-juventud",
+      "nombre": "Isla de la Juventud",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "la-habana",
+      "nombre": "La Habana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "las-tunas",
+      "nombre": "Las Tunas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "matanzas",
+      "nombre": "Matanzas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abreus",
+        "Agramonte",
+        "Aguacate",
+        "Aguada de Pasajeros",
+        "Alacranes",
+        "Bolondron",
+        "Calimete",
+        "Cardenas",
+        "Carlos Rojas",
+        "Colon",
+        "Corralillo",
+        "Jaguey Grande",
+        "Jovellanos",
+        "Juan Gualberto Gomez",
+        "Los Arabos",
+        "Manguito",
+        "Marti",
+        "Matanzas",
+        "Maximo Gomez",
+        "Pedro Betancourt",
+        "Perico",
+        "Union de Reyes",
+        "Varadero"
+      ]
+    },
+    {
+      "id": "pinar-del-rio",
+      "nombre": "Pinar del Rio",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sancti-spiritus",
+      "nombre": "Sancti Spiritus",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "santiago-de-cuba",
+      "nombre": "Santiago de Cuba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "villa-clara",
+      "nombre": "Villa Clara",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

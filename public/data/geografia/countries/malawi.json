@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "malawi",
+    "nombre": "Malawi",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "balaka",
+      "nombre": "Balaka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Balaka"
+      ]
+    },
+    {
+      "id": "blantyre-city",
+      "nombre": "Blantyre City",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "chikwawa",
+      "nombre": "Chikwawa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chikwawa"
+      ]
+    },
+    {
+      "id": "chiradzulu",
+      "nombre": "Chiradzulu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chiradzulu"
+      ]
+    },
+    {
+      "id": "chitipa",
+      "nombre": "Chitipa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chitipa"
+      ]
+    },
+    {
+      "id": "dedza",
+      "nombre": "Dedza",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chipoka",
+        "Dedza"
+      ]
+    },
+    {
+      "id": "dowa",
+      "nombre": "Dowa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dowa",
+        "Mponela"
+      ]
+    },
+    {
+      "id": "karonga",
+      "nombre": "Karonga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chilumba",
+        "Karonga",
+        "Livingstonia"
+      ]
+    },
+    {
+      "id": "kasungu",
+      "nombre": "Kasungu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kasungu"
+      ]
+    },
+    {
+      "id": "lilongwe-city",
+      "nombre": "Lilongwe City",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "machinga",
+      "nombre": "Machinga",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Liwonde",
+        "Machinga"
+      ]
+    },
+    {
+      "id": "mangochi",
+      "nombre": "Mangochi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mangochi",
+        "Monkey Bay"
+      ]
+    },
+    {
+      "id": "mchinji",
+      "nombre": "Mchinji",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mchinji"
+      ]
+    },
+    {
+      "id": "mulanje",
+      "nombre": "Mulanje",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mulanje"
+      ]
+    },
+    {
+      "id": "mwanza",
+      "nombre": "Mwanza",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mwanza"
+      ]
+    },
+    {
+      "id": "mzimba",
+      "nombre": "Mzimba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mzimba"
+      ]
+    },
+    {
+      "id": "mzuzu-city",
+      "nombre": "Mzuzu City",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nkhata-bay",
+      "nombre": "Nkhata Bay",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nkhotakota",
+      "nombre": "Nkhotakota",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nkhotakota"
+      ]
+    },
+    {
+      "id": "nsanje",
+      "nombre": "Nsanje",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nsanje"
+      ]
+    },
+    {
+      "id": "ntcheu",
+      "nombre": "Ntcheu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ntcheu"
+      ]
+    },
+    {
+      "id": "ntchisi",
+      "nombre": "Ntchisi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ntchisi"
+      ]
+    },
+    {
+      "id": "phalombe",
+      "nombre": "Phalombe",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Phalombe"
+      ]
+    },
+    {
+      "id": "rumphi",
+      "nombre": "Rumphi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rumphi"
+      ]
+    },
+    {
+      "id": "salima",
+      "nombre": "Salima",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Salima"
+      ]
+    },
+    {
+      "id": "thyolo",
+      "nombre": "Thyolo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Luchenza",
+        "Thyolo"
+      ]
+    },
+    {
+      "id": "zomba-municipality",
+      "nombre": "Zomba Municipality",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

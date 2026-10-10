@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "zambia",
+    "nombre": "Zambia",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "central",
+      "nombre": "Central",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kabwe",
+        "Kapiri Mposhi",
+        "Mkushi",
+        "Mumbwa",
+        "Serenje"
+      ]
+    },
+    {
+      "id": "copperbelt",
+      "nombre": "Copperbelt",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chambishi",
+        "Chililabombwe",
+        "Chingola",
+        "Kalulushi",
+        "Kitwe",
+        "Luanshya",
+        "Mpongwe",
+        "Mufulira",
+        "Ndola"
+      ]
+    },
+    {
+      "id": "eastern",
+      "nombre": "Eastern",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chipata",
+        "Katete",
+        "Lundazi",
+        "Petauke"
+      ]
+    },
+    {
+      "id": "luapala",
+      "nombre": "Luapala",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mansa",
+        "Mwansabombwe",
+        "Nchelenge",
+        "Samfya"
+      ]
+    },
+    {
+      "id": "lusaka",
+      "nombre": "Lusaka",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chilanga",
+        "Kafue",
+        "Lusaka"
+      ]
+    },
+    {
+      "id": "north-western",
+      "nombre": "North-Western",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kalengwa",
+        "Kansanshi",
+        "Mwinilunga",
+        "Solwezi",
+        "Zambezi"
+      ]
+    },
+    {
+      "id": "northern",
+      "nombre": "Northern",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chinsali",
+        "Isoka",
+        "Kasama",
+        "Mbala",
+        "Mpika"
+      ]
+    },
+    {
+      "id": "southern",
+      "nombre": "Southern",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Choma",
+        "Itezhi-Tezhi",
+        "Kalomo",
+        "Livingstone",
+        "Maamba",
+        "Mazabuka",
+        "Monze",
+        "Nakambala",
+        "Siavonga"
+      ]
+    },
+    {
+      "id": "western",
+      "nombre": "Western",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kalabo",
+        "Kaoma",
+        "Limulunga",
+        "Mongu",
+        "Senanga",
+        "Sesheke"
+      ]
+    }
+  ]
+}

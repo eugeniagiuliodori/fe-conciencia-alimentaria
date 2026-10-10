@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "bulgaria",
+    "nombre": "Bulgaria",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "blagoevgrad",
+      "nombre": "Blagoevgrad",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bansko",
+        "Belica",
+        "Blagoevgrad",
+        "Goce Delchev",
+        "Hadzhidimovo",
+        "Jakoruda",
+        "Kresna",
+        "Melnik",
+        "Petrich",
+        "Razlog",
+        "Sandanski",
+        "Simitli"
+      ]
+    },
+    {
+      "id": "burgas",
+      "nombre": "Burgas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ahtopol",
+        "Ajtos",
+        "Balgarovo",
+        "Bourgas",
+        "Burgas",
+        "Carevo",
+        "Kableshkovo",
+        "Kameno",
+        "Karnobat",
+        "Malko Tarnovo",
+        "Nesebar",
+        "Obzor",
+        "Pomorie",
+        "Primorsko",
+        "Sozopol",
+        "Sredec",
+        "Sungurlare",
+        "Tvardica"
+      ]
+    },
+    {
+      "id": "dobrich",
+      "nombre": "Dobrich",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Balchik",
+        "Dobrich",
+        "General-Toshevo",
+        "Kavarna",
+        "Loznica",
+        "Shabla",
+        "Tervel"
+      ]
+    },
+    {
+      "id": "gabrovo",
+      "nombre": "Gabrovo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Drjanovo",
+        "Gabrovo",
+        "Plachkovci",
+        "Sevlievo",
+        "Trjavna"
+      ]
+    },
+    {
+      "id": "haskovo",
+      "nombre": "Haskovo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dimitrovgrad",
+        "Harmanli",
+        "Haskovo",
+        "Ivajlovgrad",
+        "Ljubimec",
+        "Madzharovo",
+        "Merichleri",
+        "Simeonovgrad",
+        "Svilengrad"
+      ]
+    },
+    {
+      "id": "jambol",
+      "nombre": "Jambol",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Boljarovo",
+        "Elhovo",
+        "Jambol",
+        "Straldzha",
+        "Topolovgrad"
+      ]
+    },
+    {
+      "id": "kardzhali",
+      "nombre": "Kardzhali",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ardino",
+        "Dzhebel",
+        "Kardzhali",
+        "Krumovgrad",
+        "Momchilgrad"
+      ]
+    },
+    {
+      "id": "kjustendil",
+      "nombre": "Kjustendil",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Boboshevo",
+        "Bobovdol",
+        "Dupnica",
+        "Kjustendil",
+        "Kocherinovo",
+        "Rila",
+        "Sapareva Banja",
+        "Zemen"
+      ]
+    },
+    {
+      "id": "lovech",
+      "nombre": "Lovech",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aprilci",
+        "Jablanica",
+        "Letnica",
+        "Lovech",
+        "Lukovit",
+        "Sopot",
+        "Teteven",
+        "Trojan",
+        "Ugarchin"
+      ]
+    },
+    {
+      "id": "montana",
+      "nombre": "Montana",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Berkovica",
+        "Bojchinovci",
+        "Brusarci",
+        "Chiprovci",
+        "Lom",
+        "Montana",
+        "Valchedram",
+        "Varshec"
+      ]
+    },
+    {
+      "id": "oblast-sofiya-grad",
+      "nombre": "Oblast Sofiya-Grad",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "pazardzhik",
+      "nombre": "Pazardzhik",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Batak",
+        "Belovo",
+        "Bracigovo",
+        "Koprivshtica",
+        "Panagjurishte",
+        "Pazardzhik",
+        "Peshtera",
+        "Rakitovo",
+        "Septemvri",
+        "Strelcha",
+        "Velingrad"
+      ]
+    },
+    {
+      "id": "pernik",
+      "nombre": "Pernik",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bankja",
+        "Batanovci",
+        "Breznik",
+        "Pernik",
+        "Radomir",
+        "Tran"
+      ]
+    },
+    {
+      "id": "pleven",
+      "nombre": "Pleven",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Belene",
+        "Cherven Brjag",
+        "Dolna Mitropolija",
+        "Dolni Dabnik",
+        "Guljanci",
+        "Levski",
+        "Nikopol",
+        "Pleven",
+        "Pordim",
+        "Slavjanovo",
+        "Trashtenik",
+        "Varbica"
+      ]
+    },
+    {
+      "id": "plovdiv",
+      "nombre": "Plovdiv",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Asenovgrad",
+        "Brezovo",
+        "Car Kalojan",
+        "Hisarja",
+        "Kalofer",
+        "Karlovo",
+        "Klisura",
+        "Krichim",
+        "Parvomaj",
+        "Perushtica",
+        "Plovdiv",
+        "Rakovski",
+        "Sadovo",
+        "Saedinenie",
+        "Stambolijski"
+      ]
+    },
+    {
+      "id": "razgrad",
+      "nombre": "Razgrad",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Isperih",
+        "Kubrat",
+        "Razgrad",
+        "Senovo",
+        "Zavet"
+      ]
+    },
+    {
+      "id": "ruse",
+      "nombre": "Ruse",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bjala",
+        "Borovo",
+        "Dve Mogili",
+        "Ruse",
+        "Russe",
+        "Vetovo"
+      ]
+    },
+    {
+      "id": "shumen",
+      "nombre": "Shumen",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kaolinovo",
+        "Kaspichan",
+        "Novi Pazar",
+        "Pliska",
+        "Shumen",
+        "Smjadovo",
+        "Veliki Preslav"
+      ]
+    },
+    {
+      "id": "silistra",
+      "nombre": "Silistra",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Alfatar",
+        "Dulovo",
+        "Glavinica",
+        "Silistra",
+        "Tutrakan"
+      ]
+    },
+    {
+      "id": "sliven",
+      "nombre": "Sliven",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kermen",
+        "Kotel",
+        "Nova Zagora",
+        "Shivachevo",
+        "Sliven"
+      ]
+    },
+    {
+      "id": "smoljan",
+      "nombre": "Smoljan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Chepelare",
+        "Devin",
+        "Dospat",
+        "Laki",
+        "Madan",
+        "Nedelino",
+        "Rudozem",
+        "Smoljan",
+        "Zlatograd"
+      ]
+    },
+    {
+      "id": "sofija-grad",
+      "nombre": "Sofija grad",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sofijska-oblast",
+      "nombre": "Sofijska oblast",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "stara-zagora",
+      "nombre": "Stara Zagora",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "targovishte",
+      "nombre": "Targovishte",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Antonovo",
+        "Omurtag",
+        "Opaka",
+        "Popovo",
+        "Targovishte"
+      ]
+    },
+    {
+      "id": "varna",
+      "nombre": "Varna",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Beloslav",
+        "Bjala",
+        "Dalgopol",
+        "Devnja",
+        "Iskar",
+        "Provadija",
+        "Suvorovo",
+        "Valchi Dol",
+        "Varna"
+      ]
+    },
+    {
+      "id": "veliko-tarnovo",
+      "nombre": "Veliko Tarnovo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "vidin",
+      "nombre": "Vidin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Belogradchik",
+        "Bregovo",
+        "Dimovo",
+        "Dolni Chiflik",
+        "Dunavci",
+        "Gramada",
+        "Kula",
+        "Vidin"
+      ]
+    },
+    {
+      "id": "vraca",
+      "nombre": "Vraca",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bjala Slatina",
+        "Knezha",
+        "Kojnare",
+        "Kozloduj",
+        "Krivodol",
+        "Mezdra",
+        "Mizija",
+        "Orjahovo",
+        "Roman",
+        "Vraca"
+      ]
+    },
+    {
+      "id": "yablaniza",
+      "nombre": "Yablaniza",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Yablaniza"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "cyprus",
+    "nombre": "Cyprus",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "government-controlled-area",
+      "nombre": "Government controlled area",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "limassol",
+      "nombre": "Limassol",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Limassol"
+      ]
+    },
+    {
+      "id": "nicosia-district",
+      "nombre": "Nicosia District",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "paphos",
+      "nombre": "Paphos",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Paphos"
+      ]
+    },
+    {
+      "id": "turkish-controlled-area",
+      "nombre": "Turkish controlled area",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

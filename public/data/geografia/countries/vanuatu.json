@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "vanuatu",
+    "nombre": "Vanuatu",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "malampa",
+      "nombre": "Malampa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Lakatoro",
+        "Norsup"
+      ]
+    },
+    {
+      "id": "penama",
+      "nombre": "Penama",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Longana"
+      ]
+    },
+    {
+      "id": "sanma",
+      "nombre": "Sanma",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Luganville",
+        "Port Olry"
+      ]
+    },
+    {
+      "id": "shefa",
+      "nombre": "Shefa",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Vila"
+      ]
+    },
+    {
+      "id": "tafea",
+      "nombre": "Tafea",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Isangel"
+      ]
+    },
+    {
+      "id": "torba",
+      "nombre": "Torba",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sola"
+      ]
+    }
+  ]
+}

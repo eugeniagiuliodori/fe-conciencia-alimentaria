@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "libya",
+    "nombre": "Libya",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "ajdabiya",
+      "nombre": "Ajdabiya",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ajdabiya",
+        "Awjilah",
+        "az-Zuwaytinah",
+        "Marsa al-Burayqah"
+      ]
+    },
+    {
+      "id": "al-aziziyah",
+      "nombre": "al-''Aziziyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Aziziyah"
+      ]
+    },
+    {
+      "id": "al-fatih",
+      "nombre": "al-Fatih",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Abyar",
+        "al-Marj"
+      ]
+    },
+    {
+      "id": "al-jabal-al-akhdar",
+      "nombre": "al-Jabal al Akhdar",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "al-jufrah",
+      "nombre": "al-Jufrah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Waddan"
+      ]
+    },
+    {
+      "id": "al-khums",
+      "nombre": "al-Khums",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Khums"
+      ]
+    },
+    {
+      "id": "al-kufrah",
+      "nombre": "al-Kufrah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Jawf"
+      ]
+    },
+    {
+      "id": "an-nuqat-al-khams",
+      "nombre": "an-Nuqat al-Khams",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "ash-shati",
+      "nombre": "ash-Shati",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Birak"
+      ]
+    },
+    {
+      "id": "az-zawiyah",
+      "nombre": "az-Zawiyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "az-Zawiyah"
+      ]
+    },
+    {
+      "id": "banghazi",
+      "nombre": "Banghazi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Quriyah",
+        "Banghazi",
+        "Suluq"
+      ]
+    },
+    {
+      "id": "darnah",
+      "nombre": "Darnah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Darnah"
+      ]
+    },
+    {
+      "id": "fezzan",
+      "nombre": "Fezzan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Awbari",
+        "Ghat"
+      ]
+    },
+    {
+      "id": "ghadamis",
+      "nombre": "Ghadamis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ghadamis",
+        "Nalut"
+      ]
+    },
+    {
+      "id": "gharyan",
+      "nombre": "Gharyan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Qaryah-ash-Sharqiyah",
+        "Gharyan",
+        "Mizdah"
+      ]
+    },
+    {
+      "id": "misratah",
+      "nombre": "Misratah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Misratah"
+      ]
+    },
+    {
+      "id": "murzuq",
+      "nombre": "Murzuq",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Murzuq"
+      ]
+    },
+    {
+      "id": "sabha",
+      "nombre": "Sabha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sabha"
+      ]
+    },
+    {
+      "id": "sawfajjin",
+      "nombre": "Sawfajjin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bani Walid"
+      ]
+    },
+    {
+      "id": "surt",
+      "nombre": "Surt",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Surt"
+      ]
+    },
+    {
+      "id": "tarabulus",
+      "nombre": "Tarabulus",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tarabulus",
+        "Tripoli"
+      ]
+    },
+    {
+      "id": "tarhunah",
+      "nombre": "Tarhunah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tarhunah"
+      ]
+    },
+    {
+      "id": "tripolitania",
+      "nombre": "Tripolitania",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Misrata"
+      ]
+    },
+    {
+      "id": "tubruq",
+      "nombre": "Tubruq",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bardiyah",
+        "Tubruq"
+      ]
+    },
+    {
+      "id": "yafran",
+      "nombre": "Yafran",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Yafran"
+      ]
+    },
+    {
+      "id": "zlitan",
+      "nombre": "Zlitan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Zlitan"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "tonga",
+    "nombre": "Tonga",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "eua",
+      "nombre": "Eua",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ohonua"
+      ]
+    },
+    {
+      "id": "ha-apai",
+      "nombre": "Ha''apai",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Pangai"
+      ]
+    },
+    {
+      "id": "niuas",
+      "nombre": "Niuas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Hihifo"
+      ]
+    },
+    {
+      "id": "tongatapu",
+      "nombre": "Tongatapu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Haveloloto",
+        "Mu''a",
+        "Nuku''alofa",
+        "Tofoa-Koloua",
+        "Vaini"
+      ]
+    },
+    {
+      "id": "vava-u",
+      "nombre": "Vava''u",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Neiafu"
+      ]
+    }
+  ]
+}

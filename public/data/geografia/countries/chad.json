@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "chad",
+    "nombre": "Chad",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "batha",
+      "nombre": "Batha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ati",
+        "Oum Hadjer"
+      ]
+    },
+    {
+      "id": "biltine",
+      "nombre": "Biltine",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Biltine"
+      ]
+    },
+    {
+      "id": "bourkou-ennedi-tibesti",
+      "nombre": "Bourkou-Ennedi-Tibesti",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Aouzou",
+        "Bardai",
+        "Fada",
+        "Faya"
+      ]
+    },
+    {
+      "id": "chari-baguirmi",
+      "nombre": "Chari-Baguirmi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bokoro",
+        "Bousso",
+        "Dourbali",
+        "Massaguet",
+        "Massakory",
+        "Massenya",
+        "N''Djamena",
+        "Ngama"
+      ]
+    },
+    {
+      "id": "guera",
+      "nombre": "Guera",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bitkine",
+        "Melfi",
+        "Mongo"
+      ]
+    },
+    {
+      "id": "kanem",
+      "nombre": "Kanem",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Mao",
+        "Moussoro",
+        "Rig-Rig"
+      ]
+    },
+    {
+      "id": "lac",
+      "nombre": "Lac",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bol"
+      ]
+    },
+    {
+      "id": "logone-occidental",
+      "nombre": "Logone Occidental",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "logone-oriental",
+      "nombre": "Logone Oriental",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "mayo-kebbi",
+      "nombre": "Mayo-Kebbi",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Bongor",
+        "Fianga",
+        "Gounou Gaya",
+        "Guelengdeng",
+        "Lere",
+        "Pala"
+      ]
+    },
+    {
+      "id": "moyen-chari",
+      "nombre": "Moyen-Chari",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Goundi",
+        "Koumra",
+        "Kyabe",
+        "Moissala",
+        "Sarh"
+      ]
+    },
+    {
+      "id": "ouaddai",
+      "nombre": "Ouaddai",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abeche",
+        "Adre",
+        "Am Dam"
+      ]
+    },
+    {
+      "id": "salamat",
+      "nombre": "Salamat",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Abou Deia",
+        "Am Timan",
+        "Mangueigne"
+      ]
+    },
+    {
+      "id": "tandjile",
+      "nombre": "Tandjile",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Benoy",
+        "Bere",
+        "Kelo",
+        "Lai"
+      ]
+    }
+  ]
+}

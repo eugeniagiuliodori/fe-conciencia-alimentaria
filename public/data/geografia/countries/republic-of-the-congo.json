@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "republic-of-the-congo",
+    "nombre": "Republic of the Congo",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "bouenza",
+      "nombre": "Bouenza",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Loudima",
+        "Madingou",
+        "Nkayi"
+      ]
+    },
+    {
+      "id": "brazzaville",
+      "nombre": "Brazzaville",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Brazzaville"
+      ]
+    },
+    {
+      "id": "cuvette",
+      "nombre": "Cuvette",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ewo",
+        "Kelle",
+        "Makoua",
+        "Mossaka",
+        "Owando"
+      ]
+    },
+    {
+      "id": "kouilou",
+      "nombre": "Kouilou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Loandjili",
+        "Ngamaba-Mfilou",
+        "Pointe Noire"
+      ]
+    },
+    {
+      "id": "lekoumou",
+      "nombre": "Lekoumou",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sibiti",
+        "Zanaga"
+      ]
+    },
+    {
+      "id": "likouala",
+      "nombre": "Likouala",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Dongou",
+        "Epena",
+        "Impfondo"
+      ]
+    },
+    {
+      "id": "niari",
+      "nombre": "Niari",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Kibangou",
+        "Loubomo",
+        "Matsanga",
+        "Mossendjo"
+      ]
+    },
+    {
+      "id": "plateaux",
+      "nombre": "Plateaux",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Djambala",
+        "Gamboma"
+      ]
+    },
+    {
+      "id": "pool",
+      "nombre": "Pool",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Boko",
+        "Kinkala",
+        "Mindouli"
+      ]
+    },
+    {
+      "id": "sangha",
+      "nombre": "Sangha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ikelemba",
+        "Ouesso",
+        "Sembe",
+        "Souanke"
+      ]
+    }
+  ]
+}

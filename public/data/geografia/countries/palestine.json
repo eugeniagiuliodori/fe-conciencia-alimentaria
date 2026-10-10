@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "palestine",
+    "nombre": "Palestine",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "al-khalil",
+      "nombre": "al-Khalil",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "ad-Dahiriyah",
+        "al-Khalil",
+        "Dura",
+        "Halhul",
+        "Yattah"
+      ]
+    },
+    {
+      "id": "al-quds",
+      "nombre": "al-Quds",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Quds",
+        "Ma''ale Adummim"
+      ]
+    },
+    {
+      "id": "ariha",
+      "nombre": "Ariha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ariha"
+      ]
+    },
+    {
+      "id": "bayt-lahm",
+      "nombre": "Bayt Lahm",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "bethlehem",
+      "nombre": "Bethlehem",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Beit Jala"
+      ]
+    },
+    {
+      "id": "dayr-al-balah",
+      "nombre": "Dayr-al-Balah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "al-Burayj",
+        "al-Insayrat",
+        "al-Maghazi",
+        "Dayr-al-Balah"
+      ]
+    },
+    {
+      "id": "ghazzah",
+      "nombre": "Ghazzah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ghazzah"
+      ]
+    },
+    {
+      "id": "ghazzah-ash-shamaliyah",
+      "nombre": "Ghazzah ash-Shamaliyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ghazzah"
+      ]
+    },
+    {
+      "id": "janin",
+      "nombre": "Janin",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Janin",
+        "Qabatiyah"
+      ]
+    },
+    {
+      "id": "khan-yunis",
+      "nombre": "Khan Yunis",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "nabulus",
+      "nombre": "Nabulus",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Nabulus"
+      ]
+    },
+    {
+      "id": "qalqilyah",
+      "nombre": "Qalqilyah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Qalqilyah"
+      ]
+    },
+    {
+      "id": "rafah",
+      "nombre": "Rafah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Rafah",
+        "Tall as-Sultan"
+      ]
+    },
+    {
+      "id": "ram-allah-wal-birah",
+      "nombre": "Ram Allah wal-Birah",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "salfit",
+      "nombre": "Salfit",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Salfit"
+      ]
+    },
+    {
+      "id": "tubas",
+      "nombre": "Tubas",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tubas"
+      ]
+    },
+    {
+      "id": "tulkarm",
+      "nombre": "Tulkarm",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Tulkarm"
+      ]
+    }
+  ]
+}

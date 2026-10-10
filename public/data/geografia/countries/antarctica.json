@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "antarctica",
+    "nombre": "Antarctica",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "sector-claimed-by-argentina-ch",
+      "nombre": "Sector claimed by Argentina/Ch",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sector-claimed-by-argentina-uk",
+      "nombre": "Sector claimed by Argentina/UK",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sector-claimed-by-australia",
+      "nombre": "Sector claimed by Australia",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sector-claimed-by-france",
+      "nombre": "Sector claimed by France",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sector-claimed-by-new-zealand",
+      "nombre": "Sector claimed by New Zealand",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "sector-claimed-by-norway",
+      "nombre": "Sector claimed by Norway",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "unclaimed-sector",
+      "nombre": "Unclaimed Sector",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

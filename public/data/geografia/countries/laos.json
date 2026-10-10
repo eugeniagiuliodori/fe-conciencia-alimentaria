@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "laos",
+    "nombre": "Laos",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "attopu",
+      "nombre": "Attopu",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Samakhixai"
+      ]
+    },
+    {
+      "id": "bokeo",
+      "nombre": "Bokeo",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Huayxay"
+      ]
+    },
+    {
+      "id": "bolikhamsay",
+      "nombre": "Bolikhamsay",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Pakxan"
+      ]
+    },
+    {
+      "id": "champasak",
+      "nombre": "Champasak",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Champasak",
+        "Muang Khong",
+        "Muang Khongxedon",
+        "Pakxe"
+      ]
+    },
+    {
+      "id": "houaphanh",
+      "nombre": "Houaphanh",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Xam Nua"
+      ]
+    },
+    {
+      "id": "khammouane",
+      "nombre": "Khammouane",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Thakek"
+      ]
+    },
+    {
+      "id": "luang-nam-tha",
+      "nombre": "Luang Nam Tha",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "luang-prabang",
+      "nombre": "Luang Prabang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "oudomxay",
+      "nombre": "Oudomxay",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ban Nahin"
+      ]
+    },
+    {
+      "id": "phongsaly",
+      "nombre": "Phongsaly",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Phongsaly"
+      ]
+    },
+    {
+      "id": "saravan",
+      "nombre": "Saravan",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Saravan"
+      ]
+    },
+    {
+      "id": "savannakhet",
+      "nombre": "Savannakhet",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Savannakhet"
+      ]
+    },
+    {
+      "id": "sekong",
+      "nombre": "Sekong",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Sekong"
+      ]
+    },
+    {
+      "id": "viangchan-prefecture",
+      "nombre": "Viangchan Prefecture",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "viangchan-province",
+      "nombre": "Viangchan Province",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "xaignabury",
+      "nombre": "Xaignabury",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Xaignabury"
+      ]
+    },
+    {
+      "id": "xiang-khuang",
+      "nombre": "Xiang Khuang",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    }
+  ]
+}

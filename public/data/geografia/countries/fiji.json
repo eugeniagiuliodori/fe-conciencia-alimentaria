@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2d970f89ce515e11767553863c84a9d7c46f5417c10beed02d87f79b93e5389a",
+  "pais": {
+    "id": "fiji",
+    "nombre": "Fiji",
+    "codigoIso2": null
+  },
+  "divisiones": [
+    {
+      "id": "central",
+      "nombre": "Central",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Deuba",
+        "Korovou",
+        "Lami",
+        "Namosi",
+        "Nausori",
+        "Navua",
+        "Suva"
+      ]
+    },
+    {
+      "id": "eastern",
+      "nombre": "Eastern",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Levuka",
+        "Malhaha",
+        "Tubou",
+        "Vunisea"
+      ]
+    },
+    {
+      "id": "northern",
+      "nombre": "Northern",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Korokade",
+        "Labasa",
+        "Savusavu"
+      ]
+    },
+    {
+      "id": "south-pacific",
+      "nombre": "South Pacific",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": []
+    },
+    {
+      "id": "western",
+      "nombre": "Western",
+      "codigo": null,
+      "tipo": null,
+      "ciudades": [
+        "Ba",
+        "Lautoka",
+        "Nadi",
+        "Rakiraki",
+        "Sigatoka",
+        "Tavua",
+        "Vatukoula"
+      ]
+    }
+  ]
+}
