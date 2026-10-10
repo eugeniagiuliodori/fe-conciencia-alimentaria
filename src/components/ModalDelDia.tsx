@@ -14,7 +14,7 @@ export function MensajeDelDia() {
         className="
           group relative mt-8 inline-flex
           items-center justify-center
-          overflow-hidden rounded-[1rem]
+          overflow-hidden rounded-[2rem]
           border border-[#d8b98a]
           bg-[linear-gradient(135deg,#fffaf2_0%,#f8ede1_52%,#f1e4ef_100%)]
           px-5 py-3
