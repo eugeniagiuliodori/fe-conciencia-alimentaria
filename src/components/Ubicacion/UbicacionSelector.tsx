@@ -51,7 +51,7 @@ export function UbicacionSelector({
         </p>
       </div>
 
-      <div className="flex gap-5 justify-between justify-center">
+      <div className="flex gap-5 justify-between">
         {/*<PaisSelect
           value={paisId}
           onChange={onPaisChange}
