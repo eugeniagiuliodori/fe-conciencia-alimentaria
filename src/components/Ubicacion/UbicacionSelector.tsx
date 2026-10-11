@@ -35,6 +35,7 @@ export function UbicacionSelector({
         bg-surface
         p-5
         shadow-sm
+        md:p-6
         max-w-md
         lg:max-w-lg
         flex flex-col justify-center
@@ -50,7 +51,7 @@ export function UbicacionSelector({
         </p>
       </div>
 
-      <div className="flex gap-5 justify-center">
+      <div className="flex gap-5 justify-between justify-center">
         {/*<PaisSelect
           value={paisId}
           onChange={onPaisChange}
