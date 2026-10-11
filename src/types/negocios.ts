@@ -118,7 +118,7 @@ export type FuenteDatasetNegocios = {
 };
 
 export type PaisDatasetNegocios = {
-  id: "AR";
+  id: "argentina";
   nombre: "Argentina";
 };
 

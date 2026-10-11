@@ -72,13 +72,6 @@ export function DivisionSelect({
 
   return (
     <div className="space-y-2">
-      <label
-        htmlFor="division"
-        className="block text-sm font-semibold text-foreground"
-      >
-        División administrativa
-      </label>
-
       <select
         id="division"
         value={value}
@@ -108,12 +101,12 @@ export function DivisionSelect({
       >
         <option value="">
           {!paisId
-            ? "Primero seleccioná un país"
+            ? ""
             : cargando
               ? "Cargando divisiones..."
               : error
                 ? "No se pudieron cargar las divisiones"
-                : "Seleccioná una división"}
+                : "Provincia"}
         </option>
 
         {divisiones.map(

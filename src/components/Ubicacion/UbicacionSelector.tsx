@@ -1,37 +1,32 @@
 "use client";
 
-import { useState } from "react";
+import { PaisSelect } from "@/components/Ubicacion/Pais/PaisSelect";
+import { DivisionSelect } from "@/components/Ubicacion/DivisionGeografica/DivisionSelect";
+import { CiudadSelect } from "@/components/Ubicacion/Ciudad/CiudadSelect";
 
-import {PaisSelect} from "@/components/Ubicacion/Pais/PaisSelect";
-import {DivisionSelect} from "@/components/Ubicacion/DivisionGeografica/DivisionSelect";
-import {CiudadSelect} from "@/components/Ubicacion/Ciudad/CiudadSelect";
+type UbicacionSelectorProps = {
+  paisId: string;
+  divisionId: string;
+  ciudad: string;
+  onPaisChange: (
+    paisId: string,
+  ) => void;
+  onDivisionChange: (
+    divisionId: string,
+  ) => void;
+  onCiudadChange: (
+    ciudad: string,
+  ) => void;
+};
 
-export function UbicacionSelector() {
-  const [paisId, setPaisId] = useState("");
-  const [divisionId, setDivisionId] = useState("");
-  const [ciudad, setCiudad] = useState("");
-
-  function handlePaisChange(nuevoPaisId: string) {
-    setPaisId(nuevoPaisId);
-
-    // Al cambiar el país, las selecciones dependientes
-    // dejan de ser válidas.
-    setDivisionId("");
-    setCiudad("");
-  }
-
-  function handleDivisionChange(nuevaDivisionId: string) {
-    setDivisionId(nuevaDivisionId);
-
-    // Al cambiar la división, la ciudad seleccionada
-    // deja de ser válida.
-    setCiudad("");
-  }
-
-  function handleCiudadChange(nuevaCiudad: string) {
-    setCiudad(nuevaCiudad);
-  }
-
+export function UbicacionSelector({
+  paisId,
+  divisionId,
+  ciudad,
+  /*onPaisChange,*/
+  onDivisionChange,
+  onCiudadChange,
+}: UbicacionSelectorProps) {
   return (
     <section
       className="
@@ -41,6 +36,9 @@ export function UbicacionSelector() {
         p-5
         shadow-sm
         md:p-6
+        max-w-md
+        lg:max-w-lg
+        flex flex-col justify-center
       "
     >
       <div className="mb-5 space-y-1">
@@ -49,27 +47,27 @@ export function UbicacionSelector() {
         </h2>
 
         <p className="text-sm text-muted">
-          Seleccioná el país, la división administrativa y la ciudad.
+          Localizá los negocios disponibles de tu interés
         </p>
       </div>
 
-      <div className="grid gap-5 md:grid-cols-3">
-        <PaisSelect
+      <div className="flex gap-5 justify-center">
+        {/*<PaisSelect
           value={paisId}
-          onChange={handlePaisChange}
-        />
+          onChange={onPaisChange}
+        />*/}
 
         <DivisionSelect
           paisId={paisId}
           value={divisionId}
-          onChange={handleDivisionChange}
+          onChange={onDivisionChange}
         />
 
         <CiudadSelect
           paisId={paisId}
           divisionId={divisionId}
           value={ciudad}
-          onChange={handleCiudadChange}
+          onChange={onCiudadChange}
         />
       </div>
     </section>

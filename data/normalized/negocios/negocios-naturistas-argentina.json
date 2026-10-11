@@ -6,7 +6,7 @@
     "sha256": "ffc1293b6aa4e8193fbb71de213d782184c2749893857c244bdea0bfb45ff5fc"
   },
   "pais": {
-    "id": "AR",
+    "id": "argentina",
     "nombre": "Argentina"
   },
   "negocios": [
@@ -89,8 +89,8 @@
           "direccion": {
             "texto": "Av. Recta Martinolli 8212, B° Argüello",
             "divisionId": "cordoba",
-            "provincia": "Córdoba",
-            "ciudad": "Córdoba",
+            "provincia": "Cordoba",
+            "ciudad": "Cordoba",
             "codigoPostal": null
           },
           "imagenes": [],
@@ -259,8 +259,8 @@
           "direccion": {
             "texto": "Almirante Brown 1417",
             "divisionId": "cordoba",
-            "provincia": "Córdoba",
-            "ciudad": "Córdoba",
+            "provincia": "Cordoba",
+            "ciudad": "Cordoba",
             "codigoPostal": null
           },
           "imagenes": [],

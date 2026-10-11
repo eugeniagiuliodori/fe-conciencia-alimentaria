@@ -67,7 +67,7 @@ export function getNegocios(
     .then(async (response) => {
       if (!response.ok) {
         throw new Error(
-          "No se pudieron obtener los negocios naturistas.",
+          "No se pudieron obtener los negocios naturistas",
         );
       }
 

@@ -79,13 +79,6 @@ export  function CiudadSelect({
 
   return (
     <div className="space-y-2">
-      <label
-        htmlFor="ciudad"
-        className="block text-sm font-semibold text-foreground"
-      >
-        Ciudad
-      </label>
-
       <select
         id="ciudad"
         value={value}
@@ -116,14 +109,14 @@ export  function CiudadSelect({
       >
         <option value="">
           {!paisId
-            ? "Primero seleccioná un país"
+            ? ""
             : !divisionId
-              ? "Primero seleccioná una división"
+              ? "Ciudad"
               : cargando
                 ? "Cargando ciudades..."
                 : error
                   ? "No se pudieron cargar las ciudades"
-                  : "Seleccioná una ciudad"}
+                  : "Ciudad"}
         </option>
 
         {ciudades.map((ciudad) => (

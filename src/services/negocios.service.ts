@@ -48,7 +48,7 @@ function validarDataset(
     );
   }
 
-  if (dataset.pais?.id !== "AR") {
+  if (dataset.pais?.id !== "argentina") {
     throw new Error(
       "El dataset de negocios esperado debe corresponder a Argentina.",
     );
