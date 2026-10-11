@@ -1,11 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { getPais } from "@/lib/geografia";
-import type {
-  DivisionAdministrativa,
-  GeografiaPais,
-} from "@/types/geografia";
+import {
+  useEffect,
+  useState,
+} from "react";
+
+import { getDivisiones } from "@/lib/geografia";
+import type { DivisionGeografia } from "@/types/geografia";
 
 type DivisionSelectProps = {
   paisId: string;
@@ -13,39 +14,47 @@ type DivisionSelectProps = {
   onChange: (divisionId: string) => void;
 };
 
-export  function DivisionSelect({
+export function DivisionSelect({
   paisId,
   value,
   onChange,
 }: DivisionSelectProps) {
-  const [pais, setPais] = useState<GeografiaPais | null>(null);
-  const [cargando, setCargando] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [divisiones, setDivisiones] =
+    useState<DivisionGeografia[]>([]);
+
+  const [cargando, setCargando] =
+    useState(false);
+
+  const [error, setError] =
+    useState<string | null>(null);
 
   useEffect(() => {
     if (!paisId) {
-      setPais(null);
-      setError(null);
+      setDivisiones([]);
       setCargando(false);
+      setError(null);
       return;
     }
 
     let cancelado = false;
 
-    async function cargarPais() {
+    async function cargarDivisiones() {
       setCargando(true);
       setError(null);
 
       try {
-        const datos = await getPais(paisId);
+        const datos =
+          await getDivisiones(paisId);
 
         if (!cancelado) {
-          setPais(datos);
+          setDivisiones(datos);
         }
       } catch {
         if (!cancelado) {
-          setPais(null);
-          setError("No se pudieron cargar las divisiones.");
+          setDivisiones([]);
+          setError(
+            "No se pudieron cargar las divisiones.",
+          );
         }
       } finally {
         if (!cancelado) {
@@ -54,15 +63,12 @@ export  function DivisionSelect({
       }
     }
 
-    void cargarPais();
+    void cargarDivisiones();
 
     return () => {
       cancelado = true;
     };
   }, [paisId]);
-
-  const divisiones: DivisionAdministrativa[] =
-    pais?.divisiones ?? [];
 
   return (
     <div className="space-y-2">
@@ -76,15 +82,28 @@ export  function DivisionSelect({
       <select
         id="division"
         value={value}
-        disabled={!paisId || cargando || !!error}
-        onChange={(event) => onChange(event.target.value)}
+        disabled={
+          !paisId ||
+          cargando ||
+          !!error
+        }
+        onChange={(event) =>
+          onChange(event.target.value)
+        }
         className="
-          w-full rounded-[1rem] border border-line
-          bg-surface px-4 py-3
+          w-full
+          rounded-[1rem]
+          border border-line
+          bg-surface
+          px-4 py-3
           text-sm text-foreground
-          outline-none transition
-          focus:border-accent focus:ring-2 focus:ring-accent/20
-          disabled:cursor-not-allowed disabled:opacity-60
+          outline-none
+          transition
+          focus:border-accent
+          focus:ring-2
+          focus:ring-accent/20
+          disabled:cursor-not-allowed
+          disabled:opacity-60
         "
       >
         <option value="">
@@ -97,11 +116,16 @@ export  function DivisionSelect({
                 : "Seleccioná una división"}
         </option>
 
-        {divisiones.map((division) => (
-          <option key={division.id} value={division.id}>
-            {division.nombre}
-          </option>
-        ))}
+        {divisiones.map(
+          (division) => (
+            <option
+              key={division.id}
+              value={division.id}
+            >
+              {division.nombre}
+            </option>
+          ),
+        )}
       </select>
 
       {error && (

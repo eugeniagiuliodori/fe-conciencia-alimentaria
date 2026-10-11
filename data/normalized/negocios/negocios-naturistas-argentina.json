@@ -1,0 +1,937 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "snapshotVersion": 2,
+    "generadoEn": "2026-10-10",
+    "sha256": "ffc1293b6aa4e8193fbb71de213d782184c2749893857c244bdea0bfb45ff5fc"
+  },
+  "pais": {
+    "id": "AR",
+    "nombre": "Argentina"
+  },
+  "negocios": [
+
+    {
+      "id": "dietetica-almendra",
+      "nombreFantasia": "Dietética Almendra",
+      "nombreLegal": null,
+      "cuit": null,
+      "logoOficialUrl": null,
+      "descripcion": null,
+      "productos": [
+        {
+          "nombre": "Pasta de maní natural Mani King",
+          "categoria": "untables"
+        },
+        {
+          "nombre": "Granola proteica Integra banana chocolate",
+          "categoria": "granolas"
+        },
+        {
+          "nombre": "Alfajor de maicena Comida Sana",
+          "categoria": "alfajores"
+        },
+        {
+          "nombre": "Tintura madre pasionaria",
+          "categoria": "herboristería"
+        },
+        {
+          "nombre": "Fideos de maíz morado sin gluten",
+          "categoria": "pastas"
+        },
+        {
+          "nombre": "Milanesas de soja Onda Natural",
+          "categoria": "proteína vegetal"
+        },
+        {
+          "nombre": "Azúcar de coco",
+          "categoria": "endulzantes"
+        },
+        {
+          "nombre": "Azúcar rubia orgánica",
+          "categoria": "endulzantes"
+        },
+        {
+          "nombre": "Tofu Soyarroz",
+          "categoria": "proteína vegetal"
+        },
+        {
+          "nombre": "Hummus Felices las Vacas",
+          "categoria": "untables"
+        }
+      ],
+      "contactos": [
+        {
+          "tipo": "telefono",
+          "valor": "+54 9 351 388-6839",
+          "ubicacionId": null
+        },
+        {
+          "tipo": "email",
+          "valor": "almendradiet@gmail.com",
+          "ubicacionId": null
+        }
+      ],
+      "estadoProductosOrganicos": "algunos",
+      "tiendaOnlineUrl": "https://dieteticaalmendra.com.ar/tienda/",
+      "sitioWebUrl": "https://dieteticaalmendra.com.ar/",
+      "modalidadesVenta": [
+        "presencial",
+        "online",
+        "envios",
+        "retiro_en_local"
+      ],
+      "ubicaciones": [
+        {
+          "id": "cordoba-av-recta-martinolli-8212-b-arguello",
+          "tipo": "fisica",
+          "nombreSucursal": null,
+          "direccion": {
+            "texto": "Av. Recta Martinolli 8212, B° Argüello",
+            "divisionId": "cordoba",
+            "provincia": "Córdoba",
+            "ciudad": "Córdoba",
+            "codigoPostal": null
+          },
+          "imagenes": [],
+          "mapa": {
+            "latitud": null,
+            "longitud": null,
+            "url": null,
+            "proveedor": "google_maps"
+          },
+          "descripcionComoLlegar": null
+        }
+      ],
+      "fuentes": [
+        {
+          "tipo": "sitio_oficial",
+          "url": "https://dieteticaalmendra.com.ar/tienda/"
+        }
+      ],
+      "observaciones": "El catálogo contiene productos orgánicos y datos de contacto del local."
+    },
+    {
+      "id": "dietetica-manantial",
+      "nombreFantasia": "Dietética Manantial",
+      "nombreLegal": null,
+      "cuit": null,
+      "logoOficialUrl": null,
+      "descripcion": "Dietética orientada a productos naturales y saludables, con más de 15 años de trayectoria comercial declarada y envíos a todo el país.",
+      "productos": [
+        {
+          "nombre": "Cacao en polvo orgánico 100%",
+          "categoria": "repostería"
+        },
+        {
+          "nombre": "Propóleo atomizador",
+          "categoria": "suplementos"
+        },
+        {
+          "nombre": "Harina integral de trigo sarraceno",
+          "categoria": "harinas"
+        },
+        {
+          "nombre": "Vitamina E 400 UI",
+          "categoria": "suplementos"
+        },
+        {
+          "nombre": "Aceite de coco virgen",
+          "categoria": "aceites"
+        },
+        {
+          "nombre": "Aceite de cúrcuma con pimienta negra",
+          "categoria": "aceites"
+        },
+        {
+          "nombre": "Aceite de lino",
+          "categoria": "aceites"
+        }
+      ],
+      "contactos": [
+        {
+          "tipo": "telefono",
+          "valor": "341 7470321",
+          "ubicacionId": null
+        }
+      ],
+      "estadoProductosOrganicos": "algunos",
+      "tiendaOnlineUrl": null,
+      "sitioWebUrl": "https://dieteticamanantial.com.ar/",
+      "modalidadesVenta": [
+        "presencial",
+        "online",
+        "envios"
+      ],
+      "ubicaciones": [
+        {
+          "id": "rosario",
+          "tipo": "fisica",
+          "nombreSucursal": null,
+          "direccion": {
+            "texto": null,
+            "divisionId": "santa-fe",
+            "provincia": "Santa Fe",
+            "ciudad": "Rosario",
+            "codigoPostal": null
+          },
+          "imagenes": [],
+          "mapa": {
+            "latitud": null,
+            "longitud": null,
+            "url": null,
+            "proveedor": "google_maps"
+          },
+          "descripcionComoLlegar": null
+        }
+      ],
+      "fuentes": [
+        {
+          "tipo": "sitio_oficial",
+          "url": "https://dieteticamanantial.com.ar/"
+        }
+      ],
+      "observaciones": "La fuente pública confirma Rosario como ubicación y muestra productos orgánicos; dirección física exacta no consolidada en este snapshot."
+    },
+    {
+      "id": "dietetica-monteverde",
+      "nombreFantasia": "Dietética Monteverde",
+      "nombreLegal": null,
+      "cuit": null,
+      "logoOficialUrl": null,
+      "descripcion": "Dietética de Córdoba Capital con venta online y envíos a todo el país.",
+      "productos": [
+        {
+          "nombre": "Harina de trigo sarraceno",
+          "categoria": "harinas"
+        },
+        {
+          "nombre": "Semilla de lino dorado",
+          "categoria": "semillas"
+        },
+        {
+          "nombre": "Arroz integral yamaní",
+          "categoria": "cereales"
+        },
+        {
+          "nombre": "Levadura masa madre Levex",
+          "categoria": "panificación"
+        },
+        {
+          "nombre": "Aceite de coco virgen",
+          "categoria": "aceites"
+        },
+        {
+          "nombre": "Cacao amargo",
+          "categoria": "repostería"
+        },
+        {
+          "nombre": "Vinagre de sidra de manzana orgánico",
+          "categoria": "vinagres"
+        },
+        {
+          "nombre": "Madre de kombucha Prama",
+          "categoria": "fermentación"
+        },
+        {
+          "nombre": "Granola con frutos secos",
+          "categoria": "granolas"
+        },
+        {
+          "nombre": "Semillas de chía",
+          "categoria": "semillas"
+        }
+      ],
+      "contactos": [],
+      "estadoProductosOrganicos": "algunos",
+      "tiendaOnlineUrl": "https://www.monteverdeargentina.com/shop/",
+      "sitioWebUrl": "https://www.monteverdeargentina.com/",
+      "modalidadesVenta": [
+        "presencial",
+        "online",
+        "envios"
+      ],
+      "ubicaciones": [
+        {
+          "id": "cordoba-almirante-brown-1417",
+          "tipo": "fisica",
+          "nombreSucursal": null,
+          "direccion": {
+            "texto": "Almirante Brown 1417",
+            "divisionId": "cordoba",
+            "provincia": "Córdoba",
+            "ciudad": "Córdoba",
+            "codigoPostal": null
+          },
+          "imagenes": [],
+          "mapa": {
+            "latitud": null,
+            "longitud": null,
+            "url": null,
+            "proveedor": "google_maps"
+          },
+          "descripcionComoLlegar": null
+        }
+      ],
+      "fuentes": [
+        {
+          "tipo": "sitio_oficial",
+          "url": "https://www.monteverdeargentina.com/shop/"
+        }
+      ],
+      "observaciones": "El catálogo incluye una categoría de productos orgánicos. Coordenadas y URL de Maps pendientes."
+    },
+    {
+      "id": "dietetica-pampa",
+      "nombreFantasia": "Dietética Pampa",
+      "nombreLegal": null,
+      "cuit": null,
+      "logoOficialUrl": null,
+      "descripcion": null,
+      "productos": [
+        {
+          "nombre": "Barra de frutos secos, cacao, avellana y coco Muecas",
+          "categoria": "barritas"
+        },
+        {
+          "nombre": "Alfajor de dulce de leche Dantelli",
+          "categoria": "alfajores"
+        },
+        {
+          "nombre": "Harinas integrales",
+          "categoria": "harinas"
+        },
+        {
+          "nombre": "Semillas",
+          "categoria": "semillas"
+        },
+        {
+          "nombre": "Snacks saludables",
+          "categoria": "snacks"
+        }
+      ],
+      "contactos": [
+        {
+          "tipo": "telefono",
+          "valor": "11 4022-6767",
+          "ubicacionId": null
+        },
+        {
+          "tipo": "email",
+          "valor": "pampadietetica@gmail.com",
+          "ubicacionId": null
+        }
+      ],
+      "estadoProductosOrganicos": "no_verificado",
+      "tiendaOnlineUrl": "https://www.pampadietetica.com.ar/",
+      "sitioWebUrl": null,
+      "modalidadesVenta": [
+        "presencial",
+        "online",
+        "envios"
+      ],
+      "ubicaciones": [
+        {
+          "id": "ciudad-autonoma-de-buenos-aires-rosario-132",
+          "tipo": "fisica",
+          "nombreSucursal": null,
+          "direccion": {
+            "texto": "Rosario 132",
+            "divisionId": "ciudad-autonoma-de-buenos-aires",
+            "provincia": "Ciudad Autónoma de Buenos Aires",
+            "ciudad": "Ciudad Autónoma de Buenos Aires",
+            "codigoPostal": null
+          },
+          "imagenes": [],
+          "mapa": {
+            "latitud": null,
+            "longitud": null,
+            "url": null,
+            "proveedor": "google_maps"
+          },
+          "descripcionComoLlegar": null
+        }
+      ],
+      "fuentes": [
+        {
+          "tipo": "tienda_oficial",
+          "url": "https://www.pampadietetica.com.ar/"
+        }
+      ],
+      "observaciones": "La tienda publica dirección, teléfono y email. No se verificó una clasificación general de productos orgánicos."
+    },
+    
+    {
+      "id": "eco-alma",
+      "nombreFantasia": "Eco Alma",
+      "nombreLegal": null,
+      "cuit": null,
+      "logoOficialUrl": null,
+      "descripcion": "Dietética online con productos naturales y saludables y envíos a todo el país.",
+      "productos": [],
+      "contactos": [],
+      "estadoProductosOrganicos": "no_verificado",
+      "tiendaOnlineUrl": "https://dieteticaecoalma.empretienda.com.ar/",
+      "sitioWebUrl": null,
+      "modalidadesVenta": [
+        "online",
+        "envios"
+      ],
+      "ubicaciones": [
+        {
+          "id": "operacion-online",
+          "tipo": "online",
+          "nombreSucursal": "Operación online",
+          "direccion": {
+            "texto": null,
+            "divisionId": null,
+            "provincia": null,
+            "ciudad": null,
+            "codigoPostal": null
+          },
+          "imagenes": [],
+          "mapa": {
+            "latitud": null,
+            "longitud": null,
+            "url": null,
+            "proveedor": "google_maps"
+          },
+          "descripcionComoLlegar": null
+        }
+      ],
+      "fuentes": [
+        {
+          "tipo": "tienda_online",
+          "url": "https://dieteticaecoalma.empretienda.com.ar/"
+        }
+      ],
+      "observaciones": "La fuente pública confirma categorías de productos y envíos nacionales, pero no expone en el resultado consultado productos individuales suficientes para cargar una muestra sin inferencias."
+    },
+    {
+      "id": "la-dietetica",
+      "nombreFantasia": "La Dietética",
+      "nombreLegal": "LA DIETETICA S.R.L.",
+      "cuit": "30-71484227-3",
+      "logoOficialUrl": null,
+      "descripcion": "Dietética con alimentos, suplementos, cosmética natural y líneas para distintos estilos de alimentación.",
+      "productos": [
+        {
+          "nombre": "Mix premium",
+          "categoria": "frutos secos"
+        },
+        {
+          "nombre": "Avena instantánea",
+          "categoria": "cereales"
+        },
+        {
+          "nombre": "Castañas de Pará",
+          "categoria": "frutos secos"
+        },
+        {
+          "nombre": "Higos negros",
+          "categoria": "frutas deshidratadas"
+        },
+        {
+          "nombre": "Dátiles Medjoul",
+          "categoria": "frutas deshidratadas"
+        },
+        {
+          "nombre": "Semillas de sésamo blanco",
+          "categoria": "semillas"
+        },
+        {
+          "nombre": "Harina de garbanzo",
+          "categoria": "harinas"
+        },
+        {
+          "nombre": "Porotos tape",
+          "categoria": "legumbres"
+        },
+        {
+          "nombre": "Granola fit",
+          "categoria": "granolas"
+        },
+        {
+          "nombre": "Chocolate orgánico 70% cacao",
+          "categoria": "chocolates"
+        }
+      ],
+      "contactos": [],
+      "estadoProductosOrganicos": "algunos",
+      "tiendaOnlineUrl": "https://www.ladietetica.com.ar/",
+      "sitioWebUrl": null,
+      "modalidadesVenta": [
+        "presencial",
+        "online",
+        "envios",
+        "retiro_en_local"
+      ],
+      "ubicaciones": [
+        {
+          "id": "palermo",
+          "tipo": "fisica",
+          "nombreSucursal": "Palermo",
+          "direccion": {
+            "texto": "Av. Santa Fe 3596",
+            "divisionId": "ciudad-autonoma-de-buenos-aires",
+            "provincia": "Ciudad Autónoma de Buenos Aires",
+            "ciudad": "Ciudad Autónoma de Buenos Aires",
+            "codigoPostal": null
+          },
+          "imagenes": [],
+          "mapa": {
+            "latitud": null,
+            "longitud": null,
+            "url": null,
+            "proveedor": "google_maps"
+          },
+          "descripcionComoLlegar": null
+        },
+        {
+          "id": "lomas-de-zamora",
+          "tipo": "fisica",
+          "nombreSucursal": "Lomas de Zamora",
+          "direccion": {
+            "texto": "Mariano Boedo 202",
+            "divisionId": "buenos-aires",
+            "provincia": "Buenos Aires",
+            "ciudad": "Lomas de Zamora",
+            "codigoPostal": null
+          },
+          "imagenes": [],
+          "mapa": {
+            "latitud": null,
+            "longitud": null,
+            "url": null,
+            "proveedor": "google_maps"
+          },
+          "descripcionComoLlegar": null
+        },
+        {
+          "id": "belgrano",
+          "tipo": "fisica",
+          "nombreSucursal": "Belgrano",
+          "direccion": {
+            "texto": "Av. Cabildo 2399",
+            "divisionId": "ciudad-autonoma-de-buenos-aires",
+            "provincia": "Ciudad Autónoma de Buenos Aires",
+            "ciudad": "Ciudad Autónoma de Buenos Aires",
+            "codigoPostal": null
+          },
+          "imagenes": [],
+          "mapa": {
+            "latitud": null,
+            "longitud": null,
+            "url": null,
+            "proveedor": "google_maps"
+          },
+          "descripcionComoLlegar": null
+        },
+        {
+          "id": "once",
+          "tipo": "fisica",
+          "nombreSucursal": "Once",
+          "direccion": {
+            "texto": "Av. Pueyrredón 563",
+            "divisionId": "ciudad-autonoma-de-buenos-aires",
+            "provincia": "Ciudad Autónoma de Buenos Aires",
+            "ciudad": "Ciudad Autónoma de Buenos Aires",
+            "codigoPostal": null
+          },
+          "imagenes": [],
+          "mapa": {
+            "latitud": null,
+            "longitud": null,
+            "url": null,
+            "proveedor": "google_maps"
+          },
+          "descripcionComoLlegar": null
+        }
+      ],
+      "fuentes": [
+        {
+          "tipo": "sitio_oficial",
+          "url": "https://www.ladietetica.com.ar/"
+        },
+        {
+          "tipo": "boletin_oficial",
+          "url": "https://otslist.boletinoficial.gob.ar/ots/download/748edba20289cf4e65143ac82312b4fac7368fde24e95a2d4475a1f0d25aff9a/0/"
+        }
+      ],
+      "observaciones": "CUIT y razón social verificados en publicación del Boletín Oficial. Coordenadas y URL de Google Maps pendientes de carga manual."
+    },
+    {
+      "id": "la-duvalina",
+      "nombreFantasia": "La Duvalina",
+      "nombreLegal": null,
+      "cuit": null,
+      "logoOficialUrl": null,
+      "descripcion": "Dietética online de Rosario con frutos secos, granolas, suplementos, productos sin TACC, veganos, keto y otras categorías.",
+      "productos": [
+        {
+          "nombre": "Garbanzos salteños",
+          "categoria": "legumbres"
+        },
+        {
+          "nombre": "Lentejón extra",
+          "categoria": "legumbres"
+        },
+        {
+          "nombre": "Pancakes de arándanos",
+          "categoria": "congelados"
+        },
+        {
+          "nombre": "Pancakes de banana",
+          "categoria": "congelados"
+        },
+        {
+          "nombre": "Aceite de orégano",
+          "categoria": "aceites"
+        },
+        {
+          "nombre": "Mermelada de higo",
+          "categoria": "mermeladas"
+        },
+        {
+          "nombre": "Colágeno + calcio",
+          "categoria": "suplementos"
+        },
+        {
+          "nombre": "Citrato de potasio",
+          "categoria": "suplementos"
+        },
+        {
+          "nombre": "Maca negra peruana",
+          "categoria": "semillas y suplementos"
+        }
+      ],
+      "contactos": [
+        {
+          "tipo": "whatsapp",
+          "valor": "+54 9 341 5969661",
+          "ubicacionId": null
+        },
+        {
+          "tipo": "email",
+          "valor": "info@laduvalina.com.ar",
+          "ubicacionId": null
+        }
+      ],
+      "estadoProductosOrganicos": "no_verificado",
+      "tiendaOnlineUrl": "https://laduvalina.com.ar/",
+      "sitioWebUrl": null,
+      "modalidadesVenta": [
+        "presencial",
+        "online",
+        "envios"
+      ],
+      "ubicaciones": [
+        {
+          "id": "san-luis",
+          "tipo": "fisica",
+          "nombreSucursal": "San Luis",
+          "direccion": {
+            "texto": "San Luis 2598, Esq. Rodríguez",
+            "divisionId": "santa-fe",
+            "provincia": "Santa Fe",
+            "ciudad": "Rosario",
+            "codigoPostal": null
+          },
+          "imagenes": [],
+          "mapa": {
+            "latitud": null,
+            "longitud": null,
+            "url": null,
+            "proveedor": "google_maps"
+          },
+          "descripcionComoLlegar": null
+        },
+        {
+          "id": "italia",
+          "tipo": "fisica",
+          "nombreSucursal": "Italia",
+          "direccion": {
+            "texto": "Italia 1079",
+            "divisionId": "santa-fe",
+            "provincia": "Santa Fe",
+            "ciudad": "Rosario",
+            "codigoPostal": null
+          },
+          "imagenes": [],
+          "mapa": {
+            "latitud": null,
+            "longitud": null,
+            "url": null,
+            "proveedor": "google_maps"
+          },
+          "descripcionComoLlegar": null
+        }
+      ],
+      "fuentes": [
+        {
+          "tipo": "sitio_oficial",
+          "url": "https://laduvalina.com.ar/"
+        }
+      ],
+      "observaciones": "La fuente oficial publica dos sucursales y medios de contacto."
+    },
+    {
+      "id": "natural-dieteticas",
+      "nombreFantasia": "Natural Dietéticas",
+      "nombreLegal": null,
+      "cuit": null,
+      "logoOficialUrl": null,
+      "descripcion": "Cadena de dietéticas de Zona Norte de Buenos Aires con alimentos naturales, sin TACC, veganos, yerbas orgánicas y venta online.",
+      "productos": [
+        {
+          "nombre": "Yogur griego Kay 750 g",
+          "categoria": "refrigerados"
+        },
+        {
+          "nombre": "Granola de frutos secos Felices las Vacas 300 g",
+          "categoria": "granolas"
+        },
+        {
+          "nombre": "Mantequilla de maní natural Ninas 360 g",
+          "categoria": "untables"
+        },
+        {
+          "nombre": "Harina de almendras Natural Seed 200 g",
+          "categoria": "harinas"
+        },
+        {
+          "nombre": "Aceite de coco neutro Entre Nuts 360 g",
+          "categoria": "aceites"
+        },
+        {
+          "nombre": "Golden Milk Heredia 40 g",
+          "categoria": "infusiones"
+        },
+        {
+          "nombre": "Leche de almendras Amande 1 L",
+          "categoria": "bebidas vegetales"
+        },
+        {
+          "nombre": "Garbanzos Yin Yang 500 g",
+          "categoria": "legumbres"
+        }
+      ],
+      "contactos": [
+        {
+          "tipo": "whatsapp",
+          "valor": "11 3559-3437",
+          "ubicacionId": "parana"
+        },
+        {
+          "tipo": "whatsapp",
+          "valor": "11 7622-6931",
+          "ubicacionId": "florida"
+        },
+        {
+          "tipo": "whatsapp",
+          "valor": "11 3346-5923",
+          "ubicacionId": "martinez"
+        },
+        {
+          "tipo": "whatsapp",
+          "valor": "11 6213-0929",
+          "ubicacionId": "olivos"
+        },
+        {
+          "tipo": "instagram",
+          "valor": "@naturaldieteticas",
+          "ubicacionId": null
+        }
+      ],
+      "estadoProductosOrganicos": "algunos",
+      "tiendaOnlineUrl": "https://naturaldieteticas.com.ar/tienda/carrito",
+      "sitioWebUrl": "https://naturaldieteticas.com.ar",
+      "modalidadesVenta": [
+        "presencial",
+        "online",
+        "retiro_en_local"
+      ],
+      "ubicaciones": [
+        {
+          "id": "parana",
+          "tipo": "fisica",
+          "nombreSucursal": "Paraná",
+          "direccion": {
+            "texto": "General A. Pacheco 4299",
+            "divisionId": "buenos-aires",
+            "provincia": "Buenos Aires",
+            "ciudad": "Olivos",
+            "codigoPostal": null
+          },
+          "imagenes": [],
+          "mapa": {
+            "latitud": null,
+            "longitud": null,
+            "url": null,
+            "proveedor": "google_maps"
+          },
+          "descripcionComoLlegar": null
+        },
+        {
+          "id": "florida",
+          "tipo": "fisica",
+          "nombreSucursal": "Florida",
+          "direccion": {
+            "texto": "Carlos Melo 2803",
+            "divisionId": "buenos-aires",
+            "provincia": "Buenos Aires",
+            "ciudad": "Florida",
+            "codigoPostal": null
+          },
+          "imagenes": [],
+          "mapa": {
+            "latitud": null,
+            "longitud": null,
+            "url": null,
+            "proveedor": "google_maps"
+          },
+          "descripcionComoLlegar": null
+        },
+        {
+          "id": "martinez",
+          "tipo": "fisica",
+          "nombreSucursal": "Martínez",
+          "direccion": {
+            "texto": "Diagonal Salta 808",
+            "divisionId": "buenos-aires",
+            "provincia": "Buenos Aires",
+            "ciudad": "Martínez",
+            "codigoPostal": null
+          },
+          "imagenes": [],
+          "mapa": {
+            "latitud": null,
+            "longitud": null,
+            "url": null,
+            "proveedor": "google_maps"
+          },
+          "descripcionComoLlegar": null
+        },
+        {
+          "id": "olivos",
+          "tipo": "fisica",
+          "nombreSucursal": "Olivos",
+          "direccion": {
+            "texto": "Ricardo Gutiérrez 1217",
+            "divisionId": "buenos-aires",
+            "provincia": "Buenos Aires",
+            "ciudad": "Olivos",
+            "codigoPostal": null
+          },
+          "imagenes": [],
+          "mapa": {
+            "latitud": null,
+            "longitud": null,
+            "url": null,
+            "proveedor": "google_maps"
+          },
+          "descripcionComoLlegar": null
+        }
+      ],
+      "fuentes": [
+        {
+          "tipo": "sitio_oficial",
+          "url": "https://naturaldieteticas.com.ar/"
+        }
+      ],
+      "observaciones": "El sitio oficial integra información institucional y compra online. Coordenadas y URLs de Maps pendientes."
+    },
+
+    {
+      "id": "yema-dietetica-online",
+      "nombreFantasia": "YEMA dietética online",
+      "nombreLegal": null,
+      "cuit": null,
+      "logoOficialUrl": null,
+      "descripcion": "Dietética online con venta a granel y catálogo de frutos secos, frutas deshidratadas, cereales, semillas, harinas, suplementos y otras categorías.",
+      "productos": [
+        {
+          "nombre": "Nueces mariposa blancas",
+          "categoria": "frutos secos"
+        },
+        {
+          "nombre": "Nueces partidas",
+          "categoria": "frutos secos"
+        },
+        {
+          "nombre": "Mix clásico con maní",
+          "categoria": "mixes"
+        },
+        {
+          "nombre": "Mix tropical",
+          "categoria": "mixes"
+        },
+        {
+          "nombre": "Arándanos",
+          "categoria": "frutas deshidratadas"
+        },
+        {
+          "nombre": "Ananá",
+          "categoria": "frutas deshidratadas"
+        },
+        {
+          "nombre": "Chocolate 70%",
+          "categoria": "chocolates"
+        },
+        {
+          "nombre": "Soja texturizada",
+          "categoria": "proteína vegetal"
+        },
+        {
+          "nombre": "Cúrcuma",
+          "categoria": "condimentos"
+        },
+        {
+          "nombre": "Extracto de vainilla",
+          "categoria": "repostería"
+        }
+      ],
+      "contactos": [],
+      "estadoProductosOrganicos": "no_verificado",
+      "tiendaOnlineUrl": "https://pedix.app/yemadieteticaonline",
+      "sitioWebUrl": null,
+      "modalidadesVenta": [
+        "online",
+        "envios"
+      ],
+      "ubicaciones": [
+        {
+          "id": "operacion-online",
+          "tipo": "online",
+          "nombreSucursal": "Operación online",
+          "direccion": {
+            "texto": null,
+            "divisionId": "cordoba",
+            "provincia": "Córdoba",
+            "ciudad": null,
+            "codigoPostal": null
+          },
+          "imagenes": [],
+          "mapa": {
+            "latitud": null,
+            "longitud": null,
+            "url": null,
+            "proveedor": "google_maps"
+          },
+          "descripcionComoLlegar": null
+        }
+      ],
+      "fuentes": [
+        {
+          "tipo": "catalogo_comercio",
+          "url": "https://tiendas.pedix.app/comercio/yemadieteticaonline/"
+        },
+        {
+          "tipo": "tienda_online",
+          "url": "https://pedix.app/yemadieteticaonline"
+        }
+      ],
+      "observaciones": "La fuente indica que la dirección física no fue informada. Se conserva Córdoba como ámbito geográfico publicado por la plataforma."
+    }
+  ]
+}

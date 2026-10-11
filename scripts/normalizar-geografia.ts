@@ -2,9 +2,9 @@ import { createHash } from "node:crypto";
 import { mkdir, readFile, rename, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-const RAW_PATH = path.resolve("data/raw/geografia-source.json");
-const OUTPUT_DIR = path.resolve("public/data/geografia");
-const TEMP_DIR = path.resolve("public/data/geografia.__tmp__");
+const RAW_PATH = path.resolve("data/raw/geografia/geografia-source.json");
+const OUTPUT_DIR = path.resolve("data/normalized/geografia");
+const TEMP_DIR = path.resolve("data/normalized/geografia.__tmp__");
 const SCHEMA_VERSION = 1;
 
 type JsonObject = Record<string, unknown>;

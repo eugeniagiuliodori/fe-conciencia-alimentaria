@@ -1,8 +1,11 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
-import { getPais } from "@/lib/geografia";
-import type { GeografiaPais } from "@/types/geografia";
+import {
+  useEffect,
+  useState,
+} from "react";
+
+import { getCiudades } from "@/lib/geografia";
 
 type CiudadSelectProps = {
   paisId: string;
@@ -17,34 +20,45 @@ export  function CiudadSelect({
   value,
   onChange,
 }: CiudadSelectProps) {
-  const [pais, setPais] = useState<GeografiaPais | null>(null);
-  const [cargando, setCargando] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [ciudades, setCiudades] =
+    useState<string[]>([]);
+
+  const [cargando, setCargando] =
+    useState(false);
+
+  const [error, setError] =
+    useState<string | null>(null);
 
   useEffect(() => {
-    if (!paisId) {
-      setPais(null);
-      setError(null);
+    if (!paisId || !divisionId) {
+      setCiudades([]);
       setCargando(false);
+      setError(null);
       return;
     }
 
     let cancelado = false;
 
-    async function cargarPais() {
+    async function cargarCiudades() {
       setCargando(true);
       setError(null);
 
       try {
-        const datos = await getPais(paisId);
+        const datos =
+          await getCiudades(
+            paisId,
+            divisionId,
+          );
 
         if (!cancelado) {
-          setPais(datos);
+          setCiudades(datos);
         }
       } catch {
         if (!cancelado) {
-          setPais(null);
-          setError("No se pudieron cargar las ciudades.");
+          setCiudades([]);
+          setError(
+            "No se pudieron cargar las ciudades.",
+          );
         }
       } finally {
         if (!cancelado) {
@@ -53,24 +67,15 @@ export  function CiudadSelect({
       }
     }
 
-    void cargarPais();
+    void cargarCiudades();
 
     return () => {
       cancelado = true;
     };
-  }, [paisId]);
-
-  const ciudades = useMemo(() => {
-    if (!divisionId) {
-      return [];
-    }
-
-    return (
-      pais?.divisiones.find(
-        (division) => division.id === divisionId,
-      )?.ciudades ?? []
-    );
-  }, [pais, divisionId]);
+  }, [
+    paisId,
+    divisionId,
+  ]);
 
   return (
     <div className="space-y-2">
@@ -90,30 +95,42 @@ export  function CiudadSelect({
           cargando ||
           !!error
         }
-        onChange={(event) => onChange(event.target.value)}
+        onChange={(event) =>
+          onChange(event.target.value)
+        }
         className="
-          w-full rounded-[1rem] border border-line
-          bg-surface px-4 py-3
+          w-full
+          rounded-[1rem]
+          border border-line
+          bg-surface
+          px-4 py-3
           text-sm text-foreground
-          outline-none transition
-          focus:border-accent focus:ring-2 focus:ring-accent/20
-          disabled:cursor-not-allowed disabled:opacity-60
+          outline-none
+          transition
+          focus:border-accent
+          focus:ring-2
+          focus:ring-accent/20
+          disabled:cursor-not-allowed
+          disabled:opacity-60
         "
       >
         <option value="">
           {!paisId
             ? "Primero seleccioná un país"
-            : cargando
-              ? "Cargando datos..."
-              : !divisionId
-                ? "Primero seleccioná una división"
+            : !divisionId
+              ? "Primero seleccioná una división"
+              : cargando
+                ? "Cargando ciudades..."
                 : error
                   ? "No se pudieron cargar las ciudades"
                   : "Seleccioná una ciudad"}
         </option>
 
         {ciudades.map((ciudad) => (
-          <option key={ciudad} value={ciudad}>
+          <option
+            key={ciudad}
+            value={ciudad}
+          >
             {ciudad}
           </option>
         ))}

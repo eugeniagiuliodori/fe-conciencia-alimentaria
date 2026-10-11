@@ -1,31 +1,45 @@
+// src/lib/geografia.ts
+
 import type {
-  GeografiaIndice,
-  GeografiaPais,
+  DivisionGeografia,
+  PaisGeografia,
 } from "@/types/geografia";
 
-let solicitudPaisesEnCurso: Promise<GeografiaIndice> | null = null;
+let solicitudPaisesEnCurso:
+  Promise<PaisGeografia[]> | null = null;
 
-const solicitudesPaisEnCurso = new Map<
-  string,
-  Promise<GeografiaPais>
->();
+const solicitudesDivisionesEnCurso =
+  new Map<
+    string,
+    Promise<DivisionGeografia[]>
+  >();
 
-export function getPaises(): Promise<GeografiaIndice> {
+const solicitudesCiudadesEnCurso =
+  new Map<
+    string,
+    Promise<string[]>
+  >();
+
+export function getPaises(): Promise<
+  PaisGeografia[]
+> {
   if (solicitudPaisesEnCurso) {
     return solicitudPaisesEnCurso;
   }
 
   const solicitud = fetch(
-    "/data/geografia/countries.json",
+    "/api/geografia/paises",
   )
     .then(async (response) => {
       if (!response.ok) {
         throw new Error(
-          "No se pudieron cargar los países.",
+          "No se pudieron obtener los países.",
         );
       }
 
-      return response.json() as Promise<GeografiaIndice>;
+      return response.json() as Promise<
+        PaisGeografia[]
+      >;
     })
     .finally(() => {
       solicitudPaisesEnCurso = null;
@@ -36,33 +50,86 @@ export function getPaises(): Promise<GeografiaIndice> {
   return solicitud;
 }
 
-export function getPais(
-  id: string,
-): Promise<GeografiaPais> {
+export function getDivisiones(
+  paisId: string,
+): Promise<DivisionGeografia[]> {
+  const url =
+    `/api/geografia/paises/` +
+    `${encodeURIComponent(paisId)}/divisiones`;
+
   const solicitudExistente =
-    solicitudesPaisEnCurso.get(id);
+    solicitudesDivisionesEnCurso.get(url);
 
   if (solicitudExistente) {
     return solicitudExistente;
   }
 
-  const solicitud = fetch(
-    `/data/geografia/countries/${encodeURIComponent(id)}.json`,
-  )
+  const solicitud = fetch(url)
     .then(async (response) => {
       if (!response.ok) {
         throw new Error(
-          `No se pudo cargar el país ${id}.`,
+          `No se pudieron obtener las divisiones del país ${paisId}.`,
         );
       }
 
-      return response.json() as Promise<GeografiaPais>;
+      return response.json() as Promise<
+        DivisionGeografia[]
+      >;
     })
     .finally(() => {
-      solicitudesPaisEnCurso.delete(id);
+      solicitudesDivisionesEnCurso.delete(
+        url,
+      );
     });
 
-  solicitudesPaisEnCurso.set(id, solicitud);
+  solicitudesDivisionesEnCurso.set(
+    url,
+    solicitud,
+  );
+
+  return solicitud;
+}
+
+export function getCiudades(
+  paisId: string,
+  divisionId: string,
+): Promise<string[]> {
+  const url =
+    `/api/geografia/paises/` +
+    `${encodeURIComponent(paisId)}/` +
+    `divisiones/` +
+    `${encodeURIComponent(divisionId)}/` +
+    `ciudades`;
+
+  const solicitudExistente =
+    solicitudesCiudadesEnCurso.get(url);
+
+  if (solicitudExistente) {
+    return solicitudExistente;
+  }
+
+  const solicitud = fetch(url)
+    .then(async (response) => {
+      if (!response.ok) {
+        throw new Error(
+          "No se pudieron obtener las ciudades.",
+        );
+      }
+
+      return response.json() as Promise<
+        string[]
+      >;
+    })
+    .finally(() => {
+      solicitudesCiudadesEnCurso.delete(
+        url,
+      );
+    });
+
+  solicitudesCiudadesEnCurso.set(
+    url,
+    solicitud,
+  );
 
   return solicitud;
 }

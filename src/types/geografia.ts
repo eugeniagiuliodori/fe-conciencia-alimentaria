@@ -35,3 +35,13 @@ export type GeografiaIndice = {
   sourceSha256: string;
   paises: PaisIndice[];
 };
+
+export type PaisGeografia = Pick<
+  PaisIndice,
+  "id" | "nombre" | "codigoIso2"
+>;
+
+export type DivisionGeografia = Pick<
+  DivisionAdministrativa,
+  "id" | "nombre" | "codigo" | "tipo"
+>;

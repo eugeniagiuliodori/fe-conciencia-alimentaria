@@ -9,7 +9,8 @@
     "lint": "eslint",
     "test:fichas": "node --test scripts/fichas/*.test.mjs",
     "report:visits": "node --env-file=.env.local scripts/generate-visit-report.mjs",
-    "geo:normalize": "tsx scripts/normalizar-geografia.ts"
+    "geo:normalize": "tsx scripts/normalizar-geografia.ts",
+    "negocios:normalize": "tsx scripts/normalizar-negocios-naturistas.ts"
   },
   "dependencies": {
     "@upstash/qstash": "^2.11.3",

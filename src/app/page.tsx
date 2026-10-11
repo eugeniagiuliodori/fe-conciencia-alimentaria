@@ -23,7 +23,7 @@ export default function Home() {
     : "/images/publicaciones/noticiadeldia/iconnoticia.png";
 
      const NoticiaLinkSrc = existeNoticia
-    ? "https://doi.org/10.1038/s41366-026-02234-9"
+    ? "https://doi.org/10.1007/s00421-026-06461-w"
     : "/images/publicaciones/noticiadeldia/empty.png";
 
     const menuSugeridoPath = path.join(
