@@ -35,7 +35,6 @@ export function UbicacionSelector({
         bg-surface
         p-5
         shadow-sm
-        md:p-6
         max-w-md
         lg:max-w-lg
         flex flex-col justify-center
