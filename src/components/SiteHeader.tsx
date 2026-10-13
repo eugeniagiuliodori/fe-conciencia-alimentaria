@@ -43,18 +43,48 @@ export function SiteHeader() {
           {abrirmenu &&
            <ul className="absolute top-12 right-1 flex w-max flex-col items-end gap-2 text-sm md:text-base lg:text-lg">
             <li className="rounded-lg shadow-[0px_0px_10px_7px_rgba(147,68,47,1)] hover:shadow-[0px_0px_10px_7px_rgba(255,255,255,0.95)]">
-              <Link
-                onClick={()=>setAbrirMenu(false)}
-                href="/#publicaciones"
-                className="inline-flex  min-h-11 items-center whitespace-nowrap rounded-lg px-3 bg-accent-soft text-accent"
-              >
-                Publicaciones
-              </Link>
+        <Link
+          href="/#publicaciones"
+          onClick={(event) => {
+            setAbrirMenu(false);
+
+            if (window.location.pathname === "/" &&
+                window.location.hash === "#publicaciones") {
+              event.preventDefault();
+
+              document
+                .getElementById("publicaciones")
+                ?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+            }
+          }}
+          className="inline-flex min-h-11 items-center whitespace-nowrap rounded-lg px-3 bg-accent-soft text-accent"
+        >
+          Publicaciones
+        </Link>
             </li>
             <li className="rounded-xl shadow-[0px_0px_10px_7px_rgba(147,68,47,1)] hover:shadow-[0px_0px_10px_7px_rgba(255,255,255,0.95)]">
               <Link
-                onClick={()=>setAbrirMenu(false)}
                 href="/#proyecto"
+                onClick={(event) => {
+                  setAbrirMenu(false);
+
+                  if (
+                    window.location.pathname === "/" &&
+                    window.location.hash === "#proyecto"
+                  ) {
+                    event.preventDefault();
+
+                    document
+                      .getElementById("proyecto")
+                      ?.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                      });
+                  }
+                }}
                 className="inline-flex min-h-11 items-center whitespace-nowrap rounded-lg px-3 bg-accent-soft text-accent"
               >
                 El proyecto

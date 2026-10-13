@@ -140,7 +140,7 @@ export function PublicationsSection({
               setCurrentPage((page) => Math.max(1, page - 1))
             }
             disabled={currentPage === 1}
-            className="min-h-11 rounded-full border border-[#D8D0BE] px-4 text-sm font-semibold text-[#49633B] transition hover:bg-[#EEF0DC]/60 disabled:cursor-not-allowed disabled:opacity-40"
+            className="min-h-11 rounded-full border border-[#D8D0BE] px-4 text-[10px] md:text-sm font-semibold text-[#49633B] transition hover:bg-[#EEF0DC]/60 disabled:cursor-not-allowed disabled:opacity-40"
           >
             ← Anterior
           </button>
@@ -198,7 +198,7 @@ export function PublicationsSection({
               )
             }
             disabled={currentPage === totalPages}
-            className="min-h-11 rounded-full border border-[#D8D0BE] px-4 text-sm font-semibold text-[#49633B] transition hover:bg-[#EEF0DC]/60 disabled:cursor-not-allowed disabled:opacity-40"
+            className="min-h-11 rounded-full border border-[#D8D0BE] px-4 text-[10px] md:text-sm font-semibold text-[#49633B] transition hover:bg-[#EEF0DC]/60 disabled:cursor-not-allowed disabled:opacity-40"
           >
             Siguiente →
           </button>
