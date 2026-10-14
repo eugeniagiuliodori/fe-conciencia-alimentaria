@@ -6,7 +6,7 @@ import {
 
 import {
   obtenerPublicaciones,
-} from "@/services/publicaciones-service";
+} from "@/services/publicaciones.service";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
