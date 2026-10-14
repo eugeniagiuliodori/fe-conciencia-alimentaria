@@ -3,9 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import fs from "fs";
 import path from "path";
-import { PublicationsSection } from "@/components/PublicationsSection";
-import { publications } from "@/data/publications";
-import {MensajeDelDia} from "@/components/ModalDelDia";
+import { PublicationsSection } from "@/components/publicaciones/PublicationsSection";
+import {MensajeDelDia} from "@/components/mensajediario/ModalDelDia";
+import { FormSugerenciaFunciones } from "@/components/formularios/FormSugerenciaFunciones";
+import { FormSugerenciaGeneral } from "@/components/formularios/FormSugerenciaGeneral";
 
 export default function Home() {
 
@@ -23,7 +24,7 @@ export default function Home() {
     : "/images/publicaciones/noticiadeldia/iconnoticia.png";
 
      const NoticiaLinkSrc = existeNoticia
-    ? "https://doi.org/10.3389/fnut.2026.1929818"
+    ? "https://doi.org/10.3389/fnut.2026.1946052"
     : "/images/publicaciones/noticiadeldia/empty.png";
 
     const menuSugeridoPath = path.join(
@@ -93,6 +94,42 @@ export default function Home() {
             preload
           />
         </div>
+      </section>
+            <section
+        id="recetas"
+        aria-labelledby="recetas-title"
+        className="site-container border-t border-line py-12 sm:py-16 "
+      >
+         <div className="flex w-full justify-center ">
+            <div className="flex flex-col md:flex-row w-full md:max-w:lg items-center md:items-start justify-between ">
+            
+            <div className="flex w-60 md:w-full flex-col items-center justify-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-2 py-2 text-center shadow-sm">
+                <FormSugerenciaFunciones/>
+            </div>
+            <div
+              className="
+                flex w-full h-full items-center justify-center
+                overflow-hidden 
+                border-none
+                bg-transparent
+                p-3 
+                sm:p-4
+              "
+            >
+              <img
+                src="/images/sugerencias/tu-opinion-importante.png"
+                alt="Tu opinión es importante. Aporta y ayuda a mejorar."
+                className="
+                  h-full w-full
+                  object-cover
+                "
+              />
+            </div>
+            <div className="flex w-60 md:w-full flex-col items-center justify-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-2 py-2 text-center shadow-sm">
+                <FormSugerenciaGeneral/>
+            </div>
+            </div>
+          </div>
       </section>
       <section    aria-labelledby="noticia-del-dia"
        className="site-container grid items-center gap-10 py-12 sm:py-16 lg:grid-cols-2 lg:gap-16 lg:py-20"
@@ -197,7 +234,7 @@ export default function Home() {
             </div>
           </div>
       </section>
-      <PublicationsSection publications={publications}/>
+      <PublicationsSection/>
       <section
         id="proyecto"
         aria-labelledby="project-title"

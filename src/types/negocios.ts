@@ -137,3 +137,22 @@ export type NegocioPublico = Omit<
 export type PaginationItem =
   | number
   | "ellipsis";
+
+export type FiltrosNegocios = {
+  divisionId?: string;
+  ciudad?: string;
+  estadoProductosOrganicos?: EstadoProductosOrganicos;
+};
+
+export type ConsultaRangoNegocios =
+  FiltrosNegocios & {
+    offset: number;
+    limit: number;
+  };
+
+export type ResultadoRangoNegocios = {
+  negocios: NegocioPublico[];
+  offset: number;
+  limit: number;
+  total: number;
+};

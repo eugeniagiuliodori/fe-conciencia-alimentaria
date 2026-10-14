@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { VideoEmbed } from "@/components/VideoEmbed";
 import { getRecetaBySlug, recetas } from "@/data/recetas";
-import { ModoCocina } from "@/components/ModoCocina";
+import { ModoCocina } from "@/components/pantallaactiva/ModoCocina";
 
 type RecetaPageProps = {
   params: Promise<{ slug: string }>;

@@ -1,6 +1,6 @@
 'use client'
 
-import {FuentesDrawer} from "@/components/FuentesDrawer";
+import {FuentesDrawer} from "@/components/fuentesnoticiasdiarias/FuentesDrawer";
 import Image from "next/image";
 
 export function HistorialNoticiasSection() {

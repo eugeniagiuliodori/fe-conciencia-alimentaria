@@ -1,61 +1,235 @@
+"use client";
+
 import {
   useEffect,
+  useRef,
   useState,
 } from "react";
 
+import {
+  getRangoNegocios,
+  textoOrganicos,
+} from "@/lib/negocios";
 import type {
-  NegocioPublico,
+  FiltrosNegocios,
+  ResultadoRangoNegocios,
 } from "@/types/negocios";
-import { textoOrganicos } from "@/lib/negocios";
 
+import { ContactosNegocio } from "./ContactoNegocio";
 import { EnlacesNegocio } from "./EnlacesNegocio";
 import { NombreNegocio } from "./NombreNegocio";
-import { UbicacionesNegocio } from "./UbicacionesNegocio";
 import { ProductosNegocio } from "./ProductoNegocio";
-import { ContactosNegocio } from "./ContactoNegocio";
+import { UbicacionesNegocio } from "./UbicacionesNegocio";
 
 export function NegociosSlider({
-  negocios,
+  filtros,
 }: {
-  negocios: NegocioPublico[];
+  filtros: FiltrosNegocios;
 }) {
   const [
     indiceSlider,
     setIndiceSlider,
   ] = useState(0);
 
-  /*
-   * Cuando cambia el resultado de búsqueda,
-   * volvemos al primer negocio del nuevo conjunto.
-   */
+  const [
+    resultado,
+    setResultado,
+  ] =
+    useState<ResultadoRangoNegocios | null>(
+      null,
+    );
+
+  const [cargando, setCargando] =
+    useState(false);
+
+  const [error, setError] =
+    useState<string | null>(null);
+
+  const [activo, setActivo] =
+    useState(false);
+
+  const claveFiltros = [
+    filtros.divisionId ?? "",
+    filtros.ciudad ?? "",
+    filtros.estadoProductosOrganicos ??
+      "",
+  ].join("|");
+
+  const claveFiltrosAnterior =
+    useRef(claveFiltros);
+
+  // Evita que slider y tabla consulten al BFF al mismo tiempo.
+  // Coincide con el breakpoint xl usado en la UI.
   useEffect(() => {
-    setIndiceSlider(0);
-  }, [negocios]);
+    const media = window.matchMedia(
+      "(min-width: 1280px)",
+    );
+
+    const actualizar = () => {
+      setActivo(!media.matches);
+    };
+
+    actualizar();
+
+    media.addEventListener(
+      "change",
+      actualizar,
+    );
+
+    return () => {
+      media.removeEventListener(
+        "change",
+        actualizar,
+      );
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!activo) {
+      return;
+    }
+
+    /*
+     * Una búsqueda nueva comienza nuevamente por
+     * el primer negocio del resultado filtrado.
+     */
+    if (
+      claveFiltrosAnterior.current !==
+      claveFiltros
+    ) {
+      claveFiltrosAnterior.current =
+        claveFiltros;
+
+      if (indiceSlider !== 0) {
+        setIndiceSlider(0);
+        return;
+      }
+    }
+
+    let cancelado = false;
+
+    async function cargarNegocio() {
+      setCargando(true);
+      setError(null);
+
+      try {
+        const datos =
+          await getRangoNegocios({
+            ...filtros,
+            offset: indiceSlider,
+            limit: 1,
+          });
+
+        if (cancelado) {
+          return;
+        }
+
+        /*
+         * Si el dataset cambió y el índice quedó fuera del
+         * rango válido, nos reposicionamos en el último.
+         */
+        if (
+          datos.total > 0 &&
+          datos.negocios.length === 0 &&
+          indiceSlider >= datos.total
+        ) {
+          setIndiceSlider(
+            datos.total - 1,
+          );
+          return;
+        }
+
+        setResultado(datos);
+      } catch {
+        if (!cancelado) {
+          setError(
+            "No se pudo cargar el negocio.",
+          );
+        }
+      } finally {
+        if (!cancelado) {
+          setCargando(false);
+        }
+      }
+    }
+
+    void cargarNegocio();
+
+    return () => {
+      cancelado = true;
+    };
+  }, [
+    activo,
+    claveFiltros,
+    filtros.divisionId,
+    filtros.ciudad,
+    filtros.estadoProductosOrganicos,
+    indiceSlider,
+  ]);
 
   const negocioSlider =
-    negocios[indiceSlider] ?? null;
+    resultado?.negocios[0] ?? null;
+
+  const total =
+    resultado?.total ?? 0;
+
+  const posicionActual =
+    total > 0
+      ? indiceSlider + 1
+      : 0;
 
   function mostrarAnterior() {
-    setIndiceSlider((actual) =>
-      actual === 0
-        ? negocios.length - 1
-        : actual - 1,
+    if (total <= 1) {
+      return;
+    }
+
+    setIndiceSlider(
+      (actual) =>
+        actual === 0
+          ? total - 1
+          : actual - 1,
     );
   }
 
   function mostrarSiguiente() {
-    setIndiceSlider((actual) =>
-      actual ===
-      negocios.length - 1
-        ? 0
-        : actual + 1,
+    if (total <= 1) {
+      return;
+    }
+
+    setIndiceSlider(
+      (actual) =>
+        actual === total - 1
+          ? 0
+          : actual + 1,
     );
   }
 
   // SLIDER: pantallas menores a xl.
   return (
     <div className="xl:hidden">
-      {negocioSlider && (
+      {error && (
+        <div className="rounded-[1.5rem] border border-line bg-surface p-5 text-sm text-muted shadow-sm">
+          {error}
+        </div>
+      )}
+
+      {!resultado &&
+        cargando &&
+        !error && (
+          <div className="rounded-[1.5rem] border border-line bg-surface p-5 text-sm text-muted shadow-sm">
+            Cargando negocio...
+          </div>
+        )}
+
+      {resultado &&
+        total === 0 &&
+        !error && (
+          <div className="rounded-[1.5rem] border border-line bg-surface p-5 text-sm text-muted shadow-sm">
+            No hay negocios para la búsqueda seleccionada.
+          </div>
+        )}
+
+      {negocioSlider && !error && (
         <article
           className="
             relative
@@ -122,9 +296,8 @@ export function NegociosSlider({
                 </h3>
 
                 <p className="text-sm text-muted">
-                  {negocioSlider
-                    .modalidadesVenta
-                    .length > 0
+                  {negocioSlider.modalidadesVenta.length >
+                  0
                     ? negocioSlider.modalidadesVenta.join(
                         " · ",
                       )
@@ -156,6 +329,9 @@ export function NegociosSlider({
             <button
               type="button"
               onClick={mostrarAnterior}
+              disabled={
+                cargando || total <= 1
+              }
               aria-label="Mostrar negocio anterior"
               className="
                 inline-flex h-10 w-10
@@ -166,6 +342,8 @@ export function NegociosSlider({
                 text-lg text-accent
                 transition
                 hover:bg-accent-soft
+                disabled:cursor-not-allowed
+                disabled:opacity-40
               "
             >
               ←
@@ -175,13 +353,18 @@ export function NegociosSlider({
               aria-live="polite"
               className="text-xs font-semibold text-muted"
             >
-              {indiceSlider + 1} /{" "}
-              {negocios.length}
+              {posicionActual} / {total}
+              {cargando
+                ? " · Cargando..."
+                : ""}
             </p>
 
             <button
               type="button"
               onClick={mostrarSiguiente}
+              disabled={
+                cargando || total <= 1
+              }
               aria-label="Mostrar siguiente negocio"
               className="
                 inline-flex h-10 w-10
@@ -192,6 +375,8 @@ export function NegociosSlider({
                 text-lg text-accent
                 transition
                 hover:bg-accent-soft
+                disabled:cursor-not-allowed
+                disabled:opacity-40
               "
             >
               →

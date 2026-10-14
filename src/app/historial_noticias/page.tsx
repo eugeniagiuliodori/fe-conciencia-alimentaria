@@ -1,6 +1,6 @@
 
 import Link from "next/link";
-import { HistorialNoticiasSection } from "@/components/HistorialNoticiasSection";
+import { HistorialNoticiasSection } from "@/components/fuentesnoticiasdiarias/HistorialNoticiasSection";
 
 export default async function Historial_noticiasPage() {
   

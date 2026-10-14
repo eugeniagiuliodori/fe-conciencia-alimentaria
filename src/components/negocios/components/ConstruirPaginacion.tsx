@@ -1,5 +1,6 @@
-import { PaginationItem } from "@/types/negocios";
-
+import type {
+  PaginationItem,
+} from "@/types/negocios";
 
 export function construirPaginacion(
   paginaActual: number,
@@ -32,18 +33,23 @@ export function construirPaginacion(
 
   const resultado: PaginationItem[] = [];
 
-  validas.forEach((pagina, index) => {
-    const anterior = validas[index - 1];
+  validas.forEach(
+    (pagina, index) => {
+      const anterior =
+        validas[index - 1];
 
-    if (
-      anterior &&
-      pagina - anterior > 1
-    ) {
-      resultado.push("ellipsis");
-    }
+      if (
+        anterior &&
+        pagina - anterior > 1
+      ) {
+        resultado.push(
+          "ellipsis",
+        );
+      }
 
-    resultado.push(pagina);
-  });
+      resultado.push(pagina);
+    },
+  );
 
   return resultado;
 }

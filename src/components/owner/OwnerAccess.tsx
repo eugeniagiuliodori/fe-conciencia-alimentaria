@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import OwnerModal from "@/components/OwnerModal";
+import OwnerModal from "@/components/owner/OwnerModal";
 
 export default function OwnerAccess() {
   const [isOwnerModalOpen, setIsOwnerModalOpen] = useState(false);

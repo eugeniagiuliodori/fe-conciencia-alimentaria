@@ -1,5 +1,5 @@
 import { recetas } from "@/data/recetas";
-import { RecetaCard } from "@/components/RecetaCard";
+import { RecetaCard } from "@/components/recetas/RecetaCard";
 import Link from "next/link";
 
 export default async function RecetasPage() {

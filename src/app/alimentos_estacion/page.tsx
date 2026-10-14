@@ -1,4 +1,4 @@
-import { AlimentosEstacion } from "@/components/AlimentosEstacion";
+import { AlimentosEstacion } from "@/components/alimentosestacion/AlimentosEstacion";
 import Link from "next/link";
 
 export default async function Alimentos_estacionPage() {

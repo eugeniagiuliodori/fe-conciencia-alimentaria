@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { VideoEmbed } from "@/components/VideoEmbed";
 import { getPublicationBySlug, publications } from "@/data/publications";
-import { ModoCocina } from "@/components/ModoCocina";
+import { ModoCocina } from "@/components/pantallaactiva/ModoCocina";
 
 type PublicationPageProps = {
   params: Promise<{ slug: string }>;

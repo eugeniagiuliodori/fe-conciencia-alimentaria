@@ -1,12 +1,15 @@
-// app/api/negocios/route.ts
-
 import {
   NextRequest,
   NextResponse,
 } from "next/server";
 
-import { obtenerNegociosPublicos } from "@/services/negocios.service";
-import type { EstadoProductosOrganicos } from "@/types/negocios";
+import {
+  obtenerNegociosPublicos,
+} from "@/services/negocios.service";
+import type {
+  EstadoProductosOrganicos,
+  FiltrosNegocios,
+} from "@/types/negocios";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -63,6 +66,10 @@ export async function GET(
           },
           {
             status: 400,
+            headers: {
+              "Cache-Control":
+                "no-store, no-cache, must-revalidate",
+            },
           },
         );
       }
@@ -71,12 +78,16 @@ export async function GET(
         estadoOrganicosParam;
     }
 
+    const filtros: FiltrosNegocios = {
+      divisionId,
+      ciudad,
+      estadoProductosOrganicos,
+    };
+
     const negocios =
-      await obtenerNegociosPublicos({
-        divisionId,
-        ciudad,
-        estadoProductosOrganicos,
-      });
+      await obtenerNegociosPublicos(
+        filtros,
+      );
 
     return NextResponse.json(
       negocios,

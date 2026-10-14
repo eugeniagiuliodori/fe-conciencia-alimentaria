@@ -23,7 +23,8 @@
       "@/features/*":["./src/features/*"],
       "@/data/*":["./src/data/*"],
       "@/lib/*":["./src/lib/*"],
-      "@/services/*":["./src/services/*"]
+      "@/services/*":["./src/services/*"],
+      "@/types/*":["./src/types/*"]
     }
   },
   "include": [

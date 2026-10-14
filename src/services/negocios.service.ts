@@ -1,4 +1,4 @@
-// src/server/negocios.ts
+// src/services/negocios.service.ts
 
 import "server-only";
 
@@ -6,23 +6,18 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 
 import type {
-  EstadoProductosOrganicos,
+  ConsultaRangoNegocios,
+  FiltrosNegocios,
   NegocioNaturista,
   NegociosNaturistasDataset,
-  NegocioPublico
+  NegocioPublico,
+  ResultadoRangoNegocios,
 } from "@/types/negocios";
 
 const NEGOCIOS_PATH = path.resolve(
   process.cwd(),
   "data/normalized/negocios/negocios-naturistas-argentina.json",
 );
-
-type FiltrosNegocios = {
-  divisionId?: string;
-  ciudad?: string;
-  estadoProductosOrganicos?: EstadoProductosOrganicos;
-};
-
 
 function validarDataset(
   value: unknown,
@@ -171,4 +166,51 @@ export async function obtenerNegocioPublicoPorId(
   }
 
   return convertirANegocioPublico(negocio);
+}
+
+export async function obtenerRangoNegociosPublicos(
+  consulta: ConsultaRangoNegocios,
+): Promise<ResultadoRangoNegocios> {
+  const {
+    offset,
+    limit,
+    ...filtros
+  } = consulta;
+
+  if (
+    !Number.isInteger(offset) ||
+    offset < 0
+  ) {
+    throw new Error(
+      "offset debe ser un entero mayor o igual a 0.",
+    );
+  }
+
+  if (
+    !Number.isInteger(limit) ||
+    limit < 1
+  ) {
+    throw new Error(
+      "limit debe ser un entero positivo.",
+    );
+  }
+
+  const negocios =
+    await obtenerNegocios(filtros);
+
+  const total = negocios.length;
+
+  const negociosRango = negocios
+    .slice(
+      offset,
+      offset + limit,
+    )
+    .map(convertirANegocioPublico);
+
+  return {
+    negocios: negociosRango,
+    offset,
+    limit,
+    total,
+  };
 }

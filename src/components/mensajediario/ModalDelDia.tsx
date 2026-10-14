@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import {MensajeDelDiaModal} from "@/components/MensajeDelDiaModal";
+import {MensajeDelDiaModal} from "@/components/mensajediario/MensajeDelDiaModal";
 
 export function MensajeDelDia() {
   const [open, setOpen] = useState(false);

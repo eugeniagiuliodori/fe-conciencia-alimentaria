@@ -1,6 +1,6 @@
 
 import Link from "next/link";
-import { EditorConciencia } from "@/components/EditorConciencia";
+import { EditorConciencia } from "@/components/suneditor/EditorConciencia";
 
 export default async function PizzaraPage() {
   
