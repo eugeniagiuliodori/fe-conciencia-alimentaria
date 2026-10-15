@@ -2,9 +2,14 @@
 
 import "server-only";
 
-import { readFile } from "node:fs/promises";
 import path from "node:path";
 
+import {
+  obtenerRangoElementos,
+} from "@/services/shared/colecciones";
+import {
+  leerJsonValidado,
+} from "@/services/shared/json";
 import type {
   ConsultaRangoNegocios,
   FiltrosNegocios,
@@ -43,13 +48,20 @@ function validarDataset(
     );
   }
 
-  if (dataset.pais?.id !== "argentina") {
+  if (
+    dataset.pais?.id !==
+    "argentina"
+  ) {
     throw new Error(
       "El dataset de negocios esperado debe corresponder a Argentina.",
     );
   }
 
-  if (!Array.isArray(dataset.negocios)) {
+  if (
+    !Array.isArray(
+      dataset.negocios,
+    )
+  ) {
     throw new Error(
       "El dataset normalizado no contiene negocios[].",
     );
@@ -57,16 +69,10 @@ function validarDataset(
 }
 
 async function leerDataset(): Promise<NegociosNaturistasDataset> {
-  const contenido = await readFile(
+  return leerJsonValidado(
     NEGOCIOS_PATH,
-    "utf8",
+    validarDataset,
   );
-
-  const parsed: unknown = JSON.parse(contenido);
-
-  validarDataset(parsed);
-
-  return parsed;
 }
 
 function coincideConFiltros(
@@ -85,7 +91,8 @@ function coincideConFiltros(
     const perteneceDivision =
       negocio.ubicaciones.some(
         (ubicacion) =>
-          ubicacion.direccion.divisionId ===
+          ubicacion.direccion
+            .divisionId ===
           filtros.divisionId,
       );
 
@@ -96,14 +103,17 @@ function coincideConFiltros(
 
   if (filtros.ciudad) {
     const ciudadBuscada =
-      filtros.ciudad.toLocaleLowerCase("es-AR");
+      filtros.ciudad.toLocaleLowerCase(
+        "es-AR",
+      );
 
     const perteneceCiudad =
       negocio.ubicaciones.some(
         (ubicacion) =>
           ubicacion.direccion.ciudad
-            ?.toLocaleLowerCase("es-AR") ===
-          ciudadBuscada,
+            ?.toLocaleLowerCase(
+              "es-AR",
+            ) === ciudadBuscada,
       );
 
     if (!perteneceCiudad) {
@@ -119,7 +129,8 @@ function convertirANegocioPublico(
 ): NegocioPublico {
   const {
     fuentes: _fuentes,
-    observaciones: _observaciones,
+    observaciones:
+      _observaciones,
     ...publico
   } = negocio;
 
@@ -129,21 +140,28 @@ function convertirANegocioPublico(
 export async function obtenerNegocios(
   filtros: FiltrosNegocios = {},
 ): Promise<NegocioNaturista[]> {
-  const dataset = await leerDataset();
+  const dataset =
+    await leerDataset();
 
-  return dataset.negocios.filter((negocio) =>
-    coincideConFiltros(negocio, filtros),
+  return dataset.negocios.filter(
+    (negocio) =>
+      coincideConFiltros(
+        negocio,
+        filtros,
+      ),
   );
 }
 
 export async function obtenerNegocioPorId(
   id: string,
 ): Promise<NegocioNaturista | null> {
-  const dataset = await leerDataset();
+  const dataset =
+    await leerDataset();
 
   return (
     dataset.negocios.find(
-      (negocio) => negocio.id === id,
+      (negocio) =>
+        negocio.id === id,
     ) ?? null
   );
 }
@@ -151,21 +169,29 @@ export async function obtenerNegocioPorId(
 export async function obtenerNegociosPublicos(
   filtros: FiltrosNegocios = {},
 ): Promise<NegocioPublico[]> {
-  const negocios = await obtenerNegocios(filtros);
+  const negocios =
+    await obtenerNegocios(
+      filtros,
+    );
 
-  return negocios.map(convertirANegocioPublico);
+  return negocios.map(
+    convertirANegocioPublico,
+  );
 }
 
 export async function obtenerNegocioPublicoPorId(
   id: string,
 ): Promise<NegocioPublico | null> {
-  const negocio = await obtenerNegocioPorId(id);
+  const negocio =
+    await obtenerNegocioPorId(id);
 
   if (!negocio) {
     return null;
   }
 
-  return convertirANegocioPublico(negocio);
+  return convertirANegocioPublico(
+    negocio,
+  );
 }
 
 export async function obtenerRangoNegociosPublicos(
@@ -177,40 +203,25 @@ export async function obtenerRangoNegociosPublicos(
     ...filtros
   } = consulta;
 
-  if (
-    !Number.isInteger(offset) ||
-    offset < 0
-  ) {
-    throw new Error(
-      "offset debe ser un entero mayor o igual a 0.",
-    );
-  }
-
-  if (
-    !Number.isInteger(limit) ||
-    limit < 1
-  ) {
-    throw new Error(
-      "limit debe ser un entero positivo.",
-    );
-  }
-
   const negocios =
-    await obtenerNegocios(filtros);
+    await obtenerNegocios(
+      filtros,
+    );
 
-  const total = negocios.length;
-
-  const negociosRango = negocios
-    .slice(
+  const rango =
+    obtenerRangoElementos(
+      negocios,
       offset,
-      offset + limit,
-    )
-    .map(convertirANegocioPublico);
+      limit,
+    );
 
   return {
-    negocios: negociosRango,
-    offset,
-    limit,
-    total,
+    negocios:
+      rango.elementos.map(
+        convertirANegocioPublico,
+      ),
+    offset: rango.offset,
+    limit: rango.limit,
+    total: rango.total,
   };
 }

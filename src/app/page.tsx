@@ -24,7 +24,7 @@ export default function Home() {
     : "/images/publicaciones/noticiadeldia/iconnoticia.png";
 
      const NoticiaLinkSrc = existeNoticia
-    ? "https://doi.org/10.3389/fnut.2026.1946052"
+    ? "https://doi.org/10.1007/s11130-026-01577-y"
     : "/images/publicaciones/noticiadeldia/empty.png";
 
     const menuSugeridoPath = path.join(

@@ -1,4 +1,4 @@
-// src/services/publicaciones-service.ts
+// src/services/publicaciones.service.ts
 
 import "server-only";
 
@@ -8,6 +8,9 @@ import {
 import type {
   Publication,
 } from "@/data/publications";
+import {
+  obtenerRangoElementos,
+} from "@/services/shared/colecciones";
 import type {
   ConsultaRangoPublicaciones,
   ResultadoRangoPublicaciones,
@@ -27,33 +30,18 @@ export async function obtenerRangoPublicaciones(
     limit,
   } = consulta;
 
-  if (
-    !Number.isInteger(offset) ||
-    offset < 0
-  ) {
-    throw new Error(
-      "offset debe ser un entero mayor o igual a 0.",
+  const rango =
+    obtenerRangoElementos(
+      publications,
+      offset,
+      limit,
     );
-  }
-
-  if (
-    !Number.isInteger(limit) ||
-    limit < 1
-  ) {
-    throw new Error(
-      "limit debe ser un entero positivo.",
-    );
-  }
-
-  const total = publications.length;
 
   return {
-    publicaciones: publications.slice(
-      offset,
-      offset + limit,
-    ),
-    offset,
-    limit,
-    total,
+    publicaciones:
+      rango.elementos,
+    offset: rango.offset,
+    limit: rango.limit,
+    total: rango.total,
   };
 }

@@ -1,10 +1,15 @@
-// src/services/geografia.ts
+// src/services/geografia.service.ts
 
 import "server-only";
 
-import { readFile } from "node:fs/promises";
 import path from "node:path";
 
+import {
+  leerJsonValidado,
+} from "@/services/shared/json";
+import type {
+  ValidadorJson,
+} from "@/services/shared/json";
 import type {
   DivisionAdministrativa,
   GeografiaIndice,
@@ -12,15 +17,17 @@ import type {
   PaisIndice,
 } from "@/types/geografia";
 
-const GEOGRAFIA_DIR = path.resolve(
-  process.cwd(),
-  "data/normalized/geografia",
-);
+const GEOGRAFIA_DIR =
+  path.resolve(
+    process.cwd(),
+    "data/normalized/geografia",
+  );
 
-const COUNTRIES_PATH = path.join(
-  GEOGRAFIA_DIR,
-  "countries.json",
-);
+const COUNTRIES_PATH =
+  path.join(
+    GEOGRAFIA_DIR,
+    "countries.json",
+  );
 
 /*
  * Estos tipos representan la información que el service
@@ -55,7 +62,9 @@ function validarIndice(
   const indice =
     value as Partial<GeografiaIndice>;
 
-  if (indice.schemaVersion !== 1) {
+  if (
+    indice.schemaVersion !== 1
+  ) {
     throw new Error(
       `Versión de esquema geográfico no soportada: ${String(
         indice.schemaVersion,
@@ -63,7 +72,11 @@ function validarIndice(
     );
   }
 
-  if (!Array.isArray(indice.paises)) {
+  if (
+    !Array.isArray(
+      indice.paises,
+    )
+  ) {
     throw new Error(
       "El índice geográfico no contiene paises[].",
     );
@@ -87,7 +100,9 @@ function validarPais(
   const pais =
     value as Partial<GeografiaPais>;
 
-  if (pais.schemaVersion !== 1) {
+  if (
+    pais.schemaVersion !== 1
+  ) {
     throw new Error(
       `Versión de esquema no soportada para el país ${paisId}.`,
     );
@@ -99,13 +114,19 @@ function validarPais(
     );
   }
 
-  if (pais.pais.id !== paisId) {
+  if (
+    pais.pais.id !== paisId
+  ) {
     throw new Error(
       `El archivo solicitado para ${paisId} corresponde a ${pais.pais.id}.`,
     );
   }
 
-  if (!Array.isArray(pais.divisiones)) {
+  if (
+    !Array.isArray(
+      pais.divisiones,
+    )
+  ) {
     throw new Error(
       `El archivo del país ${paisId} no contiene divisiones[].`,
     );
@@ -113,27 +134,22 @@ function validarPais(
 }
 
 async function leerIndice(): Promise<GeografiaIndice> {
-  const contenido = await readFile(
+  return leerJsonValidado(
     COUNTRIES_PATH,
-    "utf8",
+    validarIndice,
   );
-
-  const parsed: unknown =
-    JSON.parse(contenido);
-
-  validarIndice(parsed);
-
-  return parsed;
 }
 
 async function buscarPaisEnIndice(
   paisId: string,
 ): Promise<PaisIndice | null> {
-  const indice = await leerIndice();
+  const indice =
+    await leerIndice();
 
   return (
     indice.paises.find(
-      (pais) => pais.id === paisId,
+      (pais) =>
+        pais.id === paisId,
     ) ?? null
   );
 }
@@ -150,10 +166,11 @@ function resolverArchivoPais(
    * Evita que un valor incorrecto del índice pueda
    * resolver una ruta fuera de data/normalized/geografia.
    */
-  const relativa = path.relative(
-    GEOGRAFIA_DIR,
-    ruta,
-  );
+  const relativa =
+    path.relative(
+      GEOGRAFIA_DIR,
+      ruta,
+    );
 
   if (
     relativa.startsWith("..") ||
@@ -171,7 +188,9 @@ async function leerPais(
   paisId: string,
 ): Promise<GeografiaPais | null> {
   const paisIndice =
-    await buscarPaisEnIndice(paisId);
+    await buscarPaisEnIndice(
+      paisId,
+    );
 
   if (!paisIndice) {
     return null;
@@ -182,17 +201,18 @@ async function leerPais(
       paisIndice.archivo,
     );
 
-  const contenido = await readFile(
+  const validarPaisSolicitado:
+    ValidadorJson<GeografiaPais> =
+      (value) =>
+        validarPais(
+          value,
+          paisId,
+        );
+
+  return leerJsonValidado(
     archivoPath,
-    "utf8",
+    validarPaisSolicitado,
   );
-
-  const parsed: unknown =
-    JSON.parse(contenido);
-
-  validarPais(parsed, paisId);
-
-  return parsed;
 }
 
 /*
@@ -201,13 +221,17 @@ async function leerPais(
 export async function obtenerPaises(): Promise<
   PaisGeografia[]
 > {
-  const indice = await leerIndice();
+  const indice =
+    await leerIndice();
 
-  return indice.paises.map((pais) => ({
-    id: pais.id,
-    nombre: pais.nombre,
-    codigoIso2: pais.codigoIso2,
-  }));
+  return indice.paises.map(
+    (pais) => ({
+      id: pais.id,
+      nombre: pais.nombre,
+      codigoIso2:
+        pais.codigoIso2,
+    }),
+  );
 }
 
 /*
@@ -222,7 +246,8 @@ export async function obtenerPaises(): Promise<
 export async function obtenerDivisiones(
   paisId: string,
 ): Promise<DivisionGeografia[] | null> {
-  const pais = await leerPais(paisId);
+  const pais =
+    await leerPais(paisId);
 
   if (!pais) {
     return null;
@@ -251,7 +276,8 @@ export async function obtenerCiudades(
   paisId: string,
   divisionId: string,
 ): Promise<string[] | null> {
-  const pais = await leerPais(paisId);
+  const pais =
+    await leerPais(paisId);
 
   if (!pais) {
     return null;
