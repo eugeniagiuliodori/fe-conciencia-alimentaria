@@ -7,6 +7,7 @@ import { PublicationsSection } from "@/components/publicaciones/PublicationsSect
 import {MensajeDelDia} from "@/components/mensajediario/ModalDelDia";
 import { FormSugerenciaFunciones } from "@/components/formularios/FormSugerenciaFunciones";
 import { FormSugerenciaGeneral } from "@/components/formularios/FormSugerenciaGeneral";
+import { FormIdentificacion } from "@/components/formularios/FormIdentificacion";
 
 export default function Home() {
 
@@ -24,7 +25,7 @@ export default function Home() {
     : "/images/publicaciones/noticiadeldia/iconnoticia.png";
 
      const NoticiaLinkSrc = existeNoticia
-    ? "https://doi.org/10.1007/s11130-026-01577-y"
+    ? "https://doi.org/10.1371/journal.pmed.1005251"
     : "/images/publicaciones/noticiadeldia/empty.png";
 
     const menuSugeridoPath = path.join(
@@ -235,6 +236,14 @@ export default function Home() {
           </div>
       </section>
       <PublicationsSection/>
+      {/*<section
+        id="identificacion"
+        aria-labelledby="identificacion-title"
+        className="site-container border-t border-line py-12 sm:py-16"
+      >
+        <FormIdentificacion />
+      </section>
+      */}
       <section
         id="proyecto"
         aria-labelledby="project-title"

@@ -156,6 +156,34 @@ Antes de implementar o modificar cualquier funcionalidad relacionada con la gene
 * Do not introduce global state management without concrete cross-component requirements.
 
 
+## Identificación declarativa por email — Integración BFF
+
+- La identificación por correo es **declarativa**, no autentica, no verifica la titularidad y no crea sesiones ni permisos.
+- Para esta funcionalidad usar Next.js App Router como **BFF**: navegador → Route Handler del propio frontend → backend Spring Boot. No consultar Spring Boot directamente desde componentes del navegador.
+- `contracts/CONTRATO_API_IDENTIFICACION_V1.yaml` es la fuente de verdad del endpoint Spring Boot `POST /api/usuarios/identificacion`: request JSON con `email`, éxito `204 No Content`, errores `400`, `413`, `415`, `429` y `500`, sin identificadores ni datos de usuarios en la respuesta exitosa.
+- Mantener un Route Handler específico; nunca implementar un proxy abierto ni construir destinos HTTP desde valores aportados por el cliente.
+- Obtener la dirección base del backend de **`process.env.BACKEND_URL`**, exclusivamente en código del servidor. En desarrollo local configurar `BACKEND_URL=http://localhost:8080` en `.env.local`, ajustando puerto y host al backend real. Next.js carga este archivo automáticamente; no usar `NEXT_PUBLIC_` ni requerir `export` manual en la terminal. En producción configurar la misma variable en el entorno del hosting.
+- Mantener `.env.local` fuera del repositorio y no sobrescribir ni borrar otros valores existentes. Documentar solo nombres y ejemplos sin secretos en `.env.example` si corresponde. No registrar el valor de `BACKEND_URL` ni exponerlo al navegador.
+- El BFF debe validar el formato del JSON, tipo y tamaño de la solicitud antes de reenviarla; controlar tiempos de espera, traducir errores sin revelar información interna, no almacenar emails y no cachear solicitudes de identificación.
+- La dirección ingresada se normaliza totalmente a minúsculas en el backend. Comunicar antes del envío que no se garantiza compatibilidad con proveedores cuya parte local distinga mayúsculas y minúsculas. No presentar el resultado como verificación del correo.
+- No devolver `usuarioId`, correos registrados ni indicadores de existencia. No crear cookies de identidad, sesiones, autenticación, ABM de correos ni consultas de usuarios.
+- El rate limiting inicial de Spring Boot es por IP. Con un BFF, el backend puede ver IPs de salida compartidas de Next.js: no falsificar ni confiar de forma improvisada en `X-Forwarded-For`; dejar explícita la limitación hasta definir la protección de producción.
+- CORS en Spring Boot no se necesita para la llamada servidor-servidor, pero puede mantenerse configurable como parte de la portabilidad del backend. CORS no es autenticación entre servidores.
+- Los certificados HTTPS, la restricción de acceso entre servidores y la protección de infraestructura se definirán al desplegar. No ejecutar despliegues ni incorporar infraestructura adicional en esta iteración.
+- Estas reglas solo autorizan esta integración concreta; no autorizan endpoints para los scripts científicos locales ni modifican su ejecución exclusivamente manual.
+
+### Manejo de errores y validaciones de la identificación
+
+- Revisar primero la implementación ya existente antes de añadir nuevas validaciones, manejadores o abstracciones. Mantener una responsabilidad clara en cada frontera: formulario React, Route Handler BFF y backend Spring Boot.
+- Validar en el servidor incluso cuando el formulario valide para mejorar la experiencia de uso. Para la identificación, respetar `contracts/CONTRATO_API_IDENTIFICACION_V1.yaml`: email obligatorio como string, límites y sintaxis básica, rechazo de propiedades inesperadas, JSON malformado y tipo de contenido no admitido. Restringir el cuerpo a **2048 bytes durante su lectura**, sin confiar únicamente en `Content-Length`.
+- Conservar `204 No Content` estrictamente sin cuerpo. Para fallas conocidas del backend, manejar `400`, `413`, `415` y `429` de forma controlada; no retransmitir indiscriminadamente cuerpos, cabeceras o códigos ajenos. Los fallos de conectividad o respuesta inválida del upstream pueden representarse como `502` desde el BFF; los timeouts como `504`. Esos errores propios del BFF no cambian el contrato OpenAPI de Spring Boot.
+- Para errores del BFF utilizar una respuesta JSON segura y coherente (`codigo`, `mensaje`), sin correo, URL interna, stack trace, credenciales, SQL, identificadores internos ni información sobre la existencia de una cuenta. Validar `Retry-After` antes de reenviarlo cuando proceda.
+- No realizar reintentos automáticos de la identificación ante timeout o pérdida de conexión: el backend podría haber persistido la operación antes de que se perdiera su respuesta. No convertir una operación de resultado incierto en confirmación de éxito.
+- En el formulario, mantener mensajes de error accesibles, estado de carga y prevención de envíos accidentales duplicados; conservar el texto ingresado ante un fallo. Un `204` confirma el procesamiento declarativo, no la titularidad del correo ni una autenticación.
+- No persistir el correo en cookies, almacenamiento del navegador, herramientas de seguimiento o logs. No registrar cuerpos HTTP de identificación.
+- Probar de forma determinista errores de validación, límites de tamaño, rate limiting, fallos de red, timeouts, respuestas inesperadas y ausencia de filtraciones; distinguir pruebas con mocks de comprobaciones reales contra Spring Boot. Mantener el alcance restringido al frontend si esa es la iteración solicitada.
+
+
 ## Content Model
 
 For the initial version, publication data may be stored using TypeScript data structures, JSON, Markdown, MDX, or another simple repository-based format already justified by the implementation.
@@ -647,13 +675,13 @@ Unless explicitly requested, do not introduce:
 * Authentication.
 * Authorization.
 * Login or logout.
-* User accounts.
+* User accounts with authentication, sessions, profiles or private access (the explicitly requested declarative-email integration is an exception).
 * Private user areas.
 * A database.
 * A CMS.
 * An administrative panel.
 * A custom backend.
-* A custom API.
+* A custom API, except the specific BFF Route Handler required for declarative-email identification.
 * Persistent application state.
 * Global state-management libraries.
 * Middleware without a concrete current requirement.

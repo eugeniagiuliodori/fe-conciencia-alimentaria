@@ -1,0 +1,121 @@
+openapi: 3.0.3
+info:
+  title: Conciencia Alimentaria — Identificación declarativa
+  version: 1.0.0
+  description: >-
+    Contrato inicial de identificación declarativa por email. No autentica
+    ni verifica la titularidad del correo; una respuesta exitosa no concede
+    sesión, permisos ni acceso a información personal.
+paths:
+  /api/usuarios/identificacion:
+    post:
+      operationId: identificarUsuario
+      summary: Buscar o crear un usuario a partir del correo declarado
+      description: >-
+        Se eliminan los espacios externos del email y se convierte toda la
+        dirección a minúsculas con Locale.ROOT. Se busca o crea el usuario.
+        Tanto para uno existente como para uno nuevo se devuelve 204 sin
+        cuerpo, sin revelar su identificador. Esta normalización no admite
+        correctamente proveedores que distinguen mayúsculas en la parte local.
+        Se aplican controles de validación, tamaño de cuerpo y frecuencia de
+        solicitudes. Los navegadores solo pueden realizar solicitudes
+        cross-origin desde el origen configurado por FRONTEND_ORIGIN;
+        CORS no autentica ni bloquea clientes HTTP no sujetos a CORS.
+        No se verifica el buzón ni la identidad de quien llama.
+      tags:
+        - Identificación
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IdentificacionRequest'
+            example:
+              email: ' Ejemplo@Correo.COM '
+      responses:
+        '204':
+          description: >-
+            Identificación declarativa procesada (usuario existente o creado).
+            No tiene cuerpo ni entrega identificadores internos.
+        '400':
+          description: >-
+            JSON malformado, ausente, tipo incorrecto, propiedades extra o
+            email inválido (vacío, longitud o formato).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                codigo: SOLICITUD_INVALIDA
+                mensaje: 'Datos de identificación inválidos.'
+        '413':
+          description: El cuerpo HTTP excede 2048 bytes.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                codigo: SOLICITUD_DEMASIADO_GRANDE
+                mensaje: 'La solicitud supera el tamaño permitido.'
+        '415':
+          description: Se requiere Content-Type application/json.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                codigo: TIPO_CONTENIDO_NO_ADMITIDO
+                mensaje: 'Tipo de contenido no admitido.'
+        '429':
+          description: >-
+            Se excedió el límite de solicitudes por IP (valor inicial:
+            100 por minuto). La implementación puede enviar Retry-After.
+          headers:
+            Retry-After:
+              description: Segundos sugeridos antes de reintentar, si está disponible.
+              schema:
+                type: integer
+                minimum: 1
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                codigo: DEMASIADAS_SOLICITUDES
+                mensaje: 'Demasiadas solicitudes. Intentá nuevamente más tarde.'
+        '500':
+          description: Error inesperado, sin detalles internos.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                codigo: ERROR_INTERNO
+                mensaje: 'No se pudo procesar la solicitud.'
+components:
+  schemas:
+    IdentificacionRequest:
+      type: object
+      additionalProperties: false
+      required:
+        - email
+      properties:
+        email:
+          type: string
+          description: >-
+            Correo declarado. El backend recorta espacios externos, lo
+            convierte íntegramente a minúsculas y exige una sintaxis básica
+            y longitud máxima de 254 caracteres tras normalizarlo. El tamaño
+            máximo del cuerpo HTTP es 2048 bytes. No verifica titularidad.
+          maxLength: 254
+    ErrorResponse:
+      type: object
+      additionalProperties: false
+      required:
+        - codigo
+        - mensaje
+      properties:
+        codigo:
+          type: string
+        mensaje:
+          type: string
