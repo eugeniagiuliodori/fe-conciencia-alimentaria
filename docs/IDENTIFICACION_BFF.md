@@ -1,10 +1,14 @@
 # Identificación declarativa por correo
 
-El formulario «Identificación por correo» de la página principal (`/#identificacion`)
-envía JSON con `fetch` a `POST /api/usuarios/identificacion` del mismo origen.
+El componente «Identificación por correo» envía JSON con `fetch` a
+`POST /api/usuarios/identificacion` del mismo origen.
 El Route Handler en `src/app/api/usuarios/identificacion/route.ts` hace el único
 salto a Spring Boot, al path fijo del
 [contrato v1](../contracts/CONTRATO_API_IDENTIFICACION_V1.yaml).
+
+Al revisar la Iteración 8, la sección `/#identificacion` está comentada en
+`src/app/page.tsx`: el componente existe, pero actualmente no se muestra en el
+inicio. Se conserva esa decisión; las pruebas no habilitan contenido de producción.
 
 El repositorio no tiene un `serviceProxy` HTTP existente: las funciones de lectura,
 configuración y traducción de respuestas se mantienen dentro de este handler
@@ -87,8 +91,13 @@ Comprueban que un envío inicial y su repetición reciben el mismo `204` vacío,
 inferir si el backend creó un registro. Incluyen caracteres de control, `charset`
 UTF-8 con y sin comillas, límites con `Content-Length` correcto o no fiable y una
 sola llamada upstream por solicitud, incluso ante errores.
+También comprueban que un cuerpo upstream incompleto se descarta sin consumirlo
+ni esperar una cancelación que no termina. Los errores públicos deben tener
+`Content-Type: application/json`, solo `codigo` y `mensaje`, y no divulgar SQL,
+trazas, configuración ni diagnósticos sintéticos en el cuerpo o los encabezados.
 No requieren Spring Boot, base de datos ni credenciales. Las solicitudes y
-respuestas son sintéticas y no consumen servicios reales.
+respuestas son sintéticas y no consumen servicios reales. No cargan `.env.local`;
+cada test restaura el entorno y los mocks al terminar.
 
 Comprobaciones del repositorio:
 
@@ -110,8 +119,11 @@ Prueba de navegador con Chrome instalado, después del build:
 node scripts/playwright/identificacion.mjs
 ```
 
-Inicia Next.js y un upstream simulado en puertos locales temporales, sin modificar
-`.env.local`, y cierra ambos al terminar. Recorre el formulario y el BFF real con
+Inicia una copia temporal del build de Next.js y un upstream simulado en puertos
+locales temporales. El servidor de prueba recibe solo el entorno mínimo y el
+destino del mock; no hereda credenciales ni carga los `.env*` del repositorio.
+Reutiliza las dependencias instaladas y los recursos públicos. Cierra ambos
+servidores y elimina su copia temporal al terminar. Recorre el formulario y el BFF con
 éxito, carga, errores y los timeouts nativos de 5 y 10 segundos; comprueba
 preservación del correo tras cada error y ausencia de reintentos en ambas
 fronteras, además de teclado y anchos entre 320 y 1536 px,
@@ -120,9 +132,17 @@ informa su ruta. Bloquea solicitudes externas del navegador y simula el tracking
 existente para no escribir en Redis. Esto sigue siendo una integración controlada,
 no una prueba de Spring Boot ni PostgreSQL.
 
+La prueba exige encontrar el formulario en el inicio. Con la sección comentada,
+falla al buscarlo y los escenarios posteriores de UI quedan sin ejecutar. Esa
+limitación se informa como fallo; no se omiten las aserciones ni se monta un
+formulario distinto para presentar la integración como aprobada. Antes de buscar
+el formulario, comprueba por HTTP que el BFF usa el upstream simulado y conserva
+el `204` vacío; esa comprobación puede pasar aunque la prueba de UI falle.
+
 ## Límite pendiente para despliegue
 
-Spring Boot parte de **10 solicitudes por minuto por IP**. Con el BFF puede ver la
+El contrato vigente indica **100 solicitudes por minuto por IP** como límite
+inicial de Spring Boot. Con el BFF puede ver la
 IP de salida compartida de Next.js y **agrupar a múltiples usuarias en un mismo
 límite**. No se falsifica `X-Forwarded-For` ni se cambia la confianza en proxies.
 La adecuación del límite y la protección de infraestructura requieren una futura

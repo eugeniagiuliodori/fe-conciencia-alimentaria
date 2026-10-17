@@ -4,6 +4,14 @@ import { POST } from "../../src/app/api/usuarios/identificacion/route.ts";
 
 const originalBackendUrl = process.env.BACKEND_URL;
 const validBody = JSON.stringify({ email: " Persona@Example.COM " });
+const privateDiagnostic = JSON.stringify({
+  email: "Persona@Example.COM",
+  usuarioId: "synthetic-user-id",
+  backend: "http://backend.test:8080",
+  sql: "SELECT email FROM Usuario",
+  stack: "java.lang.IllegalStateException at IdentificacionService.java:42",
+  password: "synthetic-secret",
+});
 
 beforeEach((t) => {
   process.env.BACKEND_URL = "http://backend.test:8080";
@@ -29,11 +37,14 @@ async function assertError(response, status, codigo) {
   assert.equal(response.status, status);
   assert.equal(response.headers.get("cache-control"), "no-store");
   assert.equal(response.headers.get("set-cookie"), null);
+  assert.match(response.headers.get("content-type"), /^application\/json\b/);
   const body = await response.json();
   assert.deepEqual(Object.keys(body).sort(), ["codigo", "mensaje"]);
   assert.equal(body.codigo, codigo);
   assert.equal(typeof body.mensaje, "string");
-  assert.doesNotMatch(JSON.stringify(body), /synthetic-secret|usuarioId|backend\.test|Persona@/);
+  assert.ok(body.mensaje.trim().length > 0);
+  const publicResponse = JSON.stringify({ headers: Object.fromEntries(response.headers), body });
+  assert.doesNotMatch(publicResponse, /synthetic-secret|synthetic-user-id|usuarioId|backend\.test|Persona@|SELECT|Usuario|java\.lang|IdentificacionService|password|stack/);
 }
 
 test("primer envío y repetición reciben el mismo 204 vacío del upstream simulado", async (t) => {
@@ -199,7 +210,7 @@ test("rechaza UTF-8 inválido y errores de lectura sin exponer su diagnóstico",
 
 test("mapea 400, 413 y 415 sin copiar cuerpos ni encabezados arbitrarios del upstream", async (t) => {
   for (const [status, codigo] of [[400, "SOLICITUD_INVALIDA"], [413, "SOLICITUD_DEMASIADO_GRANDE"], [415, "TIPO_CONTENIDO_NO_ADMITIDO"]]) {
-    t.mock.method(globalThis, "fetch", async () => new Response("synthetic-secret usuarioId=123", {
+    t.mock.method(globalThis, "fetch", async () => new Response(privateDiagnostic, {
       status,
       headers: { "Set-Cookie": "identity=synthetic-secret", "Retry-After": "60", "X-Backend-Token": "synthetic-secret" },
     }));
@@ -229,7 +240,7 @@ test("429 conserva solo Retry-After expresado en segundos enteros positivos vál
 
 test("5xx, redirecciones y éxitos distintos de 204 nunca se presentan como éxito", async (t) => {
   for (const status of [200, 201, 301, 302, 307, 308, 401, 404, 500, 502, 503, 504]) {
-    t.mock.method(globalThis, "fetch", async () => new Response('{"usuarioId":"synthetic-secret"}', {
+    t.mock.method(globalThis, "fetch", async () => new Response(privateDiagnostic, {
       status, headers: { Location: "http://untrusted.test", "Set-Cookie": "identity=synthetic-secret" },
     }));
     const response = await POST(request());
@@ -239,10 +250,29 @@ test("5xx, redirecciones y éxitos distintos de 204 nunca se presentan como éxi
   }
 });
 
+test("descarta un cuerpo upstream incompleto sin leerlo ni esperar su cancelación", { timeout: 1000 }, async (t) => {
+  let reads = 0;
+  let cancelled = false;
+  const body = new ReadableStream({
+    // Simula un servicio que envió las cabeceras pero nunca termina el cuerpo.
+    pull() { reads += 1; },
+    cancel() {
+      cancelled = true;
+      return new Promise(() => {});
+    },
+  }, { highWaterMark: 0 });
+  t.mock.method(globalThis, "fetch", async () => new Response(body, { status: 500 }));
+
+  await assertError(await POST(request()), 502, "SERVICIO_NO_DISPONIBLE");
+  assert.equal(reads, 0);
+  assert.equal(cancelled, true);
+  assert.equal(fetch.mock.callCount(), 1);
+});
+
 test("fallo de red devuelve 502 sin logs, IDs ni secretos", async (t) => {
   const logs = ["log", "error", "warn"].map((method) => t.mock.method(console, method));
   t.mock.method(globalThis, "fetch", async () => {
-    throw new Error("synthetic-secret usuarioId=123 http://backend.test");
+    throw new Error(privateDiagnostic);
   });
   await assertError(await POST(request()), 502, "SERVICIO_NO_DISPONIBLE");
   assert.equal(fetch.mock.callCount(), 1);

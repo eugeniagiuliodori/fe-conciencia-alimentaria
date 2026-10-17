@@ -761,6 +761,18 @@ Before finalizing code changes:
 * Report commands that fail or cannot be executed.
 * Do not modify unrelated code merely to make unrelated validation pass.
 
+### Tests básicos de la identificación declarativa (Iteración 8)
+
+- Antes de crear tests, inspeccionar los tests existentes, su configuración, los scripts reales de `package.json` y los cambios pendientes; reutilizar los patrones y utilidades ya incorporados. No duplicar cobertura ni introducir una segunda infraestructura de pruebas.
+- Priorizar tests automatizados, deterministas y mantenibles del Route Handler BFF, las validaciones de entrada, el mapeo de errores y, cuando resulte pertinente con el entorno de pruebas disponible, el comportamiento observable del formulario. Probar resultados y contratos, no detalles internos frágiles.
+- Respetar `contracts/CONTRATO_API_IDENTIFICACION_V1.yaml`: `204` sin cuerpo; errores de validación (`400`, `413`, `415`); tratamiento de `429`; fallos de comunicación, timeouts y respuestas inesperadas. Verificar que no se revelan datos personales ni internos y que no existen reintentos automáticos del POST.
+- Simular exclusivamente la dependencia HTTP de Spring Boot en los tests aislados del frontend; usar emails sintéticos y nunca credenciales reales. Las pruebas automatizadas no deben depender de PostgreSQL, internet, servicios externos en ejecución ni de `.env.local` real.
+- Preservar el aislamiento de variables de entorno, mocks y estado entre tests. Verificar explícitamente la ausencia de fugas de `BACKEND_URL` y de identificadores internos en las respuestas cuando sea relevante.
+- Añadir tests del formulario solo si aportan valor y se pueden mantener con las herramientas existentes. Si se necesita una dependencia de testing nueva, justificarla previamente y limitarla al alcance real; no crear utilidades o abstracciones genéricas innecesarias.
+- Distinguir tests unitarios/de integración local con mocks de una verificación extremo a extremo contra Spring Boot real. Esta última no es requisito para dar por completada la Iteración 8 del frontend y no debe afirmarse si no se ejecutó.
+- Registrar las pruebas realizadas y sus resultados, casos que continúan sin cobertura, limitaciones de ejecución y cualquier problema de producción encontrado. No alterar contratos ni lógica funcional solamente para hacer pasar una prueba; corregir defectos reales de alcance estrecho e informar discrepancias que exijan decisiones posteriores.
+- Estas reglas no cambian el alcance manual y aislado de los scripts científicos ni autorizan modificaciones en el backend.
+
 ### Validation of local scientific-ficha scripts
 
 * Use deterministic tests with mocked retrieval/model responses (Node built-in `node:test` where appropriate), never live API consumption as a requirement of automatic tests.

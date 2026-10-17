@@ -2,13 +2,15 @@ import assert from "node:assert/strict";
 import { spawn } from "node:child_process";
 import { once } from "node:events";
 import { createServer } from "node:http";
-import { mkdtemp } from "node:fs/promises";
+import { cp, mkdtemp, rm, symlink } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { setTimeout as delay } from "node:timers/promises";
+import { fileURLToPath } from "node:url";
 import { chromium } from "playwright";
 
 // Requiere npm run build y Chrome instalado. Solo usa servicios locales propios.
+const repository = fileURLToPath(new URL("../../", import.meta.url));
 const fixtureEmail = "Persona@Example.test";
 const received = [];
 let mode = 204;
@@ -55,7 +57,21 @@ async function waitUntil(check, message) {
 
 let app;
 let browser;
+let testAppDirectory;
 try {
+  // Ejecutar el build existente fuera del repositorio impide cargar sus .env*.
+  // La copia también aísla las escrituras de caché del servidor de prueba.
+  testAppDirectory = await mkdtemp(path.join(tmpdir(), "conciencia-identificacion-app-"));
+  for (const file of ["package.json", "next.config.ts", ".next"]) {
+    await cp(path.join(repository, file), path.join(testAppDirectory, file), {
+      recursive: true,
+      filter: (source) => source !== path.join(repository, ".next/cache"),
+    });
+  }
+  for (const directory of ["node_modules", "public"]) {
+    await symlink(path.join(repository, directory), path.join(testAppDirectory, directory), "dir");
+  }
+
   const upstreamPort = await listen(upstream);
   const reservation = createServer();
   const appPort = await listen(reservation);
@@ -64,10 +80,16 @@ try {
   const backendOrigin = `http://127.0.0.1:${upstreamPort}`;
 
   app = spawn(process.execPath, [
-    path.resolve("node_modules/next/dist/bin/next"),
+    path.join(repository, "node_modules/next/dist/bin/next"),
     "start", "--hostname", "127.0.0.1", "--port", String(appPort),
   ], {
-    env: { ...process.env, BACKEND_URL: backendOrigin, NEXT_TELEMETRY_DISABLED: "1" },
+    cwd: testAppDirectory,
+    env: {
+      PATH: process.env.PATH,
+      NODE_ENV: "production",
+      BACKEND_URL: backendOrigin,
+      NEXT_TELEMETRY_DISABLED: "1",
+    },
     stdio: "ignore",
   });
   await waitUntil(async () => {
@@ -80,6 +102,21 @@ try {
       return false;
     }
   }, "Next.js no inició dentro del tiempo de espera");
+
+  // Comprobar el BFF por HTTP antes de depender de la presencia de la UI.
+  const noContent = await fetch(`${origin}/api/usuarios/identificacion`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email: fixtureEmail }),
+    signal: AbortSignal.timeout(10_000),
+  });
+  assert.equal(noContent.status, 204);
+  assert.equal(noContent.body, null);
+  assert.equal(await noContent.text(), "");
+  assert.equal(received.length, 1, "El BFF debe usar exclusivamente el upstream simulado");
+  assert.equal(received[0].url, "/api/usuarios/identificacion");
+  assert.deepEqual(received[0].body, { email: fixtureEmail });
+  console.log("OK: Next.js → upstream HTTP simulado; destino fijo y 204 vacío.");
 
   browser = await chromium.launch({ channel: "chrome", headless: true });
   const context = await browser.newContext({ serviceWorkers: "block" });
@@ -149,7 +186,7 @@ try {
   await input.fill("sin-arroba");
   await submit.click();
   assert.equal(await input.evaluate((element) => element.validity.typeMismatch), true);
-  assert.equal(received.length, 0);
+  assert.equal(received.length, 1);
 
   mode = "defer";
   await input.fill(fixtureEmail);
@@ -161,7 +198,7 @@ try {
   assert.equal(await input.evaluate((element) => element.readOnly), true);
   await input.press("Enter");
   await waitUntil(() => !!deferredResponse, "El BFF no alcanzó el upstream simulado");
-  assert.equal(received.length, 1);
+  assert.equal(received.length, 2);
   deferredResponse.writeHead(204, { "Set-Cookie": "identity=synthetic-secret", "X-User-Id": "synthetic-secret" });
   deferredResponse.end();
   const success = await successResponse;
@@ -173,18 +210,6 @@ try {
   assert.match(await form.getByRole("status").innerText(), /No se verificó la titularidad del correo ni se inició una sesión/);
   assert.equal(await input.inputValue(), "");
   assert.equal(submissions, 1);
-
-  // Verificar el cuerpo por HTTP sin depender del buffer de respuestas de CDP.
-  mode = 204;
-  const noContent = await fetch(`${origin}/api/usuarios/identificacion`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email: fixtureEmail }),
-    signal: AbortSignal.timeout(10_000),
-  });
-  assert.equal(noContent.status, 204);
-  assert.equal(noContent.body, null);
-  assert.equal(await noContent.text(), "");
 
   for (const [upstreamMode, expectedStatus, message] of [
     [400, 400, "formato válido"],
@@ -276,4 +301,5 @@ try {
   }
   upstream.closeAllConnections();
   await new Promise((resolve) => upstream.close(resolve));
+  if (testAppDirectory) await rm(testAppDirectory, { recursive: true, force: true });
 }
