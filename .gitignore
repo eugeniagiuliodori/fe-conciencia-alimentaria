@@ -9,3 +9,5 @@ reports/
 /data/fichas/
 /data/raw/
 /integration/backend/
+/integration/backend/*.jar
+/integration/backend/*.yml
