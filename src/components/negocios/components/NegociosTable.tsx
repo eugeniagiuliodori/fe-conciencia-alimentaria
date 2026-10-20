@@ -133,7 +133,10 @@ export function NegociosTable({
       try {
         const datos =
           await getRangoNegocios({
-            ...filtros,
+            divisionId: filtros.divisionId,
+            ciudad: filtros.ciudad,
+            estadoProductosOrganicos:
+              filtros.estadoProductosOrganicos,
             offset,
             limit:
               filasPorPagina,

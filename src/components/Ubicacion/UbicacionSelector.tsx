@@ -1,6 +1,5 @@
 "use client";
 
-import { PaisSelect } from "@/components/Ubicacion/Pais/PaisSelect";
 import { DivisionSelect } from "@/components/Ubicacion/DivisionGeografica/DivisionSelect";
 import { CiudadSelect } from "@/components/Ubicacion/Ciudad/CiudadSelect";
 

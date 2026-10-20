@@ -112,6 +112,9 @@ function backendEndpoint(): URL | null {
     const base = new URL(process.env.BACKEND_URL ?? "");
     if (
       !["http:", "https:"].includes(base.protocol) ||
+      (base.protocol === "http:" &&
+        (process.env.NODE_ENV === "production" ||
+          !["localhost", "127.0.0.1", "[::1]"].includes(base.hostname))) ||
       base.username ||
       base.password ||
       base.pathname !== "/" ||
@@ -141,6 +144,8 @@ export async function POST(request: Request): Promise<Response> {
 
   const endpoint = backendEndpoint();
   if (!endpoint) return errorResponse(503);
+  const serviceSecret = process.env.BFF_SERVICE_SECRET;
+  if (!serviceSecret?.trim()) return errorResponse(503);
 
   const signal = AbortSignal.timeout(BACKEND_TIMEOUT_MS);
   let upstream: Response;
@@ -150,6 +155,7 @@ export async function POST(request: Request): Promise<Response> {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
+        "X-Service-Token": serviceSecret,
       },
       body: JSON.stringify({ email }),
       cache: "no-store",
@@ -179,6 +185,11 @@ export async function POST(request: Request): Promise<Response> {
     upstream.status === 415
   ) {
     return errorResponse(upstream.status);
+  }
+
+  // Un 401/403 del backend es un rechazo de la credencial técnica, no del email.
+  if (upstream.status === 401 || upstream.status === 403) {
+    return errorResponse(502);
   }
 
   // Incluye errores 5xx, redirecciones y respuestas exitosas fuera del contrato.

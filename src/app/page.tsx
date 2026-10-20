@@ -25,7 +25,7 @@ export default function Home() {
     : "/images/publicaciones/noticiadeldia/iconnoticia.png";
 
      const NoticiaLinkSrc = existeNoticia
-    ? "https://doi.org/10.3389/fnut.2026.1818522"
+    ? "https://doi.org/10.1038/s41415-026-0002-3"
     : "/images/publicaciones/noticiadeldia/empty.png";
 
     const menuSugeridoPath = path.join(
@@ -117,9 +117,12 @@ export default function Home() {
                 sm:p-4
               "
             >
-              <img
+              <Image
                 src="/images/sugerencias/tu-opinion-importante.png"
                 alt="Tu opinión es importante. Aporta y ayuda a mejorar."
+                width={1383}
+                height={1137}
+                sizes="(min-width: 768px) 33vw, 100vw"
                 className="
                   h-full w-full
                   object-cover
@@ -203,13 +206,13 @@ export default function Home() {
             <div className="flex flex-col md:flex-row w-full md:max-w:lg items-center md:items-start justify-between ">
             <div className="text-xl py-6 w-full md:w-fit text-center">🌿</div>
             <div className="flex w-50 md:w-30 flex-col items-center justify-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-2 py-2 text-center shadow-sm">
-              <a
+              <Link
                 href="/recetas"
                 rel="noopener noreferrer"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-subaccent px-2 py-2 text-sm font-semibold text-white transition hover:bg-[#354B2B] sm:w-auto"
               >
                 <span>Recetas</span>
-              </a>
+              </Link>
             </div>
             <div className="text-xl py-6 w-full md:w-fit text-center">🌿</div>
             <div className="flex w-50 md:w-30 flex-col items-center justify-center rounded-2xl border border-[#D8D0BE] bg-[#EEF0DC]/60 px-2 py-2 text-center shadow-sm">

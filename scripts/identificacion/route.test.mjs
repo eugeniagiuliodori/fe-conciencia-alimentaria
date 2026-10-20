@@ -1,8 +1,14 @@
 import assert from "node:assert/strict";
+import { once } from "node:events";
+import { createServer } from "node:http";
 import { afterEach, beforeEach, test } from "node:test";
 import { POST } from "../../src/app/api/usuarios/identificacion/route.ts";
 
 const originalBackendUrl = process.env.BACKEND_URL;
+const originalServiceSecret = process.env.BFF_SERVICE_SECRET;
+const originalNodeEnv = process.env.NODE_ENV;
+const nativeFetch = globalThis.fetch;
+const testServiceSecret = "synthetic-test-service-token";
 const validBody = JSON.stringify({ email: " Persona@Example.COM " });
 const privateDiagnostic = JSON.stringify({
   email: "Persona@Example.COM",
@@ -14,7 +20,9 @@ const privateDiagnostic = JSON.stringify({
 });
 
 beforeEach((t) => {
-  process.env.BACKEND_URL = "http://backend.test:8080";
+  process.env.BACKEND_URL = "https://backend.test:8080";
+  process.env.BFF_SERVICE_SECRET = testServiceSecret;
+  process.env.NODE_ENV = "test";
   t.mock.method(globalThis, "fetch", async () => {
     throw new Error("Unexpected upstream call in a controlled test");
   });
@@ -23,6 +31,10 @@ beforeEach((t) => {
 afterEach(() => {
   if (originalBackendUrl === undefined) delete process.env.BACKEND_URL;
   else process.env.BACKEND_URL = originalBackendUrl;
+  if (originalServiceSecret === undefined) delete process.env.BFF_SERVICE_SECRET;
+  else process.env.BFF_SERVICE_SECRET = originalServiceSecret;
+  if (originalNodeEnv === undefined) delete process.env.NODE_ENV;
+  else process.env.NODE_ENV = originalNodeEnv;
 });
 
 function request(body = validBody, headers = {}, url = "http://frontend.test/api/usuarios/identificacion") {
@@ -45,17 +57,20 @@ async function assertError(response, status, codigo) {
   assert.ok(body.mensaje.trim().length > 0);
   const publicResponse = JSON.stringify({ headers: Object.fromEntries(response.headers), body });
   assert.doesNotMatch(publicResponse, /synthetic-secret|synthetic-user-id|usuarioId|backend\.test|Persona@|SELECT|Usuario|java\.lang|IdentificacionService|password|stack/);
+  assert.equal(publicResponse.includes(testServiceSecret), false);
 }
 
 test("primer envío y repetición reciben el mismo 204 vacío del upstream simulado", async (t) => {
   const upstreamFetch = t.mock.method(globalThis, "fetch", async (url, options) => {
-    assert.equal(String(url), "http://backend.test:8080/api/usuarios/identificacion");
+    assert.equal(String(url), "https://backend.test:8080/api/usuarios/identificacion");
     assert.equal(options.method, "POST");
     assert.deepEqual(JSON.parse(options.body), { email: "Persona@Example.COM" });
     assert.deepEqual(options.headers, {
       "Content-Type": "application/json",
       Accept: "application/json",
+      "X-Service-Token": testServiceSecret,
     });
+    assert.equal(Object.keys(options.headers).filter((name) => name.toLowerCase() === "x-service-token").length, 1);
     assert.equal(options.cache, "no-store");
     assert.equal(options.credentials, "omit");
     assert.equal(options.redirect, "manual");
@@ -78,6 +93,7 @@ test("primer envío y repetición reciben el mismo 204 vacío del upstream simul
       Authorization: "Bearer synthetic-secret",
       "X-Forwarded-For": "192.0.2.1",
       "X-Backend-Url": "http://untrusted.test",
+      "X-Service-Token": "forged-client-token",
       Host: "untrusted.test",
     }, "http://frontend.test/api/usuarios/identificacion?url=http://untrusted.test"));
 
@@ -239,7 +255,7 @@ test("429 conserva solo Retry-After expresado en segundos enteros positivos vál
 });
 
 test("5xx, redirecciones y éxitos distintos de 204 nunca se presentan como éxito", async (t) => {
-  for (const status of [200, 201, 301, 302, 307, 308, 401, 404, 500, 502, 503, 504]) {
+  for (const status of [200, 201, 301, 302, 307, 308, 404, 500, 502, 503, 504]) {
     t.mock.method(globalThis, "fetch", async () => new Response(privateDiagnostic, {
       status, headers: { Location: "http://untrusted.test", "Set-Cookie": "identity=synthetic-secret" },
     }));
@@ -247,6 +263,57 @@ test("5xx, redirecciones y éxitos distintos de 204 nunca se presentan como éxi
     assert.equal(response.headers.get("location"), null);
     await assertError(response, 502, "SERVICIO_NO_DISPONIBLE");
     assert.equal(fetch.mock.callCount(), 1);
+  }
+});
+
+test("401 y 403 del backend se traducen a error técnico sin filtrar la respuesta", async (t) => {
+  const logs = ["log", "error", "warn"].map((method) => t.mock.method(console, method));
+  for (const status of [401, 403]) {
+    t.mock.method(globalThis, "fetch", async () => new Response(privateDiagnostic, {
+      status,
+      headers: { "X-Service-Token": testServiceSecret, "Set-Cookie": "identity=synthetic-secret" },
+    }));
+    await assertError(await POST(request()), 502, "SERVICIO_NO_DISPONIBLE");
+    assert.equal(fetch.mock.callCount(), 1);
+  }
+  for (const log of logs) assert.equal(log.mock.callCount(), 0);
+});
+
+test("una redirección local no reenvía la credencial técnica al destino", async (t) => {
+  let destinationVisited = false;
+  let sourceReceivedToken = false;
+  const destination = createServer((_request, response) => {
+    destinationVisited = true;
+    response.writeHead(204).end();
+  });
+  const source = createServer((incoming, response) => {
+    const tokenHeaders = [];
+    for (let index = 0; index < incoming.rawHeaders.length; index += 2) {
+      if (incoming.rawHeaders[index].toLowerCase() === "x-service-token") {
+        tokenHeaders.push(incoming.rawHeaders[index + 1]);
+      }
+    }
+    sourceReceivedToken = tokenHeaders.length === 1 && tokenHeaders[0] === testServiceSecret;
+    response.writeHead(307, { Location: `http://127.0.0.1:${destination.address().port}/redirected` }).end();
+  });
+  try {
+    destination.listen(0, "127.0.0.1");
+    await once(destination, "listening");
+    source.listen(0, "127.0.0.1");
+    await once(source, "listening");
+    process.env.BACKEND_URL = `http://127.0.0.1:${source.address().port}`;
+    t.mock.method(globalThis, "fetch", (...args) => nativeFetch(...args));
+    await assertError(await POST(request()), 502, "SERVICIO_NO_DISPONIBLE");
+    assert.equal(sourceReceivedToken, true);
+    assert.equal(destinationVisited, false);
+    assert.equal(fetch.mock.callCount(), 1);
+  } finally {
+    source.closeAllConnections();
+    destination.closeAllConnections();
+    await Promise.all([
+      new Promise((resolve) => source.close(resolve)),
+      new Promise((resolve) => destination.close(resolve)),
+    ]);
   }
 });
 
@@ -315,4 +382,28 @@ test("BACKEND_URL ausente o inválida devuelve 503 sin buscar otro destino", asy
     await assertError(await POST(request()), 503, "SERVICIO_NO_DISPONIBLE");
   }
   assert.equal(fetch.mock.callCount(), 0);
+});
+
+test("BFF_SERVICE_SECRET ausente o vacío devuelve 503 sin llamar al backend", async () => {
+  for (const value of [undefined, "", " ", " \t "]) {
+    if (value === undefined) delete process.env.BFF_SERVICE_SECRET;
+    else process.env.BFF_SERVICE_SECRET = value;
+    await assertError(await POST(request()), 503, "SERVICIO_NO_DISPONIBLE");
+  }
+  assert.equal(fetch.mock.callCount(), 0);
+});
+
+test("HTTP queda limitado a loopback fuera de producción", async (t) => {
+  t.mock.method(globalThis, "fetch", async (endpoint) => {
+    assert.equal(new URL(endpoint).hostname, "localhost");
+    return new Response(null, { status: 204 });
+  });
+  process.env.BACKEND_URL = "http://localhost:8080";
+  assert.equal((await POST(request())).status, 204);
+  process.env.NODE_ENV = "production";
+  await assertError(await POST(request()), 503, "SERVICIO_NO_DISPONIBLE");
+  process.env.NODE_ENV = "test";
+  process.env.BACKEND_URL = "http://backend.test:8080";
+  await assertError(await POST(request()), 503, "SERVICIO_NO_DISPONIBLE");
+  assert.equal(fetch.mock.callCount(), 1);
 });

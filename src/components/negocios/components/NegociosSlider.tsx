@@ -115,7 +115,10 @@ export function NegociosSlider({
       try {
         const datos =
           await getRangoNegocios({
-            ...filtros,
+            divisionId: filtros.divisionId,
+            ciudad: filtros.ciudad,
+            estadoProductosOrganicos:
+              filtros.estadoProductosOrganicos,
             offset: indiceSlider,
             limit: 1,
           });

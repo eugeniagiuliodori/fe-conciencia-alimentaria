@@ -127,12 +127,14 @@ function coincideConFiltros(
 function convertirANegocioPublico(
   negocio: NegocioNaturista,
 ): NegocioPublico {
+  /* eslint-disable @typescript-eslint/no-unused-vars -- Se excluyen estos metadatos internos de la respuesta pública. */
   const {
     fuentes: _fuentes,
     observaciones:
       _observaciones,
     ...publico
   } = negocio;
+  /* eslint-enable @typescript-eslint/no-unused-vars */
 
   return publico;
 }

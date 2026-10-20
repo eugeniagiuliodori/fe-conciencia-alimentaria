@@ -96,8 +96,7 @@ export function PublicationsSection() {
     };
   }, [
     responsiveReady,
-    rango.offset,
-    rango.limit,
+    rango,
   ]);
 
   const publicacionesVisibles =

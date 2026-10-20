@@ -4,13 +4,19 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:integracion": "node scripts/identificacion/dev-integracion.mjs",
+    "test:integracion": "node scripts/identificacion/test-integracion.mjs",
+    "test:fichas": "node --test scripts/fichas/*.test.mjs",
+    "test:identificacion": "node --test scripts/identificacion/*.test.mjs",
+    "test:ci": "npm run test:fichas && npm run test:identificacion",
+    "prebuild": "npm run test:ci",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test:fichas": "node --test scripts/fichas/*.test.mjs",
     "report:visits": "node --env-file=.env.local scripts/generate-visit-report.mjs",
     "geo:normalize": "tsx scripts/normalizar-geografia.ts",
-    "negocios:normalize": "tsx scripts/normalizar-negocios-naturistas.ts"
+    "negocios:normalize": "tsx scripts/normalizar-negocios-naturistas.ts",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@upstash/qstash": "^2.11.3",

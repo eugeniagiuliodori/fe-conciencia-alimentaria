@@ -1,6 +1,4 @@
 import { NegociosNaturistas } from "@/components/negocios/NegociosNaturistas";
-import Image from "next/image";
-
 import Link from "next/link";
 
 export default async function Comercios_naturistas_argPage() {

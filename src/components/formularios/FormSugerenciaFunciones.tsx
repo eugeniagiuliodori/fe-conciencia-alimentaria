@@ -44,7 +44,7 @@ export function FormSugerenciaFunciones() {
             required
             className="h-4 w-4 shrink-0 accent-[#49633B]"
           />
-          <span>Mostrar información relacionada a 'alimentación' del cuerpo más allá de los alimentos</span>
+          <span>Mostrar información relacionada a &apos;alimentación&apos; del cuerpo más allá de los alimentos</span>
         </label>
 
         <label
@@ -64,7 +64,7 @@ export function FormSugerenciaFunciones() {
              value="Opcion2"
             className="h-4 w-4 shrink-0 accent-[#49633B]"
           />
-          <span>Mostrar información relacionada a 'alimentación nutritiva'</span>
+          <span>Mostrar información relacionada a &apos;alimentación nutritiva&apos;</span>
         </label>
 
         <label

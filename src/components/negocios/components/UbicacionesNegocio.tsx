@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import type {
   NegocioPublico,
 } from "@/types/negocios";
@@ -103,10 +105,14 @@ export function UbicacionesNegocio({
               <div className="flex flex-wrap gap-2 pt-1">
                 {ubicacion.imagenes.map(
                   (imagen) => (
-                    <img
+                    <Image
                       key={imagen}
                       src={imagen}
                       alt=""
+                      width={56}
+                      height={56}
+                      unoptimized
+                      loading="eager"
                       className="
                         h-14 w-14
                         rounded-lg

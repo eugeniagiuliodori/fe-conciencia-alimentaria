@@ -25,9 +25,7 @@ export function NegociosNaturistas() {
       ciudad || undefined,
   };
 
-  function handlePaisChange(
-    _nuevoPaisId: string,
-  ) {
+  function handlePaisChange() {
     setDivisionId("");
     setCiudad("");
   }

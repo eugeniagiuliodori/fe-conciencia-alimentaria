@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import type {
   NegocioPublico,
 } from "@/types/negocios";
@@ -15,9 +17,13 @@ export function NombreNegocio({
   return (
     <div className="space-y-3">
       {negocio.logoOficialUrl && (
-        <img
+        <Image
           src={negocio.logoOficialUrl}
           alt={`Logo de ${nombre}`}
+          width={48}
+          height={48}
+          unoptimized
+          loading="eager"
           className="
             h-12 w-12
             rounded-xl
