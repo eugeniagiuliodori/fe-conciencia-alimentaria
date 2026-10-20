@@ -25,8 +25,9 @@ export async function readableIntegrationFile(root, configured, label) {
   try {
     const actual = await realpath(path);
     const info = await stat(actual);
-    await access(actual, constants.R_OK);
     if (!info.isFile()) fail(`${label} debe ser un archivo legible.`);
+    if ((info.mode & 0o444) === 0) fail(`${label} debe ser un archivo legible.`);
+    await access(actual, constants.R_OK);
     const publicPath = resolve(root, "public");
     const actualPublicPath = await realpath(publicPath).catch(() => publicPath);
     if (inside(publicPath, path) || inside(actualPublicPath, actual)) {
