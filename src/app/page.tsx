@@ -7,7 +7,7 @@ import { PublicationsSection } from "@/components/publicaciones/PublicationsSect
 import {MensajeDelDia} from "@/components/mensajediario/ModalDelDia";
 import { FormSugerenciaFunciones } from "@/components/formularios/FormSugerenciaFunciones";
 import { FormSugerenciaGeneral } from "@/components/formularios/FormSugerenciaGeneral";
-import { FormIdentificacion } from "@/components/formularios/FormIdentificacion";
+import { IdentificationModal } from "@/components/identificacion/IdentificationModal";
 
 export default function Home() {
 
@@ -25,7 +25,7 @@ export default function Home() {
     : "/images/publicaciones/noticiadeldia/iconnoticia.png";
 
      const NoticiaLinkSrc = existeNoticia
-    ? "https://doi.org/10.1038/s41415-026-0002-3"
+    ? "https://doi.org/10.1007/s00394-026-04114-4"
     : "/images/publicaciones/noticiadeldia/empty.png";
 
     const menuSugeridoPath = path.join(
@@ -52,7 +52,9 @@ export default function Home() {
         aria-labelledby="intro-title"
         className="site-container grid items-center gap-10 py-12 sm:py-16 lg:grid-cols-2 lg:gap-16 lg:py-20"
       >
-        <div className="flex flex-col">
+         <div className="flex ">
+           
+        <div className="flex flex-col max-h-full">
           <p className="mb-5 text-xs font-semibold tracking-[0.16em] text-accent uppercase">
             Un espacio para aprender
           </p>
@@ -83,6 +85,10 @@ export default function Home() {
           </a>
           <MensajeDelDia />
           </div>
+           </div>
+      <IdentificationModal/>
+           
+                 
         </div>
         <div className="overflow-hidden rounded-3xl bg-transparent">
           <Image
@@ -239,14 +245,7 @@ export default function Home() {
           </div>
       </section>
       <PublicationsSection/>
-      {/*<section
-        id="identificacion"
-        aria-labelledby="identificacion-title"
-        className="site-container border-t border-line py-12 sm:py-16"
-      >
-        <FormIdentificacion />
-      </section>
-      */}
+
       <section
         id="proyecto"
         aria-labelledby="project-title"

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { RegistroModal } from "../identificacion/RegistroModal";
 
 function errorMessage(status: number): string {
   switch (status) {
@@ -25,10 +26,13 @@ function errorMessage(status: number): string {
 export function FormIdentificacion() {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [feedback, setFeedback] = useState<{
+  const [, setFeedback] = useState<{
     kind: "success" | "error";
     message: string;
   } | null>(null);
+  
+  const [openRegister, setOpenRegister] = useState(false);
+
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -75,11 +79,40 @@ export function FormIdentificacion() {
       action="/api/usuarios/identificacion"
       method="POST"
       autoComplete="off"
-      onSubmit={handleSubmit}
+      /*onSubmit={handleSubmit}*/
       aria-labelledby="identificacion-title"
       aria-busy={isSubmitting}
-      className="mx-auto w-full max-w-2xl rounded-3xl border border-line bg-surface p-5 shadow-sm sm:p-6"
+      className="max-h-[21rem] flex flex-col justify-between gap-4 mx-auto w-full max-w-2xl rounded-3xl border border-line bg-surface  shadow-sm sm:p-6"
     >
+        {openRegister ? (
+        <div className="relative w-full max-w-[650px]">
+          <button
+            type="button"
+            onClick={() => setOpenRegister(false)}
+            aria-label="Volver al formulario"
+            className="
+              absolute right-3 top-3 z-10
+              flex h-10 w-10
+              items-center justify-center
+              rounded-full
+              bg-white/90
+              text-xl text-accent
+              shadow-md
+              transition-colors
+              hover:bg-white
+              focus-visible:outline-none
+              focus-visible:ring-2
+              focus-visible:ring-accent
+              cursor-pointer
+            "
+          >
+            ×
+          </button>
+      
+          <RegistroModal />
+        </div>
+      ) : (
+        <>
       <h2
         id="identificacion-title"
         className="font-display text-2xl font-semibold"
@@ -88,15 +121,14 @@ export function FormIdentificacion() {
       </h2>
       <p
         id="identificacion-aviso"
-        className="mt-3 text-sm leading-relaxed text-muted"
+        className="text-[13px] leading-relaxed text-muted"
       >
-        Podés declarar tu correo. No se verifica su titularidad ni se inicia una
-        sesión. Se eliminan los espacios externos y toda la dirección se convierte
-        a minúsculas; puede ser incompatible con proveedores que distinguen
+        Podés registrar tu correo (no se verifica su titularidad). Se eliminan los espacios externos y toda la dirección se convierte
+        a minúsculas; puede ser incompatible con proveedores de correo electrónico que distinguen
         mayúsculas y minúsculas en la parte anterior a la @.
       </p>
 
-      <div className="mt-5 flex flex-col gap-2">
+      <div className="flex flex-col gap-2">
         <label htmlFor="identificacion-email" className="text-sm font-medium">
           Correo electrónico
         </label>
@@ -111,26 +143,27 @@ export function FormIdentificacion() {
           required
           maxLength={254}
           readOnly={isSubmitting}
-          value={email}
-          onChange={(event) => {
+          /*value={email} con submit usar value*/
+          /*onChange={(event) => {
             setEmail(event.currentTarget.value);
             setFeedback(null);
-          }}
+          }}*/
           aria-describedby="identificacion-aviso"
           className="min-h-12 min-w-0 w-full rounded-xl border border-line bg-surface px-4 py-3 text-base"
         />
       </div>
 
-      <div className="mt-5 flex justify-end">
+      <div className="flex justify-end">
         <button
-          type="submit"
+          type="button"//"submit"
+          onClick={()=>{setOpenRegister(true)}}/*con submit quito onclick*/
           disabled={isSubmitting}
           className="primary-link w-full disabled:cursor-wait disabled:opacity-60 sm:w-auto"
         >
           {isSubmitting ? "Enviando…" : "Enviar identificación"}
         </button>
       </div>
-      <p
+     {/* <p
         role="status"
         aria-live="polite"
         aria-atomic="true"
@@ -145,6 +178,9 @@ export function FormIdentificacion() {
       >
         {feedback?.kind === "error" ? feedback.message : ""}
       </p>
+      */}
+      </>
+     )}
     </form>
   );
 }
