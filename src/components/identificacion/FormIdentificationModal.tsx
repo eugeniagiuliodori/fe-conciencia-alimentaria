@@ -64,15 +64,16 @@ export function FormIdentificationModal({
       }}
       className="
         fixed inset-0 z-50
-        flex items-center justify-center
+        flex items-start justify-center sm:items-center
+        min-h-0 overflow-y-auto overscroll-contain
         bg-[#211827]/45
-        px-4 py-6
+        px-2 py-2
         backdrop-blur-[5px]
-        sm:px-6
+        sm:px-4 sm:py-2
       "
     >
      {openSession ? (
-  <div className="relative w-full max-w-[650px]">
+  <div className="relative my-auto w-full min-w-0 max-w-[650px]">
     <button
       type="button"
       onClick={() => setOpenSession(false)}
@@ -103,15 +104,14 @@ export function FormIdentificationModal({
       <div
         role="dialog"
         aria-modal="true"
-        aria-labelledby="mensaje-del-dia-title"
+        aria-label="Identificación por correo electrónico"
         className="
-          relative w-full max-w-xl
+          relative my-auto w-full min-w-0 max-w-2xl
           overflow-hidden
           rounded-[1.75rem]
           border border-[#d8b98a]/70
           bg-[linear-gradient(145deg,#fffdf8_0%,#faf4eb_45%,#f5edf5_100%)]
           shadow-[0_28px_80px_rgba(43,36,49,0.34)]
-          max-h-[35rem]
         "
       >
         {/* Luz cálida superior */}
@@ -141,13 +141,13 @@ export function FormIdentificationModal({
           "
         />
 
-        <div className="relative px-6 py-7 sm:px-9 sm:py-0">
+        <div className="relative min-w-0 px-3 py-2 sm:px-5 sm:py-3">
           <button
             type="button"
             onClick={onClose}
             aria-label="Cerrar mensaje"
             className="
-              absolute top-4 right-4
+              absolute top-2 right-2 z-10 sm:top-4 sm:right-4
               flex h-9 w-9
               items-center justify-center
               rounded-full
@@ -173,15 +173,15 @@ export function FormIdentificationModal({
          <section
         id="identificacion"
         aria-labelledby="identificacion-title"
-        className="site-container border-t border-line py-6"
+        className="w-full min-w-0 pt-8 pb-1 sm:pt-7 sm:pb-1"
       >
         <FormIdentificacion />
         
-          <section className="mt-6 flex flex-col items-center justify-center gap-3 text-center">
-            <p className="text-sm text-accent/80">
+          <section className="mt-2 flex flex-col items-center justify-center gap-1.5 text-center sm:mt-2">
+            <p className="max-w-full break-words text-xs leading-snug text-accent/80 sm:text-[13px]">
               Si ya te identificaste, iniciá tu sesión
             </p>
-            <p className="text-sm text-accent/80">
+            <p className="max-w-full break-words text-xs leading-snug text-accent/80 sm:text-[13px]">
               {"<<"} Para mantener tu sesión iniciada, Conciencia Alimentaria utiliza una cookie 
               funcional. Si tu navegador bloquea las cookies, esta funcionalidad puede no 
               estar disponible.  {">>"} 
@@ -194,8 +194,8 @@ export function FormIdentificationModal({
                 rounded-xl
                 border border-[#bba3c5]/50
                 bg-[#f0e8f2]
-                px-6 py-3
-                text-sm font-semibold
+                w-full max-w-xs px-4 py-1.5
+                text-sm sm:w-auto sm:px-6 font-semibold
                 text-accent
                 shadow-[0_4px_14px_rgba(105,66,115,0.10)]
                 transition-all duration-300
@@ -223,7 +223,7 @@ export function FormIdentificationModal({
           </section>
         
       </section>  
-       <section className="mb-6 flex flex-col items-center justify-center gap-3 text-center"> 
+       <section className="mb-0 mt-2 flex flex-col items-center justify-center gap-1 text-center"> 
           <div className=" flex justify-center">
             <button
               type="button"
@@ -232,7 +232,7 @@ export function FormIdentificationModal({
                 rounded-full
                 border border-accent/20
                 bg-white/55
-                px-5 py-2.5
+                px-5 py-1.5
                 text-sm font-semibold
                 text-accent
                 shadow-[0_8px_24px_rgba(105,66,115,0.10)]

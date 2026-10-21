@@ -17,7 +17,7 @@ export function IdentificationModal() {
         onClick={() => setOpen(true)}
         aria-label="Abrir identificación por correo"
         className="
-          group relative mt-8 inline-flex
+          group relative mt-5 inline-flex sm:mt-8
           justify-center
           rounded-full
           p-2
@@ -34,7 +34,7 @@ export function IdentificationModal() {
           width={90}
           height={90}
           className="
-            h-[70px] w-[90px]
+            h-[60px] w-[78px] sm:h-[70px] sm:w-[90px]
             object-contain
             animate-heartbeat
             group-hover:[animation-duration:0.8s]
