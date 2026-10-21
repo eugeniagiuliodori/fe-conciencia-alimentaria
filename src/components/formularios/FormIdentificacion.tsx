@@ -82,7 +82,7 @@ export function FormIdentificacion() {
       /*onSubmit={handleSubmit}*/
       aria-labelledby="identificacion-title"
       aria-busy={isSubmitting}
-      className="mx-auto flex w-full min-w-0 max-w-2xl flex-col gap-2 rounded-2xl border border-line bg-surface p-3 shadow-sm sm:rounded-3xl sm:p-3"
+      className="mx-auto flex w-full min-w-0 max-w-2xl flex-col gap-2 rounded-2xl border border-[#dbc7aa]/80 bg-[linear-gradient(150deg,rgba(255,255,255,0.95)_0%,rgba(255,250,245,0.9)_60%,rgba(250,241,248,0.92)_100%)] p-3 text-[#382b32] shadow-[0_5px_20px_rgba(91,65,74,0.08),inset_0_1px_0_rgba(255,255,255,0.95)] sm:rounded-3xl sm:p-3"
     >
         {openRegister ? (
         <div className="relative w-full min-w-0 max-w-[650px]">
@@ -96,7 +96,7 @@ export function FormIdentificacion() {
               items-center justify-center
               rounded-full
               bg-white/90
-              text-xl text-accent
+              text-xl text-[#692f49]
               shadow-md
               transition-colors
               hover:bg-white
@@ -115,53 +115,54 @@ export function FormIdentificacion() {
         <>
       <h2
         id="identificacion-title"
-        className="pr-10 font-display text-lg font-semibold leading-tight sm:text-xl"
+        className="pr-10 font-display text-lg font-semibold leading-tight text-[#713750] [text-shadow:0_1px_0_rgba(255,255,255,0.8)] sm:text-xl"
       >
         Identificación por correo
       </h2>
       <p
         id="identificacion-aviso"
-        className="break-words text-xs leading-snug text-muted sm:text-[13px]"
+        className="break-words text-xs leading-snug text-[#665b62] sm:text-[13px]"
       >
         Podés registrar tu correo (no se verifica su titularidad). Se eliminan los espacios externos y toda la dirección se convierte
         a minúsculas; puede ser incompatible con proveedores de correo electrónico que distinguen
         mayúsculas y minúsculas en la parte anterior a la @.
       </p>
-
-      <div className="flex min-w-0 flex-col items-center gap-0.5">
-        <label htmlFor="identificacion-email" className="text-sm font-medium">
-          Correo electrónico
-        </label>
-        <input
-          id="identificacion-email"
-          name="email"
-          type="email"
-          inputMode="email"
-          autoComplete="off"
-          autoCapitalize="none"
-          spellCheck={false}
-          required
-          maxLength={254}
-          readOnly={isSubmitting}
-          /*value={email} con submit usar value*/
-          /*onChange={(event) => {
-            setEmail(event.currentTarget.value);
-            setFeedback(null);
-          }}*/
-          aria-describedby="identificacion-aviso"
-          className="min-h-10 min-w-0 w-[20rem] rounded-xl border border-line bg-surface px-3 py-2 text-base"
-        />
+      <div className="flex flex-col lg:flex-row  gap-2">
+      <div className="flex w-full min-w-0 flex-col gap-0.5 lg:w-[35rem]">
+          <label htmlFor="identificacion-email" className="text-sm font-medium text-[#704956]">
+            Correo electrónico
+          </label>
+          <input
+            id="identificacion-email"
+            name="email"
+            type="email"
+            inputMode="email"
+            autoComplete="off"
+            autoCapitalize="none"
+            spellCheck={false}
+            required
+            maxLength={254}
+            readOnly={isSubmitting}
+            /*value={email} con submit usar value*/
+            /*onChange={(event) => {
+              setEmail(event.currentTarget.value);
+              setFeedback(null);
+            }}*/
+            aria-describedby="identificacion-aviso"
+            className="min-h-10 min-w-0 w-full rounded-xl border border-[#d9c5d3] bg-white/90 px-3 py-2 text-base text-[#352d35] shadow-[inset_0_1px_3px_rgba(83,58,77,0.06)] outline-none transition-[border-color,box-shadow] duration-200 focus:border-[#a47a9d] focus:shadow-[0_0_0_3px_rgba(164,122,157,0.16)]"
+          />
       </div>
 
-      <div className="flex w-full min-w-0 justify-center">
+      <div className="flex w-full min-w-0 items-end justify-center lg:w-[18rem] lg:justify-end">
         <button
           type="button"//"submit"
           onClick={()=>{setOpenRegister(true)}}/*con submit quito onclick*/
           disabled={isSubmitting}
-          className="primary-link w-full min-w-0 whitespace-normal text-center disabled:cursor-wait disabled:opacity-60 sm:w-auto"
+          className="primary-link !w-auto lg:w-full min-h-[2.5rem] max-h-[2.5rem]  min-w-0 whitespace-normal text-center !border-[#996c88] !bg-[linear-gradient(135deg,#814460_0%,#69405f_100%)] !text-[#fffaf7] !shadow-[0_4px_12px_rgba(102,56,83,0.24)] transition-[background,box-shadow,filter] duration-200 hover:!brightness-110 hover:!shadow-[0_6px_16px_rgba(102,56,83,0.3)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ab85a5] disabled:cursor-wait disabled:opacity-60 sm:w-auto;"
         >
           {isSubmitting ? "Enviando…" : "Enviar identificación"}
         </button>
+      </div>
       </div>
      {/* <p
         role="status"
