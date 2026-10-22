@@ -110,17 +110,26 @@ Preparación manual:
    `TEST_DB_PASSWORD` para una instancia PostgreSQL local de pruebas.
    `TEST_DB_URL` debe ser JDBC PostgreSQL con host loopback (`localhost`,
    `127.0.0.1` o `::1`), puerto y nombre de base explícitos, sin parámetros.
-   Configurar `TEST_DB_EXPECTED_NAME` con el nombre exacto de esa base; el sufijo
-   `_test` no es obligatorio.
-   Usar un rol dedicado y no privilegiado. Tener `CONNECT` potencial sobre otra
-   base no demuestra que este JAR la utilice; el destino efectivo se comprueba
-   antes de cada POST. No incluir credenciales en archivos
+   La base y `TEST_DB_EXPECTED_NAME` deben ser exactamente
+   `conciencia_alimentaria_test`. Configurar también
+   `TEST_DB_EXPECTED_COMMENT` en la terminal con el texto administrativo literal
+   autorizado de esa base. Este texto no está fijado en el repositorio: obtenerlo
+   de una referencia administrativa confiable, nunca deducirlo del nombre de la
+   base ni aceptar cualquier comentario no vacío. Para comprobar manualmente el
+   comentario, usar una conexión de solo lectura y la consulta
+   `SELECT shobj_description(oid, 'pg_database') FROM pg_database WHERE datname = current_database();`.
+   No guardar el valor en ejemplos versionados, `.env.integracion.local` ni logs.
+   Usar el rol dedicado `conciencia_app_test`, sin atributos privilegiados.
+   `CONNECT` heredado de `PUBLIC` sobre otras bases no bloquea por sí solo.
+   El destino efectivo del JAR se comprueba antes de
+   cada POST. No incluir credenciales en archivos
    versionados ni en argumentos de comandos. Esta suite requiere `psql` y,
    para verificar los listeners y sockets propios, Linux con `ss` y `/proc`.
    El runtime `java` debe ser compatible con la versión declarada por el JAR.
 5. Comprobar que el JAR usa la credencial sintética, que PostgreSQL es una
-   instancia de pruebas, que el rol puede escribir solo en esa base y que
-   los registros sintéticos pueden permanecer allí. Ejecutar
+   instancia de pruebas y que los registros sintéticos pueden permanecer allí.
+   La prueba verifica el destino efectivo de las conexiones observadas; no
+   afirma aislamiento del rol mediante permisos sobre otras bases. Ejecutar
    `npm run test:integracion`; el orquestador verifica la conexión efectiva
    del JAR antes de cada POST y aborta si no puede identificarla.
 
@@ -128,7 +137,18 @@ Antes de iniciar servicios, el comando valida el archivo de integración, el
 JAR y el YAML externo a él, variables y destinos locales, y puertos
 libres. Usa `spring.config.location` con el archivo externo (reemplaza las
 ubicaciones predeterminadas de configuración de Spring Boot), perfil `test`,
-`ddl-auto=none`, puerto y dirección de escucha explícitos. Comprueba que no haya
+`ddl-auto=none`, puerto y dirección de escucha explícitos. También desactiva
+los inicializadores SQL, Flyway, Liquibase, generación DDL de JPA e inicialización
+de esquema de Spring Batch por argumentos. Comprueba en el log de arranque,
+sin imprimirlo, que Spring Boot informa exclusivamente el perfil `test`; si no
+puede confirmarlo, aborta antes de Next.js y de cualquier POST. Estos controles
+no certifican ausencia de inicializadores personalizados dentro del JAR.
+Antes del arranque examina también el índice del JAR con `unzip` y aborta si
+detecta bibliotecas Flyway/Liquibase, recursos de migración, scripts SQL de
+inicialización o clases propias con nombres usuales de inicializadores.
+Esta inspección no prueba por sí sola que código de arranque personalizado no
+realice otras escrituras; si hay indicios de ello, no ejecutar el JAR.
+Comprueba que no haya
 una variante `application-test-test.*` capaz de sobrescribir el YAML cuando se
 activa ese perfil. Las opciones de línea de comandos tienen mayor precedencia
 que el archivo; el entorno aislado no hereda overrides del datasource. No depende de que
@@ -136,11 +156,17 @@ que el archivo; el entorno aislado no hereda overrides del datasource. No depend
 solo las variables `TEST_DB_*` necesarias, el secreto sintético y variables
 básicas de ejecución; se excluyen `DB_*`, `SPRING_DATASOURCE_*`,
 `SPRING_APPLICATION_JSON`, opciones Java heredadas y credenciales ajenas.
-Se ejecuta una consulta PostgreSQL **solo lectura** con `psql`, el mismo
-destino y credenciales: confirma base y rol esperados, sin privilegios elevados.
+Antes de iniciar el JAR se ejecuta una consulta PostgreSQL **solo lectura** con
+`psql`, el mismo destino y credenciales: confirma el nombre efectivo
+`conciencia_alimentaria_test`, el rol esperado sin privilegios elevados y el
+comentario administrativo exacto mediante `shobj_description` sobre `pg_database`.
 La consulta verifica que la transacción esté efectivamente en modo solo lectura.
-El permiso `CONNECT` sobre otras bases no es un veto automático: por sí mismo
-no identifica el destino usado por la aplicación.
+Si falta el valor esperado, el comentario es nulo o distinto, o falla la consulta,
+se aborta antes de iniciar Spring Boot y de enviar POST. El orquestador no cambia
+el comentario.
+El permiso `CONNECT` sobre otras bases no bloquea por sí solo el arranque.
+No se contactan esas bases: la conexión efectiva del JAR debe vincularse
+con la base y el rol autorizados antes de cada escritura.
 
 Tras readiness por GET con timeout, se confirma que cada puerto pertenece al
 proceso propio o a uno de sus descendientes. Antes de iniciar Next.js y antes
@@ -152,6 +178,11 @@ al menos una conexión observada y ninguna conexión saliente a otro destino;
 si faltan datos, permisos o coincidencias inequívocas, el comando aborta sin POST.
 Esta observación comprueba conexiones activas en ese momento; no certifica que
 el JAR carezca de otros datasources que solo se abran más tarde.
+
+El preflight vigente exige el rol `conciencia_app_test` sin atributos globales
+privilegiados. El control del comentario usa `shobj_description` y la comparación exacta con
+`TEST_DB_EXPECTED_COMMENT` del entorno privado. Las pruebas aisladas no
+sustituyen esa consulta a PostgreSQL real.
 
 El cliente de pruebas hace dos POST del
 mismo correo aleatorio `example.com` al BFF real y exige `204` sin cuerpo.
@@ -169,6 +200,18 @@ sintéticos pueden quedar en la base de pruebas. El preflight de `psql` por sí 
 no prueba el datasource del JAR; la correlación posterior con su socket aporta
 evidencia de la conexión efectiva observada antes del POST. Tampoco se prueba
 la normalización ni los límites de frecuencia del backend.
+
+La misma ejecución opt-in comprueba ahora también `404` para un correo sintético
+no registrado, `201` vacío con cookie `ca_sesion` de sesión, `DELETE` con esa
+cookie, borrado de la cookie y `DELETE` sin cookie. Se revalida el comentario y
+la conexión efectiva del JAR antes de cada operación mutante. A continuación
+se invoca un caso Playwright real seleccionado explícitamente desde el mismo
+orquestador, con el mismo JAR y BD, que recorre la interfaz y comprueba F5.
+Ese caso vuelve a comprobar configuración, árbol de procesos, puerto propio,
+comentario y conexión antes de cada acción de registro, inicio o cierre. El
+comando E2E habitual conserva sus fixtures simuladas y no habilita este caso
+por sí solo. Los correos son únicos bajo `example.com`; no se ejecuta SQL de
+limpieza ni se afirma persistencia observada por consultar solo HTTP.
 
 ## Comportamiento HTTP
 

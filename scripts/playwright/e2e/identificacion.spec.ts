@@ -2,20 +2,20 @@ import type { Page, Route } from "playwright/test";
 import { test, expect, fixtureEmail, fixtureServiceSecret, identificationPath, type Scenario } from "./fixtures";
 
 function controls(page: Page) {
-  const form = page.getByRole("form", { name: "Identificación por correo" });
+  const form = page.getByRole("dialog", { name: "Identificación por correo electrónico" }).locator("form");
   return {
     form,
     input: form.getByLabel("Correo electrónico"),
     submit: form.getByRole("button"),
-    status: form.getByRole("status"),
+    status: form.getByRole("status").last(),
     alert: form.getByRole("alert"),
   };
 }
 
 async function openForm(page: Page) {
-  // Único punto de acceso a la UI: si se mueve a un modal, abrirlo aquí.
-  // Las comprobaciones usan solo los controles accesibles del formulario.
-  await page.goto("/");
+  const response = await page.goto("/");
+  if (response?.status() !== 200) throw new Error(`La página inicial respondió ${response?.status() ?? "sin respuesta"}.`);
+  await page.getByRole("button", { name: "Abrir identificación por correo" }).click({ timeout: 15_000 });
   const ui = controls(page);
   await expect(ui.form, "El formulario de identificación debe estar accesible").toBeVisible();
   return ui;
@@ -37,7 +37,6 @@ async function checkFailure(page: Page, message: string | RegExp) {
   await expect(ui.alert).toContainText(message);
   await expect(ui.alert).toBeVisible();
   await expect(ui.submit).toBeEnabled();
-  await expect(ui.form).toHaveAttribute("aria-busy", "false");
   await expect(ui.status).toBeEmpty();
   // Comparar booleanos evita imprimir el valor ingresado si falla el test.
   expect(await ui.input.inputValue() === fixtureEmail, "El texto ingresado se conserva tras el error").toBe(true);
@@ -62,10 +61,10 @@ test("HTTP local: el BFF real usa el upstream simulado y conserva el 204 vacío"
 
 test("UI: teclado y aviso declarativo dentro del formulario", async ({ page }) => {
   const ui = await openForm(page);
-  await expect(ui.form.getByText(/Podés declarar tu correo/)).toBeVisible();
+  await expect(page.getByRole("dialog").getByText(/Podés registrar tu correo/)).toBeVisible();
   await expect(ui.input).toHaveAccessibleDescription(/toda la dirección se convierte a minúsculas/);
-  await expect(ui.input).toHaveAccessibleDescription(/incompatible con proveedores que distinguen mayúsculas y minúsculas/);
-  await expect(ui.input).toHaveAccessibleDescription(/No se verifica su titularidad ni se inicia una sesión/);
+  await expect(ui.input).toHaveAccessibleDescription(/incompatible con proveedores de correo electrónico que distinguen/);
+  await expect(ui.input).toHaveAccessibleDescription(/no se verifica su titularidad/);
 
   // Comprobar el orden de teclado dentro del formulario, sin recorrer su contenedor.
   await ui.submit.focus();
@@ -75,7 +74,7 @@ test("UI: teclado y aviso declarativo dentro del formulario", async ({ page }) =
   expect(await ui.input.inputValue() === fixtureEmail).toBe(true);
   await page.keyboard.press("Tab");
   await expect(ui.submit).toBeFocused();
-  expect(await ui.submit.evaluate((element) => getComputedStyle(element).outlineStyle !== "none")).toBe(true);
+  expect(await ui.submit.evaluate((element) => getComputedStyle(element).boxShadow !== "none")).toBe(true);
   await checkBrowserPrivacy(page);
 });
 
@@ -114,8 +113,7 @@ test("UI + BFF real: carga, doble envío, confirmación neutra y privacidad", as
   await ui.submit.click();
   await expect(ui.submit).toHaveText("Enviando…");
   await expect(ui.submit).toBeDisabled();
-  await expect(ui.form).toHaveAttribute("aria-busy", "true");
-  await expect(ui.input).toHaveJSProperty("readOnly", true);
+  await expect(ui.input).toBeDisabled();
   await ui.input.press("Enter");
   await expect.poll(() => !!scenario.pending).toBe(true);
   expect(scenario.received.length).toBe(1);
@@ -132,11 +130,10 @@ test("UI + BFF real: carga, doble envío, confirmación neutra y privacidad", as
   expect(response.headers()["set-cookie"] === undefined).toBe(true);
   expect(response.headers()["x-user-id"] === undefined).toBe(true);
   expect(response.headers()["x-service-token"] === undefined).toBe(true);
-  await expect(ui.status).toHaveText("Identificación recibida. No se verificó la titularidad del correo ni se inició una sesión.");
-  await expect(ui.status).toHaveAttribute("aria-live", "polite");
-  await expect(ui.alert).toBeEmpty();
+  await expect(ui.status).toContainText("Se procesó el registro declarativo del correo.");
+  await expect(ui.alert).toHaveCount(0);
   await expect(ui.submit).toBeEnabled();
-  expect((await ui.input.inputValue()).length).toBe(0);
+  expect(await ui.input.inputValue() === fixtureEmail).toBe(true);
   await checkBrowserPrivacy(page);
   const reopened = await openForm(page);
   expect((await reopened.input.inputValue()).length).toBe(0);
@@ -146,14 +143,14 @@ test("UI + BFF real: carga, doble envío, confirmación neutra y privacidad", as
 
 // Conserva los escenarios del script de navegador anterior como casos aislados.
 const upstreamErrors: [Scenario["mode"], number, string][] = [
-  [400, 400, "formato válido"],
+  [400, 400, "Revisá el correo"],
   [413, 413, "tamaño permitido"],
-  [415, 415, "formato requerido"],
-  [429, 429, "límite de solicitudes"],
-  [500, 502, "identificación no está disponible"],
-  [200, 502, "identificación no está disponible"],
+  [415, 415, "No se pudo enviar la solicitud"],
+  [429, 429, "Demasiadas solicitudes"],
+  [500, 502, "No se pudo confirmar la operación"],
+  [200, 502, "No se pudo confirmar la operación"],
   ["disconnect", 502, "No se pudo confirmar la operación"],
-  ["timeout", 504, "No se pudo confirmar la operación a tiempo"],
+  ["timeout", 504, "No se pudo confirmar la operación"],
 ];
 for (const [mode, status, message] of upstreamErrors) {
   test(`UI + BFF real: upstream ${mode} produce ${status} sin reintentos`, async ({ page, scenario }) => {
@@ -178,9 +175,9 @@ for (const [mode, status, message] of upstreamErrors) {
 }
 
 for (const [fault, message] of [
-  ["connection", "Revisá tu conexión"],
-  ["timeout", "No se pudo confirmar la operación a tiempo"],
-  ["configuration", "identificación no está disponible"],
+  ["connection", "No se pudo confirmar la operación"],
+  ["timeout", "No se pudo confirmar la operación"],
+  ["configuration", "No se pudo confirmar la operación"],
 ] as const) {
   test(`UI con BFF interceptado: ${fault} conserva el texto y permite reintento manual`, async ({ page, scenario, baseURL }) => {
     const ui = await openForm(page);

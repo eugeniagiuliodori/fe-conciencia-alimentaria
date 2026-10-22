@@ -1,11 +1,30 @@
 openapi: 3.0.3
 info:
-  title: Conciencia Alimentaria — Identificación declarativa
-  version: 1.0.0
+  title: Conciencia Alimentaria — Identificación y sesiones declarativas
+  version: 1.1.0
   description: >-
-    Contrato inicial de identificación declarativa por email. No autentica
-    ni verifica la titularidad del correo; una respuesta exitosa no concede
-    sesión, permisos ni acceso a información personal.
+    La identificación declarativa por email busca o crea un usuario, pero no
+    inicia sesión. Las operaciones adicionales permiten iniciar y cerrar una
+    sesión declarativa asociada a un correo previamente registrado. Ninguna
+    operación verifica la titularidad del correo ni autentica a la usuaria:
+    cualquier persona que declare un correo registrado puede iniciar sesión
+    en su nombre. La sesión no concede permisos ni acceso a datos sensibles,
+    incluidos futuros favoritos u otros datos asociados.
+    El identificador opaco es un dato sensible de sesión, distinto del secreto
+    técnico X-Service-Token que autoriza al BFF como cliente servidor.
+    Next.js BFF guarda el identificador en una cookie de nombre fijo,
+    HttpOnly, Secure cuando se usa HTTPS y SameSite, sin Max-Age ni Expires;
+    la cookie no contiene el correo ni se expone al JavaScript del navegador.
+    Spring Boot no emite Set-Cookie. El frontend puede representar el estado
+    global anonymous | identified sin guardar el correo y reconstruir su
+    estado visual tras F5 a partir de la presencia de la cookie por el BFF,
+    sin consultar Spring Boot solo para renderizar. La cookie no prueba que la
+    sesión siga siendo válida: el backend verifica su identificador en las
+    operaciones que dependan de ella. No se define vencimiento temporal ni por
+    inactividad. El navegador puede eliminar la cookie al cerrarse o
+    restaurarla según su configuración. El límite de 100 POST/minuto por IP
+    observada en Spring Boot sigue siendo exclusivo de identificación; no se
+    definen límites de frecuencia para las nuevas operaciones en esta versión.
 paths:
   /api/usuarios/identificacion:
     post:
@@ -18,12 +37,20 @@ paths:
         cuerpo, sin revelar su identificador. Esta normalización no admite
         correctamente proveedores que distinguen mayúsculas en la parte local.
         Se aplican controles de validación, tamaño de cuerpo y frecuencia de
-        solicitudes. Los navegadores solo pueden realizar solicitudes
+        solicitudes. El BFF debe enviar X-Service-Token con el secreto opaco
+        configurado mediante BFF_SERVICE_SECRET. Es autenticación técnica del
+        cliente servidor: no verifica el correo ni autentica a la usuaria.
+        CORS se evalúa primero; luego el token, el límite de 100 POST/minuto
+        por IP observada por Spring Boot, el tamaño y el tipo de contenido.
+        Los POST sin token válido no consumen cuota ni leen el cuerpo.
+        Los navegadores solo pueden realizar solicitudes
         cross-origin desde el origen configurado por FRONTEND_ORIGIN;
         CORS no autentica ni bloquea clientes HTTP no sujetos a CORS.
-        No se verifica el buzón ni la identidad de quien llama.
+        No se verifica el buzón ni la identidad de la usuaria.
       tags:
         - Identificación
+      security:
+        - BffServiceToken: []
       requestBody:
         required: true
         content:
@@ -48,6 +75,17 @@ paths:
               example:
                 codigo: SOLICITUD_INVALIDA
                 mensaje: 'Datos de identificación inválidos.'
+        '401':
+          description: >-
+            El cliente servidor no presentó un X-Service-Token único y válido.
+            No indica nada sobre la existencia del correo.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                codigo: CLIENTE_NO_AUTORIZADO
+                mensaje: 'No se pudo autorizar la solicitud.'
         '413':
           description: El cuerpo HTTP excede 2048 bytes.
           content:
@@ -92,7 +130,178 @@ paths:
               example:
                 codigo: ERROR_INTERNO
                 mensaje: 'No se pudo procesar la solicitud.'
+  /api/usuarios/sesiones:
+    post:
+      operationId: iniciarSesionDeclarativa
+      summary: Iniciar una sesión declarativa para un correo registrado
+      description: >-
+        Se recortan los espacios externos del email y se convierte toda la
+        dirección a minúsculas con Locale.ROOT, con la misma validación de
+        identificación. Se busca el correo normalizado, pero esta operación
+        nunca crea usuarias. Si existe, Spring Boot genera mediante CSPRNG un
+        identificador opaco, no predecible y no derivado del email ni del ID
+        interno, y lo asocia del lado servidor al registro existente. Es
+        distinto del ID interno y no se registra en logs. No se define
+        expiración por tiempo o inactividad. La normalización íntegra a
+        minúsculas no admite correctamente proveedores que distinguen
+        mayúsculas en la parte local. X-Service-Token autoriza técnicamente
+        al BFF; no verifica titularidad del correo ni autentica a la usuaria.
+        La diferencia entre 201 y 404 revela si un correo está registrado por
+        decisión de producto y no prueba su titularidad.
+      tags:
+        - Sesiones declarativas
+      security:
+        - BffServiceToken: []
+      requestBody:
+        required: true
+        description: Cuerpo HTTP de hasta 2048 bytes efectivos.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IdentificacionRequest'
+            example:
+              email: ' Ejemplo@Correo.COM '
+      responses:
+        '201':
+          description: >-
+            Sesión declarativa creada. No se entrega Location porque no se
+            define un recurso de sesión consultable.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InicioSesionResponse'
+        '400':
+          description: >-
+            JSON malformado, ausente, tipo incorrecto, propiedades extra o
+            email inválido (vacío, longitud o formato).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                codigo: SOLICITUD_INVALIDA
+                mensaje: 'Datos de inicio de sesión inválidos.'
+        '401':
+          description: >-
+            El cliente servidor no presentó un X-Service-Token único y válido.
+            No indica nada sobre la existencia del correo.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                codigo: CLIENTE_NO_AUTORIZADO
+                mensaje: 'No se pudo autorizar la solicitud.'
+        '404':
+          description: >-
+            El correo normalizado no está registrado. Esta respuesta revela
+            la existencia o ausencia de un registro por decisión de producto;
+            no autentica a la persona que declaró el correo.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                codigo: CORREO_NO_REGISTRADO
+                mensaje: 'El correo no está registrado. Primero debe registrarse.'
+        '413':
+          description: El cuerpo HTTP excede 2048 bytes efectivos.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                codigo: SOLICITUD_DEMASIADO_GRANDE
+                mensaje: 'La solicitud supera el tamaño permitido.'
+        '415':
+          description: Se requiere Content-Type application/json.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                codigo: TIPO_CONTENIDO_NO_ADMITIDO
+                mensaje: 'Tipo de contenido no admitido.'
+        '500':
+          description: Error inesperado, sin detalles internos.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                codigo: ERROR_INTERNO
+                mensaje: 'No se pudo procesar la solicitud.'
+  /api/usuarios/sesiones/actual:
+    delete:
+      operationId: cerrarSesionDeclarativa
+      summary: Invalidar una sesión declarativa
+      description: >-
+        El BFF envía X-Session-Id desde el valor de su cookie HttpOnly por el
+        canal servidor-servidor. No recibe cuerpo, email ni usuarioId. Spring
+        Boot invalida la asociación del lado servidor, sin eliminar la usuaria
+        ni sus datos; el BFF elimina la cookie. Spring Boot no envía Set-Cookie.
+        Un identificador bien formado
+        inexistente o ya invalidado también produce 204, sin revelar si hubo
+        sesión. El identificador es sensible: no se registra ni se incluye en
+        respuestas de error. Primero se valida X-Service-Token; si es ausente
+        o inválido se responde 401, aun cuando X-Session-Id falte o sea
+        malformado. Con token técnico válido, un X-Session-Id ausente o
+        malformado produce 400. La sesión declarativa no autentica a la
+        usuaria.
+      tags:
+        - Sesiones declarativas
+      security:
+        - BffServiceToken: []
+          SessionId: []
+      responses:
+        '204':
+          description: >-
+            Sesión invalidada o ya inexistente. No tiene cuerpo.
+        '400':
+          description: >-
+            X-Session-Id ausente o malformado cuando X-Service-Token es válido.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                codigo: SOLICITUD_INVALIDA
+                mensaje: 'Datos de cierre de sesión inválidos.'
+        '401':
+          description: >-
+            X-Service-Token ausente o inválido; tiene precedencia sobre la
+            validación de X-Session-Id y no revela si existe la sesión.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                codigo: CLIENTE_NO_AUTORIZADO
+                mensaje: 'No se pudo autorizar la solicitud.'
+        '500':
+          description: Error inesperado, sin detalles internos.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                codigo: ERROR_INTERNO
+                mensaje: 'No se pudo procesar la solicitud.'
 components:
+  securitySchemes:
+    BffServiceToken:
+      type: apiKey
+      in: header
+      name: X-Service-Token
+      description: Secreto compartido con el BFF, enviado solo entre servidores mediante HTTPS.
+    SessionId:
+      type: apiKey
+      in: header
+      name: X-Session-Id
+      description: >-
+        Identificador opaco y sensible de sesión declarativa. Lo envía solo el
+        BFF a Spring Boot por el canal servidor-servidor; no autentica a la
+        usuaria ni sustituye X-Service-Token.
   schemas:
     IdentificacionRequest:
       type: object
@@ -108,6 +317,19 @@ components:
             y longitud máxima de 254 caracteres tras normalizarlo. El tamaño
             máximo del cuerpo HTTP es 2048 bytes. No verifica titularidad.
           maxLength: 254
+    InicioSesionResponse:
+      type: object
+      additionalProperties: false
+      required:
+        - sesionId
+      properties:
+        sesionId:
+          type: string
+          minLength: 1
+          description: >-
+            Identificador opaco y sensible de sesión declarativa generado por
+            Spring Boot. No es el ID interno de usuario ni autentica a la
+            usuaria.
     ErrorResponse:
       type: object
       additionalProperties: false

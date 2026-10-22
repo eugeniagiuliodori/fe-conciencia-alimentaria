@@ -1,7 +1,9 @@
 "use client";
 
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import frases from "@/data/frases-diarias.json";
+
+const siteUrl = "https://fe-conciencia-alimentaria.vercel.app/";
 
 type MensajeDelDiaModalProps = {
   open: boolean;
@@ -37,6 +39,8 @@ export function MensajeDelDiaModal({
   open,
   onClose,
 }: MensajeDelDiaModalProps) {
+  const [shareResult, setShareResult] = useState<"copied" | "unavailable" | null>(null);
+  const canShare = typeof navigator !== "undefined" && typeof navigator.share === "function";
   const frase = useMemo(() => {
     if (frases.length === 0) {
       return "Que hoy encuentres algo que haga bien a tu manera de estar en el mundo.";
@@ -45,6 +49,46 @@ export function MensajeDelDiaModal({
     return frases[obtenerIndiceDelDia()];
   }, []);
 
+  const messageText = `“${frase}”\n\nConciencia Alimentaria`;
+  const copyText = `${messageText}\n${siteUrl}`;
+
+  function handleClose() {
+    setShareResult(null);
+    onClose();
+  }
+
+  async function handleShare() {
+    setShareResult(null);
+
+    if (typeof navigator.share === "function") {
+      try {
+        await navigator.share({
+          title: "Un mensaje para hoy | Conciencia Alimentaria",
+          text: messageText,
+          url: siteUrl,
+        });
+      } catch (error: unknown) {
+        if (typeof error === "object" && error !== null && "name" in error && error.name === "AbortError") {
+          return;
+        }
+        setShareResult("unavailable");
+      }
+      return;
+    }
+
+    try {
+      if (typeof navigator.clipboard?.writeText === "function") {
+        await navigator.clipboard.writeText(copyText);
+        setShareResult("copied");
+        return;
+      }
+    } catch {
+      // La copia puede fallar por permisos o por el contexto del navegador.
+    }
+
+    setShareResult("unavailable");
+  }
+
   useEffect(() => {
     if (!open) {
       return;
@@ -52,6 +96,7 @@ export function MensajeDelDiaModal({
 
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
+        setShareResult(null);
         onClose();
       }
     }
@@ -81,12 +126,13 @@ export function MensajeDelDiaModal({
       role="presentation"
       onMouseDown={(event) => {
         if (event.target === event.currentTarget) {
-          onClose();
+          handleClose();
         }
       }}
       className="
         fixed inset-0 z-50
-        flex items-center justify-center
+        flex items-start justify-center
+        overflow-y-auto overscroll-contain
         bg-[#211827]/45
         px-4 py-6
         backdrop-blur-[5px]
@@ -98,7 +144,7 @@ export function MensajeDelDiaModal({
         aria-modal="true"
         aria-labelledby="mensaje-del-dia-title"
         className="
-          relative w-full max-w-xl
+          relative my-auto w-full max-w-xl
           overflow-hidden
           rounded-[1.75rem]
           border border-[#d8b98a]/70
@@ -136,7 +182,7 @@ export function MensajeDelDiaModal({
         <div className="relative px-6 py-7 sm:px-9 sm:py-9">
           <button
             type="button"
-            onClick={onClose}
+            onClick={handleClose}
             aria-label="Cerrar mensaje"
             className="
               absolute top-4 right-4
@@ -224,10 +270,30 @@ export function MensajeDelDiaModal({
             Una pequeña pausa dentro del día.
           </p>
 
-          <div className="mt-7 flex justify-center">
+          <div className="mt-7 flex flex-wrap justify-center gap-3">
             <button
               type="button"
-              onClick={onClose}
+              onClick={handleShare}
+              className="
+                min-h-11 rounded-full
+                border border-accent/35
+                bg-white/75
+                px-5 py-2.5
+                text-sm font-semibold
+                text-accent
+                shadow-[0_8px_24px_rgba(105,66,115,0.10)]
+                transition-colors duration-200
+                hover:bg-white
+                focus-visible:outline-none
+                focus-visible:ring-2
+                focus-visible:ring-accent/30
+              "
+            >
+              {canShare ? "Compartir mensaje" : "Copiar mensaje"}
+            </button>
+            <button
+              type="button"
+              onClick={handleClose}
               className="
                 rounded-full
                 border border-accent/20
@@ -250,6 +316,18 @@ export function MensajeDelDiaModal({
               Cerrar
             </button>
           </div>
+          <p role="status" aria-live="polite" className="mt-3 text-center text-sm text-muted empty:mt-0">
+            {shareResult === "copied"
+              ? "Mensaje copiado"
+              : shareResult === "unavailable"
+                ? "No se pudo completar la acción. Podés seleccionar y copiar el mensaje:"
+                : null}
+          </p>
+          {shareResult === "unavailable" && (
+            <p className="mt-2 select-text whitespace-pre-wrap break-words rounded-xl bg-white/70 p-3 text-sm text-foreground">
+              {copyText}
+            </p>
+          )}
         </div>
       </div>
     </div>

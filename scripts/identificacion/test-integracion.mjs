@@ -10,7 +10,11 @@ import { parseEnv } from "node:util";
 import { integrationEnvironment } from "./dev-integracion.mjs";
 
 const endpoint = "/api/usuarios/identificacion";
+const sessionsEndpoint = "/api/usuarios/sesiones";
+const logoutEndpoint = "/api/usuarios/sesiones/actual";
 const configName = ".env.integracion.local";
+const authorizedDatabaseName = "conciencia_alimentaria_test";
+const authorizedDatabaseUser = "conciencia_app_test";
 const delay = (ms) => new Promise((done) => setTimeout(done, ms));
 
 function fail(message) { throw new Error(message); }
@@ -54,9 +58,9 @@ export function parseTestDatabase(urlText, expectedName) {
   }
   const port = Number(url.port);
   const database = url.pathname.slice(1);
-  if (port < 1 || port > 65535 || database !== expectedName.trim() ||
-      ["postgres", "template0", "template1"].includes(database)) {
-    fail("Destino PostgreSQL de prueba no coincide con la confirmación explícita.");
+  if (port < 1 || port > 65535 || database !== authorizedDatabaseName ||
+      expectedName !== authorizedDatabaseName) {
+    fail("Destino PostgreSQL de prueba no coincide con conciencia_alimentaria_test.");
   }
   return { host: url.hostname === "[::1]" ? "::1" : url.hostname, port, database };
 }
@@ -123,10 +127,14 @@ export async function configuration(root, inherited = process.env) {
   if (siblings.some((name) => /^application-test-test\.(?:yml|yaml|properties)$/.test(name))) {
     fail("El YAML externo tiene una variante de perfil capaz de sobrescribir sus propiedades.");
   }
-  for (const name of ["TEST_DB_URL", "TEST_DB_USERNAME", "TEST_DB_PASSWORD", "TEST_DB_EXPECTED_NAME"]) {
+  for (const name of ["TEST_DB_URL", "TEST_DB_USERNAME", "TEST_DB_PASSWORD", "TEST_DB_EXPECTED_NAME",
+    "TEST_DB_EXPECTED_COMMENT"]) {
     if (!inherited[name]?.trim()) fail(`Falta ${name} en la terminal.`);
   }
   const database = parseTestDatabase(inherited.TEST_DB_URL, inherited.TEST_DB_EXPECTED_NAME);
+  if (inherited.TEST_DB_USERNAME !== authorizedDatabaseUser) {
+    fail("TEST_DB_USERNAME no coincide con el rol de pruebas autorizado.");
+  }
   const backendUrl = new URL(frontendEnv.BACKEND_URL);
   if (!backendUrl.port) fail("BACKEND_URL debe declarar el puerto HTTP del JAR explícitamente.");
   if (!["127.0.0.1", "localhost"].includes(backendUrl.hostname)) {
@@ -138,7 +146,9 @@ export async function configuration(root, inherited = process.env) {
     fail("INTEGRATION_FRONTEND_PORT debe ser un puerto válido distinto al del backend.");
   }
   return { jar, yaml, database, backendPort, frontendPort, backendUrl: frontendEnv.BACKEND_URL,
-    secret: frontendEnv.BFF_SERVICE_SECRET, dbUser: inherited.TEST_DB_USERNAME, dbPassword: inherited.TEST_DB_PASSWORD };
+    secret: frontendEnv.BFF_SERVICE_SECRET, dbUrl: inherited.TEST_DB_URL,
+    dbUser: inherited.TEST_DB_USERNAME, dbPassword: inherited.TEST_DB_PASSWORD,
+    expectedName: inherited.TEST_DB_EXPECTED_NAME, expectedComment: inherited.TEST_DB_EXPECTED_COMMENT };
 }
 
 export async function assertPortFree(port) {
@@ -160,6 +170,14 @@ async function descendsFrom(pid, ownerPid) {
     pid = Number(afterName[1]);
   }
   return false;
+}
+
+export async function assertRealE2EProcessTree(backendPid, orchestratorPid, workerPid) {
+  if (![backendPid, orchestratorPid, workerPid].every((pid) => Number.isSafeInteger(pid) && pid > 1) ||
+      !(await descendsFrom(backendPid, orchestratorPid)) ||
+      !(await descendsFrom(workerPid, orchestratorPid))) {
+    fail("Playwright real no pertenece al mismo orquestador que el JAR.");
+  }
 }
 
 export async function assertOwnedPort(port, owner) {
@@ -188,26 +206,45 @@ export function backendEnvironment(config, inherited = process.env) {
   return {
     PATH: inherited.PATH ?? "", LANG: inherited.LANG ?? "C", HOME: "/nonexistent",
     BFF_SERVICE_SECRET: config.secret,
-    TEST_DB_URL: inherited.TEST_DB_URL, TEST_DB_USERNAME: inherited.TEST_DB_USERNAME,
-    TEST_DB_PASSWORD: inherited.TEST_DB_PASSWORD,
+    TEST_DB_URL: config.dbUrl, TEST_DB_USERNAME: config.dbUser,
+    TEST_DB_PASSWORD: config.dbPassword,
     SPRING_PROFILES_ACTIVE: "test",
   };
 }
 
 export function frontendEnvironment(config, root, inherited = process.env) {
   const env = integrationEnvironment(root, { PATH: inherited.PATH ?? "", LANG: inherited.LANG ?? "C" });
+  env.BACKEND_URL = config.backendUrl;
+  env.BFF_SERVICE_SECRET = config.secret;
   env.PORT = String(config.frontendPort);
   env.NEXT_TELEMETRY_DISABLED = "1";
   return env;
 }
 
-export function readOnlyPreflight(config) {
-  const result = spawnSync("psql", ["-X", "-A", "-t", "-v", "ON_ERROR_STOP=1", "-c",
-    "SELECT current_database(), current_user, current_setting('transaction_read_only') = 'on', (SELECT rolcanlogin AND NOT rolsuper AND NOT rolcreatedb AND NOT rolcreaterole AND NOT rolreplication AND NOT rolbypassrls FROM pg_roles WHERE rolname = current_user);"], {
+export function readOnlyPreflight(config, execute = spawnSync) {
+  if (!config.expectedComment?.trim()) fail("Falta TEST_DB_EXPECTED_COMMENT; no se iniciará el JAR.");
+  const result = execute("psql", ["-X", "-A", "-t", "-v", "ON_ERROR_STOP=1", "-c",
+    "SELECT current_database(), current_user, current_setting('transaction_read_only') = 'on', (SELECT rolcanlogin AND NOT rolsuper AND NOT rolcreatedb AND NOT rolcreaterole AND NOT rolreplication AND NOT rolbypassrls FROM pg_roles WHERE rolname = current_user), NOT EXISTS (SELECT 1 FROM pg_database WHERE datname <> current_database() AND datallowconn AND has_database_privilege(current_user, oid, 'CONNECT')), encode(convert_to((SELECT shobj_description(oid, 'pg_database') FROM pg_database WHERE datname = current_database()), 'UTF8'), 'hex');"], {
     encoding: "utf8", timeout: 10000,
     env: psqlEnvironment(config),
   });
   assertReadOnlyPreflightResult(result, config);
+}
+
+export function assertNoKnownJarInitializers(jar, execute = spawnSync) {
+  const result = execute("unzip", ["-Z1", jar], {
+    encoding: "utf8", timeout: 20000, maxBuffer: 64 * 1024 * 1024,
+    env: { PATH: process.env.PATH ?? "" },
+  });
+  if (result.status !== 0 || result.error || typeof result.stdout !== "string") {
+    fail("No se pudo verificar el índice del JAR antes del arranque.");
+  }
+  const suspicious = result.stdout.split("\n").some((name) =>
+    /^BOOT-INF\/lib\/.*(?:flyway|liquibase)/i.test(name) ||
+    /^BOOT-INF\/classes\/(?:db\/migration|db\/changelog|liquibase)(?:\/|$)/i.test(name) ||
+    /^BOOT-INF\/classes\/(?:.*\/)?(?:schema|data)(?:-[^/]*)?\.sql$/i.test(name) ||
+    /^BOOT-INF\/classes\/.*(?:Runner|Initializer|Migration|Seeder|Bootstrap|DataLoader)\.class$/i.test(name));
+  if (suspicious) fail("El JAR contiene posibles migraciones o inicializadores de arranque.");
 }
 
 function psqlEnvironment(config) {
@@ -218,13 +255,19 @@ function psqlEnvironment(config) {
 }
 
 export function assertReadOnlyPreflightResult(result, config) {
+  if (!config.expectedComment?.trim()) fail("Falta TEST_DB_EXPECTED_COMMENT; no se iniciará el JAR.");
   if (result.status !== 0 || result.error || typeof result.stdout !== "string") {
-    fail("Falló la consulta PostgreSQL solo lectura; no se harán POST.");
+    fail("Falló la consulta PostgreSQL solo lectura; no se iniciará el JAR.");
   }
   const row = result.stdout.trim().split("|");
-  if (row.length !== 4 || row[0] !== config.database.database || row[1] !== config.dbUser ||
+  if (row.length !== 6 || row[0] !== authorizedDatabaseName ||
+      row[0] !== config.database.database || row[1] !== config.dbUser ||
       row[2] !== "t" || row[3] !== "t") {
-    fail("La consulta solo lectura no confirmó la base de prueba y el rol no privilegiado.");
+    fail("La consulta solo lectura no confirmó la base de prueba y el rol limitado a ella.");
+  }
+  if (!row[5]) fail("El comentario administrativo de la base de pruebas es nulo o vacío.");
+  if (row[5] !== Buffer.from(config.expectedComment, "utf8").toString("hex")) {
+    fail("El comentario administrativo de la base de pruebas no coincide con el valor autorizado.");
   }
 }
 
@@ -319,9 +362,43 @@ export async function assertEffectiveDatasource(config, backend, timeoutMs = 100
 }
 
 export function startOwned(command, args, options) {
-  const child = spawn(command, args, { ...options, detached: true, stdio: "ignore" });
+  const child = spawn(command, args, { ...options, detached: true, stdio: options.stdio ?? "ignore" });
   child.on("error", () => { child.startError = true; });
   return child;
+}
+
+export function observeTestProfile(child) {
+  let tail = "";
+  child.testProfileSeen = false;
+  child.stdout?.on("data", (chunk) => {
+    tail = (tail + chunk.toString("utf8")).slice(-512);
+    if (/The following 1 profile is active: ["']?test["']?\s*(?:\r?\n|$)/.test(tail)) {
+      child.testProfileSeen = true;
+    }
+  });
+  child.stderr?.resume();
+}
+
+export function playwrightEnvironment(config, backendPid, base, inherited = process.env) {
+  return {
+    PATH: inherited.PATH ?? "", LANG: inherited.LANG ?? "C", HOME: inherited.HOME ?? "/nonexistent",
+    E2E_REAL_BASE_URL: base, E2E_REAL_BACKEND_PID: String(backendPid),
+    E2E_REAL_BACKEND_PORT: String(config.backendPort),
+    E2E_REAL_ORCHESTRATOR_PID: String(process.pid),
+    TEST_DB_URL: config.dbUrl, TEST_DB_USERNAME: config.dbUser,
+    TEST_DB_PASSWORD: config.dbPassword,
+    TEST_DB_EXPECTED_NAME: config.expectedName,
+    TEST_DB_EXPECTED_COMMENT: config.expectedComment,
+    NEXT_TELEMETRY_DISABLED: "1", PLAYWRIGHT_NO_COPY_PROMPT: "1",
+  };
+}
+
+async function waitOwnedExit(child) {
+  const code = await new Promise((resolve, reject) => {
+    child.once("error", () => reject(new Error("No se pudo iniciar Playwright.")));
+    child.once("exit", (exitCode) => resolve(exitCode));
+  });
+  if (code !== 0) fail("Playwright real falló; se detiene la integración.");
 }
 
 function running(child) { return child.exitCode === null && child.signalCode === null; }
@@ -363,6 +440,52 @@ async function post(base, email, extraHeaders = {}) {
   return { status: response.status, body: await response.text(), headers: response.headers };
 }
 
+async function sessionPost(base, email) {
+  const response = await fetch(`${base}${sessionsEndpoint}`, { method: "POST", redirect: "manual",
+    headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email }),
+    signal: AbortSignal.timeout(8000) });
+  return { status: response.status, body: await response.text(), headers: response.headers };
+}
+
+async function sessionDelete(base, cookie) {
+  const response = await fetch(`${base}${logoutEndpoint}`, { method: "DELETE", redirect: "manual",
+    headers: cookie ? { Cookie: cookie } : {}, signal: AbortSignal.timeout(8000) });
+  return { status: response.status, body: await response.text(), headers: response.headers };
+}
+
+function assertNoSensitiveResponse(response, ...secrets) {
+  assert.equal(response.headers.get("cache-control"), "no-store");
+  for (const secret of secrets) {
+    if (secret && response.body.includes(secret)) fail("Una respuesta expuso datos sensibles.");
+  }
+}
+
+export function sessionCookie(response) {
+  assert.equal(response.status, 201, "El inicio debe responder 201.");
+  assert.equal(response.body, "", "201 no debe contener cuerpo.");
+  const raw = response.headers.get("set-cookie");
+  if (!raw) fail("El inicio no estableció la cookie de sesión.");
+  const parts = raw.split(";").map((part) => part.trim());
+  const match = /^ca_sesion=([^;]+)$/.exec(parts[0]);
+  if (!match || !parts.some((part) => part.toLowerCase() === "httponly") ||
+      !parts.some((part) => part.toLowerCase() === "samesite=lax") ||
+      !parts.some((part) => part.toLowerCase() === "path=/") ||
+      parts.some((part) => /^(?:expires|max-age)=/i.test(part))) {
+    fail("La cookie de sesión no cumple el contrato.");
+  }
+  return parts[0];
+}
+
+function assertSafeNotRegistered(response, email, secret) {
+  assert.equal(response.status, 404, "El correo no registrado debe producir 404.");
+  assert.equal(response.headers.get("set-cookie"), null);
+  assertNoSensitiveResponse(response, email, secret);
+  let body;
+  try { body = JSON.parse(response.body); } catch { fail("El 404 no contiene JSON seguro."); }
+  assert.deepEqual(Object.keys(body).sort(), ["codigo", "mensaje"]);
+  assert.equal(body.codigo, "CORREO_NO_REGISTRADO");
+}
+
 function assertSafeError(response, email, wrongSecret, serviceSecret, backendUrl) {
   assert.equal(response.status, 502, "El rechazo de la credencial técnica debe traducirse a 502.");
   assert.equal(response.headers.get("cache-control"), "no-store");
@@ -377,24 +500,41 @@ function assertSafeError(response, email, wrongSecret, serviceSecret, backendUrl
   }
 }
 
-export async function run(root) {
-  const config = await configuration(root);
-  await assertPortFree(config.backendPort);
-  await assertPortFree(config.frontendPort);
-  readOnlyPreflight(config);
+export function selectedIntegrationPhases(args) {
+  if (args.length === 0) return ["http", "e2e", "wrong-secret"];
+  if (args.length === 1 && args[0] === "--solo-e2e") return ["e2e"];
+  fail("Selección de integración no reconocida.");
+}
+
+export async function run(root, { configure = configuration, checkPort = assertPortFree,
+  preflight = readOnlyPreflight, inspectStartup = assertNoKnownJarInitializers,
+  start = startOwned, phases = selectedIntegrationPhases([]) } = {}) {
+  if (phases.length !== 1 || phases[0] !== "e2e") {
+    if (phases.join(",") !== "http,e2e,wrong-secret") fail("Selección de integración no reconocida.");
+  }
+  const config = await configure(root);
+  await checkPort(config.backendPort);
+  await checkPort(config.frontendPort);
+  preflight(config);
+  inspectStartup(config.jar);
   console.log("Preflight local y PostgreSQL solo lectura: correcto. Iniciando servicios propios.");
   const children = [];
   let interrupted = false;
   const onSignal = () => { interrupted = true; for (const child of children) void stopOwned(child); };
   process.on("SIGINT", onSignal); process.on("SIGTERM", onSignal);
   try {
-    const backend = startOwned("java", ["-jar", config.jar,
+    const backend = start("java", ["-jar", config.jar,
       `--spring.config.location=${pathToFileURL(config.yaml).href}`,
       "--spring.profiles.active=test", `--server.port=${config.backendPort}`,
-      "--server.address=127.0.0.1", "--spring.jpa.hibernate.ddl-auto=none"],
-      { cwd: root, env: backendEnvironment(config) });
+      "--server.address=127.0.0.1", "--spring.jpa.hibernate.ddl-auto=none",
+      "--spring.jpa.generate-ddl=false", "--spring.sql.init.mode=never",
+      "--spring.flyway.enabled=false", "--spring.liquibase.enabled=false",
+      "--spring.batch.jdbc.initialize-schema=never"],
+      { cwd: root, env: backendEnvironment(config), stdio: ["ignore", "pipe", "pipe"] });
     children.push(backend);
+    observeTestProfile(backend);
     await waitReady(`${config.backendUrl}${endpoint}`, backend, 45000);
+    if (!backend.testProfileSeen) fail("No se confirmó el perfil test en el arranque de Spring Boot.");
     await assertOwnedPort(config.backendPort, backend);
     await assertEffectiveDatasource(config, backend);
     if (interrupted) fail("Ejecución interrumpida.");
@@ -405,14 +545,63 @@ export async function run(root) {
     await waitReady(`${base}${endpoint}`, frontend, 45000);
     await assertOwnedPort(config.frontendPort, frontend);
     if (interrupted) fail("Ejecución interrumpida.");
+    if (phases.includes("http")) {
     const email = `integration-${randomUUID()}@example.com`;
+    const unregistered = `integration-absent-${randomUUID()}@example.com`;
+    await assertEffectiveDatasource(config, backend);
+    readOnlyPreflight(config);
+    assertSafeNotRegistered(await sessionPost(base, unregistered), unregistered, config.secret);
+    console.log("HTTP real: inicio con correo no registrado devuelve 404 sin cookie.");
     for (let i = 0; i < 2; i++) {
       await assertEffectiveDatasource(config, backend);
+      readOnlyPreflight(config);
       const response = await post(base, email, { "X-Service-Token": "browser-synthetic-ignored" });
       assert.equal(response.status, 204, "El BFF debe devolver 204 para identificación declarativa.");
       if (response.body !== "") fail("204 debe carecer de cuerpo.");
+      assertNoSensitiveResponse(response, email, config.secret);
     }
-    console.log("HTTP real: 204 vacío y repetición del correo sintético confirmados. Persistencia no verificada.");
+    console.log("HTTP real: 204 vacío y repetición del correo sintético confirmados.");
+    await assertEffectiveDatasource(config, backend);
+    readOnlyPreflight(config);
+    const started = await sessionPost(base, email);
+    const cookie = sessionCookie(started);
+    assertNoSensitiveResponse(started, email, config.secret);
+    if (started.headers.get("x-session-id") || started.headers.get("x-service-token")) {
+      fail("El inicio expuso una cabecera interna.");
+    }
+    console.log("HTTP real: inicio 201 vacío y cookie HttpOnly comprobados.");
+    await assertEffectiveDatasource(config, backend);
+    readOnlyPreflight(config);
+    const closed = await sessionDelete(base, cookie);
+    assert.equal(closed.status, 204, "El cierre debe devolver 204.");
+    assert.equal(closed.body, "", "204 de cierre debe carecer de cuerpo.");
+    assertNoSensitiveResponse(closed, email, config.secret, cookie);
+    const deletion = closed.headers.get("set-cookie");
+    if (!deletion?.startsWith("ca_sesion=") || !/max-age=0|expires=/i.test(deletion)) {
+      fail("El cierre no eliminó la cookie.");
+    }
+    await assertEffectiveDatasource(config, backend);
+    readOnlyPreflight(config);
+    const missingCookie = await sessionDelete(base);
+    assert.equal(missingCookie.status, 204);
+    assert.equal(missingCookie.body, "");
+    assert.equal(missingCookie.headers.get("set-cookie"), null);
+    console.log("HTTP real: cierre 204 y borrado de cookie; cierre sin cookie 204 local.");
+    console.log("Persistencia no verificada; el registro sintético puede permanecer.");
+    }
+    if (phases.includes("e2e")) {
+    await assertEffectiveDatasource(config, backend);
+    readOnlyPreflight(config);
+    const playwright = startOwned(process.execPath, [
+      resolve(root, "node_modules/playwright/cli.js"), "test",
+      "scripts/playwright/e2e/sesiones-ui.spec.ts", "--grep", "@real",
+    ], { cwd: root, env: playwrightEnvironment(config, backend.pid, base),
+      stdio: ["ignore", "inherit", "ignore"] });
+    children.push(playwright);
+    await waitOwnedExit(playwright);
+    console.log("Playwright E2E real: caso de registro, inicio, cierre y F5 aprobado.");
+    }
+    if (!phases.includes("wrong-secret")) return;
     await stopOwned(frontend);
     if (interrupted) fail("Ejecución interrumpida.");
     await assertPortFree(config.frontendPort);
@@ -427,10 +616,16 @@ export async function run(root) {
     await waitReady(`${base}${endpoint}`, rejectedFrontend, 45000);
     await assertOwnedPort(config.frontendPort, rejectedFrontend);
     await assertEffectiveDatasource(config, backend);
+    readOnlyPreflight(config);
     const rejectedEmail = `integration-rejected-${randomUUID()}@example.com`;
     const rejected = await post(base, rejectedEmail);
     assertSafeError(rejected, rejectedEmail, wrongSecret, config.secret, config.backendUrl);
-    console.log("HTTP real: credencial técnica incorrecta traducida a error seguro.");
+    await assertEffectiveDatasource(config, backend);
+    readOnlyPreflight(config);
+    const rejectedSession = await sessionPost(base, rejectedEmail);
+    assertSafeError(rejectedSession, rejectedEmail, wrongSecret, config.secret, config.backendUrl);
+    assert.equal(rejectedSession.headers.get("set-cookie"), null);
+    console.log("HTTP real: credencial técnica incorrecta traducida a error seguro en registro e inicio.");
   } finally {
     process.off("SIGINT", onSignal); process.off("SIGTERM", onSignal);
     for (const child of children.reverse()) await stopOwned(child);
@@ -438,5 +633,8 @@ export async function run(root) {
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
-  run(process.cwd()).catch((error) => { console.error(error.message); process.exitCode = 1; });
+  try {
+    run(process.cwd(), { phases: selectedIntegrationPhases(process.argv.slice(2)) })
+      .catch((error) => { console.error(error.message); process.exitCode = 1; });
+  } catch (error) { console.error(error.message); process.exitCode = 1; }
 }

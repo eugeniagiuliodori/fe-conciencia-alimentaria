@@ -19,9 +19,9 @@ The website may contain:
 - content available only on the website;
 - future self-hosted or externally hosted videos.
 
-The initial version should remain intentionally simple.
+La aplicación debe seguir siendo simple en relación con sus requisitos reales y su arquitectura ya implementada.
 
-The current goal is to create a functional, responsive, maintainable MVP deployed through Vercel rather than prematurely building a complex publishing platform.
+Mantener una aplicación responsive, funcional y mantenible, desplegada mediante Vercel, sin convertirla prematuramente en una plataforma editorial compleja.
 
 The application should evolve incrementally according to actual content and product needs.
 
@@ -32,7 +32,7 @@ The project also includes an explicitly authorized, **local and manually execute
 
 * Prioritize having a useful working website over designing a theoretically complete platform.
 * Build incrementally from concrete requirements.
-* Keep the first versions simple, static, and content-driven.
+* Mantener simples y orientadas a contenido las áreas que no requieran comportamiento dinámico; respetar los flujos BFF existentes.
 * Do not overengineer for hypothetical future requirements.
 * Prefer improving the existing implementation over replacing it unnecessarily.
 * Introduce infrastructure only when there is an actual need for it.
@@ -94,7 +94,7 @@ Do not replace the existing stack unless explicitly requested.
 
 ## Initial Application Scope
 
-The initial website should remain a relatively small content-oriented application.
+Mantener el sitio principalmente orientado a contenidos y preservar las funcionalidades interactivas existentes.
 
 Expected initial capabilities may include:
 
@@ -112,7 +112,7 @@ Expected initial capabilities may include:
 * Responsive layouts.
 * Appropriate metadata for public pages.
 
-Additional capabilities should be introduced only when requested.
+Las capacidades nuevas deben incorporarse solo cuando sean solicitadas.
 
 ## Contrato editorial de fichas científicas
 
@@ -128,12 +128,12 @@ Antes de implementar o modificar cualquier funcionalidad relacionada con la gene
 ### Límite de responsabilidad de los scripts (implementación incremental)
 
 - `scripts/fichas/generar-ficha.mjs` es un ejecutable **local y manual**, independiente de Next.js/React. Recibe `--fecha` y `--url`; valida entradas, calcula la clave, recupera y verifica el texto completo, genera y valida una ficha JSON y persiste éxito o diagnóstico de error. **No lee `public/fuentes.tsv`** ni depende de su orden. Una generación correcta queda en `CREADO`, tal como documenta `GENERADOR_FICHAS.md`; el generador ya reintenta automáticamente una ficha `ERROR` sin `--force` y conserva su trazabilidad.
-- La iteración actual añade `scripts/fichas/procesar-ficha.mjs`, **orquestador local y manual previo a la validación editorial**. Recibe `--fecha` y `--url` obligatorios y `--key` opcional: su omisión representa el parámetro lógico `idempotencyKey: null` (no la cadena literal `"null"`). La identidad se deriva de fecha y URL mediante la fórmula normativa, y cualquier `--key` suministrada debe coincidir con ella antes de producir efectos. El procesador no lee `public/fuentes.tsv`.
+- `scripts/fichas/procesar-ficha.mjs` es un **orquestador local y manual previo a la validación editorial**. Recibe `--fecha` y `--url` obligatorios y `--key` opcional: su omisión representa el parámetro lógico `idempotencyKey: null` (no la cadena literal `"null"`). La identidad se deriva de fecha y URL mediante la fórmula normativa, y cualquier `--key` suministrada debe coincidir con ella antes de producir efectos. El procesador no lee `public/fuentes.tsv`.
 - `procesar-ficha.mjs` localiza y verifica la ficha para esa identidad. Si no existe o su estado es `ERROR`, **reutiliza `generar-ficha.mjs`** sin duplicar la lógica científica ni borrar previamente el registro `ERROR`; el generador existente ya gestiona reintentos, intentos, revisiones e histórico. Después comprueba el resultado persistido: una generación satisfactoria sigue siendo `CREADO`, mientras que un fallo mantiene el diagnóstico normativo de `ERROR`. Si ya existe una ficha íntegra y consistente en `CREADO`, `PENDIENTE` o `INCLUIDO`, no invoca de nuevo al generador ni cambia su estado. Ante JSON inválido, identidad discordante o estado desconocido, informa el problema sin destruir ni promocionar registros.
 - El nuevo procesador **no realiza ni automatiza la validación editorial**, no actualiza `CREADO` a `PENDIENTE`, no asigna `INCLUIDO`, no modifica `validacion` para afirmar comprobaciones que no hizo y no genera el resumen mensual. La promoción a `PENDIENTE` pertenece a un proceso posterior de validación, conforme a la sección 6 del contrato; la transición a `INCLUIDO` pertenece a otro proceso posterior que persista y verifique la síntesis mensual. No crear estados adicionales ni un campo paralelo `estadoPublicacion`.
-- El script de una iteración posterior, `procesar-ultima-fuente`, será responsable de leer el último registro válido de `public/fuentes.tsv` e invocar al generador con esos parámetros; no duplicará su lógica científica.
-- El futuro sincronizador detectará registros activos nuevos, modificados o previamente fallidos mediante las claves idempotentes, no solamente por la cantidad de líneas; queda fuera de alcance hasta una solicitud específica.
-- La persistencia inicial es local, bajo `data/fichas/YYYY-MM/` de acuerdo con el contrato, con escritura atómica. Nunca escribir fichas privadas, respuestas del modelo, documentos descargados ni secretos en `public/` por defecto. No añadir automáticamente cron, Vercel Blob, una base de datos, Route Handlers, Server Actions, endpoints HTTP ni despliegue remoto.
+- Una posible evolución, `procesar-ultima-fuente`, sería responsable de leer el último registro válido de `public/fuentes.tsv` e invocar al generador con esos parámetros; no duplicará su lógica científica.
+- Un eventual sincronizador deberá detectar registros activos nuevos, modificados o previamente fallidos mediante las claves idempotentes, no solamente por la cantidad de líneas; queda fuera de alcance salvo solicitud específica.
+- La persistencia prevista es local, bajo `data/fichas/YYYY-MM/` de acuerdo con el contrato, con escritura atómica. Nunca escribir fichas privadas, respuestas del modelo, documentos descargados ni secretos en `public/` por defecto. No añadir automáticamente cron, Vercel Blob, una base de datos, Route Handlers, Server Actions, endpoints HTTP ni despliegue remoto.
 - Mantener separadas, al menos funcionalmente, la recuperación/validación documental, la invocación al modelo, la validación del resultado y la persistencia. Evitar capas vacías o una arquitectura agéntica innecesaria.
 - Las credenciales se obtienen exclusivamente del entorno local; el nombre del modelo debe ser configurable y corresponder a un identificador real del proveedor. No insertar secretos ni resultados científicos simulados como si fueran reales.
 
@@ -144,10 +144,10 @@ Antes de implementar o modificar cualquier funcionalidad relacionada con la gene
 * Prefer Server Components by default.
 * Use Client Components only when browser APIs, interactive state, or event handlers require them.
 * Keep `"use client"` boundaries as narrow as reasonably possible.
-* Keep the initial application static and content-driven.
+* Preferir renderizado estático en las áreas de contenido que lo permitan; conservar los Server Components dinámicos necesarios para las sesiones declarativas.
 * Prefer static generation for publication pages when the available content model allows it.
 * Store repeated publication data in typed structures when appropriate.
-* Prefer a simple local data source for the MVP rather than introducing persistent infrastructure.
+* Preferir fuentes de contenido sencillas cuando sea adecuado; preservar la infraestructura persistente ya utilizada por el backend de identificación y sesiones.
 * Keep presentation components independent from the exact storage mechanism whenever doing so remains simple.
 * Introduce hooks, services, stores, or additional architectural layers only when current behavior requires them.
 * Do not create empty architectural layers for possible future functionality.
@@ -156,76 +156,9 @@ Antes de implementar o modificar cualquier funcionalidad relacionada con la gene
 * Do not introduce global state management without concrete cross-component requirements.
 
 
-## Identificación declarativa por email — Integración BFF
-
-- La identificación por correo es **declarativa**, no autentica, no verifica la titularidad y no crea sesiones ni permisos.
-- Para esta funcionalidad usar Next.js App Router como **BFF**: navegador → Route Handler del propio frontend → backend Spring Boot. No consultar Spring Boot directamente desde componentes del navegador.
-- `contracts/CONTRATO_API_IDENTIFICACION_V1.yaml` es la fuente de verdad del endpoint Spring Boot `POST /api/usuarios/identificacion`: request JSON con `email`, éxito `204 No Content`, errores `400`, `413`, `415`, `429` y `500`, sin identificadores ni datos de usuarios en la respuesta exitosa.
-- Mantener un Route Handler específico; nunca implementar un proxy abierto ni construir destinos HTTP desde valores aportados por el cliente.
-- Obtener la dirección base del backend de **`process.env.BACKEND_URL`**, exclusivamente en código del servidor. En desarrollo local configurar `BACKEND_URL=http://localhost:8080` en `.env.local`, ajustando puerto y host al backend real. Next.js carga este archivo automáticamente; no usar `NEXT_PUBLIC_` ni requerir `export` manual en la terminal. En producción configurar la misma variable en el entorno del hosting.
-- Mantener `.env.local` fuera del repositorio y no sobrescribir ni borrar otros valores existentes. Documentar solo nombres y ejemplos sin secretos en `.env.example` si corresponde. No registrar el valor de `BACKEND_URL` ni exponerlo al navegador.
-- El BFF debe validar el formato del JSON, tipo y tamaño de la solicitud antes de reenviarla; controlar tiempos de espera, traducir errores sin revelar información interna, no almacenar emails y no cachear solicitudes de identificación.
-- La dirección ingresada se normaliza totalmente a minúsculas en el backend. Comunicar antes del envío que no se garantiza compatibilidad con proveedores cuya parte local distinga mayúsculas y minúsculas. No presentar el resultado como verificación del correo.
-- No devolver `usuarioId`, correos registrados ni indicadores de existencia. No crear cookies de identidad, sesiones, autenticación, ABM de correos ni consultas de usuarios.
-- El rate limiting inicial de Spring Boot permanece en 100 solicitudes/minuto por IP observada, local por instancia. Con un BFF, varias personas pueden compartir IP de salida; no improvisar `X-Forwarded-For`. La cuota global de 125 solicitudes/minuto compartida entre instancias de backend y el rate limiting de clientes contra el BFF quedan expresamente pendientes para otra iteración; no implementarlos ahora.
-- CORS en Spring Boot no se necesita para la llamada servidor-servidor, pero puede mantenerse configurable como parte de la portabilidad del backend. CORS no es autenticación entre servidores.
-- La autenticación de aplicación BFF→Spring Boot se define en la sección siguiente; requiere HTTPS real en despliegue, cuya configuración es responsabilidad de infraestructura. No desplegar ni modificar infraestructura sin autorización explícita.
-- Estas reglas solo autorizan esta integración concreta; no autorizan endpoints para los scripts científicos locales ni modifican su ejecución exclusivamente manual.
-
-### Autenticación de aplicación BFF → backend (iteración autorizada)
-
-- **Alcance exclusivo:** autenticar al BFF como cliente de `POST /api/usuarios/identificacion`; no autenticar usuarias, verificar titularidad de correos ni introducir sesiones, cookies de identidad, JWT, OAuth, endpoints nuevos o flujos de login. Este mecanismo no protege frente a abuso del endpoint público del BFF.
-- Utilizar un secreto estático compartido, generado de forma criptográficamente aleatoria fuera de las aplicaciones, presentado como token opaco tipo *bearer* en la cabecera `X-Service-Token` de la petición **BFF → Spring Boot**. No hashearlo antes de transmitirlo: un hash fijo también sería reutilizable. No introducir variables de algoritmo criptográfico, HMAC, sincronización por endpoints o rotación automática en esta iteración.
-- Leer el secreto exclusivamente del entorno del servidor mediante `process.env.BFF_SERVICE_SECRET`. En local, `.env.local` (fuera de Git); en producción, variable privada del proyecto en Vercel. Nunca usar `NEXT_PUBLIC_`, reflejarlo al cliente, serializarlo en HTML, respuestas, trazas o logs, ni transmitirlo desde el navegador.
-- Incorporar el header solamente en la solicitud al backend de destino fijo obtenida de `BACKEND_URL`, desde el Route Handler/cliente HTTP interno ya existente. No permitir que un cliente configure el header o destino; si el cliente aporta `X-Service-Token`, ignorarlo completamente. No reenviar headers de entrada indiscriminadamente.
-- Exigir configuración no vacía del secreto y tratarla como un error interno controlado (*fail closed*): nunca enviar solicitudes al backend sin el token por falta de configuración, ni registrar su valor. Para reducir exposición, no reenviar el token a otro host tras redirecciones del backend (preferir `redirect: 'error'` o equivalente).
-- La comunicación BFF→backend debe usar HTTPS en producción; `http://localhost` se acepta solamente en desarrollo/pruebas locales controlados. No asumir que CORS autentica servidores.
-- La falta o invalidez del token puede recibir `401` o `403` del backend; el BFF debe convertirla en un error genérico de upstream (`502` o `503` según convención existente), sin reenviar cabeceras/cuerpos sensibles ni confundirla con una validación incorrecta del email. Preservar el manejo previo de `204`, `400`, `413`, `415`, `429`, timeouts y errores de conectividad.
-- Las pruebas deben verificar que el BFF inyecta exactamente una cabecera con secreto de prueba sintético y que no existe fuga hacia navegador, respuesta, logs o artefactos. Probar ausencia de configuración, respuestas `401`/`403` simuladas y no reenvío del token en redirecciones. No usar secretos reales.
-- La credencial se administra manualmente como configuración de infraestructura: mismo valor en BFF y backend. Para rotación sin corte, primero backend acepta el secreto anterior y el nuevo, luego BFF cambia al nuevo y finalmente backend retira el anterior; esta operativa es documentación, **no** una implementación de rotación en esta iteración.
-
-### Ejecución local aislada para futura integración BFF–backend (iteración de preparación)
-
-- **Alcance histórico de la iteración de preparación ya completada:** habilitar un comando explícito de `npm` para iniciar Next.js local desde `.env.integracion.local`. La coordinación y las pruebas reales se autorizan ahora exclusivamente en la sección siguiente, con ejecución opt-in y comprobaciones de seguridad; no interpretar la prohibición histórica como aplicable a esa nueva iteración.
-- `.env.integracion.local` es un nombre **personalizado**, no uno de los archivos que Next.js carga automáticamente. No asumir que `NODE_ENV=integration` sea un modo soportado por Next.js ni iniciar `next dev` con `NODE_ENV=test` para simular un perfil de Spring Boot. Conservar el modo de ejecución de Next.js apropiado y utilizar un lanzador explícito compatible con la versión de Node del repositorio.
-- El archivo real `.env.integracion.local` es local, privado y excluido de Git; no crearlo ni rellenarlo con credenciales verdaderas desde Codex. Documentar las variables necesarias mediante un archivo de ejemplo sin secretos, preferentemente `.env.integracion.example` si resulta coherente con las convenciones existentes. No sobrescribir, renombrar, mover ni editar `.env.local`.
-- El comando de integración debe fallar **antes** de iniciar Next.js si falta el archivo, si es ilegible o si `BACKEND_URL` o `BFF_SERVICE_SECRET` están ausentes/vacíos. Verificar que la URL apunte solamente a un destino local permitido para esta preparación y nunca a producción; no inventar un servidor backend ni consumirlo en esta iteración.
-- La configuración de integración debe tener precedencia frente a cualquier valor homónimo previamente exportado en la terminal y frente a `.env.local`. El lanzador debe aislar/sanear al menos `BACKEND_URL` y `BFF_SERVICE_SECRET` antes de iniciar el proceso y demostrar de forma automatizada que **no se recuperan valores de desarrollo como fallback**. No exponer variables o credenciales, no imprimir valores ni usar comandos que vuelquen el entorno. Si la carga automática de Next.js impide garantizar el aislamiento requerido, informar la limitación con precisión y optar por un mecanismo seguro y mínimo, sin declarar una garantía inexistente.
-- Evitar que los valores de integración queden incorporados en artefactos estáticos, scripts de navegador o configuración compartida de producción. No crear variables `NEXT_PUBLIC_*` para secretos. Mantener separados arranque habitual y arranque de integración, sin cambiar los scripts normales (`dev`, `build`, `start`, `test`, `test:e2e`) salvo necesidad demostrada y acotada.
-- Preferir APIs nativas de Node disponibles en la versión instalada y herramientas ya existentes; no agregar paquetes, scripts de shell frágiles o cargadores genéricos de perfiles sin justificación concreta. No modificar variables de entorno del proceso padre, repositorios hermanos o infraestructura externa.
-- Verificar de modo determinista con secretos ficticios y sin servicios externos: selección de archivo, precedencia de valores, ausencia de fallback, error por variables faltantes, y arranque o validación de configuración sin exponer valores sensibles. No ejecutar POST reales, E2E, integración con PostgreSQL ni despliegues en esta iteración.
-- Esta preparación no constituye una verificación BFF→Spring Boot→PostgreSQL. La nueva iteración de pruebas reales se rige exclusivamente por la sección de integración con JAR externo.
-
-### Pruebas de integración reales entre aplicaciones mediante JAR externo (iteración autorizada)
-
-- **Objetivo exclusivo:** implementar, en este repositorio frontend, una suite opt-in que pruebe por HTTP el recorrido **cliente de pruebas → Route Handler BFF real de Next.js → Spring Boot real empaquetado como JAR → PostgreSQL de pruebas**. Se excluye el navegador y Playwright en esta iteración. No acceder al código fuente del backend ni modificarlo; tratar el JAR como un artefacto externo inmutable y al backend como un servicio cuya API se conoce mediante `contracts/CONTRATO_API_IDENTIFICACION_V1.yaml`.
-- Crear un comando separado `npm run test:integracion` que **nunca** se ejecute desde `prebuild`, `build`, `postbuild`, `test:ci`, `test:e2e` ni despliegues Vercel. Reutilizar los scripts y convenciones existentes de `scripts/identificacion/` y el runner `node:test` cuando sea apropiado; no duplicar suites ya cubiertas ni agregar dependencias sin necesidad real.
-- La prueba debe coordinar de manera local y explícita el ciclo de vida de un **JAR precompilado**, que la usuaria prepara manualmente y puede copiar a `integration/backend/` dentro de la raíz frontend (directorio local excluido de Git), y el proceso Next.js iniciado con su mecanismo `dev:integracion` existente. Elegir ubicaciones mediante rutas configurables, por ejemplo `BACKEND_JAR_PATH` y `BACKEND_TEST_CONFIG_PATH`, nunca rutas personales codificadas. **No buscar ni compilar el repositorio backend**, y no usar Maven ni leer fuentes Java como parte de este comando.
-- El JAR no incorpora normalmente `src/test/resources/application-test.yml`. Exigir un `application-test.yml` **externo al JAR** (no empaquetado), que puede ubicarse junto al JAR en `integration/backend/` dentro del frontend, que configure explícitamente la conexión Spring Boot por `TEST_DB_URL`, `TEST_DB_USERNAME` y `TEST_DB_PASSWORD`, manteniendo `spring.jpa.hibernate.ddl-auto: none`. El archivo externo solo contiene referencias `${TEST_DB_*}`, sin valores ni credenciales reales. Proporcionar un ejemplo no sensible y documentar cómo pasarlo de forma explícita a Spring Boot (`spring.config.additional-location` u opción comprobada equivalente). No asumir que activar `spring.profiles.active=test` basta por sí solo; no confiar en fallbacks de `application.yml`.
-- **Ubicación local autorizada:** admitir `BACKEND_JAR_PATH=./integration/backend/be-conciencia-alimentaria-0.0.1-SNAPSHOT.jar` y `BACKEND_TEST_CONFIG_PATH=./integration/backend/application-test.yml` en `.env.integracion.local`, resolviendo rutas relativas desde la raíz frontend. El script **no debe exigir** que estén fuera del workspace. `integration/backend/` debe quedar excluido de Git mediante `.gitignore` y nunca encontrarse en `public/`, ni copiarse al output de Next.js/Vercel. No imprimir contenido del YAML, ni intentar inferir que ubicación dentro del workspace implica ausencia de seguridad. El JAR sigue siendo externo **a la compilación y al código fuente del backend**, no tiene que estar fuera del repositorio frontend. Preservar los controles de conexión y permisos existentes.
-- El frontend toma `BACKEND_URL` y `BFF_SERVICE_SECRET` exclusivamente desde `.env.integracion.local`, conforme al lanzador existente. El backend hijo recibe el **mismo secreto sintético**, no el de desarrollo, y exclusivamente los `TEST_DB_*` configurados por la usuaria en la terminal, manteniendo el perfil `test`. No escribir secretos en comandos visibles, argumentos de CLI, archivos versionados, logs ni artefactos. No modificar `.env.local`; no propagar credenciales de desarrollo ni variables de acceso a Redis/QStash/owner o scripts científicos al proceso de integración.
-- **Fail closed antes de escribir:** comprobar que la URL de `BACKEND_URL` y los puertos HTTP son locales y coinciden con el proceso levantado; comprobar que el JAR y el archivo externo existen y son archivos legibles; verificar que las tres variables `TEST_DB_*` están presentes y que las `DB_*` habituales y overrides Spring/JDBC peligrosos no se heredan al backend hijo. Comprobar el destino efectivo de PostgreSQL de pruebas por medios fiables y explícitos antes de permitir POST de escritura; como mínimo validar estrictamente URL/base esperada y configuración externa y ejecutar un preflight de consulta **solo lectura** contra la instancia de pruebas con el mismo destino y credenciales. Un simple prefijo `TEST_`, un nombre de archivo o una URL distinta no garantizan aislamiento. Si no se puede verificar de forma suficiente el destino efectivo o permisos, **abortar sin efectuar escrituras ni reemplazar la comprobación con mocks**. No acceder a producción o a bases de desarrollo.
-- El backend ya dispone de pruebas de persistencia propias. En esta suite priorizar el contrato HTTP entre aplicaciones: secreto correcto y `204` vacío para correo sintético, repetición idempotente observable por HTTP, clasificación segura de `401/403` upstream en el BFF, errores sin filtraciones, ausencia de reintentos, y comprobaciones acotadas de persistencia **solo si** existe un medio seguro para verificar/limpiar exclusivamente los registros de esta prueba. No añadir endpoints de consulta, diagnóstico o limpieza al backend ni modificar su esquema. No afirmar que `204` demuestra por sí solo persistencia verificada.
-- **Seguridad de procesos:** abortar si un puerto necesario ya está ocupado; nunca reutilizar a ciegas un servidor existente, terminar procesos ajenos, ejecutar `killall`/`pkill` generalizados, ni eliminar archivos de otros proyectos. Esperar readiness con timeout sin operaciones de escritura; manejar fallos de inicio, señales y salida anticipada; finalizar únicamente los procesos creados por el orquestador, incluidos descendientes propios, y dejar reporte conciso de recursos que no pudiera liberar.
-- Separar la verificación determinista de lógica del orquestador (sin servicios externos ni base de datos) de la ejecución opt-in real. Durante la implementación, construir y validar los componentes aislados primero. **La ejecución real con PostgreSQL y POST sintéticos está autorizada en la misma sesión solo cuando el prompt de implementación de la usuaria lo autorice expresamente y todas las salvaguardas previas se comprueben satisfactoriamente**. Ante cualquier incertidumbre sobre destino efectivo, credenciales, permisos o limpieza, abortar las escrituras e informar el bloqueo; no exigir otra sesión si ya hay autorización condicionada vigente. Si hay bloqueos de sandbox o permisos, informar y solicitar solamente el acceso imprescindible; no eludir restricciones. La mera ubicación de archivos dentro del repositorio frontend **no** debe bloquear la ejecución: verificar permisos reales, aislamiento de base y exclusión de publicación.
-- No introducir autenticación de usuarias, JWT, sesiones, nuevos endpoints, modificaciones de Spring Boot, nuevas protecciones de rate limiting, infraestructura remota ni cambios en los scripts de fichas. Preservar los límites ya decididos: 100/min por IP observada del backend sigue local a cada instancia; el límite global de 125/min y el rate limiting de visitantes del BFF siguen pendientes.
-- Documentar preparación manual del JAR y `application-test.yml` externo al JAR, admitiendo `integration/backend/`, configuración no sensible, configuración de `TEST_DB_*` en la terminal y de `.env.integracion.local`, comando de ejecución, criterios de aborto, alcance real comprobado y límites del aislamiento; informar resultado de tests aislados por separado de cualquier integración HTTP/BD realmente ejecutada.
-
-### Manejo de errores y validaciones de la identificación
-
-- Revisar primero la implementación ya existente antes de añadir nuevas validaciones, manejadores o abstracciones. Mantener una responsabilidad clara en cada frontera: formulario React, Route Handler BFF y backend Spring Boot.
-- Validar en el servidor incluso cuando el formulario valide para mejorar la experiencia de uso. Para la identificación, respetar `contracts/CONTRATO_API_IDENTIFICACION_V1.yaml`: email obligatorio como string, límites y sintaxis básica, rechazo de propiedades inesperadas, JSON malformado y tipo de contenido no admitido. Restringir el cuerpo a **2048 bytes durante su lectura**, sin confiar únicamente en `Content-Length`.
-- Conservar `204 No Content` estrictamente sin cuerpo. Para fallas conocidas del backend, manejar `400`, `413`, `415` y `429` de forma controlada; no retransmitir indiscriminadamente cuerpos, cabeceras o códigos ajenos. Los fallos de conectividad o respuesta inválida del upstream pueden representarse como `502` desde el BFF; los timeouts como `504`. Esos errores propios del BFF no cambian el contrato OpenAPI de Spring Boot.
-- Para errores del BFF utilizar una respuesta JSON segura y coherente (`codigo`, `mensaje`), sin correo, URL interna, stack trace, credenciales, SQL, identificadores internos ni información sobre la existencia de una cuenta. Validar `Retry-After` antes de reenviarlo cuando proceda.
-- No realizar reintentos automáticos de la identificación ante timeout o pérdida de conexión: el backend podría haber persistido la operación antes de que se perdiera su respuesta. No convertir una operación de resultado incierto en confirmación de éxito.
-- En el formulario, mantener mensajes de error accesibles, estado de carga y prevención de envíos accidentales duplicados; conservar el texto ingresado ante un fallo. Un `204` confirma el procesamiento declarativo, no la titularidad del correo ni una autenticación.
-- No persistir el correo en cookies, almacenamiento del navegador, herramientas de seguimiento o logs. No registrar cuerpos HTTP de identificación.
-- Probar de forma determinista errores de validación, límites de tamaño, rate limiting, fallos de red, timeouts, respuestas inesperadas y ausencia de filtraciones; distinguir pruebas con mocks de comprobaciones reales contra Spring Boot. Mantener el alcance restringido al frontend si esa es la iteración solicitada.
-
-
 ## Content Model
 
-For the initial version, publication data may be stored using TypeScript data structures, JSON, Markdown, MDX, or another simple repository-based format already justified by the implementation.
+For the existing content model, publication data may be stored using TypeScript data structures, JSON, Markdown, MDX, or another simple repository-based format already justified by the implementation.
 
 Prefer a typed content model.
 
@@ -538,7 +471,7 @@ Navigation should reflect actual available content.
 
 Do not create empty menu sections merely to suggest future functionality.
 
-For the initial version, prefer a small number of meaningful destinations.
+For the existing content model, prefer a small number of meaningful destinations.
 
 Potential navigation concepts may include:
 
@@ -713,16 +646,16 @@ Unless explicitly requested, do not introduce:
 
 * Authentication of end users (the explicitly authorized BFF→backend service-token authentication is an exception).
 * Authorization.
-* Login or logout.
-* User accounts with authentication, sessions, profiles or private access (the explicitly requested declarative-email integration is an exception).
+* Nuevos flujos de login o logout distintos de las sesiones declarativas existentes.
+* User accounts with authentication, profiles or private access (the existing declarative-email session flow is not authentication).
 * Private user areas.
 * A database.
 * A CMS.
 * An administrative panel.
 * A custom backend.
-* A custom API, except the specific BFF Route Handler required for declarative-email identification.
-* Persistent application state.
-* Global state-management libraries.
+* Nuevos endpoints públicos distintos de los Route Handlers BFF ya implementados para identificación y sesiones declarativas.
+* Nuevo estado persistente de aplicación fuera de la funcionalidad ya implementada.
+* Nuevas librerías de estado global; el React Context de identificación existente se conserva.
 * Middleware without a concrete current requirement.
 * Comment systems.
 * User-generated content.
@@ -800,31 +733,6 @@ Before finalizing code changes:
 * Report commands that fail or cannot be executed.
 * Do not modify unrelated code merely to make unrelated validation pass.
 
-### Tests básicos de la identificación declarativa (Iteración 8)
-
-- Antes de crear tests, inspeccionar los tests existentes, su configuración, los scripts reales de `package.json` y los cambios pendientes; reutilizar los patrones y utilidades ya incorporados. No duplicar cobertura ni introducir una segunda infraestructura de pruebas.
-- Priorizar tests automatizados, deterministas y mantenibles del Route Handler BFF, las validaciones de entrada, el mapeo de errores y, cuando resulte pertinente con el entorno de pruebas disponible, el comportamiento observable del formulario. Probar resultados y contratos, no detalles internos frágiles.
-- Respetar `contracts/CONTRATO_API_IDENTIFICACION_V1.yaml`: `204` sin cuerpo; errores de validación (`400`, `413`, `415`); tratamiento de `429`; fallos de comunicación, timeouts y respuestas inesperadas. Verificar que no se revelan datos personales ni internos y que no existen reintentos automáticos del POST.
-- Simular exclusivamente la dependencia HTTP de Spring Boot en los tests aislados del frontend; usar emails sintéticos y nunca credenciales reales. Las pruebas automatizadas no deben depender de PostgreSQL, internet, servicios externos en ejecución ni de `.env.local` real.
-- Preservar el aislamiento de variables de entorno, mocks y estado entre tests. Verificar explícitamente la ausencia de fugas de `BACKEND_URL` y de identificadores internos en las respuestas cuando sea relevante.
-- Añadir tests del formulario solo si aportan valor y se pueden mantener con las herramientas existentes. Si se necesita una dependencia de testing nueva, justificarla previamente y limitarla al alcance real; no crear utilidades o abstracciones genéricas innecesarias.
-- Distinguir tests unitarios/de integración local con mocks de una verificación extremo a extremo contra Spring Boot real. Esta última no es requisito para dar por completada la Iteración 8 del frontend y no debe afirmarse si no se ejecutó.
-- Registrar las pruebas realizadas y sus resultados, casos que continúan sin cobertura, limitaciones de ejecución y cualquier problema de producción encontrado. No alterar contratos ni lógica funcional solamente para hacer pasar una prueba; corregir defectos reales de alcance estrecho e informar discrepancias que exijan decisiones posteriores.
-- Estas reglas no cambian el alcance manual y aislado de los scripts científicos ni autorizan modificaciones en el backend.
-
-### Pruebas E2E de identificación declarativa con Playwright (Iteración 9)
-
-- La iteración E2E corresponde exclusivamente al **frontend Next.js**, con Playwright **utilizando un navegador real**. Reutilizar cualquier configuración, dependencia o suite Playwright ya existente antes de instalar o crear otra. Conservar las pruebas de la Iteración 8; no reemplazarlas ni duplicar exhaustivamente sus casos.
-- Verificar desde la interfaz el flujo existente: acceso al formulario, ingreso de un correo sintético, aviso sobre la normalización total a minúsculas y su limitación, envío, carga, resultado de éxito declarativo y mensajes de error accesibles. La identificación **no prueba la titularidad del email, no autentica, no autoriza y no inicia sesión**.
-- Para la suite reproducible por defecto, ejecutar el frontend real en un servidor local de pruebas y preferir que el navegador atraviese el **Route Handler BFF real**. Simular únicamente la dependencia HTTP externa de Spring Boot con un servidor local controlado si es viable con cambios mínimos. Si se intercepta la respuesta del BFF desde Playwright, clasificar esos casos como **E2E de interfaz con BFF simulado**: no afirmar que verifican la integración real del BFF.
-- Probar escenarios representativos, no todas las combinaciones de validación ya cubiertas: `204` sin cuerpo y confirmación no engañosa; validación del formulario; prevención de doble envío; fallos `400`/`429` cuando sea pertinente; error de red y timeout; conservación del email ante fallo; accesibilidad de mensajes; ausencia de exposición o persistencia del correo en cookies y almacenamiento del navegador. Verificar únicamente efectos realmente observables desde el navegador, sin asumir la estructura interna de componentes.
-- Los tests por defecto deben ser **locales, deterministas, independientes de servicios externos, internet, PostgreSQL y credenciales reales**. Usar direcciones sintéticas (`example.com`), datos aislados, mocks/restablecimiento del estado entre casos y tiempos de espera acotados. No registrar emails en trazas, capturas, videos, logs ni artefactos que puedan publicarse; cuidar también los datos usados en fallos de test.
-- No ejecutar E2E contra producción ni realizar POST reales que creen o alteren usuarios. Cualquier prueba opcional con Spring Boot y PostgreSQL reales requiere autorización explícita de la usuaria, entorno local de pruebas aislado y estrategia de limpieza comprobable. No incluirla en el comando E2E predeterminado ni presentarla como ejecutada cuando no lo fue.
-- Mantener Playwright y los navegadores fuera del JAR/backend y del artefacto de producción. No añadir E2E a `prebuild`, `build`, `postbuild` ni al despliegue automático de Vercel sin solicitud explícita. Utilizar un script independiente como `test:e2e` si es apropiado y existe la dependencia necesaria.
-- En esta iteración E2E (9), no agregar autenticación de usuarias, sesiones, cookies de identidad, consultas de existencia, nuevos endpoints ni cambios al contrato `contracts/CONTRATO_API_IDENTIFICACION_V1.yaml`. La autenticación de aplicación BFF→backend se autoriza únicamente en su propia iteración posterior y no altera el significado declarativo de la identificación. No alterar la arquitectura BFF ni los scripts científicos/manuales.
-- Documentar cómo instalar el navegador si falta, arrancar las pruebas localmente y distinguir en el informe final: casos automatizados con navegador y BFF real + upstream simulado, casos con BFF interceptado, y cualquier integración real expresamente autorizada. No afirmar pruebas exitosas, capturas verificadas ni cobertura no ejecutada.
-
-
 ### Validation of local scientific-ficha scripts
 
 * Use deterministic tests with mocked retrieval/model responses (Node built-in `node:test` where appropriate), never live API consumption as a requirement of automatic tests.
@@ -885,3 +793,55 @@ When completing an implementation:
 * Report relevant responsive behavior when UI was modified.
 * Do not claim checks, executions, visual verification, or results that were not actually performed.
 * For local ficha tooling, provide the manual invocation syntax, required environment variable names (never their values), resulting output location, and the behavior on existing fichas, failure, and `--force`; distinguish mock validation from a real end-to-end generation.
+
+
+## Arquitectura vigente — Identificación y sesiones declarativas
+
+Las funcionalidades existentes de identificación por email y sesiones declarativas están implementadas y se conservan. Esta sección describe **invariantes de producto y de arquitectura**, no autoriza una nueva iteración ni reabre trabajo ya validado.
+
+- **No hay autenticación de personas:** el registro de email, el inicio y el cierre declarativos no comprueban titularidad, no acreditan identidad y no otorgan permisos. `identified` representa únicamente el estado declarativo del navegador; no implica que el backend haya validado la vigencia de una sesión.
+- **Contratos normativos e inmutables salvo pedido explícito:** `contracts/CONTRATO_API_IDENTIFICACION_V1.yaml` para BFF ↔ Spring Boot y `contracts/CONTRATO_BFF_SESIONES.md` para navegador ↔ BFF. Leerlos antes de cambiar flujos relacionados; ante discrepancias materiales detener la parte afectada e informarla.
+- **Fronteras:** navegador/React → Route Handlers Next.js same-origin → Spring Boot. No llamar al backend desde el navegador, no crear proxies abiertos y no modificar el backend/JAR o contratos para facilitar tareas del frontend.
+- **Rutas existentes:** `POST /api/usuarios/identificacion` (registro declarativo; éxito `204` sin cuerpo), `POST /api/usuarios/sesiones` (inicio; éxito `201` BFF sin cuerpo) y `DELETE /api/usuarios/sesiones/actual` (cierre; éxito `204` sin cuerpo). Las implementaciones existentes y sus clasificaciones de errores se preservan. No inventar rutas o contratos adicionales.
+- **Credencial técnica BFF → backend:** `X-Service-Token` a partir exclusivamente de `BFF_SERVICE_SECRET` en el servidor, con destino fijo en `BACKEND_URL`; jamás exponer valores, transmitir desde React o aceptar credenciales técnicas suministradas por el navegador. Mantener las protecciones existentes de validación, límites, timeout acotado, `no-store`, `redirect: 'error'`, manejo seguro de errores y ausencia de reintentos automáticos mutantes. HTTPS en producción; HTTP solo en pruebas locales controladas.
+- **Registro:** `204` no inicia una sesión, no cambia el estado React y no acredita titularidad del email. Conservar la advertencia sobre la normalización completa a minúsculas en backend y sus limitaciones.
+- **Inicio:** Spring Boot devuelve `201` con `{sesionId}` al BFF; el identificador opaco se utiliza exclusivamente en el servidor para crear la cookie `ca_sesion`. El BFF responde `201` sin cuerpo. No entregar ID, token ni correo al estado React, HTML, URL, logs o respuestas. Una respuesta backend inválida o incierta no se transforma en éxito ni altera una cookie anterior.
+- **Cookie:** `ca_sesion`, `HttpOnly`, `SameSite=Lax`, `Path=/`, `Secure` en HTTPS; sin `Max-Age` ni `Expires` al crearla. El valor es solamente el identificador opaco. El navegador la transporta automáticamente; React no la lee mediante JavaScript.
+- **Cierre:** React solicita `DELETE /api/usuarios/sesiones/actual` sin cuerpo ni identificador. El BFF lee la cookie solo en servidor y, si existe y es válida, envía `X-Session-Id` al backend junto a `X-Service-Token`. Ante `204`, elimina la cookie y confirma el cierre declarativo. Ante error o respuesta incierta, conserva la cookie y el estado. **Si no hay cookie, el BFF devuelve `204` sin solicitar invalidación al backend**; ese resultado no acredita que alguna sesión persistida haya sido invalidada.
+- **Estado compartido:** React Context tipado `anonymous | identified`, sin ID, correo ni sesión en localStorage/sessionStorage. Tras `201` BFF confirmado pasa a `identified`; tras `204` de cierre pasa a `anonymous`; errores preservan el estado previo. F5 reconstruye el estado por **presencia** de cookie leída en Server Components con `cookies()` de Next.js, no por autenticación contra Spring Boot.
+- **Interfaz:** preservar formularios y modales existentes, submit con Enter, bloqueo de envíos duplicados, mensajes accesibles y conservación del email durante errores. Cerrar una ventana modal no equivale a cerrar sesión. Las mejoras exclusivamente visuales no habilitan cambios en Route Handlers, servicios, contratos ni gestión de sesiones.
+
+### Limitación aceptada: sesiones sin cookie y limpieza manual
+
+Spring Boot puede persistir una sesión y perderse la respuesta antes de que el navegador reciba `ca_sesion`. Sin identificador disponible, los endpoints actuales no permiten recuperar ni invalidar esa sesión concreta. **No existe vencimiento ni limpieza automática de esas sesiones en la versión actual.** La posible existencia de registros sin uso es una limitación conocida y aceptada; no constituye por sí sola un defecto funcional.
+
+La limpieza de registros persistidos será **manual y sujeta a autorización específica**, con identificación precisa de las filas y del entorno. No implementar por iniciativa propia borrados automáticos, vencimientos, SQL de limpieza, endpoints de recuperación ni esquemas nuevos para resolver esa limitación. Una futura versión con autenticación podrá incorporar expiración y gestión de ciclo de vida mediante una decisión y contrato independientes. Una cookie eliminada y un `204` HTTP no son prueba directa de invalidación física en PostgreSQL.
+
+## Pruebas y verificación — Política permanente
+
+- Mantener y reutilizar `node:test`, las suites existentes de `scripts/identificacion/` y la configuración de Playwright en `scripts/playwright/e2e/`; no duplicar runners o infraestructura. Probar la capa realmente afectada y conservar las aserciones contractuales.
+- Distinguir siempre **pruebas aisladas con mocks**, **Playwright con upstream simulado**, **integración HTTP real entre aplicaciones** y **Playwright E2E real**. Un tipo no demuestra cobertura de otro.
+- Las pruebas aisladas apropiadas al cambio pueden ejecutarse después de inspeccionar que no contactan Spring Boot real, PostgreSQL ni producción. La ejecución E2E/HTTP con JAR y PostgreSQL reales **requiere autorización expresa del prompt actual**, incluso si se aprobó en una iteración anterior. Nunca ejecutar integración real o E2E como consecuencia automática de un cambio de presentación.
+- No repetir pruebas mutantes reales históricamente aprobadas salvo necesidad concreta y autorización expresa. Inspeccionar `package.json` antes de invocar tareas: `npm run build` puede ejecutar `prebuild` → `test:ci`; no arrastrar inadvertidamente suites ajenas. Ejecutar TypeScript/ESLint y comprobaciones focalizadas según el alcance.
+- En Playwright real, no usar `page.route`, interceptaciones ni upstream simulado para afirmar recorrido completo. No interpretar como fallo de producto la mera presencia de una sesión huérfana inevitable, ni eliminar aserciones sobre `201` vacío, creación correcta de cookie, reconstrucción F5 o cierre explícito. Los residuos potenciales se documentan; los defectos reales de interfaz/contrato siguen siendo fallos.
+- No guardar secretos, emails, IDs de sesión, cookies ni cuerpos de solicitudes/respuestas en reportes, capturas, trazas, videos o logs. Usar datos exclusivamente sintéticos y aislar estado, fixtures y mocks entre tests.
+- Un conjunto E2E real de sesiones declarativas y sus comprobaciones aisladas **fue aprobado en una ejecución anterior**; esto es antecedente de validación, no garantía de versiones futuras ni autorización para repetir pruebas reales. Los casos HTTP reales con credencial técnica incorrecta quedaron pendientes en ese informe, sin considerarlos aprobados.
+
+## Infraestructura de integración real — Salvaguardas permanentes
+
+**Esta sección prescribe requisitos de seguridad si una tarea posterior autoriza pruebas reales; no concede por sí misma tal autorización.** Reutilizar el orquestador existente `scripts/identificacion/test-integracion.mjs`, incluyendo la selección de subflujo `--solo-e2e` cuando corresponda. No construir otro orquestador ni ejecutar `npm run test:integracion` a ciegas si incluye POST reales no solicitados.
+
+- `.env.integracion.local` es privado, no se carga automáticamente por Next.js y debe mantener precedencia sobre variables homónimas del entorno o `.env.local`. Solo nombres y ejemplos sin secretos en archivos versionables; no editar `.env.local` ni los archivos privados por conveniencia de la prueba.
+- Verificar por nombre y presencia (sin imprimir valores) `BACKEND_URL`, `BFF_SERVICE_SECRET`, `BACKEND_JAR_PATH`, `BACKEND_TEST_CONFIG_PATH`, `TEST_DB_URL`, `TEST_DB_USERNAME`, `TEST_DB_PASSWORD`, `TEST_DB_EXPECTED_NAME`, `TEST_DB_EXPECTED_COMMENT`. El JAR se prepara manualmente y es externo a la compilación del frontend; se admite `integration/backend/` excluido de Git. No compilar ni modificar Java/JAR.
+- Antes de iniciar servicios susceptibles de escribir, acreditar destino local, URL JDBC sin ambigüedad, JAR/YAML externo legibles, perfil Spring Boot `test`, `spring.jpa.hibernate.ddl-auto: none`, ausencia de overrides peligrosos y de inicializadores/migraciones no autorizados. El YAML externo debe tomar credenciales exclusivamente de `${TEST_DB_*}`.
+- Ejecutar preflight PostgreSQL **solo lectura** sobre el destino previsto, confirmando base efectiva exactamente `conciencia_alimentaria_test`, rol `conciencia_app_test`, host/puerto locales e igualdad exacta entre el comentario leído con `shobj_description(oid, 'pg_database')` y la variable privada independiente `TEST_DB_EXPECTED_COMMENT`. Ausencia, discordancia o imposibilidad de verificar: **abortar antes de arrancar el JAR y antes de escrituras**.
+- El rol puede tener `CONNECT` efectivo sobre otras bases; esto **no bloquea por sí solo** el preflight, pero constituye riesgo residual conocido, **no aislamiento por privilegios exclusivos**. No modificar permisos, roles, comentarios ni configuración PostgreSQL desde Codex.
+- Tras iniciar únicamente procesos propios, verificar readiness sin mutaciones y correlacionar las conexiones efectivas del JAR con base, instancia y rol autorizados **antes de cada operación mutante**. Sin destino inequívoco o ante colisiones de puertos, abortar. No reutilizar servidores desconocidos, terminar procesos ajenos ni usar `pkill`/`killall` indiscriminados.
+- No asumir que un `201/204` demuestra directamente la persistencia o invalidación en tablas. Los residuos sintéticos conocidos/potenciales se registran sin efectuar SQL destructivo. La limpieza de base queda para operaciones manuales, específicamente autorizadas.
+- No realizar reintentos de POST o DELETE mutantes ante timeout o resultado incierto. No utilizar datos reales, bases de desarrollo o producción, ni desplegar infraestructura desde pruebas locales. Separar claramente las autorizaciones de inspección, pruebas aisladas y operaciones reales con efectos persistentes.
+
+## Tareas futuras y precedencia
+
+El `AGENTS.md` define políticas permanentes. **El prompt de cada tarea define su alcance puntual**, incluidas las rutas que pueden cambiarse, las verificaciones que se ejecutarán y cualquier permiso excepcional para operaciones con efectos. Una instrucción histórica de una iteración concluida no constituye autorización vigente. Nunca interpretar el mero hecho de que una herramienta o suite exista como permiso para ejecutarla.
+
+Los contratos normativos de identificación/sesiones y de fichas científicas no se reescriben para satisfacer una implementación o una prueba. Si el prompt actual contradice un límite de seguridad o un contrato, informar la discrepancia y no asumir excepciones implícitas.

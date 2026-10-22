@@ -25,7 +25,7 @@ export default function Home() {
     : "/images/publicaciones/noticiadeldia/iconnoticia.png";
 
      const NoticiaLinkSrc = existeNoticia
-    ? "https://doi.org/10.1007/s00394-026-04114-4"
+    ? "https://doi.org/10.1038/s41467-026-77064-4"
     : "/images/publicaciones/noticiadeldia/empty.png";
 
     const menuSugeridoPath = path.join(
@@ -52,20 +52,23 @@ export default function Home() {
         aria-labelledby="intro-title"
         className="site-container grid items-center gap-10 py-12 sm:py-16 lg:grid-cols-2 lg:gap-16 lg:py-20"
       >
-         <div className="flex ">
+         <div className="flex w-full ">
            
         <div className="flex flex-col max-h-full">
           <p className="mb-5 text-xs font-semibold tracking-[0.16em] text-accent uppercase">
             Un espacio para aprender
           </p>
-          <h1
-            id="intro-title"
-            className="max-w-xl font-display text-2xl leading-[1.12] text-balance sm:text-3xl lg:text-4xl"
-          >
-            Una mirada curiosa{" "}
-            <span className="text-accent">sobre nuestra alimentación.</span>
-            <div className="text-accent">y... ¿nos alimentamos únicamente con alimentos?</div>
-          </h1>
+          <div className="flex min-w-0 items-center gap-2 sm:gap-4">
+            <h1
+              id="intro-title"
+              className="min-w-0 max-w-xl flex-1 font-display text-2xl leading-[1.12] text-balance sm:text-3xl lg:text-4xl"
+            >
+              Una mirada curiosa{" "}
+              <span className="text-accent">sobre nuestra alimentación.</span>
+              <div className="text-accent">y... ¿nos alimentamos únicamente con alimentos?</div>
+            </h1>
+            <IdentificationModal/>
+          </div>
          <div className="mt-6 max-w-lg rounded-[1rem] bg-[#faf7f1] p-[1rem] text-lg leading-relaxed text-muted shadow-[5px_15px_40px_7px_rgba(50,76,0,1)]">
             <p>
               Bienvenidos a Conciencia Alimentaria.
@@ -86,7 +89,6 @@ export default function Home() {
           <MensajeDelDia />
           </div>
            </div>
-      <IdentificationModal/>
            
                  
         </div>

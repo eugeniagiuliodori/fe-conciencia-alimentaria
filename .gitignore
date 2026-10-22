@@ -8,5 +8,4 @@ node_modules
 reports/
 /data/fichas/
 /data/raw/
-/integration/backend/*.jar
-/integration/backend/*.yml
+/integration/backend/
