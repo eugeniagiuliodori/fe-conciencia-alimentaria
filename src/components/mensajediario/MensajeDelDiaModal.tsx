@@ -62,10 +62,9 @@ export function MensajeDelDiaModal({
 
     if (typeof navigator.share === "function") {
       try {
+        const contenido = `${messageText}\n\n${siteUrl}`;
         await navigator.share({
-          title: "Un mensaje para hoy | Conciencia Alimentaria",
-          text: messageText,
-          url: siteUrl,
+          text: contenido,
         });
       } catch (error: unknown) {
         if (typeof error === "object" && error !== null && "name" in error && error.name === "AbortError") {
