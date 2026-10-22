@@ -6,6 +6,7 @@ import { register } from "tsx/esm/api";
 
 // Next resuelve server-only durante el empaquetado; estos tests ejecutan el
 // servicio directamente en Node, sin habilitar su uso desde componentes cliente.
+Module.register(new URL("./server-only-test-loader.mjs", import.meta.url));
 const unregisterTsx = register({ tsconfig: fileURLToPath(new URL("../../tsconfig.json", import.meta.url)) });
 const originalResolveFilename = Module._resolveFilename;
 Module._resolveFilename = function (specifier, ...args) {
@@ -16,6 +17,7 @@ Module._resolveFilename = function (specifier, ...args) {
   }
   return originalResolveFilename.call(this, specifier, ...args);
 };
+assert.equal(import.meta.resolve("server-only"), new URL("./server-only-test-stub.cjs", import.meta.url).href);
 const [{ NextRequest }, { POST }, { DELETE }] = await Promise.all([
   import("next/server.js"),
   import("../../src/app/api/usuarios/sesiones/route.ts"),
