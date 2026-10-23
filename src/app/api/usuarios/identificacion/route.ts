@@ -1,3 +1,7 @@
+import { checkRateLimit } from "@/features/rate-limiting/guard";
+import { RATE_LIMIT_ENDPOINTS } from "@/features/rate-limiting/limit";
+import { backendQuotaErrorResponse, discardBody, readBackendQuotaError } from "@/services/shared/backend-response";
+
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
@@ -17,10 +21,6 @@ const errors = {
     codigo: "TIPO_CONTENIDO_NO_ADMITIDO",
     mensaje: "Tipo de contenido no admitido.",
   },
-  429: {
-    codigo: "DEMASIADAS_SOLICITUDES",
-    mensaje: "Demasiadas solicitudes. Intentá nuevamente más tarde.",
-  },
   502: {
     codigo: "SERVICIO_NO_DISPONIBLE",
     mensaje: "No se pudo confirmar el procesamiento de la solicitud. Intentá nuevamente más tarde.",
@@ -35,9 +35,8 @@ const errors = {
   },
 } as const;
 
-function errorResponse(status: keyof typeof errors, retryAfter?: string) {
+function errorResponse(status: keyof typeof errors) {
   const headers = new Headers({ "Cache-Control": "no-store" });
-  if (retryAfter) headers.set("Retry-After", retryAfter);
   return Response.json(errors[status], { status, headers });
 }
 
@@ -129,16 +128,10 @@ function backendEndpoint(): URL | null {
   }
 }
 
-function validRetryAfter(value: string | null): string | undefined {
-  // El contrato admite segundos enteros positivos, no fechas HTTP.
-  if (!value || !/^\d+$/.test(value)) return undefined;
-  const seconds = Number(value);
-  return Number.isSafeInteger(seconds) && seconds > 0
-    ? String(seconds)
-    : undefined;
-}
-
 export async function POST(request: Request): Promise<Response> {
+  const rejection = await checkRateLimit(request, RATE_LIMIT_ENDPOINTS.identification);
+  if (rejection) return rejection;
+
   const email = await readEmail(request);
   if (email instanceof Response) return email;
 
@@ -160,24 +153,26 @@ export async function POST(request: Request): Promise<Response> {
       body: JSON.stringify({ email }),
       cache: "no-store",
       credentials: "omit",
-      redirect: "manual",
+      redirect: "error",
       signal,
     });
   } catch {
     return errorResponse(signal.aborted ? 504 : 502);
   }
 
-  // No se leen cuerpos del upstream ni se copian sus cookies u otros headers.
-  void upstream.body?.cancel().catch(() => {});
+  if (upstream.status === 429 || upstream.status === 503) {
+    const error = await readBackendQuotaError(upstream, signal, true);
+    return "codigo" in error ? backendQuotaErrorResponse(error) : errorResponse(error.status);
+  }
+
+  // Fuera de los errores de cuota no se leen cuerpos ni se copian headers.
+  discardBody(upstream);
 
   if (upstream.status === 204) {
     return new Response(null, {
       status: 204,
       headers: { "Cache-Control": "no-store" },
     });
-  }
-  if (upstream.status === 429) {
-    return errorResponse(429, validRetryAfter(upstream.headers.get("retry-after")));
   }
   if (
     upstream.status === 400 ||

@@ -86,6 +86,9 @@ export async function cerrarSesion(): Promise<SubmissionResult> {
     return { ok: true, message: "Se cerró la sesión declarativa." };
   }
 
-  await errorCode(response);
+  const codigo = await errorCode(response);
+  if (response.status === 429 && codigo === "BFF_LIMITE_SOLICITUDES") {
+    return { ok: false, message: "Demasiadas solicitudes. Intentá nuevamente más tarde." };
+  }
   return { ok: false, message: "No se pudo confirmar el cierre de sesión. Intentá nuevamente más tarde." };
 }

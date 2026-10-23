@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { iniciarSesionDeclarativa } from "@/services/sesiones-declarativas";
+import { checkRateLimit } from "@/features/rate-limiting/guard";
+import { RATE_LIMIT_ENDPOINTS } from "@/features/rate-limiting/limit";
+import { backendQuotaErrorResponse } from "@/services/shared/backend-response";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -73,10 +76,14 @@ async function readEmail(request: Request): Promise<string | Response> {
 }
 
 export async function POST(request: NextRequest): Promise<Response> {
+  const rejection = await checkRateLimit(request, RATE_LIMIT_ENDPOINTS.sessionStart);
+  if (rejection) return rejection;
+
   const email = await readEmail(request);
   if (email instanceof Response) return email;
 
   const result = await iniciarSesionDeclarativa(email);
+  if ("codigo" in result) return backendQuotaErrorResponse(result);
   if (result.status === 201) {
     try {
       const response = new NextResponse(null, {

@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: Conciencia Alimentaria — Identificación y sesiones declarativas
-  version: 1.1.0
+  version: 1.2.0
   description: >-
     La identificación declarativa por email busca o crea un usuario, pero no
     inicia sesión. Las operaciones adicionales permiten iniciar y cerrar una
@@ -23,8 +23,22 @@ info:
     operaciones que dependan de ella. No se define vencimiento temporal ni por
     inactividad. El navegador puede eliminar la cookie al cerrarse o
     restaurarla según su configuración. El límite de 100 POST/minuto por IP
-    observada en Spring Boot sigue siendo exclusivo de identificación; no se
-    definen límites de frecuencia para las nuevas operaciones en esta versión.
+    observada en Spring Boot y por instancia sigue siendo exclusivo de identificación.
+    Los tres endpoints comparten además una cuota global agregada entre todas
+    las instancias mediante Redis: referencia inicial de 125 admisiones por
+    ventana fija de 60 segundos, configuradas explícitamente con
+    RATE_LIMIT_GLOBAL_MAX_REQUESTS y RATE_LIMIT_GLOBAL_WINDOW_SECONDS.
+    La primera admisión inicia el TTL y las siguientes no lo renuevan; un
+    rechazo global no incrementa el contador. Solo llegan al control global
+    solicitudes con autorización técnica válida; OPTIONS y otras rutas no
+    consumen cuota. Cada admisión global cuenta aunque un control local,
+    validación u operación posterior falle. Un rechazo previo de CORS o del
+    token no consume ninguna cuota. Un rechazo global tampoco consume cuota
+    local. Redis indisponible, timeout, respuesta incierta o configuración
+    ausente/inválida producen 503, sin acceso al negocio ni a PostgreSQL.
+    El backend no reintenta operaciones de cuota. Los códigos globales 429 y
+    503 proceden de Spring Boot; queda pendiente adaptar los tres Route
+    Handlers BFF para reconocerlos y traducirlos al navegador sin reintentos.
 paths:
   /api/usuarios/identificacion:
     post:
@@ -40,8 +54,12 @@ paths:
         solicitudes. El BFF debe enviar X-Service-Token con el secreto opaco
         configurado mediante BFF_SERVICE_SECRET. Es autenticación técnica del
         cliente servidor: no verifica el correo ni autentica a la usuaria.
-        CORS se evalúa primero; luego el token, el límite de 100 POST/minuto
-        por IP observada por Spring Boot, el tamaño y el tipo de contenido.
+        CORS se evalúa primero; luego el token, la cuota global compartida,
+        el límite de 100 POST/minuto por IP observada por Spring Boot y por
+        instancia, el tamaño y el tipo de contenido. La cuota global tiene
+        como referencia 125 admisiones por ventana fija de 60 segundos,
+        configurable por entorno. Un 429 local consume la admisión global
+        previa, pero no incrementa el contador local.
         Los POST sin token válido no consumen cuota ni leen el cuerpo.
         Los navegadores solo pueden realizar solicitudes
         cross-origin desde el origen configurado por FRONTEND_ORIGIN;
@@ -106,11 +124,24 @@ paths:
                 mensaje: 'Tipo de contenido no admitido.'
         '429':
           description: >-
-            Se excedió el límite de solicitudes por IP (valor inicial:
-            100 por minuto). La implementación puede enviar Retry-After.
+            DEMASIADAS_SOLICITUDES conserva el límite local de 100 solicitudes
+            por IP observada y por instancia durante 60 segundos.
+            CUOTA_GLOBAL_SUPERADA indica que se agotó la cuota compartida por
+            los tres endpoints y todas las instancias (referencia: 125 por
+            ventana fija de 60 segundos). El rechazo global no incrementa
+            ningún contador ni ejecuta negocio/persistencia; incluye
+            Cache-Control: no-store. Retry-After es opcional, solo si el TTL
+            restante obtenido en la operación atómica es fiable.
           headers:
+            Cache-Control:
+              description: Se envía no-store en el rechazo global.
+              schema:
+                type: string
+                enum: [no-store]
             Retry-After:
-              description: Segundos sugeridos antes de reintentar, si está disponible.
+              description: >-
+                Segundos restantes redondeados hacia arriba, con mínimo 1,
+                solo si son fiables; no autoriza reintentos automáticos.
               schema:
                 type: integer
                 minimum: 1
@@ -118,9 +149,15 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-              example:
-                codigo: DEMASIADAS_SOLICITUDES
-                mensaje: 'Demasiadas solicitudes. Intentá nuevamente más tarde.'
+              examples:
+                cuotaLocalPorIp:
+                  value:
+                    codigo: DEMASIADAS_SOLICITUDES
+                    mensaje: 'Demasiadas solicitudes. Intentá nuevamente más tarde.'
+                cuotaGlobal:
+                  value:
+                    codigo: CUOTA_GLOBAL_SUPERADA
+                    mensaje: 'Cuota global superada. Intentá nuevamente más tarde.'
         '500':
           description: Error inesperado, sin detalles internos.
           content:
@@ -130,6 +167,8 @@ paths:
               example:
                 codigo: ERROR_INTERNO
                 mensaje: 'No se pudo procesar la solicitud.'
+        '503':
+          $ref: '#/components/responses/ControlCuotaGlobalNoDisponible'
   /api/usuarios/sesiones:
     post:
       operationId: iniciarSesionDeclarativa
@@ -148,6 +187,11 @@ paths:
         al BFF; no verifica titularidad del correo ni autentica a la usuaria.
         La diferencia entre 201 y 404 revela si un correo está registrado por
         decisión de producto y no prueba su titularidad.
+        Tras validar X-Service-Token se aplica la cuota global compartida
+        (referencia: 125 admisiones por ventana fija de 60 segundos), antes
+        de validar el cuerpo o buscar el correo. Un 404 u otro error posterior
+        consume esa admisión. Un 429 global o 503 no crea sesiones ni accede
+        al negocio o a PostgreSQL. No se aplica aquí el límite local por IP.
       tags:
         - Sesiones declarativas
       security:
@@ -222,6 +266,8 @@ paths:
               example:
                 codigo: TIPO_CONTENIDO_NO_ADMITIDO
                 mensaje: 'Tipo de contenido no admitido.'
+        '429':
+          $ref: '#/components/responses/CuotaGlobalSuperada'
         '500':
           description: Error inesperado, sin detalles internos.
           content:
@@ -231,6 +277,8 @@ paths:
               example:
                 codigo: ERROR_INTERNO
                 mensaje: 'No se pudo procesar la solicitud.'
+        '503':
+          $ref: '#/components/responses/ControlCuotaGlobalNoDisponible'
   /api/usuarios/sesiones/actual:
     delete:
       operationId: cerrarSesionDeclarativa
@@ -245,9 +293,13 @@ paths:
         sesión. El identificador es sensible: no se registra ni se incluye en
         respuestas de error. Primero se valida X-Service-Token; si es ausente
         o inválido se responde 401, aun cuando X-Session-Id falte o sea
-        malformado. Con token técnico válido, un X-Session-Id ausente o
-        malformado produce 400. La sesión declarativa no autentica a la
-        usuaria.
+        malformado. Luego se aplica la cuota global compartida (referencia:
+        125 admisiones por ventana fija de 60 segundos), antes de validar
+        X-Session-Id. Con token técnico válido y cuota disponible, un
+        X-Session-Id ausente o malformado produce 400 y consume esa admisión.
+        Un 429 global o 503 no invalida sesiones ni accede al negocio o a
+        PostgreSQL. No se aplica aquí el límite local por IP. La sesión
+        declarativa no autentica a la usuaria.
       tags:
         - Sesiones declarativas
       security:
@@ -259,7 +311,8 @@ paths:
             Sesión invalidada o ya inexistente. No tiene cuerpo.
         '400':
           description: >-
-            X-Session-Id ausente o malformado cuando X-Service-Token es válido.
+            X-Session-Id ausente o malformado cuando X-Service-Token es válido
+            y la cuota global admite la solicitud.
           content:
             application/json:
               schema:
@@ -278,6 +331,8 @@ paths:
               example:
                 codigo: CLIENTE_NO_AUTORIZADO
                 mensaje: 'No se pudo autorizar la solicitud.'
+        '429':
+          $ref: '#/components/responses/CuotaGlobalSuperada'
         '500':
           description: Error inesperado, sin detalles internos.
           content:
@@ -287,7 +342,57 @@ paths:
               example:
                 codigo: ERROR_INTERNO
                 mensaje: 'No se pudo procesar la solicitud.'
+        '503':
+          $ref: '#/components/responses/ControlCuotaGlobalNoDisponible'
 components:
+  responses:
+    CuotaGlobalSuperada:
+      description: >-
+        Cuota global compartida por los tres endpoints y todas las instancias
+        agotada (referencia configurable: 125 admisiones por ventana fija de
+        60 segundos). No incrementa el contador ni ejecuta negocio/persistencia.
+      headers:
+        Cache-Control:
+          description: Se envía no-store.
+          schema:
+            type: string
+            enum: [no-store]
+        Retry-After:
+          description: >-
+            Opcional. TTL restante obtenido en la operación atómica,
+            redondeado hacia arriba con mínimo 1 segundo, solo si es fiable.
+            No autoriza reintentos automáticos.
+          schema:
+            type: integer
+            minimum: 1
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            codigo: CUOTA_GLOBAL_SUPERADA
+            mensaje: 'Cuota global superada. Intentá nuevamente más tarde.'
+    ControlCuotaGlobalNoDisponible:
+      description: >-
+        No se pudo comprobar la cuota global por error, indisponibilidad,
+        timeout, respuesta incierta o configuración Redis/cuota ausente o
+        inválida. Rechazo seguro sin negocio/persistencia, creación ni
+        invalidación de sesiones. No se reintenta la operación Redis;
+        una operación cuya respuesta se perdió podría haber consumido cuota.
+        No incluye Retry-After ni detalles internos.
+      headers:
+        Cache-Control:
+          description: Se envía no-store.
+          schema:
+            type: string
+            enum: [no-store]
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            codigo: CONTROL_CUOTA_GLOBAL_NO_DISPONIBLE
+            mensaje: 'No se pudo comprobar la cuota global. Intentá más tarde.'
   securitySchemes:
     BffServiceToken:
       type: apiKey

@@ -25,7 +25,7 @@ export default function Home() {
     : "/images/publicaciones/noticiadeldia/iconnoticia.png";
 
      const NoticiaLinkSrc = existeNoticia
-    ? "https://doi.org/10.1038/s41467-026-77064-4"
+    ? "https://doi.org/10.1016/j.jacc.2026.08.025"
     : "/images/publicaciones/noticiadeldia/empty.png";
 
     const menuSugeridoPath = path.join(

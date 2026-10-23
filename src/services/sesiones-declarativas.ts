@@ -1,14 +1,15 @@
 import "server-only";
+import { discardBody, readBackendJson, readBackendQuotaError, type BackendQuotaError } from "./shared/backend-response";
 
 const BACKEND_TIMEOUT_MS = 5000;
-const MAX_UPSTREAM_BODY_BYTES = 4096;
 
 export type InicioSesionResult =
   | { status: 201; sesionId: string }
   | { status: 400 | 413 | 415 | 502 | 503 | 504 }
-  | { status: 404 };
+  | { status: 404 }
+  | BackendQuotaError;
 
-export type CierreSesionResult = { status: 204 | 400 | 502 | 503 | 504 };
+export type CierreSesionResult = { status: 204 | 400 | 502 | 503 | 504 } | BackendQuotaError;
 
 function backendEndpoint(path: string): URL | null {
   try {
@@ -32,32 +33,6 @@ function backendEndpoint(path: string): URL | null {
   }
 }
 
-async function readJson(response: Response): Promise<unknown> {
-  if (response.headers.get("content-type")?.split(";")[0].trim().toLowerCase() !== "application/json") {
-    throw new Error("Invalid upstream content type");
-  }
-
-  const reader = response.body?.getReader();
-  if (!reader) throw new Error("Missing upstream body");
-  const bytes = new Uint8Array(MAX_UPSTREAM_BODY_BYTES);
-  let size = 0;
-  try {
-    while (true) {
-      const { done, value } = await reader.read();
-      if (done) break;
-      if (size + value.byteLength > MAX_UPSTREAM_BODY_BYTES) {
-        void reader.cancel().catch(() => {});
-        throw new Error("Upstream body too large");
-      }
-      bytes.set(value, size);
-      size += value.byteLength;
-    }
-    return JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(bytes.subarray(0, size)));
-  } finally {
-    reader.releaseLock();
-  }
-}
-
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
 }
@@ -68,10 +43,6 @@ function isSessionResponse(value: unknown): value is { sesionId: string } {
   }
   // El identificador es opaco; solo se comprueba que sea utilizable como cabecera interna.
   return value.sesionId.trim().length > 0 && !/[\u0000-\u001f\u007f-\u009f]/.test(value.sesionId);
-}
-
-function discardBody(response: Response): void {
-  void response.body?.cancel().catch(() => {});
 }
 
 function connection(): { endpoint: URL; secret: string } | null {
@@ -107,7 +78,7 @@ export async function iniciarSesionDeclarativa(email: string): Promise<InicioSes
 
   if (upstream.status === 201) {
     try {
-      const body = await readJson(upstream);
+      const body = await readBackendJson(upstream);
       return isSessionResponse(body)
         ? { status: 201, sesionId: body.sesionId }
         : { status: 502 };
@@ -118,13 +89,16 @@ export async function iniciarSesionDeclarativa(email: string): Promise<InicioSes
 
   if (upstream.status === 404) {
     try {
-      const error: unknown = await readJson(upstream);
+      const error: unknown = await readBackendJson(upstream);
       return { status: isRecord(error) && error.codigo === "CORREO_NO_REGISTRADO" ? 404 : 502 };
     } catch {
       return { status: signal.aborted ? 504 : 502 };
     }
   }
 
+  if (upstream.status === 429 || upstream.status === 503) {
+    return readBackendQuotaError(upstream, signal);
+  }
   discardBody(upstream);
   if (upstream.status === 400 || upstream.status === 413 || upstream.status === 415) {
     return { status: upstream.status };
@@ -165,6 +139,9 @@ export async function cerrarSesionDeclarativa(sesionId: string): Promise<CierreS
       return { status: 502 };
     }
     return { status: 204 };
+  }
+  if (upstream.status === 429 || upstream.status === 503) {
+    return readBackendQuotaError(upstream, signal);
   }
   discardBody(upstream);
   if (upstream.status === 400) return { status: 400 };

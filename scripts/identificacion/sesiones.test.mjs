@@ -1,30 +1,13 @@
 import assert from "node:assert/strict";
-import Module from "node:module";
 import { after, afterEach, beforeEach, test } from "node:test";
-import { fileURLToPath } from "node:url";
-import { register } from "tsx/esm/api";
+import { installRateLimitTestModules } from "./rate-limit-test-modules.mjs";
 
-// Next resuelve server-only durante el empaquetado; estos tests ejecutan el
-// servicio directamente en Node, sin habilitar su uso desde componentes cliente.
-Module.register(new URL("./server-only-test-loader.mjs", import.meta.url));
-const unregisterTsx = register({ tsconfig: fileURLToPath(new URL("../../tsconfig.json", import.meta.url)) });
-const originalResolveFilename = Module._resolveFilename;
-Module._resolveFilename = function (specifier, ...args) {
-  if (specifier === "@/services/sesiones-declarativas") {
-    specifier = fileURLToPath(new URL("../../src/services/sesiones-declarativas.ts", import.meta.url));
-  } else if (specifier === "server-only") {
-    specifier = fileURLToPath(new URL("./server-only-test-stub.cjs", import.meta.url));
-  }
-  return originalResolveFilename.call(this, specifier, ...args);
-};
-assert.equal(import.meta.resolve("server-only"), new URL("./server-only-test-stub.cjs", import.meta.url).href);
+const hooks = installRateLimitTestModules({ admitRequests: true });
 const [{ NextRequest }, { POST }, { DELETE }] = await Promise.all([
   import("next/server.js"),
   import("../../src/app/api/usuarios/sesiones/route.ts"),
   import("../../src/app/api/usuarios/sesiones/actual/route.ts"),
-]).finally(() => {
-  Module._resolveFilename = originalResolveFilename;
-});
+]);
 
 const original = Object.fromEntries(
   ["BACKEND_URL", "BFF_SERVICE_SECRET", "NODE_ENV"].map((key) => [key, process.env[key]]),
@@ -256,6 +239,4 @@ test("cierre sin configuración no envía una solicitud sin token", async () => 
 });
 
 // Se registran al final para no afectar otros archivos de node:test.
-after(async () => {
-  await unregisterTsx();
-});
+after(() => hooks.deregister());

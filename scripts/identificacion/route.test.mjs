@@ -1,8 +1,12 @@
 import assert from "node:assert/strict";
 import { once } from "node:events";
 import { createServer } from "node:http";
-import { afterEach, beforeEach, test } from "node:test";
-import { POST } from "../../src/app/api/usuarios/identificacion/route.ts";
+import { after, afterEach, beforeEach, test } from "node:test";
+import { installRateLimitTestModules } from "./rate-limit-test-modules.mjs";
+
+const hooks = installRateLimitTestModules({ admitRequests: true });
+const { POST } = await import("../../src/app/api/usuarios/identificacion/route.ts");
+after(() => hooks.deregister());
 
 const originalBackendUrl = process.env.BACKEND_URL;
 const originalServiceSecret = process.env.BFF_SERVICE_SECRET;
@@ -73,7 +77,7 @@ test("primer envío y repetición reciben el mismo 204 vacío del upstream simul
     assert.equal(Object.keys(options.headers).filter((name) => name.toLowerCase() === "x-service-token").length, 1);
     assert.equal(options.cache, "no-store");
     assert.equal(options.credentials, "omit");
-    assert.equal(options.redirect, "manual");
+    assert.equal(options.redirect, "error");
     assert.ok(options.signal instanceof AbortSignal);
     return new Response(null, {
       status: 204,
@@ -244,7 +248,9 @@ test("429 conserva solo Retry-After expresado en segundos enteros positivos vál
     ["1.5", null], ["1e2", null], ["soon", null], ["9007199254740992", null],
     ["Thu, 15 Oct 2026 12:00:00 GMT", null],
   ]) {
-    t.mock.method(globalThis, "fetch", async () => new Response("synthetic-secret", {
+    t.mock.method(globalThis, "fetch", async () => Response.json({
+      codigo: "DEMASIADAS_SOLICITUDES", mensaje: "synthetic-secret",
+    }, {
       status: 429, headers: value === null ? {} : { "Retry-After": value },
     }));
     const response = await POST(request());

@@ -6,7 +6,7 @@
 
 ## 1. Fronteras y precedencia
 
-Este documento define la comunicación **navegador / interfaz React ↔ Route Handlers Next.js (BFF)**. No reemplaza ni modifica `contracts/CONTRATO_API_IDENTIFICACION_V1.yaml`, que define **BFF ↔ Spring Boot** (API `info.version: 1.1.0`, especificación OpenAPI `3.0.3`). Ante incompatibilidades, no inventar comportamientos: informar y solicitar decisión.
+Este documento define la comunicación **navegador / interfaz React ↔ Route Handlers Next.js (BFF)**. No reemplaza ni modifica `contracts/CONTRATO_API_IDENTIFICACION_V1.yaml`, que define **BFF ↔ Spring Boot** (API `info.version: 1.2.0`, especificación OpenAPI `3.0.3`). Ante incompatibilidades, no inventar comportamientos: informar y solicitar decisión.
 
 La identificación (`POST /api/usuarios/identificacion`) registra o busca un correo y devuelve `204`, sin iniciar sesión. El inicio y cierre declarativos son operaciones diferentes. Ninguna verifica titularidad, autentica personas ni habilita acceso a datos sensibles.
 

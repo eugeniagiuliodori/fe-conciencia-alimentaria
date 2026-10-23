@@ -126,3 +126,20 @@ test("cierre con 201, 404 o fallo de red no afirma éxito", async (t) => {
   assert.equal(result.ok, false);
   assertSafe(result);
 });
+
+test("429 y 503 propios del BFF preservan el fallo y muestran mensajes seguros", async (t) => {
+  for (const [status, codigo] of [
+    [429, "BFF_LIMITE_SOLICITUDES"],
+    [503, "BFF_CONTROL_SOLICITUDES_NO_DISPONIBLE"],
+  ]) {
+    const call = t.mock.method(globalThis, "fetch", async () =>
+      Response.json({ codigo, mensaje: privateMessage }, { status }));
+    for (const operation of [registrarCorreo, iniciarSesion, cerrarSesion]) {
+      const result = await operation(email);
+      assert.equal(result.ok, false);
+      assertSafe(result);
+      assert.match(result.message, status === 429 ? /Demasiadas solicitudes/ : /No se pudo confirmar/);
+    }
+    assert.equal(call.mock.callCount(), 3);
+  }
+});
